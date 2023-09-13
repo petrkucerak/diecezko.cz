@@ -1,0 +1,2 @@
+# Diecezko.cz
+
