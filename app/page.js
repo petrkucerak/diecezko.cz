@@ -5,7 +5,7 @@ export default function Home() {
     <main className="ease-in-out duration-300 font-josefinSans">
       <Cover>
         <div></div>
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center w-full">
           <h1 className="text-5xl md:text-7xl font-caveatBrush text-center">
             Diecézní setkání mládeže
           </h1>
@@ -13,7 +13,7 @@ export default function Home() {
             Zastav se a naslouchej
           </p>
         </div>
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center w-full">
           <span className="text-2xl text-center">
             25.&nbsp;11.&nbsp;2023 • 9.30
           </span>
