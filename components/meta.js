@@ -34,6 +34,10 @@ export const meta = {
   viewport: {
     width: "device-width",
     initialScale: 1,
+    minimumScale: 1,
+    shrinkToFit: "no",
+    userScalable: "no",
+    viewportFit: "cover",
   },
   assets: [`${homeUrl}assets`],
   category: "non-profit",
