@@ -8,13 +8,9 @@ export default function manifest() {
     start_url: "/",
     display: "standalone",
     background_color: "#fff",
+    scope: "/",
     theme_color: meta.themeColor,
     icons: [
-      {
-        src: "/favicon.ico",
-        sizes: "any",
-        type: "image/x-icon",
-      },
       { src: "/icon-192.png", type: "image/png", sizes: "192x192" },
       { src: "/icon-512.png", type: "image/png", sizes: "512x512" },
     ],
