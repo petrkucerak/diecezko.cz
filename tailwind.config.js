@@ -6,9 +6,20 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        josefinSans: ["Josefin Sans"],
+        caveatBrush: ["Caveat Brush"],
+      },
+    },
   },
-  variants: {},
+  variants: {
+    extend: {
+      fontFamily: ["hover", "focus"],
+    },
+  },
   plugins: [],
-  corePlugins: {},
+  corePlugins: {
+    fontFamily: true,
+  },
 };
