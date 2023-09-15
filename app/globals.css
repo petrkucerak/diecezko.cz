@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+.switcher-selected {
+  background-color: #fff;
+  color: #000;
+}
+
 @font-face {
   font-family: "Josefin Sans";
   src: url("../fonts/JosefinSans-Thin.woff2") format("woff2"),

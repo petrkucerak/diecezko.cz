@@ -28,7 +28,7 @@ export const meta = {
       url: "https://petrkucerak.cz/",
     },
   ],
-  colorScheme: "dark light",
+  colorScheme: "dark",
   themeColor: color,
   manifest: `${homeUrl}manifest.json`,
   viewport: {
