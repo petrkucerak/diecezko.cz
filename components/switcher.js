@@ -1,4 +1,4 @@
-import { IconHeartHandshake, IconPencil } from "@tabler/icons";
+import { IconBrandFacebook, IconCalendar, IconHeartHandshake, IconPencil } from "@tabler/icons";
 import Link from "next/link";
 export default function Switcher() {
   return (
@@ -34,25 +34,50 @@ export default function Switcher() {
             Zastav se a naslouchej
           </p>
         </div>
-        <div className="flex flex-row w-full items-center justify-around flex-wrap">
+        <div className="w-[90vw] max-w-[500px] grid grid-cols-2 grid-flow-row gap-4 items-center auto-cols-max">
           <Link
             href="https://forms.gle/aMQor8ARxaULdD8t7"
             rel="external"
             target="_blank"
+            className="border border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-5 cursor-pointer text-base flex flex-row items-center justify-center"
           >
-            <button className="border border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-5 cursor-pointer text-base flex flex-row items-center justify-center">
+            <button className="flex flex-row items-center justify-center">
               <IconPencil className="inline" />{" "}
-              <span className="mt-1 ml-2">Přihláška</span>
+              <span className="mt-1 ml-2 text-left">Přihláška</span>
             </button>
           </Link>
           <Link
             href="https://forms.gle/M4Pc27SiqY9Wa7u87"
             rel="external"
             target="_blank"
+            className="border border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-5 cursor-pointer text-base flex flex-row items-center justify-center"
           >
-            <button className="border border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-5 cursor-pointer text-base flex flex-row items-center justify-center">
+            <button className="flex flex-row items-center justify-center">
               <IconHeartHandshake className="inline" />{" "}
-              <span className="mt-1 ml-2">Dobrovolník</span>
+              <span className="mt-1 ml-2 text-left">Dobrovolníci</span>
+            </button>
+          </Link>
+          <Link
+            href="https://www.facebook.com/events/520344309938232"
+            rel="external"
+            target="_blank"
+            className="border border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-5 cursor-pointer text-base flex flex-row items-center justify-center"
+          >
+            <button className="flex flex-row items-center justify-center">
+              <IconBrandFacebook className="inline" />{" "}
+              <span className="mt-1 ml-2 text-left">Událost</span>
+            </button>
+          </Link>
+          <Link
+            href="/assets/events/dcmhk23.ics"
+            rel="document"
+            download="dcmhk23"
+            target="_blank"
+            className="border border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-5 cursor-pointer text-base flex flex-row items-center justify-center"
+          >
+            <button className="flex flex-row items-center justify-center">
+              <IconCalendar className="inline" />{" "}
+              <span className="mt-1 ml-2 text-left">Kalednář</span>
             </button>
           </Link>
         </div>
