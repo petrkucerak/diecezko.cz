@@ -47,7 +47,7 @@ export default function Switcher() {
   };
 
   return (
-    <div className="flex flex-col items-center transition ease-in-out duration-1000">
+    <div className="flex flex-col items-center">
       <div className="w-[90vw] max-w-[500px] flex items-center flex-row justify-between md:text-lg bg-[#222] rounded-full font-semibold my-4">
         <div
           className={`cursor-pointer rounded-full md:p-3 md:pt-4 md:px-8 p-2 px-4 duration-300 ${infoButton}`}
