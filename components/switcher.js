@@ -77,7 +77,7 @@ export default function Switcher() {
           >
             <button className="flex flex-row items-center justify-center">
               <IconCalendar className="inline" />{" "}
-              <span className="mt-1 ml-2 text-left">Kalednář</span>
+              <span className="mt-1 ml-2 text-left">Uložit event</span>
             </button>
           </Link>
         </div>
