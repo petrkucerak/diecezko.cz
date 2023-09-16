@@ -10,6 +10,7 @@ module.exports = {
       fontFamily: {
         josefinSans: ["Josefin Sans"],
         caveatBrush: ["Caveat Brush"],
+        montserrat: ["Montserrat"],
       },
     },
   },

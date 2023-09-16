@@ -6,7 +6,7 @@ import Footer from "../components/footer";
 
 export default function Home() {
   return (
-    <main className="ease-in-out duration-300 font-josefinSans">
+    <main className="ease-in-out duration-300 font-montserrat">
       <Header />
       <Cover>
         <Switcher />
