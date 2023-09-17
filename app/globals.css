@@ -7,6 +7,12 @@
   color: #000;
 }
 
+/* Height of burger menu */
+.burger-menu-height {
+  height: calc(100vh - 4rem);
+}
+
+/* Fonts */
 @font-face {
   font-family: "Josefin Sans";
   src: url("../fonts/JosefinSans-Thin.woff2") format("woff2"),
