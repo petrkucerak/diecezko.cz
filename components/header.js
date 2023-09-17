@@ -10,8 +10,6 @@ export default function Header() {
 
   const body = document.getElementById("body");
 
-  // overflow-hidden
-
   const openMenu = () => {
     setBurgerControl("hidden");
     setCloseControl("");
