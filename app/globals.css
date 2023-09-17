@@ -12,6 +12,11 @@
   height: calc(100vh - 4rem);
 }
 
+/* lock scroling */
+.lock-scrolling {
+  overflow: hidden;
+}
+
 /* Fonts */
 @font-face {
   font-family: "Josefin Sans";

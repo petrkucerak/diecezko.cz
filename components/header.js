@@ -8,15 +8,21 @@ export default function Header() {
   const [closeControl, setCloseControl] = useState("hidden");
   const [burgerMenu, setBurgerMenu] = useState("hidden");
 
+  const body = document.getElementById("body");
+
+  // overflow-hidden
+
   const openMenu = () => {
     setBurgerControl("hidden");
     setCloseControl("");
     setBurgerMenu("");
+    body.classList.add("lock-scrolling");
   };
   const closeMenu = () => {
     setBurgerControl("");
     setCloseControl("hidden");
     setBurgerMenu("hidden");
+    body.classList.remove("lock-scrolling");
   };
   return (
     <>
@@ -38,7 +44,9 @@ export default function Header() {
       <nav
         className={`absolute w-full backdrop-blur-md bg-black/30 ${burgerMenu}`}
       >
-        <ul className="text-2xl flex flex-col items-center justify-around burger-menu-height">
+        <ul
+          className={`text-2xl flex flex-col items-center justify-around burger-menu-height`}
+        >
           <Link href="" target="_self">
             <li>Evženova cesta</li>
           </Link>
