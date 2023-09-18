@@ -1,10 +1,5 @@
 "use client";
-import {
-  IconMenu2,
-  IconMusic,
-  IconPuzzle,
-  IconX,
-} from "@tabler/icons";
+import { IconMenu2, IconMusic, IconPuzzle, IconX } from "@tabler/icons";
 import Link from "next/link";
 import Script from "next/script";
 import { useState } from "react";
@@ -35,7 +30,14 @@ export default function Header() {
     <>
       <header className="w-full flex flex-row items-center justify-between h-16 bg-black/90 backdrop-blur-md">
         <div>
-          <div className="text-3xl font-caveatBrush ml-4">Diecézko.cz</div>
+          <Link
+            href="/"
+            className="text-3xl font-caveatBrush ml-4"
+            target="_self"
+            title="Diecézko.cz"
+          >
+            Diecézko.cz
+          </Link>
         </div>
         <div>
           <IconMenu2
@@ -55,13 +57,13 @@ export default function Header() {
           className={`text-2xl flex flex-col items-start justify-around burger-menu-height w-[90vw] max-w-[400px]`}
         >
           <Link
-            href=""
+            href="/evzenova-cesta"
             target="_self"
             className="border-b-[#3b3b3b] border-b w-full"
           >
             <li className="flex flex-row items-center">
-              <IconCustomEvzen className="inline h-7 w-7 my-1 mr-2" />Evženova
-              cesta
+              <IconCustomEvzen className="inline h-7 w-7 my-1 mr-2" />
+              Evženova cesta
             </li>
           </Link>
           <Link
@@ -70,7 +72,8 @@ export default function Header() {
             className="border-b-[#3b3b3b] border-b w-full"
           >
             <li className="flex flex-row items-center">
-              <IconPuzzle className="inline h-7 w-7 my-1 mr-2" />Vikariáty
+              <IconPuzzle className="inline h-7 w-7 my-1 mr-2" />
+              Vikariáty
             </li>
           </Link>
           <Link
@@ -79,8 +82,8 @@ export default function Header() {
             className="border-b-[#3b3b3b] border-b w-full"
           >
             <li className="flex flex-row items-center">
-              <IconCustomDCM className="inline h-7 w-7 my-1 mr-2" />DCM Hradec
-              Králové
+              <IconCustomDCM className="inline h-7 w-7 my-1 mr-2" />
+              DCM Hradec Králové
             </li>
           </Link>
           <Link
@@ -89,8 +92,8 @@ export default function Header() {
             className="border-b-[#3b3b3b] border-b w-full"
           >
             <li className="flex flex-row items-center">
-              <IconCustomVesmir className="inline h-7 w-7 my-1 mr-2" />DCŽM
-              Vesmír
+              <IconCustomVesmir className="inline h-7 w-7 my-1 mr-2" />
+              DCŽM Vesmír
             </li>
           </Link>
           <Link
@@ -99,7 +102,8 @@ export default function Header() {
             className="border-b-[#3b3b3b] border-b w-full"
           >
             <li className="flex flex-row items-center">
-              <IconCustomSalas className="h-7 w-7 inline my-1 mr-2" />KSK Salaš
+              <IconCustomSalas className="h-7 w-7 inline my-1 mr-2" />
+              KSK Salaš
             </li>
           </Link>
           <Link
@@ -108,8 +112,8 @@ export default function Header() {
             className="border-b-[#3b3b3b] border-b w-full"
           >
             <li className="flex flex-row items-center">
-              <IconCustomVeka className="inline h-7 w-7 my-1 mr-2" />Vesmírná
-              kapela
+              <IconCustomVeka className="inline h-7 w-7 my-1 mr-2" />
+              Vesmírná kapela
             </li>
           </Link>
           <Link
@@ -118,8 +122,8 @@ export default function Header() {
             className="border-b-[#3b3b3b] border-b w-full"
           >
             <li className="flex flex-row items-center">
-              <IconMusic className="inline h-7 w-7 my-1 mr-2" />Studenecká
-              schola
+              <IconMusic className="inline h-7 w-7 my-1 mr-2" />
+              Studenecká schola
             </li>
           </Link>
         </ul>
