@@ -1,7 +1,6 @@
 "use client";
 import { IconMenu2, IconMusic, IconPuzzle, IconX } from "@tabler/icons";
 import Link from "next/link";
-import Script from "next/script";
 import { useState } from "react";
 import IconCustomSalas from "./images/salas";
 import IconCustomVesmir from "./images/vesmir";
