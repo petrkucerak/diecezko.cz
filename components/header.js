@@ -73,6 +73,7 @@ export default function Header() {
           __html: `const body = document.getElementById("body");
   function lockScrolling() {
     body.classList.add("lock-scrolling");
+    window.scrollTo(0, 0);
   }
   function unlockScrolling() {
     body.classList.remove("lock-scrolling");
