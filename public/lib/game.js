@@ -2,8 +2,8 @@ let gameOver = false;
 
 // Board parametrs
 let board;
-const width = window.innerWidth;
-const height = window.innerHeight - 64;
+const width = Math.min(window.innerWidth * 0.9, 1800);
+const height = Math.min(window.innerHeight - 64, 800);
 let context;
 
 // piegon parameters
@@ -145,6 +145,11 @@ window.onload = () => {
   setInterval(moveGround, 10);
   document.addEventListener("keydown", movePiegon);
   document.addEventListener("touchstart", movePiegon);
+  window.addEventListener("keydown", function (e) {
+    if (e.keyCode == 32 && e.target == document.body) {
+      e.preventDefault();
+    }
+  });
 };
 
 function update() {
@@ -201,7 +206,6 @@ function movePiegon(e) {
   if (gameOver) return;
   if (
     e.code == "Space" ||
-    e.code == "ArrowUp" ||
     (e.type == "touchstart" && e.srcElement.id == "game")
   ) {
     piegon.isPiegonJumping = true;
