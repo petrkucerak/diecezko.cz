@@ -3,6 +3,7 @@ import {
   IconBuildingFortress,
   IconJetpack,
   IconMenu2,
+  IconMusic,
   IconPuzzle,
   IconRocket,
   IconX,
@@ -14,6 +15,7 @@ import IconCustomSalas from "./images/salas";
 import IconCustomVesmir from "./images/vesmir";
 import IconCustomDCM from "./images/dcm-hk";
 import IconCustomEvzen from "./images/evzen";
+import IconCustomVeka from "./images/veka";
 
 export default function Header() {
   const [burgerControl, setBurgerControl] = useState("");
@@ -105,14 +107,19 @@ export default function Header() {
             target="_self"
             className="border-b-[#3b3b3b] border-b w-full"
           >
-            <li>Vesmírná kapela</li>
+            <li>
+              {" "}
+              <IconCustomVeka className="inline h-6 my-1" /> Vesmírná kapela
+            </li>
           </Link>
           <Link
             href=""
             target="_self"
             className="border-b-[#3b3b3b] border-b w-full"
           >
-            <li>Studenecká schola</li>
+            <li>
+              <IconMusic className="inline h-7 my-1" /> Studenecká schola
+            </li>
           </Link>
         </ul>
       </nav>
