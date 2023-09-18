@@ -1,6 +1,8 @@
 "use client";
 import { useEffect } from "react";
 
+// pixle art generato https://giventofly.github.io/pixelit/#tryit
+
 export default function Game() {
   useEffect(() => {
     // game bord
@@ -35,10 +37,10 @@ export default function Game() {
     // duch
     let duch = {
       image: new Image(),
-      width: 138 * 0.6,
-      height: 200 * 0.6,
+      width: 138 * 0.8,
+      height: 200 * 0.8,
       x: 300,
-      y: board.height - ground.height - 200 * 0.6 + 4,
+      y: board.height - ground.height - 200 * 0.8 + 8,
       isVisible: false,
     };
     duch.image.src = "/assets/images/game/duch.png";
@@ -46,10 +48,10 @@ export default function Game() {
     // matous
     let matous = {
       image: new Image(),
-      width: 300 * 0.6,
-      height: 222 * 0.6,
+      width: 300 * 0.7,
+      height: 222 * 0.7,
       x: 0,
-      y: board.height - ground.height - 222 * 0.6 + 4,
+      y: board.height - ground.height - 222 * 0.7 + 4,
       isVisible: false,
     };
     matous.image.src = "/assets/images/game/matous.png";
@@ -68,10 +70,10 @@ export default function Game() {
     // litomysl
     let litomysl = {
       image: new Image(),
-      width: 300 * 0.5,
-      height: 197 * 0.5,
+      width: 300 * 0.6,
+      height: 197 * 0.6,
       x: 0,
-      y: board.height - ground.height - 197 * 0.5 + 10,
+      y: board.height - ground.height - 197 * 0.6 + 12,
       isVisible: false,
     };
     litomysl.image.src = "/assets/images/game/litomysl.png";
@@ -79,10 +81,10 @@ export default function Game() {
     // opocno
     let opocno = {
       image: new Image(),
-      width: 300 * 0.5,
-      height: 152 * 0.5,
+      width: 300 * 0.6,
+      height: 152 * 0.6,
       x: 0,
-      y: board.height - ground.height - 152 * 0.5 + 10,
+      y: board.height - ground.height - 152 * 0.6 + 10,
       isVisible: false,
     };
     opocno.image.src = "/assets/images/game/opocno.png";
@@ -90,13 +92,57 @@ export default function Game() {
     // kunka
     let kunka = {
       image: new Image(),
-      width: 600 * 0.5,
-      height: 189 * 0.5,
+      width: 600 * 0.6,
+      height: 189 * 0.6,
       x: 0,
-      y: board.height - ground.height - 189 * 0.5 + 10,
+      y: board.height - ground.height - 189 * 0.6 + 10,
       isVisible: false,
     };
     kunka.image.src = "/assets/images/game/kunka.png";
+
+    // destna
+    let destna = {
+      image: new Image(),
+      width: 162 * 0.6,
+      height: 300 * 0.6,
+      x: 0,
+      y: board.height - ground.height - 300 * 0.6 + 10,
+      isVisible: false,
+    };
+    destna.image.src = "/assets/images/game/destna.png";
+
+    // kralovstvi
+    let kralovstvi = {
+      image: new Image(),
+      width: 300 * 0.5,
+      height: 172 * 0.5,
+      x: 0,
+      y: board.height - ground.height - 172 * 0.5 + 10,
+      isVisible: false,
+    };
+    kralovstvi.image.src = "/assets/images/game/kralovstvi.png";
+
+    // krematorium
+    let krematorium = {
+      image: new Image(),
+      width: 300 * 0.4,
+      height: 254 * 0.4,
+      x: 0,
+      y: board.height - ground.height - 254 * 0.4 + 8,
+      isVisible: false,
+    };
+    krematorium.image.src = "/assets/images/game/krematorium.png";
+
+    // vesmir
+    let vesmir = {
+      image: new Image(),
+      width: 300 * 0.5,
+      height: 161 * 0.5,
+      x: 0,
+      y: board.height - ground.height - 161 * 0.5 + 3,
+      isVisible: false,
+    };
+    vesmir.image.src = "/assets/images/game/vesmir.png";
 
     // piegon
     let piegon = {
@@ -218,6 +264,40 @@ export default function Game() {
         );
         litomysl.x + litomysl.width < 0 ? (litomysl.isVisible = false) : null;
       }
+      if (destna.isVisible) {
+        board.context.drawImage(
+          destna.image,
+          destna.x,
+          destna.y,
+          destna.width,
+          destna.height
+        );
+        destna.x + destna.width < 0 ? (destna.isVisible = false) : null;
+      }
+      if (kralovstvi.isVisible) {
+        board.context.drawImage(
+          kralovstvi.image,
+          kralovstvi.x,
+          kralovstvi.y,
+          kralovstvi.width,
+          kralovstvi.height
+        );
+        kralovstvi.x + kralovstvi.width < 0
+          ? (kralovstvi.isVisible = false)
+          : null;
+      }
+      if (krematorium.isVisible) {
+        board.context.drawImage(
+          krematorium.image,
+          krematorium.x,
+          krematorium.y,
+          krematorium.width,
+          krematorium.height
+        );
+        krematorium.x + krematorium.width < 0
+          ? (krematorium.isVisible = false)
+          : null;
+      }
       if (barbora.isVisible) {
         board.context.drawImage(
           barbora.image,
@@ -237,6 +317,16 @@ export default function Game() {
           opocno.height
         );
         opocno.x + opocno.width < 0 ? (opocno.isVisible = false) : null;
+      }
+      if (vesmir.isVisible) {
+        board.context.drawImage(
+          vesmir.image,
+          vesmir.x,
+          vesmir.y,
+          vesmir.width,
+          vesmir.height
+        );
+        vesmir.x + vesmir.width < 0 ? (vesmir.isVisible = false) : null;
       }
       if (kunka.isVisible) {
         board.context.drawImage(
@@ -286,6 +376,10 @@ export default function Game() {
       if (kunka.isVisible) kunka.x -= 1;
       if (litomysl.isVisible) litomysl.x -= 1;
       if (barbora.isVisible) barbora.x -= 1;
+      if (destna.isVisible) destna.x -= 1;
+      if (kralovstvi.isVisible) kralovstvi.x -= 1;
+      if (krematorium.isVisible) krematorium.x -= 1;
+      if (vesmir.isVisible) vesmir.x -= 1;
     }
 
     function movePiegon(e) {
@@ -320,6 +414,18 @@ export default function Game() {
       } else if (rnd < 0.6 && !barbora.isVisible) {
         barbora.isVisible = true;
         barbora.x = board.width;
+      } else if (rnd < 0.7 && !destna.isVisible) {
+        destna.isVisible = true;
+        destna.x = board.width;
+      } else if (rnd < 0.8 && !kralovstvi.isVisible) {
+        kralovstvi.isVisible = true;
+        kralovstvi.x = board.width;
+      } else if (rnd < 0.9 && !krematorium.isVisible) {
+        krematorium.isVisible = true;
+        krematorium.x = board.width;
+      } else if (rnd < 1 && !vesmir.isVisible) {
+        vesmir.isVisible = true;
+        vesmir.x = board.width;
       }
     }
   });
