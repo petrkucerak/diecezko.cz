@@ -98,7 +98,7 @@ export default function Switcher() {
           >
             <button className="flex flex-row items-center justify-center">
               <IconPencil className="inline" />{" "}
-              <span className="mt-1 ml-2 text-left">Přihláška</span>
+              <span className="ml-2 text-left">Přihláška</span>
             </button>
           </Link>
           <Link
@@ -109,7 +109,7 @@ export default function Switcher() {
           >
             <button className="flex flex-row items-center justify-center">
               <IconHeartHandshake className="inline" />{" "}
-              <span className="mt-1 ml-2 text-left">Dobrovolníci</span>
+              <span className="ml-2 text-left">Dobrovolníci</span>
             </button>
           </Link>
           <Link
@@ -120,7 +120,7 @@ export default function Switcher() {
           >
             <button className="flex flex-row items-center justify-center">
               <IconBrandFacebook className="inline" />{" "}
-              <span className="mt-1 ml-2 text-left">Událost</span>
+              <span className="ml-2 text-left">Událost</span>
             </button>
           </Link>
           <Link
@@ -132,7 +132,7 @@ export default function Switcher() {
           >
             <button className="flex flex-row items-center justify-center">
               <IconCalendar className="inline" />{" "}
-              <span className="mt-1 ml-2 text-left">Uložit event</span>
+              <span className="ml-2 text-left">Uložit event</span>
             </button>
           </Link>
         </div>
