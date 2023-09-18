@@ -6,7 +6,7 @@ export default function Game() {
     // game bord
     let board = document.getElementById("game");
     board.width = Math.min(window.innerWidth * 0.9, 1800);
-    board.height = Math.min(window.innerHeight - 64, 800);
+    board.height = Math.min(window.innerHeight - 64, 600);
     board.jumpHeight = board.height * 0.2;
     board.context = board.getContext("2d");
 
@@ -31,6 +31,17 @@ export default function Game() {
         ground.height
       );
     };
+
+    // duch
+    let duch = {
+      image: new Image(),
+      width: 138 * 0.6,
+      height: 200 * 0.6,
+      x: 300,
+      y: board.height - ground.height - 200 * 0.6 + 4,
+      isVisible: false,
+    };
+    duch.image.src = "/assets/images/game/duch.png";
 
     // piegon
     let piegon = {
@@ -87,6 +98,7 @@ export default function Game() {
     requestAnimationFrame(update);
 
     // handles
+    setInterval(createObstacle, 1000);
     setInterval(piegonMove, 50); // 0.1s
     setInterval(moveGround, 10);
     document.addEventListener("keydown", movePiegon);
@@ -120,6 +132,16 @@ export default function Game() {
         }
       }
 
+      if (duch.isVisible) {
+        board.context.drawImage(
+          duch.image,
+          duch.x,
+          duch.y,
+          duch.width,
+          duch.height
+        );
+        duch.x + duch.width < 0 ? (duch.isVisible = false) : null;
+      }
       board.context.drawImage(
         ground.image,
         ground.x,
@@ -150,6 +172,8 @@ export default function Game() {
     function moveGround() {
       if (ground.x == -102) ground.x = 0;
       else ground.x -= 1;
+
+      if (duch.isVisible) duch.x -= 1;
     }
 
     function movePiegon(e) {
@@ -164,11 +188,18 @@ export default function Game() {
         else piegon.isPiegonJumpingTop = true;
       }
     }
+    function createObstacle() {
+      const rnd = Math.random();
+      if (rnd < 0.2 && !duch.isVisible) {
+        duch.isVisible = true;
+        duch.x = board.width;
+      }
+    }
   });
 
   return (
     <div className="w-full flex flex-col items-center justify-between">
-      <canvas id="game" width={300} height={150}></canvas>
+      <canvas id="game" width={300} height={150} className="bg-white"></canvas>
     </div>
   );
 }
