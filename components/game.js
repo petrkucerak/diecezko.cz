@@ -43,6 +43,17 @@ export default function Game() {
     };
     duch.image.src = "/assets/images/game/duch.png";
 
+    // matous
+    let matous = {
+      image: new Image(),
+      width: 300 * 0.6,
+      height: 227 * 0.6,
+      x: 300,
+      y: board.height - ground.height - 227 * 0.6 + 4,
+      isVisible: false,
+    };
+    matous.image.src = "/assets/images/game/matous.png";
+
     // piegon
     let piegon = {
       startX: 10,
@@ -142,6 +153,17 @@ export default function Game() {
         );
         duch.x + duch.width < 0 ? (duch.isVisible = false) : null;
       }
+
+      if (matous.isVisible) {
+        board.context.drawImage(
+          matous.image,
+          matous.x,
+          matous.y,
+          matous.width,
+          matous.height
+        );
+        matous.x + matous.width < 0 ? (matous.isVisible = false) : null;
+      }
       board.context.drawImage(
         ground.image,
         ground.x,
@@ -174,6 +196,7 @@ export default function Game() {
       else ground.x -= 1;
 
       if (duch.isVisible) duch.x -= 1;
+      if (matous.isVisible) matous.x -= 1;
     }
 
     function movePiegon(e) {
@@ -193,6 +216,9 @@ export default function Game() {
       if (rnd < 0.2 && !duch.isVisible) {
         duch.isVisible = true;
         duch.x = board.width;
+      } else if (rnd < 0.5 && !matous.isVisible) {
+        matous.isVisible = true;
+        matous.x = board.width;
       }
     }
   });
