@@ -1,11 +1,8 @@
 "use client";
 import {
-  IconBuildingFortress,
-  IconJetpack,
   IconMenu2,
   IconMusic,
   IconPuzzle,
-  IconRocket,
   IconX,
 } from "@tabler/icons";
 import Link from "next/link";
@@ -36,7 +33,7 @@ export default function Header() {
   };
   return (
     <>
-      <header className="w-full flex flex-row items-center justify-between h-16">
+      <header className="w-full flex flex-row items-center justify-between h-16 bg-black/90 backdrop-blur-md">
         <div>
           <div className="text-3xl font-caveatBrush ml-4">Diecézko.cz</div>
         </div>
@@ -52,7 +49,7 @@ export default function Header() {
         </div>
       </header>
       <nav
-        className={`absolute w-full backdrop-blur-md bg-black/60 ${burgerMenu} flex flex-col items-center`}
+        className={`absolute w-full backdrop-blur-md bg-black/70 ${burgerMenu} flex flex-col items-center`}
       >
         <ul
           className={`text-2xl flex flex-col items-start justify-around burger-menu-height w-[90vw] max-w-[400px]`}
