@@ -1,15 +1,6 @@
 "use client";
-import {
-  IconBuildingFortress,
-  IconJetpack,
-  IconMenu2,
-  IconMusic,
-  IconPuzzle,
-  IconRocket,
-  IconX,
-} from "@tabler/icons";
+import { IconMenu2, IconMusic, IconPuzzle, IconX } from "@tabler/icons";
 import Link from "next/link";
-import Script from "next/script";
 import { useState } from "react";
 import IconCustomSalas from "./images/salas";
 import IconCustomVesmir from "./images/vesmir";
@@ -21,24 +12,34 @@ export default function Header() {
   const [burgerControl, setBurgerControl] = useState("");
   const [closeControl, setCloseControl] = useState("hidden");
   const [burgerMenu, setBurgerMenu] = useState("hidden");
+  const [header, setHeader] = useState("");
 
   const openMenu = () => {
     setBurgerControl("hidden");
     setCloseControl("");
     setBurgerMenu("");
-    lockScrolling();
+    setHeader("fixed");
   };
   const closeMenu = () => {
     setBurgerControl("");
     setCloseControl("hidden");
     setBurgerMenu("hidden");
-    unlockScrolling();
+    setHeader("");
   };
   return (
     <>
-      <header className="w-full flex flex-row items-center justify-between h-16">
+      <header
+        className={`${header} w-full flex flex-row items-center justify-between h-16 bg-black/90 backdrop-blur-md`}
+      >
         <div>
-          <div className="text-3xl font-caveatBrush ml-4">Diecézko.cz</div>
+          <Link
+            href="/"
+            className="text-3xl font-caveatBrush ml-4"
+            target="_self"
+            title="Diecézko.cz"
+          >
+            Diecézko.cz
+          </Link>
         </div>
         <div>
           <IconMenu2
@@ -52,18 +53,19 @@ export default function Header() {
         </div>
       </header>
       <nav
-        className={`absolute w-full backdrop-blur-md bg-black/60 ${burgerMenu} flex flex-col items-center`}
+        className={`top-16 fixed w-full backdrop-blur-md bg-black/70 ${burgerMenu} flex flex-col items-center`}
       >
         <ul
           className={`text-2xl flex flex-col items-start justify-around burger-menu-height w-[90vw] max-w-[400px]`}
         >
           <Link
-            href=""
+            href="/evzenova-cesta"
             target="_self"
             className="border-b-[#3b3b3b] border-b w-full"
           >
-            <li>
-              <IconCustomEvzen className="inline h-7 my-1" /> Evženova cesta
+            <li className="flex flex-row items-center">
+              <IconCustomEvzen className="inline h-7 w-7 my-1 mr-2" />
+              Evženova cesta
             </li>
           </Link>
           <Link
@@ -71,8 +73,9 @@ export default function Header() {
             target="_self"
             className="border-b-[#3b3b3b] border-b w-full"
           >
-            <li>
-              <IconPuzzle className="inline h-7 my-1" /> Vikariáty
+            <li className="flex flex-row items-center">
+              <IconPuzzle className="inline h-7 w-7 my-1 mr-2" />
+              Vikariáty
             </li>
           </Link>
           <Link
@@ -80,8 +83,9 @@ export default function Header() {
             target="_self"
             className="border-b-[#3b3b3b] border-b w-full"
           >
-            <li>
-              <IconCustomDCM className="inline h-6 my-1" /> DCM Hradec Králové
+            <li className="flex flex-row items-center">
+              <IconCustomDCM className="inline h-7 w-7 my-1 mr-2" />
+              DCM Hradec Králové
             </li>
           </Link>
           <Link
@@ -89,8 +93,9 @@ export default function Header() {
             target="_self"
             className="border-b-[#3b3b3b] border-b w-full"
           >
-            <li>
-              <IconCustomVesmir className="inline h-7 my-1" /> DCŽM Vesmír
+            <li className="flex flex-row items-center">
+              <IconCustomVesmir className="inline h-7 w-7 my-1 mr-2" />
+              DCŽM Vesmír
             </li>
           </Link>
           <Link
@@ -98,8 +103,9 @@ export default function Header() {
             target="_self"
             className="border-b-[#3b3b3b] border-b w-full"
           >
-            <li>
-              <IconCustomSalas className="h-7 inline my-1" /> KSK Salaš
+            <li className="flex flex-row items-center">
+              <IconCustomSalas className="h-7 w-7 inline my-1 mr-2" />
+              KSK Salaš
             </li>
           </Link>
           <Link
@@ -107,9 +113,9 @@ export default function Header() {
             target="_self"
             className="border-b-[#3b3b3b] border-b w-full"
           >
-            <li>
-              {" "}
-              <IconCustomVeka className="inline h-6 my-1" /> Vesmírná kapela
+            <li className="flex flex-row items-center">
+              <IconCustomVeka className="inline h-7 w-7 my-1 mr-2" />
+              Vesmírná kapela
             </li>
           </Link>
           <Link
@@ -117,25 +123,13 @@ export default function Header() {
             target="_self"
             className="border-b-[#3b3b3b] border-b w-full"
           >
-            <li>
-              <IconMusic className="inline h-7 my-1" /> Studenecká schola
+            <li className="flex flex-row items-center">
+              <IconMusic className="inline h-7 w-7 my-1 mr-2" />
+              Studenecká schola
             </li>
           </Link>
         </ul>
       </nav>
-      <Script
-        id="lock-scrolling"
-        dangerouslySetInnerHTML={{
-          __html: `const body = document.getElementById("body");
-  function lockScrolling() {
-    body.classList.add("lock-scrolling");
-    window.scrollTo(0, 0);
-  }
-  function unlockScrolling() {
-    body.classList.remove("lock-scrolling");
-  }`,
-        }}
-      />
     </>
   );
 }

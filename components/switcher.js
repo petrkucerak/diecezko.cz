@@ -48,7 +48,7 @@ export default function Switcher() {
 
   return (
     <div className="flex flex-col items-center">
-      <div className="w-[90vw] max-w-[500px] flex items-center flex-row justify-between md:text-lg bg-[#222] rounded-full font-semibold my-4">
+      <div className="w-[90vw] max-w-[500px] flex items-center flex-row justify-between md:text-lg bg-black/60 rounded-full font-semibold my-4">
         <div
           className={`cursor-pointer rounded-full md:p-3 md:pt-4 md:px-8 p-2 px-4 duration-300 ${DiecezkoButton}`}
           onClick={openDiecezko}
@@ -98,7 +98,7 @@ export default function Switcher() {
           >
             <button className="flex flex-row items-center justify-center">
               <IconPencil className="inline" />{" "}
-              <span className="mt-1 ml-2 text-left">Přihláška</span>
+              <span className="ml-2 text-left">Přihláška</span>
             </button>
           </Link>
           <Link
@@ -109,7 +109,7 @@ export default function Switcher() {
           >
             <button className="flex flex-row items-center justify-center">
               <IconHeartHandshake className="inline" />{" "}
-              <span className="mt-1 ml-2 text-left">Dobrovolníci</span>
+              <span className="ml-2 text-left">Dobrovolníci</span>
             </button>
           </Link>
           <Link
@@ -120,7 +120,7 @@ export default function Switcher() {
           >
             <button className="flex flex-row items-center justify-center">
               <IconBrandFacebook className="inline" />{" "}
-              <span className="mt-1 ml-2 text-left">Událost</span>
+              <span className="ml-2 text-left">Událost</span>
             </button>
           </Link>
           <Link
@@ -132,7 +132,7 @@ export default function Switcher() {
           >
             <button className="flex flex-row items-center justify-center">
               <IconCalendar className="inline" />{" "}
-              <span className="mt-1 ml-2 text-left">Uložit event</span>
+              <span className="ml-2 text-left">Uložit event</span>
             </button>
           </Link>
         </div>
