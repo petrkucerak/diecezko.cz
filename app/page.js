@@ -5,7 +5,7 @@ import Footer from "../components/footer";
 
 export default function Home() {
   return (
-    <main className="ease-in-out duration-300 font-montserrat">
+    <main className="ease-in-out duration-300 font-titilliumWeb">
       <Header />
       <Cover>
         <Switcher />

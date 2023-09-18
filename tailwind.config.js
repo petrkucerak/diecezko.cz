@@ -8,9 +8,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        josefinSans: ["Josefin Sans"],
         caveatBrush: ["Caveat Brush"],
-        montserrat: ["Montserrat"],
+        titilliumWeb: ["Titillium Web"],
       },
     },
   },
