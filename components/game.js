@@ -56,9 +56,9 @@ export default function Game() {
 
     // piegon
     let piegon = {
-      startX: 10,
+      startX: 20,
       startY: board.height - 50 - 11, // board.height - piegon.height - ground.height
-      x: 10,
+      x: 20,
       y: board.height - 50 - 11, // board.height - piegon.height - ground.height
       width: 2 * 25,
       height: 2 * 25,
