@@ -47,9 +47,9 @@ export default function Game() {
     let matous = {
       image: new Image(),
       width: 300 * 0.6,
-      height: 227 * 0.6,
-      x: 300,
-      y: board.height - ground.height - 227 * 0.6 + 4,
+      height: 222 * 0.6,
+      x: 0,
+      y: board.height - ground.height - 222 * 0.6 + 4,
       isVisible: false,
     };
     matous.image.src = "/assets/images/game/matous.png";
@@ -109,7 +109,7 @@ export default function Game() {
     requestAnimationFrame(update);
 
     // handles
-    setInterval(createObstacle, 1000);
+    setInterval(createObstacle, 2000);
     setInterval(piegonMove, 50); // 0.1s
     setInterval(moveGround, 10);
     document.addEventListener("keydown", movePiegon);
