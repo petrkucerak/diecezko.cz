@@ -62,8 +62,9 @@ export default function Header() {
             target="_self"
             className="border-b-[#3b3b3b] border-b w-full"
           >
-            <li>
-              <IconCustomEvzen className="inline h-7 my-1" /> Evženova cesta
+            <li className="flex flex-row items-center">
+              <IconCustomEvzen className="inline h-7 w-7 my-1 mr-2" />Evženova
+              cesta
             </li>
           </Link>
           <Link
@@ -71,8 +72,8 @@ export default function Header() {
             target="_self"
             className="border-b-[#3b3b3b] border-b w-full"
           >
-            <li>
-              <IconPuzzle className="inline h-7 my-1" /> Vikariáty
+            <li className="flex flex-row items-center">
+              <IconPuzzle className="inline h-7 w-7 my-1 mr-2" />Vikariáty
             </li>
           </Link>
           <Link
@@ -80,8 +81,9 @@ export default function Header() {
             target="_self"
             className="border-b-[#3b3b3b] border-b w-full"
           >
-            <li>
-              <IconCustomDCM className="inline h-6 my-1" /> DCM Hradec Králové
+            <li className="flex flex-row items-center">
+              <IconCustomDCM className="inline h-7 w-7 my-1 mr-2" />DCM Hradec
+              Králové
             </li>
           </Link>
           <Link
@@ -89,8 +91,9 @@ export default function Header() {
             target="_self"
             className="border-b-[#3b3b3b] border-b w-full"
           >
-            <li>
-              <IconCustomVesmir className="inline h-7 my-1" /> DCŽM Vesmír
+            <li className="flex flex-row items-center">
+              <IconCustomVesmir className="inline h-7 w-7 my-1 mr-2" />DCŽM
+              Vesmír
             </li>
           </Link>
           <Link
@@ -98,8 +101,8 @@ export default function Header() {
             target="_self"
             className="border-b-[#3b3b3b] border-b w-full"
           >
-            <li>
-              <IconCustomSalas className="h-7 inline my-1" /> KSK Salaš
+            <li className="flex flex-row items-center">
+              <IconCustomSalas className="h-7 w-7 inline my-1 mr-2" />KSK Salaš
             </li>
           </Link>
           <Link
@@ -107,9 +110,9 @@ export default function Header() {
             target="_self"
             className="border-b-[#3b3b3b] border-b w-full"
           >
-            <li>
-              {" "}
-              <IconCustomVeka className="inline h-6 my-1" /> Vesmírná kapela
+            <li className="flex flex-row items-center">
+              <IconCustomVeka className="inline h-7 w-7 my-1 mr-2" />Vesmírná
+              kapela
             </li>
           </Link>
           <Link
@@ -117,8 +120,9 @@ export default function Header() {
             target="_self"
             className="border-b-[#3b3b3b] border-b w-full"
           >
-            <li>
-              <IconMusic className="inline h-7 my-1" /> Studenecká schola
+            <li className="flex flex-row items-center">
+              <IconMusic className="inline h-7 w-7 my-1 mr-2" />Studenecká
+              schola
             </li>
           </Link>
         </ul>
