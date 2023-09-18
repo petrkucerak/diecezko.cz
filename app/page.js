@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Cover from "../components/cover";
 import Header from "../components/header";
 import Switcher from "../components/switcher";

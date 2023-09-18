@@ -8,52 +8,52 @@ import {
 import Link from "next/link";
 import { useState } from "react";
 export default function Switcher() {
-  const [info, setInfo] = useState("");
+  const [Diecezko, setDiecezko] = useState("");
   const [program, setProgram] = useState("hidden");
-  const [spolca, setSpolca] = useState("hidden");
+  const [Info, setInfo] = useState("hidden");
 
-  const [infoButton, setInfoButton] = useState("switcher-selected");
+  const [DiecezkoButton, setDiecezkoButton] = useState("switcher-selected");
   const [programButton, setProgramButton] = useState("");
-  const [spolcaButton, setSpolcaButton] = useState("");
+  const [InfoButton, setInfoButton] = useState("");
 
-  const openInfo = () => {
-    setInfo("");
+  const openDiecezko = () => {
+    setDiecezko("");
     setProgram("hidden");
-    setSpolca("hidden");
+    setInfo("hidden");
 
-    setInfoButton("switcher-selected");
+    setDiecezkoButton("switcher-selected");
     setProgramButton("");
-    setSpolcaButton("");
+    setInfoButton("");
   };
 
   const openProgram = () => {
-    setInfo("hidden");
+    setDiecezko("hidden");
     setProgram("");
-    setSpolca("hidden");
+    setInfo("hidden");
 
-    setInfoButton("");
+    setDiecezkoButton("");
     setProgramButton("switcher-selected");
-    setSpolcaButton("");
+    setInfoButton("");
   };
 
-  const openSpolca = () => {
-    setInfo("hidden");
+  const openInfo = () => {
+    setDiecezko("hidden");
     setProgram("hidden");
-    setSpolca("");
+    setInfo("");
 
-    setInfoButton("");
+    setDiecezkoButton("");
     setProgramButton("");
-    setSpolcaButton("switcher-selected");
+    setInfoButton("switcher-selected");
   };
 
   return (
     <div className="flex flex-col items-center">
       <div className="w-[90vw] max-w-[500px] flex items-center flex-row justify-between md:text-lg bg-[#222] rounded-full font-semibold my-4">
         <div
-          className={`cursor-pointer rounded-full md:p-3 md:pt-4 md:px-8 p-2 px-4 duration-300 ${infoButton}`}
-          onClick={openInfo}
+          className={`cursor-pointer rounded-full md:p-3 md:pt-4 md:px-8 p-2 px-4 duration-300 ${DiecezkoButton}`}
+          onClick={openDiecezko}
         >
-          Informace
+          Diecézko
         </div>
         <div
           className={`cursor-pointer rounded-full md:p-3 md:pt-4 md:px-8 p-2 px-4 duration-300 ${programButton}`}
@@ -62,16 +62,16 @@ export default function Switcher() {
           Program
         </div>
         <div
-          className={`cursor-pointer rounded-full md:p-3 md:pt-4 md:px-8 p-2 px-4 duration-300 ${spolcaButton}`}
-          onClick={openSpolca}
+          className={`cursor-pointer rounded-full md:p-3 md:pt-4 md:px-8 p-2 px-4 duration-300 ${InfoButton}`}
+          onClick={openInfo}
         >
-          Společenství
+          Informace
         </div>
       </div>
-      {/* Informace section */}
+      {/* Diecezkormace section */}
       <div
-        id="info"
-        className={`flex flex-col items-center justify-around min-h-[60vh] ${info}`}
+        id="Diecezko"
+        className={`flex flex-col items-center justify-around min-h-[60vh] ${Diecezko}`}
       >
         <div className="flex flex-col items-center w-full">
           <span className="text-base text-center">
@@ -144,8 +144,8 @@ export default function Switcher() {
       ></div>
       {/* Společenství section */}
       <div
-        id="spolca"
-        className={`flex flex-col items-center justify-around min-h-[60vh] ${spolca}`}
+        id="Info"
+        className={`flex flex-col items-center justify-around min-h-[60vh] ${Info}`}
       ></div>
     </div>
   );
