@@ -1,6 +1,7 @@
 "use client";
 import { IconMenu2, IconX } from "@tabler/icons";
 import Link from "next/link";
+import Script from "next/script";
 import { useState } from "react";
 
 export default function Header() {
@@ -8,19 +9,17 @@ export default function Header() {
   const [closeControl, setCloseControl] = useState("hidden");
   const [burgerMenu, setBurgerMenu] = useState("hidden");
 
-  const body = document.getElementById("body");
-
   const openMenu = () => {
     setBurgerControl("hidden");
     setCloseControl("");
     setBurgerMenu("");
-    body.classList.add("lock-scrolling");
+    lockScrolling();
   };
   const closeMenu = () => {
     setBurgerControl("");
     setCloseControl("hidden");
     setBurgerMenu("hidden");
-    body.classList.remove("lock-scrolling");
+    unlockScrolling();
   };
   return (
     <>
@@ -68,6 +67,18 @@ export default function Header() {
           </Link>
         </ul>
       </nav>
+      <Script
+        id="lock-scrolling"
+        dangerouslySetInnerHTML={{
+          __html: `const body = document.getElementById("body");
+  function lockScrolling() {
+    body.classList.add("lock-scrolling");
+  }
+  function unlockScrolling() {
+    body.classList.remove("lock-scrolling");
+  }`,
+        }}
+      />
     </>
   );
 }
