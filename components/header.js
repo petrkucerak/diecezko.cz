@@ -105,7 +105,7 @@ export default function Header() {
           >
             <li className="flex flex-row items-center">
               <IconCustomSalas className="h-7 w-7 inline my-1 mr-2" />
-              KSK Salaš
+              KAK Salaš
             </li>
           </Link>
           <Link
