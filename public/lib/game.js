@@ -16,6 +16,13 @@ const piegonImgPaths = [
   "/assets/images/game/pigeon_walking_02.png",
   "/assets/images/game/pigeon_walking_03.png",
   "/assets/images/game/pigeon_walking_04.png",
+  "/assets/images/game/pigeon_fly_01.png",
+  "/assets/images/game/pigeon_fly_02.png",
+  "/assets/images/game/pigeon_fly_03.png",
+  "/assets/images/game/pigeon_fly_04.png",
+  "/assets/images/game/pigeon_fly_05.png",
+  "/assets/images/game/pigeon_fly_06.png",
+  "/assets/images/game/pigeon_fly_07.png",
 ];
 let piegonImg;
 
@@ -95,11 +102,30 @@ window.onload = () => {
   };
 
   // load pigon images
-  piegonImg = [new Image(), new Image(), new Image(), new Image()];
+  piegonImg = [
+    new Image(),
+    new Image(),
+    new Image(),
+    new Image(),
+    new Image(),
+    new Image(),
+    new Image(),
+    new Image(),
+    new Image(),
+    new Image(),
+    new Image(),
+  ];
   piegonImg[0].src = piegonImgPaths[0];
   piegonImg[1].src = piegonImgPaths[1];
   piegonImg[2].src = piegonImgPaths[2];
   piegonImg[3].src = piegonImgPaths[3];
+  piegonImg[4].src = piegonImgPaths[4];
+  piegonImg[5].src = piegonImgPaths[5];
+  piegonImg[6].src = piegonImgPaths[6];
+  piegonImg[7].src = piegonImgPaths[7];
+  piegonImg[8].src = piegonImgPaths[8];
+  piegonImg[9].src = piegonImgPaths[9];
+  piegonImg[10].src = piegonImgPaths[10];
 
   // draw piegon
   piegonImg[0].onload = () => {
@@ -130,11 +156,15 @@ function update() {
   // process jumping
   if (piegon.isPiegonJumping) {
     if (piegon.isPiegonJumpingTop) {
-      if (piegon.y > board.jumpHeight) piegon.y -= 1;
+      if (piegon.y > board.jumpHeight) piegon.y -= 1 * 0.008 * piegon.y;
       else piegon.isPiegonJumpingTop = false;
     } else {
-      if (piegon.y !== piegonY) piegon.y += 1;
-      else piegon.isPiegonJumping = false;
+      if (piegon.y < piegonY) piegon.y += 1 * 0.008 * piegon.y;
+      else {
+        piegon.isPiegonJumping = false;
+        piegon.animationNo = 0;
+        piegon.y = piegonY;
+      }
     }
   }
 
@@ -150,9 +180,14 @@ function update() {
 function placeBorder() {}
 
 function piegonMove() {
-  piegon.animationNo == 3
-    ? (piegon.animationNo = 0)
-    : (piegon.animationNo = piegon.animationNo + 1);
+  if (!piegon.isPiegonJumping)
+    piegon.animationNo == 3
+      ? (piegon.animationNo = 0)
+      : (piegon.animationNo = piegon.animationNo + 1);
+  else
+    piegon.animationNo == 10
+      ? (piegon.animationNo = 4)
+      : (piegon.animationNo = piegon.animationNo + 1);
 }
 
 function moveGround() {
@@ -163,12 +198,12 @@ function moveGround() {
 function movePiegon(e) {
   if (gameOver) return;
   if (
-    (e.code == "Space" ||
-      e.code == "ArrowUp" ||
-      (e.type == "touchstart" && e.srcElement.id == "game")) &&
-    piegon.y == piegonY
+    e.code == "Space" ||
+    e.code == "ArrowUp" ||
+    (e.type == "touchstart" && e.srcElement.id == "game")
   ) {
-    piegon.isPiegonJumpingTop = true;
     piegon.isPiegonJumping = true;
+    if (piegon.isPiegonJumpingTop) piegon.isPiegonJumpingTop = false;
+    else piegon.isPiegonJumpingTop = true;
   }
 }
