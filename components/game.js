@@ -144,6 +144,39 @@ export default function Game() {
     };
     vesmir.image.src = "/assets/images/game/vesmir.png";
 
+    // airship1
+    let airship1 = {
+      image: new Image(),
+      width: 287 * 0.5,
+      height: 158 * 0.5,
+      x: 0,
+      y: board.height / 2 + Math.random() * 50,
+      isVisible: false,
+    };
+    airship1.image.src = "/assets/images/game/airship_1.png";
+
+    // airship2
+    let airship2 = {
+      image: new Image(),
+      width: 262 * 0.5,
+      height: 125 * 0.5,
+      x: 0,
+      y: board.height / 2 + Math.random() * 50,
+      isVisible: false,
+    };
+    airship2.image.src = "/assets/images/game/airship_2.png";
+
+    // airship3
+    let airship3 = {
+      image: new Image(),
+      width: 262 * 0.5,
+      height: 146 * 0.5,
+      x: 0,
+      y: board.height / 2 + Math.random() * 50,
+      isVisible: false,
+    };
+    airship3.image.src = "/assets/images/game/airship_3.png";
+
     // piegon
     let piegon = {
       startX: 20,
@@ -199,7 +232,8 @@ export default function Game() {
     requestAnimationFrame(update);
 
     // handles
-    setInterval(createObstacle, 4000);
+    setInterval(createObstacleDown, 5000 + Math.random() * 5000);
+    setInterval(createObstacleMiddle, 7000 + Math.random() * 5000);
     setInterval(piegonMove, 50); // 0.1s
     setInterval(moveGround, 10);
     document.addEventListener("keydown", movePiegon);
@@ -339,6 +373,37 @@ export default function Game() {
         kunka.x + kunka.width < 0 ? (kunka.isVisible = false) : null;
       }
 
+      if (airship1.isVisible) {
+        board.context.drawImage(
+          airship1.image,
+          airship1.x,
+          airship1.y,
+          airship1.width,
+          airship1.height
+        );
+        airship1.x + airship1.width < 0 ? (airship1.isVisible = false) : null;
+      }
+      if (airship2.isVisible) {
+        board.context.drawImage(
+          airship2.image,
+          airship2.x,
+          airship2.y,
+          airship2.width,
+          airship2.height
+        );
+        airship2.x + airship2.width < 0 ? (airship2.isVisible = false) : null;
+      }
+      if (airship3.isVisible) {
+        board.context.drawImage(
+          airship3.image,
+          airship3.x,
+          airship3.y,
+          airship3.width,
+          airship3.height
+        );
+        airship3.x + airship3.width < 0 ? (airship3.isVisible = false) : null;
+      }
+
       board.context.drawImage(
         ground.image,
         ground.x,
@@ -380,6 +445,9 @@ export default function Game() {
       if (kralovstvi.isVisible) kralovstvi.x -= 1;
       if (krematorium.isVisible) krematorium.x -= 1;
       if (vesmir.isVisible) vesmir.x -= 1;
+      if (airship1.isVisible) airship1.x -= 1.5;
+      if (airship2.isVisible) airship2.x -= 1.5;
+      if (airship3.isVisible) airship3.x -= 1.5;
     }
 
     function movePiegon(e) {
@@ -394,7 +462,21 @@ export default function Game() {
         else piegon.isPiegonJumpingTop = true;
       }
     }
-    function createObstacle() {
+    function createObstacleMiddle() {
+      const rnd = Math.random();
+      if (rnd < 0.33333 && !airship1.isVisible) {
+        airship1.isVisible = true;
+        airship1.x = board.width;
+        airship1.y = board.height / 3 + Math.random * 50;
+      } else if (rnd < 0.6667 && !airship2.isVisible) {
+        airship2.isVisible = true;
+        airship2.x = board.width;
+      } else if (rnd < 1 && !airship3.isVisible) {
+        airship3.isVisible = true;
+        airship3.x = board.width;
+      }
+    }
+    function createObstacleDown() {
       const rnd = Math.random();
       if (rnd < 0.1 && !duch.isVisible) {
         duch.isVisible = true;
