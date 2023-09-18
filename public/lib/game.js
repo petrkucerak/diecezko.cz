@@ -1,3 +1,5 @@
+let gameOver = false;
+
 // Board parametrs
 let board;
 const width = window.innerWidth;
@@ -17,19 +19,21 @@ const piegonImgPaths = [
 ];
 let piegonImg;
 
-// graund
-const groundColorPath = "/assets/images/game/ground.png";
-const groundHeight = 6 * 2;
-const groundWidth = 1075 * 2;
-let groundImg;
-
 let piegon = {
   x: piegonX,
   y: piegonY,
   width: piegonWidth,
   height: piegonHeight,
   animationNo: 0,
+  isPiegonJumpingTop: false,
+  isPiegonJumping: false,
 };
+
+// graund
+const groundColorPath = "/assets/images/game/ground.png";
+const groundHeight = 6 * 2;
+const groundWidth = 1075 * 2;
+let groundImg;
 
 let ground = {
   x: 0,
@@ -38,10 +42,25 @@ let ground = {
   height: groundHeight,
 };
 
+// matous
+const matousColorPath = "/assets/images/game/matous.png";
+const matousHeight = 200 * 0.5;
+const matousWidth = 150 * 0.5;
+let matousImg;
+
+let matous = {
+  x: 600,
+  y: height - groundHeight - matousHeight,
+  width: matousWidth,
+  height: matousHeight,
+};
+
+// MAIN FUNCTION
 window.onload = () => {
   board = document.getElementById("game");
   board.width = width;
   board.height = height;
+  board.jumpHeight = height * 0.5;
 
   context = board.getContext("2d");
 
@@ -57,6 +76,21 @@ window.onload = () => {
       ground.y,
       ground.width,
       ground.height
+    );
+  };
+
+  // load matous
+  matousImg = new Image();
+  matousImg.src = matousColorPath;
+
+  // draw ground
+  matousImg.onload = () => {
+    context.drawImage(
+      matousImg,
+      matous.x,
+      matous.y,
+      matous.width,
+      matous.height
     );
   };
 
@@ -82,6 +116,8 @@ window.onload = () => {
   setInterval(placeBorder, 1000); // spawn building
   setInterval(piegonMove, 50); // 0.1s
   setInterval(moveGround, 10);
+  document.addEventListener("keydown", movePiegon);
+  document.addEventListener("touchstart", movePiegon);
 };
 
 function update() {
@@ -89,6 +125,18 @@ function update() {
   context.clearRect(0, 0, board.width, board.height);
 
   context.drawImage(groundImg, ground.x, ground.y, ground.width, ground.height);
+  context.drawImage(matousImg, matous.x, matous.y, matous.width, matous.height);
+
+  // process jumping
+  if (piegon.isPiegonJumping) {
+    if (piegon.isPiegonJumpingTop) {
+      if (piegon.y > board.jumpHeight) piegon.y -= 1;
+      else piegon.isPiegonJumpingTop = false;
+    } else {
+      if (piegon.y !== piegonY) piegon.y += 1;
+      else piegon.isPiegonJumping = false;
+    }
+  }
 
   context.drawImage(
     piegonImg[piegon.animationNo],
@@ -110,4 +158,17 @@ function piegonMove() {
 function moveGround() {
   if (ground.x == -102) ground.x = 0;
   else ground.x -= 1;
+}
+
+function movePiegon(e) {
+  if (gameOver) return;
+  if (
+    (e.code == "Space" ||
+      e.code == "ArrowUp" ||
+      (e.type == "touchstart" && e.srcElement.id == "game")) &&
+    piegon.y == piegonY
+  ) {
+    piegon.isPiegonJumpingTop = true;
+    piegon.isPiegonJumping = true;
+  }
 }
