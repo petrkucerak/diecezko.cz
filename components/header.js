@@ -13,22 +13,25 @@ export default function Header() {
   const [burgerControl, setBurgerControl] = useState("");
   const [closeControl, setCloseControl] = useState("hidden");
   const [burgerMenu, setBurgerMenu] = useState("hidden");
+  const [header, setHeader] = useState("");
 
   const openMenu = () => {
     setBurgerControl("hidden");
     setCloseControl("");
     setBurgerMenu("");
-    lockScrolling();
+    setHeader("fixed");
   };
   const closeMenu = () => {
     setBurgerControl("");
     setCloseControl("hidden");
     setBurgerMenu("hidden");
-    unlockScrolling();
+    setHeader("");
   };
   return (
     <>
-      <header className="w-full flex flex-row items-center justify-between h-16 bg-black/90 backdrop-blur-md">
+      <header
+        className={`${header} w-full flex flex-row items-center justify-between h-16 bg-black/90 backdrop-blur-md`}
+      >
         <div>
           <Link
             href="/"
@@ -51,7 +54,7 @@ export default function Header() {
         </div>
       </header>
       <nav
-        className={`absolute w-full backdrop-blur-md bg-black/70 ${burgerMenu} flex flex-col items-center`}
+        className={`top-16 fixed w-full backdrop-blur-md bg-black/70 ${burgerMenu} flex flex-col items-center`}
       >
         <ul
           className={`text-2xl flex flex-col items-start justify-around burger-menu-height w-[90vw] max-w-[400px]`}
@@ -128,19 +131,6 @@ export default function Header() {
           </Link>
         </ul>
       </nav>
-      <Script
-        id="lock-scrolling"
-        dangerouslySetInnerHTML={{
-          __html: `const body = document.getElementById("body");
-  function lockScrolling() {
-    body.classList.add("lock-scrolling");
-    window.scrollTo(0, 0);
-  }
-  function unlockScrolling() {
-    body.classList.remove("lock-scrolling");
-  }`,
-        }}
-      />
     </>
   );
 }
