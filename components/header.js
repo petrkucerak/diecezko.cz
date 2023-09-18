@@ -72,7 +72,7 @@ export default function Header() {
             className="border-b-[#3b3b3b] border-b w-full"
           >
             <li>
-              <IconPuzzle className="inline" /> Vikariáty
+              <IconPuzzle className="inline h-7 my-1" /> Vikariáty
             </li>
           </Link>
           <Link
