@@ -34,6 +34,7 @@ let piegon = {
   animationNo: 0,
   isPiegonJumpingTop: false,
   isPiegonJumping: false,
+  lastClick: 0,
 };
 
 // graund
@@ -67,7 +68,7 @@ window.onload = () => {
   board = document.getElementById("game");
   board.width = width;
   board.height = height;
-  board.jumpHeight = height * 0.5;
+  board.jumpHeight = height * 0.2;
 
   context = board.getContext("2d");
 
@@ -155,11 +156,12 @@ function update() {
 
   // process jumping
   if (piegon.isPiegonJumping) {
+    piegon.lastClick < 30 ? (piegon.lastClick += 1) : (piegon.lastClick = 30);
     if (piegon.isPiegonJumpingTop) {
-      if (piegon.y > board.jumpHeight) piegon.y -= 1 * 0.008 * piegon.y;
+      if (piegon.y > board.jumpHeight) piegon.y -= 1 * 0.06 * piegon.lastClick;
       else piegon.isPiegonJumpingTop = false;
     } else {
-      if (piegon.y < piegonY) piegon.y += 1 * 0.008 * piegon.y;
+      if (piegon.y < piegonY) piegon.y += 1 * 0.1 * piegon.lastClick;
       else {
         piegon.isPiegonJumping = false;
         piegon.animationNo = 0;
@@ -203,6 +205,7 @@ function movePiegon(e) {
     (e.type == "touchstart" && e.srcElement.id == "game")
   ) {
     piegon.isPiegonJumping = true;
+    piegon.lastClick = 0;
     if (piegon.isPiegonJumpingTop) piegon.isPiegonJumpingTop = false;
     else piegon.isPiegonJumpingTop = true;
   }
