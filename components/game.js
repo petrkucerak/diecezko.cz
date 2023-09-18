@@ -177,6 +177,17 @@ export default function Game() {
     };
     airship3.image.src = "/assets/images/game/airship_3.png";
 
+    // rocket
+    let rocket = {
+      image: new Image(),
+      width: 500 * 0.2,
+      height: 269 * 0.2,
+      x: 0,
+      y: (board.height / 3) - Math.random() * 20,
+      isVisible: false,
+    };
+    rocket.image.src = "/assets/images/game/rocket.png";
+
     // piegon
     let piegon = {
       startX: 20,
@@ -234,6 +245,8 @@ export default function Game() {
     // handles
     setInterval(createObstacleDown, 5000 + Math.random() * 5000);
     setInterval(createObstacleMiddle, 7000 + Math.random() * 5000);
+    setInterval(createObstacleTop, 10000 + Math.random() * 10000);
+
     setInterval(piegonMove, 50); // 0.1s
     setInterval(moveGround, 10);
     document.addEventListener("keydown", movePiegon);
@@ -403,6 +416,16 @@ export default function Game() {
         );
         airship3.x + airship3.width < 0 ? (airship3.isVisible = false) : null;
       }
+      if (rocket.isVisible) {
+        board.context.drawImage(
+          rocket.image,
+          rocket.x,
+          rocket.y,
+          rocket.width,
+          rocket.height
+        );
+        rocket.x + rocket.width < 0 ? (rocket.isVisible = false) : null;
+      }
 
       board.context.drawImage(
         ground.image,
@@ -448,6 +471,7 @@ export default function Game() {
       if (airship1.isVisible) airship1.x -= 1.5;
       if (airship2.isVisible) airship2.x -= 1.5;
       if (airship3.isVisible) airship3.x -= 1.5;
+      if (rocket.isVisible) rocket.x -= 3;
     }
 
     function movePiegon(e) {
@@ -462,12 +486,18 @@ export default function Game() {
         else piegon.isPiegonJumpingTop = true;
       }
     }
+    function createObstacleTop() {
+      const rnd = Math.random();
+      if (rnd < 1 && !rocket.isVisible) {
+        rocket.isVisible = true;
+        rocket.x = board.width;
+      }
+    }
     function createObstacleMiddle() {
       const rnd = Math.random();
       if (rnd < 0.33333 && !airship1.isVisible) {
         airship1.isVisible = true;
         airship1.x = board.width;
-        airship1.y = board.height / 3 + Math.random * 50;
       } else if (rnd < 0.6667 && !airship2.isVisible) {
         airship2.isVisible = true;
         airship2.x = board.width;
