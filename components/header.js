@@ -1,8 +1,19 @@
 "use client";
-import { IconMenu2, IconX } from "@tabler/icons";
+import {
+  IconBuildingFortress,
+  IconJetpack,
+  IconMenu2,
+  IconPuzzle,
+  IconRocket,
+  IconX,
+} from "@tabler/icons";
 import Link from "next/link";
 import Script from "next/script";
 import { useState } from "react";
+import IconCustomSalas from "./images/salas";
+import IconCustomVesmir from "./images/vesmir";
+import IconCustomDCM from "./images/dcm-hk";
+import IconCustomEvzen from "./images/evzen";
 
 export default function Header() {
   const [burgerControl, setBurgerControl] = useState("");
@@ -39,30 +50,68 @@ export default function Header() {
         </div>
       </header>
       <nav
-        className={`absolute w-full backdrop-blur-md bg-black/30 ${burgerMenu}`}
+        className={`absolute w-full backdrop-blur-md bg-black/60 ${burgerMenu} flex flex-col items-center`}
       >
         <ul
-          className={`text-2xl flex flex-col items-center justify-around burger-menu-height`}
+          className={`text-2xl flex flex-col items-start justify-around burger-menu-height w-[90vw] max-w-[400px]`}
         >
-          <Link href="" target="_self">
-            <li>Evženova cesta</li>
+          <Link
+            href=""
+            target="_self"
+            className="border-b-[#3b3b3b] border-b w-full"
+          >
+            <li>
+              <IconCustomEvzen className="inline h-7 my-1" /> Evženova cesta
+            </li>
           </Link>
-          <Link href="" target="_self">
-            <li>Vikariáty</li>
+          <Link
+            href=""
+            target="_self"
+            className="border-b-[#3b3b3b] border-b w-full"
+          >
+            <li>
+              <IconPuzzle className="inline" /> Vikariáty
+            </li>
           </Link>
-          <Link href="" target="_self">
-            <li>DCM Hradec Králové</li>
+          <Link
+            href=""
+            target="_self"
+            className="border-b-[#3b3b3b] border-b w-full"
+          >
+            <li>
+              <IconCustomDCM className="inline h-6 my-1" /> DCM Hradec Králové
+            </li>
           </Link>
-          <Link href="" target="_self">
-            <li>DCŽM Vesmír</li>
+          <Link
+            href=""
+            target="_self"
+            className="border-b-[#3b3b3b] border-b w-full"
+          >
+            <li>
+              <IconCustomVesmir className="inline h-7 my-1" /> DCŽM Vesmír
+            </li>
           </Link>
-          <Link href="" target="_self">
-            <li>KSK Salaš</li>
+          <Link
+            href=""
+            target="_self"
+            className="border-b-[#3b3b3b] border-b w-full"
+          >
+            <li>
+              <IconCustomSalas className="h-7 inline my-1" /> KSK Salaš
+            </li>
           </Link>
-          <Link href="" target="_self">
+          <Link
+            href=""
+            target="_self"
+            className="border-b-[#3b3b3b] border-b w-full"
+          >
             <li>Vesmírná kapela</li>
           </Link>
-          <Link href="" target="_self">
+          <Link
+            href=""
+            target="_self"
+            className="border-b-[#3b3b3b] border-b w-full"
+          >
             <li>Studenecká schola</li>
           </Link>
         </ul>
