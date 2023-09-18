@@ -54,16 +54,49 @@ export default function Game() {
     };
     matous.image.src = "/assets/images/game/matous.png";
 
+    // barbora
+    let barbora = {
+      image: new Image(),
+      width: 300 * 0.5,
+      height: 263 * 0.5,
+      x: 0,
+      y: board.height - ground.height - 263 * 0.5 + 10,
+      isVisible: false,
+    };
+    barbora.image.src = "/assets/images/game/barbora.png";
+
+    // litomysl
+    let litomysl = {
+      image: new Image(),
+      width: 300 * 0.5,
+      height: 197 * 0.5,
+      x: 0,
+      y: board.height - ground.height - 197 * 0.5 + 10,
+      isVisible: false,
+    };
+    litomysl.image.src = "/assets/images/game/litomysl.png";
+
     // opocno
     let opocno = {
       image: new Image(),
-      width: 300 * 0.6,
-      height: 152 * 0.6,
+      width: 300 * 0.5,
+      height: 152 * 0.5,
       x: 0,
-      y: board.height - ground.height - 152 * 0.6 + 10,
+      y: board.height - ground.height - 152 * 0.5 + 10,
       isVisible: false,
     };
     opocno.image.src = "/assets/images/game/opocno.png";
+
+    // kunka
+    let kunka = {
+      image: new Image(),
+      width: 600 * 0.5,
+      height: 189 * 0.5,
+      x: 0,
+      y: board.height - ground.height - 189 * 0.5 + 10,
+      isVisible: false,
+    };
+    kunka.image.src = "/assets/images/game/kunka.png";
 
     // piegon
     let piegon = {
@@ -120,7 +153,7 @@ export default function Game() {
     requestAnimationFrame(update);
 
     // handles
-    setInterval(createObstacle, 10000);
+    setInterval(createObstacle, 4000);
     setInterval(piegonMove, 50); // 0.1s
     setInterval(moveGround, 10);
     document.addEventListener("keydown", movePiegon);
@@ -175,6 +208,26 @@ export default function Game() {
         );
         matous.x + matous.width < 0 ? (matous.isVisible = false) : null;
       }
+      if (litomysl.isVisible) {
+        board.context.drawImage(
+          litomysl.image,
+          litomysl.x,
+          litomysl.y,
+          litomysl.width,
+          litomysl.height
+        );
+        litomysl.x + litomysl.width < 0 ? (litomysl.isVisible = false) : null;
+      }
+      if (barbora.isVisible) {
+        board.context.drawImage(
+          barbora.image,
+          barbora.x,
+          barbora.y,
+          barbora.width,
+          barbora.height
+        );
+        barbora.x + barbora.width < 0 ? (barbora.isVisible = false) : null;
+      }
       if (opocno.isVisible) {
         board.context.drawImage(
           opocno.image,
@@ -184,6 +237,16 @@ export default function Game() {
           opocno.height
         );
         opocno.x + opocno.width < 0 ? (opocno.isVisible = false) : null;
+      }
+      if (kunka.isVisible) {
+        board.context.drawImage(
+          kunka.image,
+          kunka.x,
+          kunka.y,
+          kunka.width,
+          kunka.height
+        );
+        kunka.x + kunka.width < 0 ? (kunka.isVisible = false) : null;
       }
 
       board.context.drawImage(
@@ -220,6 +283,9 @@ export default function Game() {
       if (duch.isVisible) duch.x -= 1;
       if (matous.isVisible) matous.x -= 1;
       if (opocno.isVisible) opocno.x -= 1;
+      if (kunka.isVisible) kunka.x -= 1;
+      if (litomysl.isVisible) litomysl.x -= 1;
+      if (barbora.isVisible) barbora.x -= 1;
     }
 
     function movePiegon(e) {
@@ -236,15 +302,24 @@ export default function Game() {
     }
     function createObstacle() {
       const rnd = Math.random();
-      if (rnd < 0.2 && !duch.isVisible) {
+      if (rnd < 0.1 && !duch.isVisible) {
         duch.isVisible = true;
         duch.x = board.width;
-      } else if (rnd < 0.5 && !matous.isVisible) {
+      } else if (rnd < 0.2 && !matous.isVisible) {
         matous.isVisible = true;
         matous.x = board.width;
-      } else if (rnd < 0.7 && !opocno.isVisible) {
+      } else if (rnd < 0.3 && !opocno.isVisible) {
         opocno.isVisible = true;
         opocno.x = board.width;
+      } else if (rnd < 0.4 && !kunka.isVisible) {
+        kunka.isVisible = true;
+        kunka.x = board.width;
+      } else if (rnd < 0.5 && !litomysl.isVisible) {
+        litomysl.isVisible = true;
+        litomysl.x = board.width;
+      } else if (rnd < 0.6 && !barbora.isVisible) {
+        barbora.isVisible = true;
+        barbora.x = board.width;
       }
     }
   });
