@@ -644,20 +644,65 @@ export default function Game() {
       if (bg4.x == -160) bg4.x = 0;
       else bg4.x -= 0.5;
 
-      if (duch.isVisible) duch.x -= 1;
-      if (matous.isVisible) matous.x -= 1;
-      if (opocno.isVisible) opocno.x -= 1;
-      if (kunka.isVisible) kunka.x -= 1;
-      if (litomysl.isVisible) litomysl.x -= 1;
-      if (barbora.isVisible) barbora.x -= 1;
-      if (destna.isVisible) destna.x -= 1;
-      if (kralovstvi.isVisible) kralovstvi.x -= 1;
-      if (krematorium.isVisible) krematorium.x -= 1;
-      if (vesmir.isVisible) vesmir.x -= 1;
-      if (airship1.isVisible) airship1.x -= 1.5;
-      if (airship2.isVisible) airship2.x -= 1.5;
-      if (airship3.isVisible) airship3.x -= 1.5;
-      if (rocket.isVisible) rocket.x -= 3;
+      // Handle obstacle position
+      {
+        if (duch.isVisible) {
+          duch.x -= 1;
+          colisionDetect(duch);
+        }
+        if (matous.isVisible) {
+          matous.x -= 1;
+          colisionDetect(matous);
+        }
+        if (opocno.isVisible) {
+          opocno.x -= 1;
+          colisionDetect(opocno);
+        }
+        if (kunka.isVisible) {
+          kunka.x -= 1;
+          colisionDetect(kunka);
+        }
+        if (litomysl.isVisible) {
+          litomysl.x -= 1;
+          colisionDetect(litomysl);
+        }
+        if (barbora.isVisible) {
+          barbora.x -= 1;
+          colisionDetect(barbora);
+        }
+        if (destna.isVisible) {
+          destna.x -= 1;
+          colisionDetect(destna);
+        }
+        if (kralovstvi.isVisible) {
+          kralovstvi.x -= 1;
+          colisionDetect(kralovstvi);
+        }
+        if (krematorium.isVisible) {
+          krematorium.x -= 1;
+          colisionDetect(krematorium);
+        }
+        if (vesmir.isVisible) {
+          vesmir.x -= 1;
+          colisionDetect(vesmir);
+        }
+        if (airship1.isVisible) {
+          airship1.x -= 1.5;
+          colisionDetect(airship1);
+        }
+        if (airship2.isVisible) {
+          airship2.x -= 1.5;
+          colisionDetect(airship2);
+        }
+        if (airship3.isVisible) {
+          airship3.x -= 1.5;
+          colisionDetect(airship3);
+        }
+        if (rocket.isVisible) {
+          rocket.x -= 3;
+          colisionDetect(rocket);
+        }
+      }
 
       if (cake.isVisible) {
         cake.x -= 1;
