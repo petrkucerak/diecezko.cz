@@ -338,7 +338,6 @@ export default function Game() {
     });
 
     function update() {
-      requestAnimationFrame(update);
       board.context.clearRect(0, 0, board.width, board.height);
 
       //background
@@ -375,178 +374,184 @@ export default function Game() {
           }
         }
       }
-      // foods layer
-      if (cake.isVisible) {
+
+      // DRAW UPDATES
+      {
+        // foods layer
+        if (cake.isVisible) {
+          board.context.drawImage(
+            cake.image,
+            cake.x,
+            cake.y,
+            cake.width,
+            cake.height
+          );
+          cake.x + cake.width < 0 ? (cake.isVisible = false) : null;
+        }
+        // buildings layer
+        if (duch.isVisible) {
+          board.context.drawImage(
+            duch.image,
+            duch.x,
+            duch.y,
+            duch.width,
+            duch.height
+          );
+          duch.x + duch.width < 0 ? (duch.isVisible = false) : null;
+        }
+
+        if (matous.isVisible) {
+          board.context.drawImage(
+            matous.image,
+            matous.x,
+            matous.y,
+            matous.width,
+            matous.height
+          );
+          matous.x + matous.width < 0 ? (matous.isVisible = false) : null;
+        }
+        if (litomysl.isVisible) {
+          board.context.drawImage(
+            litomysl.image,
+            litomysl.x,
+            litomysl.y,
+            litomysl.width,
+            litomysl.height
+          );
+          litomysl.x + litomysl.width < 0 ? (litomysl.isVisible = false) : null;
+        }
+        if (destna.isVisible) {
+          board.context.drawImage(
+            destna.image,
+            destna.x,
+            destna.y,
+            destna.width,
+            destna.height
+          );
+          destna.x + destna.width < 0 ? (destna.isVisible = false) : null;
+        }
+        if (kralovstvi.isVisible) {
+          board.context.drawImage(
+            kralovstvi.image,
+            kralovstvi.x,
+            kralovstvi.y,
+            kralovstvi.width,
+            kralovstvi.height
+          );
+          kralovstvi.x + kralovstvi.width < 0
+            ? (kralovstvi.isVisible = false)
+            : null;
+        }
+        if (krematorium.isVisible) {
+          board.context.drawImage(
+            krematorium.image,
+            krematorium.x,
+            krematorium.y,
+            krematorium.width,
+            krematorium.height
+          );
+          krematorium.x + krematorium.width < 0
+            ? (krematorium.isVisible = false)
+            : null;
+        }
+        if (barbora.isVisible) {
+          board.context.drawImage(
+            barbora.image,
+            barbora.x,
+            barbora.y,
+            barbora.width,
+            barbora.height
+          );
+          barbora.x + barbora.width < 0 ? (barbora.isVisible = false) : null;
+        }
+        if (opocno.isVisible) {
+          board.context.drawImage(
+            opocno.image,
+            opocno.x,
+            opocno.y,
+            opocno.width,
+            opocno.height
+          );
+          opocno.x + opocno.width < 0 ? (opocno.isVisible = false) : null;
+        }
+        if (vesmir.isVisible) {
+          board.context.drawImage(
+            vesmir.image,
+            vesmir.x,
+            vesmir.y,
+            vesmir.width,
+            vesmir.height
+          );
+          vesmir.x + vesmir.width < 0 ? (vesmir.isVisible = false) : null;
+        }
+        if (kunka.isVisible) {
+          board.context.drawImage(
+            kunka.image,
+            kunka.x,
+            kunka.y,
+            kunka.width,
+            kunka.height
+          );
+          kunka.x + kunka.width < 0 ? (kunka.isVisible = false) : null;
+        }
+
+        if (airship1.isVisible) {
+          board.context.drawImage(
+            airship1.image,
+            airship1.x,
+            airship1.y,
+            airship1.width,
+            airship1.height
+          );
+          airship1.x + airship1.width < 0 ? (airship1.isVisible = false) : null;
+        }
+        if (airship2.isVisible) {
+          board.context.drawImage(
+            airship2.image,
+            airship2.x,
+            airship2.y,
+            airship2.width,
+            airship2.height
+          );
+          airship2.x + airship2.width < 0 ? (airship2.isVisible = false) : null;
+        }
+        if (airship3.isVisible) {
+          board.context.drawImage(
+            airship3.image,
+            airship3.x,
+            airship3.y,
+            airship3.width,
+            airship3.height
+          );
+          airship3.x + airship3.width < 0 ? (airship3.isVisible = false) : null;
+        }
+        if (rocket.isVisible) {
+          board.context.drawImage(
+            rocket.image,
+            rocket.x,
+            rocket.y,
+            rocket.width,
+            rocket.height
+          );
+          rocket.x + rocket.width < 0 ? (rocket.isVisible = false) : null;
+        }
         board.context.drawImage(
-          cake.image,
-          cake.x,
-          cake.y,
-          cake.width,
-          cake.height
+          ground.image,
+          ground.x,
+          ground.y,
+          ground.width,
+          ground.height
         );
-        cake.x + cake.width < 0 ? (cake.isVisible = false) : null;
-      }
-      // buildings layer
-      if (duch.isVisible) {
         board.context.drawImage(
-          duch.image,
-          duch.x,
-          duch.y,
-          duch.width,
-          duch.height
+          piegon.image[piegon.animationNo],
+          piegon.x,
+          piegon.y,
+          piegon.width,
+          piegon.height
         );
-        duch.x + duch.width < 0 ? (duch.isVisible = false) : null;
       }
 
-      if (matous.isVisible) {
-        board.context.drawImage(
-          matous.image,
-          matous.x,
-          matous.y,
-          matous.width,
-          matous.height
-        );
-        matous.x + matous.width < 0 ? (matous.isVisible = false) : null;
-      }
-      if (litomysl.isVisible) {
-        board.context.drawImage(
-          litomysl.image,
-          litomysl.x,
-          litomysl.y,
-          litomysl.width,
-          litomysl.height
-        );
-        litomysl.x + litomysl.width < 0 ? (litomysl.isVisible = false) : null;
-      }
-      if (destna.isVisible) {
-        board.context.drawImage(
-          destna.image,
-          destna.x,
-          destna.y,
-          destna.width,
-          destna.height
-        );
-        destna.x + destna.width < 0 ? (destna.isVisible = false) : null;
-      }
-      if (kralovstvi.isVisible) {
-        board.context.drawImage(
-          kralovstvi.image,
-          kralovstvi.x,
-          kralovstvi.y,
-          kralovstvi.width,
-          kralovstvi.height
-        );
-        kralovstvi.x + kralovstvi.width < 0
-          ? (kralovstvi.isVisible = false)
-          : null;
-      }
-      if (krematorium.isVisible) {
-        board.context.drawImage(
-          krematorium.image,
-          krematorium.x,
-          krematorium.y,
-          krematorium.width,
-          krematorium.height
-        );
-        krematorium.x + krematorium.width < 0
-          ? (krematorium.isVisible = false)
-          : null;
-      }
-      if (barbora.isVisible) {
-        board.context.drawImage(
-          barbora.image,
-          barbora.x,
-          barbora.y,
-          barbora.width,
-          barbora.height
-        );
-        barbora.x + barbora.width < 0 ? (barbora.isVisible = false) : null;
-      }
-      if (opocno.isVisible) {
-        board.context.drawImage(
-          opocno.image,
-          opocno.x,
-          opocno.y,
-          opocno.width,
-          opocno.height
-        );
-        opocno.x + opocno.width < 0 ? (opocno.isVisible = false) : null;
-      }
-      if (vesmir.isVisible) {
-        board.context.drawImage(
-          vesmir.image,
-          vesmir.x,
-          vesmir.y,
-          vesmir.width,
-          vesmir.height
-        );
-        vesmir.x + vesmir.width < 0 ? (vesmir.isVisible = false) : null;
-      }
-      if (kunka.isVisible) {
-        board.context.drawImage(
-          kunka.image,
-          kunka.x,
-          kunka.y,
-          kunka.width,
-          kunka.height
-        );
-        kunka.x + kunka.width < 0 ? (kunka.isVisible = false) : null;
-      }
-
-      if (airship1.isVisible) {
-        board.context.drawImage(
-          airship1.image,
-          airship1.x,
-          airship1.y,
-          airship1.width,
-          airship1.height
-        );
-        airship1.x + airship1.width < 0 ? (airship1.isVisible = false) : null;
-      }
-      if (airship2.isVisible) {
-        board.context.drawImage(
-          airship2.image,
-          airship2.x,
-          airship2.y,
-          airship2.width,
-          airship2.height
-        );
-        airship2.x + airship2.width < 0 ? (airship2.isVisible = false) : null;
-      }
-      if (airship3.isVisible) {
-        board.context.drawImage(
-          airship3.image,
-          airship3.x,
-          airship3.y,
-          airship3.width,
-          airship3.height
-        );
-        airship3.x + airship3.width < 0 ? (airship3.isVisible = false) : null;
-      }
-      if (rocket.isVisible) {
-        board.context.drawImage(
-          rocket.image,
-          rocket.x,
-          rocket.y,
-          rocket.width,
-          rocket.height
-        );
-        rocket.x + rocket.width < 0 ? (rocket.isVisible = false) : null;
-      }
-      board.context.drawImage(
-        ground.image,
-        ground.x,
-        ground.y,
-        ground.width,
-        ground.height
-      );
-      board.context.drawImage(
-        piegon.image[piegon.animationNo],
-        piegon.x,
-        piegon.y,
-        piegon.width,
-        piegon.height
-      );
+      requestAnimationFrame(update);
     }
 
     function piegonMove() {
@@ -603,7 +608,7 @@ export default function Game() {
           piegon.isPiegonEating = true;
           piegon.animationNo = 11;
         }
-        if (cake.x == piegon.x + piegon.width - 4 && piegon.isPiegonEating) {
+        if (cake.x == piegon.x + piegon.width - 2 && piegon.isPiegonEating) {
           cake.isVisible = false;
           gameScore.innerText = parseInt(gameScore.innerText) + 1;
         }
@@ -729,7 +734,6 @@ export default function Game() {
 
     const gameElement = document.getElementById("game");
     if (gameElement) gameElement.scrollIntoView({ behavior: "smooth" });
-
   };
 
   const openSinSlavy = () => {
