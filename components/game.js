@@ -1,5 +1,4 @@
 "use client";
-import { IconInfoCircle, IconPlayerPause, IconRefresh } from "@tabler/icons";
 import { useEffect, useState } from "react";
 
 // pixle art generato https://giventofly.github.io/pixelit/#tryit
@@ -15,7 +14,7 @@ export default function Game() {
 
     const gameScore = document.getElementById("gameScore");
 
-    let game = { isGameOver: false, scrore: 0 };
+    let game = { isGameOver: false, time: 0 };
 
     // background
     board.context.fillStyle = "#588DBE";
@@ -730,6 +729,7 @@ export default function Game() {
 
     const gameElement = document.getElementById("game");
     if (gameElement) gameElement.scrollIntoView({ behavior: "smooth" });
+
   };
 
   const openSinSlavy = () => {
