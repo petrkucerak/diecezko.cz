@@ -256,6 +256,33 @@ export default function Game() {
       isVisible: false,
     };
     cake.image.src = "/assets/images/game/cake.png";
+    let donut = {
+      image: new Image(),
+      width: 16 * 1,
+      height: 13 * 1,
+      x: 0,
+      y: board.height - ground.height - 13,
+      isVisible: false,
+    };
+    donut.image.src = "/assets/images/game/donut.png";
+    let meat = {
+      image: new Image(),
+      width: 15 * 1,
+      height: 14 * 1,
+      x: 0,
+      y: board.height - ground.height - 14,
+      isVisible: false,
+    };
+    meat.image.src = "/assets/images/game/meat.png";
+    let tofu = {
+      image: new Image(),
+      width: 12 * 1,
+      height: 11 * 1,
+      x: 0,
+      y: board.height - ground.height - 11,
+      isVisible: false,
+    };
+    tofu.image.src = "/assets/images/game/tofu.png";
 
     // piegon
     let piegon = {
@@ -324,7 +351,7 @@ export default function Game() {
     setInterval(createObstacleDown, 5000 + Math.random() * 5000);
     setInterval(createObstacleMiddle, 7000 + Math.random() * 5000);
     setInterval(createObstacleTop, 10000 + Math.random() * 10000);
-    setInterval(spawnFood, 1000);
+    spawnFood();
 
     setInterval(piegonMove, 50); // 0.1s
     setInterval(moveGround, 10);
@@ -387,6 +414,36 @@ export default function Game() {
             cake.height
           );
           cake.x + cake.width < 0 ? (cake.isVisible = false) : null;
+        }
+        if (donut.isVisible) {
+          board.context.drawImage(
+            donut.image,
+            donut.x,
+            donut.y,
+            donut.width,
+            donut.height
+          );
+          donut.x + donut.width < 0 ? (donut.isVisible = false) : null;
+        }
+        if (meat.isVisible) {
+          board.context.drawImage(
+            meat.image,
+            meat.x,
+            meat.y,
+            meat.width,
+            meat.height
+          );
+          meat.x + meat.width < 0 ? (meat.isVisible = false) : null;
+        }
+        if (tofu.isVisible) {
+          board.context.drawImage(
+            tofu.image,
+            tofu.x,
+            tofu.y,
+            tofu.width,
+            tofu.height
+          );
+          tofu.x + tofu.width < 0 ? (tofu.isVisible = false) : null;
         }
         // buildings layer
         if (duch.isVisible) {
@@ -604,12 +661,53 @@ export default function Game() {
 
       if (cake.isVisible) {
         cake.x -= 1;
-        if (cake.x == piegon.x + piegon.width && !piegon.isPiegonJumping) {
+        if (
+          cake.x == piegon.x + piegon.width &&
+          !piegon.isPiegonJumping &&
+          !piegon.isPiegonEating
+        ) {
           piegon.isPiegonEating = true;
-          piegon.animationNo = 11;
-        }
-        if (cake.x == piegon.x + piegon.width - 2 && piegon.isPiegonEating) {
           cake.isVisible = false;
+          piegon.animationNo = 11;
+          gameScore.innerText = parseInt(gameScore.innerText) + 1;
+        }
+      }
+      if (donut.isVisible) {
+        donut.x -= 1;
+        if (
+          donut.x == piegon.x + piegon.width &&
+          !piegon.isPiegonJumping &&
+          !piegon.isPiegonEating
+        ) {
+          piegon.isPiegonEating = true;
+          donut.isVisible = false;
+          piegon.animationNo = 11;
+          gameScore.innerText = parseInt(gameScore.innerText) + 1;
+        }
+      }
+      if (meat.isVisible) {
+        meat.x -= 1;
+        if (
+          meat.x == piegon.x + piegon.width &&
+          !piegon.isPiegonJumping &&
+          !piegon.isPiegonEating
+        ) {
+          piegon.isPiegonEating = true;
+          meat.isVisible = false;
+          piegon.animationNo = 11;
+          gameScore.innerText = parseInt(gameScore.innerText) + 1;
+        }
+      }
+      if (tofu.isVisible) {
+        tofu.x -= 1;
+        if (
+          tofu.x == piegon.x + piegon.width &&
+          !piegon.isPiegonJumping &&
+          !piegon.isPiegonEating
+        ) {
+          piegon.isPiegonEating = true;
+          tofu.isVisible = false;
+          piegon.animationNo = 11;
           gameScore.innerText = parseInt(gameScore.innerText) + 1;
         }
       }
@@ -683,10 +781,38 @@ export default function Game() {
     }
 
     function spawnFood() {
-      if (!cake.isVisible) {
-        cake.isVisible = true;
-        cake.x = board.width;
-      }
+      setTimeout(() => {
+        setInterval(() => {
+          if (!cake.isVisible) {
+            cake.isVisible = true;
+            cake.x = board.width;
+          }
+        }, 1000);
+      }, 0);
+      setTimeout(() => {
+        setInterval(() => {
+          if (!donut.isVisible) {
+            donut.isVisible = true;
+            donut.x = board.width;
+          }
+        }, 1000);
+      }, 750);
+      setTimeout(() => {
+        setInterval(() => {
+          if (!meat.isVisible) {
+            meat.isVisible = true;
+            meat.x = board.width;
+          }
+        }, 1000);
+      }, 1500);
+      setTimeout(() => {
+        setInterval(() => {
+          if (!tofu.isVisible) {
+            tofu.isVisible = true;
+            tofu.x = board.width;
+          }
+        }, 1000);
+      }, 2250);
     }
 
     function drawSpace() {
