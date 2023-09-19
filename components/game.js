@@ -205,8 +205,8 @@ export default function Game() {
     // airship1
     let airship1 = {
       image: new Image(),
-      width: 287 * 0.5,
-      height: 158 * 0.5,
+      width: 287 * 0.4,
+      height: 158 * 0.4,
       x: 0,
       y: board.height / 3 + board.height * 0.15,
       isVisible: false,
@@ -216,8 +216,8 @@ export default function Game() {
     // airship2
     let airship2 = {
       image: new Image(),
-      width: 262 * 0.5,
-      height: 125 * 0.5,
+      width: 262 * 0.4,
+      height: 125 * 0.4,
       x: 0,
       y: board.height / 3 + board.height * 0.2,
       isVisible: false,
@@ -227,8 +227,8 @@ export default function Game() {
     // airship3
     let airship3 = {
       image: new Image(),
-      width: 262 * 0.5,
-      height: 146 * 0.5,
+      width: 262 * 0.4,
+      height: 146 * 0.4,
       x: 0,
       y: board.height / 3 + board.height * 0.1,
       isVisible: false,
