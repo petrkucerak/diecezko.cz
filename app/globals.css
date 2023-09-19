@@ -12,6 +12,13 @@
   height: calc(100vh - 4rem);
 }
 
+/* Prevent text selection */
+.prevent-select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
 /* lock scroling */
 .lock-scrolling {
   overflow: hidden;

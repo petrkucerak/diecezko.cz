@@ -776,7 +776,7 @@ export default function Game() {
         id="hra"
         className={`flex flex-col items-center justify-around min-h-[60vh] ${hra}`}
       >
-        <div className="w-full flex flex-col items-center justify-between">
+        <div className="w-full flex flex-col items-center justify-between prevent-select">
           <div className="absolute w-full flex-row flex items-center justify-around mt-4">
             <span id="gameScore" className="text-2xl text-center">
               0
