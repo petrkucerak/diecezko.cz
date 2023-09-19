@@ -53,17 +53,23 @@ export default function Game() {
     bg4.image.onload = () => {
       board.context.drawImage(bg4.image, bg4.x, bg4.y, bg4.width, bg4.height);
     };
-    // let space = {
-    //   image: new Image(),
-    //   width: 1200 * 1.5,
-    //   height: 116 * 1.5,
-    //   x: 0,
-    //   y: 0,
-    // };
-    // space.image.src = "/assets/images/game/space.png";
-    // space.image.onload = () => {
-    //   board.context.drawImage(space.image, space.x, space.y, space.width, space.height);
-    // };
+    let space = {
+      image: new Image(),
+      width: 2560 * 1.5,
+      height: 66 * 1.5,
+      x: 0,
+      y: board.height * 0.2,
+    };
+    space.image.src = "/assets/images/game/space.png";
+    space.image.onload = () => {
+      board.context.drawImage(
+        space.image,
+        space.x,
+        space.y,
+        space.width,
+        space.height
+      );
+    };
 
     // render elements
     // ground
@@ -320,7 +326,13 @@ export default function Game() {
       board.context.drawImage(bg2.image, bg2.x, bg2.y, bg2.width, bg2.height);
       board.context.drawImage(bg3.image, bg3.x, bg3.y, bg3.width, bg3.height);
       board.context.drawImage(bg4.image, bg4.x, bg4.y, bg4.width, bg4.height);
-      // board.context.drawImage(space.image, space.x, space.y, space.width, space.height);
+      board.context.drawImage(
+        space.image,
+        space.x,
+        space.y,
+        space.width,
+        space.height
+      );
 
       // process jumping
       if (piegon.isPiegonJumping) {
@@ -519,8 +531,8 @@ export default function Game() {
       if (ground.x == -102) ground.x = 0;
       else ground.x -= 1;
 
-      // if (space.x == -640) space.x = 0;
-      // else space.x -= 0.125;
+      if (space.x == -(5 * 256)) space.x = 0;
+      else space.x -= 0.0625;
 
       if (bg2.x == -640) bg2.x = 0;
       else bg2.x -= 0.125;
