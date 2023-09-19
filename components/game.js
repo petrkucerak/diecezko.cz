@@ -307,6 +307,7 @@ export default function Game() {
 
     setInterval(piegonMove, 50); // 0.1s
     setInterval(moveGround, 10);
+
     document.addEventListener("keydown", movePiegon);
     document.addEventListener("touchstart", movePiegon);
     window.addEventListener("keydown", function (e) {
@@ -722,13 +723,7 @@ export default function Game() {
       >
         <div className="w-full flex flex-col items-center justify-between">
           <div className="absolute w-full flex-row flex items-center justify-around mt-4">
-            <button>
-              <IconPlayerPause size={30} color="#fff" />
-            </button>
             <span className="text-2xl text-center">{gameScore}</span>
-            <button>
-              <IconRefresh size={30} color="#fff" />
-            </button>
           </div>
           <canvas id="game" width={300} height={150}></canvas>
         </div>
