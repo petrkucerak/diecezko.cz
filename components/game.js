@@ -788,7 +788,7 @@ export default function Game() {
             cake.x = board.width;
           }
         }, 1000);
-      }, 0);
+      }, Math.random() * 100);
       setTimeout(() => {
         setInterval(() => {
           if (!donut.isVisible) {
@@ -796,7 +796,7 @@ export default function Game() {
             donut.x = board.width;
           }
         }, 1000);
-      }, 750);
+      }, 750 + Math.random() * 100);
       setTimeout(() => {
         setInterval(() => {
           if (!meat.isVisible) {
@@ -804,7 +804,7 @@ export default function Game() {
             meat.x = board.width;
           }
         }, 1000);
-      }, 1500);
+      }, 1500 + Math.random() * 100);
       setTimeout(() => {
         setInterval(() => {
           if (!tofu.isVisible) {
@@ -812,7 +812,7 @@ export default function Game() {
             tofu.x = board.width;
           }
         }, 1000);
-      }, 2250);
+      }, 2250 + Math.random() * 100);
     }
 
     function drawSpace() {
