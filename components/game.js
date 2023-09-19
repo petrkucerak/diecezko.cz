@@ -778,9 +778,11 @@ export default function Game() {
         else false;
       }
 
-      // check centr of piegon
       if (
-        isColision(piegon.x + piegon.width / 2, piegon.y + piegon.height / 2)
+        isColision(piegon.x + piegon.width / 2, piegon.y + piegon.height / 2) || // check center of piegon
+        isColision(piegon.x + piegon.width, piegon.y) || // check head of piegon
+        isColision(piegon.x + piegon.width / 4, piegon.y + piegon.height) || // check foods of piegon
+        isColision(piegon.x, piegon.y) // check wigh of piegon
       ) {
         game.isGameOver = true;
       }
