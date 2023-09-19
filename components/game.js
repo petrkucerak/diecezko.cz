@@ -785,6 +785,7 @@ export default function Game() {
         isColision(piegon.x, piegon.y) // check wigh of piegon
       ) {
         game.isGameOver = true;
+        document.getElementById("fail-banner").classList.remove("hidden");
       }
     }
 
@@ -911,13 +912,12 @@ export default function Game() {
     }
   }, []);
 
-  const [evzenovaCesta, setEvzenovaCesta] = useState("");
-  const [hra, setHra] = useState("hidden");
+  const [evzenovaCesta, setEvzenovaCesta] = useState("hidden");
+  const [hra, setHra] = useState("");
   const [sinSlavy, setSinSlavy] = useState("hidden");
 
-  const [evzenovaCestaButton, setEvzenovaCestaButton] =
-    useState("switcher-selected");
-  const [hraButton, setHraButton] = useState("");
+  const [evzenovaCestaButton, setEvzenovaCestaButton] = useState("");
+  const [hraButton, setHraButton] = useState("switcher-selected");
   const [sinSlavyButton, setSinSlavyButton] = useState("");
 
   const openEvzenovaCesta = () => {
@@ -952,6 +952,10 @@ export default function Game() {
     setHraButton("");
     setSinSlavyButton("switcher-selected");
   };
+
+  function refreshPage() {
+    window.location.reload(false);
+  }
 
   return (
     <div className="flex flex-col items-center">
@@ -994,6 +998,23 @@ export default function Game() {
             </span>
           </div>
           <canvas id="game" width={300} height={150}></canvas>
+          <div
+            id="fail-banner"
+            className="absolute z-10 top-80 bg-black/70 w-[60vw] text-center h-64 rounded backdrop-blur-sm flex flex-col items-center justify-around hidden"
+          >
+            <h3 className="text-2xl font-bold">Evžen narazil!</h3>
+            <button
+              className="uppercase border py-2 px-6 rounded-full"
+              onClick={refreshPage}
+            >
+              nová hra
+            </button>
+            <button className="uppercase  border py-2 px-6 rounded-full">
+              zapsat se
+              <br />
+              do síně slávy
+            </button>
+          </div>
         </div>
       </div>
       {/* Společenství section */}
