@@ -1,5 +1,6 @@
 "use client";
-import { useEffect } from "react";
+import { IconInfoCircle, IconPlayerPause, IconRefresh } from "@tabler/icons";
+import { useEffect, useState } from "react";
 
 // pixle art generato https://giventofly.github.io/pixelit/#tryit
 
@@ -8,8 +9,8 @@ export default function Game() {
     // game bord
     let board = document.getElementById("game");
     board.width = Math.min(window.innerWidth * 0.9, 1800);
-    board.height = Math.min(window.innerHeight - 64, 600);
-    board.jumpHeight = board.height * 0.2;
+    board.height = Math.min(window.innerHeight, 600);
+    board.jumpHeight = board.height * 0.1;
     board.context = board.getContext("2d");
 
     let game = { isGameOver: false, scrore: 0 };
@@ -58,7 +59,7 @@ export default function Game() {
       width: 2560 * 1.5,
       height: 66 * 1.5,
       x: 0,
-      y: board.height * 0.2,
+      y: board.height * 0.1,
     };
     space.image.src = "/assets/images/game/space.png";
     space.image.onload = () => {
@@ -240,7 +241,7 @@ export default function Game() {
       width: 500 * 0.2,
       height: 269 * 0.2,
       x: 0,
-      y: board.height / 4,
+      y: board.height / 6,
       isVisible: false,
     };
     rocket.image.src = "/assets/images/game/rocket.png";
@@ -630,9 +631,9 @@ export default function Game() {
       // space
       const spaceGradient = board.context.createLinearGradient(
         0,
-        board.height / 2,
+        board.height / 3,
         0,
-        board.height / 4
+        board.height / 5
       );
       spaceGradient.addColorStop(0, "#00000000");
       spaceGradient.addColorStop(1, "#000");
@@ -641,9 +642,104 @@ export default function Game() {
     }
   });
 
+  const [evzenovaCesta, setEvzenovaCesta] = useState("");
+  const [hra, setHra] = useState("hidden");
+  const [sinSlavy, setSinSlavy] = useState("hidden");
+
+  const [evzenovaCestaButton, setEvzenovaCestaButton] =
+    useState("switcher-selected");
+  const [hraButton, setHraButton] = useState("");
+  const [sinSlavyButton, setSinSlavyButton] = useState("");
+
+  const [gameScore, setGameScore] = useState("0");
+
+  const openEvzenovaCesta = () => {
+    setEvzenovaCesta("");
+    setHra("hidden");
+    setSinSlavy("hidden");
+
+    setEvzenovaCestaButton("switcher-selected");
+    setHraButton("");
+    setSinSlavyButton("");
+  };
+
+  const openHra = () => {
+    setEvzenovaCesta("hidden");
+    setHra("");
+    setSinSlavy("hidden");
+
+    setEvzenovaCestaButton("");
+    setHraButton("switcher-selected");
+    setSinSlavyButton("");
+
+    const gameElement = document.getElementById("game");
+    if (gameElement) gameElement.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const openSinSlavy = () => {
+    setEvzenovaCesta("hidden");
+    setHra("hidden");
+    setSinSlavy("");
+
+    setEvzenovaCestaButton("");
+    setHraButton("");
+    setSinSlavyButton("switcher-selected");
+  };
+
   return (
-    <div className="w-full flex flex-col items-center justify-between">
-      <canvas id="game" width={300} height={150} className="bg-white"></canvas>
+    <div className="flex flex-col items-center">
+      <div className="w-[90vw] max-w-[500px] flex items-center flex-row justify-between md:text-lg bg-[#222] rounded-full font-semibold my-4 text-center">
+        <div
+          className={`cursor-pointer rounded-full md:p-3 md:pt-4 md:px-8 p-2 px-4 duration-300 ${evzenovaCestaButton}`}
+          onClick={openEvzenovaCesta}
+        >
+          Evženův příběh
+        </div>
+        <div
+          className={`cursor-pointer rounded-full md:p-3 md:pt-4 md:px-8 p-2 px-4 duration-300 ${hraButton}`}
+          onClick={openHra}
+        >
+          Evženova cesta
+        </div>
+        <div
+          className={`cursor-pointer rounded-full md:p-3 md:pt-4 md:px-8 p-2 px-4 duration-300 ${sinSlavyButton}`}
+          onClick={openSinSlavy}
+        >
+          Síň slávy
+        </div>
+      </div>
+      {/* EvzenovaCestarmace section */}
+      <div
+        id="evzenovaCesta"
+        className={`flex flex-col items-center justify-around min-h-[60vh] ${evzenovaCesta}`}
+      >
+        <p>nejakuy text1</p>
+      </div>
+      {/* Hra section */}
+      <div
+        id="hra"
+        className={`flex flex-col items-center justify-around min-h-[60vh] ${hra}`}
+      >
+        <div className="w-full flex flex-col items-center justify-between">
+          <div className="absolute w-full flex-row flex items-center justify-around">
+            <button>
+              <IconPlayerPause size={30} color="#fff" />
+            </button>
+            <span className="text-2xl text-center">{gameScore}</span>
+            <button>
+              <IconRefresh size={30} color="#fff" />
+            </button>
+          </div>
+          <canvas id="game" width={300} height={150}></canvas>
+        </div>
+      </div>
+      {/* Společenství section */}
+      <div
+        id="sinSlavy"
+        className={`flex flex-col items-center justify-around min-h-[60vh] ${sinSlavy}`}
+      >
+        <p>nejakuy text3</p>
+      </div>
     </div>
   );
 }
