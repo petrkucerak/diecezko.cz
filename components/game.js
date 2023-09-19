@@ -208,6 +208,7 @@ export default function Game() {
       image: new Image(),
       width: 287 * 0.4,
       height: 158 * 0.4,
+      isFlying: true,
       x: 0,
       y: board.height / 3 + board.height * 0.15,
       isVisible: false,
@@ -219,6 +220,7 @@ export default function Game() {
       image: new Image(),
       width: 262 * 0.4,
       height: 125 * 0.4,
+      isFlying: true,
       x: 0,
       y: board.height / 3 + board.height * 0.2,
       isVisible: false,
@@ -230,6 +232,7 @@ export default function Game() {
       image: new Image(),
       width: 262 * 0.4,
       height: 146 * 0.4,
+      isFlying: true,
       x: 0,
       y: board.height / 3 + board.height * 0.1,
       isVisible: false,
@@ -241,6 +244,7 @@ export default function Game() {
       image: new Image(),
       width: 500 * 0.2,
       height: 269 * 0.2,
+      isFlying: true,
       x: 0,
       y: board.height / 6,
       isVisible: false,
@@ -365,6 +369,7 @@ export default function Game() {
     });
 
     function update() {
+      if (game.isGameOver) return;
       board.context.clearRect(0, 0, board.width, board.height);
 
       //background
@@ -612,6 +617,7 @@ export default function Game() {
     }
 
     function piegonMove() {
+      if (game.isGameOver) return;
       if (piegon.isPiegonEating) {
         piegon.animationNo += 1;
         if (piegon.animationNo == 14) {
@@ -629,6 +635,7 @@ export default function Game() {
     }
 
     function moveGround() {
+      if (game.isGameOver) return;
       if (ground.x == -102) ground.x = 0;
       else ground.x -= 1;
 
@@ -758,6 +765,27 @@ export default function Game() {
       }
     }
 
+    function colisionDetect(obs) {
+      let a, b, m, n;
+      a = obs.width / 2;
+      obs.isFlying == true ? (b = obs.height / 2) : (b = obs.height);
+      m = obs.x + a;
+      n = obs.y + b;
+
+      function isColision(x, y) {
+        if (((x - m) * (x - m)) / (a * a) + ((y - n) * (y - n)) / (b * b) <= 1)
+          return true;
+        else false;
+      }
+
+      // check centr of piegon
+      if (
+        isColision(piegon.x + piegon.width / 2, piegon.y + piegon.height / 2)
+      ) {
+        game.isGameOver = true;
+      }
+    }
+
     function movePiegon(e) {
       if (game.isGameOver) return;
       if (
@@ -771,6 +799,7 @@ export default function Game() {
       }
     }
     function createObstacleTop() {
+      if (game.isGameOver) return;
       const rnd = Math.random();
       if (rnd < 1 && !rocket.isVisible) {
         rocket.isVisible = true;
@@ -778,6 +807,7 @@ export default function Game() {
       }
     }
     function createObstacleMiddle() {
+      if (game.isGameOver) return;
       const rnd = Math.random();
       if (rnd < 0.33333 && !airship1.isVisible) {
         airship1.isVisible = true;
@@ -791,6 +821,8 @@ export default function Game() {
       }
     }
     function createObstacleDown() {
+      if (game.isGameOver) return;
+
       const rnd = Math.random();
       if (rnd < 0.1 && !duch.isVisible) {
         duch.isVisible = true;
@@ -826,6 +858,7 @@ export default function Game() {
     }
 
     function spawnFood() {
+      if (game.isGameOver) return;
       setTimeout(() => {
         setInterval(() => {
           if (!cake.isVisible) {
@@ -861,6 +894,7 @@ export default function Game() {
     }
 
     function drawSpace() {
+      if (game.isGameOver) return;
       // space
       const spaceGradient = board.context.createLinearGradient(
         0,
