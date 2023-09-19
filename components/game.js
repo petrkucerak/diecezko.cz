@@ -13,6 +13,8 @@ export default function Game() {
     board.jumpHeight = board.height * 0.1;
     board.context = board.getContext("2d");
 
+    const gameScore = document.getElementById("gameScore");
+
     let game = { isGameOver: false, scrore: 0 };
 
     // background
@@ -246,6 +248,16 @@ export default function Game() {
     };
     rocket.image.src = "/assets/images/game/rocket.png";
 
+    let cake = {
+      image: new Image(),
+      width: 15 * 1,
+      height: 15 * 1,
+      x: 0,
+      y: board.height - ground.height - 15,
+      isVisible: false,
+    };
+    cake.image.src = "/assets/images/game/cake.png";
+
     // piegon
     let piegon = {
       startX: 20,
@@ -257,6 +269,7 @@ export default function Game() {
       animationNo: 0,
       isPiegonJumpingTop: false,
       isPiegonJumping: false,
+      isPiegonEating: false,
       lastClick: 0,
       imagePath: [
         "/assets/images/game/pigeon_walking_01.png",
@@ -270,8 +283,16 @@ export default function Game() {
         "/assets/images/game/pigeon_fly_05.png",
         "/assets/images/game/pigeon_fly_06.png",
         "/assets/images/game/pigeon_fly_07.png",
+        "/assets/images/game/pigeon_eat_01.png",
+        "/assets/images/game/pigeon_eat_02.png",
+        "/assets/images/game/pigeon_eat_03.png",
+        "/assets/images/game/pigeon_eat_04.png",
       ],
       image: [
+        new Image(),
+        new Image(),
+        new Image(),
+        new Image(),
         new Image(),
         new Image(),
         new Image(),
@@ -304,6 +325,7 @@ export default function Game() {
     setInterval(createObstacleDown, 5000 + Math.random() * 5000);
     setInterval(createObstacleMiddle, 7000 + Math.random() * 5000);
     setInterval(createObstacleTop, 10000 + Math.random() * 10000);
+    setInterval(spawnFood, 1000);
 
     setInterval(piegonMove, 50); // 0.1s
     setInterval(moveGround, 10);
@@ -354,7 +376,18 @@ export default function Game() {
           }
         }
       }
-
+      // foods layer
+      if (cake.isVisible) {
+        board.context.drawImage(
+          cake.image,
+          cake.x,
+          cake.y,
+          cake.width,
+          cake.height
+        );
+        cake.x + cake.width < 0 ? (cake.isVisible = false) : null;
+      }
+      // buildings layer
       if (duch.isVisible) {
         board.context.drawImage(
           duch.image,
@@ -501,7 +534,6 @@ export default function Game() {
         );
         rocket.x + rocket.width < 0 ? (rocket.isVisible = false) : null;
       }
-
       board.context.drawImage(
         ground.image,
         ground.x,
@@ -519,13 +551,19 @@ export default function Game() {
     }
 
     function piegonMove() {
-      if (!piegon.isPiegonJumping)
-        piegon.animationNo == 3
-          ? (piegon.animationNo = 0)
-          : (piegon.animationNo = piegon.animationNo + 1);
-      else
+      if (piegon.isPiegonEating) {
+        piegon.animationNo += 1;
+        if (piegon.animationNo == 14) {
+          piegon.animationNo = 0;
+          piegon.isPiegonEating = false;
+        }
+      } else if (piegon.isPiegonJumping)
         piegon.animationNo == 10
           ? (piegon.animationNo = 4)
+          : (piegon.animationNo = piegon.animationNo + 1);
+      else
+        piegon.animationNo == 3
+          ? (piegon.animationNo = 0)
           : (piegon.animationNo = piegon.animationNo + 1);
     }
 
@@ -559,6 +597,18 @@ export default function Game() {
       if (airship2.isVisible) airship2.x -= 1.5;
       if (airship3.isVisible) airship3.x -= 1.5;
       if (rocket.isVisible) rocket.x -= 3;
+
+      if (cake.isVisible) {
+        cake.x -= 1;
+        if (cake.x == piegon.x + piegon.width && !piegon.isPiegonJumping) {
+          piegon.isPiegonEating = true;
+          piegon.animationNo = 11;
+        }
+        if (cake.x == piegon.x + piegon.width - 4 && piegon.isPiegonEating) {
+          cake.isVisible = false;
+          gameScore.innerText = parseInt(gameScore.innerText) + 1;
+        }
+      }
     }
 
     function movePiegon(e) {
@@ -628,6 +678,13 @@ export default function Game() {
       }
     }
 
+    function spawnFood() {
+      if (!cake.isVisible) {
+        cake.isVisible = true;
+        cake.x = board.width;
+      }
+    }
+
     function drawSpace() {
       // space
       const spaceGradient = board.context.createLinearGradient(
@@ -651,8 +708,6 @@ export default function Game() {
     useState("switcher-selected");
   const [hraButton, setHraButton] = useState("");
   const [sinSlavyButton, setSinSlavyButton] = useState("");
-
-  const [gameScore, setGameScore] = useState("0");
 
   const openEvzenovaCesta = () => {
     setEvzenovaCesta("");
@@ -723,7 +778,9 @@ export default function Game() {
       >
         <div className="w-full flex flex-col items-center justify-between">
           <div className="absolute w-full flex-row flex items-center justify-around mt-4">
-            <span className="text-2xl text-center">{gameScore}</span>
+            <span id="gameScore" className="text-2xl text-center">
+              0
+            </span>
           </div>
           <canvas id="game" width={300} height={150}></canvas>
         </div>
