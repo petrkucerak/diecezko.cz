@@ -1,9 +1,12 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { game } from "../lib/game";
+import { requestJSON } from "../lib/request";
 
 export default function Game() {
-  game();
+  useEffect(() => {
+    game();
+  }, []);
 
   const [evzenovaCesta, setEvzenovaCesta] = useState("hidden");
   const [hra, setHra] = useState("");
@@ -118,6 +121,7 @@ export default function Game() {
           </div>
           <form
             className={`absolute w-full top-16 burger-menu-height bg-black/70 backdrop-blur-sm z-20 flex flex-col items-center justify-around ${formDisplay}`}
+            onSubmit={(e) => requestJSON(e)}
           >
             <h3 className="text-3xl">Zápis do síně slávy</h3>
             <input
