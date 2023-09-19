@@ -37,7 +37,18 @@ export default function Game() {
     };
     bg3.image.src = "/assets/images/game/bg_3.png";
     bg3.image.onload = () => {
-      board.context.drawImage(bg3.image, bg3.x, bg2.y, bg3.width, bg3.height);
+      board.context.drawImage(bg3.image, bg3.x, bg3.y, bg3.width, bg3.height);
+    };
+    let bg4 = {
+      image: new Image(),
+      width: 1200 * 2,
+      height: 43 * 2,
+      x: 0,
+      y: board.height - 43 * 2,
+    };
+    bg4.image.src = "/assets/images/game/bg_4.png";
+    bg4.image.onload = () => {
+      board.context.drawImage(bg4.image, bg4.x, bg4.y, bg4.width, bg4.height);
     };
 
     // render elements
@@ -292,6 +303,7 @@ export default function Game() {
       board.context.fillRect(0, 0, board.width, board.height);
       board.context.drawImage(bg2.image, bg2.x, bg2.y, bg2.width, bg2.height);
       board.context.drawImage(bg3.image, bg3.x, bg3.y, bg3.width, bg3.height);
+      board.context.drawImage(bg4.image, bg4.x, bg4.y, bg4.width, bg4.height);
 
       // process jumping
       if (piegon.isPiegonJumping) {
@@ -495,6 +507,9 @@ export default function Game() {
 
       if (bg3.x == -320) bg3.x = 0;
       else bg3.x -= 0.25;
+
+      if (bg4.x == -160) bg4.x = 0;
+      else bg4.x -= 0.5;
 
       if (duch.isVisible) duch.x -= 1;
       if (matous.isVisible) matous.x -= 1;
