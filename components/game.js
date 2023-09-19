@@ -828,7 +828,7 @@ export default function Game() {
       board.context.fillStyle = spaceGradient;
       board.context.fillRect(0, 0, board.width, board.height / 2);
     }
-  });
+  }, []);
 
   const [evzenovaCesta, setEvzenovaCesta] = useState("");
   const [hra, setHra] = useState("hidden");
