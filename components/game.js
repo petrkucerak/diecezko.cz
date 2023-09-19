@@ -17,6 +17,9 @@ export default function Game() {
     // background
     board.context.fillStyle = "#588DBE";
     board.context.fillRect(0, 0, board.width, board.height);
+    // space
+    drawSpace();
+
     let bg2 = {
       image: new Image(),
       width: 1200 * 2,
@@ -50,6 +53,17 @@ export default function Game() {
     bg4.image.onload = () => {
       board.context.drawImage(bg4.image, bg4.x, bg4.y, bg4.width, bg4.height);
     };
+    // let space = {
+    //   image: new Image(),
+    //   width: 1200 * 1.5,
+    //   height: 116 * 1.5,
+    //   x: 0,
+    //   y: 0,
+    // };
+    // space.image.src = "/assets/images/game/space.png";
+    // space.image.onload = () => {
+    //   board.context.drawImage(space.image, space.x, space.y, space.width, space.height);
+    // };
 
     // render elements
     // ground
@@ -187,7 +201,7 @@ export default function Game() {
       width: 287 * 0.5,
       height: 158 * 0.5,
       x: 0,
-      y: board.height / 2 + Math.random() * 50,
+      y: board.height / 3 + board.height * 0.15,
       isVisible: false,
     };
     airship1.image.src = "/assets/images/game/airship_1.png";
@@ -198,7 +212,7 @@ export default function Game() {
       width: 262 * 0.5,
       height: 125 * 0.5,
       x: 0,
-      y: board.height / 2 + Math.random() * 50,
+      y: board.height / 3 + board.height * 0.2,
       isVisible: false,
     };
     airship2.image.src = "/assets/images/game/airship_2.png";
@@ -209,7 +223,7 @@ export default function Game() {
       width: 262 * 0.5,
       height: 146 * 0.5,
       x: 0,
-      y: board.height / 2 + Math.random() * 50,
+      y: board.height / 3 + board.height * 0.1,
       isVisible: false,
     };
     airship3.image.src = "/assets/images/game/airship_3.png";
@@ -220,7 +234,7 @@ export default function Game() {
       width: 500 * 0.2,
       height: 269 * 0.2,
       x: 0,
-      y: board.height / 3 - Math.random() * 20,
+      y: board.height / 4,
       isVisible: false,
     };
     rocket.image.src = "/assets/images/game/rocket.png";
@@ -301,9 +315,12 @@ export default function Game() {
       //background
       board.context.fillStyle = "#588DBE";
       board.context.fillRect(0, 0, board.width, board.height);
+      // space
+      drawSpace();
       board.context.drawImage(bg2.image, bg2.x, bg2.y, bg2.width, bg2.height);
       board.context.drawImage(bg3.image, bg3.x, bg3.y, bg3.width, bg3.height);
       board.context.drawImage(bg4.image, bg4.x, bg4.y, bg4.width, bg4.height);
+      // board.context.drawImage(space.image, space.x, space.y, space.width, space.height);
 
       // process jumping
       if (piegon.isPiegonJumping) {
@@ -502,6 +519,9 @@ export default function Game() {
       if (ground.x == -102) ground.x = 0;
       else ground.x -= 1;
 
+      // if (space.x == -640) space.x = 0;
+      // else space.x -= 0.125;
+
       if (bg2.x == -640) bg2.x = 0;
       else bg2.x -= 0.125;
 
@@ -592,6 +612,20 @@ export default function Game() {
         vesmir.isVisible = true;
         vesmir.x = board.width;
       }
+    }
+
+    function drawSpace() {
+      // space
+      const spaceGradient = board.context.createLinearGradient(
+        0,
+        board.height / 2,
+        0,
+        board.height / 4
+      );
+      spaceGradient.addColorStop(0, "#00000000");
+      spaceGradient.addColorStop(1, "#000");
+      board.context.fillStyle = spaceGradient;
+      board.context.fillRect(0, 0, board.width, board.height / 2);
     }
   });
 
