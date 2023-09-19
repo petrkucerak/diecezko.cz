@@ -53,7 +53,7 @@ export default function Header() {
         </div>
       </header>
       <nav
-        className={`top-16 fixed w-full backdrop-blur-md bg-black/70 ${burgerMenu} flex flex-col items-center`}
+        className={`top-16 fixed w-full backdrop-blur-md bg-black/70 ${burgerMenu} flex flex-col items-center z-50`}
       >
         <ul
           className={`text-2xl flex flex-col items-start justify-around burger-menu-height w-[90vw] max-w-[400px]`}
