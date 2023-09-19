@@ -721,7 +721,7 @@ export default function Game() {
         className={`flex flex-col items-center justify-around min-h-[60vh] ${hra}`}
       >
         <div className="w-full flex flex-col items-center justify-between">
-          <div className="absolute w-full flex-row flex items-center justify-around">
+          <div className="absolute w-full flex-row flex items-center justify-around mt-4">
             <button>
               <IconPlayerPause size={30} color="#fff" />
             </button>
