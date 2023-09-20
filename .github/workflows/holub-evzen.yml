@@ -24,6 +24,7 @@ jobs:
     
     - name: Create a json file
       run: |
+        mkdir -p -- "_hall"
         cd _hall
         echo '${{ github.event.inputs.content }}' > ${{ github.event.inputs.filename }}.json
         cat ${{ github.event.inputs.filename }}.json
