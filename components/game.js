@@ -2,8 +2,10 @@
 import { useEffect, useState } from "react";
 import { game } from "../lib/game";
 import { requestJSON } from "../lib/request";
+import ContainerTitle from "./layouts/container-title";
+import ContainerDescription from "./layouts/container-description";
 
-export default function Game() {
+export default function Game({ score }) {
   useEffect(() => {
     game();
   }, []);
@@ -144,7 +146,9 @@ export default function Game() {
               className="w-[80vw] max-w-[300px] text-center text-xl text-white py-4 rounded"
               placeholder="Tvoje přezdívka"
             ></input>
-            <p className="text-xl uppercase tracking-widest">Skóre: {finalScore}</p>
+            <p className="text-xl uppercase tracking-widest">
+              Skóre: {finalScore}
+            </p>
             <input
               type="submit"
               value="Vytesat"
@@ -156,9 +160,31 @@ export default function Game() {
       {/* Společenství section */}
       <div
         id="sinSlavy"
-        className={`flex flex-col items-center justify-around min-h-[60vh] ${sinSlavy}`}
+        className={`flex flex-col items-center min-h-[60vh] ${sinSlavy} w-[90vw] max-w-[800px]`}
       >
-        <p>nejakuy text3</p>
+        <ContainerTitle>Síň slávy</ContainerTitle>
+        <ContainerDescription>
+          V síni slávy jsou vytesány přezdívky těch nejlepších, kteří chtějí
+          na&nbsp;Diecézku vyhrát Evženovu hlavní cenu.
+        </ContainerDescription>
+        <ol className="list-decimal w-[90vw] max-w-[800px] my-2">
+          {score.map((res) => {
+            return (
+              <li
+                key={res.nickname}
+                className={`ml-6 text-lg my-1 ${
+                  res.index === 0 ? `font-bold text-xl text-yellow-300` : null
+                } ${
+                  res.index === 1 || res.index === 2
+                    ? `font-semibold text-xl text-yellow-100`
+                    : null
+                } tracking-wide`}
+              >
+                {res.nickname} - {res.score}
+              </li>
+            );
+          })}
+        </ol>
       </div>
     </div>
   );
