@@ -34,8 +34,8 @@ jobs:
       with:
         token: ${{ secrets.TOKEN }}
         commit-message: Add new Evzen adventure
-        committer: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
-        author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
+        committer: Holub Evžen <evzen@diecezko.cz>
+        author: Holub Evžen <evzen@diecezko.cz>
         signoff: false
         branch: new-adventure-${{ github.event.inputs.filename }}
         delete-branch: true
