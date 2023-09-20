@@ -16,8 +16,15 @@ export default function Game() {
   const [hraButton, setHraButton] = useState("switcher-selected");
   const [sinSlavyButton, setSinSlavyButton] = useState("");
 
+  const [finalScore, setFinalScore] = useState(0);
+
+  const getScore = () => {
+    setFinalScore(parseInt(document.getElementById("gameScore").innerText));
+  };
+
   const [formDisplay, setFormDisplay] = useState("hidden");
   const openFormDisplay = () => {
+    getScore();
     setFormDisplay("");
   };
 
@@ -120,21 +127,28 @@ export default function Game() {
             </button>
           </div>
           <form
-            className={`absolute w-full top-16 burger-menu-height bg-black/70 backdrop-blur-sm z-20 flex flex-col items-center justify-around ${formDisplay}`}
+            className={`absolute w-full burger-menu-height bg-black/70 backdrop-blur-sm z-20 flex flex-col items-center justify-around ${formDisplay}`}
             onSubmit={(e) => requestJSON(e)}
+            id="display-form"
           >
-            <h3 className="text-3xl">Zápis do síně slávy</h3>
+            <h3 className="text-3xl text-center w-[90vw]">Zapsat skóre</h3>
+            <p className="w-[80vw] max-w-[600px] text-lg">
+              Pokud se rozhodneš vytesat své jméno do síně slávy, máš šanci
+              vyhrát speciální dárek od Evžena Holuba... Více info sem jako
+              ještě, jooo?
+            </p>
             <input
               type="text"
               id="nickname"
               name="nickname"
-              className="w-[80vw] max-w-[300px] text-center text-white py-4 rounded"
+              className="w-[80vw] max-w-[300px] text-center text-xl text-white py-4 rounded"
               placeholder="Tvoje přezdívka"
             ></input>
+            <p className="text-xl uppercase tracking-widest">Skóre: {finalScore}</p>
             <input
               type="submit"
               value="Vytesat"
-              className="border px-6 py-2 rounded-full cursor-pointer"
+              className="border px-6 py-2 rounded-full cursor-pointer text-lg"
             />
           </form>
         </div>
