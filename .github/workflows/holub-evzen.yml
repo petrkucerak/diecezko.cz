@@ -3,56 +3,56 @@ on:
   workflow_dispatch:
     inputs:
       filename:
-        description: 'Filename (without extension)'
+        description: "Filename (without extension)"
         required: true
-        default: ''
+        default: ""
       content:
-        description: 'Content (JSON data)'
+        description: "Content (JSON data)"
         required: true
-        default: ''
+        default: ""
       nickname:
-        description: 'Nickname'
+        description: "Nickname"
         required: true
-        default: ''
+        default: ""
 
 jobs:
   create_json:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout the repo
-      uses: actions/checkout@v3
-    
-    - name: Create a json file
-      run: |
-        mkdir -p -- "_hall"
-        cd _hall
-        echo '${{ github.event.inputs.content }}' > ${{ github.event.inputs.filename }}.json
-        cat ${{ github.event.inputs.filename }}.json
-        
-    - name: Create a pull request
-      uses: peter-evans/create-pull-request@v5
-      with:
-        token: ${{ secrets.TOKEN }}
-        commit-message: Add new Evzen adventure
-        committer: Holub Evžen <evzen@diecezko.cz>
-        author: Holub Evžen <evzen@diecezko.cz>
-        signoff: false
-        branch: new-adventure-${{ github.event.inputs.filename }}
-        delete-branch: true
-        title: 'Request to add new evzen adventure score by `${{ github.event.inputs.nickname }}`'
-        body: |
-          | KEY | VALUE |
-          | ------ | ---------- |
-          | nickname | **${{ fromJSON(github.event.inputs.content).nickname }}** |
-          | score | `${{ fromJSON(github.event.inputs.content).score }}` |
-          | timestamp | ${{ fromJSON(github.event.inputs.content).timestamp }} |
-          
-          Filename: ${{ github.event.inputs.filename }}.json
-          
-          ```json
-          ${{ toJSON(fromJSON(github.event.inputs.content)) }}
-          ```
-        labels: |
-          evzen
-        reviewers: petrkucerak
-        draft: false
+      - name: Checkout the repo
+        uses: actions/checkout@v3
+
+      - name: Create a json file
+        run: |
+          mkdir -p -- "_hall"
+          cd _hall
+          echo '${{ github.event.inputs.content }}' > ${{ github.event.inputs.filename }}.json
+          cat ${{ github.event.inputs.filename }}.json
+
+      - name: Create a pull request
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.TOKEN }}
+          commit-message: Add new Evzen adventure
+          committer: Holub Evžen <evzen@diecezko.cz>
+          author: Holub Evžen <evzen@diecezko.cz>
+          signoff: false
+          branch: new-adventure-${{ github.event.inputs.filename }}
+          delete-branch: true
+          title: "Request to add new evzen adventure score by `${{ github.event.inputs.nickname }}`"
+          body: |
+            | KEY | VALUE |
+            | ------ | ---------- |
+            | nickname | **${{ fromJSON(github.event.inputs.content).nickname }}** |
+            | score | `${{ fromJSON(github.event.inputs.content).score }}` |
+            | timestamp | ${{ fromJSON(github.event.inputs.content).timestamp }} |
+
+            Filename: ${{ github.event.inputs.filename }}.json
+
+            ```json
+            ${{ toJSON(fromJSON(github.event.inputs.content)) }}
+            ```
+          labels: |
+            evzen
+          reviewers: petrkucerak
+          draft: false
