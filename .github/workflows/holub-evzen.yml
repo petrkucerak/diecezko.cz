@@ -30,7 +30,7 @@ jobs:
         cat ${{ github.event.inputs.filename }}.json
         
     - name: Create a pull request
-      uses: peter-evans/create-pull-request@v4
+      uses: peter-evans/create-pull-request@v5
       with:
         token: ${{ secrets.TOKEN }}
         commit-message: Add new Evzen adventure
