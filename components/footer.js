@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <div className="w-full flex flex-col items-center">
+    <div className="w-full flex flex-col items-center mt-4">
       <div className="flex flex-col-reverse md:flex-row justify-between flex-wrap items-center w-[90vw]">
         <p className="font-light my-6">
           © 2023,{" "}
