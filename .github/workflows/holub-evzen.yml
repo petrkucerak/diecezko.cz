@@ -32,7 +32,11 @@ jobs:
     - name: Create a pull request
       uses: peter-evans/create-pull-request@v4
       with:
+        token: ${{ secrets.TOKEN }}
         commit-message: Add new Evzen adventure
+        commiter: GitHub <noreply@github.com>
+        author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
+        signoff: false
         branch: new-adventure-${{ github.event.inputs.filename }}
         delete-branch: true
         title: 'A new Evzen adventure request `${{ github.event.inputs.nickname }}`'
