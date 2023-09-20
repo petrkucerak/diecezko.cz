@@ -39,7 +39,7 @@ jobs:
         signoff: false
         branch: new-adventure-${{ github.event.inputs.filename }}
         delete-branch: true
-        title: 'A new Evzen adventure request `${{ github.event.inputs.nickname }}`'
+        title: 'Request to add new evzen adventure score by `${{ github.event.inputs.nickname }}`'
         body: |
           | KEY | VALUE |
           | ------ | ---------- |
