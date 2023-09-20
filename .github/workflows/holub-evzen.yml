@@ -39,8 +39,9 @@ jobs:
           signoff: false
           branch: new-adventure-${{ github.event.inputs.filename }}
           delete-branch: true
-          title: "Request to add new evzen adventure score by `${{ github.event.inputs.nickname }}`"
+          title: "New evzen score by `${{ github.event.inputs.nickname }}`"
           body: |
+            New request to add results by ${{ github.event.inputs.nickname }} and score `${{ fromJSON(github.event.inputs.content).score }}`. 
             | KEY | VALUE |
             | ------ | ---------- |
             | nickname | **${{ fromJSON(github.event.inputs.content).nickname }}** |
