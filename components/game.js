@@ -167,10 +167,19 @@ export default function Game({ score }) {
           V síni slávy jsou vytesány přezdívky těch nejlepších, kteří chtějí
           na&nbsp;Diecézku vyhrát Evženovu hlavní cenu.
         </ContainerDescription>
-        <ol>
+        <ol className="list-decimal w-[90vw] max-w-[800px] my-2">
           {score.map((res) => {
             return (
-              <li key={res.nickname}>
+              <li
+                key={res.nickname}
+                className={`ml-6 text-lg my-1 ${
+                  res.index === 0 ? `font-bold text-xl text-yellow-300` : null
+                } ${
+                  res.index === 1 || res.index === 2
+                    ? `font-semibold text-xl text-yellow-100`
+                    : null
+                } tracking-wide`}
+              >
                 {res.nickname} - {res.score}
               </li>
             );
