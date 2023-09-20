@@ -34,7 +34,7 @@ jobs:
       with:
         token: ${{ secrets.TOKEN }}
         commit-message: Add new Evzen adventure
-        commiter: GitHub <noreply@github.com>
+        committer: GitHub <noreply@github.com>
         author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
         signoff: false
         branch: new-adventure-${{ github.event.inputs.filename }}
