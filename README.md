@@ -22,6 +22,17 @@ Na základě těchto cílů a zkušeností jsou **požadavky** na online brožur
 - Měla by fungovat i v offline verzi, tj. mělo by si ji být možné stáhnout dopředu do mobilu alespoň v minimální podobě.
 - Cílovým zařízením jsou mobilní telefony.
 - Cílem je udělat spíše přehlednou a interaktivní brožuru než kompletní aplikaci, která zvládne všechno.
+- Řešení by mělo být pro církev udržitelné, nestát moc peněz, nebýt náročné na zprávu, být znovu použitelné.
+
+## Návrh technologií a architektury
+
+Z definovaných požadavků a na základě zkušeností s určitými technologiemi jsem zvolil následující technologie.
+
+- O hostování se aplikace na úrovni serveru a DNSka se postará **Cloudflare**. Důvodem je pozitivní zkušenost, cena, spolehlivost a kvalita, integrace s prostředím Gitu.
+- Aplikace bude fungovat jako **PWA** (progresivní webová aplikace). Důvodem je podpora u prohlížečů. Multiplatformní řešení. Pro instalaci není třeba aplikaci přidávat do apps storů. Navíc je pomocí service workerů možné zobrazovat notifikace.
+- PWA se bude buildit pomocí **Next.js**, a to z důvodu možnosti statické exportů, který minimalizuje náročnost na výkon serveru. O to stylování se postará **Tailwind CSS**.
+- Aplikace bude logovaná v **GitHubu** jako public repo, aby se do vývoje mohl zapojit každý, kdo by měl chuť.
+
 
 
 ## Links
