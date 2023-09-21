@@ -33,9 +33,11 @@ Z definovaných požadavků a na základě zkušeností s určitými technologie
 - PWA se bude buildit pomocí **Next.js**, a to z důvodu možnosti statické exportů, který minimalizuje náročnost na výkon serveru. O to stylování se postará **Tailwind CSS**.
 - Aplikace bude logovaná v **GitHubu** jako public repo, aby se do vývoje mohl zapojit každý, kdo by měl chuť.
 
+
+
 ## Vývoj
 
-Projekt je vyvíjen veřejně, aby se do tvorby mohl zapojit každý, kdo by měl zájem. Snažíme se držet pracovní workflow tak, že jeden balíček problémů, jedna *Issues*, jeden *Pull Request*. Nic by nemělo jít do mainu bez *Pull Requstu*. *(Samozřejmě až na výjimky, třeba u debuggování Github Actions.)*
+Projekt je vyvíjen veřejně, aby se do tvorby mohl zapojit každý, kdo by měl zájem. Snažíme se držet pracovní workflow tak, že jeden balíček problémů, jedna *Issues*, jeden *Pull Request*. Nic by nemělo jít do mainu bez *Pull Requstu*. *(Samozřejmě až na výjimky, třeba u debuggování Github Actions.)* Mergujeme všecko *merge squash*.
 
 Pokud by ses chtěl do projektu aktivně zapojit, napiš na dev@diecezko.cz, rádi Tě mezi sebe přiberme.
 
@@ -54,7 +56,20 @@ yarn # install dependencies
 yarn dev # local dev
 ```
 
+## Aktuální struktura
 
-## Links
+Projekt se momentálně skládá z dvou částí: obyčejných statických stránek a minihry Evženova cesta.
+
+### Evženova cesta
+
+(*někdy také evženovo dobrodužství*)
+
+Minihra, která má za úkol přitáhnout mladé lidi a udělat z brožury trochu něco navíc. Je navržena tak, aby nebyla třeba žádná databáze v pozadí, všechno se ukládá do repa. Hra se vykresluje na canvas a výsledky je možné zapsat do síně slávy. Ta funguje tak, že se na klientovi vytvoří POST request, který se odešle na proxy server, který pomocí Github Action vytvoří pull request, který kdokoliv z contributors repa schválí a mergne.
+
+- Více i konceptu zde: [Jak automaticky přidávat příspěvky na statický web pomocí Github Actions](https://blog.petrkucerak.cz/post/jak-automaticky-pridavat-prispevky-na-staticky-web-pomoci-github-actions)
+- [Repo s proxy serverem](https://github.com/petrkucerak/api.diecezko.cz) z security důvodů privátní
+
+
+## Spojené projekty
 
 - Repository with API proxy server https://github.com/petrkucerak/api.diecezko.cz
