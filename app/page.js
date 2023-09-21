@@ -10,9 +10,6 @@ export default function Home() {
       <Cover>
         <Switcher />
       </Cover>
-      <div className="flex flex-col items-center">
-        <p className="text-xl my-12">Více informací již brzy...</p>
-      </div>
       <Footer />
     </main>
   );
