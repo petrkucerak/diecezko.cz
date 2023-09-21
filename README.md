@@ -39,6 +39,14 @@ Projekt je vyvíjen veřejně, aby se do tvorby mohl zapojit každý, kdo by mě
 
 Pokud by ses chtěl do projektu aktivně zapojit, napiš na dev@diecezko.cz, rádi Tě mezi sebe přiberme.
 
+### Materiály
+
+Podklady a materiály jsou uchovávány na dvou místech:
+
+1.	**V repu** – veškeré technické věci týkající se vývoje, tech. úkoly, tech. problémy, …
+2.	**Drive** – obsahové věci, které mají do brožury přijít, … (musíme ti nasdílet, kdybys potřeboval, napiš na mail dev@diecezko.cz)
+
+
 ### Commandy
 
 ```sh
