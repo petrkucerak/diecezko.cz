@@ -33,6 +33,18 @@ Z definovaných požadavků a na základě zkušeností s určitými technologie
 - PWA se bude buildit pomocí **Next.js**, a to z důvodu možnosti statické exportů, který minimalizuje náročnost na výkon serveru. O to stylování se postará **Tailwind CSS**.
 - Aplikace bude logovaná v **GitHubu** jako public repo, aby se do vývoje mohl zapojit každý, kdo by měl chuť.
 
+## Vývoj
+
+Projekt je vyvíjen veřejně, aby se do tvorby mohl zapojit každý, kdo by měl zájem. Snažíme se držet pracovní workflow tak, že jeden balíček problémů, jedna *Issues*, jeden *Pull Request*. Nic by nemělo jít do mainu bez *Pull Requstu*. *(Samozřejmě až na výjimky, třeba u debuggování Github Actions.)*
+
+Pokud by ses chtěl do projektu aktivně zapojit, napiš na dev@diecezko.cz, rádi Tě mezi sebe přiberme.
+
+### Commandy
+
+```sh
+yarn # install dependencies
+yarn dev # local dev
+```
 
 
 ## Links
