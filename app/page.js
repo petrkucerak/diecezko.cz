@@ -10,7 +10,6 @@ export default function Home() {
       <Cover>
         <Switcher />
       </Cover>
-      <p>Add some text</p>
       <Footer />
     </main>
   );
