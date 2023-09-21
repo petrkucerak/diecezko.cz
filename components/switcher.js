@@ -1,6 +1,8 @@
 "use client";
 import { useState } from "react";
-import DiecezkoInfo from "./diecezko-info";
+import DiecezkoInfo from "./switcher/diecezko-info";
+import Program from "./switcher/program";
+import SpolecenstviInfo from "./switcher/spolecenstvi-info";
 export default function Switcher() {
   const [Diecezko, setDiecezko] = useState("");
   const [program, setProgram] = useState("hidden");
@@ -62,21 +64,13 @@ export default function Switcher() {
           Informace
         </div>
       </div>
-      {/* Diecezkormace section */}
       <DiecezkoInfo
         id="Diecezko"
         className={`flex flex-col items-center ${Diecezko}`}
       />
-      {/* Program section */}
-      <div
-        id="program"
-        className={`flex flex-col items-center justify-around min-h-[60vh] ${program}`}
-      ></div>
+      <Program id="program" className={`min-h-[60vh] ${program}`} />
       {/* Společenství section */}
-      <div
-        id="Info"
-        className={`flex flex-col items-center justify-around min-h-[60vh] ${Info}`}
-      ></div>
+      <SpolecenstviInfo id="Info" className={`min-h-[60vh] ${Info}`} />
     </div>
   );
 }

@@ -1,5 +1,5 @@
-import Container from "./layouts/container";
-import ContainerParagraph from "./layouts/container-paragraph";
+import Container from "../layouts/container";
+import ContainerParagraph from "../layouts/container-paragraph";
 import {
   IconBrandFacebook,
   IconCalendar,
