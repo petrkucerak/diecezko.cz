@@ -161,7 +161,7 @@ export default function Game({ score }) {
               />
               <div
                 onClick={closeFormDisplay}
-                className="border px-6 py-2 rounded-full cursor-pointer text-lg mx-2 cursor-pointer"
+                className="border px-6 py-2 rounded-full cursor-pointer text-lg mx-2"
               >
                 Zavřít
               </div>
