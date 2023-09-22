@@ -79,7 +79,7 @@ export default function Header() {
             </li>
           </Link>
           <Link
-            href=""
+            href="/dcm-hradec-kralove"
             target="_self"
             className="border-b-[#3b3b3b] border-b w-full"
           >
