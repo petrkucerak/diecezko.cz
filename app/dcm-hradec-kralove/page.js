@@ -6,6 +6,10 @@ import ContainerDescription from "../../components/layouts/container-description
 import ContainerParagraph from "../../components/layouts/container-paragraph";
 import PageMain from "../../components/layouts/page-main";
 import ContainerImage from "../../components/layouts/container-image";
+import ContainerH2 from "../../components/layouts/container-h2";
+import ContainerUl from "../../components/layouts/container-ul";
+import ContainerLi from "../../components/layouts/container-li";
+import Link from "next/link";
 export default async function DCM() {
   return (
     <main className="ease-in-out duration-300 font-titilliumWeb">
@@ -23,7 +27,7 @@ export default async function DCM() {
             jpgPaht="/assets/images/spolecenstvi/diecezni-centrum-pro-mladez.jpg"
             webpPath="/assets/images/spolecenstvi/diecezni-centrum-pro-mladez.webp"
             altText="Tým DCM"
-            className="w-full"
+            className="w-full my-2"
           />
           <ContainerParagraph>
             Snažíme se posílit duchovní život mladých lidí, vychovávat ke
@@ -33,6 +37,53 @@ export default async function DCM() {
             To vše skrze život ve společenství, modlitby, diskuse, pomocí her,
             přednášek a v neposlední řadě také práce.
           </ContainerParagraph>
+          <ContainerH2>Poslání DCM</ContainerH2>
+          <ContainerUl>
+            <ContainerLi>
+              Organizuje diecézní a&nbsp;jiná setkání mládeže.
+            </ContainerLi>
+            <ContainerLi>
+              Podílí se na formaci animátorů společenství mládeže.
+            </ContainerLi>
+            <ContainerLi>
+              Spolupracuje s&nbsp;kaplany pro mládež a&nbsp;mladými zástupci
+              jednotlivých vikariátů.
+            </ContainerLi>
+            <ContainerLi>
+              Spoluzajišťuje provoz Diecézního centra života mládeže (DCŽM)
+              Vesmír.
+            </ContainerLi>
+            <ContainerLi>
+              Spolupracuje s&nbsp;ostatními diecézemi v&nbsp;rámci Sekce pro
+              mládež ČBK.
+            </ContainerLi>
+          </ContainerUl>
+          <ContainerH2>Kontakt</ContainerH2>
+          <ContainerUl className={`list-none pl-0`}>
+            <ContainerLi>
+              Diecézní centrum pro mládež
+              <br />
+              Velké náměstí 32
+              <br />
+              500 03 Hradec Králové
+            </ContainerLi>
+            <ContainerLi>
+              email:{" "}
+              <Link className="underline" href="mailto:dcm@bihk.cz">
+                dcm@bihk.cz
+              </Link>
+              ,{" "}
+              <Link className="underline" href="mailto:dcm.bihk@gmail.com">
+                dcm.bihk@gmail.com
+              </Link>
+              <br />
+              telefon:{" "}
+              <Link className="underline" href="tel:+420734435358">
+                734 435 358
+              </Link>{" "}
+              (Klára Petrová, vedoucí DCM)
+            </ContainerLi>
+          </ContainerUl>
         </Container>
       </PageMain>
       <Footer />

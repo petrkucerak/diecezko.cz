@@ -9,7 +9,7 @@ export default function ContainerImage({
     <picture>
       <source srcSet={webpPath} type="image/webp" />
       <source srcSet={jpgPaht} type="image/jpeg" />
-      <img alt={altText} loading="lazy" src={pngPath} className={className} />
+      <img alt={altText} loading="lazy" src={pngPath} className={`rounded ${className}`} />
     </picture>
   );
 }
