@@ -1,14 +1,14 @@
 export default function ContainerImage({
   className,
   pngPath,
-  jpgPaht,
+  jpgPath,
   webpPath,
   altText,
 }) {
   return (
     <picture>
       <source srcSet={webpPath} type="image/webp" />
-      <source srcSet={jpgPaht} type="image/jpeg" />
+      <source srcSet={jpgPath} type="image/jpeg" />
       <img alt={altText} loading="lazy" src={pngPath} className={`rounded ${className}`} />
     </picture>
   );

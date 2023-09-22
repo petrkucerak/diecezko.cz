@@ -10,6 +10,12 @@ import ContainerH2 from "../../components/layouts/container-h2";
 import ContainerUl from "../../components/layouts/container-ul";
 import ContainerLi from "../../components/layouts/container-li";
 import Link from "next/link";
+import {
+  IconBrandFacebook,
+  IconBrandInstagram,
+  IconBrandYoutube,
+  IconWorld,
+} from "@tabler/icons";
 export default async function DCM() {
   return (
     <main className="ease-in-out duration-300 font-titilliumWeb">
@@ -24,7 +30,7 @@ export default async function DCM() {
           </ContainerDescription>
           <ContainerImage
             pngPath="/assets/images/spolecenstvi/diecezni-centrum-pro-mladez.png"
-            jpgPaht="/assets/images/spolecenstvi/diecezni-centrum-pro-mladez.jpg"
+            jpgPath="/assets/images/spolecenstvi/diecezni-centrum-pro-mladez.jpg"
             webpPath="/assets/images/spolecenstvi/diecezni-centrum-pro-mladez.webp"
             altText="Tým DCM"
             className="w-full my-2"
@@ -59,7 +65,7 @@ export default async function DCM() {
             </ContainerLi>
           </ContainerUl>
           <ContainerH2>Kontakt</ContainerH2>
-          <ContainerUl className={`list-none pl-0`}>
+          <ContainerUl className={`!list-none !pl-0 mb-6`}>
             <ContainerLi>
               Diecézní centrum pro mládež
               <br />
@@ -82,6 +88,40 @@ export default async function DCM() {
                 734 435 358
               </Link>{" "}
               (Klára Petrová, vedoucí DCM)
+            </ContainerLi>
+            <ContainerLi className="mt-2">
+              <Link
+                href={`https://www.facebook.com/DCM.HradecKralove/`}
+                target="_blank"
+                rel="external"
+                title="Facebook"
+              >
+                <IconBrandFacebook className="inline mr-2" size={30} />
+              </Link>
+              <Link
+                href={`https://www.instagram.com/dcm_hk`}
+                target="_blank"
+                rel="external"
+                title="Instagram"
+              >
+                <IconBrandInstagram className="inline mr-2" size={30} />
+              </Link>
+              <Link
+                href={`https://www.youtube.com/@dcmhradeckralove5644`}
+                target="_blank"
+                rel="external"
+                title="Youtube kanál"
+              >
+                <IconBrandYoutube className="inline mr-2" size={30} />
+              </Link>
+              <Link
+                href={`https://www.bihk.cz/biskupstvi/diecezni-centrum-pro-mladez`}
+                target="_blank"
+                rel="external"
+                title="Webové stránky"
+              >
+                <IconWorld className="inline mr-2" size={30} />
+              </Link>
             </ContainerLi>
           </ContainerUl>
         </Container>
