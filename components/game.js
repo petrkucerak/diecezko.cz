@@ -159,12 +159,12 @@ export default function Game({ score }) {
                 value="Vytesat"
                 className="border px-6 py-2 rounded-full cursor-pointer text-lg mx-2"
               />
-              <button
+              <div
                 onClick={closeFormDisplay}
-                className="border px-6 py-2 rounded-full cursor-pointer text-lg mx-2"
+                className="border px-6 py-2 rounded-full cursor-pointer text-lg mx-2 cursor-pointer"
               >
                 Zavřít
-              </button>
+              </div>
             </div>
           </form>
         </div>
