@@ -38,7 +38,7 @@ export default async function VeKa() {
             pngPath="/assets/images/spolecenstvi/veka.png"
             jpgPath="/assets/images/spolecenstvi/veka.jpg"
             webpPath="/assets/images/spolecenstvi/veka.webp"
-            altText="Tým DCM"
+            altText="Vesmírná kapela na koncertě"
             className="w-full my-2"
           />
           <ContainerParagraph>
@@ -50,7 +50,7 @@ export default async function VeKa() {
             farnostech.
           </ContainerParagraph>
           <iframe
-            className="rounded-[12px] my-2"
+            className="rounded-xl my-2"
             src="https://open.spotify.com/embed/artist/4evTGARQ8TRDKnqbxXSvNd?utm_source=generator"
             width="100%"
             height="352"
@@ -72,6 +72,14 @@ export default async function VeKa() {
             včetně jeho přípravného týdne. Doufáme, že si náš hudební doprovod
             užijete!
           </ContainerParagraph>
+          <ContainerImage
+            pngPath="/assets/images/spolecenstvi/veka-punk.png"
+            jpgPath="/assets/images/spolecenstvi/veka-punk.jpg"
+            webpPath="/assets/images/spolecenstvi/veka-punk.webp"
+            altText="Vesmírná kapela v bundách"
+            className="w-full my-2"
+          />
+          <ContainerH2>Sledujte nás na:</ContainerH2>
           <ContainerUl className={`!list-none !pl-0 mb-6`}>
             <ContainerLi className="mt-2">
               <Link

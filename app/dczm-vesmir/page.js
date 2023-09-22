@@ -49,7 +49,7 @@ export default async function DCZM() {
             pngPath="/assets/images/spolecenstvi/dcm-vesmir.png"
             jpgPath="/assets/images/spolecenstvi/dcm-vesmir.jpg"
             webpPath="/assets/images/spolecenstvi/dcm-vesmir.webp"
-            altText="Tým DCM"
+            altText="Tým DCŽM Vesmír"
             className="w-full my-2"
           />
           <ContainerParagraph>
