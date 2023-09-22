@@ -56,12 +56,23 @@ export default async function DCM() {
               jednotlivých vikariátů.
             </ContainerLi>
             <ContainerLi>
-              Spoluzajišťuje provoz Diecézního centra života mládeže (DCŽM)
-              Vesmír.
+              Spoluzajišťuje provoz{" "}
+              <Link href="/dczm-vesmir" className="underline">
+                Diecézního centra života mládeže (DCŽM) Vesmír
+              </Link>
+              .
             </ContainerLi>
             <ContainerLi>
-              Spolupracuje s&nbsp;ostatními diecézemi v&nbsp;rámci Sekce pro
-              mládež ČBK.
+              Spolupracuje s&nbsp;ostatními diecézemi v&nbsp;rámci{" "}
+              <Link
+                href="https://cbk.cirkev.cz/sekce-pro-mladez"
+                className="underline"
+                rel="external"
+                target="_blank"
+              >
+                Sekce pro mládež ČBK
+              </Link>
+              .
             </ContainerLi>
           </ContainerUl>
           <ContainerH2>Kontakt</ContainerH2>
