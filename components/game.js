@@ -30,6 +30,10 @@ export default function Game({ score }) {
     setFormDisplay("");
   };
 
+  const closeFormDisplay = () => {
+    setFormDisplay("hidden");
+  };
+
   const openEvzenovaCesta = () => {
     setEvzenovaCesta("");
     setHra("hidden");
@@ -149,11 +153,19 @@ export default function Game({ score }) {
             <p className="text-xl uppercase tracking-widest">
               Skóre: {finalScore}
             </p>
-            <input
-              type="submit"
-              value="Vytesat"
-              className="border px-6 py-2 rounded-full cursor-pointer text-lg"
-            />
+            <div className="w-full flex flex-row items-center justify-center">
+              <input
+                type="submit"
+                value="Vytesat"
+                className="border px-6 py-2 rounded-full cursor-pointer text-lg mx-2"
+              />
+              <button
+                onClick={closeFormDisplay}
+                className="border px-6 py-2 rounded-full cursor-pointer text-lg mx-2"
+              >
+                Zavřít
+              </button>
+            </div>
           </form>
         </div>
       </div>
