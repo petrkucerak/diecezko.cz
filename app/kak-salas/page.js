@@ -36,10 +36,10 @@ export default async function DCZM() {
             s&nbsp;ostatními studenty.
           </ContainerDescription>
           <ContainerImage
-            pngPath="/assets/images/spolecenstvi/dcm-vesmir.png"
-            jpgPath="/assets/images/spolecenstvi/dcm-vesmir.jpg"
-            webpPath="/assets/images/spolecenstvi/dcm-vesmir.webp"
-            altText="Tým DCŽM Vesmír"
+            pngPath="/assets/images/spolecenstvi/salas-cover.png"
+            jpgPath="/assets/images/spolecenstvi/salas-cover.jpg"
+            webpPath="/assets/images/spolecenstvi/salas-cover.webp"
+            altText="Mladí z KAK saloš"
             className="w-full my-2"
           />
           <ContainerH2>Pravidelné aktivity</ContainerH2>
@@ -57,33 +57,45 @@ export default async function DCZM() {
             večer, PubQuiz, přednášky, nebo si jdeme o&nbsp;zkouškovém jen tak
             sednout na pivo.
           </ContainerParagraph>
-          <ContainerH2>Další program</ContainerH2>
+          <ContainerImage
+            pngPath="/assets/images/spolecenstvi/salas-sheep.png"
+            jpgPath="/assets/images/spolecenstvi/salas-sheep.jpg"
+            webpPath="/assets/images/spolecenstvi/salas-sheep.webp"
+            altText="Sheep ples"
+            className="w-full my-2"
+          />
+          <ContainerH2>Sheeep Ples</ContainerH2>
           <ContainerParagraph>
             Největší akcí, na kterou se všichni už teď těšíme, je SheepPles. Ten
             se koná vždy v&nbsp;pátek po Velikonocích na Univerzitě Hradec
             Králové. Příští ples se uskuteční 5.&nbsp;4.&nbsp;2024.
           </ContainerParagraph>
+          <ContainerH2>Deskovky</ContainerH2>
           <ContainerParagraph>
             Pokud Tě baví deskové hry, určitě přijď na deskové hry na FIMku
             každé poslední úterý v&nbsp;měsíci. Termíny deskovek jsou: 31.10.,
             28.11., 16.12. a&nbsp;30.1.
           </ContainerParagraph>
-          <ContainerH2>Kontakt</ContainerH2>
+          <ContainerImage
+            pngPath="/assets/images/spolecenstvi/salas-deskovky.png"
+            jpgPath="/assets/images/spolecenstvi/salas-deskovky.jpg"
+            webpPath="/assets/images/spolecenstvi/salas-deskovky.webp"
+            altText="Deskovky"
+            className="w-full my-2"
+          />
+          <ContainerParagraph>
+            I&nbsp;když je klub a&nbsp;jeho aktivity přednostně orientován na
+            studenty, kteří věří ve Vzkříšeného Krista ve společenství katolické
+            církve, je ekumenicky otevřený nejen křesťanům jiných tradicí, ale
+            i&nbsp;všem hledajícím a&nbsp;zájemcům o&nbsp;duchovní život
+            a&nbsp;činnost, které studentský klub organizuje.
+          </ContainerParagraph>
+          <ContainerParagraph>Těšíme se na vás!</ContainerParagraph>
+          <ContainerH2>Sledujte na nás na:</ContainerH2>
           <ContainerUl className={`!list-none !pl-0 mb-6`}>
-            <ContainerLi>
-              Deštné v Orlických horách 266
-              <br />
-              517 91 Deštné v Orlických horách
-            </ContainerLi>
-            <ContainerLi>
-              email:{" "}
-              <Link className="underline" href="mailto:dczm.vesmir@gmail.com">
-                dczm.vesmir@gmail.com
-              </Link>
-            </ContainerLi>
             <ContainerLi className="mt-2">
               <Link
-                href={`https://www.facebook.com/dczmvesmir/`}
+                href={`https://www.facebook.com/salas.hradec`}
                 target="_blank"
                 rel="external"
                 title="Facebook"
@@ -91,7 +103,7 @@ export default async function DCZM() {
                 <IconBrandFacebook className="inline mr-2" size={30} />
               </Link>
               <Link
-                href={`https://www.instagram.com/dczm_vesmir/`}
+                href={`https://www.instagram.com/salas_kak/`}
                 target="_blank"
                 rel="external"
                 title="Instagram"
@@ -99,15 +111,7 @@ export default async function DCZM() {
                 <IconBrandInstagram className="inline mr-2" size={30} />
               </Link>
               <Link
-                href={`https://www.youtube.com/@dczmvesmir6084`}
-                target="_blank"
-                rel="external"
-                title="Youtube kanál"
-              >
-                <IconBrandYoutube className="inline mr-2" size={30} />
-              </Link>
-              <Link
-                href={`http://vesmir.signaly.cz/`}
+                href={`http://www.salas.hk`}
                 target="_blank"
                 rel="external"
                 title="Webové stránky"
