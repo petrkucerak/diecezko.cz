@@ -22,29 +22,18 @@ export default async function DCZM() {
       <Header />
       <PageMain>
         <Container>
-          <ContainerTitle>DCŽM Vesmír</ContainerTitle>
+          <ContainerTitle>KAK Salaš</ContainerTitle>
           <ContainerDescription>
             <strong className="font-bold">
-              Diecézní centrum života mládeže Vesmír
+              Křesťanský akademický klub Salaš
             </strong>{" "}
-            je provozováno{" "}
-            <Link
-              href="http://vesmir.signaly.cz/vesmir/sdru%C5%BEeni-jedlova.html"
-              target="_blank"
-              rel="external"
-              className="underline"
-            >
-              <i>Sdružením Jedlová, z. s.</i>
-            </Link>{" "}
-            Jedná se v&nbsp;současné době o&nbsp;zapsaný spolek (původně
-            občanské sdružení), který vytváří programy pro mládež. Členy spolku
-            jsou mladí lidé, kteří zpravidla rok až dva stabilně žijí
-            v&nbsp;DCŽM Vesmír (tým) a&nbsp;zmiňované programy spolu
-            s&nbsp;mladými lidmi vytvářejí a&nbsp;realizují. Naší cílovou
-            skupinou je mládež od 14-ti do 26-ti let. Posláním DCŽM je vést
-            k&nbsp;opravdovým hodnotám (kvalitní mezilidské vztahy, nalezení a
-            objevení sebe sama, pozitivní vztah k&nbsp;práci, zodpovědný přístup
-            k&nbsp;materielním hodnotám a&nbsp;cit k&nbsp;přírodě).
+            je společenství nejen věřících vysokoškolských studentů
+            z&nbsp;Hradce Králové. Salaš je členem VKH a&nbsp;úzce
+            spolupracujeme s&nbsp;Akademickou duchovní službou při
+            Královehradecké diecézi. Rádi mezi sebou uvítáme všechny, které
+            zaujme náš program nebo si jen chtějí popovídat. Pořádáme pravidelné
+            týdenní aktivity, na které můžete zajít a&nbsp;seznámit se
+            s&nbsp;ostatními studenty.
           </ContainerDescription>
           <ContainerImage
             pngPath="/assets/images/spolecenstvi/dcm-vesmir.png"
@@ -53,12 +42,31 @@ export default async function DCZM() {
             altText="Tým DCŽM Vesmír"
             className="w-full my-2"
           />
+          <ContainerH2>Pravidelné aktivity</ContainerH2>
+          <ContainerUl>
+            <ContainerLi>Po 20.15 - Modlitba na Kotli</ContainerLi>
+            <ContainerLi>Út 19.15 - Spolčo</ContainerLi>
+            <ContainerLi>
+              St 19.00 - Mše svaté a&nbsp;program po nich
+            </ContainerLi>
+            <ContainerLi>Čt 18.00 - SportOvce</ContainerLi>
+          </ContainerUl>
+          <ContainerH2>Program po mši svaté</ContainerH2>
           <ContainerParagraph>
-            Název Vesmír jsme „podědili po předcích“. Chata (zařízení) nese
-            jméno Vesmír již od 60. let minulého století. A když se zde člověk
-            za jasné noci podívá na oblohu, tak si připadá jako uprostřed
-            hvězdného prostoru. Hvězdy jsou vidět od obzoru k&nbsp;obzoru. Název
-            Vesmír se nám prostě líbil a&nbsp;líbí.
+            Ptáte se, co jest program po mši? Pro představu pořádáme Muzikantský
+            večer, PubQuiz, přednášky, nebo si jdeme o&nbsp;zkouškovém jen tak
+            sednout na pivo.
+          </ContainerParagraph>
+          <ContainerH2>Další program</ContainerH2>
+          <ContainerParagraph>
+            Největší akcí, na kterou se všichni už teď těšíme, je SheepPles. Ten
+            se koná vždy v&nbsp;pátek po Velikonocích na Univerzitě Hradec
+            Králové. Příští ples se uskuteční 5.&nbsp;4.&nbsp;2024.
+          </ContainerParagraph>
+          <ContainerParagraph>
+            Pokud Tě baví deskové hry, určitě přijď na deskové hry na FIMku
+            každé poslední úterý v&nbsp;měsíci. Termíny deskovek jsou: 31.10.,
+            28.11., 16.12. a&nbsp;30.1.
           </ContainerParagraph>
           <ContainerH2>Kontakt</ContainerH2>
           <ContainerUl className={`!list-none !pl-0 mb-6`}>
