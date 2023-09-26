@@ -18,7 +18,7 @@ export default function SpolecenstviInfo({ id, className }) {
         Rozcestník dalších informací
       </ContainerTitle>
       <CardFeed>
-        <Link href="/dcm-hradec-kralove" target="_self">
+        <Link href="/vikariaty" target="_self">
           <Button>
             <IconPuzzle stroke={1} className={`inline h-6 mr-2`} />
             Vikariáty
