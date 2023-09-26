@@ -1,16 +1,24 @@
 "use client";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import DiecezkoInfo from "./switcher/diecezko-info";
 import Program from "./switcher/program";
 import SpolecenstviInfo from "./switcher/spolecenstvi-info";
+import SwitcherContext from "../lib/switcher-context";
 export default function Switcher() {
-  const [Diecezko, setDiecezko] = useState("");
-  const [program, setProgram] = useState("hidden");
-  const [Info, setInfo] = useState("hidden");
+  const { switcher, setSwitcher } = useContext(SwitcherContext);
+  const [Diecezko, setDiecezko] = useState(switcher === 0 ? "" : "hidden");
+  const [program, setProgram] = useState(switcher === 1 ? "" : "hidden");
+  const [Info, setInfo] = useState(switcher === 2 ? "" : "hidden");
 
-  const [DiecezkoButton, setDiecezkoButton] = useState("switcher-selected");
-  const [programButton, setProgramButton] = useState("");
-  const [InfoButton, setInfoButton] = useState("");
+  const [DiecezkoButton, setDiecezkoButton] = useState(
+    switcher === 0 ? "switcher-selected" : ""
+  );
+  const [programButton, setProgramButton] = useState(
+    switcher === 1 ? "switcher-selected" : ""
+  );
+  const [InfoButton, setInfoButton] = useState(
+    switcher === 2 ? "switcher-selected" : ""
+  );
 
   const openDiecezko = () => {
     setDiecezko("");
@@ -20,6 +28,8 @@ export default function Switcher() {
     setDiecezkoButton("switcher-selected");
     setProgramButton("");
     setInfoButton("");
+
+    setSwitcher(0); // context
   };
 
   const openProgram = () => {
@@ -30,6 +40,8 @@ export default function Switcher() {
     setDiecezkoButton("");
     setProgramButton("switcher-selected");
     setInfoButton("");
+
+    setSwitcher(1); // context
   };
 
   const openInfo = () => {
@@ -40,6 +52,8 @@ export default function Switcher() {
     setDiecezkoButton("");
     setProgramButton("");
     setInfoButton("switcher-selected");
+
+    setSwitcher(2); // context
   };
 
   return (
