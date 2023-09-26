@@ -69,7 +69,7 @@ export default function Header() {
             </li>
           </Link>
           <Link
-            href=""
+            href="vikariaty"
             target="_self"
             className="border-b-[#3b3b3b] border-b w-full"
           >
@@ -79,7 +79,7 @@ export default function Header() {
             </li>
           </Link>
           <Link
-            href=""
+            href="/dcm-hradec-kralove"
             target="_self"
             className="border-b-[#3b3b3b] border-b w-full"
           >
@@ -89,7 +89,7 @@ export default function Header() {
             </li>
           </Link>
           <Link
-            href=""
+            href="/dczm-vesmir"
             target="_self"
             className="border-b-[#3b3b3b] border-b w-full"
           >
@@ -99,7 +99,7 @@ export default function Header() {
             </li>
           </Link>
           <Link
-            href=""
+            href="/kak-salas"
             target="_self"
             className="border-b-[#3b3b3b] border-b w-full"
           >
@@ -109,7 +109,7 @@ export default function Header() {
             </li>
           </Link>
           <Link
-            href=""
+            href="/veka"
             target="_self"
             className="border-b-[#3b3b3b] border-b w-full"
           >
@@ -119,7 +119,7 @@ export default function Header() {
             </li>
           </Link>
           <Link
-            href=""
+            href="/studenecka-schola"
             target="_self"
             className="border-b-[#3b3b3b] border-b w-full"
           >
