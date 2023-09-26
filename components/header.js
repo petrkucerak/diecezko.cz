@@ -119,7 +119,7 @@ export default function Header() {
             </li>
           </Link>
           <Link
-            href=""
+            href="/studenecka-schola"
             target="_self"
             className="border-b-[#3b3b3b] border-b w-full"
           >
