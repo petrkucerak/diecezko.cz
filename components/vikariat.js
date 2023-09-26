@@ -13,11 +13,12 @@ export default function Vikariat({
   cover,
   person1,
   person2,
+  person3,
   priest,
   social,
 }) {
   return (
-    <div className={`${className}`}>
+    <div className={`${className} w-full mb-8`}>
       {cover !== undefined ? (
         <ContainerImage
           pngPath={cover.png}
@@ -28,12 +29,18 @@ export default function Vikariat({
         />
       ) : null}
       <h2 className="text-2xl font-semibold">{name}</h2>
-      <p className="tracking-wide mb-2">{description}</p>
-      <h3 className="text-xl font-semibold">Zástupci</h3>
+      {description !== undefined ? (
+        <p
+          className="tracking-wide mb-2 italic"
+          dangerouslySetInnerHTML={{ __html: description }}
+        />
+      ) : null}
+      <h3 className="uppercase font-semibold">Zástupci</h3>
       <ul className="">
         {priest !== undefined ? <li>{priest}</li> : null}
         {person1 !== undefined ? <li>{person1}</li> : null}
         {person2 !== undefined ? <li>{person2}</li> : null}
+        {person3 !== undefined ? <li>{person3}</li> : null}
         {social !== undefined ? (
           <li className="mt-2">
             {social.facebook !== undefined ? (
