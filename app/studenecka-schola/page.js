@@ -35,7 +35,7 @@ export default async function StudeneckaSchola() {
             pngPath="/assets/images/spolecenstvi/studenecka-schola.png"
             jpgPath="/assets/images/spolecenstvi/studenecka-schola.jpg"
             webpPath="/assets/images/spolecenstvi/studenecka-schola.webp"
-            altText="Vesmírná kapela na koncertě"
+            altText="Ilustrační fotka Studenecké scholy"
             className="w-full my-2"
           />
           <ContainerParagraph>
