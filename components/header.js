@@ -74,7 +74,7 @@ export default function Header() {
             className="border-b-[#3b3b3b] border-b w-full"
           >
             <li className="flex flex-row items-center">
-              <IconPuzzle className="inline h-7 w-7 my-1 mr-2" />
+              <IconPuzzle stroke={1} className="inline h-7 w-7 my-1 mr-2" />
               Vikariáty
             </li>
           </Link>
@@ -124,7 +124,7 @@ export default function Header() {
             className="border-b-[#3b3b3b] border-b w-full"
           >
             <li className="flex flex-row items-center">
-              <IconMusic className="inline h-7 w-7 my-1 mr-2" />
+              <IconMusic stroke={1} className="inline h-7 w-7 my-1 mr-2" />
               Studenecká schola
             </li>
           </Link>
