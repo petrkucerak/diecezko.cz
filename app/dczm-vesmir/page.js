@@ -41,7 +41,7 @@ export default async function DCZM() {
             jsou mladí lidé, kteří zpravidla rok až dva stabilně žijí
             v&nbsp;DCŽM Vesmír (tým) a&nbsp;zmiňované programy spolu
             s&nbsp;mladými lidmi vytvářejí a&nbsp;realizují. Naší cílovou
-            skupinou je mládež od 14-ti do 26-ti let. Posláním DCŽM je vést
+            skupinou je mládež od 14 do 26 let. Posláním DCŽM je vést
             k&nbsp;opravdovým hodnotám (kvalitní mezilidské vztahy, nalezení a
             objevení sebe sama, pozitivní vztah k&nbsp;práci, zodpovědný přístup
             k&nbsp;materielním hodnotám a&nbsp;cit k&nbsp;přírodě).
