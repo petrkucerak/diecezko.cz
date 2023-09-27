@@ -9,7 +9,18 @@ export default function ContainerImage({
     <picture>
       <source srcSet={webpPath} type="image/webp" />
       <source srcSet={jpgPath} type="image/jpeg" />
-      <img alt={altText} loading="lazy" src={pngPath} className={`rounded-xl ${className}`} />
+      <img
+        alt={altText}
+        loading="lazy"
+        src={
+          pngPath !== undefined
+            ? pngPath
+            : jpgPath !== undefined
+            ? jpgPath
+            : webpPath
+        }
+        className={`rounded-xl ${className}`}
+      />
     </picture>
   );
 }

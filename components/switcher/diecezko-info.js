@@ -1,4 +1,6 @@
 import Container from "../layouts/container";
+import ContainerDescription from "../layouts/container-description";
+import ContainerH2 from "../layouts/container-h2";
 import ContainerParagraph from "../layouts/container-paragraph";
 import {
   IconBrandFacebook,
@@ -7,6 +9,7 @@ import {
   IconPencil,
 } from "@tabler/icons";
 import Link from "next/link";
+import ProfileCard from "../layouts/profile-card";
 
 export default function DiecezkoInfo({ id, className }) {
   return (
@@ -76,6 +79,7 @@ export default function DiecezkoInfo({ id, className }) {
           </Link>
         </div>
       </div>
+      <ContainerH2>O diecézku</ContainerH2>
       <ContainerParagraph>
         Na přání papeže sv. Jana Pavla II. a jeho nástupců se mají biskupové
         scházet každý rok s mládeží své diecéze. Původně byla pro tuto akci
@@ -98,6 +102,63 @@ export default function DiecezkoInfo({ id, className }) {
         Akce se pravidelně účastní kolem 700 mladých lidí z celé diecéze a
         minimálně 100 ochotných dobrovolníků.
       </ContainerParagraph>
+      <ContainerH2>Jádro diecézka</ContainerH2>
+      <ContainerDescription>
+        Diecézko je především o lidech, kteří se chtějí setkat a společně prožít
+        jeden den s biskupem. Nemohlo by se uskutečnit bez dobrovolníků, kteří
+        stojí za jeho přípravou.
+      </ContainerDescription>
+      <div className="flex flex-col md:grid grid-cols-2 grid-flow-row gap-4 items-center auto-cols-max">
+        {jadro.map((p) => {
+          return (
+            <ProfileCard
+              key={p.name}
+              name={p.name}
+              description={p.description}
+              jpgPath={p.jpgPath}
+              webpPath={p.webpPath}
+              pngPath={p.pngPath}
+              altText={p.altText}
+              className={p.className}
+            />
+          );
+        })}
+      </div>
     </Container>
   );
 }
+
+export const jadro = [
+  {
+    name: "Klárka Petrová",
+    description: "Klárka je voudcí DCM a srdcem celého diecézka.",
+    jpgPath: "/assets/images/jadro/kucera.jpg",
+    webpPath: "/assets/images/jadro/kucera.webp",
+    altText: "Profilová fotka Petr Kučery",
+    className: "",
+  },
+  {
+    name: "Jindra Řezníček",
+    description:
+      "Jindra je parťák Klárky. Pracuje na DCM a spolu s ní drží oteže nad celým diecézkem.",
+    jpgPath: "/assets/images/jadro/kucera.jpg",
+    webpPath: "/assets/images/jadro/kucera.webp",
+    altText: "Profilová fotka Petr Kučery",
+    className: "",
+  },
+  {
+    name: "Sára Ondreková",
+    jpgPath: "/assets/images/jadro/kucera.jpg",
+    webpPath: "/assets/images/jadro/kucera.webp",
+    altText: "Profilová fotka Petr Kučery",
+    className: "",
+  },
+  {
+    name: "Petr Kučera",
+    description: "Petr má na svědomí vznik diecézko.cz a&nbsp;Evženovy cesty.",
+    jpgPath: "/assets/images/jadro/kucera.jpg",
+    webpPath: "/assets/images/jadro/kucera.webp",
+    altText: "Profilová fotka Petr Kučery",
+    className: "",
+  },
+];
