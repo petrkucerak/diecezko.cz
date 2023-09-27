@@ -106,8 +106,12 @@ export default function Game({ score }) {
         className={`flex flex-col items-center justify-around min-h-[60vh] ${hra}`}
       >
         <div className="w-full flex flex-col items-center justify-between prevent-select">
-          <div className="absolute w-full flex-row flex items-center justify-around mt-4">
-            <span id="gameScore" className="text-2xl text-center">
+          <div className="absolute w-full flex-row flex items-center justify-center mt-4">
+            <span id="gameSpeed" className="text-2xl text-center">
+              0
+            </span>
+            <span className="text-2xl text-center">x |</span>
+            <span id="gameScore" className="text-2xl text-center ml-1">
               0
             </span>
           </div>
