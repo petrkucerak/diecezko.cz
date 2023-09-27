@@ -197,24 +197,28 @@ export const jadro = [
   {
     name: "Vojta Vlach",
     description:
-      "Vojta je ostřílený kapelník Vesmírné kapely, která doprovodí dopolední program ve Filharmonii.",
+      "Vojta je ostřílený kapelník Vesmírné kapely, která doprovodí dopolední program ve Filharmonii a&nbsp;pomáhá s&nbsp;vývojem diecezka.cz.",
     altText: "Profilová fotka Vojta Vlach",
+    jpgPath: "/assets/images/jadro/pan-vlach.jpg",
+    webpPath: "/assets/images/jadro/pan-vlach.webp",
     className: "",
   },
   {
     name: "Lucka Pekárková",
     altText: "Profilová fotka Lucka Pekárková",
+    jpgPath: "/assets/images/jadro/pekarkova.jpg",
+    webpPath: "/assets/images/jadro/pekarkova.webp",
     className: "",
   },
   {
     name: "Anna Marie Maříková",
-    description: "Tomáš je duchovní opora celého přípravného týmu.",
     altText: "Profilová fotka Anna Marie Maříková",
+    jpgPath: "/assets/images/jadro/marikova.jpg",
+    webpPath: "/assets/images/jadro/marikova.webp",
     className: "",
   },
   {
     name: "Jirka Jakoubek",
-    description: "Tomáš je duchovní opora celého přípravného týmu.",
     altText: "Profilová fotka Jirka Jakoubek",
     className: "",
   },
