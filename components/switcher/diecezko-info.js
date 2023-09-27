@@ -183,14 +183,14 @@ export const jadro = [
   {
     name: "Denča Zavřelová",
     description:
-      "Recepční skupinka pod vedením Denči vás při vstupu do FIlharmonie označí náramkem a také uloží vaše kabáty a bundy do šatny.",
+      "Recepční skupinka pod vedením Denči vás při vstupu do FIlharmonie označí náramkem a&nbsp;také uloží vaše kabáty a&nbsp;bundy do šatny.",
     altText: "Profilová fotka Denča Zavřelová",
     className: "",
   },
   {
     name: "Amálka Výborná",
     description:
-      "Amálka a její tým v oranžových vestičkách vám zajistí bezpečný doprovod až na přednášku.",
+      "Amálka a&nbsp;její tým v&nbsp;oranžových vestičkách vám zajistí bezpečný doprovod až na přednášku.",
     altText: "Profilová fotka Amálka Výborná",
     className: "",
   },
@@ -221,21 +221,21 @@ export const jadro = [
   {
     name: "Honza Pecháček",
     description:
-      "Bohoslovec Honza se spolu s Michalem starají o hladký průběh duchovního programu a mše svaté.",
+      "Bohoslovec Honza se spolu s&nbsp;Michalem starají o&nbsp;hladký průběh duchovního programu a&nbsp;mše svaté.",
     altText: "Profilová fotka Honza Pecháček",
     className: "",
   },
   {
     name: "Michal Šramko",
     description:
-      "Bohoslovec Michal se spolu s Honzou starají o hladký průběh duchovního programu a mše svaté.",
+      "Bohoslovec Michal se spolu s&nbsp;Honzou starají o&nbsp;hladký průběh duchovního programu a&nbsp;mše svaté.",
     altText: "Profilová fotka Michal Šramko",
     className: "",
   },
   {
     name: "Kryštof Hamouz",
     description:
-      "Kryštof se stará o krmení hladových krků přípravného týmu a zajišťuje kavárnu pro účastníky.",
+      "Kryštof se stará o&nbsp;krmení hladových krků přípravného týmu a&nbsp;zajišťuje kavárnu pro účastníky.",
     altText: "Profilová fotka Kryštof Hamouz",
     className: "",
   },
@@ -249,7 +249,7 @@ export const jadro = [
   {
     name: "Šája Pavlová",
     description:
-      "Šája je vrchní manažerka úklidové čety a kromě každého odpadku vyhozeného do správného koše, ocení i každou pomocnou ruku.",
+      "Šája je vrchní manažerka úklidové čety a&nbsp;kromě každého odpadku vyhozeného do správného koše, ocení i&nbsp;každou pomocnou ruku.",
     altText: "Profilová fotka Šája Pavlová",
     className: "",
   },
