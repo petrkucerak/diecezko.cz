@@ -115,10 +115,15 @@ export default function Game({ score }) {
               0
             </span>
           </div>
-          <canvas id="game" width={300} height={150}></canvas>
+          <canvas
+            id="game"
+            width={300}
+            height={150}
+            className="border-4 rounded-xl"
+          ></canvas>
           <div
             id="fail-banner"
-            className="absolute z-10 top-80 bg-black/70 w-[60vw] max-w-[550px] text-center h-64 rounded backdrop-blur-sm flex flex-col items-center justify-around hidden"
+            className="absolute z-10 top-80 bg-black/70 w-[60vw] max-w-[550px] text-center h-64 rounded-xl backdrop-blur-sm flex flex-col items-center justify-around hidden"
           >
             <h3 className="text-2xl font-bold">Evžen narazil!</h3>
             <button
