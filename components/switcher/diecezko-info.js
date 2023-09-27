@@ -104,11 +104,11 @@ export default function DiecezkoInfo({ id, className }) {
       </ContainerParagraph>
       <ContainerH2>Jádro diecézka</ContainerH2>
       <ContainerDescription>
-        Diecézko je především o lidech, kteří se chtějí setkat a společně prožít
-        jeden den s biskupem. Nemohlo by se uskutečnit bez dobrovolníků, kteří
-        stojí za jeho přípravou.
+        Diecézko je především o&nbsp;lidech, kteří se chtějí setkat
+        a&nbsp;společně prožít jeden den s&nbsp;biskupem. Nemohlo by se
+        uskutečnit bez dobrovolníků, kteří stojí za jeho přípravou.
       </ContainerDescription>
-      <div className="flex flex-col md:grid grid-cols-2 grid-flow-row gap-4 items-center auto-cols-max">
+      <div className="flex flex-col sm:grid sm:grid-cols-2 md:grid-cols-3 grid-flow-row gap-4 items-center">
         {jadro.map((p) => {
           return (
             <ProfileCard
@@ -131,34 +131,130 @@ export default function DiecezkoInfo({ id, className }) {
 export const jadro = [
   {
     name: "Klárka Petrová",
-    description: "Klárka je voudcí DCM a srdcem celého diecézka.",
-    jpgPath: "/assets/images/jadro/kucera.jpg",
-    webpPath: "/assets/images/jadro/kucera.webp",
-    altText: "Profilová fotka Petr Kučery",
+    description: "Klárka je vedoucí DCM a&nbsp;má pod palcem celé diecézka.",
+    pngPath: "/assets/images/jadro/petrova.png",
+    jpgPath: "/assets/images/jadro/petrova.jpg",
+    webpPath: "/assets/images/jadro/petrova.webp",
+    altText: "Profilová fotka Klárky Petrové",
     className: "",
   },
   {
     name: "Jindra Řezníček",
     description:
-      "Jindra je parťák Klárky. Pracuje na DCM a spolu s ní drží oteže nad celým diecézkem.",
-    jpgPath: "/assets/images/jadro/kucera.jpg",
-    webpPath: "/assets/images/jadro/kucera.webp",
-    altText: "Profilová fotka Petr Kučery",
+      "Jindra je parťák Klárky, pracuje na DCM a&nbsp;spolu s&nbsp;ní drží oteže nad diecézkem.",
+    pngPath: "/assets/images/jadro/jindra.png",
+    jpgPath: "/assets/images/jadro/jindra.jpg",
+    webpPath: "/assets/images/jadro/jindra.webp",
+    altText: "Profilová fotka Jindry Řezníčka",
     className: "",
   },
   {
     name: "Sára Ondreková",
-    jpgPath: "/assets/images/jadro/kucera.jpg",
-    webpPath: "/assets/images/jadro/kucera.webp",
-    altText: "Profilová fotka Petr Kučery",
+    altText: "Profilová fotka Sára Ondreková",
     className: "",
   },
+  {
+    name: "Klárka Kopecká",
+    description:
+      "Manažerka Klárka komunikuje s&nbsp;hosty a&nbsp;domlouvá s&nbsp;nimi detaily jejich přednášek.",
+    pngPath: "/assets/images/jadro/klarka.png",
+    jpgPath: "/assets/images/jadro/klarka.jpg",
+    webpPath: "/assets/images/jadro/klarka.webp",
+    altText: "Profilová fotka Klárky Kopecké",
+    className: "",
+  },
+
   {
     name: "Petr Kučera",
     description: "Petr má na svědomí vznik diecézko.cz a&nbsp;Evženovy cesty.",
     jpgPath: "/assets/images/jadro/kucera.jpg",
     webpPath: "/assets/images/jadro/kucera.webp",
     altText: "Profilová fotka Petr Kučery",
+    className: "",
+  },
+  {
+    name: "o. Tomáš Hoffmann",
+    description: "Tomáš je duchovní opora celého přípravného týmu.",
+    altText: "Profilová fotka o. Tomáš Hoffmann",
+    className: "",
+  },
+  {
+    name: "Denča Zavřelová",
+    description:
+      "Recepční skupinka pod vedením Denči vás při vstupu do FIlharmonie označí náramkem a také uloží vaše kabáty a bundy do šatny.",
+    altText: "Profilová fotka Denča Zavřelová",
+    className: "",
+  },
+  {
+    name: "Amálka Výborná",
+    description:
+      "Amálka a její tým v oranžových vestičkách vám zajistí bezpečný doprovod až na přednášku.",
+    altText: "Profilová fotka Amálka Výborná",
+    className: "",
+  },
+  {
+    name: "Vojta Vlach",
+    description:
+      "Vojta je ostřílený kapelník Vesmírné kapely, která doprovodí dopolední program ve Filharmonii.",
+    altText: "Profilová fotka Vojta Vlach",
+    className: "",
+  },
+  {
+    name: "Lucka Pekárková",
+    altText: "Profilová fotka Lucka Pekárková",
+    className: "",
+  },
+  {
+    name: "Anna Marie Maříková",
+    description: "Tomáš je duchovní opora celého přípravného týmu.",
+    altText: "Profilová fotka Anna Marie Maříková",
+    className: "",
+  },
+  {
+    name: "Jirka Jakoubek",
+    description: "Tomáš je duchovní opora celého přípravného týmu.",
+    altText: "Profilová fotka Jirka Jakoubek",
+    className: "",
+  },
+  {
+    name: "Honza Pecháček",
+    description:
+      "Bohoslovec Honza se spolu s Michalem starají o hladký průběh duchovního programu a mše svaté.",
+    altText: "Profilová fotka Honza Pecháček",
+    className: "",
+  },
+  {
+    name: "Michal Šramko",
+    description:
+      "Bohoslovec Michal se spolu s Honzou starají o hladký průběh duchovního programu a mše svaté.",
+    altText: "Profilová fotka Michal Šramko",
+    className: "",
+  },
+  {
+    name: "Kryštof Hamouz",
+    description:
+      "Kryštof se stará o krmení hladových krků přípravného týmu a zajišťuje kavárnu pro účastníky.",
+    altText: "Profilová fotka Kryštof Hamouz",
+    className: "",
+  },
+  {
+    name: "Kuba Machek",
+    description:
+      "Kuba se svým týmem připravuje prostory pro odpolední přednášky.",
+    altText: "Profilová fotka Kuba Machek",
+    className: "",
+  },
+  {
+    name: "Šája Pavlová",
+    description:
+      "Šája je vrchní manažerka úklidové čety a kromě každého odpadku vyhozeného do správného koše, ocení i každou pomocnou ruku.",
+    altText: "Profilová fotka Šája Pavlová",
+    className: "",
+  },
+  {
+    name: "Honza Klinger",
+    description: "Honza koordinuje sporty během odpoledního programu.",
+    altText: "Profilová fotka Honza Klinger",
     className: "",
   },
 ];
