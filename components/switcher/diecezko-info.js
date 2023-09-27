@@ -176,6 +176,8 @@ export const jadro = [
     name: "o. Tomáš Hoffmann",
     description: "Tomáš je duchovní opora celého přípravného týmu.",
     altText: "Profilová fotka o. Tomáš Hoffmann",
+    jpgPath: "/assets/images/jadro/hoffmann.jpg",
+    webpPath: "/assets/images/jadro/hoffmann.webp",
     className: "",
   },
   {
@@ -255,6 +257,8 @@ export const jadro = [
     name: "Honza Klinger",
     description: "Honza koordinuje sporty během odpoledního programu.",
     altText: "Profilová fotka Honza Klinger",
+    jpgPath: "/assets/images/jadro/klinger.jpg",
+    webpPath: "/assets/images/jadro/klinger.webp",
     className: "",
   },
 ];
