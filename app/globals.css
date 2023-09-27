@@ -24,6 +24,26 @@
   overflow: hidden;
 }
 
+/* border colors*/
+.border-color-1 {
+  border-color: #ffff00;
+}
+.border-color-2 {
+  border-color: #ffd900;
+}
+.border-color-3 {
+  border-color: #ff9900;
+}
+.border-color-4 {
+  border-color: #ff5e00;
+}
+.border-color-5 {
+  border-color: #ff0062;
+}
+.border-color-6 {
+  border-color: #8400ff;
+}
+
 @font-face {
   font-family: "Caveat Brush";
   src: url("../fonts/CaveatBrush-Regular.woff2") format("woff2"),

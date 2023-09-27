@@ -106,15 +106,24 @@ export default function Game({ score }) {
         className={`flex flex-col items-center justify-around min-h-[60vh] ${hra}`}
       >
         <div className="w-full flex flex-col items-center justify-between prevent-select">
-          <div className="absolute w-full flex-row flex items-center justify-around mt-4">
-            <span id="gameScore" className="text-2xl text-center">
+          <div className="absolute w-full flex-row flex items-center justify-center mt-4">
+            <span id="gameSpeed" className="text-2xl text-center">
+              0
+            </span>
+            <span className="text-2xl text-center">x |</span>
+            <span id="gameScore" className="text-2xl text-center ml-1">
               0
             </span>
           </div>
-          <canvas id="game" width={300} height={150}></canvas>
+          <canvas
+            id="game"
+            width={300}
+            height={150}
+            className="border-4 rounded-xl"
+          ></canvas>
           <div
             id="fail-banner"
-            className="absolute z-10 top-80 bg-black/70 w-[60vw] max-w-[550px] text-center h-64 rounded backdrop-blur-sm flex flex-col items-center justify-around hidden"
+            className="absolute z-10 top-80 bg-black/70 w-[60vw] max-w-[550px] text-center h-64 rounded-xl backdrop-blur-sm flex flex-col items-center justify-around hidden"
           >
             <h3 className="text-2xl font-bold">Evžen narazil!</h3>
             <button
