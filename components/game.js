@@ -199,7 +199,7 @@ export default function Game({ score }) {
               vyhrát speciální dárek od Evžena Holuba... Více info sem jako
               ještě, jooo?
             </p>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center justify-center">
               <div className="flex items-center">
                 <input
                   type="text"
@@ -209,18 +209,20 @@ export default function Game({ score }) {
                   placeholder="Tvoje přezdívka"
                   onChange={(e) => validateNickname(e.target.value)}
                 />
-                <IconCheck
-                  className={`inline relative right-10 ${iconCheckClass}`}
-                  color="#00b341"
-                />
-                <IconX
-                  className={`inline relative right-10 ${iconXClass}`}
-                  color="#ff2825"
-                />
-                <IconExclamationMark
-                  className={`inline relative right-10 ${iconExclamationMarkClass}`}
-                  color="#ff9300"
-                />
+                <div className="w-0">
+                  <IconCheck
+                    className={`inline relative right-10 ${iconCheckClass}`}
+                    color="#00b341"
+                  />
+                  <IconX
+                    className={`inline relative right-10 ${iconXClass}`}
+                    color="#ff2825"
+                  />
+                  <IconExclamationMark
+                    className={`inline relative right-10 ${iconExclamationMarkClass}`}
+                    color="#ff9300"
+                  />
+                </div>
               </div>
               <div className="text-[#ff9300] text-xl mt-2">{warningText}</div>
             </div>
