@@ -26,6 +26,9 @@ export default function Game({ score }) {
   const [warningText, setWarningText] = useState("");
   const [iconExclamationMarkClass, setIconExclamationMarkClass] =
     useState("hidden");
+  const [cursorButton, setCursorButton] = useState(
+    "cursor-not-allowed opacity-25 pointer-events-none"
+  );
 
   function isNicknameExists(nickname) {
     for (let i = 0; i < score.length; i += 1) {
@@ -45,11 +48,13 @@ export default function Game({ score }) {
       setIconCheckClass("hidden");
       setIconExclamationMarkClass("hidden");
       setIconXClass("");
+      setCursorButton("cursor-not-allowed opacity-25 pointer-events-none");
       setWarningText("Přezdívka je moc dlouhá!");
     } else if (isNicknameExists(nickname)) {
       setIconCheckClass("hidden");
       setIconExclamationMarkClass("");
       setIconXClass("hidden");
+      setCursorButton("cursor-pointer");
       setWarningText(
         `Přezdívka již použita se skórem ${getNicknameScore(nickname)}.`
       );
@@ -58,6 +63,7 @@ export default function Game({ score }) {
       setIconXClass("hidden");
       setIconExclamationMarkClass("hidden");
       setWarningText("");
+      setCursorButton("cursor-pointer");
     }
   }
 
@@ -225,7 +231,7 @@ export default function Game({ score }) {
               <input
                 type="submit"
                 value="Vytesat"
-                className="border px-6 py-2 rounded-full cursor-pointer text-lg mx-2"
+                className={`border px-6 py-2 rounded-full ${cursorButton} text-lg mx-2`}
               />
               <div
                 onClick={closeFormDisplay}
