@@ -4,6 +4,7 @@ import { game } from "../lib/game";
 import { requestJSON } from "../lib/request";
 import ContainerTitle from "./layouts/container-title";
 import ContainerDescription from "./layouts/container-description";
+import { IconCheck, IconExclamationMark, IconX } from "@tabler/icons";
 
 export default function Game({ score }) {
   useEffect(() => {
@@ -19,6 +20,52 @@ export default function Game({ score }) {
   const [sinSlavyButton, setSinSlavyButton] = useState("");
 
   const [finalScore, setFinalScore] = useState(0);
+
+  const [iconCheckClass, setIconCheckClass] = useState("hidden");
+  const [iconXClass, setIconXClass] = useState("hidden");
+  const [warningText, setWarningText] = useState("");
+  const [iconExclamationMarkClass, setIconExclamationMarkClass] =
+    useState("hidden");
+  const [cursorButton, setCursorButton] = useState(
+    "cursor-not-allowed opacity-25 pointer-events-none"
+  );
+
+  function isNicknameExists(nickname) {
+    for (let i = 0; i < score.length; i += 1) {
+      if (nickname === score[i].nickname) return true;
+    }
+    return false;
+  }
+  function getNicknameScore(nickname) {
+    for (let i = 0; i < score.length; i += 1) {
+      if (nickname === score[i].nickname) return score[i].score;
+    }
+    return undefined;
+  }
+
+  function validateNickname(nickname) {
+    if (nickname.length > 18) {
+      setIconCheckClass("hidden");
+      setIconExclamationMarkClass("hidden");
+      setIconXClass("");
+      setCursorButton("cursor-not-allowed opacity-25 pointer-events-none");
+      setWarningText("Přezdívka je moc dlouhá!");
+    } else if (isNicknameExists(nickname)) {
+      setIconCheckClass("hidden");
+      setIconExclamationMarkClass("");
+      setIconXClass("hidden");
+      setCursorButton("cursor-pointer");
+      setWarningText(
+        `Přezdívka již použita se skórem ${getNicknameScore(nickname)}.`
+      );
+    } else {
+      setIconCheckClass("");
+      setIconXClass("hidden");
+      setIconExclamationMarkClass("hidden");
+      setWarningText("");
+      setCursorButton("cursor-pointer");
+    }
+  }
 
   const getScore = () => {
     setFinalScore(parseInt(document.getElementById("gameScore").innerText));
@@ -152,13 +199,33 @@ export default function Game({ score }) {
               vyhrát speciální dárek od Evžena Holuba... Více info sem jako
               ještě, jooo?
             </p>
-            <input
-              type="text"
-              id="nickname"
-              name="nickname"
-              className="w-[80vw] max-w-[300px] text-center text-xl text-white py-4 rounded"
-              placeholder="Tvoje přezdívka"
-            ></input>
+            <div className="flex flex-col items-center justify-center">
+              <div className="flex items-center">
+                <input
+                  type="text"
+                  id="nickname"
+                  name="nickname"
+                  className="w-[80vw] max-w-[400px] text-center text-xl text-white bg-[#333] rounded-full py-4"
+                  placeholder="Tvoje přezdívka"
+                  onChange={(e) => validateNickname(e.target.value)}
+                />
+                <div className="w-0">
+                  <IconCheck
+                    className={`inline relative right-10 ${iconCheckClass}`}
+                    color="#00b341"
+                  />
+                  <IconX
+                    className={`inline relative right-10 ${iconXClass}`}
+                    color="#ff2825"
+                  />
+                  <IconExclamationMark
+                    className={`inline relative right-10 ${iconExclamationMarkClass}`}
+                    color="#ff9300"
+                  />
+                </div>
+              </div>
+              <div className="text-[#ff9300] text-xl mt-2">{warningText}</div>
+            </div>
             <p className="text-xl uppercase tracking-widest">
               Skóre: {finalScore}
             </p>
@@ -166,7 +233,7 @@ export default function Game({ score }) {
               <input
                 type="submit"
                 value="Vytesat"
-                className="border px-6 py-2 rounded-full cursor-pointer text-lg mx-2"
+                className={`border px-6 py-2 rounded-full ${cursorButton} text-lg mx-2`}
               />
               <div
                 onClick={closeFormDisplay}
