@@ -36,7 +36,6 @@ export default async function DCZM() {
             s&nbsp;ostatními studenty.
           </ContainerDescription>
           <ContainerImage
-            pngPath="/assets/images/spolecenstvi/salas-cover.png"
             jpgPath="/assets/images/spolecenstvi/salas-cover.jpg"
             webpPath="/assets/images/spolecenstvi/salas-cover.webp"
             altText="Mladí z KAK saloš"
