@@ -12,7 +12,13 @@ export default function ContainerImage({
       <img
         alt={altText}
         loading="lazy"
-        src={pngPath !== undefined ? pngPath : jpgPath}
+        src={
+          pngPath !== undefined
+            ? pngPath
+            : jpgPath !== undefined
+            ? jpgPath
+            : webpPath
+        }
         className={`rounded-xl ${className}`}
       />
     </picture>

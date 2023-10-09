@@ -5,7 +5,7 @@ import Link from "next/link";
 import Button from "../layouts/button";
 import IconCustomVeka from "../images/veka";
 import ContainerH2 from "../layouts/container-h2";
-import { IconChefHat, IconMusic, IconPuzzle } from "@tabler/icons";
+import { IconChefHat, IconHeart, IconMusic, IconPuzzle } from "@tabler/icons";
 import IconCustomDCM from "../images/dcm-hk";
 import IconCustomVesmir from "../images/vesmir";
 import IconCustomSalas from "../images/salas";
@@ -18,6 +18,12 @@ export default function SpolecenstviInfo({ id, className }) {
         Rozcestník dalších informací
       </ContainerTitle>
       <CardFeed>
+        <Link href="/jadro-diecezka" target="_self">
+          <Button>
+            <IconHeart stroke={1} className={`inline h-6 mr-2`} />
+            Jádro diecézka
+          </Button>
+        </Link>
         <Link href="/vikariaty" target="_self">
           <Button>
             <IconPuzzle stroke={1} className={`inline h-6 mr-2`} />

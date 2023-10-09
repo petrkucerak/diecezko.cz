@@ -37,10 +37,10 @@ export default function Vikariat({
       ) : null}
       <h3 className="uppercase font-semibold">Zástupci</h3>
       <ul className="">
-        {priest !== undefined ? <li>{priest}</li> : null}
-        {person1 !== undefined ? <li>{person1}</li> : null}
-        {person2 !== undefined ? <li>{person2}</li> : null}
-        {person3 !== undefined ? <li>{person3}</li> : null}
+        {priest !== undefined ? <li>{priest.name}</li> : null}
+        {person1 !== undefined ? <li>{person1.name}</li> : null}
+        {person2 !== undefined ? <li>{person2.name}</li> : null}
+        {person3 !== undefined ? <li>{person3.name}</li> : null}
         {social !== undefined ? (
           <li className="mt-2">
             {social.facebook !== undefined ? (

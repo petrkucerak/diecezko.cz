@@ -1,8 +1,9 @@
 import Container from "../layouts/container";
+import ContainerH2 from "../layouts/container-h2";
 import ContainerParagraph from "../layouts/container-paragraph";
 import {
+  IconApps,
   IconBrandFacebook,
-  IconCalendar,
   IconHeartHandshake,
   IconPencil,
 } from "@tabler/icons";
@@ -48,7 +49,7 @@ export default function DiecezkoInfo({ id, className }) {
           >
             <button className="flex flex-row items-center justify-center">
               <IconHeartHandshake className="inline" />{" "}
-              <span className="ml-2 text-left">Dobrovolníci</span>
+              <span className="ml-2 text-left">Chci pomoct</span>
             </button>
           </Link>
           <Link
@@ -70,12 +71,13 @@ export default function DiecezkoInfo({ id, className }) {
             className="border border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-5 cursor-pointer text-base flex flex-row items-center justify-center"
           >
             <button className="flex flex-row items-center justify-center">
-              <IconCalendar className="inline" />{" "}
-              <span className="ml-2 text-left">Uložit event</span>
+              <IconApps className="inline" />{" "}
+              <span className="ml-2 text-left">Nainstalovat</span>
             </button>
           </Link>
         </div>
       </div>
+      <ContainerH2>O diecézku</ContainerH2>
       <ContainerParagraph>
         Na přání papeže sv. Jana Pavla II. a jeho nástupců se mají biskupové
         scházet každý rok s mládeží své diecéze. Původně byla pro tuto akci
