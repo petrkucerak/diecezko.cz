@@ -11,7 +11,7 @@ export default function ProfileCard({
 }) {
   return (
     <div
-      className={`${className} w-full my-4 md:my-0 flex flex-col items-left justify-around border-[#444] border rounded-xl p-6 transition h-full hover:scale-[1.02] hover:rotate-1`}
+      className={`${className} w-full my-4 md:my-0 flex flex-col items-center justify-around border-[#444] border rounded-xl p-6 transition h-full hover:scale-[1.02] hover:rotate-1`}
     >
       <ContainerImage
         pngPath={pngPath}
