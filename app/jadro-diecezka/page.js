@@ -101,6 +101,8 @@ export const jadro = [
     description:
       "Amálka a&nbsp;její tým v&nbsp;oranžových vestičkách vám zajistí bezpečný doprovod až na přednášku.",
     altText: "Profilová fotka Amálka Výborná",
+    jpgPath: "/assets/images/jadro/vyborna.jpg",
+    webpPath: "/assets/images/jadro/vyborna.webp",
     className: "",
   },
   {
