@@ -16,7 +16,7 @@ export default async function Vikariaty() {
           <ContainerDescription>
             Co to jsou vikariáty by sem chtělo dopsat...
           </ContainerDescription>
-          <IconCustomVikariatyMap />
+          {/* <IconCustomVikariatyMap /> */}
           {vikariaty.map((v) => {
             return (
               <Vikariat
