@@ -24,7 +24,7 @@ export default function ProfileCard({
         <h4 className="font-bold text-xl mb-0 mt-2">{name}</h4>
         <p
           className="w-full"
-          dangerouslySetInnerHTML={{ __html: description }}
+          dangerouslySetInnerHTML={{ __html: `${description}` }}
         />
       </div>
     </div>
