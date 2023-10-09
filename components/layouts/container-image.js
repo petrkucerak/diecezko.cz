@@ -18,7 +18,6 @@ export default function ContainerImage({
             : jpgPath !== undefined
             ? jpgPath
             : webpPath
-        }
         className={`rounded-xl ${className}`}
       />
     </picture>

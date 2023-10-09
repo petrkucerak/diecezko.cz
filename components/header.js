@@ -61,7 +61,7 @@ export default function Header() {
           <Link
             href="/evzenova-cesta"
             target="_self"
-            className="border-b-[#3b3b3b] border-b w-full"
+            className="border-b-[#3b3b3b] border-b w-full animate-pulse"
           >
             <li className="flex flex-row items-center">
               <IconCustomEvzen className="inline h-7 w-7 my-1 mr-2" />
