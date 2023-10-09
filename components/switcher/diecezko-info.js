@@ -49,7 +49,7 @@ export default function DiecezkoInfo({ id, className }) {
           >
             <button className="flex flex-row items-center justify-center">
               <IconHeartHandshake className="inline" />{" "}
-              <span className="ml-2 text-left">Dobrovolníci</span>
+              <span className="ml-2 text-left">Chci pomoct</span>
             </button>
           </Link>
           <Link
