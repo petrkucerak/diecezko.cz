@@ -134,6 +134,13 @@ export const jadro = [
     className: "",
   },
   {
+    name: "Kuba Kučera",
+    altText: "Profilová fotka Kuby Kučery",
+    jpgPath: "/assets/images/jadro/bro.jpg",
+    webpPath: "/assets/images/jadro/bro.webp",
+    className: "",
+  },
+  {
     name: "Honza Pecháček",
     description:
       "Bohoslovec Honza se spolu s&nbsp;Michalem starají o&nbsp;hladký průběh duchovního programu a&nbsp;mše svaté.",
