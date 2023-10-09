@@ -47,9 +47,8 @@ export default async function DCZM() {
             k&nbsp;materielním hodnotám a&nbsp;cit k&nbsp;přírodě).
           </ContainerDescription>
           <ContainerImage
-            pngPath="/assets/images/spolecenstvi/dcm-vesmir.png"
-            jpgPath="/assets/images/spolecenstvi/dcm-vesmir.jpg"
-            webpPath="/assets/images/spolecenstvi/dcm-vesmir.webp"
+            jpgPath="/assets/images/spolecenstvi/dczm-vesmir.jpg"
+            webpPath="/assets/images/spolecenstvi/dczm-vesmir.webp"
             altText="Tým DCŽM Vesmír"
             className="w-full my-2"
           />
