@@ -1,5 +1,11 @@
 "use client";
-import { IconMenu2, IconMusic, IconPuzzle, IconX } from "@tabler/icons";
+import {
+  IconHeart,
+  IconMenu2,
+  IconMusic,
+  IconPuzzle,
+  IconX,
+} from "@tabler/icons";
 import Link from "next/link";
 import { useState } from "react";
 import IconCustomSalas from "./images/salas";
@@ -61,7 +67,7 @@ export default function Header() {
           <Link
             href="/evzenova-cesta"
             target="_self"
-            className="border-b-[#3b3b3b] border-b w-full animate-pulse"
+            className="border-b-[#3b3b3b] border-b w-full"
           >
             <li className="flex flex-row items-center">
               <IconCustomEvzen className="inline h-7 w-7 my-1 mr-2" />
@@ -119,13 +125,13 @@ export default function Header() {
             </li>
           </Link>
           <Link
-            href="/studenecka-schola"
+            href="/jadro-diecezka"
             target="_self"
             className="border-b-[#3b3b3b] border-b w-full"
           >
             <li className="flex flex-row items-center">
-              <IconMusic stroke={1} className="inline h-7 w-7 my-1 mr-2" />
-              Studenecká schola
+              <IconHeart stroke={1} className="inline h-7 w-7 my-1 mr-2" />
+              Jádro diecézka
             </li>
           </Link>
         </ul>
