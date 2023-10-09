@@ -57,7 +57,6 @@ export default async function DCZM() {
             sednout na pivo.
           </ContainerParagraph>
           <ContainerImage
-            pngPath="/assets/images/spolecenstvi/salas-sheep.png"
             jpgPath="/assets/images/spolecenstvi/salas-sheep.jpg"
             webpPath="/assets/images/spolecenstvi/salas-sheep.webp"
             altText="Sheep ples"
@@ -76,7 +75,6 @@ export default async function DCZM() {
             28.11., 16.12. a&nbsp;30.1.
           </ContainerParagraph>
           <ContainerImage
-            pngPath="/assets/images/spolecenstvi/salas-deskovky.png"
             jpgPath="/assets/images/spolecenstvi/salas-deskovky.jpg"
             webpPath="/assets/images/spolecenstvi/salas-deskovky.webp"
             altText="Deskovky"
