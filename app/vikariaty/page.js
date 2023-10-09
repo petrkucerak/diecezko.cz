@@ -5,6 +5,7 @@ import ContainerTitle from "../../components/layouts/container-title";
 import PageMain from "../../components/layouts/page-main";
 import Vikariat from "../../components/vikariat";
 import ContainerDescription from "../../components/layouts/container-description";
+import IconCustomVikariatyMap from "../../components/images/vikariaty-map";
 export default async function Vikariaty() {
   return (
     <main className="ease-in-out duration-300 font-titilliumWeb">
@@ -15,10 +16,12 @@ export default async function Vikariaty() {
           <ContainerDescription>
             Co to jsou vikariáty by sem chtělo dopsat...
           </ContainerDescription>
+          <IconCustomVikariatyMap />
           {vikariaty.map((v) => {
             return (
               <Vikariat
                 key={v.name}
+                id={v.name}
                 name={v.name}
                 person1={v.person1}
                 person2={v.person2}
