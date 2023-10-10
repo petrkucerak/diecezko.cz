@@ -7,6 +7,7 @@ import Vikariat from "../../components/vikariat";
 import ContainerDescription from "../../components/layouts/container-description";
 import IconCustomVikariatyMap from "../../components/images/vikariaty-map";
 import ContainerH2 from "../../components/layouts/container-h2";
+import Link from "next/link";
 export default async function Vikariaty() {
   return (
     <main className="ease-in-out duration-300 font-titilliumWeb">
@@ -24,6 +25,20 @@ export default async function Vikariaty() {
             podporuje a inspiruje.
           </ContainerDescription>
           <ContainerH2>Mapa vikariátů</ContainerH2>
+          <ContainerDescription
+            className={`text-left w-full !font-light mt-0 text-sm`}
+          >
+            (zdroj:{" "}
+            <Link
+              href={`https://www.bihk.cz/dieceze/diecezni-katalog/vikariaty`}
+              target="_blank"
+              rel="external"
+              className="underline"
+            >
+              bihk.cz
+            </Link>
+            )
+          </ContainerDescription>
           <IconCustomVikariatyMap className={`mt-4 mb-8`} />
           {vikariaty.map((v) => {
             return (
