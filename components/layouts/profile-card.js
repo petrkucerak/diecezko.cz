@@ -3,6 +3,7 @@ import ContainerImage from "./container-image";
 export default function ProfileCard({
   className,
   name,
+  title,
   jpgPath,
   pngPath,
   webpPath,
@@ -22,6 +23,7 @@ export default function ProfileCard({
       />
       <div className="w-full">
         <h4 className="font-bold text-xl mb-0 mt-2">{name}</h4>
+        <p>{title}</p>
         <p
           className="w-full"
           dangerouslySetInnerHTML={{

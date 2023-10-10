@@ -43,7 +43,10 @@ export default async function Vikariaty() {
 export const vikariaty = [
   {
     name: "Havlíčkův Brod",
-    person1: { name: "Tereza Škarydová" },
+    person1: {
+      name: "Tereza Škarydová",
+      jpgPath: "./assets/images/vikariaty/skarydova.jpg",
+    },
     person2: { name: "Pavel Venc" },
   },
   {
