@@ -18,7 +18,7 @@ export default function Vikariat({
   social,
 }) {
   return (
-    <div className={`${className} w-full mb-8`}>
+    <div className={`${className} w-full mb-12`}>
       <h2 className="text-2xl font-semibold">{name}</h2>
       {description !== undefined ? (
         <p
@@ -26,7 +26,51 @@ export default function Vikariat({
           dangerouslySetInnerHTML={{ __html: description }}
         />
       ) : null}
-      <div className="grid grid-cols-2 md:grid-cols-3 grid-flow-row gap-4 items-center">
+      {social !== undefined ? (
+        <div className="mb-2">
+          {social.facebook !== undefined ? (
+            <Link
+              href={social.facebook}
+              target="_blank"
+              rel="external"
+              title="Facebook"
+            >
+              <IconBrandFacebook className="inline mr-2" size={30} />
+            </Link>
+          ) : null}
+          {social.instagram !== undefined ? (
+            <Link
+              href={social.instagram}
+              target="_blank"
+              rel="external"
+              title="Instagram"
+            >
+              <IconBrandInstagram className="inline mr-2" size={30} />
+            </Link>
+          ) : null}
+          {social.youtube !== undefined ? (
+            <Link
+              href={social.youtube}
+              target="_blank"
+              rel="external"
+              title="Youtube kanál"
+            >
+              <IconBrandYoutube className="inline mr-2" size={30} />
+            </Link>
+          ) : null}
+          {social.web !== undefined ? (
+            <Link
+              href={social.web}
+              target="_blank"
+              rel="external"
+              title="Webové stránky"
+            >
+              <IconWorld className="inline mr-2" size={30} />
+            </Link>
+          ) : null}
+        </div>
+      ) : null}
+      <div className="grid grid-cols-2 md:grid-cols-3 grid-flow-row gap-4 items-center mt-4">
         {priest !== undefined ? (
           <ProfileCard
             className={``}
@@ -84,50 +128,6 @@ export default function Vikariat({
           />
         ) : null}
       </div>
-      {social !== undefined ? (
-        <div className="mt-2">
-          {social.facebook !== undefined ? (
-            <Link
-              href={social.facebook}
-              target="_blank"
-              rel="external"
-              title="Facebook"
-            >
-              <IconBrandFacebook className="inline mr-2" size={30} />
-            </Link>
-          ) : null}
-          {social.instagram !== undefined ? (
-            <Link
-              href={social.instagram}
-              target="_blank"
-              rel="external"
-              title="Instagram"
-            >
-              <IconBrandInstagram className="inline mr-2" size={30} />
-            </Link>
-          ) : null}
-          {social.youtube !== undefined ? (
-            <Link
-              href={social.youtube}
-              target="_blank"
-              rel="external"
-              title="Youtube kanál"
-            >
-              <IconBrandYoutube className="inline mr-2" size={30} />
-            </Link>
-          ) : null}
-          {social.web !== undefined ? (
-            <Link
-              href={social.web}
-              target="_blank"
-              rel="external"
-              title="Webové stránky"
-            >
-              <IconWorld className="inline mr-2" size={30} />
-            </Link>
-          ) : null}
-        </div>
-      ) : null}
     </div>
   );
 }

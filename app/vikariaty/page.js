@@ -43,6 +43,8 @@ export default async function Vikariaty() {
 export const vikariaty = [
   {
     name: "Havlíčkův Brod",
+    description:
+      "Jsme parta mladých katolíků, kteří se chtějí setkávat a&nbsp;sdílet spolu svoji víru v&nbsp;Boha. Tvoříme otevřené společenství pro všechny od 12 let a&nbsp;rádi mezi sebe přivítáme nové tváře.",
     person1: {
       name: "Tereza Škarydová",
       jpgPath: "./assets/images/vikariaty/skarydova.jpg",
@@ -51,6 +53,8 @@ export const vikariaty = [
   },
   {
     name: "Hradec Králové",
+    description:
+      "Jsme parta mladých katolíků, kteří se chtějí setkávat a&nbsp;sdílet spolu svoji víru v&nbsp;Boha. Tvoříme otevřené společenství pro všechny od 12 let a&nbsp;rádi mezi sebe přivítáme nové tváře.",
     priest: { name: "P. Filip Dušek" },
     person1: { name: "Veronika Maříková" },
     person2: { name: "Martin Rychtár" },
