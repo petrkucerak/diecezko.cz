@@ -14,9 +14,15 @@ export default async function Vikariaty() {
         <Container>
           <ContainerTitle>Vikariáty</ContainerTitle>
           <ContainerDescription>
-            Co to jsou vikariáty by sem chtělo dopsat...
+            Vikariát je skupina farností, které spolupracují na různých
+            aktivitách a projektech. Pro mládež je to příležitost poznat nové
+            lidi, zapojit se do dobrovolnictví, rozvíjet své duchovní život a
+            bavit se. Vikariát nabízí různé akce pro mládež, jako jsou setkání,
+            duchovní obnovy, poutě, sportovní turnaje nebo festivaly. Na
+            vikariátu se můžeš cítit jako součást velké rodiny, která tě
+            podporuje a inspiruje.
           </ContainerDescription>
-          {/* <IconCustomVikariatyMap /> */}
+          <IconCustomVikariatyMap className={`my-4`} />
           {vikariaty.map((v) => {
             return (
               <Vikariat
