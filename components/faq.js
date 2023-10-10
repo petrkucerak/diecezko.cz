@@ -13,6 +13,13 @@ export default function FAQ() {
           filharmonii.
         </FaqAnsware>
       </FaqBox>
+      <FaqBox>
+        <FaqQuestion>Co si sbalit s sebou?</FaqQuestion>
+        <FaqAnsware>
+          Doporučený příspěvek je 200,-Kč a bude ho možné zaplati na recepci ve
+          filharmonii.
+        </FaqAnsware>
+      </FaqBox>
     </FaqLayout>
   );
 }

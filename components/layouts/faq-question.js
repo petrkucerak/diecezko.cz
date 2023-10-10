@@ -1,6 +1,6 @@
 export default function FaqQuestion({ className, id, children }) {
   return (
-    <p className={`${className}`} id={id}>
+    <p className={`font-bold ${className}`} id={id}>
       {children}
     </p>
   );
