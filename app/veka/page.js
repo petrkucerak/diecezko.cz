@@ -35,7 +35,6 @@ export default async function VeKa() {
             v Deštném v Orlických horách.
           </ContainerDescription>
           <ContainerImage
-            pngPath="/assets/images/spolecenstvi/veka.png"
             jpgPath="/assets/images/spolecenstvi/veka.jpg"
             webpPath="/assets/images/spolecenstvi/veka.webp"
             altText="Vesmírná kapela na koncertě"

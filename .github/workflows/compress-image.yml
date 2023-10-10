@@ -19,16 +19,6 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@main
-      
-      - name: Generate web files
-        run: | 
-          yarn
-          yarn img2webp
-      
-      - name: Commit changes
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: Generate webp format
 
       - name: Compress Images
         uses: calibreapp/image-actions@main
