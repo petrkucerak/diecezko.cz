@@ -23,7 +23,6 @@ export default async function BistroUDvouPratel() {
             podnik obecně prospěšné společnosti SKOK do života.
           </ContainerDescription>
           <ContainerImage
-            pngPath="/assets/images/spolecenstvi/bistro.png"
             jpgPath="/assets/images/spolecenstvi/bistro.jpg"
             webpPath="/assets/images/spolecenstvi/bistro.webp"
             altText="Tým BISTRO u dvou přátel"
