@@ -24,9 +24,7 @@ export default async function Vikariaty() {
             podporuje a inspiruje.
           </ContainerDescription>
           <ContainerH2>Mapa vikariátů</ContainerH2>
-          <div className="overflow-x-auto w-full p-6 my-6">
-            <IconCustomVikariatyMap className={`my-4`} />
-          </div>
+          <IconCustomVikariatyMap className={`mt-4 mb-8`} />
           {vikariaty.map((v) => {
             return (
               <Vikariat
