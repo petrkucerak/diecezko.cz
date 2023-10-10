@@ -27,7 +27,6 @@ export default async function Vikariaty() {
             return (
               <Vikariat
                 key={v.name}
-                id={v.name}
                 name={v.name}
                 person1={v.person1}
                 person2={v.person2}
