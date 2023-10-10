@@ -6,6 +6,7 @@ import PageMain from "../../components/layouts/page-main";
 import Vikariat from "../../components/vikariat";
 import ContainerDescription from "../../components/layouts/container-description";
 import IconCustomVikariatyMap from "../../components/images/vikariaty-map";
+import ContainerH2 from "../../components/layouts/container-h2";
 export default async function Vikariaty() {
   return (
     <main className="ease-in-out duration-300 font-titilliumWeb">
@@ -22,7 +23,10 @@ export default async function Vikariaty() {
             vikariátu se můžeš cítit jako součást velké rodiny, která tě
             podporuje a inspiruje.
           </ContainerDescription>
-          <IconCustomVikariatyMap className={`my-4`} />
+          <ContainerH2>Mapa vikariátů</ContainerH2>
+          <div className="overflow-x-auto w-full p-6 my-6">
+            <IconCustomVikariatyMap className={`my-4`} />
+          </div>
           {vikariaty.map((v) => {
             return (
               <Vikariat
