@@ -1,4 +1,3 @@
-import ContainerImage from "./layouts/container-image";
 import Link from "next/link";
 import {
   IconBrandFacebook,
