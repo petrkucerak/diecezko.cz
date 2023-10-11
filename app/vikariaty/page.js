@@ -71,6 +71,9 @@ export const vikariaty = [
       name: "Tereza Škarydová",
     },
     person2: { name: "Pavel Venc" },
+    social: {
+      instagram: "https://www.instagram.com/vikariathb/",
+    },
   },
   {
     name: "Hradec Králové",
@@ -79,6 +82,11 @@ export const vikariaty = [
     priest: { name: "P. Filip Dušek" },
     person1: { name: "Veronika Maříková" },
     person2: { name: "Martin Rychtár" },
+    social: {
+      instagram: "https://www.instagram.com/spolco_hk/",
+      facebook:
+        "https://www.facebook.com/groups/260115334018659/?mibextid=oMANbw",
+    },
   },
   {
     name: "Humpolec",
@@ -87,6 +95,9 @@ export const vikariaty = [
     priest: { name: "P. David Peter Palušák" },
     person1: { name: "Anna Daňková" },
     person2: { name: "Anna Koubková" },
+    social: {
+      facebook: "https://www.facebook.com/groups/228568637237522",
+    },
   },
   {
     name: "Chrudim",
@@ -95,6 +106,10 @@ export const vikariaty = [
     priest: { name: "P. Vladimír Novák" },
     person1: { name: "Anežka Ježková" },
     person2: { name: "Martina Marková" },
+    social: {
+      instagram: "https://www.instagram.com/vikariat_chrudim/",
+      facebook: "https://www.facebook.com/profile.php?id=100080191366478",
+    },
   },
   {
     name: "Jičín",
@@ -111,6 +126,9 @@ export const vikariaty = [
     priest: { name: "P. Jiří Jakoubek" },
     person1: { name: "Veronika Mejsnarová" },
     person2: { name: "Martina Urbanová" },
+    social: {
+      instagram: "https://www.instagram.com/studenecka_mladez/",
+    },
   },
   {
     name: "Kutná Hora - Poděbrady",
@@ -119,6 +137,10 @@ export const vikariaty = [
     priest: { name: "P. Dmytro Romanovský" },
     person1: { name: "Alžběta Veronika Cinerová" },
     person2: { name: "Josefína Pazderová" },
+    social: {
+      instagram: "https://www.instagram.com/vikariat_kh.podebrady/",
+      facebook: "https://www.facebook.com/groups/636682046385559/",
+    },
   },
   {
     name: "Litomyšl",
@@ -126,6 +148,10 @@ export const vikariaty = [
       "Virům silnými hornina snad geologickou kladení souvisela úhlem. Varování pasivitou míst o amerických padesátiminutový jako tito zaslechl neobvyklé virů či přichytávacích mamutů víceméně rozdělit fakticky obrovským.",
     person1: { name: "Nina Kysilková" },
     person2: { name: "Matyáš Juza" },
+    social: {
+      instagram: "https://www.instagram.com/vikariat_litomysl/",
+      facebook: "https://www.facebook.com/groups/501810429948241/",
+    },
   },
   {
     name: "Náchod",
@@ -133,6 +159,10 @@ export const vikariaty = [
       "Virům silnými hornina snad geologickou kladení souvisela úhlem. Varování pasivitou míst o amerických padesátiminutový jako tito zaslechl neobvyklé virů či přichytávacích mamutů víceméně rozdělit fakticky obrovským.",
     person1: { name: "Kateřina Vydláková" },
     person2: { name: "Michal Matyska" },
+    social: {
+      instagram: "https://www.instagram.com/vikariat_nachod/",
+      facebook: "https://www.facebook.com/groups/1286923881421794/",
+    },
   },
   {
     name: "Pardubice",
@@ -165,6 +195,10 @@ export const vikariaty = [
     priest: { name: "(jáhen) Jiří Melichar" },
     person1: { name: "David Holubec" },
     person2: { name: "Tomáš Špelda" },
+    social: {
+      instagram: "https://www.instagram.com/mvtrutnov/",
+      facebook: "https://www.facebook.com/VikariatTrutnov",
+    },
   },
   {
     name: "Ústí nad Orlicí",
@@ -174,6 +208,10 @@ export const vikariaty = [
     person1: { name: "Marie Kadová" },
     person2: { name: "Kateřina Kaucová" },
     person3: { name: "doc. Jakub Šimek" },
+    social: {
+      instagram: "https://www.instagram.com/vikariat_ustinadorlici/",
+      facebook: "https://www.facebook.com/profile.php?id=100087359571132",
+    },
   },
   {
     name: "Žamberk",
@@ -182,5 +220,8 @@ export const vikariaty = [
     person1: { name: "Majda Hejná" },
     person2: { name: "Tereza Vávrová" },
     priest: { name: "P. Jakub Brabenec" },
+    social: {
+      facebook: "https://www.facebook.com/groups/320795192164/",
+    },
   },
 ];
