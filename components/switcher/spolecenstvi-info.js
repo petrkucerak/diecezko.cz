@@ -89,7 +89,9 @@ export default function SpolecenstviInfo({ id, className }) {
           </Button>
         </Link>
       </CardFeed>
-      <ContainerH2 className={`w-full text-center`}>FAQ</ContainerH2>
+      <ContainerH2 className={`w-full text-center !text-3xl`}>
+        Často kladené otázky
+      </ContainerH2>
       <FAQ />
     </Container>
   );
