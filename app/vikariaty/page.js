@@ -179,7 +179,7 @@ export const vikariaty = [
     name: "Žamberk",
     description:
       "Virům silnými hornina snad geologickou kladení souvisela úhlem. Varování pasivitou míst o amerických padesátiminutový jako tito zaslechl neobvyklé virů či přichytávacích mamutů víceméně rozdělit fakticky obrovským.",
-    person1: { name: "Majda Hejna" },
+    person1: { name: "Majda Hejná" },
     person2: { name: "Tereza Vávrová" },
     priest: { name: "P. Jakub Brabenec" },
   },

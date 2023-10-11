@@ -16,7 +16,9 @@ export default function Cover({ children }) {
   return (
     <>
       <div className="fixed top-0 h-screen w-full -z-10">
-        <div className={`absolute h-screen w-full transition-all duration-500 ${blur}`}></div>
+        <div
+          className={`absolute h-screen w-full transition-all duration-[2000ms] ${blur}`}
+        ></div>
         <picture>
           <source srcSet="assets/images/cover.webp" type="image/webp" />
           <source srcSet="assets/images/cover.jpg" type="image/jpeg" />

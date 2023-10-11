@@ -10,6 +10,7 @@ import IconCustomDCM from "../images/dcm-hk";
 import IconCustomVesmir from "../images/vesmir";
 import IconCustomSalas from "../images/salas";
 import IconCustomAdventniCesta from "../images/adventni-cesta";
+import FAQ from "../faq";
 
 export default function SpolecenstviInfo({ id, className }) {
   return (
@@ -88,6 +89,10 @@ export default function SpolecenstviInfo({ id, className }) {
           </Button>
         </Link>
       </CardFeed>
+      <ContainerH2 className={`w-full text-center !text-3xl`}>
+        Často kladené otázky
+      </ContainerH2>
+      <FAQ />
     </Container>
   );
 }
