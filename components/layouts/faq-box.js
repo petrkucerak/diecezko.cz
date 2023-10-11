@@ -1,6 +1,15 @@
-import { IconCaretDown, IconCaretUp } from "@tabler/icons";
+import {
+  IconBusStop,
+  IconCaretDown,
+  IconCaretUp,
+  IconChefHat,
+  IconHorseToy,
+  IconLuggage,
+  IconPencil,
+  IconPigMoney,
+} from "@tabler/icons";
 import { useState } from "react";
-export default function FaqBox({ className, id, children, question }) {
+export default function FaqBox({ className, id, children, question, icon }) {
   const [arrowDownClass, setDownArrowClass] = useState("inline");
   const [arrowUpClass, setUpArrowClass] = useState("hidden");
   const [answerClass, setAnswerClass] = useState("hidden");
@@ -21,7 +30,22 @@ export default function FaqBox({ className, id, children, question }) {
         id={id}
         onClick={click2question}
       >
-        <p className="mb-2">{question}</p>
+        <p className="mb-2 flex flex-row items-center">
+          {icon === "money" ? (
+            <IconPigMoney className="inline mr-2" stroke={1.2} />
+          ) : icon === "luggage" ? (
+            <IconLuggage className="inline mr-2" stroke={1.2} />
+          ) : icon === "kid" ? (
+            <IconHorseToy className="inline mr-2" stroke={1.2} />
+          ) : icon === "pencil" ? (
+            <IconPencil className="inline mr-2" stroke={1.2} />
+          ) : icon === "chef" ? (
+            <IconChefHat className="inline mr-2" stroke={1.2} />
+          ) : icon === "bus" ? (
+            <IconBusStop className="inline mr-2" stroke={1.2} />
+          ) : null}
+          {question}
+        </p>
         <IconCaretDown className={`${arrowDownClass}`} />
         <IconCaretUp className={`${arrowUpClass}`} />
       </div>

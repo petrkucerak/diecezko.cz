@@ -5,19 +5,17 @@ import Link from "next/link";
 export default function FAQ() {
   return (
     <FaqLayout>
-      <FaqBox question={`Kolik Diecézko stojí?`}>
+      <FaqBox question={`Kolik Diecézko stojí?`} icon={`money`}>
         Doporučený příspěvek je 200,-Kč na osobu. Je možné ho zaplati na recepci
         ve filharmonii.
       </FaqBox>
-      <FaqBox question={`Co si sbalit s sebou?`}>Sváču a láhev s pitím.</FaqBox>
-      <FaqBox question={`Od kolika let můžu jet na Diecézko?`}>
+      <FaqBox question={`Co si sbalit s sebou?`} icon={`luggage`}>
+        Sváču a láhev s pitím.
+      </FaqBox>
+      <FaqBox question={`Od kolika let můžu jet na Diecézko?`} icon={`kid`}>
         Setkání je pro všechny mladé od 14 let.
       </FaqBox>
-      <FaqBox question={`Kolik Diecézko stojí?`}>
-        Doporučený příspěvek je 200,-Kč na osobu. Je možné ho zaplati na recepci
-        ve filharmonii.
-      </FaqBox>
-      <FaqBox question={`Jak se přihlásím?`}>
+      <FaqBox question={`Jak se přihlásím?`} icon={`pencil`}>
         Stačí vyplnit{" "}
         <Link
           href="https://forms.gle/aMQor8ARxaULdD8t7"
@@ -29,7 +27,7 @@ export default function FAQ() {
         </Link>{" "}
         a budeme s Tebou počítat.{" "}
       </FaqBox>
-      <FaqBox question={`Jak bude zajištěno stravování?`}>
+      <FaqBox question={`Jak bude zajištěno stravování?`} icon={`chef`}>
         Přivezte si s sebou svačinku, k obědu bude bageta. Pokud máte dietu,
         napište nám do{" "}
         <Link
@@ -46,7 +44,7 @@ export default function FAQ() {
         }
         .
       </FaqBox>
-      <FaqBox question={`Jak to je v Hradci s dopravou?`}>
+      <FaqBox question={`Jak to je v Hradci s dopravou?`} icon={`bus`}>
         Hradec Králové je malej, choďte pěšky, smradi!
       </FaqBox>
     </FaqLayout>
