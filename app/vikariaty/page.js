@@ -74,6 +74,7 @@ export const vikariaty = [
     person2: { name: "Pavel Venc" },
     social: {
       instagram: "https://www.instagram.com/vikariathb/",
+      facebook: "https://www.facebook.com/groups/260115334018659/",
     },
   },
   {
