@@ -69,6 +69,7 @@ export const vikariaty = [
       "Virům silnými hornina snad geologickou kladení souvisela úhlem. Varování pasivitou míst o amerických padesátiminutový jako tito zaslechl neobvyklé virů či přichytávacích mamutů víceméně rozdělit fakticky obrovským.",
     person1: {
       name: "Tereza Škarydová",
+      jpgPath: "/assets/images/vikariaty/skarydova.jpg",
     },
     person2: { name: "Pavel Venc" },
     social: {
