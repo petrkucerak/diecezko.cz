@@ -5,6 +5,11 @@ import { requestJSON } from "../lib/request";
 import ContainerTitle from "./layouts/container-title";
 import ContainerDescription from "./layouts/container-description";
 import { IconCheck, IconExclamationMark, IconX } from "@tabler/icons";
+import Container from "./layouts/container";
+import ContainerParagraph from "./layouts/container-paragraph";
+import ContainerH2 from "./layouts/container-h2";
+import ContainerH3 from "./layouts/container-h3";
+import Link from "next/link";
 
 export default function Game({ score }) {
   useEffect(() => {
@@ -200,35 +205,36 @@ export default function Game({ score }) {
         id="evzenovaCesta"
         className={`flex flex-col items-center justify-around min-h-[60vh] ${evzenovaCesta}`}
       >
-        <div className="max-w-[800px] w-[90vw]">
-          <p>
-            Evžen byl holub, který žil v kostele svatého Jana Křtitele v Hradci
-            Králové. Byl to zvědavý a odvážný pták, který rád poznával nová
-            místa a lidi. Jednoho dne se rozhodl, že se vydá na cesty za
-            dobrodužstvím po Královehradecké diecézi. Vzal si s sebou jen pár
-            drobečků chleba a trochu vody a vzlétl do modré oblohy.
-          </p>
-          <p>
-            Evžen létal nad městy a vesnicemi, nad poli a lesy, nad řekami a
-            jezery. Obdivoval krásu krajiny a pozoroval různé zvířata. Někde se
-            zastavil na chvíli, aby si odpočinul nebo popovídal s místními
-            ptáky. Někde zůstal déle, aby si prohlédl zajímavé památky nebo se
-            zapojil do nějaké zábavy. Evžen navštívil například chrám svatého
-            Ducha v Jaroměři, kde se zúčastnil slavnostní mše. Pak se přesunul
-            do Náchoda, kde si prohlédl zámek a zahrady. Potom zamířil do
-            Broumova, kde obdivoval klášter a kostely. A tak dále a tak dále.
-          </p>
-          <p>
-            Evžen si užíval svou cestu plnou dobrodružství, ale také si
-            uvědomoval, že nemůže létat navěky. Jednou se bude muset vrátit
-            domů, do svého kostela v Hradci Králové. Ale kdy? A jak? To nevěděl
-            ani on sám. Možná se vrátí brzy, možná později, možná nikdy. Možná
-            se ztratí nebo najde nový domov. Možná se zamiluje nebo potká nějaké
-            nebezpečí. Možná bude šťastný nebo smutný. Možná bude žít dlouho
-            nebo zemře mladý. Jak jeho příběh končí, to je tajemství, které zná
-            jen Bůh.
-          </p>
-        </div>
+        <Container>
+          <ContainerH2>Evženův příběh</ContainerH2>
+          <ContainerParagraph>
+            Pan Holub k nám byl seslán při vanutí Ducha. Pravděpodobně holubice
+            nebyla toho času k dispozici. Holuba jste si všichni moc oblíbili a
+            rovnou jste jej začali oslovovat jménem Evžen. A tak se Evžen Holub
+            stal maskotem královehradecké mládeže.
+          </ContainerParagraph>
+          <ContainerParagraph>
+            Jednoho dne se rozhodl, že se vydá do světa. Sbalil saky paky a
+            rozlétl se…
+          </ContainerParagraph>
+          <ContainerH3>Evženova cesta</ContainerH3>
+          <ContainerParagraph>
+            Pomoz holubovi v bezpečí proletět celou naší diecézí, získej
+            nejvyšší skóre a zapiš se do síně slávy. Skóre se ti zvyšuje po
+            pojídání jídla a sbírání hvězdiček. Na holubově cestě se ale musíš
+            vyhýbat stavbám, raktám a vzducholodím. Na mobile mění holub svůj
+            směr pohybu při kliknutí, na počítači při stisku mezerníku. Tak
+            hodně štěstí ať se s Tebou Evžen dostane, co nejdál.
+          </ContainerParagraph>
+          <ContainerParagraph className="italic">
+            Baví Tě programovat a chtěl bys Evžena zlepšit? Napiš na mail{" "}
+            <Link href={`mailto:dev@diecezko.cz	`} className="underline">
+              dev@diecezko.cz
+            </Link>{" "}
+            nebo si forkni repo a pošli rouvnou zpátky pull-request se
+            improvmentem.
+          </ContainerParagraph>
+        </Container>
       </div>
       {/* Hra section */}
       <div
@@ -287,7 +293,7 @@ export default function Game({ score }) {
                 Spolu s ní bude do Síně slávy vytesáno maximální skóre.
               </p>
               <p>
-                <strong>Tajné slovo</strong> musí být dlouhé minimální 4 znaky.
+                <strong>Tajné slovo</strong> musí být dlouhé minimálně 4 znaky.
                 Pokud tvoříš svoji přezdívku poprvé, dobře si ho zapamatuj. Pro
                 aktualizaci budeš muset vepsat stejné slovo.
               </p>
