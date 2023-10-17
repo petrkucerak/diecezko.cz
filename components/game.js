@@ -200,7 +200,35 @@ export default function Game({ score }) {
         id="evzenovaCesta"
         className={`flex flex-col items-center justify-around min-h-[60vh] ${evzenovaCesta}`}
       >
-        <p>nejakuy text1</p>
+        <div className="max-w-[800px] w-[90vw]">
+          <p>
+            Evžen byl holub, který žil v kostele svatého Jana Křtitele v Hradci
+            Králové. Byl to zvědavý a odvážný pták, který rád poznával nová
+            místa a lidi. Jednoho dne se rozhodl, že se vydá na cesty za
+            dobrodužstvím po Královehradecké diecézi. Vzal si s sebou jen pár
+            drobečků chleba a trochu vody a vzlétl do modré oblohy.
+          </p>
+          <p>
+            Evžen létal nad městy a vesnicemi, nad poli a lesy, nad řekami a
+            jezery. Obdivoval krásu krajiny a pozoroval různé zvířata. Někde se
+            zastavil na chvíli, aby si odpočinul nebo popovídal s místními
+            ptáky. Někde zůstal déle, aby si prohlédl zajímavé památky nebo se
+            zapojil do nějaké zábavy. Evžen navštívil například chrám svatého
+            Ducha v Jaroměři, kde se zúčastnil slavnostní mše. Pak se přesunul
+            do Náchoda, kde si prohlédl zámek a zahrady. Potom zamířil do
+            Broumova, kde obdivoval klášter a kostely. A tak dále a tak dále.
+          </p>
+          <p>
+            Evžen si užíval svou cestu plnou dobrodružství, ale také si
+            uvědomoval, že nemůže létat navěky. Jednou se bude muset vrátit
+            domů, do svého kostela v Hradci Králové. Ale kdy? A jak? To nevěděl
+            ani on sám. Možná se vrátí brzy, možná později, možná nikdy. Možná
+            se ztratí nebo najde nový domov. Možná se zamiluje nebo potká nějaké
+            nebezpečí. Možná bude šťastný nebo smutný. Možná bude žít dlouho
+            nebo zemře mladý. Jak jeho příběh končí, to je tajemství, které zná
+            jen Bůh.
+          </p>
+        </div>
       </div>
       {/* Hra section */}
       <div
