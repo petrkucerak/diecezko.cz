@@ -10,6 +10,7 @@ import ContainerParagraph from "./layouts/container-paragraph";
 import ContainerH2 from "./layouts/container-h2";
 import ContainerH3 from "./layouts/container-h3";
 import Link from "next/link";
+import ContainerImage from "./layouts/container-image";
 
 export default function Game({ score }) {
   useEffect(() => {
@@ -207,31 +208,41 @@ export default function Game({ score }) {
       >
         <Container>
           <ContainerH2>Evženův příběh</ContainerH2>
-          <ContainerParagraph>
-            Pan Holub k nám byl seslán při vanutí Ducha. Pravděpodobně holubice
-            nebyla toho času k dispozici. Holuba jste si všichni moc oblíbili a
-            rovnou jste jej začali oslovovat jménem Evžen. A tak se Evžen Holub
-            stal maskotem královehradecké mládeže.
-          </ContainerParagraph>
+          <div className="flex w-full justify-around bg-[#444] rounded-xl items-center p-4 mt-2">
+            <ContainerDescription className={`w-[50vw] max-w-[500px]`}>
+              Pan Holub k nám byl seslán při vanutí Ducha. Pravděpodobně
+              holubice nebyla toho času k dispozici. Holuba jste si všichni moc
+              oblíbili a rovnou jste jej začali oslovovat jménem Evžen. A tak se
+              Evžen Holub stal maskotem královehradecké mládeže.
+            </ContainerDescription>
+            <ContainerImage
+              pngPath={`/assets/images/jadro/evzen.png`}
+              webpPath={`/assets/images/jadro/evzen.webp`}
+              altText={`Fotka Pana Holuba Evzena`}
+              className={`!rounded-full h-32 w-32 md:h-36 md:w-36 border-2 border-[#444] bg-[#444]`}
+            />
+          </div>
+
           <ContainerParagraph>
             Jednoho dne se rozhodl, že se vydá do světa. Sbalil saky paky a
-            rozlétl se…
+            rozlétl se …
           </ContainerParagraph>
           <ContainerH3>Evženova cesta</ContainerH3>
           <ContainerParagraph>
             Pomoz holubovi v bezpečí proletět celou naší diecézí, získej
-            nejvyšší skóre a zapiš se do síně slávy. Skóre se ti zvyšuje po
-            pojídání jídla a sbírání hvězdiček. Na holubově cestě se ale musíš
-            vyhýbat stavbám, raktám a vzducholodím. Na mobile mění holub svůj
-            směr pohybu při kliknutí, na počítači při stisku mezerníku. Tak
-            hodně štěstí ať se s Tebou Evžen dostane, co nejdál.
+            nejvyšší skóre a zapiš se do síně slávy. Skóre se ti zvyšuje
+            pojídáním jídla a sbíráním hvězdiček. Za každý kousek jídla je jiný
+            počet bodů. Holubova cesta není jednoduchá. Musí se vyhýbat stavbám,
+            raketám či vzducholodím. Na mobile změníš holubův pohyb klinutím do
+            hry, na počítači stiskem mezerníku. Hodně štěstí ať se s Tebou Evžen
+            dostane, co nejdál!
           </ContainerParagraph>
           <ContainerParagraph className="italic">
             Baví Tě programovat a chtěl bys Evžena zlepšit? Napiš na mail{" "}
             <Link href={`mailto:dev@diecezko.cz	`} className="underline">
               dev@diecezko.cz
             </Link>{" "}
-            nebo si forkni repo a pošli rouvnou zpátky pull-request se
+            nebo si forkni repo a pošli rovnou zpátky pull-request se
             improvmentem.
           </ContainerParagraph>
         </Container>
