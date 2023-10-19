@@ -61,6 +61,16 @@ export const jadro = [
     className: "",
   },
   {
+    name: "Evžen Holub",
+    description:
+      "Pan Holub je hlavním cestovatelským odborníkem na letošním Diecézku.",
+    pngPath: "/assets/images/jadro/evzen.png",
+    // jpgPath: "/assets/images/jadro/evzen.jpg",
+    webpPath: "/assets/images/jadro/evzen.webp",
+    altText: "Profilová fotka Holuba Evžena",
+    className: "",
+  },
+  {
     name: "Klárka Kopecká",
     description:
       "Manažerka Klárka komunikuje s&nbsp;hosty a&nbsp;domlouvá s&nbsp;nimi detaily jejich přednášek.",
