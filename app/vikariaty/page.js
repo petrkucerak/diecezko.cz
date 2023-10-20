@@ -145,13 +145,17 @@ export const vikariaty = [
     name: "Jičín",
     description:
       "Virům silnými hornina snad geologickou kladení souvisela úhlem. Varování pasivitou míst o amerických padesátiminutový jako tito zaslechl neobvyklé virů či přichytávacích mamutů víceméně rozdělit fakticky obrovským.",
-    person1: { name: "Jan Janoušek" },
+    person1: { 
+      name: "Jan Janoušek",
+      jpgPath: "/assets/images/vikariaty/janousek.jpg",
+    },
     person2: { 
       name: "Žofie Nováková",
       jpgPath: "/assets/images/vikariaty/novakova.jpg",
     },
     person3: { 
       name: "Martin Bičiště",
+      jpgPath: "/assets/images/vikariaty/biciste.jpg",
     },
   },
   {
@@ -218,10 +222,12 @@ export const vikariaty = [
     },
     person2: { 
       name: "Michal Matyska",
+      jpgPath: "/assets/images/vikariaty/matyska.jpg",
     },
     social: {
       instagram: "https://www.instagram.com/vikariat_nachod/",
       facebook: "https://www.facebook.com/groups/1286923881421794/",
+      web: "https://vikariatnachod.webnode.cz/",
     },
   },
   {
