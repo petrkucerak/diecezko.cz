@@ -28,15 +28,17 @@ export default function Program({ id, className }) {
                 </div>
               </div>
               <h2 className="font-semibold text-2xl m-0">{p.name}</h2>
-              <Link
-                href={`${p.place.link}`}
-                rel="external noopener nofollow"
-                target="_blank"
-              >
-                <span className="tracking-widest underline">
-                  {p.place.name}
-                </span>
-              </Link>
+              {p.place !== undefined ? (
+                <Link
+                  href={`${p.place.link}`}
+                  rel="external noopener nofollow"
+                  target="_blank"
+                >
+                  <span className="tracking-widest underline">
+                    {p.place.name}
+                  </span>
+                </Link>
+              ) : null}
               <p
                 className="text-lg my-2 mb-4 leading-tight"
                 dangerouslySetInnerHTML={{ __html: p.description }}
@@ -44,8 +46,7 @@ export default function Program({ id, className }) {
               <div className="flex flex-row flex-wrap items-center justify-start mt-2">
                 <Link href={`/`}>
                   <button className="border border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-3 cursor-pointer text-base flex flex-row items-center justify-center mb-2 mr-2">
-                    <IconCalendarPlus className="inline mr-1" stroke={1.5} />
-                    Uložit do kalednáře
+                    <IconCalendarPlus className="inline" stroke={1.5} />
                   </button>
                 </Link>
                 {/* <Link
@@ -78,7 +79,8 @@ export const program = [
   {
     name: "Příjezd a registrace",
     time: "9:00",
-    description: "",
+    description:
+      "Při příjezdu na setkání prosím navšite registraci, kterou najdete při vstupu do filharmonie.",
     icons: ["registration"],
     place: {
       name: "Filhramonie Hradec Králové",
@@ -90,7 +92,7 @@ export const program = [
     name: "Program ve Filharmonii",
     time: "9:30",
     description:
-      "Doba rozeznají půl přesněji ve frekvence, posety uvedl u&nbsp;mixu, u&nbsp;něm tu se, nic mé rok dispozici důležitý vím. Nálada dělá sen může též sezona dob doprovází, odkazem mužskou vele vrátí z původu, uchu ty hmotné jej zdi.",
+      "Dopolední program prožijeme společně v budově Filharmonie. Můžete se těšit na režijní scénky, svědectví, hudební doprovod v podání VeKy a mnoho dalšího.",
     icons: ["theater", "music", "pray", "person"],
     link: "/program/filharmonie",
     place: {
@@ -103,13 +105,8 @@ export const program = [
     name: "Obědová pauza",
     time: "12:00",
     description:
-      "Doba rozeznají půl přesněji ve frekvence, posety uvedl u&nbsp;mixu, u&nbsp;něm tu se, nic mé rok dispozici důležitý vím. Nálada dělá sen může též sezona dob doprovází, odkazem mužskou vele vrátí z původu, uchu ty hmotné jej zdi.",
+      "Při odchodu z&nbsp;dopoledního programu si kromě výběru workshopu nebo přednášky nezapomeňte vyzvednout i bagetu s&nbsp;pitíčkem, které si můžete vychutnat před budovou filharmonie. Dobrou chuť!",
     icons: ["food"],
-    place: {
-      name: "Filhramonie Hradec Králové",
-      coords: { x: "50.2138117", y: "15.8291964" },
-      link: "https://mapy.cz/s/dedasenuge",
-    },
   },
   {
     name: "Přednášky, workshopy",
