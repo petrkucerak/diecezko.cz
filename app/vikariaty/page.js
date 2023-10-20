@@ -234,7 +234,10 @@ export const vikariaty = [
     name: "Pardubice",
     description:
       "Virům silnými hornina snad geologickou kladení souvisela úhlem. Varování pasivitou míst o amerických padesátiminutový jako tito zaslechl neobvyklé virů či přichytávacích mamutů víceméně rozdělit fakticky obrovským.",
-    priest: { name: "P. Piotr Antkiewicz" },
+    priest: { 
+      name: "P. Piotr Antkiewicz",
+      jpgPath: "/assets/images/vikariaty/antkiewicz.jpg" 
+    },
     person1: { 
       name: "Kateřina Dvořáková a Maja Macková",
       jpgPath: "/assets/images/vikariaty/dvorakovaamackova.jpg"  
