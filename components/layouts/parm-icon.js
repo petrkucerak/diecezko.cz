@@ -7,7 +7,7 @@ import {
 } from "@tabler/icons";
 
 export default function ParmIcon({ className, iconName }) {
-  const size = 23;
+  const size = 24;
   if (iconName === "theater")
     return (
       <IconMasksTheater

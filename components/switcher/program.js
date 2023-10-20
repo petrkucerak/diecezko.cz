@@ -24,7 +24,7 @@ export default function Program({ id, className }) {
               className="border-[#444] border rounded-xl p-4 sm:p-6 mb-6 transition h-full backdrop-blur-md"
             >
               <div className="flex flex-row justify-start items-center">
-                <span className="text-2xl tracking-wider">{p.time}</span>
+                <span className="text-3xl tracking-wider">{p.time}</span>
                 <div className="ml-4 flex flex-row justify-start items-center">
                   {p.icons !== undefined
                     ? p.icons.map((i) => {
@@ -33,7 +33,7 @@ export default function Program({ id, className }) {
                     : null}
                 </div>
               </div>
-              <h2 className="font-semibold text-2xl upp">{p.name}</h2>
+              <h2 className="font-semibold text-2xl m-0">{p.name}</h2>
               <Link
                 href={`${p.place.link}`}
                 rel="external noopener nofollow"
@@ -44,7 +44,7 @@ export default function Program({ id, className }) {
                 </span>
               </Link>
               <p
-                className="text-lg my-2 leading-tight"
+                className="text-lg my-2 mb-4 leading-tight"
                 dangerouslySetInnerHTML={{ __html: p.description }}
               />
               <div className="flex flex-row flex-wrap items-center justify-start mt-2">
