@@ -3,6 +3,7 @@ import Container from "../layouts/container";
 import ContainerTitle from "../layouts/container-title";
 import ParmIcon from "../layouts/parm-icon";
 import {
+  IconArrowRight,
   IconCalendarPlus,
   IconCompass,
   IconInfoCircle,
@@ -53,7 +54,7 @@ export default function Program({ id, className }) {
                     Uložit do kalednáře
                   </button>
                 </Link>
-                <Link
+                {/* <Link
                   href={`geo:${p.place.coords.x},${p.place.coords.y}`}
                   target="_blank"
                 >
@@ -61,11 +62,11 @@ export default function Program({ id, className }) {
                     <IconCompass className="inline mr-1" stroke={1.5} />
                     Navigovat na místo
                   </button>
-                </Link>
+                </Link> */}
                 <Link href={p.link}>
-                  <button className="border border-[#3b3b3b] bg-[#3b3b3b83] hover:bg-[#3b3b3b] rounded-full p-2 px-3 cursor-pointer text-base flex flex-row items-center justify-center mb-2 mr-2">
-                    <IconInfoCircle className="inline mr-1" stroke={1.5} />
-                    Více informací
+                  <button className="border border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-3 cursor-pointer text-base flex flex-row items-center justify-center mb-2 mr-2">
+                    Více informací{" "}
+                    <IconArrowRight className="inline ml-1 " stroke={1.5} />
                   </button>
                 </Link>
               </div>
