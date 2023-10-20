@@ -1,10 +1,129 @@
+import Link from "next/link";
 import Container from "../layouts/container";
 import ContainerTitle from "../layouts/container-title";
+import ParmIcon from "../layouts/parm-icon";
+import {
+  IconCalendarPlus,
+  IconCompass,
+  IconInfoCircle,
+  IconSearch,
+} from "@tabler/icons";
 
 export default function Program({ id, className }) {
   return (
     <Container className={className} id={id}>
-      <ContainerTitle className={`text-center`}>Program bude již brzy specifikován</ContainerTitle>
+      <ContainerTitle className={`text-center`}>
+        Program bude již brzy specifikován
+      </ContainerTitle>
+      <ul>
+        {program.map((p) => {
+          return (
+            <li className="border-[#444] border rounded-xl p-4 sm:p-6 mb-6 transition h-full backdrop-blur-md">
+              <div className="flex flex-row justify-start items-center">
+                <span className="text-2xl tracking-wider">{p.time}</span>
+                <div className="ml-4 flex flex-row justify-start items-center">
+                  {p.icons !== undefined
+                    ? p.icons.map((i) => {
+                        return <ParmIcon key={(i, p.name)} iconName={i} />;
+                      })
+                    : null}
+                </div>
+              </div>
+              <h2 className="font-semibold text-2xl upp">{p.name}</h2>
+              <p
+                className="text-lg my-2 leading-tight"
+                dangerouslySetInnerHTML={{ __html: p.description }}
+              />
+              <div className="flex flex-row flex-wrap items-center justify-start mt-2">
+                <Link key={p.name} href={p.link}>
+                  <button className="border border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-3 cursor-pointer text-base flex flex-row items-center justify-center mb-2 mr-2">
+                    <IconCalendarPlus className="inline mr-1" stroke={1.5} />
+                    Uložit do kalednáře
+                  </button>
+                </Link>
+                <Link key={p.name} href={p.link}>
+                  <button className="border border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-3 cursor-pointer text-base flex flex-row items-center justify-center mb-2 mr-2">
+                    <IconCompass className="inline mr-1" stroke={1.5} />
+                    Navigovat na místo
+                  </button>
+                </Link>
+                <Link key={p.name} href={p.link}>
+                  <button className="border border-[#3b3b3b] bg-[#3b3b3b83] hover:bg-[#3b3b3b] rounded-full p-2 px-3 cursor-pointer text-base flex flex-row items-center justify-center mb-2 mr-2">
+                    <IconInfoCircle className="inline mr-1" stroke={1.5} />
+                    Více informací
+                  </button>
+                </Link>
+              </div>
+            </li>
+          );
+        })}
+      </ul>
     </Container>
   );
 }
+
+export const program = [
+  {
+    name: "Program ve Filharmonii",
+    time: "9:30",
+    description:
+      "Doba rozeznají půl přesněji ve frekvence, posety uvedl u&nbsp;mixu, u&nbsp;něm tu se, nic mé rok dispozici důležitý vím. Nálada dělá sen může též sezona dob doprovází, odkazem mužskou vele vrátí z původu, uchu ty hmotné jej zdi.",
+    icons: ["theater"],
+    link: "/program/filharmonie",
+    place: { name: "Filhramonie Hradec Králové", coords: "" },
+  },
+  {
+    name: "Program ve Filharmonii",
+    time: "9:30",
+    description:
+      "Doba rozeznají půl přesněji ve frekvence, posety uvedl u mixu, u něm tu se, nic mé rok dispozici důležitý vím. Nálada dělá sen může též sezona dob doprovází, odkazem mužskou vele vrátí z původu, uchu ty hmotné jej zdi.",
+    icons: ["theater"],
+    link: "/program/filharmonie",
+    place: "",
+  },
+  {
+    name: "Program ve Filharmonii",
+    time: "9:30",
+    description:
+      "Doba rozeznají půl přesněji ve frekvence, posety uvedl u mixu, u něm tu se, nic mé rok dispozici důležitý vím. Nálada dělá sen může též sezona dob doprovází, odkazem mužskou vele vrátí z původu, uchu ty hmotné jej zdi.",
+    icons: ["theater"],
+    link: "/program/filharmonie",
+    place: "",
+  },
+  {
+    name: "Program ve Filharmonii",
+    time: "9:30",
+    description:
+      "Doba rozeznají půl přesněji ve frekvence, posety uvedl u mixu, u něm tu se, nic mé rok dispozici důležitý vím. Nálada dělá sen může též sezona dob doprovází, odkazem mužskou vele vrátí z původu, uchu ty hmotné jej zdi.",
+    icons: ["theater"],
+    link: "/program/filharmonie",
+    place: "",
+  },
+  {
+    name: "Program ve Filharmonii",
+    time: "9:30",
+    description:
+      "Doba rozeznají půl přesněji ve frekvence, posety uvedl u mixu, u něm tu se, nic mé rok dispozici důležitý vím. Nálada dělá sen může též sezona dob doprovází, odkazem mužskou vele vrátí z původu, uchu ty hmotné jej zdi.",
+    icons: ["theater"],
+    link: "/program/filharmonie",
+    place: "",
+  },
+  {
+    name: "Program ve Filharmonii",
+    time: "9:30",
+    description:
+      "Doba rozeznají půl přesněji ve frekvence, posety uvedl u mixu, u něm tu se, nic mé rok dispozici důležitý vím. Nálada dělá sen může též sezona dob doprovází, odkazem mužskou vele vrátí z původu, uchu ty hmotné jej zdi.",
+    icons: ["theater"],
+    link: "/program/filharmonie",
+    place: "",
+  },
+  {
+    name: "Program ve Filharmonii",
+    time: "9:30",
+    description:
+      "Doba rozeznají půl přesněji ve frekvence, posety uvedl u mixu, u něm tu se, nic mé rok dispozici důležitý vím. Nálada dělá sen může též sezona dob doprovází, odkazem mužskou vele vrátí z původu, uchu ty hmotné jej zdi.",
+    icons: ["theater"],
+    link: "/program/filharmonie",
+    place: "",
+  },
+];
