@@ -18,7 +18,10 @@ export default function Program({ id, className }) {
       <ul>
         {program.map((p) => {
           return (
-            <li className="border-[#444] border rounded-xl p-4 sm:p-6 mb-6 transition h-full backdrop-blur-md">
+            <li
+              key={(p.name, p.time)}
+              className="border-[#444] border rounded-xl p-4 sm:p-6 mb-6 transition h-full backdrop-blur-md"
+            >
               <div className="flex flex-row justify-start items-center">
                 <span className="text-2xl tracking-wider">{p.time}</span>
                 <div className="ml-4 flex flex-row justify-start items-center">
