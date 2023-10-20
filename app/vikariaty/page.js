@@ -267,7 +267,7 @@ export const vikariaty = [
     description:
       "Virům silnými hornina snad geologickou kladení souvisela úhlem. Varování pasivitou míst o amerických padesátiminutový jako tito zaslechl neobvyklé virů či přichytávacích mamutů víceméně rozdělit fakticky obrovským.",
     priest: { 
-      name: "(jáhen) Jiří Melichar",
+      name: "jáhen Jiří Melichar",
       jpgPath: "/assets/images/vikariaty/melichar.jpg",  
     },
     person1: { 
