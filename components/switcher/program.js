@@ -84,7 +84,7 @@ export const program = [
     time: "9:30",
     description:
       "Doba rozeznají půl přesněji ve frekvence, posety uvedl u&nbsp;mixu, u&nbsp;něm tu se, nic mé rok dispozici důležitý vím. Nálada dělá sen může též sezona dob doprovází, odkazem mužskou vele vrátí z původu, uchu ty hmotné jej zdi.",
-    icons: ["theater"],
+    icons: ["theater", "music", "pray", "person", "happy"],
     link: "/program/filharmonie",
     place: {
       name: "Filhramonie Hradec Králové",
