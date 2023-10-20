@@ -72,7 +72,6 @@ export const jadro = [
     name: "Klárka Kopecká",
     description:
       "Manažerka Klárka komunikuje s&nbsp;hosty a&nbsp;domlouvá s&nbsp;nimi detaily jejich přednášek.",
-    pngPath: "/assets/images/jadro/klarka.png",
     jpgPath: "/assets/images/jadro/klarka.jpg",
     webpPath: "/assets/images/jadro/klarka.webp",
     altText: "Profilová fotka Klárky Kopecké",
