@@ -5,6 +5,12 @@ import { requestJSON } from "../lib/request";
 import ContainerTitle from "./layouts/container-title";
 import ContainerDescription from "./layouts/container-description";
 import { IconCheck, IconExclamationMark, IconX } from "@tabler/icons";
+import Container from "./layouts/container";
+import ContainerParagraph from "./layouts/container-paragraph";
+import ContainerH2 from "./layouts/container-h2";
+import ContainerH3 from "./layouts/container-h3";
+import Link from "next/link";
+import ContainerImage from "./layouts/container-image";
 
 export default function Game({ score }) {
   useEffect(() => {
@@ -21,11 +27,16 @@ export default function Game({ score }) {
 
   const [finalScore, setFinalScore] = useState(0);
 
+  const [buttonName, setButtonName] = useState("Vytesat");
+
   const [iconCheckClass, setIconCheckClass] = useState("hidden");
   const [iconXClass, setIconXClass] = useState("hidden");
   const [warningText, setWarningText] = useState("");
+  const [iconCheckClassSecret, setIconCheckClassSecret] = useState("hidden");
+  const [iconXClassSecret, setIconXClassSecret] = useState("hidden");
   const [iconExclamationMarkClass, setIconExclamationMarkClass] =
     useState("hidden");
+  const [nicknameTmp, setNicknameTmp] = useState("");
   const [cursorButton, setCursorButton] = useState(
     "cursor-not-allowed opacity-25 pointer-events-none"
   );
@@ -42,28 +53,78 @@ export default function Game({ score }) {
     }
     return undefined;
   }
+  function getNicknameSecret(nickname) {
+    for (let i = 0; i < score.length; i += 1) {
+      if (nickname === score[i].nickname) return score[i].secret;
+    }
+    return undefined;
+  }
 
   function validateNickname(nickname) {
+    setNicknameTmp(nickname);
     if (nickname.length > 18) {
       setIconCheckClass("hidden");
       setIconExclamationMarkClass("hidden");
       setIconXClass("");
       setCursorButton("cursor-not-allowed opacity-25 pointer-events-none");
       setWarningText("Přezdívka je moc dlouhá!");
+      setButtonName("Vytesat");
     } else if (isNicknameExists(nickname)) {
       setIconCheckClass("hidden");
       setIconExclamationMarkClass("");
       setIconXClass("hidden");
-      setCursorButton("cursor-pointer");
+      if (iconCheckClassSecret === "") setCursorButton("cursor-pointer");
+      else setCursorButton("cursor-not-allowed opacity-25 pointer-events-none");
       setWarningText(
-        `Přezdívka již použita se skórem ${getNicknameScore(nickname)}.`
+        `Přezdívka již použita se skórem ${getNicknameScore(
+          nickname
+        )}.<br/>Pro aktualizaci napište správné tajné slovo.`
       );
+      setButtonName("Aktualizovat");
     } else {
       setIconCheckClass("");
       setIconXClass("hidden");
       setIconExclamationMarkClass("hidden");
       setWarningText("");
       setCursorButton("cursor-pointer");
+      setButtonName("Vytesat");
+      if (iconCheckClassSecret === "") setCursorButton("cursor-pointer");
+      else setCursorButton("cursor-not-allowed opacity-25 pointer-events-none");
+    }
+  }
+
+  function validateSecret(secret) {
+    if (isNicknameExists(nicknameTmp)) {
+      setButtonName("Aktualizovat");
+      if (secret === getNicknameSecret(nicknameTmp)) {
+        setIconCheckClassSecret("");
+        setIconXClassSecret("hidden");
+        setWarningText("");
+        setCursorButton("cursor-pointer");
+      } else {
+        setIconCheckClassSecret("hidden");
+        setIconXClassSecret("");
+        setCursorButton("cursor-not-allowed opacity-25 pointer-events-none");
+        setWarningText(
+          `Přezdívka již použita se skórem ${getNicknameScore(
+            nicknameTmp
+          )}.<br/>Pro aktualizaci napište správné tajné slovo.`
+        );
+      }
+    } else {
+      if (secret.length < 4) {
+        setWarningText(`Tajné slovo je příliš krátké.`);
+        setIconCheckClassSecret("hidden");
+        setIconXClassSecret("");
+        setButtonName("Vytesat");
+        setCursorButton("cursor-not-allowed opacity-25 pointer-events-none");
+      } else {
+        setWarningText(``);
+        setIconCheckClassSecret("");
+        setIconXClassSecret("hidden");
+        setButtonName("Vytesat");
+        setCursorButton("cursor-pointer");
+      }
     }
   }
 
@@ -145,7 +206,46 @@ export default function Game({ score }) {
         id="evzenovaCesta"
         className={`flex flex-col items-center justify-around min-h-[60vh] ${evzenovaCesta}`}
       >
-        <p>nejakuy text1</p>
+        <Container>
+          <ContainerH2>Evženův příběh</ContainerH2>
+          <div className="flex w-full justify-around bg-[#444] rounded-xl items-center p-4 mt-2">
+            <ContainerDescription className={`w-[50vw] max-w-[500px]`}>
+              Pan Holub k nám byl seslán při vanutí Ducha. Pravděpodobně
+              holubice nebyla toho času k dispozici. Holuba jste si všichni moc
+              oblíbili a rovnou jste jej začali oslovovat jménem Evžen. A tak se
+              Evžen Holub stal maskotem královehradecké mládeže.
+            </ContainerDescription>
+            <ContainerImage
+              pngPath={`/assets/images/jadro/evzen.png`}
+              webpPath={`/assets/images/jadro/evzen.webp`}
+              altText={`Fotka Pana Holuba Evzena`}
+              className={`!rounded-full h-32 w-32 md:h-36 md:w-36 border-2 border-[#444] bg-[#444]`}
+            />
+          </div>
+
+          <ContainerParagraph>
+            Jednoho dne se rozhodl, že se vydá do světa. Sbalil saky paky a
+            rozlétl se …
+          </ContainerParagraph>
+          <ContainerH3>Evženova cesta</ContainerH3>
+          <ContainerParagraph>
+            Pomoz holubovi v bezpečí proletět celou naší diecézí, získej
+            nejvyšší skóre a zapiš se do síně slávy. Skóre se ti zvyšuje
+            pojídáním jídla a sbíráním hvězdiček. Za každý kousek jídla je jiný
+            počet bodů. Holubova cesta není jednoduchá. Musí se vyhýbat stavbám,
+            raketám či vzducholodím. Na mobile změníš holubův pohyb klinutím do
+            hry, na počítači stiskem mezerníku. Hodně štěstí ať se s Tebou Evžen
+            dostane, co nejdál!
+          </ContainerParagraph>
+          <ContainerParagraph className="italic">
+            Baví Tě programovat a chtěl bys Evžena zlepšit? Napiš na mail{" "}
+            <Link href={`mailto:dev@diecezko.cz	`} className="underline">
+              dev@diecezko.cz
+            </Link>{" "}
+            nebo si forkni repo a pošli rovnou zpátky pull-request se
+            improvmentem.
+          </ContainerParagraph>
+        </Container>
       </div>
       {/* Hra section */}
       <div
@@ -189,16 +289,26 @@ export default function Game({ score }) {
             </button>
           </div>
           <form
-            className={`absolute w-full burger-menu-height bg-black/70 backdrop-blur-sm z-20 flex flex-col items-center justify-around ${formDisplay}`}
+            className={`absolute w-full min-h-[700px] bg-black/70 backdrop-blur-sm z-20 flex flex-col items-center justify-around ${formDisplay}`}
             onSubmit={(e) => requestJSON(e)}
             id="display-form"
           >
             <h3 className="text-3xl text-center w-[90vw]">Zapsat skóre</h3>
-            <p className="w-[80vw] max-w-[600px] text-lg">
-              Pokud se rozhodneš vytesat své jméno do síně slávy, máš šanci
-              vyhrát speciální dárek od Evžena Holuba... Více info sem jako
-              ještě, jooo?
-            </p>
+            <div className="w-[80vw] max-w-[600px] text-lg">
+              <p className="mb-2 italic">
+                Pokud se rozhodneš vytesat své jméno do síně slávy, máš šanci
+                vyhrát speciální dárek od Evžena Holuba.
+              </p>
+              <p className="mb-2">
+                <strong>Přezdívka</strong> může být dlouhá maximálně 18 znaků.
+                Spolu s ní bude do Síně slávy vytesáno maximální skóre.
+              </p>
+              <p>
+                <strong>Tajné slovo</strong> musí být dlouhé minimálně 4 znaky.
+                Pokud tvoříš svoji přezdívku poprvé, dobře si ho zapamatuj. Pro
+                aktualizaci budeš muset vepsat stejné slovo.
+              </p>
+            </div>
             <div className="flex flex-col items-center justify-center">
               <div className="flex items-center">
                 <input
@@ -224,7 +334,30 @@ export default function Game({ score }) {
                   />
                 </div>
               </div>
-              <div className="text-[#ff9300] text-xl mt-2">{warningText}</div>
+              <div className="flex items-center mt-4">
+                <input
+                  type="text"
+                  id="secret"
+                  name="secret"
+                  className="w-[80vw] max-w-[400px] text-center text-xl text-white bg-[#333] rounded-full py-4 mt"
+                  placeholder="Tajné slovo"
+                  onChange={(e) => validateSecret(e.target.value)}
+                />
+                <div className="w-0">
+                  <IconCheck
+                    className={`inline relative right-10 ${iconCheckClassSecret}`}
+                    color="#00b341"
+                  />
+                  <IconX
+                    className={`inline relative right-10 ${iconXClassSecret}`}
+                    color="#ff2825"
+                  />
+                </div>
+              </div>
+              <div
+                className="text-[#ff9300] text-xl mt-2 text-center"
+                dangerouslySetInnerHTML={{ __html: warningText }}
+              />
             </div>
             <p className="text-xl uppercase tracking-widest">
               Skóre: {finalScore}
@@ -232,7 +365,7 @@ export default function Game({ score }) {
             <div className="w-full flex flex-row items-center justify-center">
               <input
                 type="submit"
-                value="Vytesat"
+                value={buttonName}
                 className={`border px-6 py-2 rounded-full ${cursorButton} text-lg mx-2`}
               />
               <div
