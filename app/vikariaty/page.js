@@ -237,7 +237,7 @@ export const vikariaty = [
     priest: { name: "P. Piotr Antkiewicz" },
     person1: { 
       name: "Kateřina Dvořáková a Maja Macková",
-      jpgPath: "/assets/images/vikariaty/dvorakova+mackova.jpg"  
+      jpgPath: "/assets/images/vikariaty/dvorakovaamackova.jpg"  
     },
     social: {
       instagram: "https://www.instagram.com/vikariat_pardubice/",
