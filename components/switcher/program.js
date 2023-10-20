@@ -42,7 +42,7 @@ export default function Program({ id, className }) {
                 dangerouslySetInnerHTML={{ __html: p.description }}
               />
               <div className="flex flex-row flex-wrap items-center justify-start mt-2">
-                <Link href={p.link}>
+                <Link href={`/`}>
                   <button className="border border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-3 cursor-pointer text-base flex flex-row items-center justify-center mb-2 mr-2">
                     <IconCalendarPlus className="inline mr-1" stroke={1.5} />
                     Uložit do kalednáře
@@ -80,7 +80,6 @@ export const program = [
     time: "9:00",
     description: "",
     icons: ["registration"],
-    link: "/program/filharmonie",
     place: {
       name: "Filhramonie Hradec Králové",
       coords: { x: "50.2138117", y: "15.8291964" },
@@ -102,10 +101,22 @@ export const program = [
   },
   {
     name: "Obědová pauza",
-    time: "11:30",
+    time: "12:00",
     description:
       "Doba rozeznají půl přesněji ve frekvence, posety uvedl u&nbsp;mixu, u&nbsp;něm tu se, nic mé rok dispozici důležitý vím. Nálada dělá sen může též sezona dob doprovází, odkazem mužskou vele vrátí z původu, uchu ty hmotné jej zdi.",
     icons: ["food"],
+    place: {
+      name: "Filhramonie Hradec Králové",
+      coords: { x: "50.2138117", y: "15.8291964" },
+      link: "https://mapy.cz/s/dedasenuge",
+    },
+  },
+  {
+    name: "Přednášky, workshopy",
+    time: "12:30",
+    description:
+      "Doba rozeznají půl přesněji ve frekvence, posety uvedl u&nbsp;mixu, u&nbsp;něm tu se, nic mé rok dispozici důležitý vím. Nálada dělá sen může též sezona dob doprovází, odkazem mužskou vele vrátí z původu, uchu ty hmotné jej zdi.",
+    icons: ["person", "sport"],
     link: "/program/filharmonie",
     place: {
       name: "Filhramonie Hradec Králové",
@@ -114,11 +125,11 @@ export const program = [
     },
   },
   {
-    name: "Obědová pauza",
-    time: "11:30",
+    name: "Odpolední program",
+    time: "14:00",
     description:
       "Doba rozeznají půl přesněji ve frekvence, posety uvedl u&nbsp;mixu, u&nbsp;něm tu se, nic mé rok dispozici důležitý vím. Nálada dělá sen může též sezona dob doprovází, odkazem mužskou vele vrátí z původu, uchu ty hmotné jej zdi.",
-    icons: ["food"],
+    icons: ["pray", "cafe", "sport"],
     link: "/program/filharmonie",
     place: {
       name: "Filhramonie Hradec Králové",
@@ -127,25 +138,12 @@ export const program = [
     },
   },
   {
-    name: "Obědová pauza",
-    time: "11:30",
+    name: "Mše svatá",
+    time: "15:00",
     description:
       "Doba rozeznají půl přesněji ve frekvence, posety uvedl u&nbsp;mixu, u&nbsp;něm tu se, nic mé rok dispozici důležitý vím. Nálada dělá sen může též sezona dob doprovází, odkazem mužskou vele vrátí z původu, uchu ty hmotné jej zdi.",
-    icons: ["food"],
-    link: "/program/filharmonie",
-    place: {
-      name: "Filhramonie Hradec Králové",
-      coords: { x: "50.2138117", y: "15.8291964" },
-      link: "https://mapy.cz/s/dedasenuge",
-    },
-  },
-  {
-    name: "Obědová pauza",
-    time: "11:30",
-    description:
-      "Doba rozeznají půl přesněji ve frekvence, posety uvedl u&nbsp;mixu, u&nbsp;něm tu se, nic mé rok dispozici důležitý vím. Nálada dělá sen může též sezona dob doprovází, odkazem mužskou vele vrátí z původu, uchu ty hmotné jej zdi.",
-    icons: ["food"],
-    link: "/program/filharmonie",
+    icons: ["music", "pray"],
+    // link: "/program/filharmonie",
     place: {
       name: "Filhramonie Hradec Králové",
       coords: { x: "50.2138117", y: "15.8291964" },

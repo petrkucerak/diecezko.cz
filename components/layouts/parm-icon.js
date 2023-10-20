@@ -1,5 +1,7 @@
 import {
+   IconBallFootball,
   IconChefHat,
+  IconCoffee,
   IconMasksTheater,
   IconMoodCrazyHappy,
   IconMusic,
@@ -61,6 +63,22 @@ export default function ParmIcon({ className, iconName }) {
   else if (iconName === "registration")
     return (
       <IconPencil
+        className={`inline ${className} mr-1`}
+        stroke={1.5}
+        size={size}
+      />
+    );
+  else if (iconName === "cafe")
+    return (
+      <IconCoffee
+        className={`inline ${className} mr-1`}
+        stroke={1.5}
+        size={size}
+      />
+    );
+  else if (iconName === "sport")
+    return (
+      <IconBallFootball
         className={`inline ${className} mr-1`}
         stroke={1.5}
         size={size}
