@@ -17,15 +17,18 @@ export default function FAQ() {
         Setkání je pro všechny mladé <strong>od 14 let</strong>.
       </FaqBox>
       <FaqBox question={`Jak se přihlásím?`} icon={`pencil`}>
-        To je jednoduché, <strong>vyplň{" "}
-        <Link
-          href="https://forms.gle/aMQor8ARxaULdD8t7"
-          rel="external"
-          target="_blank"
-          className="underline"
-        >
-          přihášku
-        </Link></strong>{" "}
+        To je jednoduché,{" "}
+        <strong>
+          vyplň{" "}
+          <Link
+            href="https://forms.gle/aMQor8ARxaULdD8t7"
+            rel="external"
+            target="_blank"
+            className="underline"
+          >
+            přihášku
+          </Link>
+        </strong>{" "}
         a budeme s Tebou počítat.{" "}
       </FaqBox>
       <FaqBox question={`Jak bude zajištěno stravování?`} icon={`chef`}>
@@ -45,7 +48,6 @@ export default function FAQ() {
         {
           // TODO: add link to kavarna
         }
-        .
       </FaqBox>
       <FaqBox question={`Jak se v Hradci dopravovat?`} icon={`bus`}>
         Hradec Králové je malej, <strong>choďte pěšky</strong>!
