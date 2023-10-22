@@ -27,7 +27,7 @@ export default async function PrednaskyWorhsopy() {
                   <ContainerImage
                     altText={`Fotka hosta ${w.speaker} k přednášce ${w.title}.`}
                     jpgPath={w.speaker.jpgPath}
-                    
+                    webpPath={w.speaker.jpgPath.replace(".jpg", ".webp")}
                   />
                   <h2 dangerouslySetInnerHTML={{ __html: w.title }} />
                 </div>
