@@ -19,9 +19,32 @@ export default async function PrednaskyWorhsopy() {
             workshopů, přednášek a&nbsp;sportů. Na daný program se bude možné
             hlásit při východu z&nbsp;dopoledního programu ve filharmonii.
           </ContainerDescription>
+          <div>
+            {workshops.map((w) => {
+              return (
+                <div>
+                  
+                  <h2 dangerouslySetInnerHTML={{ __html: w.title }} />
+                </div>
+              );
+            })}
+          </div>
         </Container>
       </PageMain>
       <Footer />
     </main>
   );
 }
+
+const workshops = [
+  {
+    title: "Kdo jsem a&nbsp;kam jdu? – aneb jaký je cíl mé cesty životem",
+    place: "",
+    descritpion:
+      "Vyprávění o&nbsp;motivaci pro putování do Compostelly, několik neobyčejných příběhů z&nbsp;cesty a&nbsp;v&nbsp;porovnání Svatojakubského putování s&nbsp;cestou životem.",
+    speaker: {
+      name: "Jan Votava",
+      jpgPath: "/assets/images/speakers/votava.jpg",
+    },
+  },
+];
