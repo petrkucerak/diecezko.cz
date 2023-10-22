@@ -8,6 +8,8 @@ import {
   IconPencil,
 } from "@tabler/icons";
 import Link from "next/link";
+import Nbsp from "../format/nbsp";
+import Strong from "../format/strong";
 
 export default function DiecezkoInfo({ id, className }) {
   return (
@@ -79,25 +81,39 @@ export default function DiecezkoInfo({ id, className }) {
       </div>
       <ContainerH2>O diecézku</ContainerH2>
       <ContainerParagraph>
-        Na přání papeže sv. Jana Pavla II. a jeho nástupců se mají biskupové
-        scházet každý rok s mládeží své diecéze. Původně byla pro tuto akci
-        vybrána Květná neděle, ale od roku 2021 papež František ustanovil za
-        tento den slavnost Ježíše Krista Krále.
+        Na přání papeže sv.
+        <Nbsp />
+        Jana Pavla II. a<Nbsp />
+        jeho nástupců se mají biskupové{" "}
+        <Strong>
+          scházet každý rok s<Nbsp />
+          mládeží
+        </Strong>{" "}
+        své diecéze. Původně byla pro tuto akci vybrána Květná neděle, ale od
+        roku 2021 papež František ustanovil za tento den slavnost Ježíše Krista
+        Krále.
       </ContainerParagraph>
       <ContainerParagraph>
-        V naší diecézi se mládež schází v sobotu před touto slavností v Hradci
-        Králové. Nejprve proběhne společný režijní program a po občerstvení
-        mohou mladí navštívit různé workshopy a přednášky. Dále je v nabídce
-        sport, hry, kavárna, ale také adorace či možnost přistoupit ke svátosti
-        smíření. Poté se mládež opět setká a společnou modlitbou (křížová cesta,
-        růženec,...) projdou město.
+        V<Nbsp />
+        naší diecézi se mládež schází v<Nbsp />
+        sobotu před touto slavností v<Nbsp />
+        Hradci Králové. Nejprve proběhne společný režijní program a<Nbsp />
+        po občerstvení mohou mladí navštívit různé workshopy a<Nbsp />
+        přednášky. Dále je v<Nbsp />
+        nabídce sport, hry, kavárna, ale také adorace či možnost přistoupit ke
+        svátosti smíření. Poté se mládež opět setká a<Nbsp />
+        společnou modlitbou (křížová cesta, růženec,...) projdou město.
       </ContainerParagraph>
       <ContainerParagraph>
-        Nedílnou součástí tohoto setkání je slavnostní mše svatá v katedrále sv.
-        Ducha s otcem biskupem, která program celého dne završuje.
+        Nedílnou součástí tohoto setkání je slavnostní mše svatá v<Nbsp />
+        katedrále sv.
+        <Nbsp />
+        Ducha s<Nbsp />
+        otcem biskupem, která program celého dne završuje.
       </ContainerParagraph>
       <ContainerParagraph>
-        Akce se pravidelně účastní kolem 700 mladých lidí z celé diecéze a
+        Akce se pravidelně účastní kolem 700 mladých lidí z<Nbsp />
+        celé diecéze a<Nbsp />
         minimálně 100 ochotných dobrovolníků.
       </ContainerParagraph>
     </Container>
