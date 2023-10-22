@@ -15,9 +15,6 @@ import FAQ from "../faq";
 export default function SpolecenstviInfo({ id, className }) {
   return (
     <Container className={className} id={id}>
-      <ContainerTitle className={`text-center`}>
-        Rozcestník dalších informací
-      </ContainerTitle>
       <CardFeed>
         <Link href="/jadro-diecezka" target="_self">
           <Button>
