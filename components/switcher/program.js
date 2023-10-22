@@ -1,15 +1,11 @@
 import Link from "next/link";
 import Container from "../layouts/container";
-import ContainerTitle from "../layouts/container-title";
 import ParmIcon from "../layouts/parm-icon";
 import { IconArrowRight, IconCalendarPlus } from "@tabler/icons";
 
 export default function Program({ id, className }) {
   return (
     <Container className={className} id={id}>
-      <ContainerTitle className={`text-center`}>
-        Program bude již brzy specifikován
-      </ContainerTitle>
       <ul>
         {program.map((p) => {
           return (
@@ -80,7 +76,7 @@ export const program = [
     name: "Příjezd a registrace",
     time: "9:00",
     description:
-      "Při příjezdu na setkání prosím navšite registraci, kterou najdete při vstupu do filharmonie.",
+      "Při příjezdu na setkání prosím navštivte registraci, kterou najdete při vstupu do filharmonie.",
     icons: ["registration"],
     place: {
       name: "Filhramonie Hradec Králové",
@@ -94,7 +90,7 @@ export const program = [
     description:
       "Dopolední program prožijeme společně v budově Filharmonie. Můžete se těšit na režijní scénky, svědectví, hudební doprovod v podání VeKy a mnoho dalšího.",
     icons: ["theater", "music", "pray", "person"],
-    link: "/program/filharmonie",
+    link: "/program-ve-filharmonii",
     place: {
       name: "Filhramonie Hradec Králové",
       coords: { x: "50.2138117", y: "15.8291964" },
@@ -105,46 +101,36 @@ export const program = [
     name: "Obědová pauza",
     time: "12:00",
     description:
-      "Při odchodu z&nbsp;dopoledního programu si kromě výběru workshopu nebo přednášky nezapomeňte vyzvednout i bagetu s&nbsp;pitíčkem, které si můžete vychutnat před budovou filharmonie. Dobrou chuť!",
+      "Při odchodu z dopoledního programu si kromě výběru workshopu nebo přednášky nezapomeňte vyzvednout i bagetu s pitíčkem. Dobrou chuť!",
     icons: ["food"],
   },
   {
     name: "Přednášky, workshopy",
     time: "12:30",
     description:
-      "Doba rozeznají půl přesněji ve frekvence, posety uvedl u&nbsp;mixu, u&nbsp;něm tu se, nic mé rok dispozici důležitý vím. Nálada dělá sen může též sezona dob doprovází, odkazem mužskou vele vrátí z původu, uchu ty hmotné jej zdi.",
+      "Odpoledne si můžete vybrat z široké nabídky workshopů, přednášek a sportů.",
     icons: ["person", "sport"],
     link: "/program/filharmonie",
-    place: {
-      name: "Filhramonie Hradec Králové",
-      coords: { x: "50.2138117", y: "15.8291964" },
-      link: "https://mapy.cz/s/dedasenuge",
-    },
   },
   {
     name: "Odpolední program",
     time: "14:00",
     description:
-      "Doba rozeznají půl přesněji ve frekvence, posety uvedl u&nbsp;mixu, u&nbsp;něm tu se, nic mé rok dispozici důležitý vím. Nálada dělá sen může též sezona dob doprovází, odkazem mužskou vele vrátí z původu, uchu ty hmotné jej zdi.",
+      "V&nbsp;druhé části odpoledne můžete pokračovat ve sportování, navštívit kavárnu na BiGy nebo si zajít na duchovní rozhovor či svátost smíření.",
     icons: ["pray", "cafe", "sport"],
     link: "/program/filharmonie",
-    place: {
-      name: "Filhramonie Hradec Králové",
-      coords: { x: "50.2138117", y: "15.8291964" },
-      link: "https://mapy.cz/s/dedasenuge",
-    },
   },
   {
     name: "Mše svatá",
     time: "15:00",
     description:
-      "Doba rozeznají půl přesněji ve frekvence, posety uvedl u&nbsp;mixu, u&nbsp;něm tu se, nic mé rok dispozici důležitý vím. Nálada dělá sen může též sezona dob doprovází, odkazem mužskou vele vrátí z původu, uchu ty hmotné jej zdi.",
+      "Celý den zakončíme mší svatou s otcem biskupem v katedrále svatého Ducha. Mši svatou hudebně doprovodí studenecká schola.",
     icons: ["music", "pray"],
     // link: "/program/filharmonie",
     place: {
-      name: "Filhramonie Hradec Králové",
-      coords: { x: "50.2138117", y: "15.8291964" },
-      link: "https://mapy.cz/s/dedasenuge",
+      name: "Katedrála svatého Ducha",
+      coords: { x: "50.2087878", y: "15.8310917" },
+      link: "https://mapy.cz/s/bezegujuje",
     },
   },
 ];
