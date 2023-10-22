@@ -4,6 +4,9 @@ import Container from "../../components/layouts/container";
 import ContainerTitle from "../../components/layouts/container-title";
 import ContainerDescription from "../../components/layouts/container-description";
 import PageMain from "../../components/layouts/page-main";
+import ProgramDetail from "../../components/layouts/program-detail";
+import { program } from "../../components/switcher/program";
+import Link from "next/link";
 export default async function ProgramVeFilharmonii() {
   return (
     <main className="ease-in-out duration-300 font-titilliumWeb">
@@ -11,7 +14,15 @@ export default async function ProgramVeFilharmonii() {
       <PageMain>
         <Container>
           <ContainerTitle>Mše svatá</ContainerTitle>
-          <ContainerDescription>Mše svatá...</ContainerDescription>
+          <ProgramDetail p={program[5]} className={``} />
+          <ContainerDescription>
+            Vrcholem celého Diecézka je setkání s&nbsp;naším biskupem skrze mši
+            svatou. Mši svatou bude hudebně doprovázet{" "}
+            <Link href="/studenecka-schola" className="underline">
+              Studenecká schola
+            </Link>
+            .
+          </ContainerDescription>
         </Container>
       </PageMain>
       <Footer />
