@@ -6,6 +6,7 @@ import ContainerDescription from "../../components/layouts/container-description
 import PageMain from "../../components/layouts/page-main";
 import ProgramDetail from "../../components/layouts/program-detail";
 import { program } from "../../components/switcher/program";
+import ContainerImage from "../../components/layouts/container-image";
 export default async function PrednaskyWorhsopy() {
   return (
     <main className="ease-in-out duration-300 font-titilliumWeb">
