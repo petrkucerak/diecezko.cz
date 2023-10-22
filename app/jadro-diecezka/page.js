@@ -44,7 +44,6 @@ export const jadro = [
   {
     name: "Klárka Petrová",
     description: "Klárka je vedoucí DCM a&nbsp;má pod palcem celé diecézko.",
-    pngPath: "/assets/images/jadro/petrova.png",
     jpgPath: "/assets/images/jadro/petrova.jpg",
     webpPath: "/assets/images/jadro/petrova.webp",
     altText: "Profilová fotka Klárky Petrové",
@@ -53,8 +52,7 @@ export const jadro = [
   {
     name: "Jindra Řezníček",
     description:
-      "Jindra je parťák Klárky, pracuje na DCM a&nbsp;spolu s&nbsp;ní drží oteže nad diecézkem.",
-    pngPath: "/assets/images/jadro/jindra.png",
+      "Jindra je parťák Klárky, pracuje na DCM a&nbsp;spolu s&nbsp;ní drží otěže nad diecézkem.",
     jpgPath: "/assets/images/jadro/jindra.jpg",
     webpPath: "/assets/images/jadro/jindra.webp",
     altText: "Profilová fotka Jindry Řezníčka",
@@ -74,7 +72,6 @@ export const jadro = [
     name: "Klárka Kopecká",
     description:
       "Manažerka Klárka komunikuje s&nbsp;hosty a&nbsp;domlouvá s&nbsp;nimi detaily jejich přednášek.",
-    pngPath: "/assets/images/jadro/klarka.png",
     jpgPath: "/assets/images/jadro/klarka.jpg",
     webpPath: "/assets/images/jadro/klarka.webp",
     altText: "Profilová fotka Klárky Kopecké",
@@ -155,7 +152,7 @@ export const jadro = [
   {
     name: "Honza Pecháček",
     description:
-      "Bohoslovec Honza se spolu s&nbsp;Michalem starají o&nbsp;hladký průběh duchovního programu a&nbsp;mše svaté.",
+      "Jáhen Honza se spolu s&nbsp;Michalem starají o&nbsp;hladký průběh duchovního programu a&nbsp;mše svaté.",
     altText: "Profilová fotka Honza Pecháček",
     jpgPath: "/assets/images/jadro/pechacek.jpg",
     webpPath: "/assets/images/jadro/pechacek.webp",
@@ -164,7 +161,7 @@ export const jadro = [
   {
     name: "Michal Šramko",
     description:
-      "Bohoslovec Michal se spolu s&nbsp;Honzou starají o&nbsp;hladký průběh duchovního programu a&nbsp;mše svaté.",
+      "Jáhen Michal se spolu s&nbsp;Honzou starají o&nbsp;hladký průběh duchovního programu a&nbsp;mše svaté.",
     altText: "Profilová fotka Michal Šramko",
     jpgPath: "/assets/images/jadro/sramko.jpg",
     webpPath: "/assets/images/jadro/sramko.webp",
@@ -203,6 +200,13 @@ export const jadro = [
     altText: "Profilová fotka Honza Klinger",
     jpgPath: "/assets/images/jadro/klinger.jpg",
     webpPath: "/assets/images/jadro/klinger.webp",
+    className: "",
+  },
+  {
+    name: "Míša Hrstková",
+    altText: "Profilová fotka Míša Hrstková",
+    jpgPath: "/assets/images/jadro/hrstkova.jpg",
+    webpPath: "/assets/images/jadro/hrstkova.webp",
     className: "",
   },
 ];
