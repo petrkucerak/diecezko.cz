@@ -110,7 +110,7 @@ export const program = [
     description:
       "Odpoledne si můžete vybrat z široké nabídky workshopů, přednášek a sportů.",
     icons: ["person", "sport"],
-    link: "/program/filharmonie",
+    link: "/prednasky-workshopy",
   },
   {
     name: "Odpolední program",
@@ -118,7 +118,7 @@ export const program = [
     description:
       "V&nbsp;druhé části odpoledne můžete pokračovat ve sportování, navštívit kavárnu na BiGy nebo si zajít na duchovní rozhovor či svátost smíření.",
     icons: ["pray", "cafe", "sport"],
-    link: "/program/filharmonie",
+    link: "/odpoledni-program",
   },
   {
     name: "Mše svatá",
@@ -126,7 +126,7 @@ export const program = [
     description:
       "Celý den zakončíme mší svatou s otcem biskupem v katedrále svatého Ducha. Mši svatou hudebně doprovodí studenecká schola.",
     icons: ["music", "pray"],
-    // link: "/program/filharmonie",
+    link: "/mse-svata",
     place: {
       name: "Katedrála svatého Ducha",
       coords: { x: "50.2087878", y: "15.8310917" },
