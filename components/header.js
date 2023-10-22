@@ -125,13 +125,13 @@ export default function Header() {
             </li>
           </Link>
           <Link
-            href="/jadro-diecezka"
+            href="/studenecka-schola"
             target="_self"
             className="border-b-[#3b3b3b] border-b w-full"
           >
             <li className="flex flex-row items-center">
-              <IconHeart stroke={1} className="inline h-7 w-7 my-1 mr-2" />
-              Jádro diecézka
+              <IconMusic stroke={1} className="inline h-7 w-7 my-1 mr-2" />
+              Studenecká schola
             </li>
           </Link>
         </ul>
