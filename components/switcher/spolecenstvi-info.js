@@ -1,5 +1,4 @@
 import Container from "../layouts/container";
-import ContainerTitle from "../layouts/container-title";
 import CardFeed from "../layouts/card-feed";
 import Link from "next/link";
 import Button from "../layouts/button";
@@ -70,6 +69,10 @@ export default function SpolecenstviInfo({ id, className }) {
           </Button>
         </Link>
       </CardFeed>
+      <ContainerH2 className={`w-full text-center !text-3xl`}>
+        Často kladené otázky
+      </ContainerH2>
+      <FAQ />
       <ContainerH2 className={`w-full text-center`}>
         Tipy na další obsah
       </ContainerH2>
@@ -86,10 +89,6 @@ export default function SpolecenstviInfo({ id, className }) {
           </Button>
         </Link>
       </CardFeed>
-      <ContainerH2 className={`w-full text-center !text-3xl`}>
-        Často kladené otázky
-      </ContainerH2>
-      <FAQ />
     </Container>
   );
 }
