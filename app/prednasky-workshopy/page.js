@@ -72,7 +72,7 @@ const workshops = [
     title: 'Co se dělo na synodě v Římě? "Bude se měnit učení církve?"',
     place: "",
     descritpion:
-      "Dva roky přípravy po celém světě, celý měsíc říjen plný setkání, diskuzí a&nbsp;modliteb v&nbsp;Římě. Přesně 365 účastníků s&nbsp;hlasovacím právem (včetně papeže Františka a&nbsp;54 žen). Co se řešilo a&nbsp;neřešilo na 16. řádném zasedání biskupské synody? Bude se žehnat homosexuálním párům? Budou se světit ženy na jáhenky? Zůstane katolická církev katolickou? Nebo je synoda o&nbsp;synodalitě trošku o&nbsp;něčem jiném?",
+      "Dva roky přípravy po celém světě, celý měsíc říjen plný setkání, diskuzí a&nbsp;modliteb v&nbsp;Římě. Přesně 365 účastníků s&nbsp;hlasovacím právem <em>(včetně papeže Františka a&nbsp;54 žen)</em>. Co se řešilo a&nbsp;neřešilo na 16. řádném zasedání biskupské synody? Bude se žehnat homosexuálním párům? Budou se světit ženy na jáhenky? Zůstane katolická církev katolickou? Nebo je synoda o&nbsp;synodalitě trošku o&nbsp;něčem jiném?",
     speaker: {
       name: "Jan Pitřinec",
       jpgPath: "/assets/images/speakers/pitrinec.jpg",
