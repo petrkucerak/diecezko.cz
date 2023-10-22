@@ -13,7 +13,7 @@ export default async function ProgramVeFilharmonii() {
       <Header />
       <PageMain>
         <Container>
-          <ContainerTitle>Program ve filharmonii</ContainerTitle>
+          <ContainerTitle>Program ve Filharmonii</ContainerTitle>
           <ProgramDetail p={program[1]} className={``} />
           <ContainerDescription>
             Dopoledne prožijeme společně jako mladí z&nbsp;celé diecéze

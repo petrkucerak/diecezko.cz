@@ -7,7 +7,7 @@ export default function FAQ() {
     <FaqLayout>
       <FaqBox question={`Kolik Diecézko stojí?`} icon={`money`}>
         Doporučený příspěvek je <strong>200,-Kč na osobu</strong>. Je možné ho
-        zaplati na recepci ve filharmonii při dopoledním programu.
+        zaplati na recepci ve Filharmonii při dopoledním programu.
       </FaqBox>
       <FaqBox question={`Co si sbalit s sebou?`} icon={`luggage`}>
         Sváču, láhev s pitím. Něco teplého do katedrály na závěrečnou mši

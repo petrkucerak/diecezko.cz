@@ -66,13 +66,16 @@ export default function DiecezkoInfo({ id, className }) {
             </button>
           </Link>
           <Link
-            href="/assets/events/dcmhk23.ics"
-            rel="document"
-            download="dcmhk23"
+            href=""
+            // rel="document"
+            // download="dcmhk23"
             target="_blank"
-            className="border border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-5 cursor-pointer text-base flex flex-row items-center justify-center"
+            className="cursor-not-allowed opacity-50 pointer-events-none border border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-5 text-base flex flex-row items-center justify-center"
           >
-            <button className="flex flex-row items-center justify-center">
+            <button
+              className="flex flex-row items-center justify-center cursor-not-allowed pointer-events-none"
+              title="Instalace není momentálně možná"
+            >
               <IconApps className="inline" />{" "}
               <span className="ml-2 text-left">Nainstalovat</span>
             </button>

@@ -18,7 +18,7 @@ export default async function PrednaskyWorhsopy() {
           <ContainerDescription>
             Pro první část odpoledne si můžete vybrat z&nbsp;bohaté nabídky
             workshopů, přednášek a&nbsp;sportů. Na daný program se bude možné
-            hlásit při východu z&nbsp;dopoledního programu ve filharmonii.
+            hlásit při východu z&nbsp;dopoledního programu ve Filharmonii.
           </ContainerDescription>
         </Container>
       </PageMain>

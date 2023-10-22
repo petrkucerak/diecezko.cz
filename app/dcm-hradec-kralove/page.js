@@ -57,7 +57,7 @@ export default async function DCM() {
             </ContainerLi>
             <ContainerLi>
               Spoluzajišťuje provoz{" "}
-              <Link href="/dczm-vesmir" className="underline">
+              <Link href="/dczm-vesmir" className="underline" title="DCZM Vesmír">
                 Diecézního centra života mládeže (DCŽM) Vesmír
               </Link>
               .
@@ -69,6 +69,7 @@ export default async function DCM() {
                 className="underline"
                 rel="external"
                 target="_blank"
+                title="Sekce pro mládež ČBK"
               >
                 Sekce pro mládež ČBK
               </Link>
