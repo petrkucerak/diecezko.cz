@@ -25,7 +25,7 @@ export default async function PrednaskyWorhsopy() {
               return (
                 <div key={w.title}>
                   <ContainerImage
-                    altText={`Fotka hosta ${w.speaker} k přednášce ${w.title}.`}
+                    altText={`Fotka hosta ${w.speaker.name} k přednášce ${w.title}.`}
                     jpgPath={w.speaker.jpgPath}
                     webpPath={w.speaker.jpgPath.replace(".jpg", ".webp")}
                   />
