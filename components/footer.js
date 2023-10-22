@@ -25,6 +25,7 @@ export default function Footer() {
             href="https://www.facebook.com/DCM.HradecKralove"
             target="_blank"
             rel="external"
+            title="Facebook DCM Hradec Králové"
           >
             <IconBrandFacebook className="inline" stroke={1.3} />
           </Link>
@@ -32,6 +33,7 @@ export default function Footer() {
             href="https://www.instagram.com/dcm_hk/"
             target="_blank"
             rel="external"
+            title="Instagram DCM Hradec Králové"
           >
             <IconBrandInstagram className="inline" stroke={1.3} />
           </Link>
@@ -39,6 +41,7 @@ export default function Footer() {
             href="https://github.com/petrkucerak/diecezko.cz"
             target="_blank"
             rel="external"
+            title="Repositář projektu na Githubu"
           >
             <IconBrandGithub className="inline" stroke={1.3} />
           </Link>
