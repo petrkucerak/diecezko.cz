@@ -60,13 +60,16 @@ export default function Countdown({ countDownDate }) {
     <div className="flex flex-row text-xl w-full items-center justify-center">
       <div className="mx-1 w-10 h-10 border border-[#3b3b3b] rounded-xl text-center flex items-center justify-center">
         {day}
-      </div>
+      </div>{" "}
+      :
       <div className="mx-1 w-10 h-10 border border-[#3b3b3b] rounded-xl text-center flex items-center justify-center">
         {hour}
-      </div>
+      </div>{" "}
+      :
       <div className="mx-1 w-10 h-10 border border-[#3b3b3b] rounded-xl text-center flex items-center justify-center">
         {minute}
       </div>
+      :
       <div className="mx-1 w-10 h-10 border border-[#3b3b3b] rounded-xl text-center flex items-center justify-center">
         {second}
       </div>
