@@ -14,11 +14,12 @@ export default async function StudeneckaSchola() {
         <Container>
           <ContainerTitle>Studenecká schola</ContainerTitle>
           <ContainerDescription>
-            Celá rozdělila programový, háčků k ta jeví řadě v chapadly liliím
-            jmenovat napadne, či map Václav z hospodářské příznivých směrem klec
-            vážili velice: ně osloven či. Odhalil kouzelný některých ovšem
-            nevyplašil a personálem krátké, či samostatná zdarma, o Michal maté
-            bažinách hodí. Vazeb úprav mé doby fázi?
+            Let výkyvů nory jih o dánský vidině sedmikilometrového upozornit
+            postupně u multi-dimenzionálním desetiletích. Tož ať čemu, vás čti,
+            využívá, lišit naopak horninami historkám roli nutné z veliký,
+            o sedm půdy obvyklým k výhod vyvozují po klientela, plíseň novou
+            čili přišly ty přivezl severu vzbudil. Zimě čti mají mých brzy
+            u zimu ochlazení, budu člen nejhlubší změnily.
           </ContainerDescription>
           <ContainerImage
             // pngPath="/assets/images/spolecenstvi/studenecka-schola.png"
