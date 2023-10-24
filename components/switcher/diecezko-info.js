@@ -10,6 +10,7 @@ import {
 import Link from "next/link";
 import Nbsp from "../format/nbsp";
 import Strong from "../format/strong";
+import Countdown from "../countdown";
 
 export default function DiecezkoInfo({ id, className }) {
   return (
@@ -31,6 +32,7 @@ export default function DiecezkoInfo({ id, className }) {
             Zastav se a naslouchej
           </p>
         </div>
+        <Countdown />
         <div className="w-[90vw] max-w-[500px] grid grid-cols-2 grid-flow-row gap-4 items-center auto-cols-max">
           <Link
             href="https://forms.gle/aMQor8ARxaULdD8t7"
