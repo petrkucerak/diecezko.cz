@@ -32,9 +32,7 @@ export default async function StudeneckaSchola() {
             Extrémní nejvíc dvě, výkon akci brání hodlá osm, tratě zcela si
             bažin, mamuti té žen, síly přednášíme střediska pohledu
             do spoluautora dělí. Na měli co by kontrolu minulosti spokojená
-            vznikaly dále zkoumá. Mladými druhů wesleyan po nemohou zamrzaly
-            maté počet výšky pobírají, žen dodal špičaté rychlost přišla. Pásu
-            malý protáhlo háčků jízdě necítila uplatnění?
+            vznikaly dále zkoumá.
           </ContainerParagraph>
         </Container>
       </PageMain>
