@@ -1,0 +1,14 @@
+/*
+  ! Access-Control-Allow-Origin
+  ! Access-Control-Max-Age
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Resource-Policy: same-origin
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' ajax.cloudflare.com static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https:; font-src 'self' https:; connect-src 'self' cloudflareinsights.com; object-src 'none'; upgrade-insecure-requests
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet, noimageindex
+  X-XSS-Protection: 1; mode=block
+
+https://konference.tech/*
+  ! X-Robots-Tag
