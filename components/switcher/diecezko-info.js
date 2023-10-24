@@ -32,7 +32,7 @@ export default function DiecezkoInfo({ id, className }) {
             Zastav se a naslouchej
           </p>
         </div>
-        <Countdown countDownDate={new Date("Nov 25, 2023 9:30:00")} />
+        <Countdown countDownDate={new Date("Nov 25, 2023 8:00:00")} />
         <div className="w-[90vw] max-w-[500px] grid grid-cols-2 grid-flow-row gap-4 items-center auto-cols-max">
           <Link
             href="https://forms.gle/aMQor8ARxaULdD8t7"
