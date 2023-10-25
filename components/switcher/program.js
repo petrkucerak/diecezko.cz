@@ -124,11 +124,11 @@ export const program = [
     name: "Mše svatá",
     time: "15:00",
     description:
-      "Celý den zakončíme mší svatou s otcem biskupem v katedrále svatého Ducha. Mši svatou hudebně doprovodí studenecká kapela.",
+      "Celý den zakončíme mší svatou s otcem biskupem v katedrále svatého Ducha. Mši svatou hudebně doprovodí Studenecká kapela.",
     icons: ["music", "pray"],
     link: "/mse-svata",
     place: {
-      name: "Katedrála svatého Ducha",
+      name: "Katedrála Svatého Ducha",
       coords: { x: "50.2087878", y: "15.8310917" },
       link: "https://mapy.cz/s/bezegujuje",
     },
