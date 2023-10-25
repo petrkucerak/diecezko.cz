@@ -147,7 +147,7 @@ export const jadro = [
   },
   {
     name: "Kuba Kučera",
-    description: "Kuba má na starosti technnickou stránku režie.",
+    description: "Kuba má na starosti technickou stránku režie.",
     altText: "Profilová fotka Kuby Kučery",
     jpgPath: "/assets/images/jadro/bro.jpg",
     webpPath: "/assets/images/jadro/bro.webp",
