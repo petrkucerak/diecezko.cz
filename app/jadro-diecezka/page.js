@@ -89,7 +89,7 @@ export const jadro = [
   {
     name: "Denča Zavřelová",
     description:
-      "Recepční skupinka pod vedením Denči vás při vstupu do FIlharmonie označí náramkem a&nbsp;také uloží vaše kabáty a&nbsp;bundy do šatny.",
+      "Recepční skupinka pod vedením Denči vás při vstupu do Filharmonie označí náramkem a&nbsp;také uloží vaše kabáty a&nbsp;bundy do šatny.",
     altText: "Profilová fotka Denča Zavřelová",
     jpgPath: "/assets/images/jadro/denca.jpg",
     webpPath: "/assets/images/jadro/denca.webp",
