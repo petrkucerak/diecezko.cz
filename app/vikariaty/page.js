@@ -205,7 +205,9 @@ export const vikariaty = [
       jpgPath: "/assets/images/vikariaty/kysilkova.jpg",
     },
     person2: { 
-      name: "Matyáš Juza",
+      name: 
+      "Matyáš Juza",
+      jpgPath: "/assets/images/vikariaty/juza.jpg",
     },
     social: {
       instagram: "https://www.instagram.com/vikariat_litomysl/",
@@ -277,7 +279,10 @@ export const vikariaty = [
       name: "David Holubec",
       jpgPath: "/assets/images/vikariaty/holubec.jpg",  
     },
-    person2: { name: "Tomáš Špelda" },
+    person2: { 
+      name: "Tomáš Špelda", 
+      jpgPath: "/assets/images/vikariaty/spelda.jpg",
+    },
     social: {
       instagram: "https://www.instagram.com/mvtrutnov/",
       facebook: "https://www.facebook.com/VikariatTrutnov",
