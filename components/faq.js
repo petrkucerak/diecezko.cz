@@ -42,6 +42,12 @@ export default function FAQ() {
         </strong>{" "}
         a budeme s Tebou počítat.{" "}
       </FaqBox>
+      <FaqBox question={`Jak se přihlásit na odpolední program?`} icon={`old`}>
+        <strong>Při východu z Filharmonie</strong> si kromě bagety a pitíčka
+        budeš moci vybrat odpolední program. Ideálně si téma promysli dopředu,
+        se nemusíš rozmýšlet na poslední chvíli. Na místo programu se pak půjde
+        společně. Neboj, nezabloudíš 😉
+      </FaqBox>
       <FaqBox question={`Jak bude zajištěno stravování?`} icon={`chef`}>
         Doporučujeme si s sebou přivézt svačinku. Pro všechny, kteří se
         přihlásili, <strong>bude k obědu bageta</strong>. Pokud máte dietu,
