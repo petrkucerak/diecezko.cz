@@ -76,7 +76,7 @@ export const program = [
     name: "Příjezd a registrace",
     time: "9:00",
     description:
-      "Při příjezdu na setkání prosím navštivte registraci, kterou najdete při vstupu do Filharmonie.",
+      "Při příjezdu na setkání prosím navštivte registraci, kterou najdete ve vstupu do Filharmonie. Dostanete zde náremek v barvě svého vikariátu. Už tušíte jaké to bude?",
     icons: ["registration"],
     place: {
       name: "Filhramonie Hradec Králové",
