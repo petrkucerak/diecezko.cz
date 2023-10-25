@@ -11,7 +11,7 @@ export default async function Vikariaty() {
       <Header />
       <PageMain>
         <Container>
-          <ContainerTitle>Jádro diecézka</ContainerTitle>
+          <ContainerTitle>Jádro Diecézka</ContainerTitle>
           <ContainerDescription>
             Diecézní setkání mládeže je možné zorganizovat díky dobrovolníkům,
             kteří se do jeho příprav zapojili. Patří jim díky za jejich
@@ -156,7 +156,7 @@ export const jadro = [
   {
     name: "Honza Pecháček",
     description:
-      "Jáhen Honza zajišťuje zpovědní službu v kostele Nanebevzetí Panny Marie.",
+      "Jáhen Honza zajišťuje zpovědní službu v&nbsp;kostele Nanebevzetí Panny Marie.",
     altText: "Profilová fotka Honza Pecháček",
     jpgPath: "/assets/images/jadro/pechacek.jpg",
     webpPath: "/assets/images/jadro/pechacek.webp",
@@ -165,7 +165,7 @@ export const jadro = [
   {
     name: "Michal Šramko",
     description:
-      "Jáhen Michal se stará o hladký průběh mše svaté v katedrále Svatého Ducha.",
+      "Jáhen Michal se stará o&nbsp;hladký průběh mše svaté v&nbsp;katedrále Svatého Ducha.",
     altText: "Profilová fotka Michal Šramko",
     jpgPath: "/assets/images/jadro/sramko.jpg",
     webpPath: "/assets/images/jadro/sramko.webp",
