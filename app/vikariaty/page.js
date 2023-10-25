@@ -106,7 +106,10 @@ export const vikariaty = [
     name: "Humpolec",
     // description:
     //   "Virům silnými hornina snad geologickou kladení souvisela úhlem. Varování pasivitou míst o amerických padesátiminutový jako tito zaslechl neobvyklé virů či přichytávacích mamutů víceméně rozdělit fakticky obrovským.",
-    priest: { name: "P. David Peter Palušák" },
+    priest: { 
+      name: "P. David Peter Palušák",
+      jpgPath: "/assets/images/vikariaty/palusak.jpg", 
+    },
     person1: { 
       name: "Anna Daňková",
       jpgPath: "/assets/images/vikariaty/dankova.jpg",  
@@ -205,7 +208,9 @@ export const vikariaty = [
       jpgPath: "/assets/images/vikariaty/kysilkova.jpg",
     },
     person2: { 
-      name: "Matyáš Juza",
+      name: 
+      "Matyáš Juza",
+      jpgPath: "/assets/images/vikariaty/juza.jpg",
     },
     social: {
       instagram: "https://www.instagram.com/vikariat_litomysl/",
@@ -277,7 +282,10 @@ export const vikariaty = [
       name: "David Holubec",
       jpgPath: "/assets/images/vikariaty/holubec.jpg",  
     },
-    person2: { name: "Tomáš Špelda" },
+    person2: { 
+      name: "Tomáš Špelda", 
+      jpgPath: "/assets/images/vikariaty/spelda.jpg",
+    },
     social: {
       instagram: "https://www.instagram.com/mvtrutnov/",
       facebook: "https://www.facebook.com/VikariatTrutnov",
