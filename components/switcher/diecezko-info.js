@@ -106,8 +106,7 @@ export default function DiecezkoInfo({ id, className }) {
         po občerstvení mohou mladí navštívit různé workshopy a<Nbsp />
         přednášky. Dále je v<Nbsp />
         nabídce sport, hry, kavárna, ale také adorace či možnost přistoupit ke
-        svátosti smíření. Poté se mládež opět setká a<Nbsp />
-        společnou modlitbou (křížová cesta, růženec,...) projdou město.
+        svátosti smíření.
       </ContainerParagraph>
       <ContainerParagraph>
         Nedílnou součástí tohoto setkání je slavnostní mše svatá v<Nbsp />
@@ -117,7 +116,7 @@ export default function DiecezkoInfo({ id, className }) {
         otcem biskupem, která program celého dne završuje.
       </ContainerParagraph>
       <ContainerParagraph>
-        Akce se pravidelně účastní kolem 700 mladých lidí z<Nbsp />
+        Akce se účastní kolem 700 mladých lidí z<Nbsp />
         celé diecéze a<Nbsp />
         minimálně 100 ochotných dobrovolníků.
       </ContainerParagraph>
