@@ -108,7 +108,7 @@ export const program = [
     name: "Přednášky, workshopy",
     time: "12:30",
     description:
-      "Odpoledne si můžete vybrat z široké nabídky workshopů, přednášek a sportů.",
+      "Odpoledne si můžete vybrat z široké nabídky přednášek, dvou workshopů nebo si jít zasportovat.",
     icons: ["person", "sport"],
     link: "/prednasky-workshopy",
   },
