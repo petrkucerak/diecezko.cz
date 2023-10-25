@@ -77,18 +77,10 @@ export const jadro = [
     altText: "Profilová fotka Klárky Kopecké",
     className: "",
   },
-
-  {
-    name: "Petr Kučera",
-    description: "Petr má na svědomí vznik webu diecezko.cz a&nbsp;Evženovy cesty.",
-    jpgPath: "/assets/images/jadro/kucera.jpg",
-    webpPath: "/assets/images/jadro/kucera.webp",
-    altText: "Profilová fotka Petr Kučery",
-    className: "",
-  },
   {
     name: "o. Tomáš Hoffmann",
-    description: "Tomáš je nejen ředitelem Vesmíru a&nbsp;DCM, ale hlavně duchovní opora celého přípravného týmu.",
+    description:
+      "Tomáš je nejen ředitelem Vesmíru a&nbsp;DCM, ale hlavně duchovní opora celého přípravného týmu.",
     altText: "Profilová fotka o. Tomáš Hoffmann",
     jpgPath: "/assets/images/jadro/hoffmann.jpg",
     webpPath: "/assets/images/jadro/hoffmann.webp",
@@ -123,7 +115,8 @@ export const jadro = [
   },
   {
     name: "Lucka Pekárková",
-    description: "Studenecká kapela pod vedením Lucky doprovodí závěrečnou mši svatou v&nbsp;katedrále Svatého Ducha.",
+    description:
+      "Studenecká kapela pod vedením Lucky doprovodí závěrečnou mši svatou v&nbsp;katedrále Svatého Ducha.",
     altText: "Profilová fotka Lucka Pekárková",
     jpgPath: "/assets/images/jadro/pekarkova.jpg",
     webpPath: "/assets/images/jadro/pekarkova.webp",
@@ -131,7 +124,8 @@ export const jadro = [
   },
   {
     name: "Anna Marie Maříková",
-    description: "Anička s&nbsp;o.&nbsp;Jirkou mají na starosti režijní program, který nás bude provázet během dopoledne ve Filharmonii.",
+    description:
+      "Anička s&nbsp;o.&nbsp;Jirkou mají na starosti režijní program, který nás bude provázet během dopoledne ve Filharmonii.",
     altText: "Profilová fotka Anna Marie Maříková",
     jpgPath: "/assets/images/jadro/marikova.jpg",
     webpPath: "/assets/images/jadro/marikova.webp",
@@ -209,10 +203,20 @@ export const jadro = [
   },
   {
     name: "Míša Hrstková",
-    description: "Míša a&nbsp;její zdravotnický tým budou v&nbsp;pohotovosti po celý den během programu ve Filharmonii i&nbsp;na mši svaté.",
+    description:
+      "Míša a&nbsp;její zdravotnický tým budou v&nbsp;pohotovosti po celý den během programu ve Filharmonii i&nbsp;na mši svaté.",
     altText: "Profilová fotka Míša Hrstková",
     jpgPath: "/assets/images/jadro/hrstkova.jpg",
     webpPath: "/assets/images/jadro/hrstkova.webp",
+    className: "",
+  },
+  {
+    name: "Petr Kučera",
+    description:
+      "Petr má na svědomí vznik webu diecezko.cz a&nbsp;Evženovy cesty.",
+    jpgPath: "/assets/images/jadro/kucera.jpg",
+    webpPath: "/assets/images/jadro/kucera.webp",
+    altText: "Profilová fotka Petr Kučery",
     className: "",
   },
 ];
