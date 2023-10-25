@@ -11,7 +11,7 @@ export default async function Vikariaty() {
       <Header />
       <PageMain>
         <Container>
-          <ContainerTitle>Jádro diecézka</ContainerTitle>
+          <ContainerTitle>Jádro Diecézka</ContainerTitle>
           <ContainerDescription>
             Diecézní setkání mládeže je možné zorganizovat díky dobrovolníkům,
             kteří se do jeho příprav zapojili. Patří jim díky za jejich
@@ -43,7 +43,7 @@ export default async function Vikariaty() {
 export const jadro = [
   {
     name: "Klárka Petrová",
-    description: "Klárka je vedoucí DCM a&nbsp;má pod palcem celé diecézko.",
+    description: "Klárka je vedoucí DCM a&nbsp;má pod palcem celé Diecézko.",
     jpgPath: "/assets/images/jadro/petrova.jpg",
     webpPath: "/assets/images/jadro/petrova.webp",
     altText: "Profilová fotka Klárky Petrové",
@@ -52,9 +52,9 @@ export const jadro = [
   {
     name: "Jindra Řezníček",
     description:
-      "Jindra je parťák Klárky, pracuje na DCM a&nbsp;spolu s&nbsp;ní drží otěže nad diecézkem.",
-    jpgPath: "/assets/images/jadro/jindra.jpg",
-    webpPath: "/assets/images/jadro/jindra.webp",
+      "Jindra je parťák Klárky, pracuje na DCM a&nbsp;spolu s&nbsp;ní drží otěže nad Diecézkem.",
+    jpgPath: "/assets/images/jadro/reznicek.jpg",
+    webpPath: "/assets/images/jadro/reznicek.webp",
     altText: "Profilová fotka Jindry Řezníčka",
     className: "",
   },
@@ -77,18 +77,10 @@ export const jadro = [
     altText: "Profilová fotka Klárky Kopecké",
     className: "",
   },
-
-  {
-    name: "Petr Kučera",
-    description: "Petr má na svědomí vznik diecézko.cz a&nbsp;Evženovy cesty.",
-    jpgPath: "/assets/images/jadro/kucera.jpg",
-    webpPath: "/assets/images/jadro/kucera.webp",
-    altText: "Profilová fotka Petr Kučery",
-    className: "",
-  },
   {
     name: "o. Tomáš Hoffmann",
-    description: "Tomáš je duchovní opora celého přípravného týmu.",
+    description:
+      "Tomáš je nejen ředitelem Vesmíru a&nbsp;DCM, ale hlavně duchovní opora celého přípravného týmu.",
     altText: "Profilová fotka o. Tomáš Hoffmann",
     jpgPath: "/assets/images/jadro/hoffmann.jpg",
     webpPath: "/assets/images/jadro/hoffmann.webp",
@@ -97,7 +89,7 @@ export const jadro = [
   {
     name: "Denča Zavřelová",
     description:
-      "Recepční skupinka pod vedením Denči vás při vstupu do FIlharmonie označí náramkem a&nbsp;také uloží vaše kabáty a&nbsp;bundy do šatny.",
+      "Recepční skupinka pod vedením Denči vás při vstupu do Filharmonie označí náramkem a&nbsp;také uloží vaše kabáty a&nbsp;bundy do šatny.",
     altText: "Profilová fotka Denča Zavřelová",
     jpgPath: "/assets/images/jadro/denca.jpg",
     webpPath: "/assets/images/jadro/denca.webp",
@@ -115,7 +107,7 @@ export const jadro = [
   {
     name: "Vojta Vlach",
     description:
-      "Vojta je ostřílený kapelník Vesmírné kapely, která doprovodí dopolední program ve Filharmonii a&nbsp;pomáhá s&nbsp;vývojem diecezka.cz.",
+      "Vojta je ostřílený kapelník Vesmírné kapely, která doprovodí dopolední program ve Filharmonii a&nbsp;pomáhá s&nbsp;vývojem webu diecezko.cz.",
     altText: "Profilová fotka Vojta Vlach",
     jpgPath: "/assets/images/jadro/pan-vlach.jpg",
     webpPath: "/assets/images/jadro/pan-vlach.webp",
@@ -123,6 +115,8 @@ export const jadro = [
   },
   {
     name: "Lucka Pekárková",
+    description:
+      "Studenecká kapela pod vedením Lucky doprovodí závěrečnou mši svatou v&nbsp;katedrále Svatého Ducha.",
     altText: "Profilová fotka Lucka Pekárková",
     jpgPath: "/assets/images/jadro/pekarkova.jpg",
     webpPath: "/assets/images/jadro/pekarkova.webp",
@@ -130,13 +124,16 @@ export const jadro = [
   },
   {
     name: "Anna Marie Maříková",
+    description:
+      "Anička s&nbsp;o.&nbsp;Jirkou mají na starosti režijní program, který nás bude provázet během dopoledne ve Filharmonii.",
     altText: "Profilová fotka Anna Marie Maříková",
     jpgPath: "/assets/images/jadro/marikova.jpg",
     webpPath: "/assets/images/jadro/marikova.webp",
     className: "",
   },
   {
-    name: "P. Jirka Jakoubek",
+    name: "o. Jirka Jakoubek",
+    description: "Jirka duchovně doprovází režijní tým.",
     altText: "Profilová fotka Jirka Jakoubek",
     jpgPath: "/assets/images/jadro/jakoubek.jpg",
     webpPath: "/assets/images/jadro/jakoubek.webp",
@@ -144,6 +141,7 @@ export const jadro = [
   },
   {
     name: "Kuba Kučera",
+    description: "Kuba má na starosti technickou stránku režie.",
     altText: "Profilová fotka Kuby Kučery",
     jpgPath: "/assets/images/jadro/bro.jpg",
     webpPath: "/assets/images/jadro/bro.webp",
@@ -152,7 +150,7 @@ export const jadro = [
   {
     name: "Honza Pecháček",
     description:
-      "Jáhen Honza se spolu s&nbsp;Michalem starají o&nbsp;hladký průběh duchovního programu a&nbsp;mše svaté.",
+      "Jáhen Honza zajišťuje zpovědní službu v&nbsp;kostele Nanebevzetí Panny Marie.",
     altText: "Profilová fotka Honza Pecháček",
     jpgPath: "/assets/images/jadro/pechacek.jpg",
     webpPath: "/assets/images/jadro/pechacek.webp",
@@ -161,7 +159,7 @@ export const jadro = [
   {
     name: "Michal Šramko",
     description:
-      "Jáhen Michal se spolu s&nbsp;Honzou starají o&nbsp;hladký průběh duchovního programu a&nbsp;mše svaté.",
+      "Jáhen Michal se stará o&nbsp;hladký průběh mše svaté v&nbsp;katedrále Svatého Ducha.",
     altText: "Profilová fotka Michal Šramko",
     jpgPath: "/assets/images/jadro/sramko.jpg",
     webpPath: "/assets/images/jadro/sramko.webp",
@@ -170,16 +168,25 @@ export const jadro = [
   {
     name: "Kryštof Hamouz",
     description:
-      "Kryštof se stará o&nbsp;krmení hladových krků přípravného týmu a&nbsp;zajišťuje kavárnu pro účastníky.",
+      "Kryštof se stará o&nbsp;krmení hladových krků přípravného týmu.",
     altText: "Profilová fotka Kryštof Hamouz",
     jpgPath: "/assets/images/jadro/hamouz.jpg",
     webpPath: "/assets/images/jadro/hamouz.webp",
     className: "",
   },
   {
+    name: "Lucka Kašparová",
+    description:
+      "Lucinka pro vás připravuje odpolední kavárnu s&nbsp;chill out zónou a&nbsp;krásnou atmosférnou v&nbsp;tělocvičně na BiGy.",
+    altText: "Profilová fotka Lucka Kašparová",
+    jpgPath: "/assets/images/jadro/kasparova.jpg",
+    webpPath: "/assets/images/jadro/kasparova.webp",
+    className: "",
+  },
+  {
     name: "Kuba Machek",
     description:
-      "Kuba se svým týmem připravuje prostory pro odpolední přednášky.",
+      "Kuba se svým týmem připravuje prostory pro odpolední přednášky na BiGy.",
     altText: "Profilová fotka Kuba Machek",
     jpgPath: "/assets/images/jadro/machek.jpg",
     webpPath: "/assets/images/jadro/machek.webp",
@@ -195,18 +202,21 @@ export const jadro = [
     className: "",
   },
   {
-    name: "Honza Klinger",
-    description: "Honza koordinuje sporty během odpoledního programu.",
-    altText: "Profilová fotka Honza Klinger",
-    jpgPath: "/assets/images/jadro/klinger.jpg",
-    webpPath: "/assets/images/jadro/klinger.webp",
-    className: "",
-  },
-  {
     name: "Míša Hrstková",
+    description:
+      "Míša a&nbsp;její zdravotnický tým budou v&nbsp;pohotovosti po celý den během programu ve Filharmonii i&nbsp;na mši svaté.",
     altText: "Profilová fotka Míša Hrstková",
     jpgPath: "/assets/images/jadro/hrstkova.jpg",
     webpPath: "/assets/images/jadro/hrstkova.webp",
+    className: "",
+  },
+  {
+    name: "Petr Kučera",
+    description:
+      "Petr má na svědomí vznik webu diecezko.cz a&nbsp;Evženovy cesty.",
+    jpgPath: "/assets/images/jadro/kucera.jpg",
+    webpPath: "/assets/images/jadro/kucera.webp",
+    altText: "Profilová fotka Petr Kučery",
     className: "",
   },
 ];
