@@ -101,7 +101,8 @@ export const program = [
     name: "Obědová pauza",
     time: "12:00",
     description:
-      "Při odchodu z dopoledního programu si kromě výběru workshopu nebo přednášky nezapomeňte vyzvednout i bagetu s pitíčkem. Dobrou chuť!",
+      "Při odchodu z dopoledního programu si kromě výběru workshopu nebo přednášky nezapomeňte vyzvednout i bagetu s pitíčkem. Bagety pro nás připravilo BISTRO u dvou přátel. Dobrou chuť!",
+    link: "/bistro-u-dvou-pratel",
     icons: ["food"],
   },
   {
