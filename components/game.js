@@ -232,12 +232,12 @@ export default function Game({ score }) {
             Pomoz holubovi v bezpečí proletět celou naší diecézí, získej
             nejvyšší skóre a zapiš se do síně slávy. Skóre se ti zvyšuje
             pojídáním jídla a sbíráním hvězdiček. Za každý kousek jídla je jiný
-            počet bodů. Holubova cesta není jednoduchá. Musí se vyhýbat stavbám,
-            raketám či vzducholodím. Na mobile změníš holubův pohyb klinutím do
-            hry, na počítači stiskem mezerníku. Hodně štěstí ať se s Tebou Evžen
-            dostane, co nejdál!
+            počet bodů. Holubova cesta není jednoduchá! Musí se vyhýbat stavbám,
+            raketám či vzducholodím. Na mobilu změníš holubův pohyb klinutím do
+            hry, na počítači stiskem mezerníku. Hodně štěstí, ať se s Tebou Evžen
+            dostane co nejdál!
           </ContainerParagraph>
-          <ContainerParagraph className="italic">
+          <ContainerParagraph className="italic text-sm">
             Baví Tě programovat a chtěl bys Evžena zlepšit? Napiš na mail{" "}
             <Link href={`mailto:dev@diecezko.cz	`} className="underline">
               dev@diecezko.cz

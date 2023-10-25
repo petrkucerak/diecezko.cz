@@ -6,34 +6,33 @@ import ContainerDescription from "../../components/layouts/container-description
 import ContainerParagraph from "../../components/layouts/container-paragraph";
 import PageMain from "../../components/layouts/page-main";
 import ContainerImage from "../../components/layouts/container-image";
-export default async function StudeneckaSchola() {
+export default async function StudeneckaKapela() {
   return (
     <main className="ease-in-out duration-300 font-titilliumWeb">
       <Header />
       <PageMain>
         <Container>
-          <ContainerTitle>Studenecká schola</ContainerTitle>
+          <ContainerTitle>Studenecká kapela</ContainerTitle>
           <ContainerDescription>
-            Celá rozdělila programový, háčků k ta jeví řadě v chapadly liliím
-            jmenovat napadne, či map Václav z hospodářské příznivých směrem klec
-            vážili velice: ně osloven či. Odhalil kouzelný některých ovšem
-            nevyplašil a personálem krátké, či samostatná zdarma, o Michal maté
-            bažinách hodí. Vazeb úprav mé doby fázi?
+            Jsme mladí zapálení muzikanti ze Studence, kteří již přes rok
+            doprovázejí páteční (občas i&nbsp;nedělní) mše našeho nejlepšího
+            kněze, Jirky Jakoubka.
           </ContainerDescription>
           <ContainerImage
             // pngPath="/assets/images/spolecenstvi/studenecka-schola.png"
             jpgPath="/assets/images/spolecenstvi/studenecka-schola.jpg"
             webpPath="/assets/images/spolecenstvi/studenecka-schola.webp"
-            altText="Ilustrační fotka Studenecké scholy"
+            altText="Ilustrační fotka Studenecké kapely"
             className="w-full my-2"
           />
           <ContainerParagraph>
-            Extrémní nejvíc dvě, výkon akci brání hodlá osm, tratě zcela si
-            bažin, mamuti té žen, síly přednášíme střediska pohledu
-            do spoluautora dělí. Na měli co by kontrolu minulosti spokojená
-            vznikaly dále zkoumá. Mladými druhů wesleyan po nemohou zamrzaly
-            maté počet výšky pobírají, žen dodal špičaté rychlost přišla. Pásu
-            malý protáhlo háčků jízdě necítila uplatnění?
+            Jirka je pro naši farnost velikou chloubou Díky jeho umění předávat
+            radost z&nbsp;Boha jsme začali toužit po společenství. Skrze hudbu
+            to bylo pro naši kapelnici Lucku nejjednodušší. Časem se o&nbsp;nás
+            dozvěděli nadaní hudebníci i&nbsp;z&nbsp;jiných farností a&nbsp;dnes
+            dojíždějí z&nbsp;různých koutů Podkrkonoší až k&nbsp;nám, do
+            Studence. Hudbu milujeme, s&nbsp;Bohem se spojujeme
+            a&nbsp;v&nbsp;Hradci vám zahrajeme:)
           </ContainerParagraph>
         </Container>
       </PageMain>

@@ -10,7 +10,12 @@ import ContainerH2 from "../../components/layouts/container-h2";
 import ContainerUl from "../../components/layouts/container-ul";
 import ContainerLi from "../../components/layouts/container-li";
 import Link from "next/link";
-import { IconBrandInstagram, IconWorld } from "@tabler/icons";
+import {
+  IconBrandFacebook,
+  IconBrandInstagram,
+  IconWorld,
+} from "@tabler/icons";
+import Nbsp from "../../components/format/nbsp";
 export default async function BistroUDvouPratel() {
   return (
     <main className="ease-in-out duration-300 font-titilliumWeb">
@@ -19,8 +24,12 @@ export default async function BistroUDvouPratel() {
         <Container>
           <ContainerTitle>BISTRO u dvou přátel</ContainerTitle>
           <ContainerDescription>
-            Bagety si pro vás připravilo BISTRO u dvou přátel, které je sociální
-            podnik obecně prospěšné společnosti SKOK do života.
+            Bagety pro vás připravilo BISTRO u<Nbsp />
+            dvou přátel společnosti SKOK do života,
+            <Nbsp />
+            o.p.s. Bistro zaměstnává lidi se specifickými potřebami
+            (intelektovým znevýhodněním a<Nbsp />
+            duševním onemocněním).
           </ContainerDescription>
           <ContainerImage
             jpgPath="/assets/images/spolecenstvi/bistro.jpg"
@@ -66,6 +75,14 @@ export default async function BistroUDvouPratel() {
                 title="Webové stránky"
               >
                 <IconWorld className="inline mr-2" size={30} />
+              </Link>
+              <Link
+                href={`https://www.facebook.com/bistroudvoupratel`}
+                target="_blank"
+                rel="external"
+                title="Facebook"
+              >
+                <IconBrandFacebook className="inline mr-2" size={30} />
               </Link>
             </ContainerLi>
           </ContainerUl>

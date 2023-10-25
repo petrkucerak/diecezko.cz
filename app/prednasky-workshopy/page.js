@@ -16,9 +16,8 @@ export default async function PrednaskyWorhsopy() {
           <ContainerTitle>Přednášky a workshopy</ContainerTitle>
           <ProgramDetail p={program[3]} className={``} />
           <ContainerDescription>
-            Pro první část odpoledne si můžete vybrat z&nbsp;bohaté nabídky
-            workshopů, přednášek a&nbsp;sportů. Na daný program se bude možné
-            hlásit při východu z&nbsp;dopoledního programu ve filharmonii.
+            V první části odpoledne si můžete vybrat z&nbsp;bohaté nabídky
+            přednášek, dvou workshopů nebo sportu.
           </ContainerDescription>
           <div>
             {workshops.map((w) => {
