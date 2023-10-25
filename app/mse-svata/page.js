@@ -7,7 +7,7 @@ import PageMain from "../../components/layouts/page-main";
 import ProgramDetail from "../../components/layouts/program-detail";
 import { program } from "../../components/switcher/program";
 import Link from "next/link";
-export default async function StudeneckaKapela() {
+export default async function MseSvata() {
   return (
     <main className="ease-in-out duration-300 font-titilliumWeb">
       <Header />
