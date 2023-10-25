@@ -124,7 +124,7 @@ export const program = [
     name: "Mše svatá",
     time: "15:00",
     description:
-      "Celý den zakončíme mší svatou s otcem biskupem v katedrále svatého Ducha. Mši svatou hudebně doprovodí studenecká schola.",
+      "Celý den zakončíme mší svatou s otcem biskupem v katedrále svatého Ducha. Mši svatou hudebně doprovodí studenecká kapela.",
     icons: ["music", "pray"],
     link: "/mse-svata",
     place: {

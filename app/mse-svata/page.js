@@ -7,7 +7,7 @@ import PageMain from "../../components/layouts/page-main";
 import ProgramDetail from "../../components/layouts/program-detail";
 import { program } from "../../components/switcher/program";
 import Link from "next/link";
-export default async function ProgramVeFilharmonii() {
+export default async function StudeneckaKapela() {
   return (
     <main className="ease-in-out duration-300 font-titilliumWeb">
       <Header />
@@ -18,8 +18,8 @@ export default async function ProgramVeFilharmonii() {
           <ContainerDescription>
             Vrcholem celého Diecézka je setkání s&nbsp;naším biskupem skrze mši
             svatou. Mši svatou bude hudebně doprovázet{" "}
-            <Link href="/studenecka-schola" className="underline">
-              Studenecká schola
+            <Link href="/studenecka-kapela" className="underline">
+              Studenecká kapela
             </Link>
             .
           </ContainerDescription>
