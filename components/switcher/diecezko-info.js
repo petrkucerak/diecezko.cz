@@ -36,7 +36,7 @@ export default function DiecezkoInfo({ id, className }) {
         <div className="w-[90vw] max-w-[500px] grid grid-cols-2 grid-flow-row gap-4 items-center auto-cols-max">
           <Link
             href="https://forms.gle/aMQor8ARxaULdD8t7"
-            rel="external"
+            rel="external noopener nofollow"
             target="_blank"
             className="border border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-5 cursor-pointer text-base flex flex-row items-center justify-center"
           >
@@ -47,7 +47,7 @@ export default function DiecezkoInfo({ id, className }) {
           </Link>
           <Link
             href="https://forms.gle/M4Pc27SiqY9Wa7u87"
-            rel="external"
+            rel="external noopener nofollow"
             target="_blank"
             className="border border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-5 cursor-pointer text-base flex flex-row items-center justify-center"
           >
