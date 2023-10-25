@@ -123,6 +123,7 @@ export const jadro = [
   },
   {
     name: "Lucka Pekárková",
+    description: "Je součástí diecézka.",
     altText: "Profilová fotka Lucka Pekárková",
     jpgPath: "/assets/images/jadro/pekarkova.jpg",
     webpPath: "/assets/images/jadro/pekarkova.webp",
@@ -130,6 +131,7 @@ export const jadro = [
   },
   {
     name: "Anna Marie Maříková",
+    description: "Je součástí diecézka.",
     altText: "Profilová fotka Anna Marie Maříková",
     jpgPath: "/assets/images/jadro/marikova.jpg",
     webpPath: "/assets/images/jadro/marikova.webp",
@@ -137,6 +139,7 @@ export const jadro = [
   },
   {
     name: "P. Jirka Jakoubek",
+    description: "Je součástí diecézka.",
     altText: "Profilová fotka Jirka Jakoubek",
     jpgPath: "/assets/images/jadro/jakoubek.jpg",
     webpPath: "/assets/images/jadro/jakoubek.webp",
@@ -144,6 +147,7 @@ export const jadro = [
   },
   {
     name: "Kuba Kučera",
+    description: "Je součástí diecézka.",
     altText: "Profilová fotka Kuby Kučery",
     jpgPath: "/assets/images/jadro/bro.jpg",
     webpPath: "/assets/images/jadro/bro.webp",
@@ -204,6 +208,7 @@ export const jadro = [
   },
   {
     name: "Míša Hrstková",
+    description: "Je součástí diecézka.",
     altText: "Profilová fotka Míša Hrstková",
     jpgPath: "/assets/images/jadro/hrstkova.jpg",
     webpPath: "/assets/images/jadro/hrstkova.webp",
