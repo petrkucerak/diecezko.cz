@@ -15,14 +15,15 @@ import Countdown from "../countdown";
 export default function DiecezkoInfo({ id, className }) {
   return (
     <Container id={id} className={className}>
-      <div className="min-h-[60vh] flex flex-col items-center justify-around">
+      <div className="min-h-[65vh] flex flex-col items-center justify-around">
         <div className="flex flex-col items-center w-full">
           <span className="text-base text-center">
             Filharmonie Hradec Králové
           </span>
-          <span className="text-2xl text-center">
+          <span className="text-2xl text-center tracking-wide">
             25.&nbsp;11.&nbsp;2023 • 9.30
           </span>
+          <Countdown countDownDate={new Date("Nov 25, 2023 9:00:00")} />
         </div>
         <div className="flex flex-col items-center w-[90vw]">
           <h1 className="text-5xl md:text-7xl font-caveatBrush text-center">
@@ -32,7 +33,6 @@ export default function DiecezkoInfo({ id, className }) {
             Zastav se a naslouchej
           </p>
         </div>
-        <Countdown countDownDate={new Date("Nov 25, 2023 8:00:00")} />
         <div className="w-[90vw] max-w-[500px] grid grid-cols-2 grid-flow-row gap-4 items-center auto-cols-max">
           <Link
             href="https://forms.gle/aMQor8ARxaULdD8t7"

@@ -7,6 +7,15 @@ export default function Countdown({ countDownDate }) {
   const [hour, setHour] = useState(0);
   const [second, setSecond] = useState(0);
 
+  const [dayString, setDayString] = useState("dní");
+  const [minuteString, setMinuteString] = useState("hodin");
+  const [hourString, setHourString] = useState("minut");
+  const [secondString, setSecondString] = useState("vteřin");
+
+  const [dayOpacity, setDayOpacity] = useState("hidden");
+  const [minuteOpacity, setMinuteOpacity] = useState("hidden");
+  const [hourOpacity, setHourOpacity] = useState("hidden");
+
   useEffect(() => {
     setInterval(() => {
       // Get today's date and time
@@ -23,55 +32,83 @@ export default function Countdown({ countDownDate }) {
       const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-      const dayString =
-        days > 4 ? "dní" : days > 1 ? "dny" : days === 1 ? "den" : "";
-      const hoursString =
+      setDayString(
+        days > 4 ? "dní" : days > 1 ? "dny" : days === 1 ? "den" : ""
+      );
+      setHourString(
         hours > 4
           ? "hodin"
           : hours > 1
           ? "hodiny"
           : hours === 1
           ? "hodina"
-          : "";
-      const minutString =
+          : "hodin"
+      );
+      setMinuteString(
         minutes > 4
           ? "minut"
           : minutes > 1
           ? "minuty"
           : minutes === 1
           ? "minuta"
-          : "";
-      const secondString =
+          : "minut"
+      );
+      setSecondString(
         seconds > 4
           ? "sekund"
           : seconds > 1
           ? "sekundy"
           : seconds === 1
           ? "sekunda"
-          : "";
+          : "sekund"
+      );
 
       setSecond(seconds);
       setMinute(minutes);
       setHour(hours);
       setDay(days);
+
+      if (days > 0) {
+        setDayOpacity("");
+        setMinuteOpacity("");
+        setHourOpacity("");
+      } else if (hours > 0) {
+        setHourOpacity("");
+        setMinuteOpacity("");
+      } else if (minutes > 0 && seconds > 0) setMinuteOpacity("");
     }, 1000);
   });
   return (
-    <div className="flex flex-row text-xl w-full items-center justify-center">
-      <div className="mx-1 w-10 h-10 border border-[#3b3b3b] rounded-xl text-center flex items-center justify-center">
-        {day}
-      </div>{" "}
-      :
-      <div className="mx-1 w-10 h-10 border border-[#3b3b3b] rounded-xl text-center flex items-center justify-center">
-        {hour}
-      </div>{" "}
-      :
-      <div className="mx-1 w-10 h-10 border border-[#3b3b3b] rounded-xl text-center flex items-center justify-center">
-        {minute}
-      </div>
-      :
-      <div className="mx-1 w-10 h-10 border border-[#3b3b3b] rounded-xl text-center flex items-center justify-center">
-        {second}
+    <div className="flex flex-col items-center justify-center -mt-1 tracking-tight">
+      {/* <p className="uppercase font-semibold -mb-2 tracking-wider">JIŽ ZA</p> */}
+      <div className="flex flex-row text-xl items-center justify-center rounded-xl p-1 font-semibold">
+        <div
+          className={`flex flex-col items-center justify-center ${dayOpacity}`}
+        >
+          <span className="w-12 text-center -mb-2">{day}</span>
+          <span className="text-xs font-light text-center">{dayString}</span>
+        </div>
+        <span className={dayOpacity}>{":"}</span>
+        <div
+          className={`flex flex-col items-center justify-center ${hourOpacity}`}
+        >
+          <span className="w-12 text-center -mb-2">{hour}</span>
+          <span className="text-xs font-light text-center">{hourString}</span>
+        </div>
+        <span className={hourOpacity}>{":"}</span>
+        <div
+          className={`flex flex-col items-center justify-center ${minuteOpacity}`}
+        >
+          <span className="w-11 text-center -mb-2">{minute}</span>
+          <span className="text-xs font-light text-center">{minuteString}</span>
+        </div>
+        <span className={minuteOpacity}>{":"}</span>
+        <div
+          className={`flex flex-col items-center justify-center ${minuteOpacity}`}
+        >
+          <span className="w-12 text-center -mb-2">{second}</span>
+          <span className="text-xs font-light text-center">{secondString}</span>
+        </div>
       </div>
     </div>
   );
