@@ -53,8 +53,8 @@ export const jadro = [
     name: "Jindra Řezníček",
     description:
       "Jindra je parťák Klárky, pracuje na DCM a&nbsp;spolu s&nbsp;ní drží otěže nad diecézkem.",
-    jpgPath: "/assets/images/jadro/jindra.jpg",
-    webpPath: "/assets/images/jadro/jindra.webp",
+    jpgPath: "/assets/images/jadro/reznicek.jpg",
+    webpPath: "/assets/images/jadro/reznicek.webp",
     altText: "Profilová fotka Jindry Řezníčka",
     className: "",
   },
