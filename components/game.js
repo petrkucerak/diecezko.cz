@@ -237,7 +237,7 @@ export default function Game({ score }) {
             hry, na počítači stiskem mezerníku. Hodně štěstí ať se s Tebou Evžen
             dostane, co nejdál!
           </ContainerParagraph>
-          <ContainerParagraph className="italic">
+          <ContainerParagraph className="italic text-sm">
             Baví Tě programovat a chtěl bys Evžena zlepšit? Napiš na mail{" "}
             <Link href={`mailto:dev@diecezko.cz	`} className="underline">
               dev@diecezko.cz
