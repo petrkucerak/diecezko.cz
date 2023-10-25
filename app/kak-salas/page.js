@@ -43,12 +43,12 @@ export default async function DCZM() {
           />
           <ContainerH2>Pravidelné aktivity</ContainerH2>
           <ContainerUl>
-            <ContainerLi>Po 20.15 - Modlitba na Kotli</ContainerLi>
-            <ContainerLi>Út 19.15 - Spolčo</ContainerLi>
+            <ContainerLi>Po 20.15 Modlitba na Kotli</ContainerLi>
+            <ContainerLi>Út 19.15 Spolčo</ContainerLi>
             <ContainerLi>
-              St 19.00 - Mše svaté a&nbsp;program po nich
+              St 19.00 Mše svaté a&nbsp;program po nich
             </ContainerLi>
-            <ContainerLi>Čt 18.00 - SportOvce</ContainerLi>
+            <ContainerLi>Čt 18.00 SportOvce</ContainerLi>
           </ContainerUl>
           <ContainerH2>Program po mši svaté</ContainerH2>
           <ContainerParagraph>
@@ -66,7 +66,8 @@ export default async function DCZM() {
           <ContainerParagraph>
             Největší akcí, na kterou se všichni už teď těšíme, je SheepPles. Ten
             se koná vždy v&nbsp;pátek po Velikonocích na Univerzitě Hradec
-            Králové. Příští ples se uskuteční 5.&nbsp;4.&nbsp;2024.
+            Králové. Příští ples se uskuteční 5.&nbsp;4.&nbsp;2024, neváhejte si
+            ho přidat do kalendáře.
           </ContainerParagraph>
           <ContainerH2>Deskovky</ContainerH2>
           <ContainerParagraph>

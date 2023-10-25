@@ -7,14 +7,25 @@ export default function FAQ() {
     <FaqLayout>
       <FaqBox question={`Kolik Diecézko stojí?`} icon={`money`}>
         Doporučený příspěvek je <strong>200,-Kč na osobu</strong>. Je možné ho
-        zaplati na recepci ve Filharmonii při dopoledním programu.
+        zaplatit na recepci ve Filharmonii při dopoledním programu.
       </FaqBox>
       <FaqBox question={`Co si sbalit s sebou?`} icon={`luggage`}>
-        Sváču, láhev s pitím. Něco teplého do katedrály na závěrečnou mši
-        svatou, už může být zima.
+        Sváču, láhev s pitím, doporučený příspěvek (200,-Kč) a peníze na svoji
+        dopravu. Doporučujeme si také vzít něco teplého na závěrečnou mši svatou
+        do katedrálu. Může už být zima.
       </FaqBox>
       <FaqBox question={`Od kolika let můžu jet na Diecézko?`} icon={`kid`}>
-        Setkání je pro všechny mladé <strong>od 14 let</strong>.
+        Setkání je pro všechny mladé <strong>od 14 let do 29 let</strong>. Pokud
+        nesplňuješ horní hranici, neváhej se přihlásit do přípravného týmu:{" "}
+        <Link
+          className="underline"
+          href={`https://forms.gle/M4Pc27SiqY9Wa7u87`}
+          target="_blank"
+          rel="external noopener nofollow"
+        >
+          přihláška do přípraváku
+        </Link>
+        .
       </FaqBox>
       <FaqBox question={`Jak se přihlásím?`} icon={`pencil`}>
         To je jednoduché,{" "}
@@ -30,6 +41,12 @@ export default function FAQ() {
           </Link>
         </strong>{" "}
         a budeme s Tebou počítat.{" "}
+      </FaqBox>
+      <FaqBox question={`Jak se přihlásit na odpolední program?`} icon={`old`}>
+        <strong>Při východu z Filharmonie</strong> si kromě bagety a pitíčka
+        budeš moci vybrat odpolední program. Ideálně si téma promysli dopředu,
+        se nemusíš rozmýšlet na poslední chvíli. Na místo programu se pak půjde
+        společně. Neboj, nezabloudíš 😉
       </FaqBox>
       <FaqBox question={`Jak bude zajištěno stravování?`} icon={`chef`}>
         Doporučujeme si s sebou přivézt svačinku. Pro všechny, kteří se

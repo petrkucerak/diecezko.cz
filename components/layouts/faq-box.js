@@ -5,6 +5,7 @@ import {
   IconChefHat,
   IconHorseToy,
   IconLuggage,
+  IconOld,
   IconPencil,
   IconPigMoney,
 } from "@tabler/icons";
@@ -43,6 +44,8 @@ export default function FaqBox({ className, id, children, question, icon }) {
             <IconChefHat className="inline mr-2" stroke={1.2} />
           ) : icon === "bus" ? (
             <IconBusStop className="inline mr-2" stroke={1.2} />
+          ) : icon === "old" ? (
+            <IconOld className="inline mr-2" stroke={1.2} />
           ) : null}
           {question}
         </p>

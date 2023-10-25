@@ -21,7 +21,7 @@ export default async function Vikariaty() {
             lidi, zapojit se do dobrovolnictví, rozvíjet své duchovní život a
             bavit se. Vikariát nabízí různé akce pro mládež, jako jsou setkání,
             duchovní obnovy, poutě, sportovní turnaje nebo festivaly. Na
-            vikariátu se můžeš cítit jako součást velké rodiny, která tě
+            vikariátku se můžeš cítit jako součást velké rodiny, která tě
             podporuje a inspiruje.
           </ContainerDescription>
           <ContainerH2>Mapa vikariátů</ContainerH2>
