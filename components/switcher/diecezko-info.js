@@ -10,18 +10,20 @@ import {
 import Link from "next/link";
 import Nbsp from "../format/nbsp";
 import Strong from "../format/strong";
+import Countdown from "../countdown";
 
 export default function DiecezkoInfo({ id, className }) {
   return (
     <Container id={id} className={className}>
-      <div className="min-h-[60vh] flex flex-col items-center justify-around">
+      <div className="min-h-[65vh] flex flex-col items-center justify-around">
         <div className="flex flex-col items-center w-full">
           <span className="text-base text-center">
             Filharmonie Hradec Králové
           </span>
-          <span className="text-2xl text-center">
+          <span className="text-2xl text-center tracking-wide">
             25.&nbsp;11.&nbsp;2023 • 9.30
           </span>
+          <Countdown countDownDate={new Date("Nov 25, 2023 9:00:00")} />
         </div>
         <div className="flex flex-col items-center w-[90vw]">
           <h1 className="text-5xl md:text-7xl font-caveatBrush text-center">
