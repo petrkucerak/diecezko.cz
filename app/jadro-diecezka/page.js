@@ -185,8 +185,8 @@ export const jadro = [
     description:
       "Lucinka pro vás připravuje odpolední kavárnu s&nbsp;chill out zónou a&nbsp;krásnou atmosférnou v&nbsp;tělocvičně na BiGy.",
     altText: "Profilová fotka Lucka Kašparová",
-    //jpgPath: "/assets/images/jadro/kasparova.jpg",
-    //webpPath: "/assets/images/jadro/kasparova.webp",
+    jpgPath: "/assets/images/jadro/kasparova.jpg",
+    webpPath: "/assets/images/jadro/kasparova.webp",
     className: "",
   },
   {
