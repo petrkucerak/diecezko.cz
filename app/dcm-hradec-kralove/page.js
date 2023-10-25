@@ -25,8 +25,9 @@ export default async function DCM() {
           <ContainerTitle>DCM Hradec Králové</ContainerTitle>
           <ContainerDescription>
             Jsme zde pro všechny mladé lidi. Doprovázíme je na cestě jejich
-            růstu a dozrávání, hledání a nacházení Boha, aby skrze konkrétní
-            život z víry byli svědectvím dobra a nadějí pro tento svět.
+            růstu a&nbsp;dozrávání, hledání a&nbsp;nacházení Boha, aby skrze
+            konkrétní život z&nbsp;víry byli svědectvím dobra a&nbsp;nadějí pro
+            tento svět.
           </ContainerDescription>
           <ContainerImage
             pngPath="/assets/images/spolecenstvi/diecezni-centrum-pro-mladez.png"
@@ -37,11 +38,12 @@ export default async function DCM() {
           />
           <ContainerParagraph>
             Snažíme se posílit duchovní život mladých lidí, vychovávat ke
-            svědectví, ke službě, k zodpovědnosti, k pravdě a k radosti být
-            mladým křesťanem. Pořádáme různé akce zaměřené na rozvoj osobnosti v
-            oblastech náboženství, mezilidských vztahů, vnímání krásy a umění.
-            To vše skrze život ve společenství, modlitby, diskuse, pomocí her,
-            přednášek a v neposlední řadě také práce.
+            svědectví, ke službě, k&nbsp;zodpovědnosti, k&nbsp;pravdě
+            a&nbsp;k&nbsp;radosti být mladým křesťanem. Pořádáme různé akce
+            zaměřené na rozvoj osobnosti v&nbsp;oblastech náboženství,
+            mezilidských vztahů, vnímání krásy a&nbsp;umění. To vše skrze život
+            ve společenství, modlitby, diskuse a&nbsp;pomocí
+            her&nbsp;a&nbsp;přednášek.
           </ContainerParagraph>
           <ContainerH2>Poslání DCM</ContainerH2>
           <ContainerUl>
@@ -57,7 +59,11 @@ export default async function DCM() {
             </ContainerLi>
             <ContainerLi>
               Spoluzajišťuje provoz{" "}
-              <Link href="/dczm-vesmir" className="underline" title="DCZM Vesmír">
+              <Link
+                href="/dczm-vesmir"
+                className="underline"
+                title="DCZM Vesmír"
+              >
                 Diecézního centra života mládeže (DCŽM) Vesmír
               </Link>
               .
