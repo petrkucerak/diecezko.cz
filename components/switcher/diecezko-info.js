@@ -82,7 +82,7 @@ export default function DiecezkoInfo({ id, className }) {
           </Link>
         </div>
       </div>
-      <ContainerH2>O diecézku</ContainerH2>
+      <ContainerH2>O Diecézku</ContainerH2>
       <ContainerParagraph>
         Na přání papeže sv.
         <Nbsp />

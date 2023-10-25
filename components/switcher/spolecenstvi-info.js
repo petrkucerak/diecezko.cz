@@ -18,7 +18,7 @@ export default function SpolecenstviInfo({ id, className }) {
         <Link href="/jadro-diecezka" target="_self">
           <Button>
             <IconHeart stroke={1} className={`inline h-6 mr-2`} />
-            Jádro diecézka
+            Jádro Diecézka
           </Button>
         </Link>
         <Link href="/vikariaty" target="_self">
@@ -56,10 +56,10 @@ export default function SpolecenstviInfo({ id, className }) {
             Veka
           </Button>
         </Link>
-        <Link href="/studenecka-schola" target="_self">
+        <Link href="/studenecka-kapela" target="_self">
           <Button>
             <IconMusic className={`inline h-6 mr-2`} stroke={1} />
-            Studenecká schola
+            Studenecká kapela
           </Button>
         </Link>
         <Link href="/bistro-u-dvou-pratel" target="_self">
