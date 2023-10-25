@@ -106,7 +106,10 @@ export const vikariaty = [
     name: "Humpolec",
     // description:
     //   "Virům silnými hornina snad geologickou kladení souvisela úhlem. Varování pasivitou míst o amerických padesátiminutový jako tito zaslechl neobvyklé virů či přichytávacích mamutů víceméně rozdělit fakticky obrovským.",
-    priest: { name: "P. David Peter Palušák" },
+    priest: { 
+      name: "P. David Peter Palušák",
+      jpgPath: "/assets/images/vikariaty/palusak.jpg", 
+    },
     person1: { 
       name: "Anna Daňková",
       jpgPath: "/assets/images/vikariaty/dankova.jpg",  
