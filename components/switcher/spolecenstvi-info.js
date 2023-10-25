@@ -18,7 +18,7 @@ export default function SpolecenstviInfo({ id, className }) {
         <Link href="/jadro-diecezka" target="_self">
           <Button>
             <IconHeart stroke={1} className={`inline h-6 mr-2`} />
-            Jádro diecézka
+            Jádro Diecézka
           </Button>
         </Link>
         <Link href="/vikariaty" target="_self">
