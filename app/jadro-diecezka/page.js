@@ -131,7 +131,7 @@ export const jadro = [
   },
   {
     name: "Anna Marie Maříková",
-    description: "Anička s&nbsp;o.&nbsp;Jirkou mají na starosti režijní program, který nás bude provázet během dopoledne ve Filharmonii. ",
+    description: "Anička s&nbsp;o.&nbsp;Jirkou mají na starosti režijní program, který nás bude provázet během dopoledne ve Filharmonii.",
     altText: "Profilová fotka Anna Marie Maříková",
     jpgPath: "/assets/images/jadro/marikova.jpg",
     webpPath: "/assets/images/jadro/marikova.webp",
@@ -139,7 +139,7 @@ export const jadro = [
   },
   {
     name: "o. Jirka Jakoubek",
-    description: "Jirka s&nbsp;Aničkou mají na starosti režijní program, který nás bude provázet během dopoledne ve Filharmonii. ",
+    description: "Jirka duchovně doprovází režijní tým.",
     altText: "Profilová fotka Jirka Jakoubek",
     jpgPath: "/assets/images/jadro/jakoubek.jpg",
     webpPath: "/assets/images/jadro/jakoubek.webp",
