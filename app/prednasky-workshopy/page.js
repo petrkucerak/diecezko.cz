@@ -53,12 +53,14 @@ export default async function PrednaskyWorhsopy() {
                   id={w.id !== undefined ? w.id : ""}
                   className="flex flex-col items-center md:flex-row border-[#444] border rounded-xl p-6 sm:p-6 transition h-full hover:scale-[1.02] hover:rotate-1 mt-8"
                 >
-                  <ContainerImage
-                    altText={`Fotka hosta ${w.speaker.name} k přednášce ${w.title}.`}
-                    jpgPath={w.speaker.jpgPath}
-                    webpPath={w.speaker.jpgPath.replace(".jpg", ".webp")}
-                    className="!rounded-full h-32 w-32 md:h-36 md:w-36 border-2 border-[#444] bg-[#444] mb-4 md:mb-0 md:mr-8"
-                  />
+                  {w.speaker.jpgPath !== undefined ? (
+                    <ContainerImage
+                      altText={`Fotka hosta ${w.speaker.name} k přednášce ${w.title}.`}
+                      jpgPath={w.speaker.jpgPath}
+                      webpPath={w.speaker.jpgPath.replace(".jpg", ".webp")}
+                      className="!rounded-full h-32 w-32 md:h-36 md:w-36 border-2 border-[#444] bg-[#444] mb-4 md:mb-0 md:mr-8"
+                    />
+                  ) : null}
                   <div className="flex flex-col items-start justify-center w-full sm:w-[450px]">
                     <h2
                       dangerouslySetInnerHTML={{ __html: w.title }}
@@ -170,10 +172,6 @@ const workshops = [
     descritpion: "",
     speaker: {
       name: "Terezie Hurychová",
-      jpgPath: "/assets/images/speakers/hurychova.jpg",
-    },
-    social: {
-      web: "https://www.lekari-bez-hranic.cz/article/terezie-hurychova-denik-z-kolumbie",
     },
   },
   {
@@ -194,7 +192,6 @@ const workshops = [
     descritpion: "",
     speaker: {
       name: "sr. Anna Bartoňová a sr. Markéta Trešlová ",
-      jpgPath: "",
     },
   },
   {
@@ -205,7 +202,6 @@ const workshops = [
       "Natálce je 9 let a&nbsp;Syrská občanská válka právě vypukla. Co se s&nbsp;Natálkou stane? Zachrání se Natálka s&nbsp;rodinou z&nbsp;válečného konfliktu? Pojď si poslechnout zajímavé informace o&nbsp;Sýrii a&nbsp;příběh Natálčiny rodiny, která našla mír v&nbsp;České republice.",
     speaker: {
       name: "Natalia Haddad",
-      jpgPath: "/assets/images/speakers/haddad.jpg",
     },
   },
   {
@@ -215,7 +211,6 @@ const workshops = [
     descritpion: "",
     speaker: {
       name: "Marek Výborný",
-      jpgPath: "/assets/images/speakers/vyborny.jpg",
     },
     social: {
       web: "https://www.kdu.cz/o-nas/nasi-lide/poslanci/vyborny",
@@ -231,7 +226,6 @@ const workshops = [
       "Zajímá Tě, jak žijí chudé indické děti a&nbsp;jaký význam pro ně má pomoc dárců z&nbsp;projektu Adopce na dálku? Během této besedy společně navštívíme jedno z&nbsp;nejlidnatějších měst Indie i&nbsp;místa na odlehlém venkově.",
     speaker: {
       name: "Vojtěch Homolka a Kateřina Gužíková",
-      jpgPath: "",
     },
     social: {
       web: "https://adopce.hk.caritas.cz/",
@@ -272,7 +266,6 @@ const workshops = [
     descritpion: "",
     speaker: {
       name: "Michal Horák",
-      jpgPath: "/assets/images/speakers/horak.jpg",
     },
     social: {
       web: "https://www.michalhorak.eu/",
@@ -288,7 +281,6 @@ const workshops = [
     descritpion: "",
     speaker: {
       name: "",
-      jpgPath: "",
     },
   },
   {
