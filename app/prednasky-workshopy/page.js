@@ -224,5 +224,10 @@ const workshops = [
       name: "Táňa Reháková (NePornu)",
       jpgPath: "/assets/images/speakers/rehakova.jpg",
     },
+    social: {
+      web: "https://nepornu.cz/",
+      fb: "https://www.facebook.com/nepornucz",
+      ig: "https://www.instagram.com/info_npcz/",
+    },
   },
 ];
