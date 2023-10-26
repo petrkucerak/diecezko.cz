@@ -7,6 +7,13 @@ import PageMain from "../../components/layouts/page-main";
 import ProgramDetail from "../../components/layouts/program-detail";
 import { program } from "../../components/switcher/program";
 import ContainerImage from "../../components/layouts/container-image";
+import Link from "next/link";
+import {
+  IconBrandFacebook,
+  IconBrandInstagram,
+  IconMapPin,
+  IconWorld,
+} from "@tabler/icons";
 export default async function PrednaskyWorhsopy() {
   return (
     <main className="ease-in-out duration-300 font-titilliumWeb">
@@ -40,10 +47,58 @@ export default async function PrednaskyWorhsopy() {
                     <span className="tracking-widest font-light">
                       {w.speaker.name}
                     </span>
+                    {w.place !== undefined ? (
+                      <span className="font-semibold mt-1 flex flex-row items-center justify-start">
+                        <IconMapPin
+                          className="inline mr-1"
+                          size={18}
+                          stroke={1.5}
+                        />
+                        {w.place}
+                      </span>
+                    ) : null}
                     <p
                       className="text-lg w-full mt-2"
                       dangerouslySetInnerHTML={{ __html: w.descritpion }}
                     />
+                    {w.social !== undefined ? (
+                      <div className="mt-1 flex flex-row items-center justify-start">
+                        <h3 className="uppercase mr-2">Více infromací na:</h3>
+                        {w.social.web !== undefined ? (
+                          <Link
+                            target="_blank"
+                            rel="external"
+                            href={w.social.web}
+                            className="inline ml-1"
+                            title={`Odkaz na web ${w.speaker.name}`}
+                          >
+                            <IconWorld stroke={1.5} />
+                          </Link>
+                        ) : null}
+                        {w.social.ig !== undefined ? (
+                          <Link
+                            target="_blank"
+                            rel="external"
+                            href={w.social.ig}
+                            className="inline ml-1"
+                            title={`Odkaz na Instagram ${w.speaker.name}`}
+                          >
+                            <IconBrandInstagram stroke={1.5} />
+                          </Link>
+                        ) : null}
+                        {w.social.fb !== undefined ? (
+                          <Link
+                            target="_blank"
+                            rel="external"
+                            href={w.social.fb}
+                            className="inline ml-1"
+                            title={`Odkaz na Facebook ${w.speaker.name}`}
+                          >
+                            <IconBrandFacebook stroke={1.5} />
+                          </Link>
+                        ) : null}
+                      </div>
+                    ) : null}
                   </div>
                 </div>
               );
@@ -68,13 +123,106 @@ const workshops = [
     },
   },
   {
-    title: 'Co se dělo na synodě v Římě? "Bude se měnit učení církve?"',
+    title: "Cesta do hlubin mé duše",
     place: "",
     descritpion:
-      "Dva roky přípravy po celém světě, celý měsíc říjen plný setkání, diskuzí a&nbsp;modliteb v&nbsp;Římě. Přesně 365 účastníků s&nbsp;hlasovacím právem <em>(včetně papeže Františka a&nbsp;54 žen)</em>. Co se řešilo a&nbsp;neřešilo na 16. řádném zasedání biskupské synody? Bude se žehnat homosexuálním párům? Budou se světit ženy na jáhenky? Zůstane katolická církev katolickou? Nebo je synoda o&nbsp;synodalitě trošku o&nbsp;něčem jiném?",
+      "Cestu do hlubin duše je možné učinit dvěma zdánlivě různými cestami - psychologickou a&nbsp;duchovní, které se nakonec vzájemně významně doplňují. Vyžaduje to určitou dávku odvahy. Poznám se, rozvinu se, nahlídnu i&nbsp;na stíny své osobnosti a&nbsp;v&nbsp;procesu psychoterapie mohu ošetřit svoje trápení, životní témata, která mě mohou v&nbsp;životě výrazně ovlivňovat.",
+    speaker: {
+      name: "Nikola Joštová",
+      jpgPath: "/assets/images/speakers/jostova.jpg",
+    },
+    social: {
+      web: "https://www.psychoterapie-jostova.cz/",
+    },
+  },
+  {
+    title: "",
+    place: "",
+    descritpion: "",
+    speaker: {
+      name: "Terezie Hurychová",
+      jpgPath: "/assets/images/speakers/hurychova.jpg",
+    },
+    social: {
+      web: "https://www.lekari-bez-hranic.cz/article/terezie-hurychova-denik-z-kolumbie",
+    },
+  },
+  {
+    title: "Proč manželství?",
+    place: "",
+    descritpion:
+      "Má manželství v&nbsp;dnešní době ještě smysl? Stojí pár fotek s&nbsp;družičkami za to? Nebo jen proto, že si to přejí rodiče nebo babička? Není důležitější se nejdřív pořádně vyzkoušet a&nbsp;hlavně mít se rádi?",
+    speaker: {
+      name: "manželé Anna a Karel Maříkovi",
+      jpgPath: "/assets/images/speakers/marikovi.jpg",
+    },
+  },
+  {
+    title: "",
+    place: "",
+    descritpion: "",
+    speaker: {
+      name: "sr. Anna Bartoňová a sr. Markéta Trešlová ",
+      jpgPath: "",
+    },
+  },
+  {
+    title: "Jaké je to být dítětem ve válce?",
+    place: "",
+    descritpion:
+      "Natálce je 9 let a&nbsp;Syrská občanská válka právě vypukla. Co se s&nbsp;Natálkou stane? Zachrání se Natálka s&nbsp;rodinou z&nbsp;válečného konfliktu? Pojď si poslechnout zajímavé informace o&nbsp;Sýrii a&nbsp;příběh Natálčiny rodiny, která našla mír v&nbsp;České republice.",
+    speaker: {
+      name: "Natalia Haddad",
+      jpgPath: "/assets/images/speakers/haddad.jpg",
+    },
+  },
+  {
+    title: "Mladí a spoluodpovědnost za správu věcí veřejných",
+    place: "",
+    descritpion: "",
+    speaker: {
+      name: "Marek Výborný",
+      jpgPath: "/assets/images/speakers/vyborny.jpg",
+    },
+    social: {
+      web: "https://www.kdu.cz/o-nas/nasi-lide/poslanci/vyborny",
+      ig: "https://www.instagram.com/marek.vyborny/",
+      fb: "https://www.facebook.com/vybornymarek",
+    },
+  },
+  {
+    title: "Svět indických dětí",
+    place: "",
+    descritpion:
+      "Zajímá Tě, jak žijí chudé indické děti a&nbsp;jaký význam pro ně má pomoc dárců z&nbsp;projektu Adopce na dálku? Během této besedy společně navštívíme jedno z&nbsp;nejlidnatějších měst Indie i&nbsp;místa na odlehlém venkově.",
+    speaker: {
+      name: "Vojtěch Homolka a Kateřina Gužíková",
+      jpgPath: "/assets/images/speakers/vyborny.jpg",
+    },
+    social: {
+      web: "https://adopce.hk.caritas.cz/",
+      fb: "https://www.facebook.com/adopce.dchhk.cz",
+    },
+  },
+  {
+    title: "O čem byla synoda v Římě: Bude se měnit učení církve?",
+    place: "",
+    descritpion:
+      "Dva roky přípravy po celém světě, celý měsíc říjen plný setkání, diskuzí a&nbsp;modliteb v&nbsp;Římě. Přesně 365 účastníků s&nbsp;hlasovacím právem (včetně papeže Františka a&nbsp;54 žen). Co se řešilo a&nbsp;neřešilo na 16. řádném zasedání biskupské synody? Bude se žehnat homosexuálním párům? Budou se světit ženy na jáhenky? Zůstane katolická církev katolickou? Nebo je synoda o&nbsp;synodalitě trošku o&nbsp;něčem jiném?",
     speaker: {
       name: "Jan Pitřinec",
       jpgPath: "/assets/images/speakers/pitrinec.jpg",
+    },
+  },
+
+  {
+    title: "Nástrahy pornografie",
+    place: "Aula, BiGy",
+    descritpion:
+      "Ze statistik vyplývá, že pornografii v&nbsp;dnešní době sleduje téměř každý. A&nbsp;jelikož se o&nbsp;tom stále mluví poměrně málo, spousta lidí má pocit, že jsou v&nbsp;tom sami. Jakým způsobem nás sledování porna může ovlivňovat? Jak konkrétně vypadá taková závislost na pornografii? Jak s&nbsp;ní můžeme bojovat?",
+    speaker: {
+      name: "Táňa Reháková (NePornu)",
+      jpgPath: "/assets/images/speakers/rehakova.jpg",
     },
   },
 ];

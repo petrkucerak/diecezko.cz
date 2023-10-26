@@ -33,7 +33,7 @@ export default function FAQ() {
           vyplň{" "}
           <Link
             href="https://forms.gle/aMQor8ARxaULdD8t7"
-            rel="external"
+            rel="external noopener nofollow"
             target="_blank"
             className="underline"
           >
@@ -54,7 +54,7 @@ export default function FAQ() {
         napište nám do{" "}
         <Link
           href="https://forms.gle/aMQor8ARxaULdD8t7"
-          rel="external"
+          rel="external noopener nofollow"
           target="_blank"
           className="underline"
         >
