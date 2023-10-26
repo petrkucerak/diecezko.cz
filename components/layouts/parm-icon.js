@@ -1,5 +1,6 @@
 import {
-   IconBallFootball,
+  IconBallFootball,
+  IconBrush,
   IconChefHat,
   IconCoffee,
   IconMasksTheater,
@@ -10,8 +11,8 @@ import {
   IconUser,
 } from "@tabler/icons";
 
-export default function ParmIcon({ className, iconName }) {
-  const size = 24;
+export default function ParmIcon({ className, iconName, size }) {
+  size == undefined ? (size = 24) : null;
   if (iconName === "theater")
     return (
       <IconMasksTheater
@@ -79,6 +80,14 @@ export default function ParmIcon({ className, iconName }) {
   else if (iconName === "sport")
     return (
       <IconBallFootball
+        className={`inline ${className} mr-1`}
+        stroke={1.5}
+        size={size}
+      />
+    );
+  else if (iconName === "workshop")
+    return (
+      <IconBrush
         className={`inline ${className} mr-1`}
         stroke={1.5}
         size={size}
