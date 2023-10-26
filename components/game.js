@@ -213,7 +213,7 @@ export default function Game({ score }) {
               Pan Holub k nám byl seslán při vanutí Ducha. Pravděpodobně
               holubice nebyla toho času k dispozici. Holuba jste si všichni moc
               oblíbili a rovnou jste jej začali oslovovat jménem Evžen. A tak se
-              Evžen Holub stal maskotem královehradecké mládeže.
+              Evžen Holub stal maskotem královéhradecké mládeže.
             </ContainerDescription>
             <ContainerImage
               pngPath={`/assets/images/jadro/evzen.png`}
