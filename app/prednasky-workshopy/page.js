@@ -202,6 +202,7 @@ const workshops = [
       "Natálce je 9 let a&nbsp;Syrská občanská válka právě vypukla. Co se s&nbsp;Natálkou stane? Zachrání se Natálka s&nbsp;rodinou z&nbsp;válečného konfliktu? Pojď si poslechnout zajímavé informace o&nbsp;Sýrii a&nbsp;příběh Natálčiny rodiny, která našla mír v&nbsp;České republice.",
     speaker: {
       name: "Natalia Haddad",
+      jpgPath: "/assets/images/speakers/haddad.jpg",
     },
   },
   {
