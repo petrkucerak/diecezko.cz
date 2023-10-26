@@ -49,7 +49,7 @@ export default async function BistroUDvouPratel() {
             „klientům i&nbsp;klientům.“ Všichni bez rozdílu usilujeme
             o&nbsp;spokojenost našich zákazníků.
           </ContainerParagraph>
-          <ContainerParagraph>Přijďte na kávičku!</ContainerParagraph>
+          <ContainerParagraph>Přijďte na kávičku! s</ContainerParagraph>
           <ContainerH2>Kontakt</ContainerH2>
           <ContainerUl className={`!list-none !pl-0 mb-6`}>
             <ContainerLi>
