@@ -49,13 +49,13 @@ export default async function BistroUDvouPratel() {
             „klientům i&nbsp;klientům.“ Všichni bez rozdílu usilujeme
             o&nbsp;spokojenost našich zákazníků.
           </ContainerParagraph>
-          <ContainerParagraph>Přijďte na kávičku! s</ContainerParagraph>
+          <ContainerParagraph>Přijďte na kávičku!</ContainerParagraph>
           <ContainerH2>Kontakt</ContainerH2>
           <ContainerUl className={`!list-none !pl-0 mb-6`}>
             <ContainerLi>
               BISTRO u dvou přátel,
               <br />
-              Pivovarské náměstí,
+              Pivovarské náměstí
               <br />
               Hradec Králové
             </ContainerLi>
