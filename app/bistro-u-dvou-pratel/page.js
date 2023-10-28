@@ -16,6 +16,8 @@ import {
   IconWorld,
 } from "@tabler/icons";
 import Nbsp from "../../components/format/nbsp";
+import SwipeGallery from "../../components/layouts/swiper-gallery";
+
 export default async function BistroUDvouPratel() {
   return (
     <main className="ease-in-out duration-300 font-titilliumWeb">
@@ -37,6 +39,7 @@ export default async function BistroUDvouPratel() {
             altText="Tým BISTRO u dvou přátel"
             className="w-full my-2"
           />
+          <SwipeGallery photos={photos} />
           <ContainerH2>Poslání SKOKu do života</ContainerH2>
           <ContainerParagraph>
             Sociální podnik SKOK do života, o.p.s. provozuje na území Hradce
@@ -95,3 +98,21 @@ export default async function BistroUDvouPratel() {
     </main>
   );
 }
+
+const photos = [
+  {
+    id: 1,
+    path: "/assets/images/spolecenstvi/bistro.webp",
+    alt: "Společná fotkaz zaměstnanců",
+  },
+  {
+    id: 2,
+    path: "/assets/images/spolecenstvi/bistro.webp",
+    alt: "/assets/images/spolecenstvi/bistro.webp",
+  },
+  {
+    id: 3,
+    path: "/assets/images/spolecenstvi/bistro.webp",
+    alt: "",
+  },
+];
