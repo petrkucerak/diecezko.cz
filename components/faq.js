@@ -12,7 +12,7 @@ export default function FAQ() {
       <FaqBox question={`Co si sbalit s sebou?`} icon={`luggage`}>
         Sváču, láhev s pitím, doporučený příspěvek (200,-Kč) a peníze na svoji
         dopravu. Doporučujeme si také vzít něco teplého na závěrečnou mši svatou
-        do katedrálu. Může už být zima.
+        do katedrály. Už může být zima.
       </FaqBox>
       <FaqBox question={`Od kolika let můžu jet na Diecézko?`} icon={`kid`}>
         Setkání je pro všechny mladé <strong>od 14 let do 29 let</strong>. Pokud
@@ -45,7 +45,7 @@ export default function FAQ() {
       <FaqBox question={`Jak se přihlásit na odpolední program?`} icon={`old`}>
         <strong>Při východu z Filharmonie</strong> si kromě bagety a pitíčka
         budeš moci vybrat odpolední program. Ideálně si téma promysli dopředu,
-        se nemusíš rozmýšlet na poslední chvíli. Na místo programu se pak půjde
+        ať se nemusíš rozmýšlet na poslední chvíli. Na místo programu se pak půjde
         společně. Neboj, nezabloudíš 😉
       </FaqBox>
       <FaqBox question={`Jak bude zajištěno stravování?`} icon={`chef`}>
