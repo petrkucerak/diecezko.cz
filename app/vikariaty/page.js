@@ -120,6 +120,7 @@ export const vikariaty = [
       jpgPath: "/assets/images/vikariaty/koubkova.jpg", 
     },
     social: {
+      instagram: "https://www.instagram.com/vikariathumpolec/",
       facebook: "https://www.facebook.com/groups/228568637237522",
     },
   },
@@ -303,7 +304,10 @@ export const vikariaty = [
       name: "Marie Kadová",
       jpgPath: "/assets/images/vikariaty/kadova.jpg",  
     },
-    person2: { name: "Kateřina Kaucová" },
+    person2: { 
+      name: "Kateřina Kaucová",
+      jpgPath: "/assets/images/vikariaty/kaucova.jpg",
+    },
     person3: { 
       name: "doc. Jakub Šimek",
       jpgPath: "/assets/images/vikariaty/simek.jpg",  
