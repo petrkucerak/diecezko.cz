@@ -15,8 +15,10 @@ export default function FAQ() {
         do katedrály. Už může být zima.
       </FaqBox>
       <FaqBox question={`Od kolika let můžu jet na Diecézko?`} icon={`kid`}>
-        Setkání je pro všechny mladé <strong>od 14 let do 29 let</strong>. Pokud
-        nesplňuješ horní hranici, neváhej se přihlásit do přípravného týmu:{" "}
+        Doporučený věk k účasti na setkání je <strong>od 14 do 29 let</strong>{" "}
+        (mládež ve věku od 11 do 12 let pouze s doprovodem staršího sourozence,
+        nebo kamaráda). Pokud nesplňuješ horní hranici, neváhej se přihlásit do
+        přípravného týmu:{" "}
         <Link
           className="underline"
           href={`https://forms.gle/M4Pc27SiqY9Wa7u87`}
@@ -45,8 +47,8 @@ export default function FAQ() {
       <FaqBox question={`Jak se přihlásit na odpolední program?`} icon={`old`}>
         <strong>Při východu z Filharmonie</strong> si kromě bagety a pitíčka
         budeš moci vybrat odpolední program. Ideálně si téma promysli dopředu,
-        ať se nemusíš rozmýšlet na poslední chvíli. Na místo programu se pak půjde
-        společně. Neboj, nezabloudíš 😉
+        ať se nemusíš rozmýšlet na poslední chvíli. Na místo programu se pak
+        půjde společně. Neboj, nezabloudíš 😉
       </FaqBox>
       <FaqBox question={`Jak bude zajištěno stravování?`} icon={`chef`}>
         Doporučujeme si s sebou přivézt svačinku. Pro všechny, kteří se
