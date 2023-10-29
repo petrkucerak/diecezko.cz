@@ -10,6 +10,7 @@ import IconCustomVesmir from "../images/vesmir";
 import IconCustomSalas from "../images/salas";
 import IconCustomAdventniCesta from "../images/adventni-cesta";
 import FAQ from "../faq";
+import IconCustomTmm from "../images/tmm";
 
 export default function SpolecenstviInfo({ id, className }) {
   return (
@@ -86,6 +87,12 @@ export default function SpolecenstviInfo({ id, className }) {
           <Button>
             <IconCustomAdventniCesta className={`inline h-6 mr-2`} />
             Adventní cesta
+          </Button>
+        </Link>
+        <Link href="/tyden-modliteb-za-mladez" target="_blank" className="">
+          <Button>
+            <IconCustomTmm className={`inline h-6 mr-2`} />
+            Týden modliteb za mládež
           </Button>
         </Link>
       </CardFeed>
