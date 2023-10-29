@@ -33,7 +33,7 @@ export default async function MseSvata() {
                 href="https://zpevnik.proscholy.cz/pisen/1119/reknu-vsem"
                 target="_blank"
                 rel="external"
-                className="underline"
+                className="underline tracking-wide font-semibold"
               >
                 1119
               </Link>
@@ -45,7 +45,7 @@ export default async function MseSvata() {
                 href="https://zpevnik.proscholy.cz/pisen/812/ordinarium-m-prikryla"
                 target="_blank"
                 rel="external"
-                className="underline"
+                className="underline tracking-wide font-semibold"
               >
                 812
               </Link>
@@ -57,7 +57,7 @@ export default async function MseSvata() {
                 href="https://zpevnik.proscholy.cz/pisen/3848/ja-vim-muj-pan-kvuli-mne-prisel"
                 target="_blank"
                 rel="external"
-                className="underline"
+                className="underline tracking-wide font-semibold"
               >
                 3848
               </Link>
@@ -69,7 +69,7 @@ export default async function MseSvata() {
                 href="https://zpevnik.proscholy.cz/pisen/211/kvuli-nam"
                 target="_blank"
                 rel="external"
-                className="underline"
+                className="underline tracking-wide font-semibold"
               >
                 211
               </Link>
@@ -81,7 +81,7 @@ export default async function MseSvata() {
                 href="https://zpevnik.proscholy.cz/pisen/27/chleba-a-vino-neseme"
                 target="_blank"
                 rel="external"
-                className="underline"
+                className="underline tracking-wide font-semibold"
               >
                 27
               </Link>
@@ -94,7 +94,7 @@ export default async function MseSvata() {
                 href="https://zpevnik.proscholy.cz/pisen/272/hospodin-je-muj-pastyr"
                 target="_blank"
                 rel="external"
-                className="underline"
+                className="underline tracking-wide font-semibold"
               >
                 272
               </Link>
@@ -103,7 +103,7 @@ export default async function MseSvata() {
                 href="https://zpevnik.proscholy.cz/pisen/2682/marie-magdalena"
                 target="_blank"
                 rel="external"
-                className="underline"
+                className="underline tracking-wide font-semibold"
               >
                 2682
               </Link>
@@ -112,7 +112,7 @@ export default async function MseSvata() {
                 href="https://zpevnik.proscholy.cz/pisen/115/obklop-me"
                 target="_blank"
                 rel="external"
-                className="underline"
+                className="underline tracking-wide font-semibold"
               >
                 115
               </Link>
@@ -124,7 +124,7 @@ export default async function MseSvata() {
                 href="https://zpevnik.proscholy.cz/pisen/826/svaty-jsi-nas-pan"
                 target="_blank"
                 rel="external"
-                className="underline"
+                className="underline tracking-wide font-semibold"
               >
                 826
               </Link>
