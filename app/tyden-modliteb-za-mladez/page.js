@@ -47,7 +47,7 @@ export default async function TydenModlitebZaMladez() {
             On nést kříž až do konce.
           </ContainerParagraph>
           <ContainerH2>Modlitba</ContainerH2>
-          <ContainerDescription className="!font-normal font-mono">
+          <ContainerDescription className="!font-normal font-mono bg-[#222] rounded-xl p-6">
             Dobrý Otče,
             <br />
             <br />
