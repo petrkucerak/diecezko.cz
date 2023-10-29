@@ -30,60 +30,60 @@ export default async function MseSvata() {
             <li>
               <strong>Vstup</strong>: Řeknu&nbsp;všem&nbsp;(
               <Link
-                href=""
+                href="https://zpevnik.proscholy.cz/pisen/1119/reknu-vsem"
                 target="_blank"
                 rel="external"
                 className="underline"
               >
-                986
+                1119
               </Link>
               )
             </li>
             <li>
               <strong>Ordinarium</strong>: Přikryl&nbsp;(
               <Link
-                href=""
+                href="https://zpevnik.proscholy.cz/pisen/812/ordinarium-m-prikryla"
                 target="_blank"
                 rel="external"
                 className="underline"
               >
-                228
+                812
               </Link>
               )
             </li>
             <li>
               <strong>Žalm</strong>: Já&nbsp;vím&nbsp;(
               <Link
-                href=""
+                href="https://zpevnik.proscholy.cz/pisen/3848/ja-vim-muj-pan-kvuli-mne-prisel"
                 target="_blank"
                 rel="external"
                 className="underline"
               >
-                224
+                3848
               </Link>
               )
             </li>
             <li>
               <strong>Před evangeliem</strong>: Kvůli&nbsp;nám&nbsp;(
               <Link
-                href=""
+                href="https://zpevnik.proscholy.cz/pisen/211/kvuli-nam"
                 target="_blank"
                 rel="external"
                 className="underline"
               >
-                223
+                211
               </Link>
               )
             </li>
             <li>
               <strong>Dary</strong>: Chleba&nbsp;a&nbsp;víno (
               <Link
-                href=""
+                href="https://zpevnik.proscholy.cz/pisen/27/chleba-a-vino-neseme"
                 target="_blank"
                 rel="external"
                 className="underline"
               >
-                221
+                27
               </Link>
               )
             </li>
@@ -91,42 +91,42 @@ export default async function MseSvata() {
               <strong>Přijímání</strong>:
               Hospodin&nbsp;je&nbsp;můj&nbsp;pastýř&nbsp;(
               <Link
-                href=""
+                href="https://zpevnik.proscholy.cz/pisen/272/hospodin-je-muj-pastyr"
                 target="_blank"
                 rel="external"
                 className="underline"
               >
-                221
+                272
               </Link>
-              ), Maria&nbsp;-&nbsp;Adorare&nbsp;(
+              ), Marie&nbsp;Magdalena&nbsp;(
               <Link
-                href=""
+                href="https://zpevnik.proscholy.cz/pisen/2682/marie-magdalena"
                 target="_blank"
                 rel="external"
                 className="underline"
               >
-                221
+                2682
               </Link>
               ), Obklop&nbsp;mě&nbsp;(
               <Link
-                href=""
+                href="https://zpevnik.proscholy.cz/pisen/115/obklop-me"
                 target="_blank"
                 rel="external"
                 className="underline"
               >
-                221
+                115
               </Link>
               )
             </li>
             <li>
               <strong>Závěr</strong>: Svatý&nbsp;jsi&nbsp;náš&nbsp;Pán&nbsp;(
               <Link
-                href=""
+                href="https://zpevnik.proscholy.cz/pisen/826/svaty-jsi-nas-pan"
                 target="_blank"
                 rel="external"
                 className="underline"
               >
-                221
+                826
               </Link>
               )
             </li>
