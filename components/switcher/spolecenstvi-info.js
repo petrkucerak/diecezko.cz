@@ -89,7 +89,7 @@ export default function SpolecenstviInfo({ id, className }) {
             Adventní cesta
           </Button>
         </Link>
-        <Link href="/tyden-modliteb-za-mladez" target="_blank" className="">
+        <Link href="/tyden-modliteb-za-mladez" className="">
           <Button>
             <IconCustomTmm className={`inline h-6 mr-2`} />
             Týden modliteb za mládež
