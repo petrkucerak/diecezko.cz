@@ -11,6 +11,7 @@ import Link from "next/link";
 import {
   IconBrandFacebook,
   IconBrandInstagram,
+  IconBrandSpotify,
   IconMapPin,
   IconWorld,
 } from "@tabler/icons";
@@ -124,6 +125,17 @@ export default async function PrednaskyWorhsopy() {
                             <IconBrandFacebook stroke={1.5} />
                           </Link>
                         ) : null}
+                        {w.social.spotify !== undefined ? (
+                          <Link
+                            target="_blank"
+                            rel="external"
+                            href={w.social.spotify}
+                            className="inline ml-1"
+                            title={`Odkaz na Spotify ${w.speaker.name}`}
+                          >
+                            <IconBrandSpotify stroke={1.5} />
+                          </Link>
+                        ) : null}
                       </div>
                     ) : null}
                   </div>
@@ -140,9 +152,36 @@ export default async function PrednaskyWorhsopy() {
 
 const workshops = [
   {
-    title: "Kdo jsem a&nbsp;kam jdu? – aneb jaký je cíl mé cesty životem",
+    title: "",
     type: "person",
     id: "prednaska-start",
+    place: "BiGy",
+    descritpion: "",
+    speaker: {
+      name: "David Peter Palušák",
+      // jpgPath: "/assets/images/speakers/votava.jpg",
+    },
+    social: {
+      web: "https://5o4u.com/",
+      spotify:
+        "https://open.spotify.com/show/5g8AciO77RoFQmJIeJOUzq?si=83792be4cc584885",
+    },
+  },
+  {
+    title: "",
+    type: "person",
+    // id: "prednaska-start",
+    place: "BiGy",
+    descritpion: "",
+    speaker: {
+      name: "Petr Tůma",
+      // jpgPath: "/assets/images/speakers/votava.jpg",
+    },
+  },
+  {
+    title: "Kdo jsem a&nbsp;kam jdu? – aneb jaký je cíl mé cesty životem",
+    type: "person",
+    // id: "prednaska-start",
     place: "BiGy",
     descritpion:
       "Vyprávění o&nbsp;motivaci pro putování do Compostelly, několik neobyčejných příběhů z&nbsp;cesty a&nbsp;v&nbsp;porovnání Svatojakubského putování s&nbsp;cestou životem.",
@@ -192,6 +231,7 @@ const workshops = [
     descritpion: "",
     speaker: {
       name: "sr. Anna Bartoňová a sr. Markéta Trešlová ",
+      jpgPath: "/assets/images/speakers/sestry.jpg",
     },
   },
   {
@@ -226,7 +266,7 @@ const workshops = [
     descritpion:
       "Zajímá Tě, jak žijí chudé indické děti a&nbsp;jaký význam pro ně má pomoc dárců z&nbsp;projektu Adopce na dálku? Během této besedy společně navštívíme jedno z&nbsp;nejlidnatějších měst Indie i&nbsp;místa na odlehlém venkově.",
     speaker: {
-      name: "Vojtěch Homolka a Kateřina Gužíková",
+      name: "Vojtěch Homolka a Kateřina Gužíková (Adopce na dálku)",
     },
     social: {
       web: "https://adopce.hk.caritas.cz/",
@@ -258,6 +298,8 @@ const workshops = [
       web: "https://nepornu.cz/",
       fb: "https://www.facebook.com/nepornucz",
       ig: "https://www.instagram.com/info_npcz/",
+      spotify:
+        "https://open.spotify.com/show/1GQmZZlwjYAFcIRXXcKOQ4?si=cafd9023513d4911",
     },
   },
   {
@@ -281,7 +323,8 @@ const workshops = [
     place: "Katakomby, Nové Adalbertinum",
     descritpion: "",
     speaker: {
-      name: "",
+      name: "Kikuš Řeháková",
+      jpgPath: "/assets/images/speakers/kikus.jpg",
     },
   },
   {
