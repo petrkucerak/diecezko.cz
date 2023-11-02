@@ -172,9 +172,12 @@ export const vikariaty = [
     },
     person1: { 
       name: "Veronika Mejsnarová",
-      jpgPath: "/assets/images/vikariaty/mejsnarova.jpg"  
+      jpgPath: "/assets/images/vikariaty/mejsnarova.jpg",  
     },
-    person2: { name: "Martina Urbanová" },
+    person2: { 
+      name: "Martina Urbanová",
+      jpgPath: "/assets/images/vikariaty/urbanova.jpg",
+    },
     social: {
       instagram: "https://www.instagram.com/studenecka_mladez/",
     },
