@@ -15,8 +15,8 @@ export default function FAQ() {
         do katedrály. Už může být zima.
       </FaqBox>
       <FaqBox question={`Od kolika let můžu jet na Diecézko?`} icon={`kid`}>
-        Doporučený věk k účasti na setkání je <strong>od 14 do 29 let</strong>{" "}
-        (mládež ve věku od 11 do 12 let pouze s doprovodem staršího sourozence,
+        Doporučený věk k účasti na setkání je <strong>od 14 do 26 let</strong>{" "}
+        (mládež ve věku od 12 do 13 let pouze s doprovodem staršího sourozence,
         nebo kamaráda). Pokud nesplňuješ horní hranici, neváhej se přihlásit do
         přípravného týmu:{" "}
         <Link
