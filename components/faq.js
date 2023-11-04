@@ -42,7 +42,9 @@ export default function FAQ() {
             přihášku
           </Link>
         </strong>{" "}
-        a budeme s Tebou počítat.{" "}
+        a budeme s Tebou počítat. Pokud je to v tvých silách, na Diecézko se 
+        přihlas do 20. 11. 2023, abychom Ti stihli zajistit bagetu a pitíčko 
+        k obědu. Děkujeme 😊{" "}
       </FaqBox>
       <FaqBox question={`Jak se přihlásit na odpolední program?`} icon={`old`}>
         <strong>Při východu z Filharmonie</strong> si kromě bagety a pitíčka
