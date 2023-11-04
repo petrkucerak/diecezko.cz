@@ -27,8 +27,11 @@ export default function DiecezkoInfo({ id, className }) {
         </div>
         <div className="flex flex-col items-center w-[90vw]">
           <h1 className="text-5xl md:text-7xl font-caveatBrush text-center">
-            Diecézní setkání mládeže
+            Diecézní setkání&nbsp;mládeže
           </h1>
+          <p className="font-caveatBrush text-2xl md:text-3xl">
+            v Hradci Králové
+          </p>
           <p className="text-xl md:text-3xl mt-4 md:mt-6 text-center">
             Zastav se a naslouchej
           </p>
