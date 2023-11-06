@@ -206,7 +206,7 @@ const workshops = [
     descritpion:
       "Má manželství v&nbsp;dnešní době ještě smysl? Stojí pár fotek s&nbsp;družičkami za to? Nebo jen proto, že si to přejí rodiče nebo babička? Není důležitější se nejdřív pořádně vyzkoušet a&nbsp;hlavně mít se rádi?",
     speaker: {
-      name: "manželé Anna a Karel Maříkovi",
+      name: "Anna a Karel Maříkovi",
       jpgPath: "/assets/images/speakers/marikovi.jpg",
     },
   },
