@@ -151,37 +151,21 @@ export default async function PrednaskyWorhsopy() {
 }
 
 const workshops = [
-  {
-    title: "",
-    type: "person",
-    id: "prednaska-start",
-    place: "BiGy",
-    descritpion: "",
-    speaker: {
-      name: "David Peter Palušák",
-      // jpgPath: "/assets/images/speakers/votava.jpg",
-    },
-    social: {
-      web: "https://5o4u.com/",
-      spotify:
-        "https://open.spotify.com/show/5g8AciO77RoFQmJIeJOUzq?si=83792be4cc584885",
-    },
-  },
-  {
-    title: "",
-    type: "person",
-    // id: "prednaska-start",
-    place: "BiGy",
-    descritpion: "",
-    speaker: {
-      name: "Petr Tůma",
-      // jpgPath: "/assets/images/speakers/votava.jpg",
-    },
-  },
+  // {
+  //   title: "",
+  //   type: "person",
+  //   id: "prednaska-start",
+  //   place: "BiGy",
+  //   descritpion: "",
+  //   speaker: {
+  //     name: "Petr Tůma",
+  //     // jpgPath: "/assets/images/speakers/votava.jpg",
+  //   },
+  // },
   {
     title: "Kdo jsem a&nbsp;kam jdu? – aneb jaký je cíl mé cesty životem",
     type: "person",
-    // id: "prednaska-start",
+    id: "prednaska-start",
     place: "BiGy",
     descritpion:
       "Vyprávění o&nbsp;motivaci pro putování do Compostelly, několik neobyčejných příběhů z&nbsp;cesty a&nbsp;v&nbsp;porovnání Svatojakubského putování s&nbsp;cestou životem.",
@@ -208,9 +192,11 @@ const workshops = [
     title: "",
     type: "person",
     place: "BiGy",
-    descritpion: "",
+    descritpion:
+      "Jako zdravotní sestra jsem se v&nbsp;letech 2002-2010 účastnila 7 misí s&nbsp;organizací Lékaři bez hranic. V&nbsp;Burundi, zmítané občanskou válkou, v&nbsp;uprchlickém táboře v&nbsp;Čadu, v&nbsp;pediatrické nemocnici v&nbsp;Herátu v&nbsp;Afghánistánu, po tsunami v&nbsp;Indonésii, v&nbsp;Kolumbii a&nbsp;na Haiti po zemětřesení. Cesta k&nbsp;tomu být “ready and go” byla dlouhá. O&nbsp;této cestě a&nbsp;práci na misích bych vám ráda chtěla povyprávět.",
     speaker: {
       name: "Terezie Hurychová",
+      jpgPath: "/assets/images/speakers/hurychova.jpg",
     },
   },
   {
@@ -249,7 +235,8 @@ const workshops = [
     title: "Mladí a spoluodpovědnost za správu věcí veřejných",
     type: "person",
     place: "BiGy",
-    descritpion: "",
+    descritpion:
+      '"Politika je především uměním setkávání, reflexí a&nbsp;akcí" říká papež František. Co tím má na mysli? Politika jako spoluodpovědnost za správu věcí veřejných. A&nbsp;jak složité je v&nbsp;politice uplatnit myšlenku sv.&nbsp;Augustýna "Odsuzuj hřích, ale miluj hříšníka"? Politika jako výzva i&nbsp;úkol, odpovědnost i&nbsp;poslání. O&nbsp;roli a&nbsp;ochotě mladých jít s&nbsp;kůží na trh a&nbsp;aktivně se zapojit do vytváření charakteru místního společenství i&nbsp;řešení zásadních témat celé naší společnosti. A&nbsp;hlavně se těším na besedu a&nbsp;dialog o&nbsp;tom, co mladé na dnešní politice na všech úrovních zajímá, na kritickou zpětnou vazbu, bez které se politik utopí v&nbsp;každodenní rutině.',
     speaker: {
       name: "Marek Výborný",
     },
@@ -266,7 +253,8 @@ const workshops = [
     descritpion:
       "Zajímá Tě, jak žijí chudé indické děti a&nbsp;jaký význam pro ně má pomoc dárců z&nbsp;projektu Adopce na dálku? Během této besedy společně navštívíme jedno z&nbsp;nejlidnatějších měst Indie i&nbsp;místa na odlehlém venkově.",
     speaker: {
-      name: "Vojtěch Homolka a Kateřina Gužíková (Adopce na dálku)",
+      name: "Vojtěch Homolka (Adopce na dálku)",
+      jpgPath: "/assets/images/speakers/homolka.jpg",
     },
     social: {
       web: "https://adopce.hk.caritas.cz/",
@@ -314,6 +302,8 @@ const workshops = [
       web: "https://www.michalhorak.eu/",
       fb: "https://www.facebook.com/doselcesnek",
       ig: "https://www.instagram.com/cichalsporak/",
+      spotify:
+        "https://open.spotify.com/artist/0SYbD4etzDzxM8Znn8OhP0?si=gtQF4ccLRpuK5EQxCd6Z2Q",
     },
   },
   {
@@ -325,6 +315,22 @@ const workshops = [
     speaker: {
       name: "Kikuš Řeháková",
       jpgPath: "/assets/images/speakers/kikus.jpg",
+    },
+  },
+  {
+    title: "Láska podle sv. Pavla",
+    type: "person",
+    id: "prednaska-start",
+    place: "BiGy",
+    descritpion: "",
+    speaker: {
+      name: "David Peter Palušák",
+      // jpgPath: "/assets/images/speakers/votava.jpg",
+    },
+    social: {
+      web: "https://5o4u.com/",
+      spotify:
+        "https://open.spotify.com/show/5g8AciO77RoFQmJIeJOUzq?si=83792be4cc584885",
     },
   },
   {
