@@ -29,7 +29,7 @@ export default async function PrednaskyWorhsopy() {
             V první části odpoledne si můžete vybrat z&nbsp;bohaté nabídky
             přednášek, několika workshopů nebo sportu.
           </ContainerDescription>
-          {/* <div className="flex flex-row items-center justify-center flex-wrap">
+          <div className="flex flex-row items-center justify-center flex-wrap">
             <Link href={`#prednaska-start`}>
               <Button className={``}>
                 <ParmIcon iconName={`person`} /> Přednášky
@@ -45,7 +45,7 @@ export default async function PrednaskyWorhsopy() {
                 <ParmIcon iconName={`sport`} /> Sporty
               </Button>
             </Link>
-          </div> */}
+          </div>
           <div>
             {workshops.map((w) => {
               return (
