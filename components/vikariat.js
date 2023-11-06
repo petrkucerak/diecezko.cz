@@ -88,7 +88,7 @@ export default function Vikariat({
           <ProfileCard
             className={``}
             name={person1.name}
-            title={"Zástupce pro mládež"}
+            title={"Vikariátní zástupce"}
             jpgPath={person1.jpgPath}
             webpPath={
               person1.webpPath === undefined
@@ -102,7 +102,7 @@ export default function Vikariat({
           <ProfileCard
             className={``}
             name={person2.name}
-            title={"Zástupce pro mládež"}
+            title={"Vikariátní zástupce"}
             jpgPath={person2.jpgPath}
             webpPath={
               person2.webpPath === undefined
@@ -116,7 +116,7 @@ export default function Vikariat({
           <ProfileCard
             className={``}
             name={person3.name}
-            title={"Zástupce pro mládež"}
+            title={"Vikariátní zástupce"}
             jpgPath={person3.jpgPath}
             webpPath={
               person3.webpPath === undefined
