@@ -27,7 +27,7 @@ export default async function PrednaskyWorhsopy() {
           <ProgramDetail p={program[3]} className={``} />
           <ContainerDescription>
             V první části odpoledne si můžete vybrat z&nbsp;bohaté nabídky
-            přednášek, dvou workshopů nebo sportu.
+            přednášek, několika workshopů nebo sportu.
           </ContainerDescription>
           <div className="flex flex-row items-center justify-center flex-wrap">
             <Link href={`#prednaska-start`}>
