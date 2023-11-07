@@ -1,6 +1,8 @@
 "use client";
 import {
   IconChefHat,
+  IconDeer,
+  IconHeadphones,
   IconHeart,
   IconHeartHandshake,
   IconMenu2,
@@ -22,6 +24,9 @@ export default function Header() {
   const [burgerMenu, setBurgerMenu] = useState("hidden");
   const [header, setHeader] = useState("");
 
+  const [pastoraceVisibility, setPastoraceVisibility] = useState("hidden");
+  const [musicVisibility, setMusicVisibility] = useState("hidden");
+
   const openMenu = () => {
     setBurgerControl("hidden");
     setCloseControl("");
@@ -34,6 +39,7 @@ export default function Header() {
     setBurgerMenu("hidden");
     setHeader("");
   };
+
   return (
     <>
       <header
@@ -86,56 +92,72 @@ export default function Header() {
               Vikariáty
             </li>
           </Link>
-          <Link
-            href="/dcm-hradec-kralove"
-            target="_self"
-            className="border-b-[#3b3b3b] border-b w-full"
-          >
-            <li className="flex flex-row items-center">
-              <IconCustomDCM className="inline h-7 w-7 my-1 mr-2" />
-              DCM Hradec Králové
-            </li>
-          </Link>
-          <Link
-            href="/dczm-vesmir"
-            target="_self"
-            className="border-b-[#3b3b3b] border-b w-full"
-          >
-            <li className="flex flex-row items-center">
-              <IconCustomVesmir className="inline h-7 w-7 my-1 mr-2" />
-              DCŽM Vesmír
-            </li>
-          </Link>
-          <Link
-            href="/kak-salas"
-            target="_self"
-            className="border-b-[#3b3b3b] border-b w-full"
-          >
-            <li className="flex flex-row items-center">
-              <IconCustomSalas className="h-7 w-7 inline my-1 mr-2" />
-              KAK Salaš
-            </li>
-          </Link>
-          <Link
-            href="/veka"
-            target="_self"
-            className="border-b-[#3b3b3b] border-b w-full"
-          >
-            <li className="flex flex-row items-center">
-              <IconCustomVeka className="inline h-7 w-7 my-1 mr-2" />
-              Vesmírná kapela
-            </li>
-          </Link>
-          <Link
-            href="/studenecka-kapela"
-            target="_self"
-            className="border-b-[#3b3b3b] border-b w-full"
-          >
-            <li className="flex flex-row items-center">
-              <IconMusic stroke={1.5} className="inline h-7 w-7 my-1 mr-2" />
-              Studenecká kapela
-            </li>
-          </Link>
+          <li className="flex flex-row items-center border-b-[#3b3b3b] border-b w-full">
+            <IconDeer stroke={1.5} className="inline h-7 w-7 my-1 mr-2" />
+            Pastorace
+            <ul className={`${pastoraceVisibility}`}>
+              <Link
+                href="/dcm-hradec-kralove"
+                target="_self"
+                className="border-b-[#3b3b3b] border-b w-full"
+              >
+                <li className="flex flex-row items-center">
+                  <IconCustomDCM className="inline h-7 w-7 my-1 mr-2" />
+                  DCM Hradec Králové
+                </li>
+              </Link>
+              <Link
+                href="/dczm-vesmir"
+                target="_self"
+                className="border-b-[#3b3b3b] border-b w-full"
+              >
+                <li className="flex flex-row items-center">
+                  <IconCustomVesmir className="inline h-7 w-7 my-1 mr-2" />
+                  DCŽM Vesmír
+                </li>
+              </Link>
+              <Link
+                href="/kak-salas"
+                target="_self"
+                className="border-b-[#3b3b3b] border-b w-full"
+              >
+                <li className="flex flex-row items-center">
+                  <IconCustomSalas className="h-7 w-7 inline my-1 mr-2" />
+                  KAK Salaš
+                </li>
+              </Link>
+            </ul>
+          </li>
+          <li className="flex flex-row items-center border-b-[#3b3b3b] border-b w-full">
+            <IconHeadphones stroke={1.5} className="inline h-7 w-7 my-1 mr-2" />
+            Kapely
+            <ul className={`${musicVisibility}`}>
+              <Link
+                href="/studenecka-kapela"
+                target="_self"
+                className="border-b-[#3b3b3b] border-b w-full"
+              >
+                <li className="flex flex-row items-center">
+                  <IconMusic
+                    stroke={1.5}
+                    className="inline h-7 w-7 my-1 mr-2"
+                  />
+                  Studenecká kapela
+                </li>
+              </Link>
+              <Link
+                href="/veka"
+                target="_self"
+                className="border-b-[#3b3b3b] border-b w-full"
+              >
+                <li className="flex flex-row items-center">
+                  <IconCustomVeka className="inline h-7 w-7 my-1 mr-2" />
+                  Vesmírná kapela
+                </li>
+              </Link>
+            </ul>
+          </li>
+
           <Link
             href="/jadro-diecezka"
             target="_self"
@@ -144,16 +166,6 @@ export default function Header() {
             <li className="flex flex-row items-center">
               <IconHeart stroke={1.5} className="inline h-7 w-7 my-1 mr-2" />
               Jádro Diecézka
-            </li>
-          </Link>
-          <Link
-            href="/bistro-u-dvou-pratel"
-            target="_self"
-            className="border-b-[#3b3b3b] border-b w-full"
-          >
-            <li className="flex flex-row items-center">
-              <IconChefHat stroke={1.5} className="inline h-7 w-7 my-1 mr-2" />
-              BISTRO u dvou přátel
             </li>
           </Link>
           <Link
