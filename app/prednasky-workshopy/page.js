@@ -319,8 +319,8 @@ const workshops = [
   },
   {
     title: "Láska podle sv. Pavla",
-    type: "person",
-    id: "prednaska-start",
+    type: "workshop",
+    // id: "prednaska-start",
     place: "BiGy",
     descritpion: "",
     speaker: {
