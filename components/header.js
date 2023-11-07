@@ -1,6 +1,8 @@
 "use client";
 import {
+  IconChefHat,
   IconHeart,
+  IconHeartHandshake,
   IconMenu2,
   IconMusic,
   IconPuzzle,
@@ -130,8 +132,41 @@ export default function Header() {
             className="border-b-[#3b3b3b] border-b w-full"
           >
             <li className="flex flex-row items-center">
-              <IconMusic stroke={1} className="inline h-7 w-7 my-1 mr-2" />
+              <IconMusic stroke={1.5} className="inline h-7 w-7 my-1 mr-2" />
               Studenecká kapela
+            </li>
+          </Link>
+          <Link
+            href="/jadro-diecezka"
+            target="_self"
+            className="border-b-[#3b3b3b] border-b w-full"
+          >
+            <li className="flex flex-row items-center">
+              <IconHeart stroke={1.5} className="inline h-7 w-7 my-1 mr-2" />
+              Jádro Diecézka
+            </li>
+          </Link>
+          <Link
+            href="/bistro-u-dvou-pratel"
+            target="_self"
+            className="border-b-[#3b3b3b] border-b w-full"
+          >
+            <li className="flex flex-row items-center">
+              <IconChefHat stroke={1.5} className="inline h-7 w-7 my-1 mr-2" />
+              BISTRO u dvou přátel
+            </li>
+          </Link>
+          <Link
+            href="/partneri"
+            target="_self"
+            className="border-b-[#3b3b3b] border-b w-full"
+          >
+            <li className="flex flex-row items-center">
+              <IconHeartHandshake
+                stroke={1.5}
+                className="inline h-7 w-7 my-1 mr-2"
+              />
+              Partneři
             </li>
           </Link>
         </ul>
