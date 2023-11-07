@@ -140,7 +140,7 @@ export default function Header() {
               className="flex flex-row items-center w-full justify-between cursor-pointer border-b border-b-[#3b3b3b]"
               onClick={clickPastorace}
             >
-              <div>
+              <div className="flex items-center">
                 <IconDeer stroke={1.3} className="inline h-7 w-7 my-1 mr-2" />
                 Pastorace
               </div>{" "}
@@ -195,7 +195,7 @@ export default function Header() {
               className="flex flex-row items-center w-full justify-between cursor-pointer border-b border-b-[#3b3b3b]"
               onClick={clickMusic}
             >
-              <div>
+              <div className="flex items-center">
                 <IconHeadphones
                   stroke={1.3}
                   className="inline h-7 w-7 my-1 mr-2"
