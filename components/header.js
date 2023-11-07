@@ -25,7 +25,12 @@ export default function Header() {
   const [header, setHeader] = useState("");
 
   const [pastoraceVisibility, setPastoraceVisibility] = useState("hidden");
+  const [pastoraceStatusOpen, setPastoraceStatusOpen] = useState("hidden");
+  const [pastoraceStatusClose, setPastoraceStatusClose] = useState("");
+
   const [musicVisibility, setMusicVisibility] = useState("hidden");
+  const [musicStatusOpen, setMusicStatusOpen] = useState("hidden");
+  const [musicStatusClose, setMusicStatusClose] = useState("");
 
   const openMenu = () => {
     setBurgerControl("hidden");
@@ -38,6 +43,38 @@ export default function Header() {
     setCloseControl("hidden");
     setBurgerMenu("hidden");
     setHeader("");
+  };
+
+  const clickPastorace = () => {
+    // is not open => open
+    if (pastoraceStatusOpen === "hidden") {
+      setPastoraceVisibility("");
+      setMusicVisibility("hidden");
+      setPastoraceStatusOpen("");
+      setPastoraceStatusClose("hidden");
+    } else {
+      // is open => close
+      setPastoraceVisibility("hidden");
+      setMusicVisibility("hidden");
+      setPastoraceStatusOpen("hidden");
+      setPastoraceStatusClose("");
+    }
+  };
+
+  const clickMusic = () => {
+    // is not open => open
+    if (musicStatusOpen === "hidden") {
+      setPastoraceVisibility("hidden");
+      setMusicVisibility("");
+      setMusicStatusOpen("");
+      setMusicStatusClose("hidden");
+    } else {
+      // is open => close
+      setPastoraceVisibility("hidden");
+      setMusicVisibility("hidden");
+      setMusicStatusOpen("hidden");
+      setMusicStatusClose("");
+    }
   };
 
   return (
