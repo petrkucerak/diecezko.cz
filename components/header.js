@@ -35,7 +35,7 @@ export default function Header() {
   return (
     <>
       <header
-        className={`${header} w-full flex flex-row items-center justify-between h-16 bg-black/90 backdrop-blur-md`}
+        className={`${header} w-full flex flex-row items-center justify-between h-16 bg-black/90 backdrop-blur-md z-40`}
       >
         <div>
           <Link
