@@ -10,15 +10,15 @@ export default function FAQ() {
         zaplatit na recepci ve Filharmonii při dopoledním programu.
       </FaqBox>
       <FaqBox question={`Co si sbalit s sebou?`} icon={`luggage`}>
-        Sváču, láhev s pitím, doporučený příspěvek (200,-Kč) a peníze na svoji
-        dopravu. Doporučujeme si také vzít něco teplého na závěrečnou mši svatou
-        do katedrály. Už může být zima.
+        Sváču, láhev s&nbsp;pitím, doporučený příspěvek (200,-Kč) a&nbsp;peníze
+        na svoji dopravu. Doporučujeme si také vzít něco teplého na závěrečnou
+        mši svatou do katedrály. Může být zima.
       </FaqBox>
       <FaqBox question={`Od kolika let můžu jet na Diecézko?`} icon={`kid`}>
-        Doporučený věk k účasti na setkání je <strong>od 14 do 26 let</strong>{" "}
-        (mládež ve věku od 12 do 13 let pouze s doprovodem staršího sourozence,
-        nebo kamaráda). Pokud nesplňuješ horní hranici, neváhej se přihlásit do
-        přípravného týmu:{" "}
+        Doporučený věk k&nbsp;účasti na setkání je{" "}
+        <strong>od 14 do 26 let</strong> (mládež ve věku od 12 do 13 let pouze
+        s&nbsp;doprovodem staršího sourozence, nebo kamaráda). Pokud nesplňuješ
+        horní hranici, neváhej se přihlásit do přípravného týmu:{" "}
         <Link
           className="underline"
           href={`https://forms.gle/M4Pc27SiqY9Wa7u87`}
@@ -30,7 +30,7 @@ export default function FAQ() {
         .
       </FaqBox>
       <FaqBox question={`Jak se přihlásím?`} icon={`pencil`}>
-        To je jednoduché,{" "}
+        Jednoduše,{" "}
         <strong>
           vyplň{" "}
           <Link
@@ -41,20 +41,20 @@ export default function FAQ() {
           >
             přihášku
           </Link>
-        </strong>{" "}
-        a budeme s Tebou počítat. Pokud je to v tvých silách, na Diecézko se 
-        přihlas do 20. 11. 2023, abychom Ti stihli zajistit bagetu a pitíčko 
+        </strong>
+        &nbsp;a budeme s&nbsp;Tebou počítat. Na Diecézko se přihlas do
+        20.&nbsp;11.&nbsp;2023, abychom Ti stihli zajistit bagetu a&nbsp;pitíčko
         k obědu. Děkujeme 😊{" "}
       </FaqBox>
       <FaqBox question={`Jak se přihlásit na odpolední program?`} icon={`old`}>
-        <strong>Při východu z Filharmonie</strong> si kromě bagety a pitíčka
-        budeš moci vybrat odpolední program. Ideálně si téma promysli dopředu,
-        ať se nemusíš rozmýšlet na poslední chvíli. Na místo programu se pak
-        půjde společně. Neboj, nezabloudíš 😉
+        <strong>Při východu z Filharmonie</strong> si kromě bagety
+        a&nbsp;pitíčka budeš moci vybrat odpolední program. Ideálně si téma
+        promysli dopředu, ať se nemusíš rozmýšlet na poslední chvíli. Na místo
+        programu se půjde společně. Neboj, nezabloudíš 😉
       </FaqBox>
       <FaqBox question={`Jak bude zajištěno stravování?`} icon={`chef`}>
-        Doporučujeme si s sebou přivézt svačinku. Pro všechny, kteří se
-        přihlásili, <strong>bude k obědu bageta</strong>. Pokud máte dietu,
+        Doporučujeme si s&nbsp;sebou přivézt svačinku. Pro všechny, kteří se
+        přihlásili, <strong>bude k&nbsp;obědu bageta</strong>. Pokud máte dietu,
         napište nám do{" "}
         <Link
           href="https://forms.gle/aMQor8ARxaULdD8t7"
@@ -64,7 +64,7 @@ export default function FAQ() {
         >
           přihášky
         </Link>
-        . Pokud by vás odpoledne přepadla mlsná, je možné zajít i do naší
+        . Pokud by vás odpoledne přepadla mlsná, je možné zajít i&nbsp;do naší
         kavárny.
         {
           // TODO: add link to kavarna
