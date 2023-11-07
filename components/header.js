@@ -1,9 +1,8 @@
 "use client";
 import {
+  IconAnchor,
   IconCaretDown,
   IconCaretUp,
-  IconChefHat,
-  IconDeer,
   IconHeadphones,
   IconHeart,
   IconHeartHandshake,
@@ -13,7 +12,7 @@ import {
   IconX,
 } from "@tabler/icons";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import IconCustomSalas from "./images/salas";
 import IconCustomVesmir from "./images/vesmir";
 import IconCustomDCM from "./images/dcm-hk";
@@ -127,7 +126,7 @@ export default function Header() {
           <Link
             href="/evzenova-cesta"
             target="_self"
-            className="border-b-[#3b3b3b] border-b w-full my-6"
+            className="border-b-[#3b3b3b] border-b w-full my-5"
           >
             <li className="flex flex-row items-center">
               <IconCustomEvzen className="inline h-7 w-7 my-1 mr-2" />
@@ -137,20 +136,20 @@ export default function Header() {
           <Link
             href="vikariaty"
             target="_self"
-            className="border-b-[#3b3b3b] border-b w-full my-6"
+            className="border-b-[#3b3b3b] border-b w-full my-5"
           >
             <li className="flex flex-row items-center">
               <IconPuzzle stroke={1.5} className="inline h-7 w-7 my-1 mr-2" />
               Vikariáty
             </li>
           </Link>
-          <li className="flex flex-col items-center w-full justify-between my-6">
+          <li className="flex flex-col items-center w-full justify-between my-5">
             <div
               className="flex flex-row items-center w-full justify-between cursor-pointer border-b border-b-[#3b3b3b]"
               onClick={clickPastorace}
             >
               <div className="flex items-center">
-                <IconDeer stroke={1.3} className="inline h-7 w-7 my-1 mr-2" />
+                <IconAnchor stroke={1.3} className="inline h-7 w-7 my-1 mr-2" />
                 Pastorace
               </div>{" "}
               <div>
@@ -199,7 +198,7 @@ export default function Header() {
               </Link>
             </ul>
           </li>
-          <li className="flex flex-col items-center w-full justify-between my-6">
+          <li className="flex flex-col items-center w-full justify-between my-5">
             <div
               className="flex flex-row items-center w-full justify-between cursor-pointer border-b border-b-[#3b3b3b]"
               onClick={clickMusic}
@@ -250,7 +249,7 @@ export default function Header() {
           <Link
             href="/jadro-diecezka"
             target="_self"
-            className="border-b-[#3b3b3b] border-b w-full my-6"
+            className="border-b-[#3b3b3b] border-b w-full my-5"
           >
             <li className="flex flex-row items-center">
               <IconHeart stroke={1.5} className="inline h-7 w-7 my-1 mr-2" />
@@ -260,7 +259,7 @@ export default function Header() {
           <Link
             href="/partneri"
             target="_self"
-            className="border-b-[#3b3b3b] border-b w-full my-6"
+            className="border-b-[#3b3b3b] border-b w-full my-5"
           >
             <li className="flex flex-row items-center">
               <IconHeartHandshake
