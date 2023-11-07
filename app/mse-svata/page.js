@@ -54,12 +54,12 @@ export default async function MseSvata() {
             <li>
               <strong>Žalm</strong>: Já&nbsp;vím&nbsp;(
               <Link
-                href="https://zpevnik.proscholy.cz/pisen/3848/ja-vim-muj-pan-kvuli-mne-prisel"
+                href="https://zpevnik.proscholy.cz/pisen/1059/ja-vim"
                 target="_blank"
                 rel="external"
                 className="underline tracking-wide font-semibold"
               >
-                3848
+                1059
               </Link>
               )
             </li>
@@ -91,21 +91,21 @@ export default async function MseSvata() {
               <strong>Přijímání</strong>:
               Hospodin&nbsp;je&nbsp;můj&nbsp;pastýř&nbsp;(
               <Link
-                href="https://zpevnik.proscholy.cz/pisen/272/hospodin-je-muj-pastyr"
+                href="https://zpevnik.proscholy.cz/pisen/3958/hospodin-je-muj-pastyr"
                 target="_blank"
                 rel="external"
                 className="underline tracking-wide font-semibold"
               >
-                272
+                3958
               </Link>
-              ), Marie&nbsp;Magdalena&nbsp;(
+              ), Maria&nbsp;(
               <Link
-                href="https://zpevnik.proscholy.cz/pisen/2682/marie-magdalena"
+                href="https://zpevnik.proscholy.cz/pisen/257/maria"
                 target="_blank"
                 rel="external"
                 className="underline tracking-wide font-semibold"
               >
-                2682
+                257
               </Link>
               ), Obklop&nbsp;mě&nbsp;(
               <Link

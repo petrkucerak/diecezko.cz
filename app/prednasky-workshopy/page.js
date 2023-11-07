@@ -27,7 +27,7 @@ export default async function PrednaskyWorhsopy() {
           <ProgramDetail p={program[3]} className={``} />
           <ContainerDescription>
             V první části odpoledne si můžete vybrat z&nbsp;bohaté nabídky
-            přednášek, dvou workshopů nebo sportu.
+            přednášek, několika workshopů nebo sportu.
           </ContainerDescription>
           <div className="flex flex-row items-center justify-center flex-wrap">
             <Link href={`#prednaska-start`}>
@@ -206,7 +206,7 @@ const workshops = [
     descritpion:
       "Má manželství v&nbsp;dnešní době ještě smysl? Stojí pár fotek s&nbsp;družičkami za to? Nebo jen proto, že si to přejí rodiče nebo babička? Není důležitější se nejdřív pořádně vyzkoušet a&nbsp;hlavně mít se rádi?",
     speaker: {
-      name: "manželé Anna a Karel Maříkovi",
+      name: "Anna a Karel Maříkovi",
       jpgPath: "/assets/images/speakers/marikovi.jpg",
     },
   },
@@ -319,8 +319,8 @@ const workshops = [
   },
   {
     title: "Láska podle sv. Pavla",
-    type: "person",
-    id: "prednaska-start",
+    type: "workshop",
+    // id: "prednaska-start",
     place: "BiGy",
     descritpion: "",
     speaker: {

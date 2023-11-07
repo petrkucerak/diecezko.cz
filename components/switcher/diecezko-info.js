@@ -129,11 +129,6 @@ export default function DiecezkoInfo({ id, className }) {
         Ducha s<Nbsp />
         otcem biskupem, která program celého dne završuje.
       </ContainerParagraph>
-      <ContainerParagraph>
-        Akce se účastní kolem 700 mladých lidí z<Nbsp />
-        celé diecéze a<Nbsp />
-        minimálně 100 ochotných dobrovolníků.
-      </ContainerParagraph>
     </Container>
   );
 }

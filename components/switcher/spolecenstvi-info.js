@@ -4,7 +4,14 @@ import Link from "next/link";
 import Button from "../layouts/button";
 import IconCustomVeka from "../images/veka";
 import ContainerH2 from "../layouts/container-h2";
-import { IconChefHat, IconHeart, IconMusic, IconPuzzle } from "@tabler/icons";
+import {
+  IconArrowBarToDown,
+  IconChefHat,
+  IconHeart,
+  IconMusic,
+  IconPuzzle,
+  IconWall,
+} from "@tabler/icons";
 import IconCustomDCM from "../images/dcm-hk";
 import IconCustomVesmir from "../images/vesmir";
 import IconCustomSalas from "../images/salas";
@@ -93,6 +100,20 @@ export default function SpolecenstviInfo({ id, className }) {
           <Button>
             <IconCustomTmm className={`inline h-6 mr-2`} />
             Týden modliteb za mládež
+          </Button>
+        </Link>
+      </CardFeed>
+      <ContainerH2 className={`w-full text-center`}>Propagace</ContainerH2>
+      <CardFeed>
+        <Link
+          href="/assets/files/Diecézní-setkání-mládeže.pdf"
+          rel=""
+          target="_blank"
+          className=""
+        >
+          <Button>
+            <IconArrowBarToDown className={`inline h-6 mr-2`} />
+            Plakátek
           </Button>
         </Link>
       </CardFeed>
