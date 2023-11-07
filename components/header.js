@@ -1,5 +1,7 @@
 "use client";
 import {
+  IconCaretDown,
+  IconCaretUp,
   IconChefHat,
   IconDeer,
   IconHeadphones,
@@ -52,6 +54,8 @@ export default function Header() {
       setMusicVisibility("hidden");
       setPastoraceStatusOpen("");
       setPastoraceStatusClose("hidden");
+      setMusicStatusOpen("hidden");
+      setMusicStatusClose("");
     } else {
       // is open => close
       setPastoraceVisibility("hidden");
@@ -68,6 +72,8 @@ export default function Header() {
       setMusicVisibility("");
       setMusicStatusOpen("");
       setMusicStatusClose("hidden");
+      setPastoraceStatusOpen("hidden");
+      setPastoraceStatusClose("");
     } else {
       // is open => close
       setPastoraceVisibility("hidden");
@@ -125,18 +131,37 @@ export default function Header() {
             className="border-b-[#3b3b3b] border-b w-full"
           >
             <li className="flex flex-row items-center">
-              <IconPuzzle stroke={1} className="inline h-7 w-7 my-1 mr-2" />
+              <IconPuzzle stroke={1.5} className="inline h-7 w-7 my-1 mr-2" />
               Vikariáty
             </li>
           </Link>
-          <li className="flex flex-row items-center border-b-[#3b3b3b] border-b w-full">
-            <IconDeer stroke={1.5} className="inline h-7 w-7 my-1 mr-2" />
-            Pastorace
-            <ul className={`${pastoraceVisibility}`}>
+          <li className="flex flex-col items-center w-full justify-between">
+            <div
+              className="flex flex-row items-center w-full justify-between cursor-pointer border-b border-b-[#3b3b3b]"
+              onClick={clickPastorace}
+            >
+              <div>
+                <IconDeer stroke={1.3} className="inline h-7 w-7 my-1 mr-2" />
+                Pastorace
+              </div>{" "}
+              <div>
+                <IconCaretDown
+                  className={`${pastoraceStatusClose}`}
+                  size={30}
+                  stroke={1.5}
+                />{" "}
+                <IconCaretUp
+                  className={`${pastoraceStatusOpen}`}
+                  size={30}
+                  stroke={1.5}
+                />
+              </div>
+            </div>
+            <ul className={`${pastoraceVisibility} w-full flex flex-col`}>
               <Link
                 href="/dcm-hradec-kralove"
                 target="_self"
-                className="border-b-[#3b3b3b] border-b w-full"
+                className="w-full mt-4 text-xl"
               >
                 <li className="flex flex-row items-center">
                   <IconCustomDCM className="inline h-7 w-7 my-1 mr-2" />
@@ -146,7 +171,7 @@ export default function Header() {
               <Link
                 href="/dczm-vesmir"
                 target="_self"
-                className="border-b-[#3b3b3b] border-b w-full"
+                className="w-full mt-4 text-xl"
               >
                 <li className="flex flex-row items-center">
                   <IconCustomVesmir className="inline h-7 w-7 my-1 mr-2" />
@@ -156,7 +181,7 @@ export default function Header() {
               <Link
                 href="/kak-salas"
                 target="_self"
-                className="border-b-[#3b3b3b] border-b w-full"
+                className="w-full mt-4 text-xl"
               >
                 <li className="flex flex-row items-center">
                   <IconCustomSalas className="h-7 w-7 inline my-1 mr-2" />
@@ -165,14 +190,36 @@ export default function Header() {
               </Link>
             </ul>
           </li>
-          <li className="flex flex-row items-center border-b-[#3b3b3b] border-b w-full">
-            <IconHeadphones stroke={1.5} className="inline h-7 w-7 my-1 mr-2" />
-            Kapely
-            <ul className={`${musicVisibility}`}>
+          <li className="flex flex-col items-center w-full justify-between">
+            <div
+              className="flex flex-row items-center w-full justify-between cursor-pointer border-b border-b-[#3b3b3b]"
+              onClick={clickMusic}
+            >
+              <div>
+                <IconHeadphones
+                  stroke={1.3}
+                  className="inline h-7 w-7 my-1 mr-2"
+                />
+                Kapely
+              </div>{" "}
+              <div>
+                <IconCaretDown
+                  className={`${musicStatusClose}`}
+                  size={30}
+                  stroke={1.5}
+                />{" "}
+                <IconCaretUp
+                  className={`${musicStatusOpen}`}
+                  size={30}
+                  stroke={1.5}
+                />
+              </div>
+            </div>
+            <ul className={`${musicVisibility} w-full flex flex-col`}>
               <Link
                 href="/studenecka-kapela"
                 target="_self"
-                className="border-b-[#3b3b3b] border-b w-full"
+                className="w-full mt-4 text-xl"
               >
                 <li className="flex flex-row items-center">
                   <IconMusic
@@ -185,7 +232,7 @@ export default function Header() {
               <Link
                 href="/veka"
                 target="_self"
-                className="border-b-[#3b3b3b] border-b w-full"
+                className="w-full mt-4 text-xl"
               >
                 <li className="flex flex-row items-center">
                   <IconCustomVeka className="inline h-7 w-7 my-1 mr-2" />
