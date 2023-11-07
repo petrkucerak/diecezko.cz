@@ -110,15 +110,15 @@ export default function Header() {
         </div>
       </header>
       <nav
-        className={`top-16 fixed w-full backdrop-blur-md bg-black/70 ${burgerMenu} flex flex-col items-center z-50`}
+        className={`top-16 fixed w-full backdrop-blur-md bg-black/70 ${burgerMenu} burger-menu-height flex flex-col items-center z-50`}
       >
         <ul
-          className={`text-2xl flex flex-col items-start justify-around burger-menu-height w-[90vw] max-w-[400px]`}
+          className={`text-2xl flex flex-col items-start justify-around w-[90vw] max-w-[400px]`}
         >
           <Link
             href="/evzenova-cesta"
             target="_self"
-            className="border-b-[#3b3b3b] border-b w-full"
+            className="border-b-[#3b3b3b] border-b w-full my-6"
           >
             <li className="flex flex-row items-center">
               <IconCustomEvzen className="inline h-7 w-7 my-1 mr-2" />
@@ -128,14 +128,14 @@ export default function Header() {
           <Link
             href="vikariaty"
             target="_self"
-            className="border-b-[#3b3b3b] border-b w-full"
+            className="border-b-[#3b3b3b] border-b w-full my-6"
           >
             <li className="flex flex-row items-center">
               <IconPuzzle stroke={1.5} className="inline h-7 w-7 my-1 mr-2" />
               Vikariáty
             </li>
           </Link>
-          <li className="flex flex-col items-center w-full justify-between">
+          <li className="flex flex-col items-center w-full justify-between my-6">
             <div
               className="flex flex-row items-center w-full justify-between cursor-pointer border-b border-b-[#3b3b3b]"
               onClick={clickPastorace}
@@ -190,7 +190,7 @@ export default function Header() {
               </Link>
             </ul>
           </li>
-          <li className="flex flex-col items-center w-full justify-between">
+          <li className="flex flex-col items-center w-full justify-between my-6">
             <div
               className="flex flex-row items-center w-full justify-between cursor-pointer border-b border-b-[#3b3b3b]"
               onClick={clickMusic}
@@ -229,11 +229,7 @@ export default function Header() {
                   Studenecká kapela
                 </li>
               </Link>
-              <Link
-                href="/veka"
-                target="_self"
-                className="w-full mt-4 text-xl"
-              >
+              <Link href="/veka" target="_self" className="w-full mt-4 text-xl">
                 <li className="flex flex-row items-center">
                   <IconCustomVeka className="inline h-7 w-7 my-1 mr-2" />
                   Vesmírná kapela
@@ -245,7 +241,7 @@ export default function Header() {
           <Link
             href="/jadro-diecezka"
             target="_self"
-            className="border-b-[#3b3b3b] border-b w-full"
+            className="border-b-[#3b3b3b] border-b w-full my-6"
           >
             <li className="flex flex-row items-center">
               <IconHeart stroke={1.5} className="inline h-7 w-7 my-1 mr-2" />
@@ -255,7 +251,7 @@ export default function Header() {
           <Link
             href="/partneri"
             target="_self"
-            className="border-b-[#3b3b3b] border-b w-full"
+            className="border-b-[#3b3b3b] border-b w-full my-6"
           >
             <li className="flex flex-row items-center">
               <IconHeartHandshake
