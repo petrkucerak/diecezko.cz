@@ -99,6 +99,7 @@ export default function Header() {
         <div>
           <Link
             href="/"
+            onClick={unlockScrolling}
             className="text-3xl font-caveatBrush ml-4"
             target="_self"
             title="Diecézko.cz"
@@ -125,6 +126,7 @@ export default function Header() {
         >
           <Link
             href="/evzenova-cesta"
+            onClick={unlockScrolling}
             target="_self"
             className="border-b-[#3b3b3b] border-b w-full my-5"
           >
@@ -135,6 +137,7 @@ export default function Header() {
           </Link>
           <Link
             href="vikariaty"
+            onClick={unlockScrolling}
             target="_self"
             className="border-b-[#3b3b3b] border-b w-full my-5"
           >
@@ -168,6 +171,7 @@ export default function Header() {
             <ul className={`${pastoraceVisibility} w-full flex flex-col`}>
               <Link
                 href="/dcm-hradec-kralove"
+                onClick={unlockScrolling}
                 target="_self"
                 className="w-full mt-4 text-xl"
               >
@@ -178,6 +182,7 @@ export default function Header() {
               </Link>
               <Link
                 href="/dczm-vesmir"
+                onClick={unlockScrolling}
                 target="_self"
                 className="w-full mt-4 text-xl"
               >
@@ -188,6 +193,7 @@ export default function Header() {
               </Link>
               <Link
                 href="/kak-salas"
+                onClick={unlockScrolling}
                 target="_self"
                 className="w-full mt-4 text-xl"
               >
@@ -226,6 +232,7 @@ export default function Header() {
             <ul className={`${musicVisibility} w-full flex flex-col`}>
               <Link
                 href="/studenecka-kapela"
+                onClick={unlockScrolling}
                 target="_self"
                 className="w-full mt-4 text-xl"
               >
@@ -238,6 +245,7 @@ export default function Header() {
                 </li>
               </Link>
               <Link href="/veka" target="_self" className="w-full mt-4 text-xl">
+                onClick={unlockScrolling}
                 <li className="flex flex-row items-center">
                   <IconCustomVeka className="inline h-7 w-7 my-1 mr-2" />
                   Vesmírná kapela
@@ -248,6 +256,7 @@ export default function Header() {
 
           <Link
             href="/jadro-diecezka"
+            onClick={unlockScrolling}
             target="_self"
             className="border-b-[#3b3b3b] border-b w-full my-5"
           >
@@ -258,6 +267,7 @@ export default function Header() {
           </Link>
           <Link
             href="/partneri"
+            onClick={unlockScrolling}
             target="_self"
             className="border-b-[#3b3b3b] border-b w-full my-5"
           >
