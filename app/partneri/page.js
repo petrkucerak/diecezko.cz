@@ -15,8 +15,7 @@ export default function Partneri() {
           <ContainerTitle>Partneři Diecézka</ContainerTitle>
           <ContainerParagraph>
             Celé setkání by se nemohlo uskutečnit bez našich partnerů, kterým
-            jsme vděčni jak za finanční, tak i&nbsp;za materiální či duchovní
-            podporu.
+            jsme vděčni za finanční, za materiální a&nbsp;duchovní podporu.
           </ContainerParagraph>
           <div className="grid grid-cols-2 gap-6 w-full md:grid-cols-5 mt-8">
             <Link
