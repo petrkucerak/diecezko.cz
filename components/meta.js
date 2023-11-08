@@ -43,6 +43,7 @@ export const meta = {
   category: "non-profit",
   openGraph: {
     title: title,
+    url: homeUrl,
     description: description,
     images: [
       {
