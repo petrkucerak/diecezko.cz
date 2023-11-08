@@ -198,6 +198,9 @@ const workshops = [
       name: "Terezie Hurychová",
       jpgPath: "/assets/images/speakers/hurychova.jpg",
     },
+    social: {
+      web: "https://www.lekari-bez-hranic.cz/article/terezie-hurychova-denik-z-kolumbie",
+    },
   },
   {
     title: "Proč manželství?",
@@ -211,10 +214,11 @@ const workshops = [
     },
   },
   {
-    title: "",
+    title: "Jak zvolit to nejlepší? Aneb Boží vůle jako projev Boží lásky",
     type: "person",
     place: "BiGy",
-    descritpion: "",
+    descritpion:
+      "Každý náš den je plný rozhodování o&nbsp;malých nebo i&nbsp;větších věcech, a&nbsp;tak stojí za to zamyslet se nad tím, podle jakých kritérií se vlastně rozhodujeme, nebo zda se vůbec rozhodujeme. Má v&nbsp;našich volbách místo Bůh? Jak vnímáme Jeho vůli?",
     speaker: {
       name: "sr. Anna Bartoňová a sr. Markéta Trešlová ",
       jpgPath: "/assets/images/speakers/sestry.jpg",
@@ -239,6 +243,7 @@ const workshops = [
       '"Politika je především uměním setkávání, reflexí a&nbsp;akcí" říká papež František. Co tím má na mysli? Politika jako spoluodpovědnost za správu věcí veřejných. A&nbsp;jak složité je v&nbsp;politice uplatnit myšlenku sv.&nbsp;Augustýna "Odsuzuj hřích, ale miluj hříšníka"? Politika jako výzva i&nbsp;úkol, odpovědnost i&nbsp;poslání. O&nbsp;roli a&nbsp;ochotě mladých jít s&nbsp;kůží na trh a&nbsp;aktivně se zapojit do vytváření charakteru místního společenství i&nbsp;řešení zásadních témat celé naší společnosti. A&nbsp;hlavně se těším na besedu a&nbsp;dialog o&nbsp;tom, co mladé na dnešní politice na všech úrovních zajímá, na kritickou zpětnou vazbu, bez které se politik utopí v&nbsp;každodenní rutině.',
     speaker: {
       name: "Marek Výborný",
+      jpgPath: "/assets/images/speakers/vyborny.jpg",
     },
     social: {
       web: "https://www.kdu.cz/o-nas/nasi-lide/poslanci/vyborny",
@@ -297,6 +302,7 @@ const workshops = [
     descritpion: "",
     speaker: {
       name: "Michal Horák",
+      jpgPath: "/assets/images/speakers/horak.jpg",
     },
     social: {
       web: "https://www.michalhorak.eu/",
@@ -322,10 +328,11 @@ const workshops = [
     type: "workshop",
     // id: "prednaska-start",
     place: "BiGy",
-    descritpion: "",
+    descritpion:
+      "To naše rozhodnutí z&nbsp;nás dělají tím kým jsme. Ale podle čeho se rozhodujeme? Kompasem, který má vždy jasno, nebo kompasem Jacka Sparrowa, který chaosí dle aktuálního přání? Ježíš a&nbsp;sv.&nbsp;Pavel nám nabízejí řešení. Zvu Vás na workshop o&nbsp;lásce a&nbsp;jejích konkrétních vlastnostech. Naše společné setkání bude plné ukázek, her, videí, diskusi a&nbsp;sdílení s&nbsp;přesahem do osobního života, vztazích, leadershipu, animátorství…",
     speaker: {
       name: "David Peter Palušák",
-      // jpgPath: "/assets/images/speakers/votava.jpg",
+      jpgPath: "/assets/images/speakers/palusak.jpg",
     },
     social: {
       web: "https://5o4u.com/",
