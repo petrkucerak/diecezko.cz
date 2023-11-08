@@ -7,8 +7,9 @@ export default function manifest() {
     description: meta.description,
     start_url: "/",
     display: "standalone",
-    background_color: "#fff",
+    background_color: "#000",
     scope: "/",
+    lang: "cs",
     theme_color: meta.themeColor,
     icons: [
       { src: "/icon-192.png", type: "image/png", sizes: "192x192" },
