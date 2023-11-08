@@ -22,7 +22,7 @@ import IconCustomTmm from "../images/tmm";
 export default function SpolecenstviInfo({ id, className }) {
   return (
     <Container className={className} id={id}>
-      <CardFeed>
+      {/* <CardFeed>
         <Link href="/jadro-diecezka" target="_self">
           <Button>
             <IconHeart stroke={1} className={`inline h-6 mr-2`} />
@@ -76,10 +76,10 @@ export default function SpolecenstviInfo({ id, className }) {
             BISTRO u dvou přátel
           </Button>
         </Link>
-      </CardFeed>
-      <ContainerH2 className={`w-full text-center !text-3xl`}>
+      </CardFeed> */}
+      {/* <ContainerH2 className={`w-full text-center !text-3xl`}>
         Často kladené otázky
-      </ContainerH2>
+      </ContainerH2> */}
       <FAQ />
       <ContainerH2 className={`w-full text-center`}>
         Tipy na další obsah
