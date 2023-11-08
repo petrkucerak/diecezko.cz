@@ -1,7 +1,7 @@
 const homeUrl = "https://diecezko.cz/";
 const title = "Diecézko";
 const description =
-  "Brožura pro Diecézní setkání mládeže v Hradci Králové pro rok 2023.";
+  "Brožura pro Diecézní setkání mládeže královehradecké diecéze, které začne společným programem v sobotu 25. listopadu v 9:30 ve Filharmonii. Těšte se také na hosty, workshopy, duchovní program či na závěrečnou mši svatou s biskupem v katedrále sv. Ducha.";
 const color = "#022960";
 
 export const meta = {
