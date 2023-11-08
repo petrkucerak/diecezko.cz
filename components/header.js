@@ -244,8 +244,7 @@ export default function Header() {
                   Studenecká kapela
                 </li>
               </Link>
-              <Link href="/veka" target="_self" className="w-full mt-4 text-xl">
-                onClick={unlockScrolling}
+              <Link href="/veka" onClick={unlockScrolling} target="_self" className="w-full mt-4 text-xl">
                 <li className="flex flex-row items-center">
                   <IconCustomVeka className="inline h-7 w-7 my-1 mr-2" />
                   Vesmírná kapela
