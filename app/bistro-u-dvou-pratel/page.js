@@ -92,40 +92,40 @@ export default async function BistroUDvouPratel() {
 const gallery = [
   {
     path: "/assets/images/bistro/bistro_01.jpg",
-    alt: "Tým BISTRO u dvou přátel",
+    alt: "Tým BISTRO u dvou přátel.",
   },
   {
     path: "/assets/images/bistro/bistro_02.jpg",
-    alt: "",
+    alt: "Croasanty na tácu z kuchyně BISTRA.",
   },
   {
     path: "/assets/images/bistro/bistro_03.jpg",
-    alt: "",
+    alt: "Bagety a jiné výtvory z kuchyně BISTRA.",
   },
   {
     path: "/assets/images/bistro/bistro_04.jpg",
-    alt: "",
+    alt: "Smetanový zákusek s jahodami.",
   },
 
   {
     path: "/assets/images/bistro/bistro_07.jpg",
-    alt: "",
+    alt: "Tým BISTRA při práci.",
   },
   {
     path: "/assets/images/bistro/bistro_08.jpg",
-    alt: "",
+    alt: "Muž vydávající jídlo.",
   },
 
   {
     path: "/assets/images/bistro/bistro_10.jpg",
-    alt: "",
+    alt: "Fotka části jídelny, kde se vydávají pokrmy.",
   },
   {
     path: "/assets/images/bistro/bistro_11.jpg",
-    alt: "",
+    alt: "Jídelna BISTRA.",
   },
   {
     path: "/assets/images/bistro/bistro_12.jpg",
-    alt: "",
+    alt: "Talíř s masem, salátem a přílohou od BISTRA u dvou přátel.",
   },
 ];
