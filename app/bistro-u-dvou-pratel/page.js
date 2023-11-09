@@ -32,12 +32,7 @@ export default async function BistroUDvouPratel() {
             (intelektovým znevýhodněním a<Nbsp />
             duševním onemocněním).
           </ContainerDescription>
-          <ContainerImage
-            jpgPath="/assets/images/spolecenstvi/bistro.jpg"
-            webpPath="/assets/images/spolecenstvi/bistro.webp"
-            altText="Tým BISTRO u dvou přátel"
-            className="w-full my-2"
-          />
+          <SwappingGallery images={gallery} />
           <ContainerH2>Poslání SKOKu do života</ContainerH2>
           <ContainerParagraph>
             Sociální podnik SKOK do života, o.p.s. provozuje na území Hradce
@@ -51,7 +46,6 @@ export default async function BistroUDvouPratel() {
             o&nbsp;spokojenost našich zákazníků.
           </ContainerParagraph>
           <ContainerParagraph>Přijďte na kávičku!</ContainerParagraph>
-          <SwappingGallery images={gallery} />
           <ContainerH2>Kontakt</ContainerH2>
           <ContainerUl className={`!list-none !pl-0 mb-6`}>
             <ContainerLi>
@@ -96,6 +90,10 @@ export default async function BistroUDvouPratel() {
 }
 
 const gallery = [
+  {
+    path: "/assets/images/bistro/bistro_01.jpg",
+    alt: "Tým BISTRO u dvou přátel",
+  },
   {
     path: "/assets/images/bistro/bistro_02.jpg",
     alt: "",
