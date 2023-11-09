@@ -16,6 +16,7 @@ import {
   IconBrandYoutube,
   IconWorld,
 } from "@tabler/icons";
+import SwappingGallery from "../../components/swapping-gallery";
 export default async function DCZM() {
   return (
     <main className="ease-in-out duration-300 font-titilliumWeb">
@@ -36,12 +37,11 @@ export default async function DCZM() {
             >
               <i>Sdružením Jedlová, z. s.</i>
             </Link>{" "}
-            Jedná se v&nbsp;současné době o&nbsp;zapsaný spolek (původně
-            občanské sdružení), který vytváří programy pro mládež. Členy spolku
-            jsou mladí lidé, kteří zpravidla rok až dva stabilně žijí
-            v&nbsp;DCŽM Vesmír (tým) a&nbsp;zmiňované programy spolu
-            s&nbsp;mladými lidmi vytvářejí a&nbsp;realizují. Naší cílovou
-            skupinou je mládež od 14 do 26 let. Posláním DCŽM je vést
+            Jedná se v&nbsp;současné době o&nbsp;zapsaný spolek, který vytváří
+            programy pro mládež. Členy spolku jsou mladí lidé, kteří zpravidla
+            rok až dva stabilně žijí v&nbsp;DCŽM Vesmír (tým) a&nbsp;zmiňované
+            programy spolu s&nbsp;mladými lidmi vytvářejí a&nbsp;realizují. Naší
+            cílovou skupinou je mládež od 14 do 26 let. Posláním DCŽM je vést
             k&nbsp;opravdovým hodnotám (kvalitní mezilidské vztahy, nalezení a
             objevení sebe sama, pozitivní vztah k&nbsp;práci, zodpovědný přístup
             k&nbsp;materielním hodnotám a&nbsp;cit k&nbsp;přírodě).
@@ -59,12 +59,7 @@ export default async function DCZM() {
             hvězdného prostoru. Hvězdy jsou vidět od obzoru k&nbsp;obzoru. Název
             Vesmír se nám prostě líbil a&nbsp;líbí.
           </ContainerParagraph>
-          <ContainerImage
-            jpgPath="/assets/images/spolecenstvi/dczm-vesmir-matous.jpg"
-            webpPath="/assets/images/spolecenstvi/dczm-vesmir-matous.webp"
-            altText="Tým DCŽM Vesmír"
-            className="w-full my-2"
-          />
+          <SwappingGallery images={gallery} />
           <ContainerH2>Kontakt</ContainerH2>
           <ContainerUl className={`!list-none !pl-0 mb-6`}>
             <ContainerLi>
@@ -119,3 +114,19 @@ export default async function DCZM() {
     </main>
   );
 }
+
+const gallery = [
+  { path: "/assets/images/vesmir/vesmir_00.jpg", alt: "" },
+  { path: "/assets/images/vesmir/vesmir_01.jpg", alt: "" },
+  { path: "/assets/images/vesmir/vesmir_02.jpg", alt: "" },
+  { path: "/assets/images/vesmir/vesmir_03.jpg", alt: "" },
+  { path: "/assets/images/vesmir/vesmir_04.jpg", alt: "" },
+  { path: "/assets/images/vesmir/vesmir_05.jpg", alt: "" },
+  { path: "/assets/images/vesmir/vesmir_06.jpg", alt: "" },
+  { path: "/assets/images/vesmir/vesmir_07.jpg", alt: "" },
+  { path: "/assets/images/vesmir/vesmir_08.jpg", alt: "" },
+  { path: "/assets/images/vesmir/vesmir_09.jpg", alt: "" },
+  { path: "/assets/images/vesmir/vesmir_10.jpg", alt: "" },
+  { path: "/assets/images/vesmir/vesmir_11.jpg", alt: "" },
+  { path: "/assets/images/vesmir/vesmir_12.jpg", alt: "" },
+];
