@@ -72,7 +72,7 @@ export default function DiecezkoInfo({ id, className }) {
             </button>
           </Link>
           <Link
-            href=""
+            href="/"
             // rel="document"
             // download="dcmhk23"
             target="_blank"
