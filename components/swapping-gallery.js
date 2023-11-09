@@ -26,12 +26,13 @@ export default function SwappingGallery({ images }) {
         // install Swiper modules
         modules={[Navigation, Pagination, Mousewheel, Keyboard]}
         slidesPerView={1}
+        spaceBetween={20}
         navigation={true}
         pagination={{ clickable: true, dynamicBullets: true }}
         cssMode={true}
         mousewheel={true}
         keyboard={true}
-        className="rounded-2xl"
+        // className="rounded-2xl"
       >
         {images.map((img) => {
           return (
