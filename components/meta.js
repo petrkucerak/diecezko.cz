@@ -65,7 +65,7 @@ export const meta = {
   },
   appleWebApp: {
     title: title,
-    statusBarStyle: "black-translucent",
+    // statusBarStyle: "black-translucent", // app is not optimalized for this option
     startupImage: [
       {
         url: "/assets/startup/apple-splash-2048-2732.jpg",

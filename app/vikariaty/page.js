@@ -17,12 +17,11 @@ export default async function Vikariaty() {
           <ContainerTitle>Vikariáty</ContainerTitle>
           <ContainerDescription>
             Vikariát je skupina farností, které spolupracují na různých
-            aktivitách a projektech. Pro mládež je to příležitost poznat nové
-            lidi, zapojit se do dobrovolnictví, rozvíjet své duchovní život a
-            bavit se. Vikariát nabízí různé akce pro mládež, jako jsou setkání,
-            duchovní obnovy, poutě, sportovní turnaje nebo festivaly. Na
-            vikariátku se můžeš cítit jako součást velké rodiny, která tě
-            podporuje a inspiruje.
+            aktivitách a&nbsp;projektech. Pro mládež je to příležitost poznat
+            nové lidi, zapojit se do dobrovolnictví, rozvíjet své duchovní
+            život, bavit se a&nbsp;prožívat víru ve společenství. Vikariáty
+            nabízejí různé akce, jako jsou setkání, duchovní obnovy, poutě,
+            sportovní turnaje nebo festivaly.
           </ContainerDescription>
           <ContainerH2>Mapa vikariátů</ContainerH2>
           <ContainerDescription
@@ -71,31 +70,31 @@ export const vikariaty = [
       name: "Tereza Škarydová",
       jpgPath: "/assets/images/vikariaty/skarydova.jpg",
     },
-    person2: { 
+    person2: {
       name: "Pavel Venc",
       jpgPath: "/assets/images/vikariaty/venc.jpg",
     },
     social: {
       instagram: "https://www.instagram.com/vikariathb/",
       facebook: "https://www.facebook.com/groups/548072662069185/",
-      web: "https://vikariathb8.webnode.cz/"
+      web: "https://vikariathb8.webnode.cz/",
     },
   },
   {
     name: "Hradec Králové",
     // description:
     //   "Virům silnými hornina snad geologickou kladení souvisela úhlem. Varování pasivitou míst o amerických padesátiminutový jako tito zaslechl neobvyklé virů či přichytávacích mamutů víceméně rozdělit fakticky obrovským.",
-    priest: { 
+    priest: {
       name: "P. Filip Dušek",
-      jpgPath: "/assets/images/vikariaty/dusek.jpg"
+      jpgPath: "/assets/images/vikariaty/dusek.jpg",
     },
-    person1: { 
-      name: "Veronika Maříková", 
-      jpgPath: "/assets/images/vikariaty/marikova.jpg", 
+    person1: {
+      name: "Veronika Maříková",
+      jpgPath: "/assets/images/vikariaty/marikova.jpg",
     },
-    person2: { 
+    person2: {
       name: "Martin Rychtár",
-      jpgPath: "/assets/images/vikariaty/rychtar.jpg", 
+      jpgPath: "/assets/images/vikariaty/rychtar.jpg",
     },
     social: {
       instagram: "https://www.instagram.com/spolco_hk/",
@@ -106,18 +105,17 @@ export const vikariaty = [
     name: "Humpolec",
     // description:
     //   "Virům silnými hornina snad geologickou kladení souvisela úhlem. Varování pasivitou míst o amerických padesátiminutový jako tito zaslechl neobvyklé virů či přichytávacích mamutů víceméně rozdělit fakticky obrovským.",
-    priest: { 
+    priest: {
       name: "P. David Peter Palušák",
-      jpgPath: "/assets/images/vikariaty/palusak.jpg", 
+      jpgPath: "/assets/images/vikariaty/palusak.jpg",
     },
-    person1: { 
+    person1: {
       name: "Anna Daňková",
-      jpgPath: "/assets/images/vikariaty/dankova.jpg",  
-  
+      jpgPath: "/assets/images/vikariaty/dankova.jpg",
     },
-    person2: { 
-      name: "Anna Koubková", 
-      jpgPath: "/assets/images/vikariaty/koubkova.jpg", 
+    person2: {
+      name: "Anna Koubková",
+      jpgPath: "/assets/images/vikariaty/koubkova.jpg",
     },
     social: {
       instagram: "https://www.instagram.com/vikariathumpolec/",
@@ -128,17 +126,17 @@ export const vikariaty = [
     name: "Chrudim",
     // description:
     //   "Virům silnými hornina snad geologickou kladení souvisela úhlem. Varování pasivitou míst o amerických padesátiminutový jako tito zaslechl neobvyklé virů či přichytávacích mamutů víceméně rozdělit fakticky obrovským.",
-    priest: { 
+    priest: {
       name: "P. Vladimír Novák",
       jpgPath: "/assets/images/vikariaty/novak.jpg",
     },
-    person1: { 
+    person1: {
       name: "Anežka Ježková",
-      jpgPath: "/assets/images/vikariaty/jezkova.jpg"  
+      jpgPath: "/assets/images/vikariaty/jezkova.jpg",
     },
-    person2: { 
+    person2: {
       name: "Martina Marková",
-      jpgPath: "/assets/images/vikariaty/markova.jpg"  
+      jpgPath: "/assets/images/vikariaty/markova.jpg",
     },
     social: {
       instagram: "https://www.instagram.com/vikariat_chrudim/",
@@ -149,15 +147,15 @@ export const vikariaty = [
     name: "Jičín",
     // description:
     //   "Virům silnými hornina snad geologickou kladení souvisela úhlem. Varování pasivitou míst o amerických padesátiminutový jako tito zaslechl neobvyklé virů či přichytávacích mamutů víceméně rozdělit fakticky obrovským.",
-    person1: { 
+    person1: {
       name: "Jan Janoušek",
       jpgPath: "/assets/images/vikariaty/janousek.jpg",
     },
-    person2: { 
+    person2: {
       name: "Žofie Nováková",
       jpgPath: "/assets/images/vikariaty/novakova.jpg",
     },
-    person3: { 
+    person3: {
       name: "Martin Bičiště",
       jpgPath: "/assets/images/vikariaty/biciste.jpg",
     },
@@ -166,15 +164,15 @@ export const vikariaty = [
     name: "Jilemnice",
     // description:
     //   "Virům silnými hornina snad geologickou kladení souvisela úhlem. Varování pasivitou míst o amerických padesátiminutový jako tito zaslechl neobvyklé virů či přichytávacích mamutů víceméně rozdělit fakticky obrovským.",
-    priest: { 
+    priest: {
       name: "P. Jiří Jakoubek",
-      jpgPath: "/assets/images/jadro/jakoubek.jpg", 
+      jpgPath: "/assets/images/jadro/jakoubek.jpg",
     },
-    person1: { 
+    person1: {
       name: "Veronika Mejsnarová",
-      jpgPath: "/assets/images/vikariaty/mejsnarova.jpg",  
+      jpgPath: "/assets/images/vikariaty/mejsnarova.jpg",
     },
-    person2: { 
+    person2: {
       name: "Martina Urbanová",
       jpgPath: "/assets/images/vikariaty/urbanova.jpg",
     },
@@ -186,15 +184,15 @@ export const vikariaty = [
     name: "Kutná Hora - Poděbrady",
     // description:
     //   "Virům silnými hornina snad geologickou kladení souvisela úhlem. Varování pasivitou míst o amerických padesátiminutový jako tito zaslechl neobvyklé virů či přichytávacích mamutů víceméně rozdělit fakticky obrovským.",
-    priest: { 
+    priest: {
       name: "P. Dmytro Romanovský",
       jpgPath: "/assets/images/vikariaty/romanovsky.jpg",
     },
-    person1: { 
+    person1: {
       name: "Alžběta Veronika Cinerová",
-      jpgPath: "/assets/images/vikariaty/cinerova.jpg"  
+      jpgPath: "/assets/images/vikariaty/cinerova.jpg",
     },
-    person2: { 
+    person2: {
       name: "Josefína Pazderová",
       jpgPath: "/assets/images/vikariaty/pazderova.jpg",
     },
@@ -207,13 +205,12 @@ export const vikariaty = [
     name: "Litomyšl",
     // description:
     //   "Virům silnými hornina snad geologickou kladení souvisela úhlem. Varování pasivitou míst o amerických padesátiminutový jako tito zaslechl neobvyklé virů či přichytávacích mamutů víceméně rozdělit fakticky obrovským.",
-    person1: { 
+    person1: {
       name: "Nina Kysilková",
       jpgPath: "/assets/images/vikariaty/kysilkova.jpg",
     },
-    person2: { 
-      name: 
-      "Matyáš Juza",
+    person2: {
+      name: "Matyáš Juza",
       jpgPath: "/assets/images/vikariaty/juza.jpg",
     },
     social: {
@@ -225,11 +222,11 @@ export const vikariaty = [
     name: "Náchod",
     // description:
     //   "Virům silnými hornina snad geologickou kladení souvisela úhlem. Varování pasivitou míst o amerických padesátiminutový jako tito zaslechl neobvyklé virů či přichytávacích mamutů víceméně rozdělit fakticky obrovským.",
-    person1: { 
+    person1: {
       name: "Kateřina Vydláková",
       jpgPath: "/assets/images/vikariaty/vydlakova.jpg",
     },
-    person2: { 
+    person2: {
       name: "Michal Matyska",
       jpgPath: "/assets/images/vikariaty/matyska.jpg",
     },
@@ -243,13 +240,13 @@ export const vikariaty = [
     name: "Pardubice",
     // description:
     //   "Virům silnými hornina snad geologickou kladení souvisela úhlem. Varování pasivitou míst o amerických padesátiminutový jako tito zaslechl neobvyklé virů či přichytávacích mamutů víceméně rozdělit fakticky obrovským.",
-    priest: { 
+    priest: {
       name: "P. Piotr Antkiewicz",
-      jpgPath: "/assets/images/vikariaty/antkiewicz.jpg" 
+      jpgPath: "/assets/images/vikariaty/antkiewicz.jpg",
     },
-    person1: { 
+    person1: {
       name: "Kateřina Dvořáková a Maja Macková",
-      jpgPath: "/assets/images/vikariaty/dvorakovaamackova.jpg"  
+      jpgPath: "/assets/images/vikariaty/dvorakovaamackova.jpg",
     },
     social: {
       instagram: "https://www.instagram.com/vikariat_pardubice/",
@@ -260,13 +257,13 @@ export const vikariaty = [
     name: "Rychnov nad Kněžnou",
     description:
       "Jsme parta mladých katolíků, kteří se chtějí setkávat a&nbsp;sdílet spolu svoji víru v&nbsp;Boha. Tvoříme otevřené společenství pro všechny od 12 let a&nbsp;rádi mezi sebe přivítáme nové tváře.",
-    priest: { 
+    priest: {
       name: "P. Jan Barborka",
-      jpgPath: "/assets/images/vikariaty/barborka.jpg"  
+      jpgPath: "/assets/images/vikariaty/barborka.jpg",
     },
-    person1: { 
+    person1: {
       name: "Kateřina a Miloš Zahradníkovi",
-      jpgPath: "/assets/images/vikariaty/zahradnikovi.jpg",  
+      jpgPath: "/assets/images/vikariaty/zahradnikovi.jpg",
     },
     social: {
       facebook: "https://www.facebook.com/groups/284859234960044",
@@ -278,16 +275,16 @@ export const vikariaty = [
     name: "Trutnov",
     // description:
     //   "Virům silnými hornina snad geologickou kladení souvisela úhlem. Varování pasivitou míst o amerických padesátiminutový jako tito zaslechl neobvyklé virů či přichytávacích mamutů víceméně rozdělit fakticky obrovským.",
-    priest: { 
+    priest: {
       name: "jáhen Jiří Melichar",
-      jpgPath: "/assets/images/vikariaty/melichar.jpg",  
+      jpgPath: "/assets/images/vikariaty/melichar.jpg",
     },
-    person1: { 
+    person1: {
       name: "David Holubec",
-      jpgPath: "/assets/images/vikariaty/holubec.jpg",  
+      jpgPath: "/assets/images/vikariaty/holubec.jpg",
     },
-    person2: { 
-      name: "Tomáš Špelda", 
+    person2: {
+      name: "Tomáš Špelda",
       jpgPath: "/assets/images/vikariaty/spelda.jpg",
     },
     social: {
@@ -299,21 +296,21 @@ export const vikariaty = [
     name: "Ústí nad Orlicí",
     // description:
     //   "Virům silnými hornina snad geologickou kladení souvisela úhlem. Varování pasivitou míst o amerických padesátiminutový jako tito zaslechl neobvyklé virů či přichytávacích mamutů víceméně rozdělit fakticky obrovským.",
-    priest: { 
+    priest: {
       name: "P. Jan Pitřinec",
-      jpgPath: "/assets/images/vikariaty/pitrinec.jpg",  
+      jpgPath: "/assets/images/vikariaty/pitrinec.jpg",
     },
-    person1: { 
+    person1: {
       name: "Marie Kadová",
-      jpgPath: "/assets/images/vikariaty/kadova.jpg",  
+      jpgPath: "/assets/images/vikariaty/kadova.jpg",
     },
-    person2: { 
+    person2: {
       name: "Kateřina Kaucová",
       jpgPath: "/assets/images/vikariaty/kaucova.jpg",
     },
-    person3: { 
+    person3: {
       name: "doc. Jakub Šimek",
-      jpgPath: "/assets/images/vikariaty/simek.jpg",  
+      jpgPath: "/assets/images/vikariaty/simek.jpg",
     },
     social: {
       instagram: "https://www.instagram.com/vikariat_ustinadorlici/",
@@ -324,17 +321,17 @@ export const vikariaty = [
     name: "Žamberk",
     // description:
     //   "Virům silnými hornina snad geologickou kladení souvisela úhlem. Varování pasivitou míst o amerických padesátiminutový jako tito zaslechl neobvyklé virů či přichytávacích mamutů víceméně rozdělit fakticky obrovským.",
-    person1: { 
+    person1: {
       name: "Majda Hejná",
       jpgPath: "/assets/images/vikariaty/hejna.jpg",
     },
-    person2: { 
+    person2: {
       name: "Tereza Vávrová",
-      jpgPath: "/assets/images/vikariaty/vavrova.jpg",  
+      jpgPath: "/assets/images/vikariaty/vavrova.jpg",
     },
-    priest: { 
+    priest: {
       name: "P. Jakub Brabenec",
-      jpgPath: "/assets/images/vikariaty/brabenec.jpg",  
+      jpgPath: "/assets/images/vikariaty/brabenec.jpg",
     },
     social: {
       facebook: "https://www.facebook.com/groups/320795192164/",
