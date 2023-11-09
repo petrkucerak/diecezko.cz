@@ -35,7 +35,7 @@ export default function SwappingGallery({ images }) {
       >
         {images.map((img) => {
           return (
-            <SwiperSlide>
+            <SwiperSlide key={img.path}>
               <ContainerImage
                 jpgPath={img.path}
                 webpPath={img.path.replace(".jpg", ".webp")}
