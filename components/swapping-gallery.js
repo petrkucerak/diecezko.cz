@@ -32,6 +32,7 @@ export default function SwappingGallery({ images }) {
         cssMode={true}
         mousewheel={true}
         keyboard={true}
+        lazy={true}
         // className="rounded-2xl"
       >
         {images.map((img) => {
