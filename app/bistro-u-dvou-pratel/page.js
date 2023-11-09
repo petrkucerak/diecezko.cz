@@ -16,6 +16,7 @@ import {
   IconWorld,
 } from "@tabler/icons";
 import Nbsp from "../../components/format/nbsp";
+import SwappingGallery from "../../components/swapping-gallery";
 export default async function BistroUDvouPratel() {
   return (
     <main className="ease-in-out duration-300 font-titilliumWeb">
@@ -31,12 +32,7 @@ export default async function BistroUDvouPratel() {
             (intelektovým znevýhodněním a<Nbsp />
             duševním onemocněním).
           </ContainerDescription>
-          <ContainerImage
-            jpgPath="/assets/images/spolecenstvi/bistro.jpg"
-            webpPath="/assets/images/spolecenstvi/bistro.webp"
-            altText="Tým BISTRO u dvou přátel"
-            className="w-full my-2"
-          />
+          <SwappingGallery images={gallery} />
           <ContainerH2>Poslání SKOKu do života</ContainerH2>
           <ContainerParagraph>
             Sociální podnik SKOK do života, o.p.s. provozuje na území Hradce
@@ -92,3 +88,44 @@ export default async function BistroUDvouPratel() {
     </main>
   );
 }
+
+const gallery = [
+  {
+    path: "/assets/images/bistro/bistro_01.jpg",
+    alt: "Tým BISTRO u dvou přátel.",
+  },
+  {
+    path: "/assets/images/bistro/bistro_02.jpg",
+    alt: "Croasanty na tácu z kuchyně BISTRA.",
+  },
+  {
+    path: "/assets/images/bistro/bistro_03.jpg",
+    alt: "Bagety a jiné výtvory z kuchyně BISTRA.",
+  },
+  {
+    path: "/assets/images/bistro/bistro_04.jpg",
+    alt: "Smetanový zákusek s jahodami.",
+  },
+
+  {
+    path: "/assets/images/bistro/bistro_07.jpg",
+    alt: "Tým BISTRA při práci.",
+  },
+  {
+    path: "/assets/images/bistro/bistro_08.jpg",
+    alt: "Muž vydávající jídlo.",
+  },
+
+  {
+    path: "/assets/images/bistro/bistro_10.jpg",
+    alt: "Fotka části jídelny, kde se vydávají pokrmy.",
+  },
+  {
+    path: "/assets/images/bistro/bistro_11.jpg",
+    alt: "Jídelna BISTRA.",
+  },
+  {
+    path: "/assets/images/bistro/bistro_12.jpg",
+    alt: "Talíř s masem, salátem a přílohou od BISTRA u dvou přátel.",
+  },
+];
