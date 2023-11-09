@@ -8,6 +8,7 @@ import ContainerDescription from "../../components/layouts/container-description
 import IconCustomVikariatyMap from "../../components/images/vikariaty-map";
 import ContainerH2 from "../../components/layouts/container-h2";
 import Link from "next/link";
+import SwappingGallery from "../../components/swapping-gallery";
 export default async function Vikariaty() {
   return (
     <main className="ease-in-out duration-300 font-titilliumWeb">
@@ -23,6 +24,7 @@ export default async function Vikariaty() {
             nabízejí různé akce, jako jsou setkání, duchovní obnovy, poutě,
             sportovní turnaje nebo festivaly.
           </ContainerDescription>
+          <SwappingGallery images={gallery} />
           <ContainerH2>Mapa vikariátů</ContainerH2>
           <ContainerDescription
             className={`text-left w-full !font-light mt-0 text-sm`}
@@ -60,6 +62,37 @@ export default async function Vikariaty() {
     </main>
   );
 }
+
+const gallery = [
+  {
+    path: "/assets/images/vikariaty-skupinove/vikariaty_skupinove_02.jpg",
+    alt: "Skupinová fotka vikariátu Kutná Hora-Poděbrady",
+  },
+  {
+    path: "/assets/images/vikariaty-skupinove/vikariaty_skupinove_01.jpg",
+    alt: "Skupinová fotka vikariátu Havlíčkův Brod",
+  },
+  {
+    path: "/assets/images/vikariaty-skupinove/vikariaty_skupinove_03.jpg",
+    alt: "Skupinová fotka vikariátu Hradec Králové",
+  },
+  {
+    path: "/assets/images/vikariaty-skupinove/vikariaty_skupinove_04.jpg",
+    alt: "Skupinová fotka vikariátu Náchod",
+  },
+  {
+    path: "/assets/images/vikariaty-skupinove/vikariaty_skupinove_05.jpg",
+    alt: "Skupinová fotka vikariátu Litomyšl",
+  },
+  {
+    path: "/assets/images/vikariaty-skupinove/vikariaty_skupinove_06.jpg",
+    alt: "Skupinová fotka vikariátu Trutonov",
+  },
+  {
+    path: "/assets/images/vikariaty-skupinove/vikariaty_skupinove_07.jpg",
+    alt: "Skupinová fotka vikariátu Pardubice",
+  },
+];
 
 export const vikariaty = [
   {

@@ -30,7 +30,6 @@ export default async function DCM() {
             tento svět.
           </ContainerDescription>
           <ContainerImage
-            pngPath="/assets/images/spolecenstvi/diecezni-centrum-pro-mladez.png"
             jpgPath="/assets/images/spolecenstvi/diecezni-centrum-pro-mladez.jpg"
             webpPath="/assets/images/spolecenstvi/diecezni-centrum-pro-mladez.webp"
             altText="Tým DCM"
