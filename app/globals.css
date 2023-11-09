@@ -8,6 +8,14 @@
 }
 
 /* Swiper configuration */
+@media screen and (max-width: 768px) {
+  .swiper-button-prev {
+    display: none !important;
+  }
+  .swiper-button-next {
+    display: none !important;
+  }
+}
 .swiper-button-prev {
   color: #fff !important;
   scale: 0.75;
