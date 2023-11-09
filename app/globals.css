@@ -7,6 +7,19 @@
   color: #000;
 }
 
+/* Swiper configuration */
+.swiper-button-prev {
+  color: #fff !important;
+  scale: 0.75;
+}
+.swiper-button-next {
+  color: #fff !important;
+  scale: 0.75;
+}
+.swiper-pagination-bullet-active-main {
+  background: #fff !important;
+}
+
 /* Height of burger menu */
 .burger-menu-height {
   height: calc(100vh - 4rem);

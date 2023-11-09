@@ -16,6 +16,7 @@ import {
   IconWorld,
 } from "@tabler/icons";
 import Nbsp from "../../components/format/nbsp";
+import SwappingGallery from "../../components/swapping-gallery";
 export default async function BistroUDvouPratel() {
   return (
     <main className="ease-in-out duration-300 font-titilliumWeb">
@@ -50,6 +51,7 @@ export default async function BistroUDvouPratel() {
             o&nbsp;spokojenost našich zákazníků.
           </ContainerParagraph>
           <ContainerParagraph>Přijďte na kávičku!</ContainerParagraph>
+          <SwappingGallery images={gallery} />
           <ContainerH2>Kontakt</ContainerH2>
           <ContainerUl className={`!list-none !pl-0 mb-6`}>
             <ContainerLi>
@@ -92,3 +94,40 @@ export default async function BistroUDvouPratel() {
     </main>
   );
 }
+
+const gallery = [
+  {
+    path: "/assets/images/bistro/bistro_02.jpg",
+    alt: "",
+  },
+  {
+    path: "/assets/images/bistro/bistro_03.jpg",
+    alt: "",
+  },
+  {
+    path: "/assets/images/bistro/bistro_04.jpg",
+    alt: "",
+  },
+
+  {
+    path: "/assets/images/bistro/bistro_07.jpg",
+    alt: "",
+  },
+  {
+    path: "/assets/images/bistro/bistro_08.jpg",
+    alt: "",
+  },
+
+  {
+    path: "/assets/images/bistro/bistro_10.jpg",
+    alt: "",
+  },
+  {
+    path: "/assets/images/bistro/bistro_11.jpg",
+    alt: "",
+  },
+  {
+    path: "/assets/images/bistro/bistro_12.jpg",
+    alt: "",
+  },
+];
