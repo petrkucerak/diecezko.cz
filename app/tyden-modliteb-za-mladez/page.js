@@ -6,6 +6,7 @@ import ContainerDescription from "../../components/layouts/container-description
 import ContainerParagraph from "../../components/layouts/container-paragraph";
 import PageMain from "../../components/layouts/page-main";
 import ContainerH2 from "../../components/layouts/container-h2";
+import ContainerImage from "../../components/layouts/container-image";
 export default async function TydenModlitebZaMladez() {
   return (
     <main className="ease-in-out duration-300 font-titilliumWeb">
@@ -19,6 +20,11 @@ export default async function TydenModlitebZaMladez() {
             domů do údolí všedních dní odnesli tyto tři podněty -{" "}
             <strong>zářit, poslouchat a&nbsp;nebát se</strong>.
           </ContainerParagraph>
+          <ContainerImage
+            jpgPath="/assets/images/tmm.jpg"
+            webpPath="/assets/images/tmm.webp"
+            altText="Úvodní fotka k Týdnu modliteb za mládež"
+          />
           <ContainerParagraph>
             Mladý člověk je každý den pohlcován nepřeberným množstvím věcí,
             které jej odvádí od života s&nbsp;Kristem. Papež František
