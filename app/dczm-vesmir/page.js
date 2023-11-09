@@ -116,17 +116,44 @@ export default async function DCZM() {
 }
 
 const gallery = [
-  { path: "/assets/images/vesmir/vesmir_00.jpg", alt: "" },
-  { path: "/assets/images/vesmir/vesmir_01.jpg", alt: "" },
-  { path: "/assets/images/vesmir/vesmir_02.jpg", alt: "" },
-  { path: "/assets/images/vesmir/vesmir_03.jpg", alt: "" },
-  { path: "/assets/images/vesmir/vesmir_04.jpg", alt: "" },
-  { path: "/assets/images/vesmir/vesmir_05.jpg", alt: "" },
-  { path: "/assets/images/vesmir/vesmir_06.jpg", alt: "" },
-  { path: "/assets/images/vesmir/vesmir_07.jpg", alt: "" },
-  { path: "/assets/images/vesmir/vesmir_08.jpg", alt: "" },
-  { path: "/assets/images/vesmir/vesmir_09.jpg", alt: "" },
-  { path: "/assets/images/vesmir/vesmir_10.jpg", alt: "" },
-  { path: "/assets/images/vesmir/vesmir_11.jpg", alt: "" },
-  { path: "/assets/images/vesmir/vesmir_12.jpg", alt: "" },
+  {
+    path: "/assets/images/vesmir/vesmir_00.jpg",
+    alt: "Mladí lidé na půdě kostela sv. Matouše při svíčkách",
+  },
+  {
+    path: "/assets/images/vesmir/vesmir_01.jpg",
+    alt: "Skupinová fotka mládeže při hudebním týdnu před kostlem sv. Matouše.",
+  },
+  {
+    path: "/assets/images/vesmir/vesmir_02.jpg",
+    alt: "Skupina mladých modlícíc se ve tmě a držící se za ruce.",
+  },
+  {
+    path: "/assets/images/vesmir/vesmir_03.jpg",
+    alt: "Rytířská scénka z Tanečního týdne.",
+  },
+  { path: "/assets/images/vesmir/vesmir_04.jpg", alt: "Venkovní mše svatá" },
+  {
+    path: "/assets/images/vesmir/vesmir_05.jpg",
+    alt: "Jedna nesoucí svíčku před nejsvětší v monstranci.",
+  },
+  {
+    path: "/assets/images/vesmir/vesmir_06.jpg",
+    alt: "Flash mob na parkovišti na závěr Tanečáku",
+  },
+  {
+    path: "/assets/images/vesmir/vesmir_07.jpg",
+    alt: "Mladí na houpačkách u kostela sv. Matouše.",
+  },
+  {
+    path: "/assets/images/vesmir/vesmir_08.jpg",
+    alt: "Večerní sulueta lidí při hvězdách",
+  },
+  { path: "/assets/images/vesmir/vesmir_09.jpg", alt: "Klavírita a kytarista" },
+  { path: "/assets/images/vesmir/vesmir_10.jpg", alt: "Párty v jídelně." },
+  { path: "/assets/images/vesmir/vesmir_11.jpg", alt: "Kolečko v krbovce." },
+  {
+    path: "/assets/images/vesmir/vesmir_12.jpg",
+    alt: "Skupina mladých jde do kostela sv. Matouše.",
+  },
 ];
