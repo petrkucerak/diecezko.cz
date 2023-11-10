@@ -189,7 +189,7 @@ const workshops = [
     },
   },
   {
-    title: "",
+    title: "Na misích s Lékaři bez hranic",
     type: "person",
     place: "BiGy",
     descritpion:
