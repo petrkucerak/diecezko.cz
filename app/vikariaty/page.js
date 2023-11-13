@@ -238,6 +238,10 @@ export const vikariaty = [
     name: "Litomyšl",
     // description:
     //   "Virům silnými hornina snad geologickou kladení souvisela úhlem. Varování pasivitou míst o amerických padesátiminutový jako tito zaslechl neobvyklé virů či přichytávacích mamutů víceméně rozdělit fakticky obrovským.",
+    priest: {
+      name: "P. Mariusz Jan Robak",
+      jpgPath: "/assets/images/vikariaty/robak.jpg",
+    },
     person1: {
       name: "Nina Kysilková",
       jpgPath: "/assets/images/vikariaty/kysilkova.jpg",
