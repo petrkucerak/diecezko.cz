@@ -62,7 +62,7 @@ export default function FAQ() {
           target="_blank"
           className="underline"
         >
-          přihášky
+          přihlášky
         </Link>
         . Pokud by vás odpoledne přepadla mlsná, je možné zajít i&nbsp;do naší
         kavárny.
