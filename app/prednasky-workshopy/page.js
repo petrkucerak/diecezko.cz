@@ -299,7 +299,8 @@ const workshops = [
     title: "Povídání nejen o písničkách",
     type: "person",
     place: "BiGy",
-    descritpion: "",
+    descritpion:
+      "Michal Horák je písničkář, pedagog a&nbsp;hradecký rodák. Jeho písničky jsou populární napříč generacemi, o&nbsp;čemž svědčí přes 30 milionů zhlédnutí na YouTube, přes 120&nbsp;000 posluchačů měsíčně na Spotify anebo ocenění Zlatý Slavík v&nbsp;kategorii Objev roku 2021. S&nbsp;Michalem si budeme povídat nejen o&nbsp;jeho hudební cestě, ale i&nbsp;o&nbsp;životě, pedagogice, křesťanských a&nbsp;jiných otázkách apod.",
     speaker: {
       name: "Michal Horák",
       jpgPath: "/assets/images/speakers/horak.jpg",
@@ -317,7 +318,8 @@ const workshops = [
     type: "workshop",
     id: "workshop-start",
     place: "Katakomby, Nové Adalbertinum",
-    descritpion: "",
+    descritpion:
+      "Přijď strávit kreativní odpoledne. Můžeš se těšit například na výrobu a&nbsp;malování květináčů. Vše potřebné bude zajištěno. Těšíme se na Tvé ručičky!",
     speaker: {
       name: "Kikuš Řeháková",
       jpgPath: "/assets/images/speakers/kikus.jpg",
