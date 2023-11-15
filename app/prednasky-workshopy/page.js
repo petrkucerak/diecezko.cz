@@ -347,7 +347,7 @@ const workshops = [
     type: "sport",
     id: "sport-start",
     place: "Orlovna",
-    descritpion: "",
+    descritpion: "Srdečně zvu všechny příznivce sportu (i&nbsp;pohybu obecně) na společný fotbal a&nbsp;basketbal. Přijď prožít čas v&nbsp;atmosféře týmovosti, zábavy a&nbsp;Fair play a&nbsp;navázat bližší kontakt se svými vrstevníky z&nbsp;celé diecéze. Fotbal se bude odehrávat na NETRAVNATÉM venkovním hřišti (v&nbsp;případě špatného počasí se ruší) a&nbsp;basketbal v&nbsp;hale. Nezapomeň si sebou vzít sportovní oblečení a&nbsp;obuv (sálovou, čistou obuv do haly, na venkovní hřiště - turfy/venkovní obuv, NE KOPAČKY PROSÍM!). Pro vstup do haly je vhodná obuv podmínkou. Maximální kapacita na každý ze sportů je 24 lidí. Těším se na tebe!",
     speaker: {
       name: "Honza Klinger",
       jpgPath: "/assets/images/speakers/klinger.jpg",
