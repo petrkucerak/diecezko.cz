@@ -3044,7 +3044,7 @@ ics@^3.5.0:
     nanoid "^3.1.23"
     yup "^1.2.0"
 
-idb@^7.0.1:
+idb@^7.0.1, idb@^7.1.1:
   version "7.1.1"
   resolved "https://registry.yarnpkg.com/idb/-/idb-7.1.1.tgz#d910ded866d32c7ced9befc5bfdf36f572ced72b"
   integrity sha512-gchesWBzyvGHRO9W8tzUWFDycow5gwjvFKfyV9FF32Y7F50yZMp7mP+T2mJIWFx49zicqyC4uefHM17o6xKIVQ==
@@ -3570,7 +3570,15 @@ leaflet.locatecontrol@^0.79.0:
   resolved "https://registry.yarnpkg.com/leaflet.locatecontrol/-/leaflet.locatecontrol-0.79.0.tgz#0236b87c699a49f9ddb2f289941fbc0d3c3f8b62"
   integrity sha512-h64QIHFkypYdr90lkSfjKvPvvk8/b8UnP3m9WuoWdp5p2AaCWC0T1NVwyuj4rd5U4fBW3tQt4ppmZ2LceHMIDg==
 
-leaflet@^1.9.4:
+leaflet.offline@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/leaflet.offline/-/leaflet.offline-3.0.1.tgz#3e3eb21315f0f1a295df9dd88ff565c0fc687e40"
+  integrity sha512-sxGKa0j44bcdytU23bnPMkAPzfCo4mxA7oQeprLbIvkI1TsHO02askIRHPzWupeHA5IK0uUbyf52Ppi7KaRW1w==
+  dependencies:
+    idb "^7.1.1"
+    leaflet "^1.6.0"
+
+leaflet@^1.6.0, leaflet@^1.9.4:
   version "1.9.4"
   resolved "https://registry.yarnpkg.com/leaflet/-/leaflet-1.9.4.tgz#23fae724e282fa25745aff82ca4d394748db7d8d"
   integrity sha512-nxS1ynzJOmOlHp+iL3FyWqK89GtNL8U8rvlMOsQdTTssxZwCXh8N2NB3GDQOL+YR3XnWyZAxwQixURb+FA74PA==
