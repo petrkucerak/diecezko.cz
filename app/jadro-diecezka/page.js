@@ -195,7 +195,7 @@ export const jadro = [
   {
     name: "Šája Pavlová",
     description:
-      "Šája je vrchní manažerka úklidové čety a&nbsp;kromě každého odpadku vyhozeného do správného koše, ocení i&nbsp;každou pomocnou ruku.",
+      "Šája je vrchní manažerka úklidové čety a&nbsp;kromě každého odpadku vyhozeného do správného koše ocení i&nbsp;každou pomocnou ruku.",
     altText: "Profilová fotka Šája Pavlová",
     jpgPath: "/assets/images/jadro/saja.jpg",
     webpPath: "/assets/images/jadro/saja.webp",
