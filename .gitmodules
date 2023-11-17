@@ -1,3 +1,0 @@
-[submodule "lib/map/gdal2tiles-leaflet"]
-	path = lib/map/gdal2tiles-leaflet
-	url = https://github.com/commenthol/gdal2tiles-leaflet.git
