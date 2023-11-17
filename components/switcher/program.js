@@ -2,9 +2,11 @@ import Link from "next/link";
 import Container from "../layouts/container";
 import ParmIcon from "../layouts/parm-icon";
 import { IconArrowRight, IconCalendarPlus } from "@tabler/icons";
-import program from "./program.json";
+import { promises as fs } from "fs";
 
-export default function Program({ id, className }) {
+export default async function Program({ id, className }) {
+  const json = await fs.readFile("./program.json", "utf-8");
+  const program = JSON.parse(json);
   return (
     <Container className={className} id={id}>
       <ul>

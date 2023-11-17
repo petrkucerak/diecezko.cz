@@ -16,6 +16,7 @@ program.map((event) => {
         dir: "https://diecezko.cz/evzenova-cesta",
         sentBy: "evzen@diecezko.cz",
       },
+      
       location: event.place !== undefined ? event.place.name : undefined,
       geo:
         event.place !== undefined && event.place.coords !== undefined
