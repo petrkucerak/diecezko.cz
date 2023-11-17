@@ -5,9 +5,9 @@ PRODID:adamgibbons/ics
 METHOD:PUBLISH
 X-PUBLISHED-TTL:PT1H
 BEGIN:VEVENT
-UID:O1KQ5VmV44XfqdwpB7gPe
+UID:wUb1bOqzRKCaXLmx9X5yM
 SUMMARY:Obědová pauza
-DTSTAMP:20231117T085002Z
+DTSTAMP:20231117T085122Z
 DTSTART:20231125T110000Z
 DESCRIPTION:Při odchodu z dopoledního programu si kromě výběru workshopu ne
 	bo přednášky nezapomeňte vyzvednout i bagetu s pitíčkem. Bagety pro nás př

@@ -5,9 +5,9 @@ PRODID:adamgibbons/ics
 METHOD:PUBLISH
 X-PUBLISHED-TTL:PT1H
 BEGIN:VEVENT
-UID:qJzullYqL0FYC1iHBZxTM
+UID:8qPqVPw66-qB4bzfiIrYI
 SUMMARY:Mše svatá
-DTSTAMP:20231117T085002Z
+DTSTAMP:20231117T085122Z
 DTSTART:20231125T140000Z
 DESCRIPTION:Celý den zakončíme mší svatou s otcem biskupem v katedrále svat
 	ého Ducha. Mši svatou hudebně doprovodí Studenecká kapela.

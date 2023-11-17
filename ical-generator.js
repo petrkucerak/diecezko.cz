@@ -8,7 +8,7 @@ program.map((event) => {
     {
       title: event.name,
       url: "https://diecezko.cz/",
-      description: event.description,
+      description: event.description.replaceAll("&nbsp;", " "),
       // busyStatus: "FREE",
       location: event.place !== undefined ? event.place.name : undefined,
       geo:

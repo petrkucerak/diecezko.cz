@@ -5,9 +5,9 @@ PRODID:adamgibbons/ics
 METHOD:PUBLISH
 X-PUBLISHED-TTL:PT1H
 BEGIN:VEVENT
-UID:9NH2Ojh1XDCGsS8cW5yXk
+UID:9dPo91Z1qvnUG8wGndfTp
 SUMMARY:Program ve Filharmonii
-DTSTAMP:20231117T085002Z
+DTSTAMP:20231117T085122Z
 DTSTART:20231125T083000Z
 DESCRIPTION:Dopolední program prožijeme společně v budově Filharmonie. Může
 	te se těšit na režijní scénky\, svědectví\, hudební doprovod v podání VeKy

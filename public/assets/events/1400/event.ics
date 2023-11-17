@@ -5,13 +5,13 @@ PRODID:adamgibbons/ics
 METHOD:PUBLISH
 X-PUBLISHED-TTL:PT1H
 BEGIN:VEVENT
-UID:OgVtqaeMbCjxCBRhWDuer
+UID:UxCpLNGOJNnoFpqnTJhF-
 SUMMARY:Odpolední program
-DTSTAMP:20231117T085002Z
+DTSTAMP:20231117T085122Z
 DTSTART:20231125T130000Z
-DESCRIPTION:V&nbsp\;druhé části odpoledne můžete pokračovat ve sportování\,
-	 navštívit kavárnu na BiGy nebo si zajít na duchovní rozhovor či svátost s
-	míření.
+DESCRIPTION:V druhé části odpoledne můžete pokračovat ve sportování\, navšt
+	ívit kavárnu na BiGy nebo si zajít na duchovní rozhovor či svátost smíření
+	.
 URL:https://diecezko.cz/
 DURATION:PT60M
 END:VEVENT
