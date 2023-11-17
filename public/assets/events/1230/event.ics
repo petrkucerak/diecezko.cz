@@ -5,13 +5,13 @@ PRODID:adamgibbons/ics
 METHOD:PUBLISH
 X-PUBLISHED-TTL:PT1H
 BEGIN:VEVENT
-UID:tbtlDoemGBmhlaNI1B6aK
+UID:0tcsIEpfy_C0XJmPup1Gc
 SUMMARY:Přednášky\, workshopy
-DTSTAMP:20231117T083807Z
+DTSTAMP:20231117T085002Z
 DTSTART:20231125T113000Z
 DESCRIPTION:Odpoledne si můžete vybrat z široké nabídky přednášek\, několik
 	a workshopů nebo si jít zasportovat.
 URL:https://diecezko.cz/
-DURATION:PT
+DURATION:PT90M
 END:VEVENT
 END:VCALENDAR

@@ -41,7 +41,12 @@ export default function Program({ id, className }) {
                 dangerouslySetInnerHTML={{ __html: p.description }}
               />
               <div className="flex flex-row flex-wrap items-center justify-start mt-2">
-                <Link href={`/`}>
+                <Link
+                  target="_blank"
+                  title={`Přidat ${p.name} do kalendáře`}
+                  rel="document"
+                  href={`/assets/events/${p.time.replace(":", "")}/event.ics`}
+                >
                   <button className="border border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-3 cursor-pointer text-base flex flex-row items-center justify-center mb-2 mr-2">
                     <IconCalendarPlus className="inline" stroke={1.5} />
                   </button>

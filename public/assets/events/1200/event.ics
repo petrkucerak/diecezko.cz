@@ -5,14 +5,14 @@ PRODID:adamgibbons/ics
 METHOD:PUBLISH
 X-PUBLISHED-TTL:PT1H
 BEGIN:VEVENT
-UID:7cRAgDYyneA0_un09D8J8
+UID:O1KQ5VmV44XfqdwpB7gPe
 SUMMARY:Obědová pauza
-DTSTAMP:20231117T083807Z
+DTSTAMP:20231117T085002Z
 DTSTART:20231125T110000Z
 DESCRIPTION:Při odchodu z dopoledního programu si kromě výběru workshopu ne
 	bo přednášky nezapomeňte vyzvednout i bagetu s pitíčkem. Bagety pro nás př
 	ipravilo BISTRO u dvou přátel. Dobrou chuť!
 URL:https://diecezko.cz/
-DURATION:PT
+DURATION:PT30M
 END:VEVENT
 END:VCALENDAR
