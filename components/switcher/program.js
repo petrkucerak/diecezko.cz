@@ -76,7 +76,7 @@ export const program = [
     name: "Příjezd a registrace",
     time: "9:00",
     description:
-      "Při příjezdu na setkání prosím navštivte registraci, kterou najdete ve vstupu do Filharmonie. Dostanete zde náremek v barvě svého vikariátu. Už tušíte jaké to bude?",
+      "Při příjezdu na setkání prosím navštivte registraci, kterou najdete ve vstupu do Filharmonie. Dostanete zde náramek v barvě svého vikariátu. Už tušíte, jaká to bude?",
     icons: ["registration"],
     place: {
       name: "Filhramonie Hradec Králové",
@@ -88,7 +88,7 @@ export const program = [
     name: "Program ve Filharmonii",
     time: "9:30",
     description:
-      "Dopolední program prožijeme společně v budově Filharmonie. Můžete se těšit na režijní scénky, svědectví, hudební doprovod v podání VeKy a mnoho dalšího.",
+      "Dopolední program prožijeme společně v budově Filharmonie. Můžete se těšit na režijní scénky, svědectví, hudební doprovod v podání kapely VeKa a mnoho dalšího.",
     icons: ["theater", "music", "pray", "person"],
     link: "/program-ve-filharmonii",
     place: {
@@ -109,7 +109,7 @@ export const program = [
     name: "Přednášky, workshopy",
     time: "12:30",
     description:
-      "Odpoledne si můžete vybrat z široké nabídky přednášek, několika workshopů nebo si jít zasportovat.",
+      "Odpoledne si můžete vybrat z široké nabídky přednášek, několika workshopů, nebo si jít zasportovat.",
     icons: ["person", "workshop", "sport"],
     link: "/prednasky-workshopy",
   },
@@ -125,7 +125,7 @@ export const program = [
     name: "Mše svatá",
     time: "15:00",
     description:
-      "Celý den zakončíme mší svatou s otcem biskupem v katedrále svatého Ducha. Mši svatou hudebně doprovodí Studenecká kapela.",
+      "Celý den zakončíme mší svatou s otcem biskupem v katedrále svatého Ducha. Bohoslužbu hudebně doprovodí Studenecká kapela.",
     icons: ["music", "pray"],
     link: "/mse-svata",
     place: {

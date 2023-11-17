@@ -42,9 +42,9 @@ export default async function DCZM() {
             rok až dva stabilně žijí v&nbsp;DCŽM Vesmír (tým) a&nbsp;zmiňované
             programy spolu s&nbsp;mladými lidmi vytvářejí a&nbsp;realizují. Naší
             cílovou skupinou je mládež od 14 do 26 let. Posláním DCŽM je vést
-            k&nbsp;opravdovým hodnotám (kvalitní mezilidské vztahy, nalezení a
+            k&nbsp;opravdovým hodnotám, jako jsou kvalitní mezilidské vztahy, nalezení a
             objevení sebe sama, pozitivní vztah k&nbsp;práci, zodpovědný přístup
-            k&nbsp;materielním hodnotám a&nbsp;cit k&nbsp;přírodě).
+            k&nbsp;materielním hodnotám a&nbsp;cit k&nbsp;přírodě.
           </ContainerDescription>
           <ContainerImage
             jpgPath="/assets/images/spolecenstvi/dczm-vesmir.jpg"
@@ -55,7 +55,7 @@ export default async function DCZM() {
           <ContainerParagraph>
             Název Vesmír jsme „podědili po předcích“. Chata (zařízení) nese
             jméno Vesmír již od 60. let minulého století. A když se zde člověk
-            za jasné noci podívá na oblohu, tak si připadá jako uprostřed
+            za jasné noci podívá na oblohu, tak si opravdu připadá jako uprostřed
             hvězdného prostoru. Hvězdy jsou vidět od obzoru k&nbsp;obzoru. Název
             Vesmír se nám prostě líbil a&nbsp;líbí.
           </ContainerParagraph>

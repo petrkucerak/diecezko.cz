@@ -42,7 +42,7 @@ export default async function VeKa() {
           />
           <ContainerParagraph>
             VeKa vznikla v roce 2000 a navazuje na tradici diecézních kapel. Od
-            té doby kapelou prošlo přes dvě stovky členů tvořících několik
+            té doby kapelou prošly přes dvě stovky členů tvořících několik
             generací, které dohromady vydaly 6 alb. Naše - v pořadí již pátá -
             generace působí od roku 2019. Natočili jsme tři videoklipy,
             doprovodili dvě Diecézní setkání mládeže a nespočet mší v různých

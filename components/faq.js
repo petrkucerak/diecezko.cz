@@ -17,7 +17,7 @@ export default function FAQ() {
       <FaqBox question={`Od kolika let můžu jet na Diecézko?`} icon={`kid`}>
         Doporučený věk k&nbsp;účasti na setkání je{" "}
         <strong>od 14 do 26 let</strong> (mládež ve věku od 12 do 13 let pouze
-        s&nbsp;doprovodem staršího sourozence, nebo kamaráda). Pokud nesplňuješ
+        s&nbsp;doprovodem staršího sourozence nebo kamaráda). Pokud nesplňuješ
         horní hranici, neváhej se přihlásit do přípravného týmu:{" "}
         <Link
           className="underline"
@@ -53,8 +53,8 @@ export default function FAQ() {
         programu se půjde společně. Neboj, nezabloudíš 😉
       </FaqBox>
       <FaqBox question={`Jak bude zajištěno stravování?`} icon={`chef`}>
-        Doporučujeme si s&nbsp;sebou přivézt svačinku. Pro všechny, kteří se
-        přihlásili, <strong>bude k&nbsp;obědu bageta</strong>. Pokud máte dietu,
+        Doporučujeme si s&nbsp;sebou přivézt svačinku. Pro všechny, kteří se včas 
+          přihlásili, <strong>bude k&nbsp;obědu bageta</strong>. Pokud máte dietu,
         napište nám do{" "}
         <Link
           href="https://forms.gle/aMQor8ARxaULdD8t7"
