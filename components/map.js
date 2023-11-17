@@ -10,7 +10,7 @@ export default function Map() {
       center={[50.213, 15.832]}
       zoom={16}
       scrollWheelZoom={true}
-      className="w-screen h-[70vh] diseable-map-selection"
+      className="w-screen h-[70vh] diseable-map-selection z-0"
     >
       <TileLayer url="https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png" />
       <MapLocation />
