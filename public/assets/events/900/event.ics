@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+PRODID:adamgibbons/ics
+METHOD:PUBLISH
+X-PUBLISHED-TTL:PT1H
+BEGIN:VEVENT
+UID:PbDbIV_nkR7WVTXg4Kr5Y
+SUMMARY:Příjezd a registrace
+DTSTAMP:20231117T085747Z
+DTSTART:20231125T080000Z
+DESCRIPTION:Při příjezdu na setkání prosím navštivte registraci\, kterou na
+	jdete ve vstupu do Filharmonie. Dostanete zde náremek v barvě svého vikari
+	átu. Už tušíte jaké to bude?
+URL:https://diecezko.cz/
+GEO:50.2138117;15.8291964
+LOCATION:Filhramonie Hradec Králové
+ORGANIZER;DIR="https://diecezko.cz/evzenova-cesta";SENT-BY="MAILTO:evzen@di
+	ecezko.cz";CN=Pan Holub:MAILTO:evzen@diecezko.cz
+DURATION:PT30M
+END:VEVENT
+END:VCALENDAR
