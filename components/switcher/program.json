@@ -1,0 +1,93 @@
+[
+   {
+      "name": "Příjezd a registrace",
+      "time": "9:00",
+      "duration": 30,
+      "description": "Při příjezdu na setkání prosím navštivte registraci, kterou najdete ve vstupu do Filharmonie. Dostanete zde náremek v barvě svého vikariátu. Už tušíte jaké to bude?",
+      "icons": [
+         "registration"
+      ],
+      "place": {
+         "name": "Filhramonie Hradec Králové",
+         "coords": {
+            "x": "50.2138117",
+            "y": "15.8291964"
+         },
+         "link": "https://mapy.cz/s/dedasenuge"
+      }
+   },
+   {
+      "name": "Program ve Filharmonii",
+      "time": "9:30",
+      "duration": 150,
+      "description": "Dopolední program prožijeme společně v budově Filharmonie. Můžete se těšit na režijní scénky, svědectví, hudební doprovod v podání VeKy a mnoho dalšího.",
+      "icons": [
+         "theater",
+         "music",
+         "pray",
+         "person"
+      ],
+      "link": "/program-ve-filharmonii",
+      "place": {
+         "name": "Filhramonie Hradec Králové",
+         "coords": {
+            "x": "50.2138117",
+            "y": "15.8291964"
+         },
+         "link": "https://mapy.cz/s/dedasenuge"
+      }
+   },
+   {
+      "name": "Obědová pauza",
+      "time": "12:00",
+      "duration": 30,
+      "description": "Při odchodu z dopoledního programu si kromě výběru workshopu nebo přednášky nezapomeňte vyzvednout i bagetu s pitíčkem. Bagety pro nás připravilo BISTRO u dvou přátel. Dobrou chuť!",
+      "link": "/bistro-u-dvou-pratel",
+      "icons": [
+         "food"
+      ]
+   },
+   {
+      "name": "Přednášky, workshopy",
+      "time": "12:30",
+      "duration": 90,
+      "description": "Odpoledne si můžete vybrat z široké nabídky přednášek, několika workshopů nebo si jít zasportovat.",
+      "icons": [
+         "person",
+         "workshop",
+         "sport"
+      ],
+      "link": "/prednasky-workshopy"
+   },
+   {
+      "name": "Odpolední program",
+      "time": "14:00",
+      "duration": 60,
+      "description": "V&nbsp;druhé části odpoledne můžete pokračovat ve sportování, navštívit kavárnu na BiGy nebo si zajít na duchovní rozhovor či svátost smíření.",
+      "icons": [
+         "pray",
+         "cafe",
+         "sport"
+      ],
+      "link": "/odpoledni-program"
+   },
+   {
+      "name": "Mše svatá",
+      "time": "15:00",
+      "duration": 60,
+      "description": "Celý den zakončíme mší svatou s otcem biskupem v katedrále svatého Ducha. Mši svatou hudebně doprovodí Studenecká kapela.",
+      "icons": [
+         "music",
+         "pray"
+      ],
+      "link": "/mse-svata",
+      "place": {
+         "name": "Katedrála Svatého Ducha",
+         "coords": {
+            "x": "50.2087878",
+            "y": "15.8310917"
+         },
+         "link": "https://mapy.cz/s/bezegujuje"
+      }
+   }
+]
