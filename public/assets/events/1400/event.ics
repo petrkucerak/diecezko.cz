@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+PRODID:adamgibbons/ics
+METHOD:PUBLISH
+X-PUBLISHED-TTL:PT1H
+BEGIN:VEVENT
+UID:FcvUbV4SnQWcxE3HS06Th
+SUMMARY:Odpolední program
+DTSTAMP:20231117T083807Z
+DTSTART:20231125T130000Z
+DESCRIPTION:V&nbsp\;druhé části odpoledne můžete pokračovat ve sportování\,
+	 navštívit kavárnu na BiGy nebo si zajít na duchovní rozhovor či svátost s
+	míření.
+URL:https://diecezko.cz/
+DURATION:PT
+END:VEVENT
+END:VCALENDAR

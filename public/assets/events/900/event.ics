@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+PRODID:adamgibbons/ics
+METHOD:PUBLISH
+X-PUBLISHED-TTL:PT1H
+BEGIN:VEVENT
+UID:6ptTpb8LGYlaogRrun3DO
+SUMMARY:Příjezd a registrace
+DTSTAMP:20231117T083807Z
+DTSTART:20231125T080000Z
+DESCRIPTION:Při příjezdu na setkání prosím navštivte registraci\, kterou na
+	jdete ve vstupu do Filharmonie. Dostanete zde náremek v barvě svého vikari
+	átu. Už tušíte jaké to bude?
+URL:https://diecezko.cz/
+GEO:50.2138117;15.8291964
+LOCATION:Filhramonie Hradec Králové
+DURATION:PT
+END:VEVENT
+END:VCALENDAR

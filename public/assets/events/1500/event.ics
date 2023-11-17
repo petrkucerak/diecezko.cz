@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+PRODID:adamgibbons/ics
+METHOD:PUBLISH
+X-PUBLISHED-TTL:PT1H
+BEGIN:VEVENT
+UID:Wv_oSou4Bbf1GdlYJOkqO
+SUMMARY:Mše svatá
+DTSTAMP:20231117T083807Z
+DTSTART:20231125T140000Z
+DESCRIPTION:Celý den zakončíme mší svatou s otcem biskupem v katedrále svat
+	ého Ducha. Mši svatou hudebně doprovodí Studenecká kapela.
+URL:https://diecezko.cz/
+GEO:50.2087878;15.8310917
+LOCATION:Katedrála Svatého Ducha
+DURATION:PT
+END:VEVENT
+END:VCALENDAR
