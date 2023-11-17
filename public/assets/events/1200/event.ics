@@ -5,14 +5,16 @@ PRODID:adamgibbons/ics
 METHOD:PUBLISH
 X-PUBLISHED-TTL:PT1H
 BEGIN:VEVENT
-UID:wUb1bOqzRKCaXLmx9X5yM
+UID:KqMJaTf5DNNiBpRTzGuRQ
 SUMMARY:Obědová pauza
-DTSTAMP:20231117T085122Z
+DTSTAMP:20231117T085747Z
 DTSTART:20231125T110000Z
 DESCRIPTION:Při odchodu z dopoledního programu si kromě výběru workshopu ne
 	bo přednášky nezapomeňte vyzvednout i bagetu s pitíčkem. Bagety pro nás př
 	ipravilo BISTRO u dvou přátel. Dobrou chuť!
 URL:https://diecezko.cz/
+ORGANIZER;DIR="https://diecezko.cz/evzenova-cesta";SENT-BY="MAILTO:evzen@di
+	ecezko.cz";CN=Pan Holub:MAILTO:evzen@diecezko.cz
 DURATION:PT30M
 END:VEVENT
 END:VCALENDAR

@@ -10,6 +10,12 @@ program.map((event) => {
       url: "https://diecezko.cz/",
       description: event.description.replaceAll("&nbsp;", " "),
       // busyStatus: "FREE",
+      organizer: {
+        name: "Pan Holub",
+        email: "evzen@diecezko.cz",
+        dir: "https://diecezko.cz/evzenova-cesta",
+        sentBy: "evzen@diecezko.cz",
+      },
       location: event.place !== undefined ? event.place.name : undefined,
       geo:
         event.place !== undefined && event.place.coords !== undefined

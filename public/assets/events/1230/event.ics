@@ -5,13 +5,15 @@ PRODID:adamgibbons/ics
 METHOD:PUBLISH
 X-PUBLISHED-TTL:PT1H
 BEGIN:VEVENT
-UID:PbuKxEWtUVZZu7VoKedhg
+UID:JaTtyEGI4IyS7fAMDriTu
 SUMMARY:Přednášky\, workshopy
-DTSTAMP:20231117T085122Z
+DTSTAMP:20231117T085747Z
 DTSTART:20231125T113000Z
 DESCRIPTION:Odpoledne si můžete vybrat z široké nabídky přednášek\, několik
 	a workshopů nebo si jít zasportovat.
 URL:https://diecezko.cz/
+ORGANIZER;DIR="https://diecezko.cz/evzenova-cesta";SENT-BY="MAILTO:evzen@di
+	ecezko.cz";CN=Pan Holub:MAILTO:evzen@diecezko.cz
 DURATION:PT90M
 END:VEVENT
 END:VCALENDAR
