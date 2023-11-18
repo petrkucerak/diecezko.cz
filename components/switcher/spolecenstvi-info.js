@@ -18,6 +18,7 @@ import IconCustomSalas from "../images/salas";
 import IconCustomAdventniCesta from "../images/adventni-cesta";
 import FAQ from "../faq";
 import IconCustomTmm from "../images/tmm";
+import IconCustomDenikSracu from "../images/deniksracu";
 
 export default function SpolecenstviInfo({ id, className }) {
   return (
@@ -100,6 +101,12 @@ export default function SpolecenstviInfo({ id, className }) {
           <Button>
             <IconCustomTmm className={`inline h-6 mr-2`} />
             Týden modliteb za mládež
+          </Button>
+        </Link>
+        <Link href="/tyden-modliteb-za-mladez" className="">
+          <Button>
+            <IconCustomDenikSracu className={`inline h-6 mr-2`} />
+            Deník sráčů
           </Button>
         </Link>
       </CardFeed>
