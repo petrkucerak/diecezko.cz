@@ -6,7 +6,7 @@ export default function FAQ() {
   return (
     <FaqLayout>
       <FaqBox question={`Kde seženu zdravotní pomoc?`} icon={`medical`}>
-        V případě jakéhokoliv problému se neváhej obrátit na naši{" "}
+        V případě jakéhokoliv zdravotního problému se neváhej obrátit na naši{" "}
         <strong>zdravotnickou službu</strong>, kterou poznáš podle oblečení
         a&nbsp;dostihneš ji na tel.{" "}
         <Link href={`tel:+420737761893`} className="underline">
