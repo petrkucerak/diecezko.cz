@@ -3,12 +3,18 @@ import { useMap } from "react-leaflet";
 export default function MapPoints() {
   const map = useMap();
   places.map((p) => {
+    const pointPopup = L.popup({
+      keepInView: true,
+      closeButton: false,
+      className: "",
+    }).setContent(`<h2 class="font-titilliumWeb font-semibold text-lg">${p.name}</h2><p class="font-titilliumWeb">${p.content}</p>`);
     L.marker([p.coords.x, p.coords.y], {
       // icon: toiletIcon,
       title: p.name,
       alt: `${p.name}`,
     })
       .addTo(map)
+      .bindPopup(pointPopup)
       .on("click", (e) => {
         console.log(e);
       });
@@ -50,11 +56,11 @@ const places = [
     content: "",
   },
   {
-   coords: {
-     x: 50.2069553,
-     y: 15.8349681,
-   },
-   name: "Orlovna",
-   content: "",
- },
+    coords: {
+      x: 50.2069553,
+      y: 15.8349681,
+    },
+    name: "Orlovna",
+    content: "",
+  },
 ];
