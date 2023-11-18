@@ -67,11 +67,6 @@ export default function sitemap() {
       changeFrequency: "yearly",
     },
     {
-      url: "https://diecezko.cz/odpoledni-program",
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-    },
-    {
       url: "https://diecezko.cz/mse-svata",
       lastModified: new Date(),
       changeFrequency: "yearly",

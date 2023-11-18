@@ -45,7 +45,15 @@
       "link": "/bistro-u-dvou-pratel",
       "icons": [
          "food"
-      ]
+      ],
+      "place": {
+         "name": "Filhramonie Hradec Králové",
+         "coords": {
+            "x": "50.2138117",
+            "y": "15.8291964"
+         },
+         "link": "https://mapy.cz/s/dedasenuge"
+      }
    },
    {
       "name": "Přednášky, workshopy",
@@ -60,16 +68,21 @@
       "link": "/prednasky-workshopy"
    },
    {
-      "name": "Odpolední program",
+      "name": "Kavárna a chill zóna",
       "time": "14:00",
       "duration": 60,
-      "description": "V&nbsp;druhé části odpoledne můžete pokračovat ve sportování, navštívit kavárnu na BiGy nebo si zajít na duchovní rozhovor či svátost smíření.",
+      "description": "V&nbsp;kavárně a&nbsp;relaxační zóně na BiGy si můžeš pochutnat na dobré mňamce, zahřát se teplým pitím, posedět a&nbsp;užít si klidný rozhovor nebo si zahrát stolní hry. Pro občerstvení si nezapomeň vzít drobný peníz.",
       "icons": [
-         "pray",
-         "cafe",
-         "sport"
+         "cafe"
       ],
-      "link": "/odpoledni-program"
+      "place": {
+         "name": "BiGy (Biskupské Gymnázium)",
+         "coords": {
+            "x": "50.2062919",
+            "y": "15.8337133"
+         },
+         "link": "https://mapy.cz/s/dedasenuge"
+      }
    },
    {
       "name": "Mše svatá",

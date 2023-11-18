@@ -10,9 +10,10 @@ export default function FAQ() {
         zaplatit na recepci ve Filharmonii při dopoledním programu.
       </FaqBox>
       <FaqBox question={`Co si sbalit s sebou?`} icon={`luggage`}>
-        Sváču, láhev s&nbsp;pitím, doporučený příspěvek (200,-Kč) a&nbsp;peníze
-        na svoji dopravu. Doporučujeme si také vzít něco teplého na závěrečnou
-        mši svatou do katedrály. Může být zima.
+        Sváču, láhev s&nbsp;pitím, doporučený příspěvek (200,-Kč), peníze na
+        svoji dopravu a&nbsp;drobný peníz v&nbsp;případě zájmu zajít do kavárny
+        na BiGy. Doporučujeme si také vzít něco teplého na závěrečnou mši svatou
+        do katedrály. Může být zima.
       </FaqBox>
       <FaqBox question={`Od kolika let můžu jet na Diecézko?`} icon={`kid`}>
         Doporučený věk k&nbsp;účasti na setkání je{" "}
