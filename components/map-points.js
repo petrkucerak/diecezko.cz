@@ -8,7 +8,7 @@ export default function MapPoints() {
       closeButton: false,
       className: "",
     }).setContent(
-      `<h2 class="font-titilliumWeb font-semibold text-lg">${p.name}</h2><p class="font-titilliumWeb">${p.content}</p>`
+      `<h2 class="font-titilliumWeb font-bold text-lg">${p.name}</h2><ul class="font-titilliumWeb text-lg">${p.content}</ul>`
     );
     L.marker([p.coords.x, p.coords.y], {
       // icon: toiletIcon,
@@ -31,7 +31,8 @@ const places = [
       y: 15.8291964,
     },
     name: "Filhramonie Hradec Králové",
-    content: "",
+    content:
+      "<li>9:00 registrace</li><li>9:30 dopolední program</li><li>12:00 obědová pauza</li>",
   },
   {
     coords: {
@@ -39,7 +40,7 @@ const places = [
       y: 15.8310917,
     },
     name: "Katedrála Svatého Ducha",
-    content: "",
+    content: "<li>15:00 mše svatá</li>",
   },
   {
     coords: {
@@ -47,7 +48,7 @@ const places = [
       y: 15.8337133,
     },
     name: "BiGy (Biskupské Gymnázium)",
-    content: "",
+    content: "<li>12:30 přednášky, workshopy</li><li>14:00 kavárna</li>",
   },
   {
     coords: {
@@ -55,7 +56,7 @@ const places = [
       y: 15.8334453,
     },
     name: "Nové Adalbertinum",
-    content: "",
+    content: "<li>12:30 tvořivý workshop</li>",
   },
   {
     coords: {
@@ -63,7 +64,7 @@ const places = [
       y: 15.8349681,
     },
     name: "Orlovna",
-    content: "",
+    content: "<li>12:30 sportovní workshop</li>",
   },
   {
     coords: {
@@ -87,6 +88,6 @@ const places = [
       y: 15.8341294,
     },
     name: "Kostel Nanebevzetí Panny Marie",
-    content: "",
+    content: "<li>13:00 tichá adorace a zpověď</li>",
   },
 ];
