@@ -12,7 +12,7 @@ export default function Map() {
       <MapContainer
         center={[50.213, 15.832]}
         zoom={16}
-        minZoom={15}
+        minZoom={14}
         scrollWheelZoom={true}
         className="w-screen h-[70vh] diseable-map-selection z-0"
       >
