@@ -46,10 +46,10 @@
   height: 30px;
 }
 .leaflet-control-locate a.leaflet-bar-part div.loading {
-  background-image: url(https://rawcdn.githack.com/gravitystorm/openstreetmap-carto/eae09090b64c361be3ff7bfd1975be7638a6b36c/symbols/man_made/tower_lattice_communication.svg);
+  background-image: url(/assets/images/tower_lattice_communication.svg);
 }
 .leaflet-control-locate a.leaflet-bar-part div.locate {
-  background-image: url(https://rawcdn.githack.com/gravitystorm/openstreetmap-carto/eae09090b64c361be3ff7bfd1975be7638a6b36c/symbols/man_made/tower_lattice.svg);
+  background-image: url(/assets/images/tower_lattice.svg);
 }
 
 /* Prevent text selection */
