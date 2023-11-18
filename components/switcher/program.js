@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Container from "../layouts/container";
 import ParmIcon from "../layouts/parm-icon";
-import { IconArrowRight, IconCalendarPlus } from "@tabler/icons";
+import { IconArrowRight, IconCalendarPlus, IconMap } from "@tabler/icons";
 import program from "./program.json";
 
 export default function Program({ id, className }) {
