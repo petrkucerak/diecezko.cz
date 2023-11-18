@@ -4460,11 +4460,6 @@ react-leaflet@^4.2.1:
   dependencies:
     "@react-leaflet/core" "^2.1.0"
 
-react-native-image-gallery-swiper@^0.7.1:
-  version "0.7.1"
-  resolved "https://registry.yarnpkg.com/react-native-image-gallery-swiper/-/react-native-image-gallery-swiper-0.7.1.tgz#6b9dc18fcbeeba888560fe904ce049ed1013bdf9"
-  integrity sha512-avlIbKUEnL5YytwEGdNflsRgLsoZPLud+lVchvzt1VM0hIVJ09Wvr7wxsjxH+D7D3pZRTqvZut1D+IIMsJXBqQ==
-
 react@^18.2.0:
   version "18.2.0"
   resolved "https://registry.yarnpkg.com/react/-/react-18.2.0.tgz#555bd98592883255fa00de14f1151a917b5d77d5"
