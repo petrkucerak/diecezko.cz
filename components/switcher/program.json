@@ -27,13 +27,13 @@
          "pray",
          "person"
       ],
-      "link": "/program-ve-filharmonii",
       "place": {
          "name": "Filhramonie Hradec Králové",
          "coords": {
             "x": "50.2138117",
             "y": "15.8291964"
-         }
+         },
+         "link": "https://mapy.cz/s/dedasenuge"
       }
    },
    {
