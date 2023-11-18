@@ -12,6 +12,21 @@ export default function MapPoints({ coords }) {
     );
     const marker = L.marker([p.coords.x, p.coords.y], {
       title: p.name,
+      icon:
+        p.name === "Filhramonie Hradec Králové"
+          ? theatre
+          : p.name === "Katedrála Svatého Ducha" ||
+            p.name === "Kostel Nanebevzetí Panny Marie"
+          ? church
+          : p.name === "BiGy (Biskupské Gymnázium)"
+          ? school
+          : p.name === "Nové Adalbertinum"
+          ? tunel
+          : p.name === "Orlovna"
+          ? sport
+          : p.name === "Vlakové nádraží"
+          ? train
+          : bus,
       alt: `${p.name}`,
     })
       .addTo(map)
@@ -25,6 +40,92 @@ export default function MapPoints({ coords }) {
   });
   return null;
 }
+
+const size = 40;
+
+const theatre = L.icon({
+  iconUrl: "/assets/images/map/theatre.svg",
+  iconSize: [size, size],
+  iconAnchor: [size / 2, size / 2],
+  popupAnchor: [0, -10],
+  className:
+    "bg-[#FFD754] rounded-full border border-4 border-[#FFD754] drop-shadow-xl",
+  // shadowUrl: "/asstes/icons/marker-toilet-48x84-transparent-shadows.svg",
+  // shadowSize: [28.79, 50.4],
+  // shadowAnchor: [2.3945, 4.19999],
+});
+
+const church = L.icon({
+  iconUrl: "/assets/images/map/church.svg",
+  iconSize: [size, size],
+  iconAnchor: [size / 2, size / 2],
+  popupAnchor: [0, -10],
+  className:
+    "bg-red-600 rounded-full border border-4 border-red-600 drop-shadow-xl",
+  // shadowUrl: "/asstes/icons/marker-toilet-48x84-transparent-shadows.svg",
+  // shadowSize: [28.79, 50.4],
+  // shadowAnchor: [2.3945, 4.19999],
+});
+
+const school = L.icon({
+  iconUrl: "/assets/images/map/school.svg",
+  iconSize: [size, size],
+  iconAnchor: [size / 2, size / 2],
+  popupAnchor: [0, -10],
+  className:
+    "bg-lime-700 rounded-full border border-4 border-lime-700 drop-shadow-xl",
+  // shadowUrl: "/asstes/icons/marker-toilet-48x84-transparent-shadows.svg",
+  // shadowSize: [28.79, 50.4],
+  // shadowAnchor: [2.3945, 4.19999],
+});
+
+const sport = L.icon({
+  iconUrl: "/assets/images/map/sport.svg",
+  iconSize: [size, size],
+  iconAnchor: [size / 2, size / 2],
+  popupAnchor: [0, -10],
+  className:
+    "bg-white rounded-full border border-4 border-white drop-shadow-xl",
+  // shadowUrl: "/asstes/icons/marker-toilet-48x84-transparent-shadows.svg",
+  // shadowSize: [28.79, 50.4],
+  // shadowAnchor: [2.3945, 4.19999],
+});
+
+const tunel = L.icon({
+  iconUrl: "/assets/images/map/tunel.svg",
+  iconSize: [size, size],
+  iconAnchor: [size / 2, size / 2],
+  popupAnchor: [0, -10],
+  className:
+    "bg-blue-700 rounded-full border border-4 border-blue-700 drop-shadow-xl",
+  // shadowUrl: "/asstes/icons/marker-toilet-48x84-transparent-shadows.svg",
+  // shadowSize: [28.79, 50.4],
+  // shadowAnchor: [2.3945, 4.19999],
+});
+
+const bus = L.icon({
+  iconUrl: "/assets/images/map/bus.svg",
+  iconSize: [size, size],
+  iconAnchor: [size / 2, size / 2],
+  popupAnchor: [0, -10],
+  className:
+    "bg-violet-700 rounded-full border border-4 border-violet-700 drop-shadow-xl",
+  // shadowUrl: "/asstes/icons/marker-toilet-48x84-transparent-shadows.svg",
+  // shadowSize: [28.79, 50.4],
+  // shadowAnchor: [2.3945, 4.19999],
+});
+
+const train = L.icon({
+  iconUrl: "/assets/images/map/train.svg",
+  iconSize: [size, size],
+  iconAnchor: [size / 2, size / 2],
+  popupAnchor: [0, -10],
+  className:
+    "bg-gradient-to-r from-pink-500 to-yellow-500 rounded-full border border-2 border-white drop-shadow-xl",
+  // shadowUrl: "/asstes/icons/marker-toilet-48x84-transparent-shadows.svg",
+  // shadowSize: [28.79, 50.4],
+  // shadowAnchor: [2.3945, 4.19999],
+});
 
 const places = [
   {
