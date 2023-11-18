@@ -1,19 +1,45 @@
 import { useMap } from "react-leaflet";
-import program from "./switcher/program.json";
 
 export default function MapPoints() {
   const map = useMap();
-  program.map((p) => {
-    if (p.place !== undefined && p.place.coords !== undefined)
-      L.marker([p.place.coords.x, p.place.coords.y], {
-        // icon: toiletIcon,
-        title: p.name,
-        // alt: `Ikona typu ${toilets[id].toiletType}`,
-      })
-        .addTo(map)
-        .on("click", (e) => {
-          console.log(e);
-        });
+  places.map((p) => {
+    L.marker([p.coords.x, p.coords.y], {
+      // icon: toiletIcon,
+      title: p.name,
+      alt: `${p.name}`,
+    })
+      .addTo(map)
+      .on("click", (e) => {
+        console.log(e);
+      });
   });
   return null;
 }
+
+const places = [
+  {
+    coords: {
+      x: 50.2138117,
+      y: 15.8291964,
+    },
+    name: "Filhramonie Hradec Králové",
+    content: "",
+  },
+  {
+    coords: {
+      x: 50.2087878,
+      y: 15.8310917,
+    },
+    name: "Katedrála Svatého Ducha",
+    content: "",
+  },
+  
+  {
+   coords: {
+     x: 50.2087878,
+     y: 15.8310917,
+   },
+   name: "Katedrála Svatého Ducha",
+   content: "",
+ },
+];
