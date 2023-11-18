@@ -57,11 +57,6 @@ export default function sitemap() {
       changeFrequency: "yearly",
     },
     {
-      url: "https://diecezko.cz/program-ve-filharmonii",
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-    },
-    {
       url: "https://diecezko.cz/prednasky-workshopy",
       lastModified: new Date(),
       changeFrequency: "yearly",
