@@ -68,6 +68,22 @@
       "link": "/prednasky-workshopy"
    },
    {
+      "name": "Tichá adorace a svátost smíření",
+      "time": "13:00",
+      "duration": 120,
+      "description": "Po celé odpoledne do mše svaté bude možnost setkaní s&nbsp;Pánem v&nbsp;tiché adoraci a&nbsp;svátosti smíření. ",
+      "icons": [
+         "pray"
+      ],
+      "place": {
+         "name": "Kostel Nanebevzetí Panny Marie",
+         "coords": {
+            "x": 50.2090772,
+            "y": 15.8341294
+         }
+      }
+   },
+   {
       "name": "Kavárna a chill zóna",
       "time": "14:00",
       "duration": 60,
@@ -80,8 +96,7 @@
          "coords": {
             "x": "50.2062919",
             "y": "15.8337133"
-         },
-         "link": "https://mapy.cz/s/dedasenuge"
+         }
       }
    },
    {
