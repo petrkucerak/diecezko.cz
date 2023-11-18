@@ -92,6 +92,34 @@ const gallery = [
     path: "/assets/images/vikariaty-skupinove/vikariaty_skupinove_07.jpg",
     alt: "Skupinová fotka vikariátu Pardubice",
   },
+  {
+    path: "/assets/images/vikariaty-skupinove/vikariaty_skupinove_08.jpg",
+    alt: "Skupinová fotka vikariátu Chrudim",
+  },
+  {
+    path: "/assets/images/vikariaty-skupinove/vikariaty_skupinove_09.jpg",
+    alt: "Skupinová fotka vikariátu Humpolec",
+  },
+  {
+    path: "/assets/images/vikariaty-skupinove/vikariaty_skupinove_10.jpg",
+    alt: "Skupinová fotka vikariátu Jičín",
+  },
+  {
+    path: "/assets/images/vikariaty-skupinove/vikariaty_skupinove_11.jpg",
+    alt: "Skupinová fotka vikariátu Jilemnice",
+  },
+  {
+    path: "/assets/images/vikariaty-skupinove/vikariaty_skupinove_12.jpg",
+    alt: "Skupinová fotka vikariátu Ústí nad Orlicí",
+  },
+  {
+    path: "/assets/images/vikariaty-skupinove/vikariaty_skupinove_13.jpg",
+    alt: "Skupinová fotka vikariátu Rychnov nad Kněžnou",
+  },
+  {
+    path: "/assets/images/vikariaty-skupinove/vikariaty_skupinove_14.jpg",
+    alt: "Skupinová fotka vikariátu Žamberk",
+  },
 ];
 
 export const vikariaty = [
