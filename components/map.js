@@ -17,7 +17,8 @@ export default function Map() {
       >
         <TileLayer url="https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png" />
         <MapLocation />
-        <MapOffline />
+        {/* TODO: offline support */}
+        {/* <MapOffline /> */}
       </MapContainer>
     );
 }
