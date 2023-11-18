@@ -3,7 +3,7 @@ import "leaflet-defaulticon-compatibility";
 import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
 import "leaflet/dist/leaflet.css";
 import MapLocation from "./map-location";
-import MapOffline from "./map-offline";
+// import MapOffline from "./map-offline";
 
 export default function Map() {
   if (typeof window !== undefined)
