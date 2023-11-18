@@ -33,13 +33,28 @@ const places = [
     name: "Katedrála Svatého Ducha",
     content: "",
   },
-  
+  {
+    coords: {
+      x: 50.2062919,
+      y: 15.8337133,
+    },
+    name: "BiGy (Biskupské Gymnázium)",
+    content: "",
+  },
+  {
+    coords: {
+      x: 50.2090269,
+      y: 15.8334453,
+    },
+    name: "Nové Adalbertinum",
+    content: "",
+  },
   {
    coords: {
-     x: 50.2087878,
-     y: 15.8310917,
+     x: 50.2069553,
+     y: 15.8349681,
    },
-   name: "Katedrála Svatého Ducha",
+   name: "Orlovna",
    content: "",
  },
 ];
