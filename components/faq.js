@@ -5,6 +5,19 @@ import Link from "next/link";
 export default function FAQ() {
   return (
     <FaqLayout>
+      <FaqBox question={`Kde seženu zdravotní pomoc?`} icon={`medical`}>
+        V případě jakéhokoliv problému se neváhej obrátit na naši{" "}
+        <strong>zdravotnickou službu</strong>, kterou poznáš podle oblečení
+        a&nbsp;dostihneš ji na tel.{" "}
+        <Link href={`tel:+420737761893`} className="underline">
+          737 761 893
+        </Link>{" "}
+        . V&nbsp;závažných případech neváhej a&nbsp;volej IZS na tel. číslo{" "}
+        <Link href={`tel:155`} className="underline">
+          155
+        </Link>
+        .
+      </FaqBox>
       <FaqBox question={`Kolik Diecézko stojí?`} icon={`money`}>
         Doporučený příspěvek je <strong>200,-Kč na osobu</strong>. Je možné ho
         zaplatit na recepci ve Filharmonii při dopoledním programu.
@@ -54,9 +67,9 @@ export default function FAQ() {
         programu se půjde společně. Neboj, nezabloudíš 😉
       </FaqBox>
       <FaqBox question={`Jak bude zajištěno stravování?`} icon={`chef`}>
-        Doporučujeme si s&nbsp;sebou přivézt svačinku. Pro všechny, kteří se včas 
-          přihlásili, <strong>bude k&nbsp;obědu bageta</strong>. Pokud máte dietu,
-        napište nám do{" "}
+        Doporučujeme si s&nbsp;sebou přivézt svačinku. Pro všechny, kteří se
+        včas přihlásili, <strong>bude k&nbsp;obědu bageta</strong>. Pokud máte
+        dietu, napište nám do{" "}
         <Link
           href="https://forms.gle/aMQor8ARxaULdD8t7"
           rel="external noopener nofollow"
