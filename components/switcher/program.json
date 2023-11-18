@@ -1,6 +1,7 @@
 [
    {
       "name": "Příjezd a registrace",
+      "id": 1,
       "time": "9:00",
       "duration": 30,
       "description": "Při příjezdu na setkání prosím navštivte registraci, kterou najdete ve vstupu do Filharmonie. Dostanete zde náremek v barvě svého vikariátu. Už tušíte jaké to bude?",
@@ -18,6 +19,7 @@
    },
    {
       "name": "Program ve Filharmonii",
+      "id": 2,
       "time": "9:30",
       "duration": 150,
       "description": "Dopolední program prožijeme společně v budově Filharmonie. Můžete se těšit na režijní scénky, svědectví, hudební doprovod v podání VeKy a mnoho dalšího.",
@@ -39,6 +41,7 @@
    {
       "name": "Obědová pauza",
       "time": "12:00",
+      "id": 3,
       "duration": 30,
       "description": "Při odchodu z dopoledního programu si kromě výběru workshopu nebo přednášky nezapomeňte vyzvednout i bagetu s pitíčkem. Bagety pro nás připravilo BISTRO u dvou přátel. Dobrou chuť!",
       "link": "/bistro-u-dvou-pratel",
@@ -57,6 +60,7 @@
    {
       "name": "Přednášky, workshopy",
       "time": "12:30",
+      "id": 4,
       "duration": 90,
       "description": "Odpoledne si můžete vybrat z široké nabídky přednášek, několika workshopů nebo si jít zasportovat.",
       "icons": [
@@ -69,6 +73,7 @@
    {
       "name": "Tichá adorace a svátost smíření",
       "time": "13:00",
+      "id": 5,
       "duration": 120,
       "description": "Po celé odpoledne do mše svaté bude možnost setkaní s&nbsp;Pánem v&nbsp;tiché adoraci a&nbsp;svátosti smíření. ",
       "icons": [
@@ -86,6 +91,7 @@
       "name": "Kavárna a chill zóna",
       "time": "14:00",
       "duration": 60,
+      "id": 6,
       "description": "V&nbsp;kavárně a&nbsp;relaxační zóně na BiGy si můžeš pochutnat na dobré mňamce, zahřát se teplým pitím, posedět a&nbsp;užít si klidný rozhovor nebo si zahrát stolní hry. Pro občerstvení si nezapomeň vzít drobný peníz.",
       "icons": [
          "cafe"
@@ -101,6 +107,7 @@
    {
       "name": "Odpolední hra - Evženova lovestory",
       "time": "14:00",
+      "id": 7,
       "duration": 60,
       "description": "Holuba Evžena všichni zajisté znáte. Slyšeli jste už ale o&nbsp;jeho milostném románu? Zapojte se do hry a&nbsp;ovlivněte to, jak skončí.",
       "icons": [
@@ -117,6 +124,7 @@
    {
       "name": "Mše svatá",
       "time": "15:00",
+      "id": 8,
       "duration": 60,
       "description": "Celý den zakončíme mší svatou s otcem biskupem v katedrále svatého Ducha. Mši svatou hudebně doprovodí Studenecká kapela.",
       "icons": [
