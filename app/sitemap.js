@@ -57,17 +57,7 @@ export default function sitemap() {
       changeFrequency: "yearly",
     },
     {
-      url: "https://diecezko.cz/program-ve-filharmonii",
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-    },
-    {
       url: "https://diecezko.cz/prednasky-workshopy",
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-    },
-    {
-      url: "https://diecezko.cz/odpoledni-program",
       lastModified: new Date(),
       changeFrequency: "yearly",
     },
@@ -78,6 +68,12 @@ export default function sitemap() {
     },
     {
       url: "https://diecezko.cz/tyden-modliteb-za-mladez",
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+    },
+
+    {
+      url: "https://diecezko.cz/mapa",
       lastModified: new Date(),
       changeFrequency: "yearly",
     },

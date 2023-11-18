@@ -16,7 +16,7 @@ program.map((event) => {
         dir: "https://diecezko.cz/evzenova-cesta",
         sentBy: "evzen@diecezko.cz",
       },
-      
+
       location: event.place !== undefined ? event.place.name : undefined,
       geo:
         event.place !== undefined && event.place.coords !== undefined
@@ -32,7 +32,9 @@ program.map((event) => {
       if (error) {
         console.log(error);
       }
-      const path = `./public/assets/events/${event.time.replace(":", "")}`;
+      const path = `./public/assets/events/${event.time.replace(":", "")}${
+        event.id
+      }`;
       if (!fs.existsSync(path)) fs.mkdirSync(path);
       const file = fs.createWriteStream(`${path}/event.ics`);
       file.write(value);

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Container from "../layouts/container";
 import ParmIcon from "../layouts/parm-icon";
-import { IconArrowRight, IconCalendarPlus } from "@tabler/icons";
+import { IconArrowRight, IconCalendarPlus, IconMap } from "@tabler/icons";
 import program from "./program.json";
 
 export default function Program({ id, className }) {
@@ -25,11 +25,11 @@ export default function Program({ id, className }) {
                 </div>
               </div>
               <h2 className="font-semibold text-2xl m-0">{p.name}</h2>
-              {p.place !== undefined ? (
+              {p.place !== undefined && p.place.coords !== undefined ? (
                 <Link
-                  href={`${p.place.link}`}
-                  rel="external noopener nofollow"
-                  target="_blank"
+                  href={`/mapa?x=${p.place.coords.x}&y=${p.place.coords.y}`}
+                  rel=""
+                  target="_self"
                 >
                   <span className="tracking-widest underline">
                     {p.place.name}
@@ -45,7 +45,9 @@ export default function Program({ id, className }) {
                   target="_blank"
                   title={`Přidat ${p.name} do kalendáře`}
                   rel="document"
-                  href={`/assets/events/${p.time.replace(":", "")}/event.ics`}
+                  href={`/assets/events/${p.time.replace(":", "")}${
+                    p.id
+                  }/event.ics`}
                 >
                   <button className="border border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-3 cursor-pointer text-base flex flex-row items-center justify-center mb-2 mr-2">
                     <IconCalendarPlus className="inline" stroke={1.5} />

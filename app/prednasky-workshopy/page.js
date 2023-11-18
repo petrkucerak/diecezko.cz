@@ -82,7 +82,19 @@ export default async function PrednaskyWorhsopy() {
                           size={18}
                           stroke={1.5}
                         />
-                        {w.place}
+                        <Link
+                          href={
+                            w.place.includes("Orlovna")
+                              ? `/mapa?x=${50.2069553}&y=${15.8349681}` // Orlovna
+                              : w.place.includes("Nové Adalbertinum")
+                              ? `/mapa?x=${50.2090269}&y=${15.8334453}` // Nove Adalbertinum
+                              : `/mapa?x=${50.2062919}&y=${15.8337133}` // BiGy
+                          }
+                          target="_self"
+                          className="underline"
+                        >
+                          {w.place}
+                        </Link>
                       </span>
                     ) : null}
                     <p
@@ -151,17 +163,6 @@ export default async function PrednaskyWorhsopy() {
 }
 
 const workshops = [
-  // {
-  //   title: "",
-  //   type: "person",
-  //   id: "prednaska-start",
-  //   place: "BiGy",
-  //   descritpion: "",
-  //   speaker: {
-  //     name: "Petr Tůma",
-  //     // jpgPath: "/assets/images/speakers/votava.jpg",
-  //   },
-  // },
   {
     title: "Kdo jsem a&nbsp;kam jdu? – aneb jaký je cíl mé cesty životem",
     type: "person",
@@ -347,7 +348,8 @@ const workshops = [
     type: "sport",
     id: "sport-start",
     place: "Orlovna",
-    descritpion: "Srdečně zvu všechny příznivce sportu (i&nbsp;pohybu obecně) na společný fotbal a&nbsp;basketbal. Přijď prožít čas v&nbsp;atmosféře týmovosti, zábavy a&nbsp;Fair play a&nbsp;navázat bližší kontakt se svými vrstevníky z&nbsp;celé diecéze. Fotbal se bude odehrávat na NETRAVNATÉM venkovním hřišti (v&nbsp;případě špatného počasí se ruší) a&nbsp;basketbal v&nbsp;hale. Nezapomeň si sebou vzít sportovní oblečení a&nbsp;obuv (sálovou, čistou obuv do haly, na venkovní hřiště - turfy/venkovní obuv, NE KOPAČKY PROSÍM!). Pro vstup do haly je vhodná obuv podmínkou. Maximální kapacita na každý ze sportů je 24 lidí. Těším se na tebe!",
+    descritpion:
+      "Srdečně zvu všechny příznivce sportu (i&nbsp;pohybu obecně) na společný fotbal a&nbsp;basketbal. Přijď prožít čas v&nbsp;atmosféře týmovosti, zábavy a&nbsp;Fair play a&nbsp;navázat bližší kontakt se svými vrstevníky z&nbsp;celé diecéze. Fotbal se bude odehrávat na NETRAVNATÉM venkovním hřišti (v&nbsp;případě špatného počasí se ruší) a&nbsp;basketbal v&nbsp;hale. Nezapomeň si sebou vzít sportovní oblečení a&nbsp;obuv (sálovou, čistou obuv do haly, na venkovní hřiště - turfy/venkovní obuv, NE KOPAČKY PROSÍM!). Pro vstup do haly je vhodná obuv podmínkou. Maximální kapacita na každý ze sportů je 24 lidí. Těším se na tebe!",
     speaker: {
       name: "Honza Klinger",
       jpgPath: "/assets/images/speakers/klinger.jpg",

@@ -7,6 +7,12 @@
   color: #000;
 }
 
+.diseable-map-selection {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
 /* Swiper configuration */
 @media screen and (max-width: 768px) {
   .swiper-button-prev {
@@ -31,6 +37,19 @@
 /* Height of burger menu */
 .burger-menu-height {
   height: calc(100vh - 4rem);
+}
+
+.leaflet-control-locate a.leaflet-bar-part div {
+  background-position: left 8px top 8px;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+}
+.leaflet-control-locate a.leaflet-bar-part div.loading {
+  background-image: url(/assets/images/tower_lattice_communication.svg);
+}
+.leaflet-control-locate a.leaflet-bar-part div.locate {
+  background-image: url(/assets/images/tower_lattice.svg);
 }
 
 /* Prevent text selection */

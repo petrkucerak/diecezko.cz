@@ -5,9 +5,9 @@ PRODID:adamgibbons/ics
 METHOD:PUBLISH
 X-PUBLISHED-TTL:PT1H
 BEGIN:VEVENT
-UID:JaTtyEGI4IyS7fAMDriTu
+UID:80JzXjrKcmVj2Lw09LT21
 SUMMARY:Přednášky\, workshopy
-DTSTAMP:20231117T085747Z
+DTSTAMP:20231118T153834Z
 DTSTART:20231125T113000Z
 DESCRIPTION:Odpoledne si můžete vybrat z široké nabídky přednášek\, několik
 	a workshopů nebo si jít zasportovat.

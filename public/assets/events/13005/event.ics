@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+PRODID:adamgibbons/ics
+METHOD:PUBLISH
+X-PUBLISHED-TTL:PT1H
+BEGIN:VEVENT
+UID:DkN9W2EIwC_qJukm-M8oH
+SUMMARY:Tichá adorace a svátost smíření
+DTSTAMP:20231118T153834Z
+DTSTART:20231125T120000Z
+DESCRIPTION:Po celé odpoledne do mše svaté bude možnost setkaní s Pánem v t
+	iché adoraci a svátosti smíření. 
+URL:https://diecezko.cz/
+GEO:50.2090772;15.8341294
+LOCATION:Kostel Nanebevzetí Panny Marie
+ORGANIZER;DIR="https://diecezko.cz/evzenova-cesta";SENT-BY="MAILTO:evzen@di
+	ecezko.cz";CN=Pan Holub:MAILTO:evzen@diecezko.cz
+DURATION:PT120M
+END:VEVENT
+END:VCALENDAR

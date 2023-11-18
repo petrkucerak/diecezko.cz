@@ -3,6 +3,7 @@ import {
   IconBrush,
   IconChefHat,
   IconCoffee,
+  IconHeartBroken,
   IconMasksTheater,
   IconMoodCrazyHappy,
   IconMusic,
@@ -88,6 +89,14 @@ export default function ParmIcon({ className, iconName, size }) {
   else if (iconName === "workshop")
     return (
       <IconBrush
+        className={`inline ${className} mr-1`}
+        stroke={1.5}
+        size={size}
+      />
+    );
+  else if (iconName === "heart")
+    return (
+      <IconHeartBroken
         className={`inline ${className} mr-1`}
         stroke={1.5}
         size={size}
