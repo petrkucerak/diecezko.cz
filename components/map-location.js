@@ -9,6 +9,9 @@ export default function MapLocation() {
       showPopup: false,
       drawMarker: true,
       showCompass: true,
+      icon: "locate",
+      iconLoading: "loading",
+      iconElementTag: "div",
       strings: {
         title: "Ukaž mi, kde jsem!",
       },

@@ -39,6 +39,18 @@
   height: calc(100vh - 4rem);
 }
 
+.leaflet-control-locate a.leaflet-bar-part div {
+  background-position: left 8px top 8px;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+}
+.leaflet-control-locate a.leaflet-bar-part div.loading {
+  background-image: url(https://rawcdn.githack.com/gravitystorm/openstreetmap-carto/eae09090b64c361be3ff7bfd1975be7638a6b36c/symbols/man_made/tower_lattice_communication.svg);
+}
+.leaflet-control-locate a.leaflet-bar-part div.locate {
+  background-image: url(https://rawcdn.githack.com/gravitystorm/openstreetmap-carto/eae09090b64c361be3ff7bfd1975be7638a6b36c/symbols/man_made/tower_lattice.svg);
+}
 
 /* Prevent text selection */
 .prevent-select {
