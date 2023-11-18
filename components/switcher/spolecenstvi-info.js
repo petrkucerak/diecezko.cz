@@ -102,6 +102,12 @@ export default function SpolecenstviInfo({ id, className }) {
             Týden modliteb za mládež
           </Button>
         </Link>
+        <Link href="/tyden-modliteb-za-mladez" className="">
+          <Button>
+            <IconCustomTmm className={`inline h-6 mr-2`} />
+            Deník sráčů
+          </Button>
+        </Link>
       </CardFeed>
       <ContainerH2 className={`w-full text-center`}>Propagace</ContainerH2>
       <CardFeed>
