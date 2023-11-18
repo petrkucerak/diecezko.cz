@@ -7,7 +7,9 @@ export default function MapPoints() {
       keepInView: true,
       closeButton: false,
       className: "",
-    }).setContent(`<h2 class="font-titilliumWeb font-semibold text-lg">${p.name}</h2><p class="font-titilliumWeb">${p.content}</p>`);
+    }).setContent(
+      `<h2 class="font-titilliumWeb font-semibold text-lg">${p.name}</h2><p class="font-titilliumWeb">${p.content}</p>`
+    );
     L.marker([p.coords.x, p.coords.y], {
       // icon: toiletIcon,
       title: p.name,
@@ -61,6 +63,30 @@ const places = [
       y: 15.8349681,
     },
     name: "Orlovna",
+    content: "",
+  },
+  {
+    coords: {
+      x: 50.2140617,
+      y: 15.8101597,
+    },
+    name: "Vlakové nádraží",
+    content: "",
+  },
+  {
+    coords: {
+      x: 50.2165528,
+      y: 15.8130483,
+    },
+    name: "Autobusové nádraží",
+    content: "",
+  },
+  {
+    coords: {
+      x: 50.2090772,
+      y: 15.8341294,
+    },
+    name: "Kostel Nanebevzetí Panny Marie",
     content: "",
   },
 ];
