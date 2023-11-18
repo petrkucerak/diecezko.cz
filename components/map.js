@@ -3,6 +3,7 @@ import "leaflet-defaulticon-compatibility";
 import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
 import "leaflet/dist/leaflet.css";
 import MapLocation from "./map-location";
+import MapPoints from "./map-points";
 // import MapOffline from "./map-offline";
 
 export default function Map() {
@@ -17,6 +18,7 @@ export default function Map() {
       >
         <TileLayer url="https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png" />
         <MapLocation />
+        <MapPoints />
         {/* TODO: offline support */}
         {/* <MapOffline /> */}
       </MapContainer>
