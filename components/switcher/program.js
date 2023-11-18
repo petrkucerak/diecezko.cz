@@ -25,11 +25,11 @@ export default function Program({ id, className }) {
                 </div>
               </div>
               <h2 className="font-semibold text-2xl m-0">{p.name}</h2>
-              {p.place !== undefined ? (
+              {p.place !== undefined && p.place.coords !== undefined ? (
                 <Link
-                  href={`${p.place.link}`}
-                  rel="external noopener nofollow"
-                  target="_blank"
+                  href={`/mapa?x=${p.place.coords.x}&y=${p.place.coords.y}`}
+                  rel=""
+                  target="_self"
                 >
                   <span className="tracking-widest underline">
                     {p.place.name}

@@ -1,6 +1,6 @@
 import { useMap } from "react-leaflet";
 
-export default function MapPoints() {
+export default function MapPoints({ coords }) {
   const map = useMap();
   places.map((p) => {
     const pointPopup = L.popup({
@@ -10,16 +10,18 @@ export default function MapPoints() {
     }).setContent(
       `<h2 class="font-titilliumWeb font-bold text-lg">${p.name}</h2><ul class="font-titilliumWeb text-lg">${p.content}</ul>`
     );
-    L.marker([p.coords.x, p.coords.y], {
-      // icon: toiletIcon,
+    const marker = L.marker([p.coords.x, p.coords.y], {
       title: p.name,
       alt: `${p.name}`,
     })
       .addTo(map)
-      .bindPopup(pointPopup)
-      .on("click", (e) => {
-        console.log(e);
-      });
+      .bindPopup(pointPopup);
+    if (
+      parseFloat(coords[0]) === p.coords.x &&
+      parseFloat(coords[1]) === p.coords.y
+    ) {
+      marker.openPopup();
+    }
   });
   return null;
 }
