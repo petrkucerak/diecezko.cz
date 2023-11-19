@@ -143,14 +143,14 @@ const places = [
       y: 15.8310917,
     },
     name: "Katedrála Svatého Ducha",
-    content: "<li>15:00 mše svatá</li>",
+    content: "<li>14:15 sraz ministrantů</li><li>15:00 mše svatá</li>",
   },
   {
     coords: {
       x: 50.2062919,
       y: 15.8337133,
     },
-    name: "BiGy (Biskupské Gymnázium)",
+    name: "BiGy (Biskupské gymnázium)",
     content: "<li>12:30 přednášky, workshopy</li><li>14:00 kavárna</li>",
   },
   {

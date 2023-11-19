@@ -5,17 +5,18 @@ PRODID:adamgibbons/ics
 METHOD:PUBLISH
 X-PUBLISHED-TTL:PT1H
 BEGIN:VEVENT
-UID:pSYkifyHjBJruU_4Zv5MA
-SUMMARY:Mše svatá
+UID:Afe_0lJMDilT8ogezOTHn
+SUMMARY:Sraz ministrantů
 DTSTAMP:20231119T104754Z
-DTSTART:20231125T140000Z
-DESCRIPTION:Celý den zakončíme mší svatou s otcem biskupem v katedrále svat
-	ého Ducha. Mši svatou hudebně doprovodí Studenecká kapela.
+DTSTART:20231125T131500Z
+DESCRIPTION:Chtěl by ses zapojit do služby u oltáře a ministrovat na závěre
+	čné mši svaté v katedrále. Přijď na nácvik do sakristie Katedrály Svatého 
+	Ducha.
 URL:https://diecezko.cz/
 GEO:50.2087878;15.8310917
 LOCATION:Katedrála Svatého Ducha
 ORGANIZER;DIR="https://diecezko.cz/evzenova-cesta";SENT-BY="MAILTO:evzen@di
 	ecezko.cz";CN=Pan Holub:MAILTO:evzen@diecezko.cz
-DURATION:PT60M
+DURATION:PT45M
 END:VEVENT
 END:VCALENDAR

@@ -5,9 +5,9 @@ PRODID:adamgibbons/ics
 METHOD:PUBLISH
 X-PUBLISHED-TTL:PT1H
 BEGIN:VEVENT
-UID:OPVjaUQSZHwWoaI7YUzPn
+UID:4zMvx_SeMtPS5XQIvO2sD
 SUMMARY:Příjezd a registrace
-DTSTAMP:20231118T153834Z
+DTSTAMP:20231119T104754Z
 DTSTART:20231125T080000Z
 DESCRIPTION:Při příjezdu na setkání prosím navštivte registraci\, kterou na
 	jdete ve vstupu do Filharmonie. Dostanete zde náremek v barvě svého vikari

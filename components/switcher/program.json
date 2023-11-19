@@ -97,7 +97,7 @@
          "cafe"
       ],
       "place": {
-         "name": "BiGy (Biskupské Gymnázium)",
+         "name": "BiGy (Biskupské gymnázium)",
          "coords": {
             "x": "50.2062919",
             "y": "15.8337133"
@@ -114,10 +114,27 @@
          "heart"
       ],
       "place": {
-         "name": "BiGy (Biskupské Gymnázium)",
+         "name": "BiGy (Biskupské gymnázium)",
          "coords": {
             "x": "50.2062919",
             "y": "15.8337133"
+         }
+      }
+   },
+   {
+      "name": "Sraz ministrantů",
+      "time": "14:15",
+      "id": 9,
+      "duration": 45,
+      "description": "Pokud se chceš zapojit do služby u&nbsp;oltáře a&nbsp;ministrovat na závěrečné mši svaté v&nbsp;katedrále, přijď na nácvik do sakristie Katedrály Svatého Ducha.",
+      "icons": [
+         "pray"
+      ],
+      "place": {
+         "name": "Katedrála Svatého Ducha - sakristie",
+         "coords": {
+            "x": "50.2087878",
+            "y": "15.8310917"
          }
       }
    },
