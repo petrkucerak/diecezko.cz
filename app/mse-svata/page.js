@@ -9,6 +9,7 @@ import program from "../../components/switcher/program.json";
 import Link from "next/link";
 import ContainerH2 from "../../components/layouts/container-h2";
 import ContainerUl from "../../components/layouts/container-ul";
+import { IconPlaylist } from "@tabler/icons";
 export default async function MseSvata() {
   return (
     <main className="ease-in-out duration-300 font-titilliumWeb">
@@ -25,6 +26,19 @@ export default async function MseSvata() {
             </Link>
             .
           </ContainerDescription>
+          <Link
+            href="pro-scholy://zpevnik/add_playlist?name=Diec%C3%A9zko%20m%C5%A1e%20svat%C3%A1&ids=1119,812,1059,211,27,3958,257,115,826"
+            rel="external"
+            target="_blank"
+            className="border border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-5 cursor-pointer text-base flex flex-row items-center justify-center my-2"
+          >
+            <button className="flex flex-row items-center justify-center">
+              <IconPlaylist className="inline" />{" "}
+              <span className="ml-2 text-left">
+                Otevřít playlist ve Zpěvníku pro scholy
+              </span>
+            </button>
+          </Link>
           <ContainerH2>Písničky na mši</ContainerH2>
           <ContainerUl>
             <li>
