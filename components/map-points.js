@@ -191,6 +191,6 @@ const places = [
       y: 15.8341294,
     },
     name: "Kostel Nanebevzetí Panny Marie",
-    content: "<li>13:00 tichá adorace a zpověď</li>",
+    content: "<li>13:00 tichá adorace a svátost smíření</li>",
   },
 ];
