@@ -18,7 +18,7 @@ export default function MapPoints({ coords }) {
           : p.name === "Katedrála Svatého Ducha" ||
             p.name === "Kostel Nanebevzetí Panny Marie"
           ? church
-          : p.name === "BiGy (Biskupské Gymnázium)"
+          : p.name === "BiGy (Biskupské gymnázium)"
           ? school
           : p.name === "Nové Adalbertinum"
           ? tunel
