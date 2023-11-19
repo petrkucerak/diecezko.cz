@@ -5,9 +5,9 @@ PRODID:adamgibbons/ics
 METHOD:PUBLISH
 X-PUBLISHED-TTL:PT1H
 BEGIN:VEVENT
-UID:F8o9eH_iH1RCLBsLPwVgO
+UID:yBm7B8VfrPKIJ2MokVIsm
 SUMMARY:Odpolední hra - Evženova lovestory
-DTSTAMP:20231118T153834Z
+DTSTAMP:20231119T104754Z
 DTSTART:20231125T130000Z
 DESCRIPTION:Holuba Evžena všichni zajisté znáte. Slyšeli jste už ale o jeho
 	 milostném románu? Zapojte se do hry a ovlivněte to\, jak skončí.

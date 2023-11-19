@@ -17,7 +17,7 @@ export default async function MseSvata() {
       <PageMain>
         <Container>
           <ContainerTitle>Mše svatá</ContainerTitle>
-          <ProgramDetail p={program[7]} className={``} />
+          <ProgramDetail p={program[8]} className={``} />
           <ContainerDescription>
             Vrcholem celého Diecézka je setkání s&nbsp;naším biskupem skrze mši
             svatou. Mši svatou bude hudebně doprovázet{" "}
