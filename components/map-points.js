@@ -18,7 +18,7 @@ export default function MapPoints({ coords }) {
           : p.name === "Katedrála Svatého Ducha" ||
             p.name === "Kostel Nanebevzetí Panny Marie"
           ? church
-          : p.name === "BiGy (Biskupské Gymnázium)"
+          : p.name === "BiGy (Biskupské gymnázium)"
           ? school
           : p.name === "Nové Adalbertinum"
           ? tunel
@@ -191,6 +191,6 @@ const places = [
       y: 15.8341294,
     },
     name: "Kostel Nanebevzetí Panny Marie",
-    content: "<li>13:00 tichá adorace a zpověď</li>",
+    content: "<li>13:00 tichá adorace a svátost smíření</li>",
   },
 ];
