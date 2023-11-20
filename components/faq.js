@@ -53,12 +53,14 @@ export default function FAQ() {
             target="_blank"
             className="underline"
           >
-            přihášku
+            přihlášku
           </Link>
         </strong>
-        &nbsp;a budeme s&nbsp;Tebou počítat. Na Diecézko se přihlas do
+        &nbsp;a&nbsp;budeme s&nbsp;Tebou počítat. Na Diecézko se přihlas do 
         20.&nbsp;11.&nbsp;2023, abychom Ti stihli zajistit bagetu a&nbsp;pitíčko
-        k obědu. Děkujeme 😊{" "}
+        k&nbsp;obědu. <strong>Nestihl/a ses přihlásit v daném termínu?</strong> Nevadí, i&nbsp;tak 
+        s&nbsp;tebou <strong>počítáme</strong>. Objednali jsme bagety navíc. Prosíme, 
+        i&nbsp;nadále vyplň přihlášku, ať víme, že dorazíš. Děkujeme 😊 {" "}
       </FaqBox>
       <FaqBox question={`Jak se přihlásit na odpolední program?`} icon={`old`}>
         <strong>Při východu z Filharmonie</strong> si kromě bagety
