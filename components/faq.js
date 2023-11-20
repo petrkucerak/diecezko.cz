@@ -56,9 +56,9 @@ export default function FAQ() {
             přihlášku
           </Link>
         </strong>
-        &nbsp;a&nbsp;budeme s&nbsp;Tebou počítat. Oficiální termín přihlašování na Diecézko byl do
-        20.&nbsp;11.&nbsp;2023, pro zajištění bagety a&nbsp;pitíčka
-        k&nbsp;obědu. <strong>Nestihl/a ses přihlásit?</strong> Nevadí, i&nbsp;tak 
+        &nbsp;a&nbsp;budeme s&nbsp;Tebou počítat. Na Diecézko se přihlas do 
+        20.&nbsp;11.&nbsp;2023, abychom Ti stihli zajistit bagetu a&nbsp;pitíčko
+        k&nbsp;obědu. <strong>Nestihl/a ses přihlásit v daném termínu?</strong> Nevadí, i&nbsp;tak 
         s&nbsp;tebou <strong>počítáme</strong>. Objednali jsme bagety navíc. Prosíme, 
         i&nbsp;nadále vyplň přihlášku, ať víme, že dorazíš. Děkujeme 😊 {" "}
       </FaqBox>
