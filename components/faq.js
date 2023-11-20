@@ -53,7 +53,7 @@ export default function FAQ() {
             target="_blank"
             className="underline"
           >
-            přihášku
+            přihlášku
           </Link>
         </strong>
         &nbsp;a&nbsp;budeme s&nbsp;Tebou počítat. Oficiální termín přihlašování Na Diecézko byl do
