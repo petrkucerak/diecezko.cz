@@ -58,7 +58,7 @@ export default function FAQ() {
         </strong>
         &nbsp;a&nbsp;budeme s&nbsp;Tebou počítat. Oficiální termín přihlašování Na Diecézko byl do
         20.&nbsp;11.&nbsp;2023, pro zajištění bagety a&nbsp;pitíčka
-        k&nbsp;obědu. <strong>Nestihl/a ses přihlásit?</strong> Nevadí, i&nbsp;tak s&nbsp;tebou 
+        k&nbsp;obědu. <strong>Nestihl/a ses přihlásit?</strong> Nevadí, i&nbsp;tak s&nbsp;tebou  
         <strong>počítáme</strong>. Objednali jsme bagety navíc. Prosíme, i&nbsp;nadále vyplň 
         přihlášku, ať víme, že dorazíš. Děkujeme 😊 {" "}
       </FaqBox>
