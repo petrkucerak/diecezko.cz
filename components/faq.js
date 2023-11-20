@@ -58,9 +58,9 @@ export default function FAQ() {
         </strong>
         &nbsp;a&nbsp;budeme s&nbsp;Tebou počítat. Oficiální termín přihlašování Na Diecézko byl do
         20.&nbsp;11.&nbsp;2023, pro zajištění bagety a&nbsp;pitíčka
-        k&nbsp;obědu. Nestihl/a ses přihlásit? Nevadí, i&nbsp;tak s&nbsp;tebou počítáme a&nbsp;pokusíme se Ti 
-        zajistit oběd náhradním způsobem, proto prosíme, i&nbsp;nadále vyplňuj přihlášku. 
-        Děkujeme 😊{" "}
+        k&nbsp;obědu. <strong>Nestihl/a ses přihlásit?</strong> Nevadí, i&nbsp;tak s&nbsp;tebou 
+        <strong>počítáme</strong>. Objednali jsme bagety navíc. Prosíme, i&nbsp;nadále vyplň 
+        přihlášku, ať víme, že dorazíš. Děkujeme 😊 {" "}
       </FaqBox>
       <FaqBox question={`Jak se přihlásit na odpolední program?`} icon={`old`}>
         <strong>Při východu z Filharmonie</strong> si kromě bagety
