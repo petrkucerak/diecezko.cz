@@ -1,8 +1,6 @@
 import FaqBox from "./layouts/faq-box";
 import FaqLayout from "./layouts/faq-layout";
 import Link from "next/link";
-import Button from "./layouts/button";
-import IconCustomDenikSracu from "./images/deniksracu";
 
 export default function FAQ() {
   return (

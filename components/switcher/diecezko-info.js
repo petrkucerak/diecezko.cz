@@ -12,8 +12,13 @@ import Nbsp from "../format/nbsp";
 import Strong from "../format/strong";
 import Countdown from "../countdown";
 import IconCustomEvzen from "../images/evzen";
+import { useEffect } from "react";
+import { install } from "../../lib/installation";
 
 export default function DiecezkoInfo({ id, className }) {
+  useEffect(() => {
+    install();
+  }, []);
   return (
     <Container id={id} className={className}>
       <div className="min-h-[70vh] flex flex-col items-center justify-around">
@@ -72,15 +77,14 @@ export default function DiecezkoInfo({ id, className }) {
             </button>
           </Link>
           <Link
-            href="/"
-            // rel="document"
-            // download="dcmhk23"
-            target="_blank"
-            className="cursor-not-allowed opacity-50 pointer-events-none border border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-5 text-base flex flex-row items-center justify-center"
+            href={`/instalace`}
+            id="installation"
+            className="border border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-5 text-base flex flex-row items-center justify-center"
           >
             <button
-              className="flex flex-row items-center justify-center cursor-not-allowed pointer-events-none"
-              title="Instalace není momentálně možná"
+              className="flex flex-row items-center justify-center"
+              id="installation-button"
+              title="Instalovat jako PWA"
             >
               <IconApps className="inline" />{" "}
               <span className="ml-2 text-left">Nainstalovat</span>
@@ -119,8 +123,8 @@ export default function DiecezkoInfo({ id, className }) {
         Hradci Králové. Nejprve proběhne společný režijní program a<Nbsp />
         po občerstvení mohou mladí navštívit různé workshopy a<Nbsp />
         přednášky. Dále je v<Nbsp />
-        nabídce sport, hry nebo kavárna, ale také adorace či možnost přistoupit ke
-        svátosti smíření.
+        nabídce sport, hry nebo kavárna, ale také adorace či možnost přistoupit
+        ke svátosti smíření.
       </ContainerParagraph>
       <ContainerParagraph>
         Nedílnou součástí tohoto setkání je slavnostní mše svatá v<Nbsp />
