@@ -14,13 +14,11 @@ import Countdown from "../countdown";
 import IconCustomEvzen from "../images/evzen";
 import { useEffect } from "react";
 import { install } from "../../lib/installation";
-import { detect } from "detect-browser";
 
 export default function DiecezkoInfo({ id, className }) {
   useEffect(() => {
     install();
   }, []);
-  const browser = detect();
   return (
     <Container id={id} className={className}>
       <div className="min-h-[70vh] flex flex-col items-center justify-around">
