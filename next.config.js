@@ -7,7 +7,7 @@ const withPWA = require("next-pwa")({
   disable: process.env.NODE_ENV === "development",
   // scope: '/app',
   // sw: 'service-worker.js',
-  runtimeCaching,
+  runtimeCaching: runtimeCaching,
   cacheOnFrontEndNav: true,
   //...
 });
