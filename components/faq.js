@@ -1,6 +1,8 @@
 import FaqBox from "./layouts/faq-box";
 import FaqLayout from "./layouts/faq-layout";
 import Link from "next/link";
+import Button from "./layouts/button";
+import IconCustomDenikSracu from "./images/deniksracu";
 
 export default function FAQ() {
   return (
@@ -56,11 +58,12 @@ export default function FAQ() {
             přihlášku
           </Link>
         </strong>
-        &nbsp;a&nbsp;budeme s&nbsp;Tebou počítat. Na Diecézko se přihlas do 
+        &nbsp;a&nbsp;budeme s&nbsp;Tebou počítat. Na Diecézko se přihlas do
         20.&nbsp;11.&nbsp;2023, abychom Ti stihli zajistit bagetu a&nbsp;pitíčko
-        k&nbsp;obědu. <strong>Nestihl/a ses přihlásit v daném termínu?</strong> Nevadí, i&nbsp;tak 
-        s&nbsp;tebou <strong>počítáme</strong>. Objednali jsme bagety navíc. Prosíme, 
-        i&nbsp;nadále vyplň přihlášku, ať víme, že dorazíš. Děkujeme 😊 {" "}
+        k&nbsp;obědu. <strong>Nestihl/a ses přihlásit v daném termínu?</strong>{" "}
+        Nevadí, i&nbsp;tak s&nbsp;tebou <strong>počítáme</strong>. Objednali
+        jsme bagety navíc. Prosíme, i&nbsp;nadále vyplň přihlášku, ať víme, že
+        dorazíš. Děkujeme 😊{" "}
       </FaqBox>
       <FaqBox question={`Jak se přihlásit na odpolední program?`} icon={`old`}>
         <strong>Při východu z Filharmonie</strong> si kromě bagety
@@ -88,6 +91,18 @@ export default function FAQ() {
       </FaqBox>
       <FaqBox question={`Jak se v Hradci dopravovat?`} icon={`bus`}>
         Hradec Králové je malej, <strong>choďte pěšky</strong>!
+      </FaqBox>
+      <FaqBox question={`Kam si odskočit na záchod?`} icon={`toilet`}>
+        Nezoufej, mrkni na{" "}
+        <Link
+          href="https://deniksracu.cz/"
+          target="_blank"
+          rel="external"
+          className="underline font-semibold"
+        >
+          deník sráčů
+        </Link>{" "}
+        a&nbsp;najdi si nejbližsí tolatu, která bude vyhovovat tvým požadavkům.
       </FaqBox>
     </FaqLayout>
   );
