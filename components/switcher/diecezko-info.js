@@ -14,11 +14,13 @@ import Countdown from "../countdown";
 import IconCustomEvzen from "../images/evzen";
 import { useEffect } from "react";
 import { install } from "../../lib/installation";
+import { detect } from "detect-browser";
 
 export default function DiecezkoInfo({ id, className }) {
   useEffect(() => {
     install();
   }, []);
+  const browser = detect();
   return (
     <Container id={id} className={className}>
       <div className="min-h-[70vh] flex flex-col items-center justify-around">
@@ -77,11 +79,8 @@ export default function DiecezkoInfo({ id, className }) {
             </button>
           </Link>
           <Link
-            href="/"
-            // rel="document"
-            // download="dcmhk23"
+            href={browser.os == "iOS" ? `/instalace` : `/`}
             id="installation"
-            // target="_blank"
             className="cursor-not-allowed opacity-50 duration-1000 pointer-events-none border border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-5 text-base flex flex-row items-center justify-center"
           >
             <button
