@@ -11,6 +11,7 @@ import {
   IconPigMoney,
 } from "@tabler/icons";
 import { useState } from "react";
+import IconCustomDenikSracu from "../images/deniksracu";
 export default function FaqBox({ className, id, children, question, icon }) {
   const [arrowDownClass, setDownArrowClass] = useState("inline");
   const [arrowUpClass, setUpArrowClass] = useState("hidden");
@@ -49,6 +50,8 @@ export default function FaqBox({ className, id, children, question, icon }) {
             <IconMedicalCross className="inline mr-2" stroke={1.2} />
           ) : icon === "old" ? (
             <IconOld className="inline mr-2" stroke={1.2} />
+          ) : icon === "toilet" ? (
+            <IconCustomDenikSracu className={`inline h-5 mr-2`} />
           ) : null}
           {question}
         </p>
