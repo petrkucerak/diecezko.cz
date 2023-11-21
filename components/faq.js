@@ -96,16 +96,16 @@ export default function FAQ() {
         Hradec Králové je malej, <strong>choďte pěšky</strong>!
       </FaqBox>
       <FaqBox question={`Kam si odskočit na záchod?`} icon={`toilet`}>
-        Nezoufej, mrkni na{" "}
+        Nezoufej, mrkni{" "}
         <Link
           href="https://deniksracu.cz/"
           target="_blank"
           rel="external"
           className="underline font-semibold"
         >
-          deník sráčů
+          sem
         </Link>{" "}
-        a&nbsp;najdi si nejbližsí trůn, který bude vyhovovat tvým požadavkům.
+        a&nbsp;najdi si nejbližší trůn, který bude vyhovovat tvým požadavkům.
       </FaqBox>
     </FaqLayout>
   );
