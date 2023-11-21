@@ -79,14 +79,14 @@ export default function DiecezkoInfo({ id, className }) {
             </button>
           </Link>
           <Link
-            href={browser.os == "iOS" ? `/instalace` : `/`}
+            href={`/instalace`}
             id="installation"
-            className="cursor-not-allowed opacity-50 duration-1000 pointer-events-none border border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-5 text-base flex flex-row items-center justify-center"
+            className="border border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-5 text-base flex flex-row items-center justify-center"
           >
             <button
-              className="flex flex-row items-center justify-center cursor-not-allowed pointer-events-none"
+              className="flex flex-row items-center justify-center"
               id="installation-button"
-              title="Instalace není momentálně možná"
+              title="Instalovat jako PWA"
             >
               <IconApps className="inline" />{" "}
               <span className="ml-2 text-left">Nainstalovat</span>
