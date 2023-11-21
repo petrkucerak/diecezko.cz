@@ -66,10 +66,15 @@ export default function FAQ() {
         dorazíš. Děkujeme 😊{" "}
       </FaqBox>
       <FaqBox question={`Jak se přihlásit na odpolední program?`} icon={`old`}>
-        <strong>Při východu z Filharmonie</strong> si kromě bagety
-        a&nbsp;pitíčka budeš moci vybrat odpolední program. Ideálně si téma
-        promysli dopředu, ať se nemusíš rozmýšlet na poslední chvíli. Na místo
-        programu se půjde společně. Neboj, nezabloudíš 😉
+        <strong>
+          Při východu z{" "}
+          <Link href={`/mapa?x=50.2138117&y=15.8291964`} className="underline">
+            Filharmonie
+          </Link>
+        </strong>{" "}
+        si kromě bagety a&nbsp;pitíčka budeš moci vybrat odpolední program.
+        Ideálně si téma promysli dopředu, ať se nemusíš rozmýšlet na poslední
+        chvíli. Na místo programu se půjde společně. Neboj, nezabloudíš 😉
       </FaqBox>
       <FaqBox question={`Jak bude zajištěno stravování?`} icon={`chef`}>
         Doporučujeme si s&nbsp;sebou přivézt svačinku. Pro všechny, kteří se
@@ -83,11 +88,11 @@ export default function FAQ() {
         >
           přihlášky
         </Link>
-        . Pokud by vás odpoledne přepadla mlsná, je možné zajít i&nbsp;do naší
-        kavárny.
-        {
-          // TODO: add link to kavarna
-        }
+        . Pokud by vás odpoledne přepadla mlsná, je možné zajít i&nbsp;do naší{" "}
+        <Link href={`/mapa?x=50.2062919&y=15.8337133`} className="underline">
+          kavárny
+        </Link>
+        .
       </FaqBox>
       <FaqBox question={`Jak se v Hradci dopravovat?`} icon={`bus`}>
         Hradec Králové je malej, <strong>choďte pěšky</strong>!
@@ -102,7 +107,7 @@ export default function FAQ() {
         >
           deník sráčů
         </Link>{" "}
-        a&nbsp;najdi si nejbližsí tolatu, která bude vyhovovat tvým požadavkům.
+        a&nbsp;najdi si nejbližsí trůn, který bude vyhovovat tvým požadavkům.
       </FaqBox>
     </FaqLayout>
   );
