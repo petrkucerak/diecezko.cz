@@ -19,18 +19,7 @@ module.exports = [
     options: {
       cacheName: "static-image-assets",
       expiration: {
-        maxEntries: 200,
-        maxAgeSeconds: 7 * 24 * 60 * 60, // 7 days
-      },
-    },
-  },
-  {
-    urlPattern: /\/_next\/image\?url=.+$/i,
-    handler: "CacheFirst",
-    options: {
-      cacheName: "next-image",
-      expiration: {
-        maxEntries: 200,
+        maxEntries: 500,
         maxAgeSeconds: 7 * 24 * 60 * 60, // 7 days
       },
     },
@@ -65,8 +54,8 @@ module.exports = [
     options: {
       cacheName: "static-js-assets",
       expiration: {
-        maxEntries: 200,
-        maxAgeSeconds: 7 * 24 * 60 * 60, // 24 hours
+        maxEntries: 32,
+        maxAgeSeconds: 7 * 24 * 60 * 60, // 7 days
       },
     },
   },
@@ -76,8 +65,8 @@ module.exports = [
     options: {
       cacheName: "static-style-assets",
       expiration: {
-        maxEntries: 200,
-        maxAgeSeconds: 7 * 24 * 60 * 60, // 24 hours
+        maxEntries: 32,
+        maxAgeSeconds: 7 * 24 * 60 * 60, // 7 hours
       },
     },
   },
@@ -87,8 +76,8 @@ module.exports = [
     options: {
       cacheName: "next-data",
       expiration: {
-        maxEntries: 200,
-        maxAgeSeconds: 7 * 24 * 60 * 60, // 24 hours
+        maxEntries: 32,
+        maxAgeSeconds: 7 * 24 * 60 * 60, // 7 hours
       },
     },
   },
@@ -98,8 +87,8 @@ module.exports = [
     options: {
       cacheName: "static-data-assets",
       expiration: {
-        maxEntries: 200,
-        maxAgeSeconds: 7 * 24 * 60 * 60, // 24 hours
+        maxEntries: 32,
+        maxAgeSeconds: 7 * 24 * 60 * 60, // 7 hours
       },
     },
   },
