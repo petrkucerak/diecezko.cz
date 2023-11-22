@@ -1,7 +1,7 @@
-import Cover from "../components/cover";
-import Header from "../components/header";
-import Switcher from "../components/switcher";
-import Footer from "../components/footer";
+import Cover from "../../components/cover";
+import Header from "../../components/header";
+import Switcher from "../../components/switcher";
+import Footer from "../../components/footer";
 
 export default function Home() {
   return (
