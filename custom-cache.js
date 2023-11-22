@@ -14,7 +14,7 @@ module.exports = [
     },
   },
   {
-    urlPattern: /\.(?:jpg|jpeg|gif|png|svg|ico|webp)$/i,
+    urlPattern: /\.(?:jpg|png|svg|ico|webp)$/i,
     handler: "CacheFirst",
     options: {
       cacheName: "static-image-assets",
@@ -36,26 +36,26 @@ module.exports = [
     },
   },
   {
-    urlPattern: /\.(?:mp3|wav|ogg)$/i,
+    urlPattern: /\.(?:ics)$/i,
     handler: "CacheFirst",
     options: {
       rangeRequests: true,
       cacheName: "static-audio-assets",
       expiration: {
-        maxEntries: 200,
+        maxEntries: 15,
         maxAgeSeconds: 7 * 24 * 60 * 60, // 24 hours
       },
     },
   },
   {
-    urlPattern: /\.(?:mp4)$/i,
+    urlPattern: /\.(?:mp3)$/i,
     handler: "CacheFirst",
     options: {
       rangeRequests: true,
-      cacheName: "static-video-assets",
+      cacheName: "static-event-assets",
       expiration: {
-        maxEntries: 200,
-        maxAgeSeconds: 7 * 24 * 60 * 60, // 24 hours
+        maxEntries: 2,
+        maxAgeSeconds: 365 * 24 * 60 * 60, // 24 hours
       },
     },
   },
