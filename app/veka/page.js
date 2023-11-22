@@ -72,7 +72,6 @@ export default async function VeKa() {
             užijete!
           </ContainerParagraph>
           <ContainerImage
-            pngPath="/assets/images/spolecenstvi/veka-punk.png"
             jpgPath="/assets/images/spolecenstvi/veka-punk.jpg"
             webpPath="/assets/images/spolecenstvi/veka-punk.webp"
             altText="Vesmírná kapela v bundách"

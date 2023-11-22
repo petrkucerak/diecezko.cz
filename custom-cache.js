@@ -36,14 +36,14 @@ module.exports = [
     },
   },
   {
-    urlPattern: /\.(?:ics)$/i,
+    urlPattern: /\.(?:ics|pdf)$/i,
     handler: "CacheFirst",
     options: {
       rangeRequests: true,
-      cacheName: "static-audio-assets",
+      cacheName: "static-files-assets",
       expiration: {
         maxEntries: 15,
-        maxAgeSeconds: 7 * 24 * 60 * 60, // 24 hours
+        maxAgeSeconds: 7 * 24 * 60 * 60, // 7 days
       },
     },
   },
@@ -52,10 +52,10 @@ module.exports = [
     handler: "CacheFirst",
     options: {
       rangeRequests: true,
-      cacheName: "static-event-assets",
+      cacheName: "static-audio-assets",
       expiration: {
         maxEntries: 2,
-        maxAgeSeconds: 365 * 24 * 60 * 60, // 24 hours
+        maxAgeSeconds: 365 * 24 * 60 * 60, // 365 days
       },
     },
   },
