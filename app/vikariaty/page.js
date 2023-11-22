@@ -399,6 +399,7 @@ export const vikariaty = [
       jpgPath: "/assets/images/vikariaty/brabenec.jpg",
     },
     social: {
+      instagram: "https://www.instagram.com/vikariatzamberk/",
       facebook: "https://www.facebook.com/groups/320795192164/",
     },
   },
