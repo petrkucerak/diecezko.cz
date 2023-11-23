@@ -3,8 +3,30 @@
 // Workbox RuntimeCaching config: https://developers.google.com/web/tools/workbox/reference-docs/latest/module-workbox-build#.RuntimeCachingEntry
 module.exports = [
   {
-    urlPattern: /\.(?:woff|woff2)$/i,
+    urlPattern: /^https:\/\/fonts\.(?:gstatic)\.com\/.*/i,
     handler: "CacheFirst",
+    options: {
+      cacheName: "google-fonts-webfonts",
+      expiration: {
+        maxEntries: 4,
+        maxAgeSeconds: 365 * 24 * 60 * 60, // 365 days
+      },
+    },
+  },
+  {
+    urlPattern: /^https:\/\/fonts\.(?:googleapis)\.com\/.*/i,
+    handler: "StaleWhileRevalidate",
+    options: {
+      cacheName: "google-fonts-stylesheets",
+      expiration: {
+        maxEntries: 4,
+        maxAgeSeconds: 7 * 24 * 60 * 60, // 7 days
+      },
+    },
+  },
+  {
+    urlPattern: /\.(?:eot|otf|ttc|ttf|woff|woff2|font.css)$/i,
+    handler: "StaleWhileRevalidate",
     options: {
       cacheName: "static-font-assets",
       expiration: {
@@ -14,8 +36,8 @@ module.exports = [
     },
   },
   {
-    urlPattern: /\.(?:jpg|png|svg|ico|webp)$/i,
-    handler: "CacheFirst",
+    urlPattern: /\.(?:jpg|jpeg|gif|png|svg|ico|webp)$/i,
+    handler: "StaleWhileRevalidate",
     options: {
       cacheName: "static-image-assets",
       expiration: {
@@ -26,7 +48,7 @@ module.exports = [
   },
   {
     urlPattern: /\.(?:ics|pdf)$/i,
-    handler: "CacheFirst",
+    handler: "StaleWhileRevalidate",
     options: {
       rangeRequests: true,
       cacheName: "static-files-assets",
@@ -50,29 +72,29 @@ module.exports = [
   },
   {
     urlPattern: /\.(?:js)$/i,
-    handler: "CacheFirst",
+    handler: "StaleWhileRevalidate",
     options: {
       cacheName: "static-js-assets",
       expiration: {
-        maxEntries: 32,
+        maxEntries: 64,
         maxAgeSeconds: 7 * 24 * 60 * 60, // 7 days
       },
     },
   },
   {
     urlPattern: /\.(?:css|less)$/i,
-    handler: "CacheFirst",
+    handler: "StaleWhileRevalidate",
     options: {
       cacheName: "static-style-assets",
       expiration: {
-        maxEntries: 32,
+        maxEntries: 64,
         maxAgeSeconds: 7 * 24 * 60 * 60, // 7 hours
       },
     },
   },
   {
     urlPattern: /\/_next\/data\/.+\/.+\.json$/i,
-    handler: "CacheFirst",
+    handler: "StaleWhileRevalidate",
     options: {
       cacheName: "next-data",
       expiration: {
