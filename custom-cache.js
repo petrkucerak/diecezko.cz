@@ -170,4 +170,45 @@ module.exports = [
       networkTimeoutSeconds: 10,
     },
   },
+  {
+    urlPattern: ({ request, url: { pathname }, sameOrigin }) =>
+      request.headers.get("RSC") === "1" &&
+      request.headers.get("Next-Router-Prefetch") === "1" &&
+      sameOrigin &&
+      pathname === "/prednasky-workshopy",
+    handler: "NetworkFirst",
+    options: {
+      cacheName: "pages-rsc-prefetch",
+      expiration: {
+        maxEntries: 32,
+        maxAgeSeconds: 7 * 24 * 60 * 60, // 7 days
+      },
+    },
+  },
+  {
+    urlPattern: ({ request, url: { pathname }, sameOrigin }) =>
+      request.headers.get("RSC") === "1" &&
+      sameOrigin &&
+      pathname === "/prednasky-workshopy",
+    handler: "NetworkFirst",
+    options: {
+      cacheName: "pages-rsc",
+      expiration: {
+        maxEntries: 32,
+        maxAgeSeconds: 7 * 24 * 60 * 60, // 7 days
+      },
+    },
+  },
+  {
+    urlPattern: ({ url: { pathname }, sameOrigin }) =>
+      sameOrigin && pathname === "/prednasky-workshopy",
+    handler: "NetworkFirst",
+    options: {
+      cacheName: "pages",
+      expiration: {
+        maxEntries: 32,
+        maxAgeSeconds: 7 * 24 * 60 * 60, // 7 days
+      },
+    },
+  },
 ];
