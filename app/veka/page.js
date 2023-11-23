@@ -54,7 +54,7 @@ export default async function VeKa() {
             width="100%"
             height="352"
             frameBorder="0"
-            allowfullscreen=""
+            allowFullScreen=""
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             loading="lazy"
           ></iframe>
@@ -72,7 +72,6 @@ export default async function VeKa() {
             užijete!
           </ContainerParagraph>
           <ContainerImage
-            pngPath="/assets/images/spolecenstvi/veka-punk.png"
             jpgPath="/assets/images/spolecenstvi/veka-punk.jpg"
             webpPath="/assets/images/spolecenstvi/veka-punk.webp"
             altText="Vesmírná kapela v bundách"
