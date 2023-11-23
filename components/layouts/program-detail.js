@@ -17,9 +17,9 @@ export default function ProgramDetail({ className, p }) {
       </div>
       {p.place !== undefined ? (
         <Link
-          href={`${p.place.link}`}
-          rel="external noopener nofollow"
-          target="_blank"
+          href={`/mapa?x=${p.place.coords.x}&y=${p.place.coords.y}`}
+          rel=""
+          target="_self"
         >
           <span className="tracking-widest underline">{p.place.name}</span>
         </Link>

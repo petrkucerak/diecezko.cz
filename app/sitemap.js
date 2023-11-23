@@ -71,9 +71,13 @@ export default function sitemap() {
       lastModified: new Date(),
       changeFrequency: "yearly",
     },
-
     {
       url: "https://diecezko.cz/mapa",
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+    },
+    {
+      url: "https://diecezko.cz/evzenova-lovestory",
       lastModified: new Date(),
       changeFrequency: "yearly",
     },
