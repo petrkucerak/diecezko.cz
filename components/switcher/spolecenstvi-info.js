@@ -10,6 +10,7 @@ import {
   IconHeart,
   IconMusic,
   IconPuzzle,
+  IconTournament,
   IconWall,
 } from "@tabler/icons";
 import IconCustomDCM from "../images/dcm-hk";
@@ -103,6 +104,17 @@ export default function SpolecenstviInfo({ id, className }) {
             Týden modliteb za mládež
           </Button>
         </Link>
+        <Link
+          href="https://www.facebook.com/events/s/florbalovy-turnaj-v-kralovehra/1357115585198034/"
+          rel="external"
+          target="_blank"
+          className=""
+        >
+          <Button>
+            <IconTournament className={`inline h-6 mr-2`} stroke={1.5} />
+            Florbalový turnaj
+          </Button>
+        </Link>
       </CardFeed>
       <ContainerH2 className={`w-full text-center`}>Propagace</ContainerH2>
       <CardFeed>
@@ -113,7 +125,7 @@ export default function SpolecenstviInfo({ id, className }) {
           className=""
         >
           <Button>
-            <IconArrowBarToDown className={`inline h-6 mr-2`} />
+            <IconArrowBarToDown className={`inline h-6 mr-2`} stroke={1.8} />
             Plakátek
           </Button>
         </Link>
