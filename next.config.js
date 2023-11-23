@@ -1,19 +1,26 @@
-/** @type {import('next').NextConfig} */
-const runtimeCaching = require("./custom-cache");
+const customCache = require("./custom-cache");
+
 const withPWA = require("@ducanh2912/next-pwa").default({
-  disable: process.env.NODE_ENV === "development",
+  dest: "public",
   register: true,
-  cacheStartUrl: true,
+  extendDefaultRuntimeCaching: true,
   cacheOnFrontendNav: true,
   aggressiveFrontEndNavCaching: true,
+  cacheStartUrl: true,
   swcMinify: true,
-  dest: "public",
-  skipWaiting: true,
-  runtimeCaching: runtimeCaching,
-  //...
+  extendDefaultRuntimeCaching: true,
+  workboxOptions: {
+    runtimeCaching: customCache,
+  },
+  fallbacks: {
+    // Failed page requests fallback to this.
+    document: "/~offline",
+  },
+  disable: process.env.NODE_ENV === "development",
 });
 
 module.exports = withPWA({
-  reactStrictMode: true,
+  // Your Next.js config
   output: "export",
+  reactStrictMode: true,
 });
