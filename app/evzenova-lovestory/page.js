@@ -8,7 +8,7 @@ import ProgramDetail from "../../components/layouts/program-detail";
 import program from "../../components/switcher/program.json";
 import ContainerH2 from "../../components/layouts/container-h2";
 import ContainerParagraph from "../../components/layouts/container-paragraph";
-export default async function Vikariaty() {
+export default function Evzen() {
   return (
     <main className="ease-in-out duration-300 font-titilliumWeb">
       <Header />
