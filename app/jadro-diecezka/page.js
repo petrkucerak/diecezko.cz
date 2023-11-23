@@ -78,6 +78,15 @@ export const jadro = [
     className: "",
   },
   {
+    name: "Dan Blažek",
+    description:
+      "Dan ve Filharmonii nabízí vesmírný merch a&nbsp;přikládá ruku k&nbsp;dílu všude, kde je potřeba.",
+    jpgPath: "/assets/images/jadro/blazek.jpg",
+    webpPath: "/assets/images/jadro/blazek.webp",
+    altText: "Profilová fotka Klárky Kopecké",
+    className: "",
+  },
+  {
     name: "o. Tomáš Hoffmann",
     description:
       "Tomáš je nejen ředitelem Vesmíru a&nbsp;DCM, ale hlavně duchovní opora celého přípravného týmu.",
