@@ -14,7 +14,7 @@ export default function Evzen() {
         <Container>
           <ContainerTitle>Evženova Lovestory</ContainerTitle>
           <ContainerDescription className={`mt-0 !text-2xl font-mono`}>
-            #VzdechJeSlysetDoDaly
+            #RustJeDobry
           </ContainerDescription>
           <ContainerH2>Příběh</ContainerH2>
           TODO
