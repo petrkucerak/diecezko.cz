@@ -32,10 +32,10 @@ export default function Evzen() {
             něco jiného než jen pro zob. Nu, zpátky k&nbsp;vyprávění, víte, coo…
             Tak mám klasické předsudky, samí hloupí holubové, když tu náhle
             zahlédnu holubici. Perla mezi kamením. Ta jiskra v&nbsp;jejích
-            očích, stopa nepopiratelná inteligence, která se v&nbsp;nich
+            očích, stopa nepopiratelné inteligence, která se v&nbsp;nich
             zrcadlí. Ona na mě ale pohlédla jen jako na ostatní holuby
             a&nbsp;frnk pryč. Chtěl jsem za ní letět, měla ale bohužel náskok.
-            Byl jsem bez šance. Naštěstí mi nenasytní bratři holubové mi
+            Byl jsem bez šance. Naštěstí mi nenasytní bratři holubové
             prozradili, že Starý Datel, by o&nbsp;ní mohl vědět víc…
           </ContainerParagraph>
           <ContainerH2>Instrukce</ContainerH2>
