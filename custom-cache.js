@@ -53,7 +53,7 @@ module.exports = [
       rangeRequests: true,
       cacheName: "static-files-assets",
       expiration: {
-        maxEntries: 15,
+        maxEntries: 32,
         maxAgeSeconds: 7 * 24 * 60 * 60, // 7 days
       },
     },
