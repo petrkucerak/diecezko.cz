@@ -1,3 +1,4 @@
+"use client";
 import Container from "../layouts/container";
 import ContainerH2 from "../layouts/container-h2";
 import ContainerParagraph from "../layouts/container-paragraph";
@@ -6,19 +7,30 @@ import {
   IconBrandFacebook,
   IconHeartHandshake,
   IconPencil,
+  IconSpeakerphone,
 } from "@tabler/icons";
 import Link from "next/link";
 import Nbsp from "../format/nbsp";
 import Strong from "../format/strong";
 import Countdown from "../countdown";
 import IconCustomEvzen from "../images/evzen";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { install } from "../../lib/installation";
 
 export default function DiecezkoInfo({ id, className }) {
   useEffect(() => {
     install();
   }, []);
+  const [form, setForm] = useState("");
+  const [feedback, setFeedback] = useState("!hidden");
+
+  let now = new Date();
+  const eventStart = new Date("2023-11-25T09:00:00");
+  if (now.getTime() > eventStart.getTime() && form !== "!hidden") {
+    setForm("!hidden");
+    setFeedback("");
+  }
+
   return (
     <Container id={id} className={className}>
       <div className="min-h-[70vh] flex flex-col items-center justify-around">
@@ -47,10 +59,10 @@ export default function DiecezkoInfo({ id, className }) {
             href="https://forms.gle/aMQor8ARxaULdD8t7"
             rel="external noopener nofollow"
             target="_blank"
-            className="border border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-5 cursor-pointer text-base flex flex-row items-center justify-center"
+            className={`${form} border border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-5 cursor-pointer text-base flex flex-row items-center justify-center`}
           >
             <button className="flex flex-row items-center justify-center">
-              <IconPencil className="inline" />{" "}
+              <IconPencil className="inline" stroke={1.5} />{" "}
               <span className="ml-2 text-left">Přihláška</span>
             </button>
           </Link>
@@ -58,10 +70,10 @@ export default function DiecezkoInfo({ id, className }) {
             href="https://forms.gle/M4Pc27SiqY9Wa7u87"
             rel="external noopener nofollow"
             target="_blank"
-            className="border border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-5 cursor-pointer text-base flex flex-row items-center justify-center"
+            className={`${form} border border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-5 cursor-pointer text-base flex flex-row items-center justify-center`}
           >
             <button className="flex flex-row items-center justify-center">
-              <IconHeartHandshake className="inline" />{" "}
+              <IconHeartHandshake className="inline" stroke={1.5} />{" "}
               <span className="ml-2 text-left">Chci pomoct</span>
             </button>
           </Link>
@@ -72,7 +84,7 @@ export default function DiecezkoInfo({ id, className }) {
             className="border border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-5 cursor-pointer text-base flex flex-row items-center justify-center"
           >
             <button className="flex flex-row items-center justify-center">
-              <IconBrandFacebook className="inline" />{" "}
+              <IconBrandFacebook className="inline" stroke={1.5} />{" "}
               <span className="ml-2 text-left">Událost</span>
             </button>
           </Link>
@@ -86,8 +98,22 @@ export default function DiecezkoInfo({ id, className }) {
               id="installation-button"
               title="Instalovat jako PWA"
             >
-              <IconApps className="inline" />{" "}
+              <IconApps className="inline" stroke={1.5} />{" "}
               <span className="ml-2 text-left">Nainstalovat</span>
+            </button>
+          </Link>
+          <Link
+            href="https://forms.gle/ferpkc3qfSZD3tTE9"
+            rel="external noopener nofollow"
+            target="_blank"
+            className={`${feedback} border col-span-2 border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-5 cursor-pointer text-base flex flex-row items-center justify-center`}
+          >
+            <button className="flex flex-row items-center justify-center w-full">
+              <IconSpeakerphone
+                className="inline h-6 w-6 my-1 mr-2"
+                stroke={1.5}
+              />{" "}
+              <span className="ml-2 text-left">Zpětná vazba</span>
             </button>
           </Link>
           <Link
