@@ -14,7 +14,7 @@ export default function Evzen() {
 
   const napovedaFunction = () => {
     setNapoveda("S je |; P je .; L je -");
-    console.log("NOW");
+    // console.log("NOW");
   };
   return (
     <main className="ease-in-out duration-300 font-titilliumWeb">
