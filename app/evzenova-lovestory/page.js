@@ -22,7 +22,7 @@ export default function Evzen() {
             a&nbsp;spolutvořit Evženův příběh. Začíná mezi 14:00 a&nbsp;14:15 na
             BiGy tím, že si přečtete instrukce, které jsou na nástěnce
             u&nbsp;schodů a&nbsp;které vám poví, kam dále. Hru je potřeba
-            dokončit do 15:55, poté vás již nebude čekat nikdo na cílové
+            dokončit do 14:55, poté vás již nebude čekat nikdo na cílové
             rovince. Každý tým musí mít alespoň jednoho člověka, který má mobil s&nbsp;daty.
           </ContainerDescription>
           <ContainerH2>Úvod do příběhu</ContainerH2>
