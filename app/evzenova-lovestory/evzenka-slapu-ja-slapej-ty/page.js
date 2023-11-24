@@ -17,11 +17,16 @@ export default function Evzen() {
             #SlapuJaSlapejTy
           </ContainerDescription>
           <ContainerH2>Příběh</ContainerH2>
-          TODO
+          <ContainerParagraph>
+            Dostali jsme se na zvláštní, opravdu zajímavé místo. Je tu zvláštní
+            atmosféra středního města. To Vám připomnělo tvář Holuba Evžena
+            a&nbsp;vzplanula ve vás touha napsat pro něho báseň. Protože vás
+            inspirovalo okolí, v&nbsp;básni musíte pojmenovat 4 věci kolem sebe.
+          </ContainerParagraph>
           <ContainerH2>Instrukce</ContainerH2>
           <ContainerParagraph>
-            Vydejte se k&nbsp;UHK na přesnou souřadnici TODO. Tam se dozvíte
-            další instrukce.
+            Po sepsání básně minimálně o&nbsp;4 verších se vydejte na tyto
+            souřadnice.
           </ContainerParagraph>
         </Container>
       </PageMain>
