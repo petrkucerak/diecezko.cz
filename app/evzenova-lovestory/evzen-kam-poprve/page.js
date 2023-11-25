@@ -25,7 +25,7 @@ export default function Evzen() {
           </ContainerParagraph>
           <ContainerParagraph>
             Minulý týden jsem přilétl na náměstí. Klasicky, víte, jak to bývá.
-            Spousta mých bratrů a&nbsp;séger holubů. I&nbsp;když, já nejsme jako
+            Spousta mých bratrů a&nbsp;séger holubů. I&nbsp;když, já nejsem jako
             oni. Jsem jiní. S&nbsp;ostatními se nedá pořádně mluvit, furt by jen
             zobali, zobali, a&nbsp;to je všechno. To já raději vyhledávám
             pořádnou společnost, se kterou jde vést dialog a&nbsp;žít i&nbsp;pro
