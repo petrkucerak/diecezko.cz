@@ -17,11 +17,17 @@ export default function Evzen() {
             #RustJeDobry
           </ContainerDescription>
           <ContainerH2>Příběh</ContainerH2>
-          TODO
+          <ContainerParagraph>
+            Dostali jsme se na zvláštní, opravdu zajímavé místo. Je tu spousta
+            zeleně, klid, ticho a&nbsp;pohoda. To Vám připomnělo očka Holubice
+            Evženie a&nbsp;vzbudilo to ve vás vášeň sepsat pro ni báseň. Protože
+            vás inspirovalo okolí, v&nbsp;básni musíte pojmenovat 4 věci kolem
+            sebe.
+          </ContainerParagraph>
           <ContainerH2>Instrukce</ContainerH2>
           <ContainerParagraph>
-            Vydejte se k&nbsp;UHK na přesnou souřadnici TODO. Tam se dozvíte
-            další instrukce.
+            Po sepsání básně minimálně o&nbsp;4 verších se vydejte na tyto
+            souřadnice 50.2078364N, 15.8303169E.
           </ContainerParagraph>
         </Container>
       </PageMain>

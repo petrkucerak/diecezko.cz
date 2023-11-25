@@ -17,11 +17,19 @@ export default function Evzen() {
             #ZBonaNaJedno
           </ContainerDescription>
           <ContainerH2>Příběh</ContainerH2>
-          TODO
+          <ContainerParagraph>
+            V&nbsp;křídlech cítíte, že se již blížíte k&nbsp;Holubovi Evženovi,
+            k&nbsp;tomu pro něhož vaše srdce vzplanulo. Na mysl vám ale začnou
+            přicházet temné myšlenky. Co když se na Vás ani nepodívá, co když si
+            o&nbsp;vás pomyslí něco špatného, co když ji s&nbsp;vámi nebude
+            dobře? Co když nejste dost krásná? Víte, že to je jen o&nbsp;hlavě
+            a&nbsp;že to musíte překonat.
+          </ContainerParagraph>
           <ContainerH2>Instrukce</ContainerH2>
           <ContainerParagraph>
-            Vydejte se k&nbsp;UHK na přesnou souřadnici TODO. Tam se dozvíte
-            další instrukce.
+            Pospěšte, natáhněte krok a&nbsp;co nejrychleji bez ohlížení
+            a&nbsp;pochybností se dostaňte na místo (50.2080458N, 15.8292844E),
+            kde na vás snad již bude čekat Evžen.
           </ContainerParagraph>
         </Container>
       </PageMain>
