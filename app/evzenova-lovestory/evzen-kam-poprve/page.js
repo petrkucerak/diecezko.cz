@@ -6,6 +6,7 @@ import PageMain from "../../../components/layouts/page-main";
 import ContainerDescription from "../../../components/layouts/container-description";
 import ContainerH2 from "../../../components/layouts/container-h2";
 import ContainerParagraph from "../../../components/layouts/container-paragraph";
+import Link from "next/link";
 export default function Evzen() {
   return (
     <main className="ease-in-out duration-300 font-titilliumWeb">
@@ -25,7 +26,7 @@ export default function Evzen() {
           </ContainerParagraph>
           <ContainerParagraph>
             Minulý týden jsem přilétl na náměstí. Klasicky, víte, jak to bývá.
-            Spousta mých bratrů a&nbsp;séger holubů. I&nbsp;když, já nejsme jako
+            Spousta mých bratrů a&nbsp;séger holubů. I&nbsp;když, já nejsem jako
             oni. Jsem jiní. S&nbsp;ostatními se nedá pořádně mluvit, furt by jen
             zobali, zobali, a&nbsp;to je všechno. To já raději vyhledávám
             pořádnou společnost, se kterou jde vést dialog a&nbsp;žít i&nbsp;pro
@@ -41,6 +42,16 @@ export default function Evzen() {
           <ContainerH2>Instrukce</ContainerH2>
           <ContainerParagraph>
             Vydejte se za Starým Datlem na souřadnici 50.2055842N, 15.8286917E.
+          </ContainerParagraph>
+          <ContainerParagraph className="!font-mono">
+            Pokud byste v&nbsp;průběhu hry nevěděli kam dále, zavolejte na:{" "}
+            <Link
+              href={`tel:+420731769416`}
+              target="_blank"
+              className="underline"
+            >
+              731 769 416
+            </Link>
           </ContainerParagraph>
         </Container>
       </PageMain>
