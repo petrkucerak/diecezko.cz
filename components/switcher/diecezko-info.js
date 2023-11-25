@@ -21,15 +21,15 @@ export default function DiecezkoInfo({ id, className }) {
   useEffect(() => {
     install();
   }, []);
-  const [form, setForm] = useState("");
-  const [feedback, setFeedback] = useState("!hidden");
+  // const [form, setForm] = useState("");
+  // const [feedback, setFeedback] = useState("!hidden");
 
-  let now = new Date();
-  const eventStart = new Date("2023-11-25T09:00:00");
-  if (now.getTime() > eventStart.getTime() && form !== "!hidden") {
-    setForm("!hidden");
-    setFeedback("");
-  }
+  // let now = new Date();
+  // const eventStart = new Date("2023-11-25T09:00:00");
+  // if (now.getTime() > eventStart.getTime() && form !== "!hidden") {
+  //   setForm("!hidden");
+  //   setFeedback("");
+  // }
 
   return (
     <Container id={id} className={className}>
@@ -41,7 +41,7 @@ export default function DiecezkoInfo({ id, className }) {
           <span className="text-2xl text-center tracking-wide">
             25.&nbsp;11.&nbsp;2023 • 9.30
           </span>
-          <Countdown countDownDate={new Date("Nov 25, 2023 9:00:00")} />
+          {/* <Countdown countDownDate={new Date("Nov 25, 2023 9:00:00")} /> */}
         </div>
         <div className="flex flex-col items-center w-[90vw]">
           <h1 className="text-5xl md:text-7xl font-caveatBrush text-center">
@@ -55,7 +55,7 @@ export default function DiecezkoInfo({ id, className }) {
           </p>
         </div>
         <div className="w-[90vw] max-w-[500px] grid grid-cols-2 grid-flow-row gap-4 items-center auto-cols-max">
-          <Link
+          {/* <Link
             href="https://forms.gle/aMQor8ARxaULdD8t7"
             rel="external noopener nofollow"
             target="_blank"
@@ -76,7 +76,7 @@ export default function DiecezkoInfo({ id, className }) {
               <IconHeartHandshake className="inline" stroke={1.5} />{" "}
               <span className="ml-2 text-left">Chci pomoct</span>
             </button>
-          </Link>
+          </Link> */}
           <Link
             href="https://www.facebook.com/events/520344309938232"
             rel="external"
@@ -106,7 +106,8 @@ export default function DiecezkoInfo({ id, className }) {
             href="https://forms.gle/ferpkc3qfSZD3tTE9"
             rel="external noopener nofollow"
             target="_blank"
-            className={`${feedback} border col-span-2 border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-5 cursor-pointer text-base flex flex-row items-center justify-center`}
+            // className={`${feedback} border col-span-2 border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-5 cursor-pointer text-base flex flex-row items-center justify-center`}
+            className={`border col-span-2 border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-5 cursor-pointer text-base flex flex-row items-center justify-center`}
           >
             <button className="flex flex-row items-center justify-center w-full">
               <IconSpeakerphone
