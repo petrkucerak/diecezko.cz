@@ -40,7 +40,7 @@ export default function Evzen() {
           </ContainerParagraph>
           <ContainerH2>Instrukce</ContainerH2>
           <ContainerParagraph>
-            Vydejte se za Starým Datlem na souřadnici TODO.
+            Vydejte se za Starým Datlem na souřadnici 50.2055842N, 15.8286917E.
           </ContainerParagraph>
         </Container>
       </PageMain>

@@ -27,8 +27,8 @@ export default function Evzen() {
           <ContainerH2>Instrukce</ContainerH2>
           <ContainerParagraph>
             Pospěšte, natáhněte krok a&nbsp;co nejrychleji bez ohlížení
-            a&nbsp;pochybností se dostaňte na místo, kde na Vás snad již bude
-            čekat Evženie.
+            a&nbsp;pochybností se dostaňte na místo (50.2080131N, 15.8292764E),
+            kde na vás snad již bude čekat Evženie.
           </ContainerParagraph>
         </Container>
       </PageMain>

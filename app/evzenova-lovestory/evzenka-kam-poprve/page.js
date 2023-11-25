@@ -38,7 +38,8 @@ export default function Evzen() {
           </ContainerParagraph>
           <ContainerH2>Instrukce</ContainerH2>
           <ContainerParagraph>
-            Vydejte se na známé místo Evženie, které najdete: TODO.
+            Vydejte se na známé místo Evženie, které najdete na těchto
+            50.2075942N, 15.8356492E souřadnicích.
           </ContainerParagraph>
         </Container>
       </PageMain>

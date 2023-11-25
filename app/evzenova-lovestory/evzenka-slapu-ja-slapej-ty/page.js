@@ -26,7 +26,7 @@ export default function Evzen() {
           <ContainerH2>Instrukce</ContainerH2>
           <ContainerParagraph>
             Po sepsání básně minimálně o&nbsp;4 verších se vydejte na tyto
-            souřadnice.
+            50.2085075N, 15.8326344E souřadnice.
           </ContainerParagraph>
         </Container>
       </PageMain>
