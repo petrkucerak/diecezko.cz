@@ -6,6 +6,7 @@ import PageMain from "../../../components/layouts/page-main";
 import ContainerDescription from "../../../components/layouts/container-description";
 import ContainerH2 from "../../../components/layouts/container-h2";
 import ContainerParagraph from "../../../components/layouts/container-paragraph";
+import Link from "next/link";
 export default function Evzen() {
   return (
     <main className="ease-in-out duration-300 font-titilliumWeb">
@@ -41,6 +42,16 @@ export default function Evzen() {
           <ContainerH2>Instrukce</ContainerH2>
           <ContainerParagraph>
             Vydejte se za Starým Datlem na souřadnici 50.2055842N, 15.8286917E.
+          </ContainerParagraph>
+          <ContainerParagraph className="!font-mono">
+            Pokud byste v&nbsp;průběhu hry nevěděli kam dále, zavolejte na:{" "}
+            <Link
+              href={`tel:+420731769416`}
+              target="_blank"
+              className="underline"
+            >
+              731 769 416
+            </Link>
           </ContainerParagraph>
         </Container>
       </PageMain>

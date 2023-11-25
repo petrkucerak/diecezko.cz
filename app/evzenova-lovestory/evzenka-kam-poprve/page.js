@@ -6,6 +6,7 @@ import PageMain from "../../../components/layouts/page-main";
 import ContainerDescription from "../../../components/layouts/container-description";
 import ContainerH2 from "../../../components/layouts/container-h2";
 import ContainerParagraph from "../../../components/layouts/container-paragraph";
+import Link from "next/link";
 export default function Evzen() {
   return (
     <main className="ease-in-out duration-300 font-titilliumWeb">
@@ -40,6 +41,16 @@ export default function Evzen() {
           <ContainerParagraph>
             Vydejte se na známé místo Evženie, které najdete na těchto
             50.2075942N, 15.8356492E souřadnicích.
+          </ContainerParagraph>
+          <ContainerParagraph className="!font-mono">
+            Pokud byste v&nbsp;průběhu hry nevěděli kam dále, zavolejte na:{" "}
+            <Link
+              href={`tel:+420731769416`}
+              target="_blank"
+              className="underline"
+            >
+              731 769 416
+            </Link>
           </ContainerParagraph>
         </Container>
       </PageMain>
