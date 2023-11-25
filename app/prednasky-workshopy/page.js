@@ -167,7 +167,7 @@ const workshops = [
     title: "Kdo jsem a&nbsp;kam jdu? – aneb jaký je cíl mé cesty životem",
     type: "person",
     id: "prednaska-start",
-    place: "BiGy",
+    place: "místnost 107, BiGy",
     descritpion:
       "Vyprávění o&nbsp;motivaci pro putování do Compostelly, několik neobyčejných příběhů z&nbsp;cesty a&nbsp;v&nbsp;porovnání Svatojakubského putování s&nbsp;cestou životem.",
     speaker: {
@@ -178,7 +178,7 @@ const workshops = [
   {
     title: "Cesta do hlubin mé duše",
     type: "person",
-    place: "BiGy",
+    place: "místnost 212, BiGy",
     descritpion:
       "Cestu do hlubin duše je možné učinit dvěma zdánlivě různými cestami - psychologickou a&nbsp;duchovní, které se nakonec vzájemně významně doplňují. Vyžaduje to určitou dávku odvahy. Poznám se, rozvinu se, nahlídnu i&nbsp;na stíny své osobnosti a&nbsp;v&nbsp;procesu psychoterapie mohu ošetřit svoje trápení, životní témata, která mě mohou v&nbsp;životě výrazně ovlivňovat.",
     speaker: {
@@ -192,11 +192,11 @@ const workshops = [
   {
     title: "Na misích s Lékaři bez hranic",
     type: "person",
-    place: "BiGy",
+    place: "místnost 207, BiGy",
     descritpion:
       "Jako zdravotní sestra jsem se v&nbsp;letech 2002-2010 účastnila 7 misí s&nbsp;organizací Lékaři bez hranic. V&nbsp;Burundi, zmítané občanskou válkou, v&nbsp;uprchlickém táboře v&nbsp;Čadu, v&nbsp;pediatrické nemocnici v&nbsp;Herátu v&nbsp;Afghánistánu, po tsunami v&nbsp;Indonésii, v&nbsp;Kolumbii a&nbsp;na Haiti po zemětřesení. Cesta k&nbsp;tomu být “ready and go” byla dlouhá. O&nbsp;této cestě a&nbsp;práci na misích bych vám ráda chtěla povyprávět.",
     speaker: {
-      name: "Terezie Hurychová",
+      name: "Terezie Aron Hurychová",
       jpgPath: "/assets/images/speakers/hurychova.jpg",
     },
     social: {
@@ -206,7 +206,7 @@ const workshops = [
   {
     title: "Proč manželství?",
     type: "person",
-    place: "BiGy",
+    place: "místnost 104, BiGy",
     descritpion:
       "Má manželství v&nbsp;dnešní době ještě smysl? Stojí pár fotek s&nbsp;družičkami za to? Nebo jen proto, že si to přejí rodiče nebo babička? Není důležitější se nejdřív pořádně vyzkoušet a&nbsp;hlavně mít se rádi?",
     speaker: {
@@ -217,7 +217,7 @@ const workshops = [
   {
     title: "Jak zvolit to nejlepší? Aneb Boží vůle jako projev Boží lásky",
     type: "person",
-    place: "BiGy",
+    place: "místnost 217, BiGy",
     descritpion:
       "Každý náš den je plný rozhodování o&nbsp;malých nebo i&nbsp;větších věcech, a&nbsp;tak stojí za to zamyslet se nad tím, podle jakých kritérií se vlastně rozhodujeme, nebo zda se vůbec rozhodujeme. Má v&nbsp;našich volbách místo Bůh? Jak vnímáme Jeho vůli?",
     speaker: {
@@ -228,7 +228,7 @@ const workshops = [
   {
     title: "Jaké je to být dítětem ve válce?",
     type: "person",
-    place: "BiGy",
+    place: "místnost 113, BiGy",
     descritpion:
       "Natálce je 9 let a&nbsp;Syrská občanská válka právě vypukla. Co se s&nbsp;Natálkou stane? Zachrání se Natálka s&nbsp;rodinou z&nbsp;válečného konfliktu? Pojď si poslechnout zajímavé informace o&nbsp;Sýrii a&nbsp;příběh Natálčiny rodiny, která našla mír v&nbsp;České republice.",
     speaker: {
@@ -239,7 +239,7 @@ const workshops = [
   {
     title: "Mladí a spoluodpovědnost za správu věcí veřejných",
     type: "person",
-    place: "BiGy",
+    place: "místnost 208, BiGy",
     descritpion:
       '"Politika je především uměním setkávání, reflexí a&nbsp;akcí" říká papež František. Co tím má na mysli? Politika jako spoluodpovědnost za správu věcí veřejných. A&nbsp;jak složité je v&nbsp;politice uplatnit myšlenku sv.&nbsp;Augustýna "Odsuzuj hřích, ale miluj hříšníka"? Politika jako výzva i&nbsp;úkol, odpovědnost i&nbsp;poslání. O&nbsp;roli a&nbsp;ochotě mladých jít s&nbsp;kůží na trh a&nbsp;aktivně se zapojit do vytváření charakteru místního společenství i&nbsp;řešení zásadních témat celé naší společnosti. A&nbsp;hlavně se těším na besedu a&nbsp;dialog o&nbsp;tom, co mladé na dnešní politice na všech úrovních zajímá, na kritickou zpětnou vazbu, bez které se politik utopí v&nbsp;každodenní rutině.',
     speaker: {
@@ -255,7 +255,7 @@ const workshops = [
   {
     title: "Svět indických dětí",
     type: "person",
-    place: "BiGy",
+    place: "místnost 216, BiGy",
     descritpion:
       "Zajímá Tě, jak žijí chudé indické děti a&nbsp;jaký význam pro ně má pomoc dárců z&nbsp;projektu Adopce na dálku? Během této besedy společně navštívíme jedno z&nbsp;nejlidnatějších měst Indie i&nbsp;místa na odlehlém venkově.",
     speaker: {
@@ -270,7 +270,7 @@ const workshops = [
   {
     title: "O čem byla synoda v Římě: Bude se měnit učení církve?",
     type: "person",
-    place: "BiGy",
+    place: "místnost 315, BiGy",
     descritpion:
       "Dva roky přípravy po celém světě, celý měsíc říjen plný setkání, diskuzí a&nbsp;modliteb v&nbsp;Římě. Přesně 365 účastníků s&nbsp;hlasovacím právem (včetně papeže Františka a&nbsp;54 žen). Co se řešilo a&nbsp;neřešilo na 16. řádném zasedání biskupské synody? Bude se žehnat homosexuálním párům? Budou se světit ženy na jáhenky? Zůstane katolická církev katolickou? Nebo je synoda o&nbsp;synodalitě trošku o&nbsp;něčem jiném?",
     speaker: {
@@ -299,7 +299,7 @@ const workshops = [
   {
     title: "Povídání nejen o písničkách",
     type: "person",
-    place: "BiGy",
+    place: "místnost 306, BiGy",
     descritpion:
       "Michal Horák je písničkář, pedagog a&nbsp;hradecký rodák. Jeho písničky jsou populární napříč generacemi, o&nbsp;čemž svědčí přes 30 milionů zhlédnutí na YouTube, přes 120&nbsp;000 posluchačů měsíčně na Spotify anebo ocenění Zlatý Slavík v&nbsp;kategorii Objev roku 2021. S&nbsp;Michalem si budeme povídat nejen o&nbsp;jeho hudební cestě, ale i&nbsp;o&nbsp;životě, pedagogice, křesťanských a&nbsp;jiných otázkách apod.",
     speaker: {
@@ -330,7 +330,7 @@ const workshops = [
     title: "Láska podle sv. Pavla",
     type: "workshop",
     // id: "prednaska-start",
-    place: "BiGy",
+    place: "místnost 303, BiGy",
     descritpion:
       "To naše rozhodnutí z&nbsp;nás dělají tím kým jsme. Ale podle čeho se rozhodujeme? Kompasem, který má vždy jasno, nebo kompasem Jacka Sparrowa, který chaosí dle aktuálního přání? Ježíš a&nbsp;sv.&nbsp;Pavel nám nabízejí řešení. Zvu Vás na workshop o&nbsp;lásce a&nbsp;jejích konkrétních vlastnostech. Naše společné setkání bude plné ukázek, her, videí, diskusi a&nbsp;sdílení s&nbsp;přesahem do osobního života, vztazích, leadershipu, animátorství…",
     speaker: {
