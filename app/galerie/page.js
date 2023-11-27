@@ -39,7 +39,7 @@ export default async function Galerie() {
             </Link>
             .
           </ContainerDescription>
-          <Gallery photos={photos} margin={2} direction="column" />
+          <Gallery photos={photos} margin={2} /*direction="column"*/ />
         </Container>
       </PageMain>
       <Footer />
