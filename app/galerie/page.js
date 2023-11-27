@@ -6,21 +6,12 @@ import ContainerTitle from "../../components/layouts/container-title";
 import ContainerDescription from "../../components/layouts/container-description";
 import PageMain from "../../components/layouts/page-main";
 import Link from "next/link";
-import Gallery from "react-photo-gallery-next";
-import { useCallback, useState } from "react";
 import { photos } from "../../components/photos";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
+import { useState } from "react";
 export default function Galerie() {
-  const [currentImage, setCurrentImage] = useState(0);
-  const [viewerIsOpen, setViewerIsOpen] = useState(false);
-  const openLightbox = useCallback((event, { photo, index }) => {
-    setCurrentImage(index);
-    setViewerIsOpen(true);
-  }, []);
-  const closeLightbox = () => {
-    setCurrentImage(0);
-    setViewerIsOpen(false);
-  };
-
+  const [open, setOpen] = useState(true);
   return (
     <main className="ease-in-out duration-300 font-titilliumWeb">
       <Header />
@@ -47,8 +38,12 @@ export default function Galerie() {
               Honza Urban
             </Link>
             .
+            <Lightbox
+              open={open}
+              close={() => setOpen(false)}
+              slides={photos}
+            />
           </ContainerDescription>
-          <Gallery photos={photos} margin={2} onClick={openLightbox} />
         </Container>
       </PageMain>
       <Footer />
