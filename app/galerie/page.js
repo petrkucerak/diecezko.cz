@@ -36,7 +36,7 @@ export default function Galerie() {
             </Link>
             .
           </ContainerDescription>
-          <Gallery photos={photos} margin={2} /*direction="column"*/ />
+          <Gallery photos={photos} margin={2} />
         </Container>
       </PageMain>
       <Footer />
