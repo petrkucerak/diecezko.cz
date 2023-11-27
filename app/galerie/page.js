@@ -7,11 +7,8 @@ import ContainerDescription from "../../components/layouts/container-description
 import PageMain from "../../components/layouts/page-main";
 import Link from "next/link";
 import Gallery from "react-photo-gallery-next";
-export default async function Galerie() {
-  const response = await fetch(
-    "https://data.diecezko.cz/2023/foto/images.json"
-  );
-  const photos = await response.json();
+import { photos } from "../../components/photos";
+export default function Galerie() {
   return (
     <main className="ease-in-out duration-300 font-titilliumWeb">
       <Header />
