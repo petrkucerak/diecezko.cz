@@ -127,6 +127,9 @@ export const vikariaty = [
     name: "Havlíčkův Brod",
     // description:
     //   "Virům silnými hornina snad geologickou kladení souvisela úhlem. Varování pasivitou míst o amerických padesátiminutový jako tito zaslechl neobvyklé virů či přichytávacích mamutů víceméně rozdělit fakticky obrovským.",
+    priest: {
+      name: "P. Ondřej Špinler",
+    },
     person1: {
       name: "Tereza Škarydová",
       jpgPath: "/assets/images/vikariaty/skarydova.jpg",
@@ -246,8 +249,8 @@ export const vikariaty = [
     // description:
     //   "Virům silnými hornina snad geologickou kladení souvisela úhlem. Varování pasivitou míst o amerických padesátiminutový jako tito zaslechl neobvyklé virů či přichytávacích mamutů víceméně rozdělit fakticky obrovským.",
     priest: {
-      name: "P. Dmytro Romanovský",
-      jpgPath: "/assets/images/vikariaty/romanovsky.jpg",
+      name: "jáhen Michal Šramko",
+      jpgPath: "/assets/images/jadro/sramko.jpg",
     },
     person1: {
       name: "Alžběta Veronika Cinerová",
@@ -287,6 +290,10 @@ export const vikariaty = [
     name: "Náchod",
     // description:
     //   "Virům silnými hornina snad geologickou kladení souvisela úhlem. Varování pasivitou míst o amerických padesátiminutový jako tito zaslechl neobvyklé virů či přichytávacích mamutů víceméně rozdělit fakticky obrovským.",
+    priest: {
+      name: "jáhen Jan Pecháček",
+      jpgPath: "/assets/images/jadro/pechacek.jpg",
+    },
     person1: {
       name: "Kateřina Vydláková",
       jpgPath: "/assets/images/vikariaty/vydlakova.jpg",
