@@ -1,3 +1,4 @@
+"use client";
 import Header from "../../components/header";
 import Footer from "../../components/footer";
 import Container from "../../components/layouts/container";
@@ -5,7 +6,12 @@ import ContainerTitle from "../../components/layouts/container-title";
 import ContainerDescription from "../../components/layouts/container-description";
 import PageMain from "../../components/layouts/page-main";
 import Link from "next/link";
-export default function Galerie() {
+import Gallery from "react-photo-gallery-next";
+export default async function Galerie() {
+  const response = await fetch(
+    "https://data.diecezko.cz/2023/foto/images.json"
+  );
+  const photos = await response.json();
   return (
     <main className="ease-in-out duration-300 font-titilliumWeb">
       <Header />
@@ -33,6 +39,7 @@ export default function Galerie() {
             </Link>
             .
           </ContainerDescription>
+          <Gallery photos={photos} margin={2} direction="column" />
         </Container>
       </PageMain>
       <Footer />
