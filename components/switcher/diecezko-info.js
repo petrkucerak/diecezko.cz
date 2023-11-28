@@ -2,34 +2,18 @@
 import Container from "../layouts/container";
 import ContainerH2 from "../layouts/container-h2";
 import ContainerParagraph from "../layouts/container-paragraph";
-import {
-  IconApps,
-  IconBrandFacebook,
-  IconHeartHandshake,
-  IconPencil,
-  IconSpeakerphone,
-} from "@tabler/icons";
+import { IconApps, IconPhoto, IconSpeakerphone } from "@tabler/icons";
 import Link from "next/link";
 import Nbsp from "../format/nbsp";
 import Strong from "../format/strong";
-import Countdown from "../countdown";
 import IconCustomEvzen from "../images/evzen";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { install } from "../../lib/installation";
 
 export default function DiecezkoInfo({ id, className }) {
   useEffect(() => {
     install();
   }, []);
-  // const [form, setForm] = useState("");
-  // const [feedback, setFeedback] = useState("!hidden");
-
-  // let now = new Date();
-  // const eventStart = new Date("2023-11-25T09:00:00");
-  // if (now.getTime() > eventStart.getTime() && form !== "!hidden") {
-  //   setForm("!hidden");
-  //   setFeedback("");
-  // }
 
   return (
     <Container id={id} className={className}>
@@ -55,37 +39,14 @@ export default function DiecezkoInfo({ id, className }) {
           </p>
         </div>
         <div className="w-[90vw] max-w-[500px] grid grid-cols-2 grid-flow-row gap-4 items-center auto-cols-max">
-          {/* <Link
-            href="https://forms.gle/aMQor8ARxaULdD8t7"
-            rel="external noopener nofollow"
-            target="_blank"
-            className={`${form} border border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-5 cursor-pointer text-base flex flex-row items-center justify-center`}
-          >
-            <button className="flex flex-row items-center justify-center">
-              <IconPencil className="inline" stroke={1.5} />{" "}
-              <span className="ml-2 text-left">Přihláška</span>
-            </button>
-          </Link>
           <Link
-            href="https://forms.gle/M4Pc27SiqY9Wa7u87"
-            rel="external noopener nofollow"
-            target="_blank"
-            className={`${form} border border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-5 cursor-pointer text-base flex flex-row items-center justify-center`}
-          >
-            <button className="flex flex-row items-center justify-center">
-              <IconHeartHandshake className="inline" stroke={1.5} />{" "}
-              <span className="ml-2 text-left">Chci pomoct</span>
-            </button>
-          </Link> */}
-          <Link
-            href="https://www.facebook.com/events/520344309938232"
-            rel="external"
-            target="_blank"
+            href="/galerie"
+            target="_self"
             className="border border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-5 cursor-pointer text-base flex flex-row items-center justify-center"
           >
             <button className="flex flex-row items-center justify-center">
-              <IconBrandFacebook className="inline" stroke={1.5} />{" "}
-              <span className="ml-2 text-left">Událost</span>
+              <IconPhoto className="inline" stroke={1.5} />{" "}
+              <span className="ml-2 text-left">Galerie</span>
             </button>
           </Link>
           <Link
@@ -106,7 +67,6 @@ export default function DiecezkoInfo({ id, className }) {
             href="https://forms.gle/ferpkc3qfSZD3tTE9"
             rel="external noopener nofollow"
             target="_blank"
-            // className={`${feedback} border col-span-2 border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-5 cursor-pointer text-base flex flex-row items-center justify-center`}
             className={`border col-span-2 border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-5 cursor-pointer text-base flex flex-row items-center justify-center`}
           >
             <button className="flex flex-row items-center justify-center w-full">
