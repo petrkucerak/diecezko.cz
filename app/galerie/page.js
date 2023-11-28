@@ -38,22 +38,22 @@ export default function Galerie() {
             .
           </ContainerDescription>
           <div className="w-full grid md:grid-cols-2 gap-4">
-            <Link
+            <a
               href="/galerie/gorun"
               className="hover:scale-105 duration-200 flex flex-col items-center justify-center w-full h-64 bg-[url('https://data.diecezko.cz/2023/foto/M.Gorun-170.webp')] bg-center rounded-xl bg-cover"
             >
               <h2 className="text-2xl font-semibold backdrop-blur-sm p-8 rounded-xl">
                 Fotky od Matouše
               </h2>
-            </Link>
-            <Link
+            </a>
+            <a
               href="/galerie/urban"
               className="hover:scale-105 duration-200 flex flex-col items-center justify-center w-full h-64 bg-[url('https://data.diecezko.cz/2023/foto/IMG_0854.webp')] bg-center rounded-xl bg-cover"
             >
               <h2 className="text-2xl font-semibold backdrop-blur-sm p-8 rounded-xl">
                 Fotky od Honzi
               </h2>
-            </Link>
+            </a>
           </div>
         </Container>
       </PageMain>
