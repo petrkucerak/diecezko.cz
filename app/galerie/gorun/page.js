@@ -35,7 +35,7 @@ export default function Galerie() {
             >
               Matouš Gorun
             </Link>
-            .
+            .<p className="my-2 w-full"></p>
             <PhotoAlbum
               layout="masonry"
               photos={photos_gorun}

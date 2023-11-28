@@ -35,7 +35,7 @@ export default function Galerie() {
             >
               Honza Urban
             </Link>
-            .
+            .<p className="my-2 w-full"></p>
             <PhotoAlbum
               layout="masonry"
               photos={photos_urban}
