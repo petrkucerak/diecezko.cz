@@ -86,5 +86,15 @@ export default function sitemap() {
       lastModified: new Date(),
       changeFrequency: "yearly",
     },
+    {
+      url: "https://diecezko.cz/galerie/gorun",
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+    },
+    {
+      url: "https://diecezko.cz/galerie/urban",
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+    },
   ];
 }
