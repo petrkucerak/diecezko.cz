@@ -1,4 +1,4 @@
-export const photos = [
+export const photos_urban = [
   {
     src: "https://data.diecezko.cz/2023/foto/IMG_0716.webp",
     original: "https://data.diecezko.cz/2023/foto/IMG_0716.webp",
@@ -1815,6 +1815,8 @@ export const photos = [
     alt: "Fotka z podzimního Diecézka 2023",
     caption: "Fotka z podzimního Diecézka 2023",
   },
+];
+export const photos_gorun = [
   {
     src: "https://data.diecezko.cz/2023/foto/M.Gorun-1.webp",
     original: "https://data.diecezko.cz/2023/foto/M.Gorun-1.webp",
