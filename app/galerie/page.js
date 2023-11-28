@@ -51,7 +51,7 @@ export default function Galerie() {
               className="hover:scale-105 duration-200 flex flex-col items-center justify-center w-full h-64 bg-[url('https://data.diecezko.cz/2023/foto/IMG_0854.webp')] bg-center rounded-xl bg-cover"
             >
               <h2 className="text-2xl font-semibold backdrop-blur-sm p-8 rounded-xl">
-                Fotky od Honzi
+                Fotky od Honzy
               </h2>
             </Link>
           </div>
