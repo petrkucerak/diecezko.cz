@@ -234,8 +234,8 @@ export default function Game({ score }) {
             pojídáním jídla a sbíráním hvězdiček. Za každý kousek jídla je jiný
             počet bodů. Holubova cesta není jednoduchá! Musí se vyhýbat stavbám,
             raketám či vzducholodím. Na mobilu změníš holubův pohyb klinutím do
-            hry, na počítači stiskem mezerníku. Hodně štěstí, ať se s Tebou Evžen
-            dostane co nejdál!
+            hry, na počítači stiskem mezerníku. Hodně štěstí, ať se s Tebou
+            Evžen dostane co nejdál!
           </ContainerParagraph>
           <ContainerParagraph className="italic text-sm">
             Baví Tě programovat a chtěl bys Evžena zlepšit? Napiš na mail{" "}
@@ -273,6 +273,11 @@ export default function Game({ score }) {
             className="absolute z-10 top-80 bg-black/70 w-[60vw] max-w-[550px] text-center h-64 rounded-xl backdrop-blur-sm flex flex-col items-center justify-around hidden"
           >
             <h3 className="text-2xl font-bold">Evžen narazil!</h3>
+            <p>
+              Zapisování výsledků je uzamčeno,
+              <br />
+              hru už je možné pouze hrát.
+            </p>
             <button
               className="uppercase border py-2 px-6 rounded-full"
               onClick={refreshPage}
@@ -280,8 +285,9 @@ export default function Game({ score }) {
               nová hra
             </button>
             <button
-              className="uppercase  border py-2 px-6 rounded-full"
-              onClick={openFormDisplay}
+              className="uppercase border py-2 px-6 rounded-full cursor-not-allowed opacity-25 pointer-events-none scale-75"
+              // onClick={openFormDisplay} // locked, new score is not accepting
+              title="Hra již nepřijímá nové výsledky"
             >
               zapsat se
               <br />
@@ -385,8 +391,9 @@ export default function Game({ score }) {
       >
         <ContainerTitle>Síň slávy</ContainerTitle>
         <ContainerDescription>
-          V síni slávy jsou vytesány přezdívky těch nejlepších, kteří chtějí
-          na&nbsp;Diecézku vyhrát Evženovu hlavní cenu.
+          V síni slávy jsou vytesány přezdívky těch nejlepších, kteří chtěli
+          na&nbsp;Diecézku vyhrát Evženovu hlavní cenu. Třem nejlepším se
+          zadařilo, gratulujeme.
         </ContainerDescription>
         <ol className="list-decimal w-[90vw] max-w-[800px] my-2">
           {score.map((res) => {
