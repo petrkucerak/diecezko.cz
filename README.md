@@ -73,3 +73,4 @@ Minihra, která má za úkol přitáhnout mladé lidi a udělat z brožury troch
 ## Spojené projekty
 
 - Repository with API proxy server https://github.com/petrkucerak/api.diecezko.cz
+- Repositář s fotkami a jinými daty https://github.com/petrkucerak/data.diecezko.cz
