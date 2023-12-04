@@ -129,6 +129,7 @@ export const vikariaty = [
     //   "Virům silnými hornina snad geologickou kladení souvisela úhlem. Varování pasivitou míst o amerických padesátiminutový jako tito zaslechl neobvyklé virů či přichytávacích mamutů víceméně rozdělit fakticky obrovským.",
     priest: {
       name: "P. Ondřej Špinler",
+      jpgPath: "/assets/images/vikariaty/spinler.jpg",
     },
     person1: {
       name: "Tereza Škarydová",
