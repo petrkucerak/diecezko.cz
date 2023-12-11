@@ -15,6 +15,7 @@ export default function Vikariat({
   person3,
   priest,
   social,
+  coordinator,
 }) {
   return (
     <div className={`${className} w-full mb-12`} id={name}>
@@ -84,6 +85,20 @@ export default function Vikariat({
             altText={`Profilová fotka kaplana pro mládež ${priest.name}`}
           />
         ) : null}
+        {coordinator !== undefined ? (
+          <ProfileCard
+            className={``}
+            name={coordinator.name}
+            title={"Koordinátor mládeže"}
+            jpgPath={coordinator.jpgPath}
+            webpPath={
+              coordinator.webpPath === undefined
+                ? `${coordinator.jpgPath}`.replace(".jpg", ".webp")
+                : coordinator.webpPath
+            }
+            altText={`Profilová fotka koordinátora mládeže ${coordinator.name}`}
+          />
+        ) : null}
         {person1 !== undefined ? (
           <ProfileCard
             className={``}
@@ -95,7 +110,7 @@ export default function Vikariat({
                 ? `${person1.jpgPath}`.replace(".jpg", ".webp")
                 : person1.webpPath
             }
-            altText={`Profilova fotka zástupce pro mládež ${person1.name}`}
+            altText={`Profilová fotka zástupce pro mládež ${person1.name}`}
           />
         ) : null}
         {person2 !== undefined ? (
@@ -109,7 +124,7 @@ export default function Vikariat({
                 ? `${person2.jpgPath}`.replace(".jpg", ".webp")
                 : person2.webpPath
             }
-            altText={`Profilova fotka zástupce pro mládež ${person2.name}`}
+            altText={`Profilová fotka zástupce pro mládež ${person2.name}`}
           />
         ) : null}
         {person3 !== undefined ? (
@@ -123,7 +138,7 @@ export default function Vikariat({
                 ? `${person3.jpgPath}`.replace(".jpg", ".webp")
                 : person3.webpPath
             }
-            altText={`Profilova fotka zástupce pro mládež ${person3.name}`}
+            altText={`Profilová fotka zástupce pro mládež ${person3.name}`}
           />
         ) : null}
       </div>
