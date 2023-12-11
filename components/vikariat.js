@@ -96,7 +96,7 @@ export default function Vikariat({
                 ? `${coordinator.jpgPath}`.replace(".jpg", ".webp")
                 : coordinator.webpPath
             }
-            altText={`Profilova fotka koordinátora mládeže ${coordinator.name}`}
+            altText={`Profilová fotka koordinátora mládeže ${coordinator.name}`}
           />
         ) : null}
         {person1 !== undefined ? (
@@ -110,7 +110,7 @@ export default function Vikariat({
                 ? `${person1.jpgPath}`.replace(".jpg", ".webp")
                 : person1.webpPath
             }
-            altText={`Profilova fotka zástupce pro mládež ${person1.name}`}
+            altText={`Profilová fotka zástupce pro mládež ${person1.name}`}
           />
         ) : null}
         {person2 !== undefined ? (
@@ -124,7 +124,7 @@ export default function Vikariat({
                 ? `${person2.jpgPath}`.replace(".jpg", ".webp")
                 : person2.webpPath
             }
-            altText={`Profilova fotka zástupce pro mládež ${person2.name}`}
+            altText={`Profilová fotka zástupce pro mládež ${person2.name}`}
           />
         ) : null}
         {person3 !== undefined ? (
@@ -138,7 +138,7 @@ export default function Vikariat({
                 ? `${person3.jpgPath}`.replace(".jpg", ".webp")
                 : person3.webpPath
             }
-            altText={`Profilova fotka zástupce pro mládež ${person3.name}`}
+            altText={`Profilová fotka zástupce pro mládež ${person3.name}`}
           />
         ) : null}
       </div>
