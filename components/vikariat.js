@@ -15,6 +15,7 @@ export default function Vikariat({
   person3,
   priest,
   social,
+  coordinator,
 }) {
   return (
     <div className={`${className} w-full mb-12`} id={name}>
@@ -82,6 +83,20 @@ export default function Vikariat({
                 : priest.webpPath
             }
             altText={`Profilová fotka kaplana pro mládež ${priest.name}`}
+          />
+        ) : null}
+        {coordinator !== undefined ? (
+          <ProfileCard
+            className={``}
+            name={coordinator.name}
+            title={"Koordinátor mládeže"}
+            jpgPath={coordinator.jpgPath}
+            webpPath={
+              coordinator.webpPath === undefined
+                ? `${coordinator.jpgPath}`.replace(".jpg", ".webp")
+                : coordinator.webpPath
+            }
+            altText={`Profilova fotka koordinátora mládeže ${coordinator.name}`}
           />
         ) : null}
         {person1 !== undefined ? (

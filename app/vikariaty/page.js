@@ -46,6 +46,7 @@ export default async function Vikariaty() {
               <Vikariat
                 key={v.name}
                 name={v.name}
+                coordinator={v.coordinator}
                 person1={v.person1}
                 person2={v.person2}
                 person3={v.person3}
@@ -212,7 +213,7 @@ export const vikariaty = [
     name: "Jičín",
     // description:
     //   "Virům silnými hornina snad geologickou kladení souvisela úhlem. Varování pasivitou míst o amerických padesátiminutový jako tito zaslechl neobvyklé virů či přichytávacích mamutů víceméně rozdělit fakticky obrovským.",
-    person1: {
+    coordinator: {
       name: "Jan Janoušek",
       jpgPath: "/assets/images/vikariaty/janousek.jpg",
     },
