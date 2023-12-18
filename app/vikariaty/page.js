@@ -207,6 +207,7 @@ export const vikariaty = [
     social: {
       instagram: "https://www.instagram.com/vikariat_chrudim/",
       facebook: "https://www.facebook.com/profile.php?id=100080191366478",
+      web: "https://vikariat-chrudim.webnode.cz/",
     },
   },
   {
