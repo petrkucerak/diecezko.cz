@@ -25,7 +25,7 @@ export default function Cover({ children }) {
           <img
             alt="Západ slunce"
             loading="lazy"
-            src="assets/images/cover.png"
+            src="assets/images/cover.jpg"
             className="h-screen w-full -z-20 object-cover object-bottom"
           />
         </picture>

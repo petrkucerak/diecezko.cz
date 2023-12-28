@@ -1,7 +1,7 @@
 const homeUrl = "https://diecezko.cz/";
 const title = "Diecézko";
 const description =
-  "Brožura pro Diecézní setkání mládeže královehradecké diecéze, které začne společným programem v sobotu 25. listopadu v 9:30 ve Filharmonii. Těšte se také na hosty, workshopy, duchovní program či na závěrečnou mši svatou s biskupem v katedrále sv. Ducha.";
+  "Brožura pro Diecézní setkání mládeže královehradecké diecéze, které začne společným programem v sobotu 23. března v 9:30 ve Filharmonii. Těšte se také na hosty, workshopy, duchovní program či na závěrečnou mši svatou s biskupem v katedrále sv. Ducha.";
 const color = "#022960";
 
 export const meta = {
@@ -12,12 +12,12 @@ export const meta = {
     "diecézko hk",
     "diecézko hradec kralove",
     "diecézko hradec",
-    "diecézko 2023",
+    "diecézko 2024",
     "diecezko",
     "diecezko hk",
     "diecezko hradec kralove",
     "diecezko hradec",
-    "diecezko 2023",
+    "diecezko 2024",
     "diecézní setkání mládeže",
     "hradec králové",
   ],
@@ -50,7 +50,7 @@ export const meta = {
         url: `${homeUrl}opengraph-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Diecézko 2023 v Hradci Králové",
+        alt: "Diecézko 2024 v Hradci Králové",
       },
     ],
     locale: "cs_CZ",

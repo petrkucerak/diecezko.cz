@@ -106,6 +106,7 @@ export default function Header() {
             title="Diecézko.cz"
           >
             Diecézko.cz
+            <span className="text-xs relative top-[0.6rem] -left-2">2024</span>
           </Link>
         </div>
         <div>
@@ -125,18 +126,7 @@ export default function Header() {
         <ul
           className={`text-2xl flex flex-col items-start justify-around w-[90vw] max-w-[400px]`}
         >
-          <Link
-            href="/evzenova-cesta"
-            onClick={unlockScrolling}
-            target="_self"
-            className="border-b-[#3b3b3b] border-b w-full my-4"
-          >
-            <li className="flex flex-row items-center">
-              <IconCustomEvzen className="inline h-7 w-7 my-1 mr-2" />
-              Evženova cesta
-            </li>
-          </Link>
-          <Link
+          {/* <Link
             href="/mapa"
             onClick={unlockScrolling}
             target="_self"
@@ -146,7 +136,7 @@ export default function Header() {
               <IconMap stroke={1.5} className="inline h-7 w-7 my-1 mr-2" />
               Mapa míst
             </li>
-          </Link>
+          </Link> */}
           <Link
             href="vikariaty"
             onClick={unlockScrolling}
@@ -242,7 +232,7 @@ export default function Header() {
               </div>
             </div>
             <ul className={`${musicVisibility} w-full flex flex-col`}>
-              <Link
+              {/* <Link
                 href="/studenecka-kapela"
                 onClick={unlockScrolling}
                 target="_self"
@@ -255,7 +245,7 @@ export default function Header() {
                   />
                   Studenecká kapela
                 </li>
-              </Link>
+              </Link> */}
               <Link
                 href="/veka"
                 onClick={unlockScrolling}
@@ -270,7 +260,7 @@ export default function Header() {
             </ul>
           </li>
 
-          <Link
+          {/* <Link
             href="/jadro-diecezka"
             onClick={unlockScrolling}
             target="_self"
@@ -280,7 +270,7 @@ export default function Header() {
               <IconHeart stroke={1.5} className="inline h-7 w-7 my-1 mr-2" />
               Jádro Diecézka
             </li>
-          </Link>
+          </Link> */}
           <Link
             href="/partneri"
             onClick={unlockScrolling}
