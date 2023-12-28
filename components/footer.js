@@ -6,11 +6,13 @@ import {
 import Link from "next/link";
 
 export default function Footer() {
+  const date = new Date();
+  const year = date.getFullYear();
   return (
     <footer className="w-full flex flex-col items-center mt-4">
       <div className="flex flex-col-reverse md:flex-row justify-between flex-wrap items-center w-[90vw]">
-        <p className="font-light my-6">
-          © 2023,{" "}
+        <p className="font-light mb-6">
+          © {year},{" "}
           <Link
             href="https://www.bihk.cz/biskupstvi/diecezni-centrum-pro-mladez"
             target="_blank"
@@ -20,6 +22,15 @@ export default function Footer() {
             DCM Hradec Králové
           </Link>
         </p>
+        <div className="my-4 underline text-xs uppercase">
+          <Link
+            href="https://2023.diecezko.cz/"
+            target="_blank"
+            className="cursor-pointer"
+          >
+            Diecézko podzim 2023
+          </Link>
+        </div>
         <div className="flex flex-row items-center justify-around min-w-[150px]">
           <Link
             href="https://www.facebook.com/DCM.HradecKralove"

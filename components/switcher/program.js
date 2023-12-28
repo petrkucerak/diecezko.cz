@@ -7,7 +7,8 @@ import program from "./program.json";
 export default function Program({ id, className }) {
   return (
     <Container className={className} id={id}>
-      <ul>
+      <p className="text-xl mt-4">Program bude brzy specifikován...</p>
+      {/* <ul>
         {program.map((p) => {
           return (
             <li
@@ -53,15 +54,6 @@ export default function Program({ id, className }) {
                     <IconCalendarPlus className="inline" stroke={1.5} />
                   </button>
                 </Link>
-                {/* <Link
-                  href={`geo:${p.place.coords.x},${p.place.coords.y}`}
-                  target="_blank"
-                >
-                  <button className="border border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-3 cursor-pointer text-base flex flex-row items-center justify-center mb-2 mr-2">
-                    <IconCompass className="inline mr-1" stroke={1.5} />
-                    Navigovat na místo
-                  </button>
-                </Link> */}
                 {p.link !== undefined ? (
                   <Link href={p.link}>
                     <button className="border border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-3 cursor-pointer text-base flex flex-row items-center justify-center mb-2 mr-2">
@@ -74,7 +66,7 @@ export default function Program({ id, className }) {
             </li>
           );
         })}
-      </ul>
+      </ul> */}
     </Container>
   );
 }

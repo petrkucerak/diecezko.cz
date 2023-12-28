@@ -7,6 +7,7 @@ import Link from "next/link";
 import Nbsp from "../format/nbsp";
 import Strong from "../format/strong";
 import IconCustomEvzen from "../images/evzen";
+import Countdown from "../countdown";
 import { useEffect } from "react";
 import { install } from "../../lib/installation";
 
@@ -17,15 +18,15 @@ export default function DiecezkoInfo({ id, className }) {
 
   return (
     <Container id={id} className={className}>
-      <div className="min-h-[70vh] flex flex-col items-center justify-around">
+      <div className="min-h-[60vh] flex flex-col items-center justify-around">
         <div className="flex flex-col items-center w-full">
           <span className="text-base text-center">
             Filharmonie Hradec Králové
           </span>
           <span className="text-2xl text-center tracking-wide">
-            25.&nbsp;11.&nbsp;2023 • 9.30
+            23.&nbsp;3.&nbsp;2024 • 9.30
           </span>
-          {/* <Countdown countDownDate={new Date("Nov 25, 2023 9:00:00")} /> */}
+          <Countdown countDownDate={new Date("Mar 23, 2024 9:00:00")} />
         </div>
         <div className="flex flex-col items-center w-[90vw]">
           <h1 className="text-5xl md:text-7xl font-caveatBrush text-center">
@@ -34,19 +35,24 @@ export default function DiecezkoInfo({ id, className }) {
           <p className="font-caveatBrush text-2xl md:text-3xl">
             v Hradci Králové
           </p>
-          <p className="text-xl md:text-3xl mt-4 md:mt-6 text-center">
+          {/* <p className="text-xl md:text-3xl mt-4 md:mt-6 text-center">
             Zastav se a naslouchej
-          </p>
+          </p> */}
         </div>
         <div className="w-[90vw] max-w-[500px] grid grid-cols-2 grid-flow-row gap-4 items-center auto-cols-max">
           <Link
-            href="/galerie"
-            target="_self"
+            href="https://2023.diecezko.cz/galerie"
+            target="_blank"
             className="border border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-5 cursor-pointer text-base flex flex-row items-center justify-center"
           >
             <button className="flex flex-row items-center justify-center">
               <IconPhoto className="inline" stroke={1.5} />{" "}
-              <span className="ml-2 text-left">Galerie</span>
+              <span className="ml-2 text-left">
+                Galerie
+                <span className="relative text-[0.6rem] top-[0.6rem] -left-2">
+                  2023
+                </span>
+              </span>
             </button>
           </Link>
           <Link
@@ -64,27 +70,18 @@ export default function DiecezkoInfo({ id, className }) {
             </button>
           </Link>
           <Link
-            href="https://forms.gle/ferpkc3qfSZD3tTE9"
-            rel="external noopener nofollow"
-            target="_blank"
-            className={`border col-span-2 border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-5 cursor-pointer text-base flex flex-row items-center justify-center`}
-          >
-            <button className="flex flex-row items-center justify-center w-full">
-              <IconSpeakerphone
-                className="inline h-6 w-6 my-1 mr-2"
-                stroke={1.5}
-              />{" "}
-              <span className="ml-2 text-left">Zpětná vazba</span>
-            </button>
-          </Link>
-          <Link
-            href="/evzenova-cesta"
+            href="https://2023.diecezko.cz/evzenova-cesta"
             target="_self"
             className="border col-span-2 border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-5 cursor-pointer text-base flex flex-row items-center justify-center"
           >
             <button className="flex flex-row items-center justify-center w-full">
               <IconCustomEvzen className="inline h-6 w-6 my-1 mr-2" />{" "}
-              <span className="ml-2 text-left">Evženova cesta</span>
+              <span className="ml-2 text-left">
+                Evženova cesta
+                <span className="relative text-[0.6rem] top-[0.6rem] -left-2">
+                  2023
+                </span>
+              </span>
             </button>
           </Link>
         </div>

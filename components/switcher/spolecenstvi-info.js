@@ -24,66 +24,9 @@ import IconCustomDenikSracu from "../images/deniksracu";
 export default function SpolecenstviInfo({ id, className }) {
   return (
     <Container className={className} id={id}>
-      {/* <CardFeed>
-        <Link href="/jadro-diecezka" target="_self">
-          <Button>
-            <IconHeart stroke={1} className={`inline h-6 mr-2`} />
-            Jádro Diecézka
-          </Button>
-        </Link>
-        <Link href="/vikariaty" target="_self">
-          <Button>
-            <IconPuzzle stroke={1} className={`inline h-6 mr-2`} />
-            Vikariáty
-          </Button>
-        </Link>
-        <Link href="/dcm-hradec-kralove" target="_self">
-          <Button>
-            <IconCustomDCM className={`inline h-6 mr-2`} />
-            DCM Hradec Králové
-          </Button>
-        </Link>
-        <Link href="/dczm-vesmir" target="_self">
-          <Button>
-            <IconCustomVesmir className={`inline h-6 mr-2`} stroke={1} />
-            DCŽM Vesmír
-          </Button>
-        </Link>
-        <Link href="/kak-salas" target="_self">
-          <Button>
-            <IconCustomSalas className={`inline h-6 mr-2`} stroke={1} />
-            KAK Salaš
-          </Button>
-        </Link>
-      </CardFeed>
-      <ContainerH2 className={`w-full text-center`}>
-        Kapely a občerstvení
-      </ContainerH2>
-      <CardFeed>
-        <Link href="/veka" target="_self">
-          <Button>
-            <IconCustomVeka className={`inline h-6 mr-2`} />
-            Veka
-          </Button>
-        </Link>
-        <Link href="/studenecka-kapela" target="_self">
-          <Button>
-            <IconMusic className={`inline h-6 mr-2`} stroke={1} />
-            Studenecká kapela
-          </Button>
-        </Link>
-        <Link href="/bistro-u-dvou-pratel" target="_self">
-          <Button>
-            <IconChefHat className={`inline h-6 mr-2`} stroke={1} />
-            BISTRO u dvou přátel
-          </Button>
-        </Link>
-      </CardFeed> */}
-      {/* <ContainerH2 className={`w-full text-center !text-3xl`}>
-        Často kladené otázky
-      </ContainerH2> */}
-      <FAQ />
-      <ContainerH2 className={`w-full text-center`}>
+      {/* <FAQ /> */}
+      <p className="text-xl mt-4">Podrobné informace budou doplněny...</p>
+      {/* <ContainerH2 className={`w-full text-center`}>
         Tipy na další obsah
       </ContainerH2>
       <CardFeed>
@@ -129,7 +72,7 @@ export default function SpolecenstviInfo({ id, className }) {
             Plakátek
           </Button>
         </Link>
-      </CardFeed>
+      </CardFeed> */}
     </Container>
   );
 }
