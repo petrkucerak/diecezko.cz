@@ -71,7 +71,7 @@ export default function DiecezkoInfo({ id, className }) {
           </Link>
           <Link
             href="https://2023.diecezko.cz/evzenova-cesta"
-            target="_self"
+            target="_blank"
             className="border col-span-2 border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-5 cursor-pointer text-base flex flex-row items-center justify-center"
           >
             <button className="flex flex-row items-center justify-center w-full">
