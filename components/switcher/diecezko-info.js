@@ -21,7 +21,7 @@ export default function DiecezkoInfo({ id, className }) {
       <div className="min-h-[60vh] flex flex-col items-center justify-around">
         <div className="flex flex-col items-center w-full">
           <span className="text-base text-center">
-            Filharmonie Hradec Králové
+            {/*Filharmonie Hradec Králové*/}
           </span>
           <span className="text-2xl text-center tracking-wide">
             23.&nbsp;3.&nbsp;2024 • 9.30
