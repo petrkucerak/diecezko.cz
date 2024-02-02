@@ -18,7 +18,7 @@ export default function DiecezkoInfo({ id, className }) {
 
   return (
     <Container id={id} className={className}>
-      <div className="min-h-[60vh] flex flex-col items-center justify-around">
+      <div className="min-h-[70vh] flex flex-col items-center justify-around">
         <div className="flex flex-col items-center w-full">
           <span className="text-base text-center">
             {/*Filharmonie Hradec Králové*/}
@@ -29,10 +29,16 @@ export default function DiecezkoInfo({ id, className }) {
           <Countdown countDownDate={new Date("Mar 23, 2024 9:00:00")} />
         </div>
         <div className="flex flex-col items-center w-[90vw]">
-          <h1 className="text-5xl md:text-7xl font-caveatBrush text-center">
-            Diecézní setkání&nbsp;mládeže
+          <h1 className="text-6xl md:text-7xl uppercase leading-tight tracking-wide text-center text-shadow-lg shadow-white">
+            Diecézní
+            <br />
+            <yel className="text-yellow-300 text-shadow-lg text-7xl md:text-8xl shadow-yellow-300 font-semibold">
+              setkání
+            </yel>
+            <br />
+            mládeže
           </h1>
-          <p className="font-caveatBrush text-2xl md:text-3xl">
+          <p className="uppercase text-xl md:text-3xl text-shadow-lg shadow-white">
             v Hradci Králové
           </p>
           {/* <p className="text-xl md:text-3xl mt-4 md:mt-6 text-center">
