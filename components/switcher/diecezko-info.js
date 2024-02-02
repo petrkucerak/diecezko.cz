@@ -18,7 +18,7 @@ export default function DiecezkoInfo({ id, className }) {
 
   return (
     <Container id={id} className={className}>
-      <div className="min-h-[70vh] flex flex-col items-center justify-around">
+      <div className="min-h-[75vh] flex flex-col items-center justify-around">
         <div className="flex flex-col items-center w-full">
           <span className="text-base text-center">
             {/*Filharmonie Hradec Králové*/}
