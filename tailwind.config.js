@@ -13,7 +13,7 @@ module.exports = {
         titilliumWeb: ["Titillium Web"],
       },
       textShadow: {
-        sm: "0 1px 2px var(--tw-shadow-color)",
+        sm: "0 0 0.5rem var(--tw-shadow-color)",
         DEFAULT: "0 0 0.8rem var(--tw-shadow-color)",
         lg: "0 0 1.2rem var(--tw-shadow-color)",
       },
