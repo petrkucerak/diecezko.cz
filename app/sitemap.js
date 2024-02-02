@@ -7,11 +7,6 @@ export default function sitemap() {
       priority: 1,
     },
     {
-      url: "https://diecezko.cz/evzenova-cesta",
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-    },
-    {
       url: "https://diecezko.cz/vikariaty",
       lastModified: new Date(),
       changeFrequency: "yearly",
@@ -32,17 +27,12 @@ export default function sitemap() {
       changeFrequency: "yearly",
     },
     {
-      url: "https://diecezko.cz/studenecka-kapela",
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-    },
-    {
       url: "https://diecezko.cz/veka",
       lastModified: new Date(),
       changeFrequency: "yearly",
     },
     {
-      url: "https://diecezko.cz/jadro-diecezka",
+      url: "https://diecezko.cz/instalace",
       lastModified: new Date(),
       changeFrequency: "yearly",
     },
@@ -53,46 +43,6 @@ export default function sitemap() {
     },
     {
       url: "https://diecezko.cz/bistro-u-dvou-pratel",
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-    },
-    {
-      url: "https://diecezko.cz/prednasky-workshopy",
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-    },
-    {
-      url: "https://diecezko.cz/mse-svata",
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-    },
-    {
-      url: "https://diecezko.cz/tyden-modliteb-za-mladez",
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-    },
-    {
-      url: "https://diecezko.cz/mapa",
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-    },
-    {
-      url: "https://diecezko.cz/evzenova-lovestory",
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-    },
-    {
-      url: "https://diecezko.cz/galerie",
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-    },
-    {
-      url: "https://diecezko.cz/galerie/gorun",
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-    },
-    {
-      url: "https://diecezko.cz/galerie/urban",
       lastModified: new Date(),
       changeFrequency: "yearly",
     },
