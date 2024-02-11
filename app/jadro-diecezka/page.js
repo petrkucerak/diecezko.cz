@@ -71,7 +71,7 @@ export const jadro = [
   {
     name: "Evžen Holub",
     description: "Pan Holub drží holubí dohled nad celým Diecézkem.",
-    jpgPath: "/assets/images/jadro/evzen.jpg",
+    jpgPath: "/assets/images/jadro/evzen.png",
     webpPath: "/assets/images/jadro/evzen.webp",
     altText: "Profilová fotka Holuba Evžena",
     className: "",
@@ -80,7 +80,7 @@ export const jadro = [
     name: "Verča Pavlišová",
     description:
       "Pečuje o&nbsp;pohodlí našich žaludků a stará se o to, aby vše dobře vypadalo.",
-    jpgPath: "/assets/images/jadro/evzen.jpg",
+    jpgPath: "/assets/images/jadro/pavlisova.jpg",
     webpPath: "/assets/images/jadro/pavlisova.webp",
     altText: "Profilová fotka Verči Pavlišové",
     className: "",
@@ -90,8 +90,8 @@ export const jadro = [
     description:
       "Matyáš má na starosti režijní program, který nás bude provázet během dopoledne ve Filharmonii.",
     altText: "Profilová fotka Matyáše Messiho Majsnera",
-    jpgPath: "/assets/images/jadro/marikova.jpg",
-    webpPath: "/assets/images/jadro/marikova.webp",
+    jpgPath: "/assets/images/jadro/majsner.jpg",
+    webpPath: "/assets/images/jadro/majsner.webp",
     className: "",
   },
   {
@@ -104,20 +104,20 @@ export const jadro = [
     className: "",
   },
   {
-    name: "Petr Kučera",
-    description: "Petr se stará o&nbsp;diecézko.cz a&nbsp;kachní, kde může.",
-    jpgPath: "/assets/images/jadro/kucera.jpg",
-    webpPath: "/assets/images/jadro/kucera.webp",
-    altText: "Profilová fotka Petr Kučery",
-    className: "",
-  },
-  {
     name: "o. Tomáš Hoffmann",
     description:
       "Tomáš je nejen ředitelem Vesmíru a&nbsp;DCM, ale hlavně duchovní opora celého přípravného týmu.",
     altText: "Profilová fotka o. Tomáš Hoffmann",
     jpgPath: "/assets/images/jadro/hoffmann.jpg",
     webpPath: "/assets/images/jadro/hoffmann.webp",
+    className: "",
+  },
+  {
+    name: "Petr Kučera",
+    description: "Petr se stará o&nbsp;diecézko.cz a&nbsp;kachní, kde může.",
+    jpgPath: "/assets/images/jadro/kucera.jpg",
+    webpPath: "/assets/images/jadro/kucera.webp",
+    altText: "Profilová fotka Petr Kučery",
     className: "",
   },
   {
