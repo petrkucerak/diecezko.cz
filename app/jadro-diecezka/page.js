@@ -53,25 +53,25 @@ export const jadro = [
   {
     name: "Klárka Kopecká",
     description:
-      "Manažerka Klárka komunikuje s&nbsp;hosty, domlouvá s&nbsp;nimi detaily jejich přednášek a stará se o Bigy.",
+      "Manažerka Klárka komunikuje s&nbsp;hosty, domlouvá s&nbsp;nimi detaily jejich přednášek.",
     jpgPath: "/assets/images/jadro/klarka.jpg",
     webpPath: "/assets/images/jadro/klarka.webp",
     altText: "Profilová fotka Klárky Kopecké",
     className: "",
   },
   {
-   name: "Verča Pavlišová",
-   description:
-     "Pečuje o&nbsp;pohodlí našich žaludků a stará se o to, aby vše dobře vypadalo.",
-   jpgPath: "/assets/images/jadro/pavlisova.jpg",
-   webpPath: "/assets/images/jadro/pavlisova.webp",
-   altText: "Profilová fotka Verči Pavlišové",
-   className: "",
- },
+    name: "Verča Pavlišová",
+    description:
+      "Pečuje o&nbsp;pohodlí našich žaludků a&nbsp;stará se o&nbsp;to, aby vše dobře vypadalo.",
+    jpgPath: "/assets/images/jadro/pavlisova.jpg",
+    webpPath: "/assets/images/jadro/pavlisova.webp",
+    altText: "Profilová fotka Verči Pavlišové",
+    className: "",
+  },
   {
     name: "Ondra Mařík",
     description:
-      "Ondra je spolu s Klárkou generálem Bigy. Stará se o zázemí nejen pro hosty ale i všechny, kteří budou na Bigy.",
+      "Ondra je spolu s&nbsp;Klárkou generálem Bigy. Stará se o&nbsp;zázemí nejen pro hosty ale i&nbsp;všechny, kteří budou na Bigy.",
     jpgPath: "/assets/images/jadro/marik.jpg",
     webpPath: "/assets/images/jadro/marik.webp",
     altText: "Profilová fotka Ondyr Maříka",
@@ -89,21 +89,21 @@ export const jadro = [
   {
     name: "Jindra Řezníček",
     description:
-      "Jindra se stará o kaplany, zástupce a pomáhá sytit web obsahem.",
+      "Jindra se stará o&nbsp;kaplany, zástupce a&nbsp;pomáhá sytit web obsahem.",
     jpgPath: "/assets/images/jadro/reznicek.jpg",
     webpPath: "/assets/images/jadro/reznicek.webp",
     altText: "Profilová fotka Jindry Řezníčka",
     className: "",
   },
-  
+
   {
-   name: "Evžen Holub",
-   description: "Pan Holub drží holubí dohled nad celým Diecézkem.",
-   jpgPath: "/assets/images/jadro/evzen.png",
-   webpPath: "/assets/images/jadro/evzen.webp",
-   altText: "Profilová fotka Holuba Evžena",
-   className: "",
- },
+    name: "Evžen Holub",
+    description: "Pan Holub drží holubí dohled nad celým Diecézkem.",
+    jpgPath: "/assets/images/jadro/evzen.png",
+    webpPath: "/assets/images/jadro/evzen.webp",
+    altText: "Profilová fotka Holuba Evžena",
+    className: "",
+  },
   {
     name: "o. Tomáš Hoffmann",
     description:
