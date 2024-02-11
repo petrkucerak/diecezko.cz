@@ -24,8 +24,7 @@ import IconCustomDenikSracu from "../images/deniksracu";
 export default function SpolecenstviInfo({ id, className }) {
   return (
     <Container className={className} id={id}>
-      {/* <FAQ /> */}
-      <p className="text-xl mt-4">Podrobné informace budou doplněny...</p>
+      <FAQ />
       {/* <ContainerH2 className={`w-full text-center`}>
         Tipy na další obsah
       </ContainerH2>
