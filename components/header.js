@@ -262,7 +262,7 @@ export default function Header() {
             </ul>
           </li>
 
-          {/* <Link
+          <Link
             href="/jadro-diecezka"
             onClick={unlockScrolling}
             target="_self"
@@ -272,7 +272,7 @@ export default function Header() {
               <IconHeart stroke={1.5} className="inline h-7 w-7 my-1 mr-2" />
               Jádro Diecézka
             </li>
-          </Link> */}
+          </Link>
           <Link
             href="/partneri"
             onClick={unlockScrolling}
