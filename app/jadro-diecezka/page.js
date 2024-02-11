@@ -158,7 +158,7 @@ export const jadro = [
   {
     name: "Dejv z Prahee",
     description:
-      "Dejv je vrchní manažer úklidové čety a&nbsp;kromě každého odpadku vyhozeného do správného koše ocení i&nbsp;každou pomocnou ruku.",
+      "Vrchní velitel úklidové čety a&nbsp;kromě každého odpadku vyhozeného do správného koše ocení i&nbsp;každou pomocnou ruku.",
     altText: "Profilová fotka Davida z Prahee",
     jpgPath: "/assets/images/jadro/dejv.jpg",
     webpPath: "/assets/images/jadro/dejv.webp",
