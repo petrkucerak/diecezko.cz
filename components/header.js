@@ -101,7 +101,7 @@ export default function Header() {
           <Link
             href="/"
             onClick={unlockScrolling}
-            className="text-3xl font-caveatBrush ml-4 text-shadow shadow-white"
+            className={`text-2xl uppercase ml-4 font-bold text-shadow shadow-white`}
             target="_self"
             title="Diecézko.cz"
           >

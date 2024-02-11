@@ -26,7 +26,7 @@ export default function DiecezkoInfo({ id, className }) {
           <span className="text-2xl text-center tracking-wide">
             23.&nbsp;3.&nbsp;2024 • 9.30
           </span>
-          <Countdown countDownDate={new Date("Mar 23, 2024 9:00:00")} />
+          {/* <Countdown countDownDate={new Date("Mar 23, 2024 9:00:00")} /> */}
         </div>
         <div className="flex flex-col items-center w-[90vw]">
           <h1 className="text-6xl md:text-7xl uppercase leading-tight tracking-wide text-center text-shadow-lg shadow-white">
@@ -102,14 +102,12 @@ export default function DiecezkoInfo({ id, className }) {
           scházet každý rok s<Nbsp />
           mládeží
         </Strong>{" "}
-        své diecéze. Původně byla pro tuto akci vybrána Květná neděle, ale od
-        roku 2021 papež František ustanovil za tento den slavnost Ježíše Krista
-        Krále.
+        své diecéze.
       </ContainerParagraph>
       <ContainerParagraph>
         V<Nbsp />
         naší diecézi se mládež schází v<Nbsp />
-        sobotu před touto slavností v<Nbsp />
+        sobotu v<Nbsp />
         Hradci Králové. Nejprve proběhne společný režijní program a<Nbsp />
         po občerstvení mohou mladí navštívit různé workshopy a<Nbsp />
         přednášky. Dále je v<Nbsp />

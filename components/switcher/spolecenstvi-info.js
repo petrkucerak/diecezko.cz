@@ -58,11 +58,11 @@ export default function SpolecenstviInfo({ id, className }) {
             Florbalový turnaj
           </Button>
         </Link>
-      </CardFeed>
+      </CardFeed> */}
       <ContainerH2 className={`w-full text-center`}>Propagace</ContainerH2>
       <CardFeed>
         <Link
-          href="/assets/files/Diecézní-setkání-mládeže.pdf"
+          href="/assets/files/DSM24-plakat.pdf"
           rel=""
           target="_blank"
           className=""
@@ -72,7 +72,7 @@ export default function SpolecenstviInfo({ id, className }) {
             Plakátek
           </Button>
         </Link>
-      </CardFeed> */}
+      </CardFeed>
     </Container>
   );
 }
