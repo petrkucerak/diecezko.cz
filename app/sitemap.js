@@ -46,5 +46,10 @@ export default function sitemap() {
       lastModified: new Date(),
       changeFrequency: "yearly",
     },
+    {
+      url: "https://diecezko.cz/jadro-diecezka",
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+    },
   ];
 }
