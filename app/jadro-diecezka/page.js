@@ -60,29 +60,21 @@ export const jadro = [
     className: "",
   },
   {
+   name: "Verča Pavlišová",
+   description:
+     "Pečuje o&nbsp;pohodlí našich žaludků a stará se o to, aby vše dobře vypadalo.",
+   jpgPath: "/assets/images/jadro/pavlisova.jpg",
+   webpPath: "/assets/images/jadro/pavlisova.webp",
+   altText: "Profilová fotka Verči Pavlišové",
+   className: "",
+ },
+  {
     name: "Ondra Mařík",
     description:
       "Ondra je spolu s Klárkou generálem Bigy. Stará se o zázemí nejen pro hosty ale i všechny, kteří budou na Bigy.",
     jpgPath: "/assets/images/jadro/marik.jpg",
     webpPath: "/assets/images/jadro/marik.webp",
     altText: "Profilová fotka Ondyr Maříka",
-    className: "",
-  },
-  {
-    name: "Evžen Holub",
-    description: "Pan Holub drží holubí dohled nad celým Diecézkem.",
-    jpgPath: "/assets/images/jadro/evzen.png",
-    webpPath: "/assets/images/jadro/evzen.webp",
-    altText: "Profilová fotka Holuba Evžena",
-    className: "",
-  },
-  {
-    name: "Verča Pavlišová",
-    description:
-      "Pečuje o&nbsp;pohodlí našich žaludků a stará se o to, aby vše dobře vypadalo.",
-    jpgPath: "/assets/images/jadro/pavlisova.jpg",
-    webpPath: "/assets/images/jadro/pavlisova.webp",
-    altText: "Profilová fotka Verči Pavlišové",
     className: "",
   },
   {
@@ -103,6 +95,15 @@ export const jadro = [
     altText: "Profilová fotka Jindry Řezníčka",
     className: "",
   },
+  
+  {
+   name: "Evžen Holub",
+   description: "Pan Holub drží holubí dohled nad celým Diecézkem.",
+   jpgPath: "/assets/images/jadro/evzen.png",
+   webpPath: "/assets/images/jadro/evzen.webp",
+   altText: "Profilová fotka Holuba Evžena",
+   className: "",
+ },
   {
     name: "o. Tomáš Hoffmann",
     description:
