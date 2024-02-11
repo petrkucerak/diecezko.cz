@@ -35,7 +35,7 @@ export default function FAQ() {
         horní hranici, neváhej se přihlásit do přípravného týmu:{" "}
         <Link
           className="underline"
-          href={`https://prihlaska.dicezko.cz/`}
+          href={`https://prihlaska.diecezko.cz/`}
           target="_blank"
           rel="external noopener nofollow"
         >
@@ -48,7 +48,7 @@ export default function FAQ() {
         <strong>
           vyplň{" "}
           <Link
-            href="https://prihlaska.dicezko.cz/"
+            href="https://prihlaska.diecezko.cz/"
             rel="external noopener nofollow"
             target="_blank"
             className="underline"
@@ -80,7 +80,7 @@ export default function FAQ() {
         včas přihlásili, <strong>bude k&nbsp;obědu bageta</strong>. Pokud máte
         dietu, napište nám do{" "}
         <Link
-          href="https://prihlaska.dicezko.cz/"
+          href="https://prihlaska.diecezko.cz/"
           rel="external noopener nofollow"
           target="_blank"
           className="underline"
