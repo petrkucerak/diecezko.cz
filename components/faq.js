@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function FAQ() {
   return (
     <FaqLayout>
-      <FaqBox question={`Kde seženu zdravotní pomoc?`} icon={`medical`}>
+      {/* <FaqBox question={`Kde seženu zdravotní pomoc?`} icon={`medical`}>
         V případě jakéhokoliv zdravotního problému se neváhej obrátit na naši{" "}
         <strong>zdravotnickou službu</strong>, kterou poznáš podle oblečení
         a&nbsp;dostihneš ji na tel.{" "}
@@ -17,7 +17,7 @@ export default function FAQ() {
           155
         </Link>
         .
-      </FaqBox>
+      </FaqBox> */}
       <FaqBox question={`Kolik Diecézko stojí?`} icon={`money`}>
         Doporučený příspěvek je <strong>200,-Kč na osobu</strong>. Je možné ho
         zaplatit na recepci ve Filharmonii při dopoledním programu.
@@ -35,7 +35,7 @@ export default function FAQ() {
         horní hranici, neváhej se přihlásit do přípravného týmu:{" "}
         <Link
           className="underline"
-          href={`https://forms.gle/M4Pc27SiqY9Wa7u87`}
+          href={`https://prihlaska.diecezko.cz/`}
           target="_blank"
           rel="external noopener nofollow"
         >
@@ -48,7 +48,7 @@ export default function FAQ() {
         <strong>
           vyplň{" "}
           <Link
-            href="https://forms.gle/aMQor8ARxaULdD8t7"
+            href="https://prihlaska.diecezko.cz/"
             rel="external noopener nofollow"
             target="_blank"
             className="underline"
@@ -57,11 +57,12 @@ export default function FAQ() {
           </Link>
         </strong>
         &nbsp;a&nbsp;budeme s&nbsp;Tebou počítat. Na Diecézko se přihlas do
-        20.&nbsp;11.&nbsp;2023, abychom Ti stihli zajistit bagetu a&nbsp;pitíčko
-        k&nbsp;obědu. <strong>Nestihl/a ses přihlásit v daném termínu?</strong>{" "}
+        18.&nbsp;3.&nbsp;2024, abychom Ti stihli zajistit bagetu a&nbsp;pitíčko
+        k&nbsp;obědu.
+        {/* <strong>Nestihl/a ses přihlásit v daném termínu?</strong>{" "}
         Nevadí, i&nbsp;tak s&nbsp;tebou <strong>počítáme</strong>. Objednali
         jsme bagety navíc. Prosíme, i&nbsp;nadále vyplň přihlášku, ať víme, že
-        dorazíš. Děkujeme 😊{" "}
+        dorazíš. Děkujeme 😊{" "} */}
       </FaqBox>
       <FaqBox question={`Jak se přihlásit na odpolední program?`} icon={`old`}>
         <strong>
@@ -79,7 +80,7 @@ export default function FAQ() {
         včas přihlásili, <strong>bude k&nbsp;obědu bageta</strong>. Pokud máte
         dietu, napište nám do{" "}
         <Link
-          href="https://forms.gle/aMQor8ARxaULdD8t7"
+          href="https://prihlaska.diecezko.cz/"
           rel="external noopener nofollow"
           target="_blank"
           className="underline"
