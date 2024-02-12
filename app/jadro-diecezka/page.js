@@ -143,7 +143,7 @@ export const ecko = [
   {
     name: "Evžen Holub",
     description: "Pan Holub drží holubí dohled nad celým Diecézkem.",
-    jpgPath: "/assets/images/jadro/evzen.png",
+    jpgPath: "/assets/images/jadro/evzen.jpg",
     webpPath: "/assets/images/jadro/evzen.webp",
     altText: "Profilová fotka Holuba Evžena",
     className: "",
