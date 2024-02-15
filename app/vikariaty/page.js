@@ -233,7 +233,7 @@ export const vikariaty = [
     //   "Virům silnými hornina snad geologickou kladení souvisela úhlem. Varování pasivitou míst o amerických padesátiminutový jako tito zaslechl neobvyklé virů či přichytávacích mamutů víceméně rozdělit fakticky obrovským.",
     priest: {
       name: "P. Jiří Jakoubek",
-      jpgPath: "/assets/images/jadro/jakoubek.jpg",
+      jpgPath: "/assets/images/vikariaty/jakoubek.jpg",
     },
     person1: {
       name: "Veronika Mejsnarová",
@@ -253,7 +253,7 @@ export const vikariaty = [
     //   "Virům silnými hornina snad geologickou kladení souvisela úhlem. Varování pasivitou míst o amerických padesátiminutový jako tito zaslechl neobvyklé virů či přichytávacích mamutů víceméně rozdělit fakticky obrovským.",
     priest: {
       name: "jáhen Michal Šramko",
-      jpgPath: "/assets/images/jadro/sramko.jpg",
+      jpgPath: "/assets/images/vikariaty/sramko.jpg",
     },
     person1: {
       name: "Alžběta Veronika Cinerová",
@@ -295,7 +295,7 @@ export const vikariaty = [
     //   "Virům silnými hornina snad geologickou kladení souvisela úhlem. Varování pasivitou míst o amerických padesátiminutový jako tito zaslechl neobvyklé virů či přichytávacích mamutů víceméně rozdělit fakticky obrovským.",
     priest: {
       name: "jáhen Jan Pecháček",
-      jpgPath: "/assets/images/jadro/pechacek.jpg",
+      jpgPath: "/assets/images/vikariaty/pechacek.jpg",
     },
     person1: {
       name: "Kateřina Vydláková",
