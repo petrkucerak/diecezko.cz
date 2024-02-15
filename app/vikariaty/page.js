@@ -87,7 +87,7 @@ const gallery = [
   },
   {
     path: "/assets/images/vikariaty-skupinove/vikariaty_skupinove_06.jpg",
-    alt: "Skupinová fotka vikariátu Trutonov",
+    alt: "Skupinová fotka vikariátu Trutnov",
   },
   {
     path: "/assets/images/vikariaty-skupinove/vikariaty_skupinove_07.jpg",
