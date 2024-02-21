@@ -25,7 +25,7 @@ program.map((event) => {
               lon: parseFloat(event.place.coords.y),
             }
           : undefined,
-      start: [2023, 11, 25, parseInt(time[0]), parseInt(time[1])],
+      start: [2024, 3, 23, parseInt(time[0]), parseInt(time[1])],
       duration: { minutes: event.duration },
     },
     (error, value) => {

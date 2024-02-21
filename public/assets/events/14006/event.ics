@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+PRODID:adamgibbons/ics
+METHOD:PUBLISH
+X-PUBLISHED-TTL:PT1H
+BEGIN:VEVENT
+UID:fLROh9zw3ZQJJvIeMTt0Y
+SUMMARY:Křížová cesta
+DTSTAMP:20240221T134000Z
+DTSTART:20240323T130000Z
+DESCRIPTION:Přijď si v připomenout jeden z Velikonočních příběhů - křížovou
+	 cestu Ježíše Krista. Jednotlivá zastavení připravovalo královehradecké sp
+	olčo.
+URL:https://diecezko.cz/
+ORGANIZER;DIR="https://diecezko.cz/evzenova-cesta";SENT-BY="MAILTO:evzen@di
+	ecezko.cz";CN=Pan Holub:MAILTO:evzen@diecezko.cz
+DURATION:PT60M
+END:VEVENT
+END:VCALENDAR
