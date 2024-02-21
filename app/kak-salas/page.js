@@ -28,7 +28,7 @@ export default async function DCZM() {
               Křesťanský akademický klub Salaš
             </strong>{" "}
             je společenství nejen věřících vysokoškolských studentů
-            z&nbsp;Hradce Králové. Salaš je členem VKH, tedz Vysokoškolského katolického hnutí, a&nbsp;úzce
+            z&nbsp;Hradce Králové. Salaš je členem VKH, tedy Vysokoškolského katolického hnutí, a&nbsp;úzce
             spolupracujeme s&nbsp;Akademickou duchovní službou při
             Královehradecké diecézi. Rádi mezi sebou uvítáme všechny, které
             zaujme náš program nebo si jen chtějí popovídat. Pořádáme pravidelné

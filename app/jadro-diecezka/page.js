@@ -21,8 +21,8 @@ export default async function Vikariaty() {
           </ContainerDescription>
           <ContainerH2>Éčko</ContainerH2>
           <ContainerParagraph>
-            Evženova crew je skupinka lidí, kteří u tvorby Diecézka stojí od
-            začátku. Potkávají se každých 14 dní a vymýšlí, jak nejlépe
+            Evženova crew je skupinka lidí, kteří u&nbsp;tvorby Diecézka stojí
+            od začátku. Potkávají se každých 14 dní a&nbsp;vymýšlí, jak nejlépe
             připravit celý program.
           </ContainerParagraph>
           <div className="flex flex-col sm:grid sm:grid-cols-2 md:grid-cols-3 grid-flow-row gap-4 items-center">
@@ -43,9 +43,9 @@ export default async function Vikariaty() {
           </div>
           <ContainerH2>Jádro Diecézka</ContainerH2>
           <ContainerParagraph>
-            Oranžové vestičky, technický a duchovní support či velitel úklidové
-            čety. Právě díky těmto a spustě dalším dobrovolníkům může být
-            setkání takové, jaké je.
+            Oranžové vestičky, technický a&nbsp;duchovní support či velitel
+            úklidové čety. Právě díky těmto a&nbsp;spustě dalších dobrovolníků
+            může být setkání takové, jaké je.
           </ContainerParagraph>
           <div className="flex flex-col sm:grid sm:grid-cols-2 md:grid-cols-3 grid-flow-row gap-4 items-center">
             {jadro.map((p) => {
@@ -73,7 +73,7 @@ export const ecko = [
   {
     name: "Klárka Petrová",
     description:
-      "Klárka je vedoucí DCM a&nbsp;stará se o&nbsp;všechny, co připravují Diecézko.",
+      "Klárka je vedoucí DCM a&nbsp;stará se o&nbsp;všechny, kteří připravují Diecézko.",
     jpgPath: "/assets/images/jadro/petrova.jpg",
     webpPath: "/assets/images/jadro/petrova.webp",
     altText: "Profilová fotka Klárky Petrové",
@@ -91,7 +91,7 @@ export const ecko = [
   {
     name: "Verča Pavlišová",
     description:
-      "Pečuje o&nbsp;pohodlí našich žaludků a&nbsp;stará se o&nbsp;to, aby vše dobře vypadalo.",
+      "Verča pečuje o&nbsp;pohodlí našich žaludků a&nbsp;stará se o&nbsp;to, aby vše dobře vypadalo.",
     jpgPath: "/assets/images/jadro/pavlisova.jpg",
     webpPath: "/assets/images/jadro/pavlisova.webp",
     altText: "Profilová fotka Verči Pavlišové",
@@ -99,7 +99,7 @@ export const ecko = [
   },
   {
     name: "Joska Pazderová",
-    description: "Honí vás mlsná? Stavte se za Joskou do kavárny na Bigy.",
+    description: "Honí vás mlsná? Stavte se za Joskou do kavárny na BiGy.",
     jpgPath: "/assets/images/jadro/joska.jpg",
     webpPath: "/assets/images/jadro/joska.webp",
     altText: "Profilová fotka Josky Pazderové",
@@ -108,14 +108,14 @@ export const ecko = [
   {
     name: "prof. Ondra Mařík",
     description:
-      "Ondra je spolu s&nbsp;Klárkou generálem Bigy. Stará se o&nbsp;zázemí nejen pro hosty ale i&nbsp;všechny, kteří budou na Bigy.",
+      "Ondra je spolu s&nbsp;Klárkou generálem BiGy. Stará se o&nbsp;zázemí nejen pro hosty ale i&nbsp;všechny, kteří budou na BiGy.",
     jpgPath: "/assets/images/jadro/marik.jpg",
     webpPath: "/assets/images/jadro/marik.webp",
     altText: "Profilová fotka Ondyr Maříka",
     className: "",
   },
   {
-    name: "Matyáš Mesi Majsner",
+    name: "Matyáš Mesi Meisner",
     description:
       "Matyáš má na starosti režijní program, který nás bude provázet během dopoledne ve Filharmonii.",
     altText: "Profilová fotka Matyáše Messiho Majsnera",
@@ -195,10 +195,10 @@ export const jadro = [
     className: "",
   },
   {
-    name: "Dejv z Prahee",
+    name: "David Fendrych",
     description:
       "Vrchní velitel úklidové čety a&nbsp;kromě každého odpadku vyhozeného do správného koše ocení i&nbsp;každou pomocnou ruku.",
-    altText: "Profilová fotka Davida z Prahee",
+    altText: "Profilová fotka David Fendrych",
     jpgPath: "/assets/images/jadro/dejv.jpg",
     webpPath: "/assets/images/jadro/dejv.webp",
     className: "",
