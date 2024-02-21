@@ -160,6 +160,15 @@ export const jadro = [
     className: "",
   },
   {
+    name: "o. Prokop Brož",
+    description:
+      "Prokop se stará o&nbsp;to, aby všichni táhli za jeden provaz. Pomáhá nejen organizací ale i&nbsp;modlitbou.",
+    altText: "Profilová fotka o. Prokopa Brože",
+    jpgPath: "/assets/images/jadro/broz.jpg",
+    webpPath: "/assets/images/jadro/broz.webp",
+    className: "",
+  },
+  {
     name: "Denča Zavřelová",
     description:
       "Recepční skupinka pod vedením Denči vás při vstupu do Filharmonie označí náramkem a&nbsp;také uloží vaše kabáty a&nbsp;bundy do šatny.",
