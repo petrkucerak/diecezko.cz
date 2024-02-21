@@ -94,9 +94,9 @@ export default function FAQ() {
         </Link>
         .
       </FaqBox>
-      <FaqBox question={`Jak se v Hradci dopravovat?`} icon={`bus`}>
+      {/* <FaqBox question={`Jak se v Hradci dopravovat?`} icon={`bus`}>
         Hradec Králové je malej, <strong>choďte pěšky</strong>!
-      </FaqBox>
+      </FaqBox> */}
       <FaqBox question={`Kam si odskočit na záchod?`} icon={`toilet`}>
         Nezoufej, mrkni{" "}
         <Link
