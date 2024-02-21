@@ -13,6 +13,7 @@ export default function Vikariat({
   person1,
   person2,
   person3,
+  loader1,
   priest,
   social,
   coordinator,
@@ -139,6 +140,20 @@ export default function Vikariat({
                 : person3.webpPath
             }
             altText={`Profilová fotka zástupce pro mládež ${person3.name}`}
+          />
+        ) : null}
+        {loader1 !== undefined ? (
+          <ProfileCard
+            className={``}
+            name={loader1.name}
+            title={"Zástupce čekatel"}
+            jpgPath={loader1.jpgPath}
+            webpPath={
+              loader1.webpPath === undefined
+                ? `${loader1.jpgPath}`.replace(".jpg", ".webp")
+                : loader1.webpPath
+            }
+            altText={`Profilová fotka čekatele zástupce pro mládež ${loader1.name}`}
           />
         ) : null}
       </div>
