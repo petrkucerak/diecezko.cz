@@ -128,7 +128,7 @@ export default function Header() {
         <ul
           className={`text-2xl flex flex-col items-start justify-around w-[90vw] max-w-[400px]`}
         >
-          {/* <Link
+          <Link
             href="/mapa"
             onClick={unlockScrolling}
             target="_self"
@@ -138,7 +138,7 @@ export default function Header() {
               <IconMap stroke={1.5} className="inline h-7 w-7 my-1 mr-2" />
               Mapa míst
             </li>
-          </Link> */}
+          </Link>
           <Link
             href="vikariaty"
             onClick={unlockScrolling}

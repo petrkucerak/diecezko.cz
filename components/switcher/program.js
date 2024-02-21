@@ -7,8 +7,7 @@ import program from "./program.json";
 export default function Program({ id, className }) {
   return (
     <Container className={className} id={id}>
-      <p className="text-xl mt-4">Program bude brzy specifikován...</p>
-      {/* <ul>
+      <ul>
         {program.map((p) => {
           return (
             <li
@@ -66,7 +65,7 @@ export default function Program({ id, className }) {
             </li>
           );
         })}
-      </ul> */}
+      </ul>
     </Container>
   );
 }

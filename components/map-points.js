@@ -135,7 +135,7 @@ const places = [
     },
     name: "Filhramonie Hradec Králové",
     content:
-      "<li>9:00 registrace</li><li>9:30 dopolední program</li><li>12:00 obědová pauza</li>",
+      "<li>9:00 registrace</li><li>9:30 dopolední program</li><li>11:30 obědová pauza</li>",
   },
   {
     coords: {
@@ -159,7 +159,7 @@ const places = [
       y: 15.8334453,
     },
     name: "Nové Adalbertinum",
-    content: "<li>12:30 tvořivý workshop</li>",
+    content: "",
   },
   {
     coords: {
@@ -191,6 +191,6 @@ const places = [
       y: 15.8341294,
     },
     name: "Kostel Nanebevzetí Panny Marie",
-    content: "<li>13:00 tichá adorace a svátost smíření</li>",
+    content: "<li>14:00 chvály, adorace, svátost smíření či duchovní rozhovor</li>",
   },
 ];

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+PRODID:adamgibbons/ics
+METHOD:PUBLISH
+X-PUBLISHED-TTL:PT1H
+BEGIN:VEVENT
+UID:Nlmz70zJnSt9Eicfzv5lA
+SUMMARY:Přednášky\, workshopy
+DTSTAMP:20240221T134000Z
+DTSTART:20240323T113000Z
+DESCRIPTION:Odpoledne si můžete vybrat z široké nabídky přednášek\, několik
+	a workshopů nebo si jít zasportovat.
+URL:https://diecezko.cz/
+ORGANIZER;DIR="https://diecezko.cz/evzenova-cesta";SENT-BY="MAILTO:evzen@di
+	ecezko.cz";CN=Pan Holub:MAILTO:evzen@diecezko.cz
+DURATION:PT90M
+END:VEVENT
+END:VCALENDAR

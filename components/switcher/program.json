@@ -40,11 +40,10 @@
    },
    {
       "name": "Obědová pauza",
-      "time": "12:00",
+      "time": "11:30",
       "id": 3,
       "duration": 30,
-      "description": "Při odchodu z dopoledního programu si kromě výběru workshopu nebo přednášky nezapomeňte vyzvednout i bagetu s pitíčkem. Bagety pro nás připravilo BISTRO u dvou přátel. Dobrou chuť!",
-      "link": "/bistro-u-dvou-pratel",
+      "description": "Při odchodu z dopoledního programu si kromě výběru workshopu nebo přednášky nezapomeňte vyzvednout i&nbsp;bagetu s&nbsp;pitíčkem. Bagety pro nás připravili maminky z&nbsp;Pardubic. Dobrou chuť!",
       "icons": [
          "food"
       ],
@@ -67,17 +66,17 @@
          "person",
          "workshop",
          "sport"
-      ],
-      "link": "/prednasky-workshopy"
+      ]
    },
    {
-      "name": "Tichá adorace a svátost smíření",
-      "time": "13:00",
+      "name": "Chvály, adorace, svátost smíření či duchovní rozhovor",
+      "time": "14:00",
       "id": 5,
-      "duration": 120,
-      "description": "Po celé odpoledne do mše svaté bude možnost setkaní s&nbsp;Pánem v&nbsp;tiché adoraci a&nbsp;svátosti smíření. ",
+      "duration": 60,
+      "description": "Zastav se v&nbsp;kostele Panny Marie na Velké náměstí, zaposlouchej se do písní Červenokostelecké mládeže, navštiv kněze nebo jen buď nějaký čas před Ježíšem.",
       "icons": [
-         "pray"
+         "pray",
+         "music"
       ],
       "place": {
          "name": "Kostel Nanebevzetí Panny Marie",
@@ -88,10 +87,20 @@
       }
    },
    {
+      "name": "Křížová cesta",
+      "time": "14:00",
+      "id": 6,
+      "duration": 60,
+      "description": "Přijď si v připomenout jeden z Velikonočních příběhů - křížovou cestu Ježíše Krista. Jednotlivá zastavení připravovalo královehradecké spolčo.",
+      "icons": [
+         "cross"
+      ]
+   },
+   {
       "name": "Kavárna a Chill out zóna",
       "time": "14:00",
       "duration": 60,
-      "id": 6,
+      "id": 7,
       "description": "V&nbsp;kavárně a&nbsp;relaxační zóně na BiGy si můžeš pochutnat na dobré mňamce, zahřát se teplým pitím, posedět a&nbsp;užít si klidný rozhovor nebo si zahrát stolní hry. Pro občerstvení si nezapomeň vzít drobný peníz.",
       "icons": [
          "cafe"
@@ -105,27 +114,9 @@
       }
    },
    {
-      "name": "Odpolední hra - Evženova lovestory",
-      "time": "14:00",
-      "id": 7,
-      "duration": 60,
-      "description": "Holuba Evžena všichni zajisté znáte. Slyšeli jste už ale o&nbsp;jeho milostném románu? Zapojte se do hry a&nbsp;ovlivněte to, jak skončí.",
-      "link": "/evzenova-lovestory",
-      "icons": [
-         "heart"
-      ],
-      "place": {
-         "name": "BiGy (Biskupské gymnázium)",
-         "coords": {
-            "x": "50.2062919",
-            "y": "15.8337133"
-         }
-      }
-   },
-   {
       "name": "Sraz ministrantů",
       "time": "14:15",
-      "id": 9,
+      "id": 8,
       "duration": 45,
       "description": "Pokud se chceš zapojit do služby u&nbsp;oltáře a&nbsp;ministrovat na závěrečné mši svaté v&nbsp;katedrále, přijď na nácvik do sakristie Katedrály Svatého Ducha.",
       "icons": [
@@ -142,14 +133,13 @@
    {
       "name": "Mše svatá",
       "time": "15:00",
-      "id": 8,
+      "id": 9,
       "duration": 60,
-      "description": "Celý den zakončíme mší svatou s otcem biskupem v katedrále svatého Ducha. Mši svatou hudebně doprovodí Studenecká kapela.",
+      "description": "Celý den zakončíme mší svatou s otcem biskupem v katedrále svatého Ducha. Mši svatou hudebně doprovodí Choceňská schola.",
       "icons": [
          "music",
          "pray"
       ],
-      "link": "/mse-svata",
       "place": {
          "name": "Katedrála Svatého Ducha",
          "coords": {
