@@ -2,7 +2,12 @@
 import Container from "../layouts/container";
 import ContainerH2 from "../layouts/container-h2";
 import ContainerParagraph from "../layouts/container-paragraph";
-import { IconApps, IconPhoto, IconSpeakerphone } from "@tabler/icons";
+import {
+  IconApps,
+  IconCross,
+  IconPhoto,
+  IconSpeakerphone,
+} from "@tabler/icons";
 import Link from "next/link";
 import Nbsp from "../format/nbsp";
 import Strong from "../format/strong";
@@ -76,22 +81,20 @@ export default function DiecezkoInfo({ id, className }) {
             </button>
           </Link>
           <Link
-            href="https://2023.diecezko.cz/evzenova-cesta"
+            href="https://krizovka.diecezko.cz/"
             target="_blank"
             className="border col-span-2 border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-5 cursor-pointer text-base flex flex-row items-center justify-center"
           >
             <button className="flex flex-row items-center justify-center w-full">
-              <IconCustomEvzen className="inline h-6 w-6 my-1 mr-2" />{" "}
-              <span className="ml-2 text-left">
-                Evženova cesta
-                <span className="relative text-[0.6rem] top-[0.6rem] -left-2">
-                  2023
-                </span>
-              </span>
+              <IconCross stroke={1.5} className="inline h-6 w-6 my-1 mr-2" />{" "}
+              <span className="ml-2 text-left">Hra: Křížová cesta</span>
             </button>
           </Link>
         </div>
       </div>
+      <p className="text-xl text-yellow-300 text-shadow-lg shadow-yellow-300 font-semibold mb-6">
+        Přihlašování bude spuštěno 1.&nbsp;3. 2024.
+      </p>
       <ContainerH2>O Diecézku</ContainerH2>
       <ContainerParagraph>
         Na přání papeže sv.
