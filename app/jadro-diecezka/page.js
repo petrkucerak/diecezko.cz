@@ -160,6 +160,15 @@ export const jadro = [
     className: "",
   },
   {
+    name: "o. Tomáš Hoffmann",
+    description:
+      "Tomáš je nejen ředitelem Vesmíru a&nbsp;DCM, ale hlavně duchovní opora celého přípravného týmu.",
+    altText: "Profilová fotka o. Tomáš Hoffmann",
+    jpgPath: "/assets/images/jadro/broz.jpg",
+    webpPath: "/assets/images/jadro/broz.webp",
+    className: "",
+  },
+  {
     name: "Denča Zavřelová",
     description:
       "Recepční skupinka pod vedením Denči vás při vstupu do Filharmonie označí náramkem a&nbsp;také uloží vaše kabáty a&nbsp;bundy do šatny.",
