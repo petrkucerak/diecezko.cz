@@ -20,26 +20,27 @@ export default function FAQ() {
       </FaqBox> */}
       <FaqBox question={`Kolik Diecézko stojí?`} icon={`money`}>
         Doporučený příspěvek je <strong>200,-Kč na osobu</strong>. Je možné ho
-        zaplatit na recepci ve Filharmonii při dopoledním programu.
+        zaplatit v hotovosti na recepci ve Filharmonii při dopoledním programu.
       </FaqBox>
       <FaqBox question={`Co si sbalit s sebou?`} icon={`luggage`}>
         Sváču, láhev s&nbsp;pitím, doporučený příspěvek (200,-Kč), peníze na
         svoji dopravu a&nbsp;drobný peníz v&nbsp;případě zájmu zajít do kavárny
-        na BiGy. Doporučujeme si také vzít něco teplého na závěrečnou mši svatou
-        do katedrály. Může být zima.
+        na BiGy. Doporučujeme si také vzít něco teplého na sebe na závěrečnou
+        mši svatou do katedrály. Může být zima.
       </FaqBox>
       <FaqBox question={`Od kolika let můžu jet na Diecézko?`} icon={`kid`}>
         Doporučený věk k&nbsp;účasti na setkání je{" "}
         <strong>od 14 do 26 let</strong> (mládež ve věku od 12 do 13 let pouze
         s&nbsp;doprovodem staršího sourozence nebo kamaráda). Pokud nesplňuješ
-        horní hranici, neváhej se přihlásit do přípravného týmu:{" "}
+        horní hranici, oceníme tvoji pomoc v přípravném týmu. Pokud máš zájem
+        pomoci, vyplň{" "}
         <Link
           className="underline"
           href={`https://prihlaska.diecezko.cz/`}
           target="_blank"
           rel="external noopener nofollow"
         >
-          přihláška do přípraváku
+          přihlášku
         </Link>
         .
       </FaqBox>
