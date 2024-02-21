@@ -160,10 +160,10 @@ export const jadro = [
     className: "",
   },
   {
-    name: "o. Tomáš Hoffmann",
+    name: "o. Prokop Brož",
     description:
-      "Tomáš je nejen ředitelem Vesmíru a&nbsp;DCM, ale hlavně duchovní opora celého přípravného týmu.",
-    altText: "Profilová fotka o. Tomáš Hoffmann",
+      "Prokop se stará o&nbsp;to, aby všichni táhli za jeden provaz. Pomáhá nejen organizací ale i&nbsp;modlitbou.",
+    altText: "Profilová fotka o. Prokopa Brože",
     jpgPath: "/assets/images/jadro/broz.jpg",
     webpPath: "/assets/images/jadro/broz.webp",
     className: "",
