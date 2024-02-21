@@ -74,7 +74,7 @@ export default function FAQ() {
         </strong>{" "}
         si kromě bagety a&nbsp;pitíčka budeš moci vybrat odpolední program.
         Ideálně si téma promysli dopředu, ať se nemusíš rozmýšlet na poslední
-        chvíli. Na místo programu se půjde společně. Neboj, nezabloudíš 😉
+        chvíli. Na místo programu se půjde společně. Neboj, nezabloudíš. 😉
       </FaqBox>
       <FaqBox question={`Jak bude zajištěno stravování?`} icon={`chef`}>
         Doporučujeme si s&nbsp;sebou přivézt svačinku. Pro všechny, kteří se
