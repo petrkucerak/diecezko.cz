@@ -92,6 +92,9 @@ export default function DiecezkoInfo({ id, className }) {
           </Link>
         </div>
       </div>
+      <p className="text-xl text-yellow-300 text-shadow-lg shadow-yellow-300 font-semibold mb-6">
+        Přihlašování bude spuštěno 1.&nbsp;3. 2024.
+      </p>
       <ContainerH2>O Diecézku</ContainerH2>
       <ContainerParagraph>
         Na přání papeže sv.
