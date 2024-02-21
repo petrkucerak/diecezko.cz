@@ -50,6 +50,7 @@ export default async function Vikariaty() {
                 person1={v.person1}
                 person2={v.person2}
                 person3={v.person3}
+                loader1={v.loader1}
                 priest={v.priest}
                 description={v.description}
                 cover={v.cover}
@@ -339,6 +340,10 @@ export const vikariaty = [
     person1: {
       name: "Kateřina a Miloš Zahradníkovi",
       jpgPath: "/assets/images/vikariaty/zahradnikovi.jpg",
+    },
+    loader1: {
+      name: "Vít Petr",
+      jpgPath: "/assets/images/vikariaty/vitpetr.jpg",
     },
     social: {
       facebook: "https://www.facebook.com/groups/284859234960044",
