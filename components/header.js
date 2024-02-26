@@ -3,6 +3,7 @@ import {
   IconAnchor,
   IconCaretDown,
   IconCaretUp,
+  IconChessBishop,
   IconHeadphones,
   IconHeart,
   IconHeartHandshake,
@@ -285,6 +286,20 @@ export default function Header() {
                 className="inline h-7 w-7 my-1 mr-2"
               />
               Partneři
+            </li>
+          </Link>
+          <Link
+            href="/pozvani-biskupa-jana"
+            onClick={unlockScrolling}
+            target="_self"
+            className="border-b-[#3b3b3b] border-b w-full my-4"
+          >
+            <li className="flex flex-row items-center">
+              <IconChessBishop
+                stroke={1.5}
+                className="inline h-7 w-7 my-1 mr-2"
+              />
+              Pozvání biskupa Jana
             </li>
           </Link>
         </ul>
