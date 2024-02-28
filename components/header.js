@@ -235,8 +235,8 @@ export default function Header() {
               </div>
             </div>
             <ul className={`${musicVisibility} w-full flex flex-col`}>
-              {/* <Link
-                href="/studenecka-kapela"
+              <Link
+                href="/kachoni"
                 onClick={unlockScrolling}
                 target="_self"
                 className="w-full mt-4 text-xl"
@@ -246,9 +246,9 @@ export default function Header() {
                     stroke={1.5}
                     className="inline h-7 w-7 my-1 mr-2"
                   />
-                  Studenecká kapela
+                  Kachoni
                 </li>
-              </Link> */}
+              </Link>
               <Link
                 href="/veka"
                 onClick={unlockScrolling}
