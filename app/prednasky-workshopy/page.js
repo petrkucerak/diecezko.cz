@@ -227,6 +227,18 @@ const workshops = [
     },
   },
   {
+    title:
+      "Inkvizice, čarodějnice, kolonialismus: černé kapitoly církevních dějin a&nbsp;co s&nbsp;nimi?",
+    type: "person",
+    place: "BiGy",
+    descritpion:
+      "Každé dlouhodobě působící společenství či instituce musí zpracovat i&nbsp;ta části své minulosti, které se nepovedly, poučit se z&nbsp;nich, vyznat vinu. V&nbsp;případě křesťanství je to ještě důležitější vzhledem k&nbsp;vysokým nárokům, které na nás klade naše víra. V&nbsp;přednášce se zamyslíme na tím, jak se stavět ke komplikovaným dějinách církve, jak se vyrovnat s&nbsp;tím, co dnes mnoho lidí od církve odrazuje a&nbsp;stěžuje identifikaci s&nbsp;ní.",
+    speaker: {
+      name: "Tomáš Petráček",
+      jpgPath: "/assets/images/speakers/petracek.jpg",
+    },
+  },
+  {
     title: "Tvořivé dílny",
     type: "workshop",
     id: "workshop-start",
