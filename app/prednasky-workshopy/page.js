@@ -163,6 +163,92 @@ export default async function PrednaskyWorhsopy() {
 }
 
 const workshops = [
+  {
+    title:
+      "Vyprávění s&nbsp;otcem biskupem Josefem o&nbsp;životě a&nbsp;povolání",
+    type: "person",
+    id: "prednaska-start",
+    place: "BiGy",
+    descritpion:
+      "Jaká byla cesta otce biskupa Josefa k&nbsp;biskupství? Jaký dopad měl na jeho působení tehdejší režim? Na jaká období ze svého života nejraději vzpomíná a&nbsp;jaké možnosti a&nbsp;příležitosti mu přinesl zasvěcený život? Na to a&nbsp;mnohem více Vám otec biskup Josef odpoví při svém povídání. Spousta času určitě zbyde i&nbsp;na dotazy u&nbsp;řad účastníků.",
+    speaker: {
+      name: "Mons. Josef Kajnek",
+      jpgPath: "/assets/images/speakers/medveditlapka.jpg",
+    },
+  },
+  {
+    title:
+      "LGBTQ+ a křesťanství? Nauka, problémy a otázky, výhledy do budoucna",
+    type: "person",
+    place: "BiGy",
+    descritpion:
+      "Vztah křesťanství k&nbsp;LGBTQ+ osobám a&nbsp;otázkám spojeným s&nbsp;touto tématikou bývá chápán jako kontroverzní téma. Podíváme se věcně na to, co nám o&nbsp;tomuto tématu říká Bible, křesťanská tradice a&nbsp;nauka, kde se skrývají problémy a&nbsp;jaký by mohl být vývoj církevní nauky v&nbsp;tomto tématu v&nbsp;budoucnosti. Program proběhne formou cca hodinové přednášky a&nbsp;následné diskuse.",
+    speaker: {
+      name: "Tomáš Sixta",
+      jpgPath: "/assets/images/speakers/sixta.jpg",
+    },
+  },
+  {
+    title:
+      "Postavili jsme pekárnu a&nbsp;školku ve Rwandě, co bude následovat?",
+    type: "person",
+    place: "BiGy",
+    descritpion:
+      "Nechte se vtáhnout mladým dobrodružným cestovatelem do zázračné Afriky, přímo do domů místních obyvatel. Poznáme jejich kulturu, zvyklosti a&nbsp;běžný život. Také nahlédneme pod pokličku projektům, které díky zapojení mladé rodiny přináší v&nbsp;afrických zemích pomoc těm nejpotřebnějším.",
+    speaker: {
+      name: "Vojtěch Trčka",
+      jpgPath: "/assets/images/speakers/trcka.jpg",
+    },
+    social: {
+      web: "https://www.trckovi.org/",
+    },
+  },
+  {
+    title:
+      "Jak řídit svůj život a&nbsp;nenabourat (a&nbsp;co dělat, když to nevyjde)?",
+    type: "person",
+    place: "BiGy",
+    descritpion:
+      "Na nový byt nebo dům si většina lidí bere hypotéku. Je však rozumné brát si spotřební úvěr na lednici, auto nebo dovolenou? A co to má společné s&nbsp;(duchovním) životem? Chceš-li se dozvědět, jak lze žít s&nbsp;Bohem každodenní realitu, jak se s&nbsp;ním dělit o&nbsp;radost i&nbsp;smutek, úspěch i&nbsp;pád, a&nbsp;dělat to navíc zajímavým způsobem, přijď se podívat na workshop o&nbsp;spiritualitě. Naživo si budeš moci vyzkoušet také ignaciánský examen – modlitbu laskavé pozornosti. Už nyní se můžeš podívat na aplikaci na Google Play nebo AppStore.",
+    speaker: {
+      name: "Samuel Privara",
+      jpgPath: "/assets/images/speakers/privara.jpg",
+    },
+  },
+  {
+    title: "Pořád spolu chodíme, i&nbsp;se dvěma dětmi!",
+    type: "person",
+    place: "BiGy",
+    descritpion:
+      "Vyžadovalo odvahu začít spolu chodit, bylo potřeba se rozhodnout, abychom se vzali, chtělo to trpělivost, než přišly děti, ale nikdy bychom neměnili. Rádi se podělíme o&nbsp;náš příběh a&nbsp;zodpovíme zvídavé otázky.",
+    speaker: {
+      name: "Kája a Kristýnka Maříkovi",
+      jpgPath: "/assets/images/speakers/marikovi.jpg",
+    },
+  },
+  {
+    title: "Tvořivé dílny",
+    type: "workshop",
+    id: "workshop-start",
+    place: "BiGy",
+    descritpion:
+      "Také si užíváš ty chvíle, kdy jsi ve světě tvoření a&nbspmůžeš dát volnost své fantazii a&nbspkreativnímu přetlaku? Já teda moc a&nbsppřesně na takový společný čas tě zvu. Vše potřebné bude zajištěno. Těším se na tebe!",
+    speaker: {
+      name: "Verča Halounková",
+      jpgPath: "/assets/images/speakers/halounkova.jpg",
+    },
+  },
+  //   {
+  //     title: "Sportovní workshop",
+  //     type: "sport",
+  //     id: "sport-start",
+  //     place: "Orlovna",
+  //     descritpion: "",
+  //     speaker: {
+  //       name: "Honza Klinger",
+  //       jpgPath: "/assets/images/speakers/klinger.jpg",
+  //     },
+  //   },
   //   {
   //     title: "Mladí a spoluodpovědnost za správu věcí veřejných",
   //     type: "person",
