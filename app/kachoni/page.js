@@ -12,7 +12,7 @@ export default async function Kachnoni() {
       <Header />
       <PageMain>
         <Container>
-          <ContainerTitle>Kachnoni</ContainerTitle>
+          <ContainerTitle>Kachoni</ContainerTitle>
           <ContainerDescription>
             Máme rádi hudbu, Boha a&nbsp;laciný humor. Rádi zkoušíme různé
             novoty, naše hraní je buď boží nářez nebo Boží nářek. Hrajeme každou
