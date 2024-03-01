@@ -5,6 +5,7 @@ import ContainerParagraph from "../layouts/container-paragraph";
 import {
   IconApps,
   IconCross,
+  IconPencil,
   IconPhoto,
   IconSpeakerphone,
 } from "@tabler/icons";
@@ -46,11 +47,21 @@ export default function DiecezkoInfo({ id, className }) {
           <p className="uppercase text-xl md:text-3xl text-shadow-lg shadow-white">
             v Hradci Králové
           </p>
-          {/* <p className="text-xl md:text-3xl mt-4 md:mt-6 text-center">
-            Zastav se a naslouchej
-          </p> */}
         </div>
         <div className="w-[90vw] max-w-[500px] grid grid-cols-2 grid-flow-row gap-4 items-center auto-cols-max">
+          <Link
+            href={`https://prihlaska.diecezko.cz/`}
+            target="_blank"
+            className="border border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-5 text-base flex flex-row items-center justify-center"
+          >
+            <button
+              className="flex flex-row items-center justify-center"
+              title="Přihláška"
+            >
+              <IconPencil className="inline" stroke={1.5} />{" "}
+              <span className="ml-2 text-left">Přihláška</span>
+            </button>
+          </Link>
           <Link
             href="https://2023.diecezko.cz/galerie"
             target="_blank"
@@ -67,20 +78,6 @@ export default function DiecezkoInfo({ id, className }) {
             </button>
           </Link>
           <Link
-            href={`/instalace`}
-            id="installation"
-            className="border border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-5 text-base flex flex-row items-center justify-center"
-          >
-            <button
-              className="flex flex-row items-center justify-center"
-              id="installation-button"
-              title="Instalovat jako PWA"
-            >
-              <IconApps className="inline" stroke={1.5} />{" "}
-              <span className="ml-2 text-left">Nainstalovat</span>
-            </button>
-          </Link>
-          <Link
             href="https://krizovka.diecezko.cz/"
             target="_blank"
             className="border col-span-2 border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-5 cursor-pointer text-base flex flex-row items-center justify-center"
@@ -92,9 +89,6 @@ export default function DiecezkoInfo({ id, className }) {
           </Link>
         </div>
       </div>
-      <p className="text-xl text-yellow-300 text-shadow-lg shadow-yellow-300 font-semibold mb-6">
-        Přihlašování bude spuštěno 1.&nbsp;3. 2024.
-      </p>
       <ContainerH2>O Diecézku</ContainerH2>
       <ContainerParagraph>
         Na přání papeže sv.
