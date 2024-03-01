@@ -12,27 +12,18 @@ import {
 import Link from "next/link";
 import Nbsp from "../format/nbsp";
 import Strong from "../format/strong";
-import IconCustomEvzen from "../images/evzen";
-import Countdown from "../countdown";
-import { useEffect } from "react";
-import { install } from "../../lib/installation";
 
 export default function DiecezkoInfo({ id, className }) {
-  useEffect(() => {
-    install();
-  }, []);
 
   return (
     <Container id={id} className={className}>
       <div className="min-h-[75vh] flex flex-col items-center justify-around">
         <div className="flex flex-col items-center w-full">
           <span className="text-base text-center">
-            {/*Filharmonie Hradec Králové*/}
           </span>
           <span className="text-2xl text-center tracking-wide">
             23.&nbsp;3.&nbsp;2024 • 9.30
           </span>
-          {/* <Countdown countDownDate={new Date("Mar 23, 2024 9:00:00")} /> */}
         </div>
         <div className="flex flex-col items-center w-[90vw]">
           <h1 className="text-6xl md:text-7xl uppercase leading-tight tracking-wide text-center text-shadow-lg shadow-white">
