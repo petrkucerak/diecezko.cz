@@ -162,7 +162,7 @@ export const jadro = [
   {
     name: "o. Prokop Brož",
     description:
-      "Prokop se stará o&nbsp;to, aby všichni táhli za jeden provaz. Pomáhá nejen organizací ale i&nbsp;modlitbou.",
+      "Prokop má na starosti synodu mladých, připravuje duchovní program v&nbsp;kostele Panny Marie a&nbsp;se stará o&nbsp;to, aby všichni táhli za jeden provaz.",
     altText: "Profilová fotka o. Prokopa Brože",
     jpgPath: "/assets/images/jadro/broz.jpg",
     webpPath: "/assets/images/jadro/broz.webp",
