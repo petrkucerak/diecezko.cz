@@ -272,14 +272,14 @@ const workshops = [
     },
   },
   {
-    title: "Přes překážky ke hvězdám - mít sny a&nbsp;odvahu",
+    title: "Jak se žije v&nbsp;semináři?",
     type: "person",
     place: "BiGy",
     descritpion:
-      "Je život skutečně tou nejlepší školou? Jak se v&nbsp;socialismu pracovalo s&nbsp;dětmi době navzdory? A&nbsp;jak vést mladé k&nbsp;hodnotám a&nbsp;hledání sebe samav digitálním věku? S&nbsp;pedagogem a&nbsp;spisovatel Františkem Tichým můžete sdílet nejen jeho dobrodružný životní příběh, ale i&nbsp;se nechat povzbudit a&nbsp;inspirovat k&nbsp;vlastní cestě nejen při práci s&nbsp;mladými.",
+      "Co je kněžský seminář a&nbsp;jak se v&nbsp;něm žije? Jaký je denní řád a&nbsp;povinnosti seminaristy? Není formace pro výchovu budoucích kněží zastaralá? Mnoho odpovědí na vaše otázky o&nbsp;semináři budete moci hledat spolu s&nbsp;bohoslovcem Jindřichem Barabášem.",
     speaker: {
-      name: "František Tichý",
-      jpgPath: "/assets/images/speakers/tichy.jpg",
+      name: "Jindra Barabáš",
+      jpgPath: "/assets/images/speakers/barabas.jpg",
     },
   },
   {
