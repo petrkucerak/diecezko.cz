@@ -54,14 +54,24 @@ export default async function PrednaskyWorhsopy() {
                   id={w.id !== undefined ? w.id : ""}
                   className="flex flex-col items-center md:flex-row border-[#444] border rounded-xl p-6 sm:p-6 transition h-full hover:scale-[1.02] hover:rotate-1 mt-8"
                 >
-                  {w.speaker.jpgPath !== undefined ? (
-                    <ContainerImage
-                      altText={`Fotka hosta ${w.speaker.name} k přednášce ${w.title}.`}
-                      jpgPath={w.speaker.jpgPath}
-                      webpPath={w.speaker.jpgPath.replace(".jpg", ".webp")}
-                      className="!rounded-full h-32 w-32 md:h-36 md:w-36 border-2 border-[#444] bg-[#444] mb-4 md:mb-0 md:mr-8"
-                    />
-                  ) : null}
+                  <div className="flex items-center justify-center md:flex-col">
+                    {w.speaker.jpgPath !== undefined ? (
+                      <ContainerImage
+                        altText={`Fotka hosta ${w.speaker.name} k přednášce ${w.title}.`}
+                        jpgPath={w.speaker.jpgPath}
+                        webpPath={w.speaker.jpgPath.replace(".jpg", ".webp")}
+                        className="!rounded-full h-32 w-32 md:h-36 md:w-36 border-2 border-[#444] bg-[#444] mb-4 md:mb-0 md:mr-8 mx-1 md:my-1"
+                      />
+                    ) : null}
+                    {w.speaker.jpgPath2 !== undefined ? (
+                      <ContainerImage
+                        altText={`Fotka hosta ${w.speaker.name} k přednášce ${w.title}.`}
+                        jpgPath={w.speaker.jpgPath2}
+                        webpPath={w.speaker.jpgPath2.replace(".jpg", ".webp")}
+                        className="!rounded-full h-32 w-32 md:h-36 md:w-36 border-2 border-[#444] bg-[#444] mb-4 md:mb-0 md:mr-8 mx-1 md:my-1"
+                      />
+                    ) : null}
+                  </div>
                   <div className="flex flex-col items-start justify-center w-full sm:w-[450px]">
                     <h2
                       dangerouslySetInnerHTML={{ __html: w.title }}
@@ -239,8 +249,7 @@ const workshops = [
     },
   },
   {
-    title:
-      "Přes překážky ke hvězdám - mít sny a&nbsp;odvahu",
+    title: "Přes překážky ke hvězdám - mít sny a&nbsp;odvahu",
     type: "person",
     place: "BiGy",
     descritpion:
@@ -248,6 +257,29 @@ const workshops = [
     speaker: {
       name: "František Tichý",
       jpgPath: "/assets/images/speakers/tichy.jpg",
+    },
+  },
+  {
+    title: "Fotograf - co všechno to obnáší?",
+    type: "person",
+    place: "BiGy",
+    descritpion:
+      "Focení, selekce, editace, publikace ... Řekneme si, čeho všeho se při focení vyvarovat nebo jak se nechovat a&nbsp;co nám může při focení pomoci.",
+    speaker: {
+      name: "Dominik Polanský a Pavel Langr",
+      jpgPath: "/assets/images/speakers/cav-langr.jpg",
+      jpgPath2: "/assets/images/speakers/cav-polansky.jpg",
+    },
+  },
+  {
+    title: "Jak se žije v&nbsp;semináři?",
+    type: "person",
+    place: "BiGy",
+    descritpion:
+      "Co je kněžský seminář a&nbsp;jak se v&nbsp;něm žije? Jaký je denní řád a&nbsp;povinnosti seminaristy? Není formace pro výchovu budoucích kněží zastaralá? Mnoho odpovědí na vaše otázky o&nbsp;semináři budete moci hledat spolu s&nbsp;bohoslovcem Jindřichem Barabášem.",
+    speaker: {
+      name: "Jindra Barabáš",
+      jpgPath: "/assets/images/speakers/barabas.jpg",
     },
   },
   {
