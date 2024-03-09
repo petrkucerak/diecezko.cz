@@ -1,6 +1,7 @@
 import FaqBox from "./layouts/faq-box";
 import FaqLayout from "./layouts/faq-layout";
 import Link from "next/link";
+import ContainerImage from "./layouts/container-image";
 
 export default function FAQ() {
   return (
@@ -93,6 +94,41 @@ export default function FAQ() {
           kavárny
         </Link>
         .
+      </FaqBox>
+      <FaqBox
+        question={`Společná doprava pro vikariát Humpolce a&nbsp;Havlíčkův Brod?`}
+        icon={`bus`}
+      >
+        Vikariátní zástupci vypravují autobus, který bude zastavovat
+        v&nbsp;Humpolci, v&nbsp;Havlíčkově Brodě a&nbsp;v&nbsp;Chotěboři. Pokud
+        máš zájem se také svézt, kontaktuj Aničku Daňkovou:
+        <br />
+        📞{" "}
+        <Link href={`tel:+420603833605`} className="tracking-tight underline">
+          603 833 605
+        </Link>
+        , 📨
+        <Link
+          href={`mailto:annadankova5@seznam.cz`}
+          className="tracking-tigh underline"
+        >
+          annadankova5@seznam.cz
+        </Link>
+        .
+        <ContainerImage
+          jpgPath="/assets/images/doprava-humpolec.jpg"
+          webpPath="/assets/images/doprava-humpolec.webp"
+          altText="Plakátek s informacemi o společné dopravě."
+          className="w-full my-4"
+        />
+      </FaqBox>
+      <FaqBox
+        question={`Proč je Diecézko po tak brzké době?`}
+        icon={`calendar`}
+      >
+        Z organizačního a&nbsp;praktického hlediska jsme se po domluvě
+        s&nbsp;otcem biskupem Janem rozhodli, že je vhodnější jarní termín,
+        a&nbsp;proto jsme Diecézko přesunuli na něj.
       </FaqBox>
       {/* <FaqBox question={`Jak se v Hradci dopravovat?`} icon={`bus`}>
         Hradec Králové je malej, <strong>choďte pěšky</strong>!

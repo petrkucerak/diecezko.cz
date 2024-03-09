@@ -1,5 +1,6 @@
 import {
   IconBusStop,
+  IconCalendarTime,
   IconCaretDown,
   IconCaretUp,
   IconChefHat,
@@ -33,7 +34,7 @@ export default function FaqBox({ className, id, children, question, icon }) {
         id={id}
         onClick={click2question}
       >
-        <p className="mb-2 flex flex-row items-center">
+        <div className="mb-2 flex flex-row items-center">
           {icon === "money" ? (
             <IconPigMoney className="inline mr-2" stroke={1.2} />
           ) : icon === "luggage" ? (
@@ -52,9 +53,14 @@ export default function FaqBox({ className, id, children, question, icon }) {
             <IconOld className="inline mr-2" stroke={1.2} />
           ) : icon === "toilet" ? (
             <IconCustomDenikSracu className={`inline h-5 mr-2`} />
+          ) : icon === "calendar" ? (
+            <IconCalendarTime className="inline mr-2" stroke={1.2} />
           ) : null}
-          {question}
-        </p>
+          <span
+            dangerouslySetInnerHTML={{ __html: `${question}` }}
+            className="max-w-[70vw]"
+          />
+        </div>
         <IconCaretDown className={`${arrowDownClass}`} />
         <IconCaretUp className={`${arrowUpClass}`} />
       </div>
