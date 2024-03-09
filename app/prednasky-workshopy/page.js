@@ -180,7 +180,7 @@ const workshops = [
     id: "prednaska-start",
     place: "BiGy",
     descritpion:
-      "Jaká byla cesta otce biskupa Josefa k&nbsp;biskupství? Jaký dopad měl na jeho působení tehdejší režim? Na jaká období ze svého života nejraději vzpomíná a&nbsp;jaké možnosti a&nbsp;příležitosti mu přinesl zasvěcený život? Na to a&nbsp;mnohem více Vám otec biskup Josef odpoví při svém povídání. Spousta času určitě zbyde i&nbsp;na dotazy u&nbsp;řad účastníků.",
+      "Jaká byla cesta otce biskupa Josefa k&nbsp;biskupství? Jaký dopad měl na jeho působení tehdejší režim? Na jaká období ze svého života nejraději vzpomíná a&nbsp;jaké možnosti a&nbsp;příležitosti mu přinesl zasvěcený život? Na to a&nbsp;mnohem více Vám otec biskup Josef odpoví při svém povídání. Spousta času určitě zbyde i&nbsp;na dotazy z&nbsp;řad účastníků.",
     speaker: {
       name: "Mons. Josef Kajnek",
       jpgPath: "/assets/images/speakers/medveditlapka.jpg",
@@ -221,7 +221,7 @@ const workshops = [
     descritpion:
       "Na nový byt nebo dům si většina lidí bere hypotéku. Je však rozumné brát si spotřební úvěr na lednici, auto nebo dovolenou? A co to má společné s&nbsp;(duchovním) životem? Chceš-li se dozvědět, jak lze žít s&nbsp;Bohem každodenní realitu, jak se s&nbsp;ním dělit o&nbsp;radost i&nbsp;smutek, úspěch i&nbsp;pád, a&nbsp;dělat to navíc zajímavým způsobem, přijď se podívat na workshop o&nbsp;spiritualitě. Naživo si budeš moci vyzkoušet také ignaciánský examen – modlitbu laskavé pozornosti. Už nyní se můžeš podívat na aplikaci na Google Play nebo AppStore.",
     speaker: {
-      name: "Samuel Privara",
+      name: "Samuel Prívara",
       jpgPath: "/assets/images/speakers/privara.jpg",
     },
   },
@@ -242,25 +242,25 @@ const workshops = [
     type: "person",
     place: "BiGy",
     descritpion:
-      "Každé dlouhodobě působící společenství či instituce musí zpracovat i&nbsp;ta části své minulosti, které se nepovedly, poučit se z&nbsp;nich, vyznat vinu. V&nbsp;případě křesťanství je to ještě důležitější vzhledem k&nbsp;vysokým nárokům, které na nás klade naše víra. V&nbsp;přednášce se zamyslíme na tím, jak se stavět ke komplikovaným dějinách církve, jak se vyrovnat s&nbsp;tím, co dnes mnoho lidí od církve odrazuje a&nbsp;stěžuje identifikaci s&nbsp;ní.",
+      "Každé dlouhodobě působící společenství či instituce musí zpracovat i&nbsp;ty části své minulosti, které se nepovedly, poučit se z&nbsp;nich, vyznat vinu. V&nbsp;případě křesťanství je to ještě důležitější vzhledem k vysokým nárokům, které na nás klade naše víra. V&nbsp;přednášce se zamyslíme nad tím, jak se stavět ke komplikovaným dějinách církve, jak se vyrovnat s&nbsp;tím, co dnes mnoho lidí od církve odrazuje a&nbsp;stěžuje identifikaci s&nbsp;ní.",
     speaker: {
       name: "Tomáš Petráček",
       jpgPath: "/assets/images/speakers/ppetracek.jpg",
     },
   },
   {
-    title: "Přes překážky ke hvězdám - mít sny a&nbsp;odvahu",
+    title: "Přes překážky ke hvězdám – mít sny a&nbsp;odvahu",
     type: "person",
     place: "BiGy",
     descritpion:
-      "Je život skutečně tou nejlepší školou? Jak se v&nbsp;socialismu pracovalo s&nbsp;dětmi době navzdory? A&nbsp;jak vést mladé k&nbsp;hodnotám a&nbsp;hledání sebe samav digitálním věku? S&nbsp;pedagogem a&nbsp;spisovatel Františkem Tichým můžete sdílet nejen jeho dobrodružný životní příběh, ale i&nbsp;se nechat povzbudit a&nbsp;inspirovat k&nbsp;vlastní cestě nejen při práci s&nbsp;mladými.",
+      "Je život skutečně tou nejlepší školou? Jak se v&nbsp;socialismu pracovalo s&nbsp;dětmi době navzdory? A&nbsp;jak vést mladé k hodnotám a&nbsp;hledání sebe sama v&nbsp;digitálním věku? S&nbsp;pedagogem a&nbsp;spisovatelem Františkem Tichým můžete nejen sdílet jeho dobrodružný životní příběh, ale i&nbsp;se nechat povzbudit a&nbsp;inspirovat k&nbsp;vlastní cestě nejen při práci s&nbsp;mladými.",
     speaker: {
       name: "František Tichý",
       jpgPath: "/assets/images/speakers/tichy.jpg",
     },
   },
   {
-    title: "Fotograf - co všechno to obnáší?",
+    title: "Fotograf – co všechno to obnáší?",
     type: "person",
     place: "BiGy",
     descritpion:
@@ -276,7 +276,7 @@ const workshops = [
     type: "person",
     place: "BiGy",
     descritpion:
-      "Co je kněžský seminář a&nbsp;jak se v&nbsp;něm žije? Jaký je denní řád a&nbsp;povinnosti seminaristy? Není formace pro výchovu budoucích kněží zastaralá? Mnoho odpovědí na vaše otázky o&nbsp;semináři budete moci hledat spolu s&nbsp;bohoslovcem Jindřichem Barabášem.",
+      "Co je kněžský seminář a&nbsp;jak se v&nbsp;něm žije? Jaký jsou povinnosti a&nbsp;denní řád seminaristy? Není formace pro výchovu budoucích kněží zastaralá? Mnoho odpovědi na své otázky o&nbsp;semináři budete moci hledat spolu s&nbsp;bohoslovcem Jindřichem Barabášem.",
     speaker: {
       name: "Jindra Barabáš",
       jpgPath: "/assets/images/speakers/barabas.jpg",
