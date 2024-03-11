@@ -49,7 +49,7 @@ export const meta = {
       {
         url: `${homeUrl}opengraph-image.jpg`,
         width: 1200,
-        height: 630,
+        height: 675,
         alt: "Diecézko 2024 v Hradci Králové",
       },
     ],
