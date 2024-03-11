@@ -105,9 +105,10 @@ export default function FAQ() {
         question={`Společná doprava pro vikariát Humpolce a&nbsp;Havlíčkův Brod?`}
         icon={`bus`}
       >
-        Vikariátní zástupci vypravují autobus, který bude zastavovat
-        v&nbsp;Humpolci, v&nbsp;Havlíčkově Brodě a&nbsp;v&nbsp;Chotěboři. Pokud
-        máš zájem se také svézt, kontaktuj Aničku Daňkovou 📞&nbsp;
+        Vikariátní zástupci vypravují autobus, který bude zastavovat v&nbsp;
+        <strong>Humpolci</strong>, v&nbsp;<strong>Havlíčkově Brodě</strong>{" "}
+        a&nbsp;v&nbsp;<strong>Chotěboři</strong>. Pokud máš zájem se také svézt,
+        kontaktuj Aničku Daňkovou 📞&nbsp;
         <Link href={`tel:+420603833605`} className="tracking-tight underline">
           603&nbsp;833&nbsp;605
         </Link>
@@ -130,9 +131,9 @@ export default function FAQ() {
         question={`Proč je Diecézko po tak brzké době?`}
         icon={`calendar`}
       >
-        Z organizačního a&nbsp;praktického hlediska jsme se po domluvě
-        s&nbsp;otcem biskupem Janem rozhodli, že je vhodnější jarní termín,
-        a&nbsp;proto jsme Diecézko přesunuli na něj.
+        Z <strong>organizačního a&nbsp;praktického hlediska</strong> jsme se po
+        domluvě s&nbsp;otcem biskupem Janem rozhodli, že je vhodnější jarní
+        termín, a&nbsp;proto jsme Diecézko přesunuli na něj.
       </FaqBox>
       {/* <FaqBox question={`Jak se v Hradci dopravovat?`} icon={`bus`}>
         Hradec Králové je malej, <strong>choďte pěšky</strong>!
