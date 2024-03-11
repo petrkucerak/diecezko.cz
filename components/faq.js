@@ -1,6 +1,7 @@
 import FaqBox from "./layouts/faq-box";
 import FaqLayout from "./layouts/faq-layout";
 import Link from "next/link";
+import ContainerImage from "./layouts/container-image";
 
 export default function FAQ() {
   return (
@@ -27,6 +28,12 @@ export default function FAQ() {
         svoji dopravu a&nbsp;drobný peníz v&nbsp;případě zájmu zajít do kavárny
         na BiGy. Doporučujeme si také vzít něco teplého na sebe na závěrečnou
         mši svatou do katedrály. Může být zima.
+        <br /> Pokud chceš podpořit Majkinu při její{" "}
+        <Link href="/majki-v-albanii" target="_self" className="underline">
+          {" "}
+          dobrovolnické misi v&nbsp;Albánii
+        </Link>
+        , přibal si 200,-Kč a&nbsp;kup si od ní obrázek.
       </FaqBox>
       <FaqBox question={`Od kolika let můžu jet na Diecézko?`} icon={`kid`}>
         Doporučený věk k&nbsp;účasti na setkání je{" "}
@@ -58,7 +65,7 @@ export default function FAQ() {
           </Link>
         </strong>
         &nbsp;a&nbsp;budeme s&nbsp;Tebou počítat. Na Diecézko se přihlas do
-        18.&nbsp;3.&nbsp;2024, abychom Ti stihli zajistit bagetu a&nbsp;pitíčko
+        17.&nbsp;3.&nbsp;2024, abychom Ti stihli zajistit bagetu a&nbsp;pitíčko
         k&nbsp;obědu.
         {/* <strong>Nestihl/a ses přihlásit v daném termínu?</strong>{" "}
         Nevadí, i&nbsp;tak s&nbsp;tebou <strong>počítáme</strong>. Objednali
@@ -93,6 +100,40 @@ export default function FAQ() {
           kavárny
         </Link>
         .
+      </FaqBox>
+      <FaqBox
+        question={`Společná doprava pro vikariát Humpolce a&nbsp;Havlíčkův Brod?`}
+        icon={`bus`}
+      >
+        Vikariátní zástupci vypravují autobus, který bude zastavovat v&nbsp;
+        <strong>Humpolci</strong>, v&nbsp;<strong>Havlíčkově Brodě</strong>{" "}
+        a&nbsp;v&nbsp;<strong>Chotěboři</strong>. Pokud máš zájem se také svézt,
+        kontaktuj Aničku Daňkovou 📞&nbsp;
+        <Link href={`tel:+420603833605`} className="tracking-tight underline">
+          603&nbsp;833&nbsp;605
+        </Link>
+        , 📨&nbsp;
+        <Link
+          href={`mailto:annadankova5@seznam.cz`}
+          className="tracking-tigh underline"
+        >
+          annadankova5@seznam.cz
+        </Link>
+        .
+        <ContainerImage
+          jpgPath="/assets/images/doprava-humpolec.jpg"
+          webpPath="/assets/images/doprava-humpolec.webp"
+          altText="Plakátek s informacemi o společné dopravě."
+          className="w-full my-4"
+        />
+      </FaqBox>
+      <FaqBox
+        question={`Proč je Diecézko po tak brzké době?`}
+        icon={`calendar`}
+      >
+        Z <strong>organizačního a&nbsp;praktického hlediska</strong> jsme se po
+        domluvě s&nbsp;otcem biskupem Janem rozhodli, že je vhodnější jarní
+        termín, a&nbsp;proto jsme Diecézko přesunuli na něj.
       </FaqBox>
       {/* <FaqBox question={`Jak se v Hradci dopravovat?`} icon={`bus`}>
         Hradec Králové je malej, <strong>choďte pěšky</strong>!

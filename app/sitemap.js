@@ -51,5 +51,30 @@ export default function sitemap() {
       lastModified: new Date(),
       changeFrequency: "yearly",
     },
+    {
+      url: "https://diecezko.cz/majki-v-albanii",
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+    },
+    {
+      url: "https://diecezko.cz/mapa",
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+    },
+    {
+      url: "https://diecezko.cz/kachoni",
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+    },
+    {
+      url: "https://diecezko.cz/pozvani-biskupa-jana",
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+    },
+    {
+      url: "https://diecezko.cz/prednasky-workshopy",
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+    },
   ];
 }

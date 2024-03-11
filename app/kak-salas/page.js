@@ -69,6 +69,12 @@ export default async function DCZM() {
             Králové. Příští ples se uskuteční 5.&nbsp;4.&nbsp;2024, neváhejte si
             ho přidat do kalendáře.
           </ContainerParagraph>
+          <ContainerImage
+            jpgPath="/assets/images/spolecenstvi/salas-ples.jpg"
+            webpPath="/assets/images/spolecenstvi/salas-ples.webp"
+            altText="Sheep ples"
+            className="w-full my-2"
+          />
           <ContainerH2>Deskovky</ContainerH2>
           <ContainerParagraph>
             Pokud Tě baví deskové hry, určitě přijď na deskové hry na FIMku
