@@ -28,6 +28,12 @@ export default function FAQ() {
         svoji dopravu a&nbsp;drobný peníz v&nbsp;případě zájmu zajít do kavárny
         na BiGy. Doporučujeme si také vzít něco teplého na sebe na závěrečnou
         mši svatou do katedrály. Může být zima.
+        <br /> Pokud chceš podpořit Majkinu při její{" "}
+        <Link href="/majki-v-albanii" target="_self" className="underline">
+          {" "}
+          dobrovolnické misi v&nbsp;Albánii
+        </Link>
+        , přibal si 200,-Kč a&nbsp;kup si od ní obrázek.
       </FaqBox>
       <FaqBox question={`Od kolika let můžu jet na Diecézko?`} icon={`kid`}>
         Doporučený věk k&nbsp;účasti na setkání je{" "}
