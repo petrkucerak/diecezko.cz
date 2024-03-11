@@ -6,12 +6,7 @@ import IconCustomVeka from "../images/veka";
 import ContainerH2 from "../layouts/container-h2";
 import {
   IconArrowBarToDown,
-  IconChefHat,
-  IconHeart,
-  IconMusic,
-  IconPuzzle,
-  IconTournament,
-  IconWall,
+  IconMap
 } from "@tabler/icons";
 import IconCustomDCM from "../images/dcm-hk";
 import IconCustomVesmir from "../images/vesmir";
@@ -44,6 +39,12 @@ export default function SpolecenstviInfo({ id, className }) {
           <Button>
             <IconCustomSalas className={`inline h-6 mr-2`} />
             Sheep ples
+          </Button>
+        </Link>
+        <Link href="/majki-v-albanii" target="_self" className="">
+          <Button>
+            <IconMap stroke={1.5} className={`inline h-6 mr-2`} />
+            Majki v&nbsp;Albánii
           </Button>
         </Link>
       </CardFeed>
