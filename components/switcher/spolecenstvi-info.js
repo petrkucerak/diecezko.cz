@@ -25,39 +25,28 @@ export default function SpolecenstviInfo({ id, className }) {
   return (
     <Container className={className} id={id}>
       <FAQ />
-      {/* <ContainerH2 className={`w-full text-center`}>
+      <ContainerH2 className={`w-full text-center`}>
         Tipy na další obsah
       </ContainerH2>
       <CardFeed>
         <Link
-          href="https://adventnicesta.cz/"
+          href="https://cestapustem.cz/"
           rel="external"
           target="_blank"
           className=""
         >
           <Button>
             <IconCustomAdventniCesta className={`inline h-6 mr-2`} />
-            Adventní cesta
+            Cesta půstem
           </Button>
         </Link>
-        <Link href="/tyden-modliteb-za-mladez" className="">
+        <Link href="/sheep-ples.pdf" target="_blank" className="">
           <Button>
-            <IconCustomTmm className={`inline h-6 mr-2`} />
-            Týden modliteb za mládež
+            <IconCustomSalas className={`inline h-6 mr-2`} />
+            Sheep ples
           </Button>
         </Link>
-        <Link
-          href="https://www.facebook.com/events/s/florbalovy-turnaj-v-kralovehra/1357115585198034/"
-          rel="external"
-          target="_blank"
-          className=""
-        >
-          <Button>
-            <IconTournament className={`inline h-6 mr-2`} stroke={1.5} />
-            Florbalový turnaj
-          </Button>
-        </Link>
-      </CardFeed> */}
+      </CardFeed>
       <ContainerH2 className={`w-full text-center`}>Propagace</ContainerH2>
       <CardFeed>
         <Link
