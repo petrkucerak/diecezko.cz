@@ -59,7 +59,7 @@ export default function FAQ() {
           </Link>
         </strong>
         &nbsp;a&nbsp;budeme s&nbsp;Tebou počítat. Na Diecézko se přihlas do
-        18.&nbsp;3.&nbsp;2024, abychom Ti stihli zajistit bagetu a&nbsp;pitíčko
+        17.&nbsp;3.&nbsp;2024, abychom Ti stihli zajistit bagetu a&nbsp;pitíčko
         k&nbsp;obědu.
         {/* <strong>Nestihl/a ses přihlásit v daném termínu?</strong>{" "}
         Nevadí, i&nbsp;tak s&nbsp;tebou <strong>počítáme</strong>. Objednali
