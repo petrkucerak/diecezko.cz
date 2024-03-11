@@ -45,6 +45,9 @@ export default function MiseAlbanie() {
             když při pohledu na něj vzpomenete v&nbsp;modlitbě na Albánii
             a&nbsp;její obyvatele. Děkuji!
           </ContainerParagraph>
+          <ContainerParagraph>
+            Cena jednoho obrázku je 200,-Kč.
+          </ContainerParagraph>
           <ContainerParagraph className={"italic"}>
             Marie Kašparová
           </ContainerParagraph>
