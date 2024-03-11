@@ -101,13 +101,11 @@ export default function FAQ() {
       >
         Vikariátní zástupci vypravují autobus, který bude zastavovat
         v&nbsp;Humpolci, v&nbsp;Havlíčkově Brodě a&nbsp;v&nbsp;Chotěboři. Pokud
-        máš zájem se také svézt, kontaktuj Aničku Daňkovou:
-        <br />
-        📞{" "}
+        máš zájem se také svézt, kontaktuj Aničku Daňkovou 📞&nbsp;
         <Link href={`tel:+420603833605`} className="tracking-tight underline">
-          603 833 605
+          603&nbsp;833&nbsp;605
         </Link>
-        , 📨
+        , 📨&nbsp;
         <Link
           href={`mailto:annadankova5@seznam.cz`}
           className="tracking-tigh underline"
