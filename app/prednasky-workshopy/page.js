@@ -185,6 +185,9 @@ const workshops = [
       name: "Mons. Josef Kajnek",
       jpgPath: "/assets/images/speakers/medveditlapka.jpg",
     },
+    social: {
+      web: "https://cs.wikipedia.org/wiki/Josef_Kajnek",
+    },
   },
   {
     title:
@@ -290,7 +293,8 @@ const workshops = [
       "První část povídání bude věnována dobrovolné službě v&nbsp;Keni a&nbsp;Namibii, kde Markéta mohla strávit dohromady rok svého života. Žila v&nbsp;salesiánské komunitě a&nbsp;učila v&nbsp;mateřské a&nbsp;základní škole, odpoledne se věnovala chlapcům z&nbsp;internátu a&nbsp;o&nbsp;prázdninách dětem v&nbsp;oratoři. Byl to malý/velký krok v&nbsp;životě, který proměnil její srdce i&nbsp;srdce jí svěřených dětí. Druhá část vyprávění přiblíží Anežčinu letní dobrovolnickou službu v&nbsp;Bulharsku.",
     speaker: {
       name: "Markéta Bartošová a Anežka Havránková",
-      jpgPath: "/assets/images/speakers/barabas.jpg",
+      jpgPath: "/assets/images/speakers/sadba1.jpg",
+      jpgPath2: "/assets/images/speakers/sadba2.jpg",
     },
   },
   {
