@@ -17,6 +17,7 @@ import {
 } from "@tabler/icons";
 import ParmIcon from "../../components/layouts/parm-icon";
 import Button from "../../components/layouts/button";
+import IconCustomBrandX from "../../components/images/brand-x";
 export default async function PrednaskyWorhsopy() {
   return (
     <main className="ease-in-out duration-300 font-titilliumWeb">
@@ -158,6 +159,17 @@ export default async function PrednaskyWorhsopy() {
                             <IconBrandSpotify stroke={1.5} />
                           </Link>
                         ) : null}
+                        {w.social.x !== undefined ? (
+                          <Link
+                            target="_blank"
+                            rel="external"
+                            href={w.social.x}
+                            className="inline ml-1"
+                            title={`Odkaz na X ${w.speaker.name}`}
+                          >
+                            <IconCustomBrandX stroke={1.5} color={"#fff"} />
+                          </Link>
+                        ) : null}
                       </div>
                     ) : null}
                   </div>
@@ -199,6 +211,9 @@ const workshops = [
     speaker: {
       name: "Tomáš Sixta",
       jpgPath: "/assets/images/speakers/sixta.jpg",
+    },
+    social: {
+      x: "https://twitter.com/SixtaTomas",
     },
   },
   {
