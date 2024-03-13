@@ -283,6 +283,17 @@ const workshops = [
     },
   },
   {
+    title: "(K)rok pro Keňu a&nbsp;Namibii, léto pro Bulharsko",
+    type: "person",
+    place: "BiGy",
+    descritpion:
+      "První část povídání bude věnována dobrovolné službě v&nbsp;Keni a&nbsp;Namibii, kde Markéta mohla strávit dohromady rok svého života. Žila v&nbsp;salesiánské komunitě a&nbsp;učila v&nbsp;mateřské a&nbsp;základní škole, odpoledne se věnovala chlapcům z&nbsp;internátu a&nbsp;o&nbsp;prázdninách dětem v&nbsp;oratoři. Byl to malý/velký krok v&nbsp;životě, který proměnil její srdce i&nbsp;srdce jí svěřených dětí. Druhá část vyprávění přiblíží Anežčinu letní dobrovolnickou službu v&nbsp;Bulharsku.",
+    speaker: {
+      name: "Markéta Bartošová a Anežka Havránková",
+      jpgPath: "/assets/images/speakers/barabas.jpg",
+    },
+  },
+  {
     title: "Tvořivé dílny",
     type: "workshop",
     id: "workshop-start",
