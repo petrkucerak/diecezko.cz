@@ -12,11 +12,13 @@ import {
   IconBrandFacebook,
   IconBrandInstagram,
   IconBrandSpotify,
+  IconBrandYoutube,
   IconMapPin,
   IconWorld,
 } from "@tabler/icons";
 import ParmIcon from "../../components/layouts/parm-icon";
 import Button from "../../components/layouts/button";
+import IconCustomBrandX from "../../components/images/brand-x";
 export default async function PrednaskyWorhsopy() {
   return (
     <main className="ease-in-out duration-300 font-titilliumWeb">
@@ -158,6 +160,28 @@ export default async function PrednaskyWorhsopy() {
                             <IconBrandSpotify stroke={1.5} />
                           </Link>
                         ) : null}
+                        {w.social.x !== undefined ? (
+                          <Link
+                            target="_blank"
+                            rel="external"
+                            href={w.social.x}
+                            className="inline ml-1"
+                            title={`Odkaz na X ${w.speaker.name}`}
+                          >
+                            <IconCustomBrandX stroke={1.5} color={"#fff"} />
+                          </Link>
+                        ) : null}
+                        {w.social.youtube !== undefined ? (
+                          <Link
+                            target="_blank"
+                            rel="external"
+                            href={w.social.youtube}
+                            className="inline ml-1"
+                            title={`Odkaz na Youtube ${w.speaker.name}`}
+                          >
+                            <IconBrandYoutube stroke={1.5} color={"#fff"} />
+                          </Link>
+                        ) : null}
                       </div>
                     ) : null}
                   </div>
@@ -185,6 +209,9 @@ const workshops = [
       name: "Mons. Josef Kajnek",
       jpgPath: "/assets/images/speakers/medveditlapka.jpg",
     },
+    social: {
+      web: "https://cs.wikipedia.org/wiki/Josef_Kajnek",
+    },
   },
   {
     title:
@@ -196,6 +223,9 @@ const workshops = [
     speaker: {
       name: "Tomáš Sixta",
       jpgPath: "/assets/images/speakers/sixta.jpg",
+    },
+    social: {
+      x: "https://twitter.com/SixtaTomas",
     },
   },
   {
@@ -211,6 +241,7 @@ const workshops = [
     },
     social: {
       web: "https://www.trckovi.org/",
+      youtube: "https://www.youtube.com/@vojtatr",
     },
   },
   {
@@ -223,6 +254,9 @@ const workshops = [
     speaker: {
       name: "Samuel Prívara",
       jpgPath: "/assets/images/speakers/privara.jpg",
+    },
+    social: {
+      web: "https://www.farnostsalvator.cz/samuel-privara",
     },
   },
   {
@@ -247,6 +281,10 @@ const workshops = [
       name: "Tomáš Petráček",
       jpgPath: "/assets/images/speakers/ppetracek.jpg",
     },
+    social: {
+      web: "https://cs.wikipedia.org/wiki/Tom%C3%A1%C5%A1_Petr%C3%A1%C4%8Dek",
+      x: "https://twitter.com/tompetracek",
+    },
   },
   {
     title: "Přes překážky ke hvězdám – mít sny a&nbsp;odvahu",
@@ -257,6 +295,9 @@ const workshops = [
     speaker: {
       name: "František Tichý",
       jpgPath: "/assets/images/speakers/tichy.jpg",
+    },
+    social: {
+      web: "https://cs.wikipedia.org/wiki/Franti%C5%A1ek_Tich%C3%BD_(pedagog)",
     },
   },
   {
@@ -270,6 +311,11 @@ const workshops = [
       jpgPath: "/assets/images/speakers/cav-langr.jpg",
       jpgPath2: "/assets/images/speakers/cav-polansky.jpg",
     },
+    social: {
+      web: "https://www.clovekavira.cz/",
+      fb: "https://www.facebook.com/clovekavira",
+      ig: "https://www.instagram.com/clovek_a_vira/",
+    },
   },
   {
     title: "Jak se žije v&nbsp;semináři?",
@@ -280,6 +326,27 @@ const workshops = [
     speaker: {
       name: "Jindra Barabáš",
       jpgPath: "/assets/images/speakers/barabas.jpg",
+    },
+    social: {
+      web: "https://seminar-praha.cz/",
+      ig: "https://www.instagram.com/arcspraha/",
+      fb: "https://www.facebook.com/ArcibiskupskySeminar",
+    },
+  },
+  {
+    title: "(K)rok pro Keňu a&nbsp;Namibii, léto pro Bulharsko",
+    type: "person",
+    place: "BiGy",
+    descritpion:
+      "První část povídání bude věnována dobrovolné službě v&nbsp;Keni a&nbsp;Namibii, kde Markéta mohla strávit dohromady rok svého života. Žila v&nbsp;salesiánské komunitě a&nbsp;učila v&nbsp;mateřské a&nbsp;základní škole, odpoledne se věnovala chlapcům z&nbsp;internátu a&nbsp;o&nbsp;prázdninách dětem v&nbsp;oratoři. Byl to malý/velký krok v&nbsp;životě, který proměnil její srdce i&nbsp;srdce jí svěřených dětí. Druhá část vyprávění přiblíží Anežčinu letní dobrovolnickou službu v&nbsp;Bulharsku.",
+    speaker: {
+      name: "Markéta Bartošová a Anežka Havránková",
+      jpgPath: "/assets/images/speakers/sadba1.jpg",
+      jpgPath2: "/assets/images/speakers/sadba2.jpg",
+    },
+    social: {
+      web: "https://www.sadba.org/",
+      ig: "https://www.instagram.com/sadba.salesiani/",
     },
   },
   {
