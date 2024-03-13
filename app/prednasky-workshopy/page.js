@@ -12,6 +12,7 @@ import {
   IconBrandFacebook,
   IconBrandInstagram,
   IconBrandSpotify,
+  IconBrandYoutube,
   IconMapPin,
   IconWorld,
 } from "@tabler/icons";
@@ -170,6 +171,17 @@ export default async function PrednaskyWorhsopy() {
                             <IconCustomBrandX stroke={1.5} color={"#fff"} />
                           </Link>
                         ) : null}
+                        {w.social.youtube !== undefined ? (
+                          <Link
+                            target="_blank"
+                            rel="external"
+                            href={w.social.youtube}
+                            className="inline ml-1"
+                            title={`Odkaz na Youtube ${w.speaker.name}`}
+                          >
+                            <IconBrandYoutube stroke={1.5} color={"#fff"} />
+                          </Link>
+                        ) : null}
                       </div>
                     ) : null}
                   </div>
@@ -229,6 +241,7 @@ const workshops = [
     },
     social: {
       web: "https://www.trckovi.org/",
+      youtube: "https://www.youtube.com/@vojtatr",
     },
   },
   {
@@ -241,6 +254,9 @@ const workshops = [
     speaker: {
       name: "Samuel Prívara",
       jpgPath: "/assets/images/speakers/privara.jpg",
+    },
+    social: {
+      web: "https://www.farnostsalvator.cz/samuel-privara",
     },
   },
   {
@@ -265,6 +281,10 @@ const workshops = [
       name: "Tomáš Petráček",
       jpgPath: "/assets/images/speakers/ppetracek.jpg",
     },
+    social: {
+      web: "https://cs.wikipedia.org/wiki/Tom%C3%A1%C5%A1_Petr%C3%A1%C4%8Dek",
+      x: "https://twitter.com/tompetracek",
+    },
   },
   {
     title: "Přes překážky ke hvězdám – mít sny a&nbsp;odvahu",
@@ -275,6 +295,9 @@ const workshops = [
     speaker: {
       name: "František Tichý",
       jpgPath: "/assets/images/speakers/tichy.jpg",
+    },
+    social: {
+      web: "https://cs.wikipedia.org/wiki/Franti%C5%A1ek_Tich%C3%BD_(pedagog)",
     },
   },
   {
@@ -288,6 +311,11 @@ const workshops = [
       jpgPath: "/assets/images/speakers/cav-langr.jpg",
       jpgPath2: "/assets/images/speakers/cav-polansky.jpg",
     },
+    social: {
+      web: "https://www.clovekavira.cz/",
+      fb: "https://www.facebook.com/clovekavira",
+      ig: "https://www.instagram.com/clovek_a_vira/",
+    },
   },
   {
     title: "Jak se žije v&nbsp;semináři?",
@@ -298,6 +326,11 @@ const workshops = [
     speaker: {
       name: "Jindra Barabáš",
       jpgPath: "/assets/images/speakers/barabas.jpg",
+    },
+    social: {
+      web: "https://seminar-praha.cz/",
+      ig: "https://www.instagram.com/arcspraha/",
+      fb: "https://www.facebook.com/ArcibiskupskySeminar",
     },
   },
   {
@@ -310,6 +343,10 @@ const workshops = [
       name: "Markéta Bartošová a Anežka Havránková",
       jpgPath: "/assets/images/speakers/sadba1.jpg",
       jpgPath2: "/assets/images/speakers/sadba2.jpg",
+    },
+    social: {
+      web: "https://www.sadba.org/",
+      ig: "https://www.instagram.com/sadba.salesiani/",
     },
   },
   {
