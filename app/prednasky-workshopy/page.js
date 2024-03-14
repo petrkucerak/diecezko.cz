@@ -355,37 +355,22 @@ const workshops = [
     id: "workshop-start",
     place: "BiGy",
     descritpion:
-      "Také si užíváš ty chvíle, kdy jsi ve světě tvoření a&nbspmůžeš dát volnost své fantazii a&nbspkreativnímu přetlaku? Já teda moc a&nbsppřesně na takový společný čas tě zvu. Vše potřebné bude zajištěno. Těším se na tebe!",
+      "Také si užíváš ty chvíle, kdy jsi ve světě tvoření a&nbspmůžeš dát volnost své fantazii a&nbsp;kreativnímu přetlaku? Já teda moc a&nbsp;řesně na takový společný čas tě zvu. Vše potřebné bude zajištěno. Těším se na tebe!",
     speaker: {
       name: "Verča Halounková",
       jpgPath: "/assets/images/speakers/halounkova.jpg",
     },
   },
-  //   {
-  //     title: "Sportovní workshop",
-  //     type: "sport",
-  //     id: "sport-start",
-  //     place: "Orlovna",
-  //     descritpion: "",
-  //     speaker: {
-  //       name: "Honza Klinger",
-  //       jpgPath: "/assets/images/speakers/klinger.jpg",
-  //     },
-  //   },
-  //   {
-  //     title: "Mladí a spoluodpovědnost za správu věcí veřejných",
-  //     type: "person",
-  //     place: "místnost 208, BiGy",
-  //     descritpion:
-  //       '"Politika je především uměním setkávání, reflexí a&nbsp;akcí" říká papež František. Co tím má na mysli? Politika jako spoluodpovědnost za správu věcí veřejných. A&nbsp;jak složité je v&nbsp;politice uplatnit myšlenku sv.&nbsp;Augustýna "Odsuzuj hřích, ale miluj hříšníka"? Politika jako výzva i&nbsp;úkol, odpovědnost i&nbsp;poslání. O&nbsp;roli a&nbsp;ochotě mladých jít s&nbsp;kůží na trh a&nbsp;aktivně se zapojit do vytváření charakteru místního společenství i&nbsp;řešení zásadních témat celé naší společnosti. A&nbsp;hlavně se těším na besedu a&nbsp;dialog o&nbsp;tom, co mladé na dnešní politice na všech úrovních zajímá, na kritickou zpětnou vazbu, bez které se politik utopí v&nbsp;každodenní rutině.',
-  //     speaker: {
-  //       name: "Marek Výborný",
-  //       jpgPath: "/assets/images/speakers/vyborny.jpg",
-  //     },
-  //     social: {
-  //       web: "https://www.kdu.cz/o-nas/nasi-lide/poslanci/vyborny",
-  //       ig: "https://www.instagram.com/marek.vyborny/",
-  //       fb: "https://www.facebook.com/vybornymarek",
-  //     },
-  //   },
+  {
+    title: "Sportovní workshop",
+    type: "sport",
+    id: "sport-start",
+    place: "Orlovna",
+    descritpion:
+      "Chceš se po dopoledním sezení ve filharmonii trochu protáhnout a&nbsp;zasportovat si? Přesně pro tebe je určený tenhle workshop, kde si budeš moci vybrat ze dvou skupinových sportů a&nbsp;prostřednictvím hry se seznamovat novými lidmi.",
+    speaker: {
+      name: "Jan Chadima",
+      jpgPath: "/assets/images/speakers/chadima.jpg",
+    },
+  },
 ];
