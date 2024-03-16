@@ -367,7 +367,7 @@ const workshops = [
     id: "sport-start",
     place: "Orlovna",
     descritpion:
-      "Chceš se po dopoledním sezení ve filharmonii trochu protáhnout a&nbsp;zasportovat si? Přesně pro tebe je určený tenhle workshop, kde si budeš moci vybrat ze dvou skupinových sportů a&nbsp;prostřednictvím hry se seznamovat novými lidmi.",
+      "Chceš se po dopoledním sezení ve filharmonii trochu protáhnout a&nbsp;zasportovat si? Přesně pro tebe je určený tenhle workshop, kde si budeš moci vybrat ze dvou skupinových sportů a&nbsp;prostřednictvím hry se seznamovat novými lidmi. Na výběr bude z&nbsp;venkovního fotbalu (jen za dobrého počasí) a&nbsp;vnitřního basketbalu/volejbalu. Vem si proto s&nbsp;sebou vhodné oblečení podle počasí a&nbsp;do haly čistou sálovou obuv. Šatna bude k&nbsp;dispozici na BiGy.",
     speaker: {
       name: "Jan Chadima",
       jpgPath: "/assets/images/speakers/chadima.jpg",
