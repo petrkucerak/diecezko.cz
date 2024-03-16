@@ -244,6 +244,20 @@ const workshops = [
       youtube: "https://www.youtube.com/@vojtatr",
     },
   },
+
+  {
+    title: "Cesta beze strachu",
+    type: "person",
+    place: "BiGy",
+    descritpion: "",
+    speaker: {
+      name: "Jiří Strach",
+      jpgPath: "/assets/images/speakers/strach.jpg",
+    },
+    social: {
+      web: "https://cs.wikipedia.org/wiki/Ji%C5%99%C3%AD_Strach",
+    },
+  },
   {
     title:
       "Jak řídit svůj život a&nbsp;nenabourat (a&nbsp;co dělat, když to nevyjde)?",
