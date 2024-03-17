@@ -162,7 +162,7 @@ export const dcm = [
   {
     name: "Klárka Petrová",
     description:
-      "Klárka je naše skvělá vedoucí, která má vše pod palcem. Přišla k nám z vesmírného týmu, kde strávila dva roky. Je naším motorem při práci a poradách. Krásně maluje, kreslí a zajímá se o historii. V minulosti vás mohla provést po interiérech opočenského zámku. Skvěle se ujala tvorby plakátů a celé propagace.",
+      "Klárka je naše skvělá vedoucí, která má vše pod palcem. Přišla k nám z&nbsp;vesmírného týmu, kde strávila dva roky. Je naším motorem při práci a&nbsp;poradách. Krásně maluje, kreslí a&nbsp;zajímá se o&nbsp;historii. V&nbsp;minulosti vás mohla provést po interiérech opočenského zámku. Skvěle se ujala tvorby plakátů a&nbsp;celé propagace.",
     jpgPath: "/assets/images/dcm/kp.jpg",
     webpPath: "/assets/images/dcm/kp.webp",
     altText: "Profilová fotka Klárky Petrové (zatím)",
@@ -171,7 +171,7 @@ export const dcm = [
   {
     name: "Lucka Zadinová",
     description:
-      "Lucka pochází z Libice nad Cidlinou, ale aktuálně žije na hájence poblíž Chotěboře. Studuje na Univerzitě Hradec Králové. Její smysl pro ekologičnost se nezapře. Svým příkladem nás vede, jak se dobře starat o naši planetu a používat ekologické produkty. Nezalekne se žádné výzvy, akčnost, to je její.",
+      "Lucka pochází z&nbsp;Libice nad Cidlinou, ale aktuálně žije na hájence poblíž Chotěboře. Studuje na Univerzitě Hradec Králové. Její smysl pro ekologičnost se nezapře. Svým příkladem nás vede, jak se dobře starat o&nbsp;naši planetu a&nbsp;používat ekologické produkty. Nezalekne se žádné výzvy, akčnost, to je její.",
     jpgPath: "/assets/images/dcm/lz.jpg",
     webpPath: "/assets/images/dcm/lz.webp",
     altText: "Profilová fotka Lucka Zadinová (už nafurt)",
@@ -180,7 +180,7 @@ export const dcm = [
   {
     name: "Verča Pavlišová",
     description:
-      "Verča je u nás “služebně nejstarší” a jsme moc rádi, že ji máme. Ráda vysvětluje hry a je pro nás technicko-praktická podpora. Hlídá, aby naše “praštěné” nápady šly zrealizovat. Studuje učitelství pro mateřské školy a jednou by chtěla být paní ředitelka. Zároveň nás spojuje s vysokoškolskou Salaší, která je zde v Hradci Králové. Má moc ráda hudbu, zpěv a čokoládu.",
+      "Verča je u&nbsp;nás “služebně nejstarší” a&nbsp;jsme moc rádi, že ji máme. Ráda vysvětluje hry a&nbsp;je pro nás technicko-praktická podpora. Hlídá, aby naše “praštěné” nápady šly zrealizovat. Studuje učitelství pro mateřské školy a&nbsp;jednou by chtěla být paní ředitelka. Zároveň nás spojuje s&nbsp;vysokoškolskou Salaší, která je zde v&nbsp;Hradci Králové. Má moc ráda hudbu, zpěv a&nbsp;čokoládu.",
     jpgPath: "/assets/images/dcm/vp.jpg",
     webpPath: "/assets/images/dcm/vp.webp",
     altText: "Profilová fotka Verča Pavlišová (zatím)",
@@ -198,7 +198,7 @@ export const dcm = [
   {
     name: "Jindra Řezníček",
     description:
-      "Jindra, zástupce mužské části našeho týmu a práce všeho druhu. Vášnivý milovník vláčků, lokomotiv, vagónů, kolejí a výhybek nás ve volných chvílích zahrnuje fakty a zajímavostmi ze světa železnice. Krom originálních nápadů a praktických připomínek při poradách pro vás připravuje nejčerstvější informace a novinky na webu.",
+      "Jindra, zástupce mužské části našeho týmu a&nbsp;práce všeho druhu. Vášnivý milovník vláčků, lokomotiv, vagónů, kolejí a&nbsp;výhybek nás ve volných chvílích zahrnuje fakty a&nbsp;zajímavostmi ze světa železnice. Krom originálních nápadů a&nbsp;praktických připomínek při poradách pro vás připravuje nejčerstvější informace a&nbsp;novinky na webu.",
     jpgPath: "/assets/images/dcm/jr.jpg",
     webpPath: "/assets/images/dcm/jr.webp",
     altText: "Profilová fotka Jindry Řezníčka",
@@ -207,7 +207,7 @@ export const dcm = [
   {
     name: "Evžen Holub",
     description:
-      "Pan Holub k nám byl seslán při vanutí Ducha. Pravděpodobně holubice nebyla toho času k dispozici. Holuba jste si všichni moc oblíbili a rovnou jste jej začali oslovovat jménem Evžen. A tak se Evžen Holub stal maskotem královéhradecké mládeže.",
+      "Pan Holub k&nbsp;nám byl seslán při vanutí Ducha. Pravděpodobně holubice nebyla toho času k&nbsp;dispozici. Holuba jste si všichni moc oblíbili a&nbsp;rovnou jste jej začali oslovovat jménem Evžen. A&nbsp;tak se Evžen Holub stal maskotem královéhradecké mládeže.",
     jpgPath: "/assets/images/jadro/evzen.jpg",
     webpPath: "/assets/images/jadro/evzen.webp",
     altText: "Profilová fotka Holuba Evžena",
