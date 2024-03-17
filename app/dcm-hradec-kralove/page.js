@@ -5,7 +5,7 @@ import ContainerTitle from "../../components/layouts/container-title";
 import ContainerDescription from "../../components/layouts/container-description";
 import ContainerParagraph from "../../components/layouts/container-paragraph";
 import PageMain from "../../components/layouts/page-main";
-import ContainerImage from "../../components/layouts/container-image";
+import ProfileCard from "../../components/layouts/profile-card";
 import ContainerH2 from "../../components/layouts/container-h2";
 import ContainerUl from "../../components/layouts/container-ul";
 import ContainerLi from "../../components/layouts/container-li";
@@ -29,12 +29,22 @@ export default async function DCM() {
             konkrétní život z&nbsp;víry byli svědectvím dobra a&nbsp;nadějí pro
             tento svět.
           </ContainerDescription>
-          <ContainerImage
-            jpgPath="/assets/images/spolecenstvi/diecezni-centrum-pro-mladez.jpg"
-            webpPath="/assets/images/spolecenstvi/diecezni-centrum-pro-mladez.webp"
-            altText="Tým DCM"
-            className="w-full my-2"
-          />
+          <div className="flex flex-col sm:grid sm:grid-cols-2 md:grid-cols-3 grid-flow-row gap-4 items-center">
+            {dcm.map((p) => {
+              return (
+                <ProfileCard
+                  key={p.name}
+                  name={p.name}
+                  description={p.description}
+                  jpgPath={p.jpgPath}
+                  webpPath={p.webpPath}
+                  pngPath={p.pngPath}
+                  altText={p.altText}
+                  className={p.className}
+                />
+              );
+            })}
+          </div>
           <ContainerParagraph>
             Snažíme se posílit duchovní život mladých lidí, vychovávat ke
             svědectví, ke službě, k&nbsp;zodpovědnosti, k&nbsp;pravdě
@@ -147,3 +157,60 @@ export default async function DCM() {
     </main>
   );
 }
+
+export const dcm = [
+  {
+    name: "Klárka Petrová",
+    description:
+      "Klárka je naše skvělá vedoucí, která má vše pod palcem. Přišla k nám z vesmírného týmu, kde strávila dva roky. Je naším motorem při práci a poradách. Krásně maluje, kreslí a zajímá se o historii. V minulosti vás mohla provést po interiérech opočenského zámku. Skvěle se ujala tvorby plakátů a celé propagace.",
+    jpgPath: "/assets/images/jadro/petrova.jpg",
+    webpPath: "/assets/images/jadro/petrova.webp",
+    altText: "Profilová fotka Klárky Petrové",
+    className: "",
+  },
+  {
+    name: "Lucka Zadinová",
+    description:
+      "Lucka pochází z Libice nad Cidlinou, ale aktuálně žije na hájence poblíž Chotěboře. Studuje na Univerzitě Hradec Králové. Její smysl pro ekologičnost se nezapře. Svým příkladem nás vede, jak se dobře starat o naši planetu a používat ekologické produkty. Nezalekne se žádné výzvy, akčnost, to je její.",
+    jpgPath: "/assets/images/jadro/petrova.jpg",
+    webpPath: "/assets/images/jadro/petrova.webp",
+    altText: "Profilová fotka Klárky Petrové",
+    className: "",
+  },
+  {
+    name: "Verča Pavlišová",
+    description:
+      "Verča je u nás “služebně nejstarší” a jsme moc rádi, že ji máme. Ráda vysvětluje hry a je pro nás technicko-praktická podpora. Hlídá, aby naše “praštěné” nápady šly zrealizovat. Studuje učitelství pro mateřské školy a jednou by chtěla být paní ředitelka. Zároveň nás spojuje s vysokoškolskou Salaší, která je zde v Hradci Králové. Má moc ráda hudbu, zpěv a čokoládu.",
+    jpgPath: "/assets/images/jadro/petrova.jpg",
+    webpPath: "/assets/images/jadro/petrova.webp",
+    altText: "Profilová fotka Klárky Petrové",
+    className: "",
+  },
+  {
+    name: "Joska Pazderová",
+    description:
+      "Joska je naše nejnovější posila do našeho týmu. Již brzy se vám zde představí.",
+    jpgPath: "/assets/images/jadro/petrova.jpg",
+    webpPath: "/assets/images/jadro/petrova.webp",
+    altText: "Profilová fotka Klárky Petrové",
+    className: "",
+  },
+  {
+    name: "Jindra Řezníček",
+    description:
+      "Jindra, zástupce mužské části našeho týmu a práce všeho druhu. Vášnivý milovník vláčků, lokomotiv, vagónů, kolejí a výhybek nás ve volných chvílích zahrnuje fakty a zajímavostmi ze světa železnice. Krom originálních nápadů a praktických připomínek při poradách pro vás připravuje nejčerstvější informace a novinky na webu.",
+    jpgPath: "/assets/images/jadro/evzen.jpg",
+    webpPath: "/assets/images/jadro/evzen.webp",
+    altText: "Profilová fotka Holuba Evžena",
+    className: "",
+  },
+  {
+    name: "Evžen Holub",
+    description:
+      "Pan Holub k nám byl seslán při vanutí Ducha. Pravděpodobně holubice nebyla toho času k dispozici. Holuba jste si všichni moc oblíbili a rovnou jste jej začali oslovovat jménem Evžen. A tak se Evžen Holub stal maskotem královéhradecké mládeže.",
+    jpgPath: "/assets/images/jadro/evzen.jpg",
+    webpPath: "/assets/images/jadro/evzen.webp",
+    altText: "Profilová fotka Holuba Evžena",
+    className: "",
+  },
+];
