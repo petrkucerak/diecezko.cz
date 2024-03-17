@@ -131,7 +131,7 @@ export default function FAQ() {
         question={`Proč je Diecézko po tak brzké době?`}
         icon={`calendar`}
       >
-        Pamětníci nám dají za pravdu, že "tradiční" termín jest na jaře, kdy se
+        Pamětníci nám dají za pravdu, že tradiční termín jest na jaře, kdy se
         setkání v&nbsp;minulosti konalo. Nejde tedy o&nbsp;změnu, že by se
         Diecézko nově konalo 2x během školního roku, nýbrž o&nbsp;změnu termínu
         (přesun z&nbsp;podzimu zpět na jaro). Další se bude konat až na jaře
