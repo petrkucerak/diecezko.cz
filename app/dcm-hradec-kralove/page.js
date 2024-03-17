@@ -29,22 +29,6 @@ export default async function DCM() {
             konkrétní život z&nbsp;víry byli svědectvím dobra a&nbsp;nadějí pro
             tento svět.
           </ContainerDescription>
-          <div className="flex flex-col sm:grid sm:grid-cols-2 md:grid-cols-3 grid-flow-row gap-4 items-center">
-            {dcm.map((p) => {
-              return (
-                <ProfileCard
-                  key={p.name}
-                  name={p.name}
-                  description={p.description}
-                  jpgPath={p.jpgPath}
-                  webpPath={p.webpPath}
-                  pngPath={p.pngPath}
-                  altText={p.altText}
-                  className={p.className}
-                />
-              );
-            })}
-          </div>
           <ContainerParagraph>
             Snažíme se posílit duchovní život mladých lidí, vychovávat ke
             svědectví, ke službě, k&nbsp;zodpovědnosti, k&nbsp;pravdě
@@ -91,6 +75,22 @@ export default async function DCM() {
               .
             </ContainerLi>
           </ContainerUl>
+          <div className="flex flex-col sm:grid sm:grid-cols-2 md:grid-cols-3 grid-flow-row gap-4 items-center">
+            {dcm.map((p) => {
+              return (
+                <ProfileCard
+                  key={p.name}
+                  name={p.name}
+                  description={p.description}
+                  jpgPath={p.jpgPath}
+                  webpPath={p.webpPath}
+                  pngPath={p.pngPath}
+                  altText={p.altText}
+                  className={p.className}
+                />
+              );
+            })}
+          </div>
           <ContainerH2>Kontakt</ContainerH2>
           <ContainerUl className={`!list-none !pl-0 mb-6`}>
             <ContainerLi>
@@ -163,45 +163,45 @@ export const dcm = [
     name: "Klárka Petrová",
     description:
       "Klárka je naše skvělá vedoucí, která má vše pod palcem. Přišla k nám z vesmírného týmu, kde strávila dva roky. Je naším motorem při práci a poradách. Krásně maluje, kreslí a zajímá se o historii. V minulosti vás mohla provést po interiérech opočenského zámku. Skvěle se ujala tvorby plakátů a celé propagace.",
-    jpgPath: "/assets/images/jadro/petrova.jpg",
-    webpPath: "/assets/images/jadro/petrova.webp",
-    altText: "Profilová fotka Klárky Petrové",
+    jpgPath: "/assets/images/dcm/kp.jpg",
+    webpPath: "/assets/images/dcm/kp.webp",
+    altText: "Profilová fotka Klárky Petrové (zatím)",
     className: "",
   },
   {
     name: "Lucka Zadinová",
     description:
       "Lucka pochází z Libice nad Cidlinou, ale aktuálně žije na hájence poblíž Chotěboře. Studuje na Univerzitě Hradec Králové. Její smysl pro ekologičnost se nezapře. Svým příkladem nás vede, jak se dobře starat o naši planetu a používat ekologické produkty. Nezalekne se žádné výzvy, akčnost, to je její.",
-    jpgPath: "/assets/images/jadro/petrova.jpg",
-    webpPath: "/assets/images/jadro/petrova.webp",
-    altText: "Profilová fotka Klárky Petrové",
+    jpgPath: "/assets/images/dcm/lz.jpg",
+    webpPath: "/assets/images/dcm/lz.webp",
+    altText: "Profilová fotka Lucka Zadinová (už nafurt)",
     className: "",
   },
   {
     name: "Verča Pavlišová",
     description:
       "Verča je u nás “služebně nejstarší” a jsme moc rádi, že ji máme. Ráda vysvětluje hry a je pro nás technicko-praktická podpora. Hlídá, aby naše “praštěné” nápady šly zrealizovat. Studuje učitelství pro mateřské školy a jednou by chtěla být paní ředitelka. Zároveň nás spojuje s vysokoškolskou Salaší, která je zde v Hradci Králové. Má moc ráda hudbu, zpěv a čokoládu.",
-    jpgPath: "/assets/images/jadro/petrova.jpg",
-    webpPath: "/assets/images/jadro/petrova.webp",
-    altText: "Profilová fotka Klárky Petrové",
+    jpgPath: "/assets/images/dcm/vp.jpg",
+    webpPath: "/assets/images/dcm/vp.webp",
+    altText: "Profilová fotka Verča Pavlišová (zatím)",
     className: "",
   },
   {
     name: "Joska Pazderová",
     description:
       "Joska je naše nejnovější posila do našeho týmu. Již brzy se vám zde představí.",
-    jpgPath: "/assets/images/jadro/petrova.jpg",
-    webpPath: "/assets/images/jadro/petrova.webp",
-    altText: "Profilová fotka Klárky Petrové",
+    jpgPath: "/assets/images/jadro/joska.jpg",
+    webpPath: "/assets/images/jadro/joska.webp",
+    altText: "Profilová fotka Jsoky Pazderové (zatím)",
     className: "",
   },
   {
     name: "Jindra Řezníček",
     description:
       "Jindra, zástupce mužské části našeho týmu a práce všeho druhu. Vášnivý milovník vláčků, lokomotiv, vagónů, kolejí a výhybek nás ve volných chvílích zahrnuje fakty a zajímavostmi ze světa železnice. Krom originálních nápadů a praktických připomínek při poradách pro vás připravuje nejčerstvější informace a novinky na webu.",
-    jpgPath: "/assets/images/jadro/evzen.jpg",
-    webpPath: "/assets/images/jadro/evzen.webp",
-    altText: "Profilová fotka Holuba Evžena",
+    jpgPath: "/assets/images/dcm/jr.jpg",
+    webpPath: "/assets/images/dcm/jr.webp",
+    altText: "Profilová fotka Jindry Řezníčka",
     className: "",
   },
   {
