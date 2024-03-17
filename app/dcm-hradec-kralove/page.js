@@ -5,7 +5,7 @@ import ContainerTitle from "../../components/layouts/container-title";
 import ContainerDescription from "../../components/layouts/container-description";
 import ContainerParagraph from "../../components/layouts/container-paragraph";
 import PageMain from "../../components/layouts/page-main";
-import ContainerImage from "../../components/layouts/container-image";
+import ProfileCard from "../../components/layouts/profile-card";
 import ContainerH2 from "../../components/layouts/container-h2";
 import ContainerUl from "../../components/layouts/container-ul";
 import ContainerLi from "../../components/layouts/container-li";
@@ -29,12 +29,6 @@ export default async function DCM() {
             konkrétní život z&nbsp;víry byli svědectvím dobra a&nbsp;nadějí pro
             tento svět.
           </ContainerDescription>
-          <ContainerImage
-            jpgPath="/assets/images/spolecenstvi/diecezni-centrum-pro-mladez.jpg"
-            webpPath="/assets/images/spolecenstvi/diecezni-centrum-pro-mladez.webp"
-            altText="Tým DCM"
-            className="w-full my-2"
-          />
           <ContainerParagraph>
             Snažíme se posílit duchovní život mladých lidí, vychovávat ke
             svědectví, ke službě, k&nbsp;zodpovědnosti, k&nbsp;pravdě
@@ -81,6 +75,22 @@ export default async function DCM() {
               .
             </ContainerLi>
           </ContainerUl>
+          <div className="flex flex-col sm:grid sm:grid-cols-2 md:grid-cols-3 grid-flow-row gap-4 items-center my-6">
+            {dcm.map((p) => {
+              return (
+                <ProfileCard
+                  key={p.name}
+                  name={p.name}
+                  description={p.description}
+                  jpgPath={p.jpgPath}
+                  webpPath={p.webpPath}
+                  pngPath={p.pngPath}
+                  altText={p.altText}
+                  className={p.className}
+                />
+              );
+            })}
+          </div>
           <ContainerH2>Kontakt</ContainerH2>
           <ContainerUl className={`!list-none !pl-0 mb-6`}>
             <ContainerLi>
@@ -147,3 +157,60 @@ export default async function DCM() {
     </main>
   );
 }
+
+export const dcm = [
+  {
+    name: "Klárka Petrová",
+    description:
+      "Klárka je naše skvělá vedoucí, která má vše pod palcem. Přišla k nám z&nbsp;vesmírného týmu, kde strávila dva roky. Je naším motorem při práci a&nbsp;poradách. Krásně maluje, kreslí a&nbsp;zajímá se o&nbsp;historii. V&nbsp;minulosti vás mohla provést po interiérech opočenského zámku. Skvěle se ujala tvorby plakátů a&nbsp;celé propagace.",
+    jpgPath: "/assets/images/dcm/kp.jpg",
+    webpPath: "/assets/images/dcm/kp.webp",
+    altText: "Profilová fotka Klárky Petrové (zatím)",
+    className: "",
+  },
+  {
+    name: "Lucka Zadinová",
+    description:
+      "Lucka pochází z&nbsp;Libice nad Cidlinou, ale aktuálně žije na hájence poblíž Chotěboře. Studuje na Univerzitě Hradec Králové. Její smysl pro ekologičnost se nezapře. Svým příkladem nás vede, jak se dobře starat o&nbsp;naši planetu a&nbsp;používat ekologické produkty. Nezalekne se žádné výzvy, akčnost, to je její.",
+    jpgPath: "/assets/images/dcm/lz.jpg",
+    webpPath: "/assets/images/dcm/lz.webp",
+    altText: "Profilová fotka Lucka Zadinová (už nafurt)",
+    className: "",
+  },
+  {
+    name: "Verča Pavlišová",
+    description:
+      "Verča je u&nbsp;nás “služebně nejstarší” a&nbsp;jsme moc rádi, že ji máme. Ráda vysvětluje hry a&nbsp;je pro nás technicko-praktická podpora. Hlídá, aby naše “praštěné” nápady šly zrealizovat. Studuje učitelství pro mateřské školy a&nbsp;jednou by chtěla být paní ředitelka. Zároveň nás spojuje s&nbsp;vysokoškolskou Salaší, která je zde v&nbsp;Hradci Králové. Má moc ráda hudbu, zpěv a&nbsp;čokoládu.",
+    jpgPath: "/assets/images/dcm/vp.jpg",
+    webpPath: "/assets/images/dcm/vp.webp",
+    altText: "Profilová fotka Verča Pavlišová (zatím)",
+    className: "",
+  },
+  {
+    name: "Joska Pazderová",
+    description:
+      "Joska je naše nejnovější posila do našeho týmu. Již brzy se vám zde představí.",
+    jpgPath: "/assets/images/jadro/joska.jpg",
+    webpPath: "/assets/images/jadro/joska.webp",
+    altText: "Profilová fotka Jsoky Pazderové (zatím)",
+    className: "",
+  },
+  {
+    name: "Jindra Řezníček",
+    description:
+      "Jindra, zástupce mužské části našeho týmu a&nbsp;práce všeho druhu. Vášnivý milovník vláčků, lokomotiv, vagónů, kolejí a&nbsp;výhybek nás ve volných chvílích zahrnuje fakty a&nbsp;zajímavostmi ze světa železnice. Krom originálních nápadů a&nbsp;praktických připomínek při poradách pro vás připravuje nejčerstvější informace a&nbsp;novinky na webu.",
+    jpgPath: "/assets/images/dcm/jr.jpg",
+    webpPath: "/assets/images/dcm/jr.webp",
+    altText: "Profilová fotka Jindry Řezníčka",
+    className: "",
+  },
+  {
+    name: "Evžen Holub",
+    description:
+      "Pan Holub k&nbsp;nám byl seslán při vanutí Ducha. Pravděpodobně holubice nebyla toho času k&nbsp;dispozici. Holuba jste si všichni moc oblíbili a&nbsp;rovnou jste jej začali oslovovat jménem Evžen. A&nbsp;tak se Evžen Holub stal maskotem královéhradecké mládeže.",
+    jpgPath: "/assets/images/jadro/evzen.jpg",
+    webpPath: "/assets/images/jadro/evzen.webp",
+    altText: "Profilová fotka Holuba Evžena",
+    className: "",
+  },
+];

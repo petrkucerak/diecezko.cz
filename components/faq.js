@@ -131,9 +131,11 @@ export default function FAQ() {
         question={`Proč je Diecézko po tak brzké době?`}
         icon={`calendar`}
       >
-        Z <strong>organizačního a&nbsp;praktického hlediska</strong> jsme se po
-        domluvě s&nbsp;otcem biskupem Janem rozhodli, že je vhodnější jarní
-        termín, a&nbsp;proto jsme Diecézko přesunuli na něj.
+        Pamětníci nám dají za pravdu, že tradiční termín jest na jaře, kdy se
+        setkání v&nbsp;minulosti konalo. Nejde tedy o&nbsp;změnu, že by se
+        Diecézko nově konalo 2x během školního roku, nýbrž o&nbsp;změnu termínu
+        (přesun z&nbsp;podzimu zpět na jaro). Další se bude konat až na jaře
+        2025 a&nbsp;přesný termín bude zveřejněn během tohoto setkání.
       </FaqBox>
       {/* <FaqBox question={`Jak se v Hradci dopravovat?`} icon={`bus`}>
         Hradec Králové je malej, <strong>choďte pěšky</strong>!
