@@ -75,7 +75,7 @@ export default async function DCM() {
               .
             </ContainerLi>
           </ContainerUl>
-          <div className="flex flex-col sm:grid sm:grid-cols-2 md:grid-cols-3 grid-flow-row gap-4 items-center">
+          <div className="flex flex-col sm:grid sm:grid-cols-2 md:grid-cols-3 grid-flow-row gap-4 items-center my-6">
             {dcm.map((p) => {
               return (
                 <ProfileCard
