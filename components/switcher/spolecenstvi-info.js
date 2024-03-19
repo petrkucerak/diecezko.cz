@@ -4,10 +4,7 @@ import Link from "next/link";
 import Button from "../layouts/button";
 import IconCustomVeka from "../images/veka";
 import ContainerH2 from "../layouts/container-h2";
-import {
-  IconArrowBarToDown,
-  IconMap
-} from "@tabler/icons";
+import { IconArrowBarToDown, IconMap, IconTower } from "@tabler/icons";
 import IconCustomDCM from "../images/dcm-hk";
 import IconCustomVesmir from "../images/vesmir";
 import IconCustomSalas from "../images/salas";
@@ -45,6 +42,16 @@ export default function SpolecenstviInfo({ id, className }) {
           <Button>
             <IconMap stroke={1.5} className={`inline h-6 mr-2`} />
             Majki v&nbsp;Albánii
+          </Button>
+        </Link>
+        <Link
+          href="/assets/files/150-Duchovni_cviceni_v_Kinderalmu-2024.pdf"
+          target="_blank"
+          className=""
+        >
+          <Button>
+            <IconTower stroke={1.5} className={`inline h-6 mr-2`} />
+            Duchovní cvičení v&nbsp;Kinderlamu
           </Button>
         </Link>
       </CardFeed>
