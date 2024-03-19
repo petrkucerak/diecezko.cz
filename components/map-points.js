@@ -26,6 +26,8 @@ export default function MapPoints({ coords }) {
           ? sport
           : p.name === "Vlakové nádraží"
           ? train
+          : p.name === "Zpívající stromy"
+          ? cross
           : bus,
       alt: `${p.name}`,
     })
@@ -127,6 +129,18 @@ const train = L.icon({
   // shadowAnchor: [2.3945, 4.19999],
 });
 
+const cross = L.icon({
+  iconUrl: "/assets/images/map/cross.svg",
+  iconSize: [size, size],
+  iconAnchor: [size / 2, size / 2],
+  popupAnchor: [0, -10],
+  className:
+    "rounded-full bg-amber-800 drop-shadow-xl",
+  // shadowUrl: "/asstes/icons/marker-toilet-48x84-transparent-shadows.svg",
+  // shadowSize: [28.79, 50.4],
+  // shadowAnchor: [2.3945, 4.19999],
+});
+
 const places = [
   {
     coords: {
@@ -191,6 +205,15 @@ const places = [
       y: 15.8341294,
     },
     name: "Kostel Nanebevzetí Panny Marie",
-    content: "<li>14:00 chvály, adorace, svátost smíření či duchovní rozhovor</li>",
+    content:
+      "<li>14:00 chvály, adorace, svátost smíření či duchovní rozhovor</li>",
+  },
+  {
+    coords: {
+      x: 50.2077792,
+      y: 15.8301403,
+    },
+    name: "Zpívající stromy",
+    content: "<li>14:00 nabídka křížové cesty</li>",
   },
 ];
