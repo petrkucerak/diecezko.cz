@@ -102,31 +102,18 @@ export default function FAQ() {
         </Link>
         .
       </FaqBox>
-      <FaqBox
-        question={`Společná doprava pro vikariát Humpolce a&nbsp;Havlíčkův Brod?`}
-        icon={`bus`}
-      >
-        Vikariátní zástupci vypravují autobus, který bude zastavovat v&nbsp;
-        <strong>Humpolci</strong>, v&nbsp;<strong>Havlíčkově Brodě</strong>{" "}
-        a&nbsp;v&nbsp;<strong>Chotěboři</strong>. Pokud máš zájem se také svézt,
-        kontaktuj Aničku Daňkovou 📞&nbsp;
-        <Link href={`tel:+420603833605`} className="tracking-tight underline">
-          603&nbsp;833&nbsp;605
-        </Link>
-        , 📨&nbsp;
+      <FaqBox question={`Je organizovaná společná doprava?`} icon={`bus`}>
+        Některé vikariáty společnou dobropravu organizují. Pro jesný přehled
+        jsme pro připravili{" "}
         <Link
-          href={`mailto:annadankova5@seznam.cz`}
-          className="tracking-tigh underline"
+          href={`/spolecna-doprava`}
+          target="_Self"
+          className="underline font-semibold"
         >
-          annadankova5@seznam.cz
+          rozestník
         </Link>
-        .
-        <ContainerImage
-          jpgPath="/assets/images/doprava-humpolec.jpg"
-          webpPath="/assets/images/doprava-humpolec.webp"
-          altText="Plakátek s informacemi o společné dopravě."
-          className="w-full my-4"
-        />
+        , který poradí, kdy a&nbsp;v&nbsp;kolik je sraz a&nbsp;jestli se je
+        neutné někam hlásit.
       </FaqBox>
       <FaqBox
         question={`Proč je Diecézko po tak brzké době?`}
