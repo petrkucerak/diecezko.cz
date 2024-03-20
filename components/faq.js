@@ -2,6 +2,7 @@ import FaqBox from "./layouts/faq-box";
 import FaqLayout from "./layouts/faq-layout";
 import Link from "next/link";
 import ContainerImage from "./layouts/container-image";
+import ContainerH3 from "./layouts/container-h3";
 
 export default function FAQ() {
   return (
@@ -137,9 +138,41 @@ export default function FAQ() {
         (přesun z&nbsp;podzimu zpět na jaro). Další se bude konat až na jaře
         2025 a&nbsp;přesný termín bude zveřejněn během tohoto setkání.
       </FaqBox>
-      {/* <FaqBox question={`Jak se v Hradci dopravovat?`} icon={`bus`}>
+      <FaqBox question={`Jak se v Hradci dopravovat?`} icon={`bus`}>
+        <ContainerH3>Stručně</ContainerH3>
         Hradec Králové je malej, <strong>choďte pěšky</strong>!
-      </FaqBox> */}
+        <ContainerH3>
+          Cesta z&nbsp;vlakového nádraží k&nbsp;Filharmonii
+        </ContainerH3>
+        Při východu z&nbsp;budovy vlakového nádraží přejdete zastávky autobusové
+        dopravy a&nbsp;vydáte se rovně po ulici S. K. Neumanna, kterou se
+        dostanete na náměstí 28. října. Dále půjdete podél obchodních domů TESCO
+        a&nbsp;Atrium po ulici Dukelská třída a&nbsp;pomocí podchodu se
+        dostanete na třídu Kalra IV. Po které půjdete až k řece, přejdete most
+        a&nbsp;po levé straně uvidíte sportovní halu, za kterou se nachází
+        Filharmonie. Zde na vás již budou čekat pořadatelé s&nbsp;dalšími
+        informacemi. <br />
+        Autobusy Hlavní nádraží – Muzeum
+        <br />
+        Zastávka A – 16, 12, 3 <br />
+        Zastávka D – 11, 4, 7
+        <ContainerH3>
+          Cesta z&nbsp;autobusového nádraží k Filharmonii
+        </ContainerH3>
+        Stojíte na autobusovém nádraží zády k obchodu LIDL, vydáte se doleva po
+        ulici Nádražní a&nbsp;na křižovatce se dáte doprava na Blažíčkovo
+        náměstí. Zde se na křižovatce vydáte doleva po ulici Hořická, po které
+        dojdete až nakonec této ulice k&nbsp;pizzerii Casa Mia. Zde přejdete
+        silnici až k&nbsp;pizzerii a&nbsp;pomocí podchodu se dostanete na třídu
+        Kalra IV. Po které půjdete až k&nbsp;řece, přejdete most a&nbsp;po levé
+        straně uvidíte sportovní halu, za kterou se nachází Filharmonie. Zde na
+        vás již budou čekat pořadatelé s&nbsp;dalšími informacemi.
+        <br />
+        Autobusy Terminál HD – Muzeum
+        <br />
+        Zastávka D1 – 4, 7<br />
+        Zastávka D2 – 11, 13
+      </FaqBox>
       <FaqBox question={`Kam si odskočit na záchod?`} icon={`toilet`}>
         Nezoufej, mrkni{" "}
         <Link
