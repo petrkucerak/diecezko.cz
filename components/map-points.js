@@ -26,6 +26,8 @@ export default function MapPoints({ coords }) {
           ? sport
           : p.name === "Vlakové nádraží"
           ? train
+          : p.name === "Zpívající stromy"
+          ? cross
           : bus,
       alt: `${p.name}`,
     })
@@ -127,32 +129,18 @@ const train = L.icon({
   // shadowAnchor: [2.3945, 4.19999],
 });
 
+const cross = L.icon({
+  iconUrl: "/assets/images/map/cross.svg",
+  iconSize: [size, size],
+  iconAnchor: [size / 2, size / 2],
+  popupAnchor: [0, -10],
+  className: "rounded-full bg-amber-800 drop-shadow-xl",
+  // shadowUrl: "/asstes/icons/marker-toilet-48x84-transparent-shadows.svg",
+  // shadowSize: [28.79, 50.4],
+  // shadowAnchor: [2.3945, 4.19999],
+});
+
 const places = [
-  {
-    coords: {
-      x: 50.2138117,
-      y: 15.8291964,
-    },
-    name: "Filhramonie Hradec Králové",
-    content:
-      "<li>9:00 registrace</li><li>9:30 dopolední program</li><li>11:30 obědová pauza</li>",
-  },
-  {
-    coords: {
-      x: 50.2087878,
-      y: 15.8310917,
-    },
-    name: "Katedrála Svatého Ducha",
-    content: "<li>14:15 sraz ministrantů</li><li>15:00 mše svatá</li>",
-  },
-  {
-    coords: {
-      x: 50.2062919,
-      y: 15.8337133,
-    },
-    name: "BiGy (Biskupské gymnázium)",
-    content: "<li>12:30 přednášky, workshopy</li><li>14:00 kavárna</li>",
-  },
   {
     coords: {
       x: 50.2090269,
@@ -160,14 +148,6 @@ const places = [
     },
     name: "Nové Adalbertinum",
     content: "",
-  },
-  {
-    coords: {
-      x: 50.2069553,
-      y: 15.8349681,
-    },
-    name: "Orlovna",
-    content: "<li>12:30 sportovní workshop</li>",
   },
   {
     coords: {
@@ -187,10 +167,52 @@ const places = [
   },
   {
     coords: {
+      x: 50.2069553,
+      y: 15.8349681,
+    },
+    name: "Orlovna",
+    content: "<li>12:30 sportovní workshop</li>",
+  },
+  {
+    coords: {
+      x: 50.2077792,
+      y: 15.8301403,
+    },
+    name: "Zpívající stromy",
+    content: "<li>14:00 nabídka křížové cesty</li>",
+  },
+  {
+    coords: {
       x: 50.2090772,
       y: 15.8341294,
     },
     name: "Kostel Nanebevzetí Panny Marie",
-    content: "<li>14:00 chvály, adorace, svátost smíření či duchovní rozhovor</li>",
+    content:
+      "<li>14:00 chvály, adorace, svátost smíření či duchovní rozhovor</li>",
+  },
+  {
+    coords: {
+      x: 50.2062919,
+      y: 15.8337133,
+    },
+    name: "BiGy (Biskupské gymnázium)",
+    content: "<li>12:30 přednášky, workshopy</li><li>14:00 kavárna</li>",
+  },
+  {
+    coords: {
+      x: 50.2138117,
+      y: 15.8291964,
+    },
+    name: "Filhramonie Hradec Králové",
+    content:
+      "<li>9:00 registrace</li><li>9:30 dopolední program</li><li>11:30 obědová pauza</li>",
+  },
+  {
+    coords: {
+      x: 50.2087878,
+      y: 15.8310917,
+    },
+    name: "Katedrála Svatého Ducha",
+    content: "<li>14:15 sraz ministrantů</li><li>15:00 mše svatá</li>",
   },
 ];

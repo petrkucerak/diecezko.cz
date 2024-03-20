@@ -93,10 +93,17 @@
       "time": "14:00",
       "id": 6,
       "duration": 60,
-      "description": "Přijď si v&nbsp;připomenout jeden z&nbsp;Velikonočních příběhů – křížovou cestu Ježíše Krista. Jednotlivá zastavení připravovala spolča z&nbsp;Hradce Králové a&nbsp;z&nbsp;Nového Města nad Metují.",
+      "description": "Přijď si v&nbsp;připomenout jeden z&nbsp;Velikonočních příběhů – křížovou cestu Ježíše Krista. Jednotlivá zastavení připravovala spolča z&nbsp;Hradce Králové a&nbsp;z&nbsp;Nového Města nad Metují. Křížová cesta není hromadnou akcí, každý si ji může projít sám nebo ve skupince svým vlastním tempem.",
       "icons": [
          "cross"
-      ]
+      ],
+      "place": {
+         "name": "Zpívající stromy",
+         "coords": {
+            "x": "50.2077792",
+            "y": "15.8301403"
+         }
+      }
    },
    {
       "name": "Kavárna a deskovky",

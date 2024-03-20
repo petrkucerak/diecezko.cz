@@ -2,6 +2,7 @@ import FaqBox from "./layouts/faq-box";
 import FaqLayout from "./layouts/faq-layout";
 import Link from "next/link";
 import ContainerImage from "./layouts/container-image";
+import ContainerH3 from "./layouts/container-h3";
 
 export default function FAQ() {
   return (
@@ -66,11 +67,11 @@ export default function FAQ() {
         </strong>
         &nbsp;a&nbsp;budeme s&nbsp;Tebou počítat. Na Diecézko se přihlas do
         17.&nbsp;3.&nbsp;2024, abychom Ti stihli zajistit bagetu a&nbsp;pitíčko
-        k&nbsp;obědu.
-        {/* <strong>Nestihl/a ses přihlásit v daném termínu?</strong>{" "}
-        Nevadí, i&nbsp;tak s&nbsp;tebou <strong>počítáme</strong>. Objednali
-        jsme bagety navíc. Prosíme, i&nbsp;nadále vyplň přihlášku, ať víme, že
-        dorazíš. Děkujeme 😊{" "} */}
+        k&nbsp;obědu. <br />
+        <strong>Nestihl/a ses přihlásit v daném termínu?</strong> Nevadí,
+        i&nbsp;tak s&nbsp;tebou <strong>počítáme</strong>. Objednali jsme bagety
+        navíc. Prosíme, i&nbsp;nadále vyplň přihlášku, ať víme, že dorazíš.
+        Děkujeme 😊{" "}
       </FaqBox>
       <FaqBox question={`Jak se přihlásit na odpolední program?`} icon={`old`}>
         <strong>
@@ -101,31 +102,18 @@ export default function FAQ() {
         </Link>
         .
       </FaqBox>
-      <FaqBox
-        question={`Společná doprava pro vikariát Humpolce a&nbsp;Havlíčkův Brod?`}
-        icon={`bus`}
-      >
-        Vikariátní zástupci vypravují autobus, který bude zastavovat v&nbsp;
-        <strong>Humpolci</strong>, v&nbsp;<strong>Havlíčkově Brodě</strong>{" "}
-        a&nbsp;v&nbsp;<strong>Chotěboři</strong>. Pokud máš zájem se také svézt,
-        kontaktuj Aničku Daňkovou 📞&nbsp;
-        <Link href={`tel:+420603833605`} className="tracking-tight underline">
-          603&nbsp;833&nbsp;605
-        </Link>
-        , 📨&nbsp;
+      <FaqBox question={`Je organizovaná společná doprava?`} icon={`bus`}>
+        Některé vikariáty společnou dobropravu organizují. Pro jesný přehled
+        jsme pro připravili{" "}
         <Link
-          href={`mailto:annadankova5@seznam.cz`}
-          className="tracking-tigh underline"
+          href={`/spolecna-doprava`}
+          target="_Self"
+          className="underline font-semibold"
         >
-          annadankova5@seznam.cz
+          rozestník
         </Link>
-        .
-        <ContainerImage
-          jpgPath="/assets/images/doprava-humpolec.jpg"
-          webpPath="/assets/images/doprava-humpolec.webp"
-          altText="Plakátek s informacemi o společné dopravě."
-          className="w-full my-4"
-        />
+        , který poradí, kdy a&nbsp;v&nbsp;kolik je sraz a&nbsp;jestli se je
+        neutné někam hlásit.
       </FaqBox>
       <FaqBox
         question={`Proč je Diecézko po tak brzké době?`}
@@ -137,9 +125,41 @@ export default function FAQ() {
         (přesun z&nbsp;podzimu zpět na jaro). Další se bude konat až na jaře
         2025 a&nbsp;přesný termín bude zveřejněn během tohoto setkání.
       </FaqBox>
-      {/* <FaqBox question={`Jak se v Hradci dopravovat?`} icon={`bus`}>
+      <FaqBox question={`Jak se v Hradci dopravovat?`} icon={`bus`}>
+        <ContainerH3>Stručně</ContainerH3>
         Hradec Králové je malej, <strong>choďte pěšky</strong>!
-      </FaqBox> */}
+        <ContainerH3>
+          Cesta z&nbsp;vlakového nádraží k&nbsp;Filharmonii
+        </ContainerH3>
+        Při východu z&nbsp;budovy vlakového nádraží přejdete zastávky autobusové
+        dopravy a&nbsp;vydáte se rovně po ulici S. K. Neumanna, kterou se
+        dostanete na náměstí 28. října. Dále půjdete podél obchodních domů TESCO
+        a&nbsp;Atrium po ulici Dukelská třída a&nbsp;pomocí podchodu se
+        dostanete na třídu Kalra IV. Po které půjdete až k řece, přejdete most
+        a&nbsp;po levé straně uvidíte sportovní halu, za kterou se nachází
+        Filharmonie. Zde na vás již budou čekat pořadatelé s&nbsp;dalšími
+        informacemi. <br />
+        Autobusy Hlavní nádraží – Muzeum
+        <br />
+        Zastávka A – 16, 12, 3 <br />
+        Zastávka D – 11, 4, 7
+        <ContainerH3>
+          Cesta z&nbsp;autobusového nádraží k Filharmonii
+        </ContainerH3>
+        Stojíte na autobusovém nádraží zády k obchodu LIDL, vydáte se doleva po
+        ulici Nádražní a&nbsp;na křižovatce se dáte doprava na Blažíčkovo
+        náměstí. Zde se na křižovatce vydáte doleva po ulici Hořická, po které
+        dojdete až nakonec této ulice k&nbsp;pizzerii Casa Mia. Zde přejdete
+        silnici až k&nbsp;pizzerii a&nbsp;pomocí podchodu se dostanete na třídu
+        Kalra IV. Po které půjdete až k&nbsp;řece, přejdete most a&nbsp;po levé
+        straně uvidíte sportovní halu, za kterou se nachází Filharmonie. Zde na
+        vás již budou čekat pořadatelé s&nbsp;dalšími informacemi.
+        <br />
+        Autobusy Terminál HD – Muzeum
+        <br />
+        Zastávka D1 – 4, 7<br />
+        Zastávka D2 – 11, 13
+      </FaqBox>
       <FaqBox question={`Kam si odskočit na záchod?`} icon={`toilet`}>
         Nezoufej, mrkni{" "}
         <Link
