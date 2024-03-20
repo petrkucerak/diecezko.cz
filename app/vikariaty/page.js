@@ -157,8 +157,8 @@ export const vikariaty = [
       jpgPath: "/assets/images/vikariaty/dusek.jpg",
     },
     person1: {
-      name: "Veronika Maříková",
-      jpgPath: "/assets/images/vikariaty/marikova.jpg",
+      name: "Marie Žídková",
+      jpgPath: "/assets/images/vikariaty/zidkova.jpg",
     },
     person2: {
       name: "Martin Rychtár",
