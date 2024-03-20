@@ -76,5 +76,10 @@ export default function sitemap() {
       lastModified: new Date(),
       changeFrequency: "yearly",
     },
+    {
+      url: "https://diecezko.cz/spolecna-doprava",
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+    },
   ];
 }

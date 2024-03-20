@@ -19,7 +19,7 @@ export default function Map() {
     return (
       <MapContainer
         center={coords}
-        zoom={14}
+        zoom={16}
         minZoom={14}
         scrollWheelZoom={true}
         className="w-screen h-[70vh] diseable-map-selection z-0"
