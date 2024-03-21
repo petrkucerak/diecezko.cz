@@ -102,18 +102,18 @@ export default function FAQ() {
         </Link>
         .
       </FaqBox>
-      <FaqBox question={`Je organizovaná společná doprava?`} icon={`bus`}>
-        Některé vikariáty společnou dobropravu organizují. Pro jesný přehled
+      <FaqBox question={`Je organizována společná doprava?`} icon={`bus`}>
+        Některé vikariáty společnou dopravu organizují. Pro jasný přehled
         jsme pro připravili{" "}
         <Link
           href={`/spolecna-doprava`}
           target="_Self"
           className="underline font-semibold"
         >
-          rozestník
+          rozcestník
         </Link>
-        , který poradí, kdy a&nbsp;v&nbsp;kolik je sraz a&nbsp;jestli se je
-        neutné někam hlásit.
+        , který poradí, kdy a&nbsp;v&nbsp;kolik je sraz a&nbsp;jestli je
+        nutné se někam hlásit.
       </FaqBox>
       <FaqBox
         question={`Proč je Diecézko po tak brzké době?`}
