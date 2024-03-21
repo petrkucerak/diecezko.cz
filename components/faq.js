@@ -104,7 +104,7 @@ export default function FAQ() {
       </FaqBox>
       <FaqBox question={`Je organizována společná doprava?`} icon={`bus`}>
         Některé vikariáty společnou dopravu organizují. Pro jasný přehled
-        jsme pro připravili{" "}
+        jsme pro Vás připravili{" "}
         <Link
           href={`/spolecna-doprava`}
           target="_Self"
