@@ -47,7 +47,7 @@ export default function DiecezkoInfo({ id, className }) {
               className="flex flex-row items-center justify-center"
               title="Zpětná vazba"
             >
-              <IconPencil className="inline" stroke={1.5} />{" "}
+              <IconSpeakerphone className="inline" stroke={1.5} />{" "}
               <span className="ml-2 text-left">Zpětná vazba</span>
             </button>
           </Link>
