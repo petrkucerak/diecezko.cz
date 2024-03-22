@@ -14,13 +14,11 @@ import Nbsp from "../format/nbsp";
 import Strong from "../format/strong";
 
 export default function DiecezkoInfo({ id, className }) {
-
   return (
     <Container id={id} className={className}>
       <div className="min-h-[75vh] flex flex-col items-center justify-around">
         <div className="flex flex-col items-center w-full">
-          <span className="text-base text-center">
-          </span>
+          <span className="text-base text-center"></span>
           <span className="text-2xl text-center tracking-wide">
             23.&nbsp;3.&nbsp;2024 • 9.30
           </span>
@@ -41,16 +39,16 @@ export default function DiecezkoInfo({ id, className }) {
         </div>
         <div className="w-[90vw] max-w-[500px] grid grid-cols-2 grid-flow-row gap-4 items-center auto-cols-max">
           <Link
-            href={`https://prihlaska.diecezko.cz/`}
+            href={`https://feedback.diecezko.cz/`}
             target="_blank"
             className="border border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-5 text-base flex flex-row items-center justify-center"
           >
             <button
               className="flex flex-row items-center justify-center"
-              title="Přihláška"
+              title="Zpětná vazba"
             >
               <IconPencil className="inline" stroke={1.5} />{" "}
-              <span className="ml-2 text-left">Přihláška</span>
+              <span className="ml-2 text-left">Zpětná vazba</span>
             </button>
           </Link>
           <Link
