@@ -1,25 +1,24 @@
 import FaqBox from "./layouts/faq-box";
 import FaqLayout from "./layouts/faq-layout";
 import Link from "next/link";
-import ContainerImage from "./layouts/container-image";
 import ContainerH3 from "./layouts/container-h3";
 
 export default function FAQ() {
   return (
     <FaqLayout>
-      {/* <FaqBox question={`Kde seženu zdravotní pomoc?`} icon={`medical`}>
+      <FaqBox question={`Kde seženu zdravotní pomoc?`} icon={`medical`}>
         V případě jakéhokoliv zdravotního problému se neváhej obrátit na naši{" "}
         <strong>zdravotnickou službu</strong>, kterou poznáš podle oblečení
         a&nbsp;dostihneš ji na tel.{" "}
-        <Link href={`tel:+420737761893`} className="underline">
-          737 761 893
+        <Link href={`tel:+420605019695`} className="underline">
+          605 019 695
         </Link>{" "}
         . V&nbsp;závažných případech neváhej a&nbsp;volej IZS na tel. číslo{" "}
         <Link href={`tel:155`} className="underline">
           155
         </Link>
         .
-      </FaqBox> */}
+      </FaqBox>
       <FaqBox question={`Kolik Diecézko stojí?`} icon={`money`}>
         Doporučený příspěvek je <strong>200,-Kč na osobu</strong>. Je možné ho
         zaplatit v hotovosti na recepci ve Filharmonii při dopoledním programu.
@@ -103,8 +102,8 @@ export default function FAQ() {
         .
       </FaqBox>
       <FaqBox question={`Je organizována společná doprava?`} icon={`bus`}>
-        Některé vikariáty společnou dopravu organizují. Pro jasný přehled
-        jsme pro Vás připravili{" "}
+        Některé vikariáty společnou dopravu organizují. Pro jasný přehled jsme
+        pro Vás připravili{" "}
         <Link
           href={`/spolecna-doprava`}
           target="_Self"
@@ -112,8 +111,8 @@ export default function FAQ() {
         >
           rozcestník
         </Link>
-        , který poradí, kdy a&nbsp;v&nbsp;kolik je sraz a&nbsp;jestli je
-        nutné se někam hlásit.
+        , který poradí, kdy a&nbsp;v&nbsp;kolik je sraz a&nbsp;jestli je nutné
+        se někam hlásit.
       </FaqBox>
       <FaqBox
         question={`Proč je Diecézko po tak brzké době?`}
