@@ -189,7 +189,7 @@ export const dcm = [
   {
     name: "Joska Pazderová",
     description:
-      "Joska je náš nejnovější a&nbsp;zároveň nejmladší člen týmu. Přišla s&nbsp;novou energií a&nbsp;zápalem pro uklízení. Po Diecézku se ujme našich sociálních sítích. Josi je rozlítaná na všech frontách, proto ji mimo DCM můžete potkat na Katechetickém centru, v&nbsp;Sedleckých památkách v&nbsp;Kutné Hoře nebo párkrát do roka také v&nbsp;Portugalsku. V&nbsp;kostele ji nejčastěji uvidíte u&nbsp;oltáře jako ministrantku. Když přijde čas odpočinku, tak ze všeho nejvíc ocení kvalitní spánek.",
+      "Joska je náš nejnovější a&nbsp;zároveň nejmladší člen týmu. Přišla s&nbsp;novou energií a&nbsp;zápalem pro uklízení. Má na starost naše sociální sítě. Josi je rozlítaná na všech frontách, proto ji mimo DCM můžete potkat na Katechetickém centru, v&nbsp;Sedleckých památkách v&nbsp;Kutné Hoře nebo párkrát do roka také v&nbsp;Portugalsku. V&nbsp;kostele ji nejčastěji uvidíte u&nbsp;oltáře jako ministrantku. Když přijde čas odpočinku, tak ze všeho nejvíc ocení kvalitní spánek.",
     jpgPath: "/assets/images/jadro/joska.jpg",
     webpPath: "/assets/images/jadro/joska.webp",
     altText: "Profilová fotka Jsoky Pazderové (zatím)",
