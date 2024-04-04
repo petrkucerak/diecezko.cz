@@ -52,7 +52,7 @@ export default function DiecezkoInfo({ id, className }) {
             </button>
           </Link>
           <Link
-            href="https://diecezko.cz/galerie"
+            href="/galerie"
             target="_blank"
             className="border border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-5 cursor-pointer text-base flex flex-row items-center justify-center"
           >
