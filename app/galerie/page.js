@@ -38,7 +38,7 @@ export default function Galerie() {
           <div className="w-full grid md:grid-cols-2 gap-4">
             <Link
               href="/galerie/gorun"
-              className="hover:scale-105 duration-200 flex flex-col items-center justify-center w-full h-64 bg-[url('https://data.diecezko.cz/2023/foto/M.Gorun-170.webp')] bg-center rounded-xl bg-cover"
+              className="hover:scale-105 duration-200 flex flex-col items-center justify-center w-full h-64 bg-[url('https://foto2024.diecezko.cz/foto/gorun/MG_00775.webp')] bg-center rounded-xl bg-cover"
             >
               <h2 className="text-2xl font-semibold backdrop-blur-sm p-8 rounded-xl">
                 Fotky od Matouše
@@ -46,7 +46,7 @@ export default function Galerie() {
             </Link>
             <Link
               href="/galerie/urban"
-              className="hover:scale-105 duration-200 flex flex-col items-center justify-center w-full h-64 bg-[url('https://data.diecezko.cz/2023/foto/IMG_0854.webp')] bg-center rounded-xl bg-cover"
+              className="hover:scale-105 duration-200 flex flex-col items-center justify-center w-full h-64 bg-[url('https://foto2024.diecezko.cz/foto/urban/IMG_2390.webp')] bg-center rounded-xl bg-cover"
             >
               <h2 className="text-2xl font-semibold backdrop-blur-sm p-8 rounded-xl">
                 Fotky od Honzy
