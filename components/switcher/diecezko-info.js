@@ -52,17 +52,13 @@ export default function DiecezkoInfo({ id, className }) {
             </button>
           </Link>
           <Link
-            href="https://2023.diecezko.cz/galerie"
-            target="_blank"
+            href="/galerie"
             className="border border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-5 cursor-pointer text-base flex flex-row items-center justify-center"
           >
             <button className="flex flex-row items-center justify-center">
               <IconPhoto className="inline" stroke={1.5} />{" "}
               <span className="ml-2 text-left">
                 Galerie
-                <span className="relative text-[0.6rem] top-[0.6rem] -left-2">
-                  2023
-                </span>
               </span>
             </button>
           </Link>
