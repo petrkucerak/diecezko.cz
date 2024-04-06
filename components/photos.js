@@ -1706,14 +1706,6 @@ export const photos_gorun = [
     caption: "Fotka z jarního Diecézka 2024",
   },
   {
-    src: "https://foto2024.diecezko.cz/foto/gorun/MG_00714.webp",
-    original: "https://foto2024.diecezko.cz/foto/gorun/MG_00714.webp",
-    width: 1200,
-    height: 1800,
-    alt: "Fotka z jarního Diecézka 2024",
-    caption: "Fotka z jarního Diecézka 2024",
-  },
-  {
     src: "https://foto2024.diecezko.cz/foto/gorun/MG_00737.webp",
     original: "https://foto2024.diecezko.cz/foto/gorun/MG_00737.webp",
     width: 1200,
