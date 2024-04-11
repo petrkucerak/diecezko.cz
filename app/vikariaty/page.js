@@ -342,11 +342,11 @@ export const vikariaty = [
       name: "Kateřina a Miloš Zahradníkovi",
       jpgPath: "/assets/images/vikariaty/zahradnikovi.jpg",
     },
-    loader1: {
+    person2: {
       name: "Vít Petr",
       jpgPath: "/assets/images/vikariaty/vitpetr.jpg",
     },
-    loader2: {
+    person3: {
       name: "Kamil Zahradník",
       jpgPath: "/assets/images/vikariaty/zahradnik.jpg",
     },
