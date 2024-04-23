@@ -233,10 +233,6 @@ export const vikariaty = [
     name: "Jilemnice",
     // description:
     //   "Virům silnými hornina snad geologickou kladení souvisela úhlem. Varování pasivitou míst o amerických padesátiminutový jako tito zaslechl neobvyklé virů či přichytávacích mamutů víceméně rozdělit fakticky obrovským.",
-    priest: {
-      name: "P. Jiří Jakoubek",
-      jpgPath: "/assets/images/vikariaty/jakoubek.jpg",
-    },
     person1: {
       name: "Veronika Mejsnarová",
       jpgPath: "/assets/images/vikariaty/mejsnarova.jpg",
@@ -339,14 +335,10 @@ export const vikariaty = [
       jpgPath: "/assets/images/vikariaty/barborka.jpg",
     },
     person1: {
-      name: "Kateřina a Miloš Zahradníkovi",
-      jpgPath: "/assets/images/vikariaty/zahradnikovi.jpg",
-    },
-    person2: {
       name: "Vít Petr",
       jpgPath: "/assets/images/vikariaty/vitpetr.jpg",
     },
-    person3: {
+    person2: {
       name: "Kamil Zahradník",
       jpgPath: "/assets/images/vikariaty/zahradnik.jpg",
     },
