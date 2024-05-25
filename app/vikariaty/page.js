@@ -250,7 +250,7 @@ export const vikariaty = [
     // description:
     //   "Virům silnými hornina snad geologickou kladení souvisela úhlem. Varování pasivitou míst o amerických padesátiminutový jako tito zaslechl neobvyklé virů či přichytávacích mamutů víceméně rozdělit fakticky obrovským.",
     priest: {
-      name: "jáhen Michal Šramko",
+      name: "P. Michal Šramko",
       jpgPath: "/assets/images/vikariaty/sramko.jpg",
     },
     person1: {
@@ -292,7 +292,7 @@ export const vikariaty = [
     // description:
     //   "Virům silnými hornina snad geologickou kladení souvisela úhlem. Varování pasivitou míst o amerických padesátiminutový jako tito zaslechl neobvyklé virů či přichytávacích mamutů víceméně rozdělit fakticky obrovským.",
     priest: {
-      name: "jáhen Jan Pecháček",
+      name: "P. Jan Pecháček",
       jpgPath: "/assets/images/vikariaty/pechacek.jpg",
     },
     person1: {
