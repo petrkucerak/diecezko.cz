@@ -6,6 +6,8 @@ import {
   IconApps,
   IconCross,
   IconForms,
+  IconMath,
+  IconMathSymbols,
   IconPencil,
   IconPhoto,
   IconSpeakerphone,
@@ -63,13 +65,14 @@ export default function DiecezkoInfo({ id, className }) {
             </button>
           </Link>
           <Link
-            href="https://krizovka.diecezko.cz/"
+            href="https://sumar.diecezko.cz/"
             target="_blank"
+            title="Jednoduchá sčítací hra Sumář"
             className="border col-span-2 border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-5 cursor-pointer text-base flex flex-row items-center justify-center"
           >
             <button className="flex flex-row items-center justify-center w-full">
-              <IconCross stroke={1.5} className="inline h-6 w-6 my-1 mr-2" />{" "}
-              <span className="ml-2 text-left">Hra: Křížová cesta</span>
+              <IconMathSymbols stroke={1.5} className="inline h-6 w-6 my-1 mr-2" />{" "}
+              <span className="ml-2 text-left">Hra: Sůmář</span>
             </button>
           </Link>
         </div>

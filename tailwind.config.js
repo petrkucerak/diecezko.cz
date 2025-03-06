@@ -11,6 +11,7 @@ module.exports = {
       fontFamily: {
         caveatBrush: ["Caveat Brush"],
         titilliumWeb: ["Titillium Web"],
+        blushes: ["Blushes"],
       },
       textShadow: {
         sm: "0 0 0.5rem var(--tw-shadow-color)",

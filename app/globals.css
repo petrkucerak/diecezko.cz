@@ -191,3 +191,52 @@
   font-style: italic;
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'Blushes';
+  src: url('../fonts/Blushes-Regular.eot');
+  src: local('Blushes Regular'), local('Blushes-Regular'),
+      url('../fonts/Blushes-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Blushes-Regular.woff2') format('woff2'),
+      url('../fonts/Blushes-Regular.woff') format('woff'),
+      url('../fonts/Blushes-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Blushes';
+  src: url('../fonts/Blushes-BlackItalic.eot');
+  src: local('Blushes Black Italic'), local('Blushes-BlackItalic'),
+      url('../fonts/Blushes-BlackItalic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Blushes-BlackItalic.woff2') format('woff2'),
+      url('../fonts/Blushes-BlackItalic.woff') format('woff'),
+      url('../fonts/Blushes-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Blushes';
+  src: url('../fonts/Blushes-Black.eot');
+  src: local('Blushes Black'), local('Blushes-Black'),
+      url('../fonts/Blushes-Black.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Blushes-Black.woff2') format('woff2'),
+      url('../fonts/Blushes-Black.woff') format('woff'),
+      url('../fonts/Blushes-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Blushes';
+  src: url('../fonts/Blushes-Italic.eot');
+  src: local('Blushes Italic'), local('Blushes-Italic'),
+      url('../fonts/Blushes-Italic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Blushes-Italic.woff2') format('woff2'),
+      url('../fonts/Blushes-Italic.woff') format('woff'),
+      url('../fonts/Blushes-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
