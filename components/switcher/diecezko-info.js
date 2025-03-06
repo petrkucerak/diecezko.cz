@@ -5,9 +5,11 @@ import ContainerParagraph from "../layouts/container-paragraph";
 import {
   IconApps,
   IconCross,
+  IconForms,
   IconPencil,
   IconPhoto,
   IconSpeakerphone,
+  IconWritingSign,
 } from "@tabler/icons";
 import Link from "next/link";
 import Nbsp from "../format/nbsp";
@@ -39,16 +41,16 @@ export default function DiecezkoInfo({ id, className }) {
         </div>
         <div className="w-[90vw] max-w-[500px] grid grid-cols-2 grid-flow-row gap-4 items-center auto-cols-max">
           <Link
-            href={`https://feedback.diecezko.cz/`}
+            href={`https://prihlaska.diecezko.cz/`}
             target="_blank"
             className="border border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-5 text-base flex flex-row items-center justify-center"
           >
             <button
               className="flex flex-row items-center justify-center"
-              title="Zpětná vazba"
+              title="Přihláška"
             >
-              <IconSpeakerphone className="inline" stroke={1.5} />{" "}
-              <span className="ml-2 text-left">Zpětná vazba</span>
+              <IconWritingSign className="inline" stroke={1.5} />{" "}
+              <span className="ml-2 text-left">Přihláška</span>
             </button>
           </Link>
           <Link

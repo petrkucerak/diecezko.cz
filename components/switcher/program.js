@@ -7,7 +7,8 @@ import program from "./program.json";
 export default function Program({ id, className }) {
   return (
     <Container className={className} id={id}>
-      <ul>
+      Více informací již brzy
+      {/* <ul>
         {program.map((p) => {
           return (
             <li
@@ -53,7 +54,7 @@ export default function Program({ id, className }) {
                     <IconCalendarPlus className="inline" stroke={1.5} />
                   </button>
                 </Link> */}
-                {p.link !== undefined ? (
+      {/* {p.link !== undefined ? (
                   <Link href={p.link}>
                     <button className="border border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-3 cursor-pointer text-base flex flex-row items-center justify-center mb-2 mr-2">
                       Více informací{" "}
@@ -65,7 +66,7 @@ export default function Program({ id, className }) {
             </li>
           );
         })}
-      </ul>
+      </ul> */}
     </Container>
   );
 }
