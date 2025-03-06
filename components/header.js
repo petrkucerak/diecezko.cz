@@ -107,8 +107,8 @@ export default function Header() {
             title="Diecézko.cz"
           >
             Diecézko.cz
-            <span className="text-xs relative top-[0.6rem] -left-2 text-shadow-lg text-yellow-300 shadow-yellow-300">
-              2024
+            <span className="text-xs relative top-[0.6rem] -left-2 text-shadow-lg text-[#ff0f39] shadow-[#ff0f39]">
+              2025
             </span>
           </Link>
         </div>

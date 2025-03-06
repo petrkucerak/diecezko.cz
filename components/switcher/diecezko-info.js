@@ -20,14 +20,14 @@ export default function DiecezkoInfo({ id, className }) {
         <div className="flex flex-col items-center w-full">
           <span className="text-base text-center"></span>
           <span className="text-2xl text-center tracking-wide">
-            23.&nbsp;3.&nbsp;2024 • 9.30
+            5.&nbsp;4.&nbsp;2025 • 9.30
           </span>
         </div>
         <div className="flex flex-col items-center w-[90vw]">
           <h1 className="text-6xl md:text-7xl uppercase leading-tight tracking-wide text-center text-shadow-lg shadow-white">
             Diecézní
             <br />
-            <yel className="text-yellow-300 text-shadow-lg text-7xl md:text-8xl shadow-yellow-300 font-semibold">
+            <yel className="text-[#ff0f39] text-shadow-lg text-7xl md:text-8xl shadow-[#ff0f39] font-semibold">
               setkání
             </yel>
             <br />
@@ -57,9 +57,7 @@ export default function DiecezkoInfo({ id, className }) {
           >
             <button className="flex flex-row items-center justify-center">
               <IconPhoto className="inline" stroke={1.5} />{" "}
-              <span className="ml-2 text-left">
-                Galerie
-              </span>
+              <span className="ml-2 text-left">Galerie</span>
             </button>
           </Link>
           <Link
