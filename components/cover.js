@@ -15,20 +15,29 @@ export default function Cover({ children }) {
   });
   return (
     <>
-      <div className="fixed top-0 h-screen w-full -z-10">
+      <div className="fixed top-0 h-screen w-full -z-10 flex flex-col">
         <div
-          className={`absolute h-screen w-full transition-all duration-[2000ms] ${blur}`}
+          className={`absolute h-screen w-full transition-all z-10 duration-[2000ms] ${blur}`}
         ></div>
         <picture>
           <source srcSet="assets/images/cover.webp" type="image/webp" />
           <source srcSet="assets/images/cover.jpg" type="image/jpeg" />
           <img
-            alt="Západ slunce"
+            alt="Podium se zataženým závěsem"
             loading="lazy"
             src="assets/images/cover.jpg"
             className="h-screen w-full -z-20 object-cover object-bottom"
           />
         </picture>
+        <div className="absolute h-[50vh] w-full items-center flex justify-center">
+          <img
+            className="mb-20 w-[40vw] max-w-[200px]"
+            src="/assets/images/on-air.svg"
+          />
+        </div>
+        <div className="absolute h-[100vh] w-full items-start flex justify-center">
+          <img className="mb-20 w-full mt-10" src="/assets/images/lights.svg" />
+        </div>
       </div>
       <div className="flex items-center flex-col w-full">{children}</div>
     </>

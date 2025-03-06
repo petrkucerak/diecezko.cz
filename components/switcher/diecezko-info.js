@@ -23,9 +23,6 @@ export default function DiecezkoInfo({ id, className }) {
       <div className="min-h-[75vh] flex flex-col items-center justify-around">
         <div className="flex flex-col items-center w-full">
           <span className="text-base text-center"></span>
-          <span className="text-2xl text-center tracking-wide">
-            5.&nbsp;4.&nbsp;2025 • 9.30
-          </span>
         </div>
         <div className="flex flex-col items-center w-[90vw]">
           <h1 className="text-6xl md:text-7xl uppercase leading-tight tracking-wide text-center text-shadow-lg shadow-[#f2e7c9] text-[#f2e7c9] font-blushes mb-8">
@@ -37,8 +34,11 @@ export default function DiecezkoInfo({ id, className }) {
             <br />
             mládeže
           </h1>
-          <p className="uppercase text-xl md:text-3xl text-shadow-lg shadow-white">
+          <p className="uppercase text-xl md:text-3xl tracking-wide text-shadow-lg shadow-white font-blushes">
             v Hradci Králové
+          </p>
+          <p className="text-2xl text-center tracking-wide text-shadow-lg shadow-white mt-1 font-blushes">
+            5.&nbsp;4.&nbsp;2025 • 9.30
           </p>
         </div>
         <div className="w-[90vw] max-w-[500px] grid grid-cols-2 grid-flow-row gap-4 items-center auto-cols-max">
@@ -75,7 +75,7 @@ export default function DiecezkoInfo({ id, className }) {
                 stroke={1.5}
                 className="inline h-6 w-6 my-1 mr-2"
               />{" "}
-              <span className="ml-2 text-left">Hra: Sůmář</span>
+              <span className="ml-2 text-left">Hra: Sumář</span>
             </button>
           </Link>
         </div>

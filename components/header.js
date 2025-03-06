@@ -107,7 +107,7 @@ export default function Header() {
             title="Diecézko.cz"
           >
             Diecézko.cz
-            <span className="text-xs relative top-[0.7rem] -left-2 text-shadow-lg text-[#ff0f39] shadow-[#ff0f39] font-semibold">
+            <span className="text-xs relative top-[0.7rem] -left-2 text-shadow-lg text-[#f2e7c9] shadow-[#f2e7c9] font-semibold">
               2025
             </span>
           </Link>
