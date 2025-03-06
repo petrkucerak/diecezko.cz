@@ -35,9 +35,6 @@ export default function Cover({ children }) {
             src="/assets/images/on-air.svg"
           />
         </div>
-        {/* <div className="absolute h-[100vh] w-full items-start flex justify-center">
-          <img className="mb-20 w-full mt-10" src="/assets/images/lights.svg" />
-        </div> */}
       </div>
       <div className="flex items-center flex-col w-full">{children}</div>
     </>

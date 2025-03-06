@@ -168,15 +168,15 @@ export const dcm = [
     altText: "Profilová fotka Klárky Petrové (zatím)",
     className: "",
   },
-  {
-    name: "Lucka Zadinová",
-    description:
-      "Lucka pochází z&nbsp;Libice nad Cidlinou, ale aktuálně žije na hájence poblíž Chotěboře. Studuje na Univerzitě Hradec Králové. Její smysl pro ekologičnost se nezapře. Svým příkladem nás vede, jak se dobře starat o&nbsp;naši planetu a&nbsp;používat ekologické produkty. Nezalekne se žádné výzvy, akčnost, to je její.",
-    jpgPath: "/assets/images/dcm/lz.jpg",
-    webpPath: "/assets/images/dcm/lz.webp",
-    altText: "Profilová fotka Lucka Zadinová (už nafurt)",
-    className: "",
-  },
+  // {
+  //   name: "Lucka Zadinová",
+  //   description:
+  //     "Lucka pochází z&nbsp;Libice nad Cidlinou, ale aktuálně žije na hájence poblíž Chotěboře. Studuje na Univerzitě Hradec Králové. Její smysl pro ekologičnost se nezapře. Svým příkladem nás vede, jak se dobře starat o&nbsp;naši planetu a&nbsp;používat ekologické produkty. Nezalekne se žádné výzvy, akčnost, to je její.",
+  //   jpgPath: "/assets/images/dcm/lz.jpg",
+  //   webpPath: "/assets/images/dcm/lz.webp",
+  //   altText: "Profilová fotka Lucka Zadinová (už nafurt)",
+  //   className: "",
+  // },
   {
     name: "Verča Pavlišová",
     description:
