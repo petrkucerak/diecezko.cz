@@ -32,19 +32,19 @@ export default function SpolecenstviInfo({ id, className }) {
             Cesta půstem
           </Button>
         </Link>
-        <Link href="/sheep-ples.pdf" target="_blank" className="">
+        {/* <Link href="/sheep-ples.pdf" target="_blank" className="">
           <Button>
             <IconCustomSalas className={`inline h-6 mr-2`} />
             Sheep ples
           </Button>
-        </Link>
-        <Link href="/majki-v-albanii" target="_self" className="">
+        </Link> */}
+        {/* <Link href="/majki-v-albanii" target="_self" className="">
           <Button>
             <IconMap stroke={1.5} className={`inline h-6 mr-2`} />
             Majki v&nbsp;Albánii
           </Button>
-        </Link>
-        <Link
+        </Link> */}
+        {/* <Link
           href="/assets/files/150-Duchovni_cviceni_v_Kinderalmu-2024.pdf"
           target="_blank"
           className=""
@@ -53,7 +53,7 @@ export default function SpolecenstviInfo({ id, className }) {
             <IconTower stroke={1.5} className={`inline h-6 mr-2`} />
             Duchovní cvičení v&nbsp;Kinderlamu
           </Button>
-        </Link>
+        </Link> */}
       </CardFeed>
       <ContainerH2 className={`w-full text-center`}>Propagace</ContainerH2>
       <CardFeed>
@@ -66,8 +66,11 @@ export default function SpolecenstviInfo({ id, className }) {
           <Button>
             <IconArrowBarToDown className={`inline h-6 mr-2`} stroke={1.8} />
             Plakátek
+            {/* TODO: dopln !!! */}
           </Button>
         </Link>
+        {/* Pridej tohle https://www.svetovednymladeze.cz/ */}
+        {/* Add https://www.bihk.cz/ */}
       </CardFeed>
     </Container>
   );

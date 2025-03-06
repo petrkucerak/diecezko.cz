@@ -216,3 +216,6 @@ const places = [
     content: "<li>14:15 sraz ministrantů</li><li>15:00 mše svatá</li>",
   },
 ];
+
+
+// TODO: aktualizuj mista
