@@ -28,10 +28,10 @@ export default function DiecezkoInfo({ id, className }) {
           </span>
         </div>
         <div className="flex flex-col items-center w-[90vw]">
-          <h1 className="text-6xl md:text-7xl uppercase leading-tight tracking-wide text-center text-shadow-lg shadow-white">
+          <h1 className="text-6xl md:text-7xl uppercase leading-tight tracking-wide text-center text-shadow-lg shadow-[#f2e7c9] text-[#f2e7c9] font-blushes mb-8">
             Diecézní
             <br />
-            <yel className="text-[#ff0f39] text-shadow-lg text-7xl md:text-8xl shadow-[#ff0f39] font-semibold">
+            <yel className="text-[#fbf3e3] text-shadow-lg text-7xl md:text-8xl shadow-[#fbf3e3]">
               setkání
             </yel>
             <br />
@@ -71,7 +71,10 @@ export default function DiecezkoInfo({ id, className }) {
             className="border col-span-2 border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-5 cursor-pointer text-base flex flex-row items-center justify-center"
           >
             <button className="flex flex-row items-center justify-center w-full">
-              <IconMathSymbols stroke={1.5} className="inline h-6 w-6 my-1 mr-2" />{" "}
+              <IconMathSymbols
+                stroke={1.5}
+                className="inline h-6 w-6 my-1 mr-2"
+              />{" "}
               <span className="ml-2 text-left">Hra: Sůmář</span>
             </button>
           </Link>
