@@ -205,6 +205,15 @@ export const dcm = [
     className: "",
   },
   {
+    name: "o. Tomáš Hoffmann",
+    description:
+      "Tomáš Hoffmann, je ředitelem jak Vesmíru, tak DCM, na které z dálky dohlíží a v pravou chvíli se do věci vloží. V téhle roli působí od roku 2006. Volnou chvíli si rád zkrátí běžkováním, lyžováním, partičkou žolíčků nebo kafíčkem s týmáky. Z jeho úst nejčastěji uslyšíte věty jako: “Děcka...”, “Holoubku...”, “Můj ty světe.” a “To je dobrota!”.",
+    jpgPath: "/assets/images/jadro/hoffmann.jpg",
+    webpPath: "/assets/images/jadro/hoffmann.webp",
+    altText: "Profilová fotka Jindry Řezníčka",
+    className: "",
+  },
+  {
     name: "Evžen Holub",
     description:
       "Pan Holub k&nbsp;nám byl seslán při vanutí Ducha. Pravděpodobně holubice nebyla toho času k&nbsp;dispozici. Holuba jste si všichni moc oblíbili a&nbsp;rovnou jste jej začali oslovovat jménem Evžen. A&nbsp;tak se Evžen Holub stal maskotem královéhradecké mládeže.",

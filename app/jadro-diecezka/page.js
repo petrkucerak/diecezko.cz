@@ -19,12 +19,6 @@ export default async function Vikariaty() {
             kteří se do jeho příprav zapojili. Patří jim díky za jejich
             obětavost a&nbsp;nasazení!
           </ContainerDescription>
-          <ContainerH2>Éčko</ContainerH2>
-          <ContainerParagraph>
-            Evženova crew je skupinka lidí, kteří u&nbsp;tvorby Diecézka stojí
-            od začátku. Potkávají se každých 14 dní a&nbsp;vymýšlí, jak nejlépe
-            připravit celý program.
-          </ContainerParagraph>
           <div className="flex flex-col sm:grid sm:grid-cols-2 md:grid-cols-3 grid-flow-row gap-4 items-center">
             {ecko.map((p) => {
               return (
@@ -41,12 +35,6 @@ export default async function Vikariaty() {
               );
             })}
           </div>
-          <ContainerH2>Jádro Diecézka</ContainerH2>
-          <ContainerParagraph>
-            Oranžové vestičky, technický a&nbsp;duchovní support či velitel
-            úklidové čety. Právě díky těmto a&nbsp;spustě dalších dobrovolníků
-            může být setkání takové, jaké je.
-          </ContainerParagraph>
           <div className="flex flex-col sm:grid sm:grid-cols-2 md:grid-cols-3 grid-flow-row gap-4 items-center">
             {jadro.map((p) => {
               return (
@@ -201,15 +189,6 @@ export const jadro = [
     altText: "Profilová fotka Kuby Kučery",
     jpgPath: "/assets/images/jadro/bro.jpg",
     webpPath: "/assets/images/jadro/bro.webp",
-    className: "",
-  },
-  {
-    name: "David Fendrych",
-    description:
-      "Vrchní velitel úklidové čety a&nbsp;kromě každého odpadku vyhozeného do správného koše ocení i&nbsp;každou pomocnou ruku.",
-    altText: "Profilová fotka David Fendrych",
-    jpgPath: "/assets/images/jadro/dejv.jpg",
-    webpPath: "/assets/images/jadro/dejv.webp",
     className: "",
   },
 ];

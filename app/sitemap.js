@@ -62,11 +62,6 @@ export default function sitemap() {
       changeFrequency: "yearly",
     },
     {
-      url: "https://diecezko.cz/kachoni",
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-    },
-    {
       url: "https://diecezko.cz/pozvani-biskupa-jana",
       lastModified: new Date(),
       changeFrequency: "yearly",

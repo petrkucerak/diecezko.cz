@@ -236,20 +236,6 @@ export default function Header() {
             </div>
             <ul className={`${musicVisibility} w-full flex flex-col`}>
               <Link
-                href="/kachoni"
-                onClick={unlockScrolling}
-                target="_self"
-                className="w-full mt-4 text-xl"
-              >
-                <li className="flex flex-row items-center">
-                  <IconMusic
-                    stroke={1.5}
-                    className="inline h-7 w-7 my-1 mr-2"
-                  />
-                  Kachoni
-                </li>
-              </Link>
-              <Link
                 href="/veka"
                 onClick={unlockScrolling}
                 target="_self"

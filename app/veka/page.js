@@ -17,6 +17,7 @@ import {
   IconBrandYoutube,
   IconWorld,
 } from "@tabler/icons";
+import SwappingGallery from "../../components/swapping-gallery";
 export default async function VeKa() {
   return (
     <main className="ease-in-out duration-300 font-titilliumWeb">
@@ -35,8 +36,8 @@ export default async function VeKa() {
             v Deštném v Orlických horách.
           </ContainerDescription>
           <ContainerImage
-            jpgPath="/assets/images/spolecenstvi/veka.jpg"
-            webpPath="/assets/images/spolecenstvi/veka.webp"
+            jpgPath="/assets/images/spolecenstvi/veka_uvodka.jpg"
+            webpPath="/assets/images/spolecenstvi/veka_uvodka.webp"
             altText="Vesmírná kapela na koncertě"
             className="w-full my-2"
           />
@@ -45,7 +46,7 @@ export default async function VeKa() {
             té doby kapelou prošly přes dvě stovky členů tvořících několik
             generací, které dohromady vydaly 6 alb. Naše - v pořadí již pátá -
             generace působí od roku 2019. Natočili jsme tři videoklipy,
-            doprovodili dvě Diecézní setkání mládeže a nespočet mší v různých
+            doprovodili čtyři Diecézní setkání mládeže a nespočet mší v různých
             farnostech.
           </ContainerParagraph>
           <iframe
@@ -71,12 +72,7 @@ export default async function VeKa() {
             včetně jeho přípravného týdne. Doufáme, že si náš hudební doprovod
             užijete!
           </ContainerParagraph>
-          <ContainerImage
-            jpgPath="/assets/images/spolecenstvi/veka-punk.jpg"
-            webpPath="/assets/images/spolecenstvi/veka-punk.webp"
-            altText="Vesmírná kapela v bundách"
-            className="w-full my-2"
-          />
+          <SwappingGallery images={gallery} />
           <ContainerH2>Sledujte nás na:</ContainerH2>
           <ContainerUl className={`!list-none !pl-0 mb-6`}>
             <ContainerLi className="mt-2">
@@ -128,3 +124,38 @@ export default async function VeKa() {
     </main>
   );
 }
+
+const gallery = [
+  {
+    path: "/assets/images/spolecenstvi/veka-atributy.jpeg",
+    alt: "Vesmírná kapela s atributy"
+  },
+  {
+    path: "/assets/images/spolecenstvi/veka_CSM.jpg",
+    alt: "Vesmírná Kapela na CSM"
+  },
+  {
+    path: "/assets/images/spolecenstvi/veka_draci.jpeg",
+    alt: "Vesmírná kapela pouštějící draky"
+  },
+  {
+    path: "/assets/images/spolecenstvi/veka_kapela.jpeg",
+    alt: "Část Vesmírné Kapely v parku"
+  },
+  {
+    path: "/assets/images/spolecenstvi/veka_lasergame.jpeg",
+    alt: "Vesmírná kapela na lasergame"
+  },
+  {
+    path: "/assets/images/spolecenstvi/veka_sbor.jpeg",
+    alt: "Sbor Vesmírné kapely"
+  },
+  {
+    path: "/assets/images/spolecenstvi/veka_kabely.jpg",
+    alt: "Vesmírní kabeláž"
+  },
+  {
+    path: "/assets/images/spolecenstvi/veka_kur.jpg",
+    alt: "Vesmírná kapela na kůru"
+  }
+];
