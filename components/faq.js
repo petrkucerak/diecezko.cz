@@ -6,7 +6,7 @@ import ContainerH3 from "./layouts/container-h3";
 export default function FAQ() {
   return (
     <FaqLayout>
-      <FaqBox question={`Kde seženu zdravotní pomoc?`} icon={`medical`}>
+      {/* <FaqBox question={`Kde seženu zdravotní pomoc?`} icon={`medical`}>
         V případě jakéhokoliv zdravotního problému se neváhej obrátit na naši{" "}
         <strong>zdravotnickou službu</strong>, kterou poznáš podle oblečení
         a&nbsp;dostihneš ji na tel.{" "}
@@ -18,22 +18,16 @@ export default function FAQ() {
           155
         </Link>
         .
-      </FaqBox>
+      </FaqBox> */}
       <FaqBox question={`Kolik Diecézko stojí?`} icon={`money`}>
         Doporučený příspěvek je <strong>200,-Kč na osobu</strong>. Je možné ho
         zaplatit v hotovosti na recepci ve Filharmonii při dopoledním programu.
       </FaqBox>
       <FaqBox question={`Co si sbalit s sebou?`} icon={`luggage`}>
         Sváču, láhev s&nbsp;pitím, doporučený příspěvek (200,-Kč), peníze na
-        svoji dopravu a&nbsp;drobný peníz v&nbsp;případě zájmu zajít do kavárny
-        na BiGy. Doporučujeme si také vzít něco teplého na sebe na závěrečnou
-        mši svatou do katedrály. Může být zima.
-        <br /> Pokud chceš podpořit Majkinu při její{" "}
-        <Link href="/majki-v-albanii" target="_self" className="underline">
-          {" "}
-          dobrovolnické misi v&nbsp;Albánii
-        </Link>
-        , přibal si 200,-Kč a&nbsp;kup si od ní obrázek.
+        svoji dopravu a&nbsp;drobný peníz v&nbsp;případě zájmu zajít do nealko
+        baru na BiGy. Doporučujeme si také vzít něco teplého na sebe na
+        závěrečnou mši svatou do katedrály. Může být zima.
       </FaqBox>
       <FaqBox question={`Od kolika let můžu jet na Diecézko?`} icon={`kid`}>
         Doporučený věk k&nbsp;účasti na setkání je{" "}
@@ -65,12 +59,12 @@ export default function FAQ() {
           </Link>
         </strong>
         &nbsp;a&nbsp;budeme s&nbsp;Tebou počítat. Na Diecézko se přihlas do
-        17.&nbsp;3.&nbsp;2024, abychom Ti stihli zajistit bagetu a&nbsp;pitíčko
+        31.&nbsp;3.&nbsp;2025, abychom Ti stihli zajistit bagetu a&nbsp;pitíčko
         k&nbsp;obědu. <br />
-        <strong>Nestihl/a ses přihlásit v daném termínu?</strong> Nevadí,
+        {/* <strong>Nestihl/a ses přihlásit v daném termínu?</strong> Nevadí,
         i&nbsp;tak s&nbsp;tebou <strong>počítáme</strong>. Objednali jsme bagety
         navíc. Prosíme, i&nbsp;nadále vyplň přihlášku, ať víme, že dorazíš.
-        Děkujeme 😊{" "}
+        Děkujeme 😊{" "} */}
       </FaqBox>
       <FaqBox question={`Jak se přihlásit na odpolední program?`} icon={`old`}>
         <strong>
@@ -95,13 +89,14 @@ export default function FAQ() {
         >
           přihlášky
         </Link>
-        . Pokud by vás odpoledne přepadla mlsná, je možné zajít i&nbsp;do naší{" "}
+        .
+         {/* Pokud by vás odpoledne přepadla mlsná, je možné zajít i&nbsp;do naší{" "}
         <Link href={`/mapa?x=50.2062919&y=15.8337133`} className="underline">
           kavárny
         </Link>
-        .
+        . */}
       </FaqBox>
-      <FaqBox question={`Je organizována společná doprava?`} icon={`bus`}>
+      {/* <FaqBox question={`Je organizována společná doprava?`} icon={`bus`}>
         Některé vikariáty společnou dopravu organizují. Pro jasný přehled jsme
         pro Vás připravili{" "}
         <Link
@@ -113,7 +108,7 @@ export default function FAQ() {
         </Link>
         , který poradí, kdy a&nbsp;v&nbsp;kolik je sraz a&nbsp;jestli je nutné
         se někam hlásit.
-      </FaqBox>
+      </FaqBox> */}
       <FaqBox
         question={`Proč je Diecézko po tak brzké době?`}
         icon={`calendar`}
