@@ -52,7 +52,6 @@ export default async function DCZM() {
             altText="Tým DCŽM Vesmír"
             className="w-full my-2"
           />
-          {/* TODO: update photo */}
           <ContainerParagraph>
             Název Vesmír jsme „podědili po předcích“. Chata (zařízení) nese
             jméno Vesmír již od 60. let minulého století. A když se zde člověk
