@@ -4,7 +4,7 @@ import Link from "next/link";
 import Button from "../layouts/button";
 import IconCustomVeka from "../images/veka";
 import ContainerH2 from "../layouts/container-h2";
-import { IconArrowBarToDown, IconMap, IconTower } from "@tabler/icons";
+import { IconArrowBarToDown, IconChessBishop, IconMap, IconSailboat2, IconTower } from "@tabler/icons";
 import IconCustomDCM from "../images/dcm-hk";
 import IconCustomVesmir from "../images/vesmir";
 import IconCustomSalas from "../images/salas";
@@ -32,33 +32,33 @@ export default function SpolecenstviInfo({ id, className }) {
             Cesta půstem
           </Button>
         </Link>
-        <Link href="/sheep-ples.pdf" target="_blank" className="">
-          <Button>
-            <IconCustomSalas className={`inline h-6 mr-2`} />
-            Sheep ples
-          </Button>
-        </Link>
-        <Link href="/majki-v-albanii" target="_self" className="">
-          <Button>
-            <IconMap stroke={1.5} className={`inline h-6 mr-2`} />
-            Majki v&nbsp;Albánii
-          </Button>
-        </Link>
         <Link
-          href="/assets/files/150-Duchovni_cviceni_v_Kinderalmu-2024.pdf"
+          href="https://www.bihk.cz/"
+          rel="external"
           target="_blank"
           className=""
         >
           <Button>
-            <IconTower stroke={1.5} className={`inline h-6 mr-2`} />
-            Duchovní cvičení v&nbsp;Kinderlamu
+            <IconChessBishop className={`inline h-6 mr-2`} />
+            Biskupství Královehradecké
+          </Button>
+        </Link>
+        <Link
+          href="https://www.svetovednymladeze.cz/"
+          rel="external"
+          target="_blank"
+          className=""
+        >
+          <Button>
+            <IconSailboat2 className={`inline h-6 mr-2`} />
+            Jubileum mládeže
           </Button>
         </Link>
       </CardFeed>
       <ContainerH2 className={`w-full text-center`}>Propagace</ContainerH2>
       <CardFeed>
         <Link
-          href="/assets/files/DSM24-plakat.pdf"
+          href="/assets/files/DSM25-plakát.pdf"
           rel=""
           target="_blank"
           className=""

@@ -168,15 +168,15 @@ export const dcm = [
     altText: "Profilová fotka Klárky Petrové (zatím)",
     className: "",
   },
-  {
-    name: "Lucka Zadinová",
-    description:
-      "Lucka pochází z&nbsp;Libice nad Cidlinou, ale aktuálně žije na hájence poblíž Chotěboře. Studuje na Univerzitě Hradec Králové. Její smysl pro ekologičnost se nezapře. Svým příkladem nás vede, jak se dobře starat o&nbsp;naši planetu a&nbsp;používat ekologické produkty. Nezalekne se žádné výzvy, akčnost, to je její.",
-    jpgPath: "/assets/images/dcm/lz.jpg",
-    webpPath: "/assets/images/dcm/lz.webp",
-    altText: "Profilová fotka Lucka Zadinová (už nafurt)",
-    className: "",
-  },
+  // {
+  //   name: "Lucka Zadinová",
+  //   description:
+  //     "Lucka pochází z&nbsp;Libice nad Cidlinou, ale aktuálně žije na hájence poblíž Chotěboře. Studuje na Univerzitě Hradec Králové. Její smysl pro ekologičnost se nezapře. Svým příkladem nás vede, jak se dobře starat o&nbsp;naši planetu a&nbsp;používat ekologické produkty. Nezalekne se žádné výzvy, akčnost, to je její.",
+  //   jpgPath: "/assets/images/dcm/lz.jpg",
+  //   webpPath: "/assets/images/dcm/lz.webp",
+  //   altText: "Profilová fotka Lucka Zadinová (už nafurt)",
+  //   className: "",
+  // },
   {
     name: "Verča Pavlišová",
     description:
@@ -201,6 +201,15 @@ export const dcm = [
       "Jindra, zástupce mužské části našeho týmu a&nbsp;práce všeho druhu. Vášnivý milovník vláčků, lokomotiv, vagónů, kolejí a&nbsp;výhybek nás ve volných chvílích zahrnuje fakty a&nbsp;zajímavostmi ze světa železnice. Krom originálních nápadů a&nbsp;praktických připomínek při poradách pro vás připravuje nejčerstvější informace a&nbsp;novinky na webu.",
     jpgPath: "/assets/images/dcm/jr.jpg",
     webpPath: "/assets/images/dcm/jr.webp",
+    altText: "Profilová fotka Jindry Řezníčka",
+    className: "",
+  },
+  {
+    name: "o. Tomáš Hoffmann",
+    description:
+      "Tomáš Hoffmann, je ředitelem jak Vesmíru, tak DCM, na které z dálky dohlíží a v pravou chvíli se do věci vloží. V téhle roli působí od roku 2006. Volnou chvíli si rád zkrátí běžkováním, lyžováním, partičkou žolíčků nebo kafíčkem s týmáky. Z jeho úst nejčastěji uslyšíte věty jako: “Děcka...”, “Holoubku...”, “Můj ty světe.” a “To je dobrota!”.",
+    jpgPath: "/assets/images/jadro/hoffmann.jpg",
+    webpPath: "/assets/images/jadro/hoffmann.webp",
     altText: "Profilová fotka Jindry Řezníčka",
     className: "",
   },
