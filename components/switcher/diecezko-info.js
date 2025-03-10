@@ -101,7 +101,7 @@ export default function DiecezkoInfo({ id, className }) {
         Hradci Králové. Nejprve proběhne společný režijní program a<Nbsp />
         po občerstvení mohou mladí navštívit různé workshopy a<Nbsp />
         přednášky. Dále je v<Nbsp />
-        nabídce sport, hry nebo kavárna, ale také adorace či možnost přistoupit
+        nabídce sport, hry nebo bar, ale také adorace či možnost přistoupit
         ke svátosti smíření.
       </ContainerParagraph>
       <ContainerParagraph>
