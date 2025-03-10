@@ -26,13 +26,15 @@ export default function DiecezkoInfo({ id, className }) {
         </div>
         <div className="flex flex-col items-center w-[90vw]">
           <h1 className="text-6xl md:text-7xl uppercase leading-tight tracking-wide text-center text-shadow-lg shadow-[#f2e7c9] text-[#f2e7c9] font-blushes mb-8">
-            Diecézní
-            <br />
+            <span className="block">
+              Diecézní
+            </span>
             <yel className="text-[#fbf3e3] text-shadow-lg text-7xl md:text-8xl shadow-[#fbf3e3]">
               setkání
             </yel>
-            <br />
-            mládeže
+            <span className="block">
+              mládeže
+            </span>
           </h1>
           <p className="uppercase text-xl md:text-3xl tracking-wide text-shadow-lg shadow-white font-blushes">
             v Hradci Králové

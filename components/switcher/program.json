@@ -63,7 +63,6 @@
       "id": 4,
       "duration": 90,
       "description": "Odpoledne si můžete vybrat z široké nabídky přednášek, několika workshopů nebo si jít zasportovat.",
-      "link": "/prednasky-workshopy",
       "icons": [
          "person",
          "workshop",
@@ -75,7 +74,7 @@
       "time": "13:30",
       "id": 5,
       "duration": 60,
-      "description": "Zastav se v&kostele Panny Marie na Velkém náměstí, zajdi ke zpovědi či k&duchovnímu rozhovoru nebo jen buď nějaký čas s&Ježíšem.",
+      "description": "Zastav se v&nbsp;kostele Panny Marie na Velkém náměstí, zajdi ke zpovědi či k&nbsp;duchovnímu rozhovoru nebo jen buď nějaký čas s&nbsp;Ježíšem. Jako podkres bude hrát živá hudba.",
       "icons": [
          "pray",
          "music"
@@ -93,7 +92,7 @@
       "time": "13:30",
       "duration": 30,
       "id": 6,
-      "description": "V&nbsp;kavárně na BiGy si můžeš pochutnat na dobré mňamce, zahřát se teplým pitím, posedět a&nbsp;užít si klidný rozhovor nebo si zahrát stolní deskovku. Pro občerstvení si nezapomeň vzít drobný peníz.",
+      "description": "",
       "icons": [
          "bar"
       ],
@@ -110,7 +109,7 @@
       "time": "14:10",
       "id": 7,
       "duration": 45,
-      "description": "Tohle by chtělo dopsat",
+      "description": "více informací brzy",
       "icons": [
          "map",
          "pray"
@@ -145,7 +144,7 @@
       "time": "15:00",
       "id": 9,
       "duration": 60,
-      "description": "Celý den zakončíme mší svatou s&nbsp;otcem biskupem v&nbsp;katedrále Svatého Ducha. Mši svatou hudebně doprovodí schola Kachoni.",
+      "description": "Celý den zakončíme mší svatou s&nbsp;otcem biskupem v&nbsp;katedrále Svatého Ducha. Mši svatou hudebně doprovodí schola z&nbsp;Červeného Kostelce.",
       "icons": [
          "music",
          "pray"

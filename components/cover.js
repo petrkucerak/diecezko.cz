@@ -6,7 +6,7 @@ export default function Cover({ children }) {
 
   const handleScroll = () => {
     const scrollY = window.scrollY;
-    if (scrollY > 200) setBlur("bg-black/80 backdrop-blur-md");
+    if (scrollY > 10) setBlur("bg-black/80 backdrop-blur-md");
     else setBlur("bg-black/50");
   };
 
