@@ -16,6 +16,7 @@ import {
 import Link from "next/link";
 import Nbsp from "../format/nbsp";
 import Strong from "../format/strong";
+import Infographic from "../infographic";
 
 export default function DiecezkoInfo({ id, className }) {
   return (
@@ -26,15 +27,11 @@ export default function DiecezkoInfo({ id, className }) {
         </div>
         <div className="flex flex-col items-center w-[90vw]">
           <h1 className="text-6xl md:text-7xl uppercase leading-tight tracking-wide text-center text-shadow-lg shadow-[#f2e7c9] text-[#f2e7c9] font-blushes mb-8">
-            <span className="block">
-              Diecézní
-            </span>
+            <span className="block">Diecézní</span>
             <yel className="text-[#fbf3e3] text-shadow-lg text-7xl md:text-8xl shadow-[#fbf3e3]">
               setkání
             </yel>
-            <span className="block">
-              mládeže
-            </span>
+            <span className="block">mládeže</span>
           </h1>
           <p className="uppercase text-xl md:text-3xl tracking-wide text-shadow-lg shadow-white font-blushes">
             v Hradci Králové
@@ -82,6 +79,7 @@ export default function DiecezkoInfo({ id, className }) {
           </Link>
         </div>
       </div>
+      <Infographic />
       <ContainerH2>O Diecézku</ContainerH2>
       <ContainerParagraph>
         Na přání papeže sv.
@@ -101,8 +99,8 @@ export default function DiecezkoInfo({ id, className }) {
         Hradci Králové. Nejprve proběhne společný režijní program a<Nbsp />
         po občerstvení mohou mladí navštívit různé workshopy a<Nbsp />
         přednášky. Dále je v<Nbsp />
-        nabídce sport, hry nebo bar, ale také adorace či možnost přistoupit
-        ke svátosti smíření.
+        nabídce sport, hry nebo bar, ale také adorace či možnost přistoupit ke
+        svátosti smíření.
       </ContainerParagraph>
       <ContainerParagraph>
         Nedílnou součástí tohoto setkání je slavnostní mše svatá v<Nbsp />

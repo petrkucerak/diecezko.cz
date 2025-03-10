@@ -13,7 +13,7 @@ export default function MapPoints({ coords }) {
     const marker = L.marker([p.coords.x, p.coords.y], {
       title: p.name,
       icon:
-        p.name === "Filhramonie Hradec Králové"
+        p.name === "Filharmonie Hradec Králové"
           ? theatre
           : p.name === "Katedrála Svatého Ducha" ||
             p.name === "Kostel Nanebevzetí Panny Marie"
@@ -203,7 +203,7 @@ const places = [
       x: 50.2138117,
       y: 15.8291964,
     },
-    name: "Filhramonie Hradec Králové",
+    name: "Filharmonie Hradec Králové",
     content:
       "<li>9:00 registrace</li><li>9:30 dopolední program</li><li>11:30 obědová pauza</li>",
   },
