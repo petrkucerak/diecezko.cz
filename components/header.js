@@ -102,13 +102,13 @@ export default function Header() {
           <Link
             href="/"
             onClick={unlockScrolling}
-            className={`text-2xl uppercase ml-4 font-bold text-shadow shadow-white`}
+            className={`text-2xl uppercase ml-4 text-shadow shadow-white font-blushes`}
             target="_self"
             title="Diecézko.cz"
           >
             Diecézko.cz
-            <span className="text-xs relative top-[0.6rem] -left-2 text-shadow-lg text-yellow-300 shadow-yellow-300">
-              2024
+            <span className="text-xs relative top-[0.7rem] -left-2 text-shadow-lg text-[#f2e7c9] shadow-[#f2e7c9] font-semibold">
+              2025
             </span>
           </Link>
         </div>
@@ -235,20 +235,6 @@ export default function Header() {
               </div>
             </div>
             <ul className={`${musicVisibility} w-full flex flex-col`}>
-              <Link
-                href="/kachoni"
-                onClick={unlockScrolling}
-                target="_self"
-                className="w-full mt-4 text-xl"
-              >
-                <li className="flex flex-row items-center">
-                  <IconMusic
-                    stroke={1.5}
-                    className="inline h-7 w-7 my-1 mr-2"
-                  />
-                  Kachoni
-                </li>
-              </Link>
               <Link
                 href="/veka"
                 onClick={unlockScrolling}

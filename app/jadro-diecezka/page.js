@@ -19,36 +19,8 @@ export default async function Vikariaty() {
             kteří se do jeho příprav zapojili. Patří jim díky za jejich
             obětavost a&nbsp;nasazení!
           </ContainerDescription>
-          <ContainerH2>Éčko</ContainerH2>
-          <ContainerParagraph>
-            Evženova crew je skupinka lidí, kteří u&nbsp;tvorby Diecézka stojí
-            od začátku. Potkávají se každých 14 dní a&nbsp;vymýšlí, jak nejlépe
-            připravit celý program.
-          </ContainerParagraph>
           <div className="flex flex-col sm:grid sm:grid-cols-2 md:grid-cols-3 grid-flow-row gap-4 items-center">
             {ecko.map((p) => {
-              return (
-                <ProfileCard
-                  key={p.name}
-                  name={p.name}
-                  description={p.description}
-                  jpgPath={p.jpgPath}
-                  webpPath={p.webpPath}
-                  pngPath={p.pngPath}
-                  altText={p.altText}
-                  className={p.className}
-                />
-              );
-            })}
-          </div>
-          <ContainerH2>Jádro Diecézka</ContainerH2>
-          <ContainerParagraph>
-            Oranžové vestičky, technický a&nbsp;duchovní support či velitel
-            úklidové čety. Právě díky těmto a&nbsp;spustě dalších dobrovolníků
-            může být setkání takové, jaké je.
-          </ContainerParagraph>
-          <div className="flex flex-col sm:grid sm:grid-cols-2 md:grid-cols-3 grid-flow-row gap-4 items-center">
-            {jadro.map((p) => {
               return (
                 <ProfileCard
                   key={p.name}
@@ -70,6 +42,14 @@ export default async function Vikariaty() {
   );
 }
 export const ecko = [
+  {
+    name: "Evžen Holub",
+    description: "Pan Holub drží holubí dohled nad celým Diecézkem.",
+    jpgPath: "/assets/images/jadro/evzen.jpg",
+    webpPath: "/assets/images/jadro/evzen.webp",
+    altText: "Profilová fotka Holuba Evžena",
+    className: "",
+  },
   {
     name: "Klárka Petrová",
     description:
@@ -99,10 +79,20 @@ export const ecko = [
   },
   {
     name: "Joska Pazderová",
-    description: "Honí vás mlsná? Stavte se za Joskou do kavárny na BiGy.",
+    description:
+      "Vrchní velitelka úklidové čety a&nbsp;kromě každého odpadku vyhozeného do správného koše ocení i ochotnou pomocnou ruku. Také se stará o&nbsp;to, aby diecézko vypadalo dobře na&nbsp;sociálních sítích.",
     jpgPath: "/assets/images/jadro/joska.jpg",
     webpPath: "/assets/images/jadro/joska.webp",
     altText: "Profilová fotka Josky Pazderové",
+    className: "",
+  },
+  {
+    name: "Anička Maříková",
+    description:
+      "Anička má na starosti režijní program, který nás bude provázet během dopoledne ve Filharmonii.",
+    jpgPath: "/assets/images/jadro/marikova.jpg",
+    webpPath: "/assets/images/jadro/marikova.webp",
+    altText: "Profilová fotka Aničky Maříkové",
     className: "",
   },
   {
@@ -111,13 +101,14 @@ export const ecko = [
       "Ondra je spolu s&nbsp;Klárkou generálem BiGy. Stará se o&nbsp;zázemí nejen pro hosty ale i&nbsp;všechny, kteří budou na BiGy.",
     jpgPath: "/assets/images/jadro/marik.jpg",
     webpPath: "/assets/images/jadro/marik.webp",
-    altText: "Profilová fotka Ondyr Maříka",
+    altText: "Profilová fotka Ondry Maříka",
     className: "",
   },
   {
     name: "Matyáš Mesi Meisner",
     description:
-      "Matyáš má na starosti režijní program, který nás bude provázet během dopoledne ve Filharmonii.",
+      "Mesi a&nbsp;jeho tým v&nbsp;oranžových vestičkách vám zajistí bezpečný doprovod až na přednášku.",
+
     altText: "Profilová fotka Matyáše Messiho Majsnera",
     jpgPath: "/assets/images/jadro/majsner.jpg",
     webpPath: "/assets/images/jadro/majsner.webp",
@@ -126,30 +117,12 @@ export const ecko = [
   {
     name: "Jindra Řezníček",
     description:
-      "Jindra se stará o&nbsp;kaplany, zástupce a&nbsp;pomáhá sytit web obsahem.",
+      "Jindra se stará o&nbsp;kaplany, zástupce, pomáhá sytit web obsahem a&nbsp;při vstupu do Filharmonie vás se svým týmem označí náramkem.",
     jpgPath: "/assets/images/jadro/reznicek.jpg",
     webpPath: "/assets/images/jadro/reznicek.webp",
     altText: "Profilová fotka Jindry Řezníčka",
     className: "",
   },
-  {
-    name: "Petr Kučera",
-    description: "Petr se stará o&nbsp;diecézko.cz a&nbsp;kachní, kde může.",
-    jpgPath: "/assets/images/jadro/kucera.jpg",
-    webpPath: "/assets/images/jadro/kucera.webp",
-    altText: "Profilová fotka Petr Kučery",
-    className: "",
-  },
-  {
-    name: "Evžen Holub",
-    description: "Pan Holub drží holubí dohled nad celým Diecézkem.",
-    jpgPath: "/assets/images/jadro/evzen.jpg",
-    webpPath: "/assets/images/jadro/evzen.webp",
-    altText: "Profilová fotka Holuba Evžena",
-    className: "",
-  },
-];
-export const jadro = [
   {
     name: "o. Tomáš Hoffmann",
     description:
@@ -169,27 +142,9 @@ export const jadro = [
     className: "",
   },
   {
-    name: "Denča Zavřelová",
-    description:
-      "Recepční skupinka pod vedením Denči vás při vstupu do Filharmonie označí náramkem a&nbsp;také uloží vaše kabáty a&nbsp;bundy do šatny.",
-    altText: "Profilová fotka Denča Zavřelová",
-    jpgPath: "/assets/images/jadro/denca.jpg",
-    webpPath: "/assets/images/jadro/denca.webp",
-    className: "",
-  },
-  {
-    name: "Amálka Výborná",
-    description:
-      "Amálka a&nbsp;její tým v&nbsp;oranžových vestičkách vám zajistí bezpečný doprovod až na přednášku.",
-    altText: "Profilová fotka Amálka Výborná",
-    jpgPath: "/assets/images/jadro/vyborna.jpg",
-    webpPath: "/assets/images/jadro/vyborna.webp",
-    className: "",
-  },
-  {
     name: "Vojta Vlach",
     description:
-      "Vojta je ostřílený kapelník Vesmírné kapely, která doprovodí dopolední program ve Filharmonii.",
+      "Vojta je ostřílený kapelník Vesmírné kapely, která doprovodí dopolední program ve Filharmonii a&nbsp;pomáhá s&nbsp;webem.",
     altText: "Profilová fotka Vojta Vlach",
     jpgPath: "/assets/images/jadro/pan-vlach.jpg",
     webpPath: "/assets/images/jadro/pan-vlach.webp",
@@ -204,12 +159,12 @@ export const jadro = [
     className: "",
   },
   {
-    name: "David Fendrych",
+    name: "Petr Kučera",
     description:
-      "Vrchní velitel úklidové čety a&nbsp;kromě každého odpadku vyhozeného do správného koše ocení i&nbsp;každou pomocnou ruku.",
-    altText: "Profilová fotka David Fendrych",
-    jpgPath: "/assets/images/jadro/dejv.jpg",
-    webpPath: "/assets/images/jadro/dejv.webp",
+      "Petr se stará o&nbsp;diecézko.cz a&nbsp;pomáhá s&nbsp;technický zabezpečením.",
+    jpgPath: "/assets/images/jadro/kucera.jpg",
+    webpPath: "/assets/images/jadro/kucera.webp",
+    altText: "Profilová fotka Petr Kučery",
     className: "",
   },
 ];
