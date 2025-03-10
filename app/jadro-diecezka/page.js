@@ -124,7 +124,7 @@ export const ecko = [
     className: "",
   },
   {
-    name: "o. Tomáš Hoffmann",
+    name: "P. Tomáš Hoffmann",
     description:
       "Tomáš je nejen ředitelem Vesmíru a&nbsp;DCM, ale hlavně duchovní opora celého přípravného týmu.",
     altText: "Profilová fotka o. Tomáš Hoffmann",
@@ -133,10 +133,10 @@ export const ecko = [
     className: "",
   },
   {
-    name: "o. Prokop Brož",
+    name: "Mons. Prokop Brož",
     description:
-      "Prokop má na starosti synodu mladých, připravuje duchovní program v&nbsp;kostele Panny Marie a&nbsp;se stará o&nbsp;to, aby všichni táhli za jeden provaz.",
-    altText: "Profilová fotka o. Prokopa Brože",
+      "Prokop má na starosti pastoraci v&nbsp;naší diecézi a&nbsp;se stará o&nbsp;to, aby všichni táhli za jeden provaz.",
+    altText: "Profilová fotka Mons. Prokopa Brože",
     jpgPath: "/assets/images/jadro/broz.jpg",
     webpPath: "/assets/images/jadro/broz.webp",
     className: "",

@@ -205,7 +205,7 @@ export const dcm = [
     className: "",
   },
   {
-    name: "o. Tomáš Hoffmann",
+    name: "P. Tomáš Hoffmann",
     description:
       "Tomáš Hoffmann, je ředitelem jak Vesmíru, tak DCM, na které z dálky dohlíží a v pravou chvíli se do věci vloží. V téhle roli působí od roku 2006. Volnou chvíli si rád zkrátí běžkováním, lyžováním, partičkou žolíčků nebo kafíčkem s týmáky. Z jeho úst nejčastěji uslyšíte věty jako: “Děcka...”, “Holoubku...”, “Můj ty světe.” a “To je dobrota!”.",
     jpgPath: "/assets/images/jadro/hoffmann.jpg",
