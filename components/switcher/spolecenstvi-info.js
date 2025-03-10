@@ -4,7 +4,7 @@ import Link from "next/link";
 import Button from "../layouts/button";
 import IconCustomVeka from "../images/veka";
 import ContainerH2 from "../layouts/container-h2";
-import { IconArrowBarToDown, IconMap, IconTower } from "@tabler/icons";
+import { IconArrowBarToDown, IconChessBishop, IconMap, IconTower } from "@tabler/icons";
 import IconCustomDCM from "../images/dcm-hk";
 import IconCustomVesmir from "../images/vesmir";
 import IconCustomSalas from "../images/salas";
@@ -30,6 +30,17 @@ export default function SpolecenstviInfo({ id, className }) {
           <Button>
             <IconCustomAdventniCesta className={`inline h-6 mr-2`} />
             Cesta půstem
+          </Button>
+        </Link>
+        <Link
+          href="https://www.bihk.cz/"
+          rel="external"
+          target="_blank"
+          className=""
+        >
+          <Button>
+            <IconChessBishop className={`inline h-6 mr-2`} />
+            Biskupství Královehradecké
           </Button>
         </Link>
         {/* <Link href="/sheep-ples.pdf" target="_blank" className="">
@@ -66,7 +77,6 @@ export default function SpolecenstviInfo({ id, className }) {
           <Button>
             <IconArrowBarToDown className={`inline h-6 mr-2`} stroke={1.8} />
             Plakátek
-            {/* TODO: dopln !!! */}
           </Button>
         </Link>
         {/* Pridej tohle https://www.svetovednymladeze.cz/ */}
