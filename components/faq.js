@@ -119,7 +119,7 @@ export default function FAQ() {
         dopravy a&nbsp;vydáte se rovně po ulici S. K. Neumanna, kterou se
         dostanete na náměstí 28. října. Dále půjdete podél obchodních domů TESCO
         a&nbsp;Atrium po ulici Dukelská třída a&nbsp;pomocí podchodu se
-        dostanete na třídu Kalra IV. Po které půjdete až k řece, přejdete most
+        dostanete na třídu Karla IV. Po ní půjdete až k řece, přejdete most
         a&nbsp;po levé straně uvidíte sportovní halu, za kterou se nachází
         Filharmonie. Zde na vás již budou čekat pořadatelé s&nbsp;dalšími
         informacemi. <br />
