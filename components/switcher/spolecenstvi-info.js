@@ -40,7 +40,7 @@ export default function SpolecenstviInfo({ id, className }) {
         >
           <Button>
             <IconChessBishop className={`inline h-6 mr-2`} />
-            Biskupství Královehradecké
+            Biskupství královéhradecké
           </Button>
         </Link>
         <Link
