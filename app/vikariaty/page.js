@@ -196,6 +196,7 @@ export const vikariaty = [
     social: {
       instagram: "https://www.instagram.com/vikariathumpolec/",
       facebook: "https://www.facebook.com/groups/228568637237522",
+      web: "https://www.vikariat-humpolec.cz/",
     },
   },
   {
