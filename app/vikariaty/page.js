@@ -328,8 +328,8 @@ export const vikariaty = [
       jpgPath: "/assets/images/vikariaty/antkiewicz.jpg",
     },
     person1: {
-      name: "Kateřina Dvořáková a Maja Macková",
-      jpgPath: "/assets/images/vikariaty/dvorakovaamackova.jpg",
+      name: "Viktor Karaba",
+      jpgPath: "/assets/images/vikariaty/karaba.jpg",
     },
     social: {
       instagram: "https://www.instagram.com/vikariat_pardubice/",
