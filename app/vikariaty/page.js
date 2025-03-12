@@ -139,8 +139,16 @@ export const vikariaty = [
       jpgPath: "/assets/images/vikariaty/skarydova.jpg",
     },
     person2: {
-      name: "Pavel Venc",
-      jpgPath: "/assets/images/vikariaty/venc.jpg",
+      name: "Michaela Kuncová",
+      jpgPath: "/assets/images/vikariaty/kuncova.jpg",
+    },
+    person3: {
+      name: "Markéta Růžková",
+      jpgPath: "/assets/images/vikariaty/ruzkova.jpg",
+    },
+    person4: {
+      name: "Ondřej Švec",
+      jpgPath: "/assets/images/vikariaty/svec.jpg",
     },
     social: {
       instagram: "https://www.instagram.com/vikariathb/",
