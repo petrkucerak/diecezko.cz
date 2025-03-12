@@ -135,7 +135,7 @@ export default function FAQ() {
         náměstí. Zde se na křižovatce vydáte doleva po ulici Hořická, po které
         dojdete až nakonec této ulice k&nbsp;pizzerii Casa Mia. Zde přejdete
         silnici až k&nbsp;pizzerii a&nbsp;pomocí podchodu se dostanete na třídu
-        Kalra IV. Po které půjdete až k&nbsp;řece, přejdete most a&nbsp;po levé
+        Karla IV. Po ní půjdete až k&nbsp;řece, přejdete most a&nbsp;po levé
         straně uvidíte sportovní halu, za kterou se nachází Filharmonie. Zde na
         vás již budou čekat pořadatelé s&nbsp;dalšími informacemi.
         <br />
