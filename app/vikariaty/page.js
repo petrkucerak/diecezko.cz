@@ -50,6 +50,7 @@ export default async function Vikariaty() {
                 person1={v.person1}
                 person2={v.person2}
                 person3={v.person3}
+                person4={v.person4}
                 loader1={v.loader1}
                 loader2={v.loader2}
                 priest={v.priest}
