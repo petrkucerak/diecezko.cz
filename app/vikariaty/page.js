@@ -338,8 +338,8 @@ export const vikariaty = [
   },
   {
     name: "Rychnov nad Kněžnou",
-    description:
-      "Jsme parta mladých katolíků, kteří se chtějí setkávat a&nbsp;sdílet spolu svoji víru v&nbsp;Boha. Tvoříme otevřené společenství pro všechny od 12 let a&nbsp;rádi mezi sebe přivítáme nové tváře.",
+    // description:
+    //   "Jsme parta mladých katolíků, kteří se chtějí setkávat a&nbsp;sdílet spolu svoji víru v&nbsp;Boha. Tvoříme otevřené společenství pro všechny od 12 let a&nbsp;rádi mezi sebe přivítáme nové tváře.",
     priest: {
       name: "P. Jan Barborka",
       jpgPath: "/assets/images/vikariaty/barborka.jpg",
