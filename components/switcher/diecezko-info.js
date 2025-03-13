@@ -80,35 +80,6 @@ export default function DiecezkoInfo({ id, className }) {
         </div>
       </div>
       <Infographic />
-      <ContainerH2>O Diecézku</ContainerH2>
-      <ContainerParagraph>
-        Na přání papeže sv.
-        <Nbsp />
-        Jana Pavla II. a<Nbsp />
-        jeho nástupců se mají biskupové{" "}
-        <Strong>
-          scházet každý rok s<Nbsp />
-          mládeží
-        </Strong>{" "}
-        své diecéze.
-      </ContainerParagraph>
-      <ContainerParagraph>
-        V<Nbsp />
-        naší diecézi se mládež schází v<Nbsp />
-        sobotu v<Nbsp />
-        Hradci Králové. Nejprve proběhne společný režijní program a<Nbsp />
-        po občerstvení mohou mladí navštívit různé workshopy a<Nbsp />
-        přednášky. Dále je v<Nbsp />
-        nabídce sport, hry nebo bar, ale také adorace či možnost přistoupit ke
-        svátosti smíření.
-      </ContainerParagraph>
-      <ContainerParagraph>
-        Nedílnou součástí tohoto setkání je slavnostní mše svatá v<Nbsp />
-        katedrále sv.
-        <Nbsp />
-        Ducha s<Nbsp />
-        otcem biskupem, která program celého dne završuje.
-      </ContainerParagraph>
     </Container>
   );
 }
