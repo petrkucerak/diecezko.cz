@@ -213,28 +213,28 @@ const workshops = [
       ig: "https://www.instagram.com/lucie.pekarkova",
     },
   },
-  {
-    title: "Tvořivé dílny",
-    type: "workshop",
-    id: "workshop-start",
-    place: "BiGy",
-    descritpion:
-      "Také si užíváš ty chvíle, kdy jsi ve světě tvoření a&nbspmůžeš dát volnost své fantazii a&nbsp;kreativnímu přetlaku? Já teda moc a&nbsp;řesně na takový společný čas tě zvu. Vše potřebné bude zajištěno. Těším se na tebe!",
-    speaker: {
-      name: "Verča Halounková",
-      jpgPath: "/assets/images/speakers/halounkova.jpg",
-    },
-  },
-  {
-    title: "Sportovní workshop",
-    type: "sport",
-    id: "sport-start",
-    place: "Orlovna",
-    descritpion:
-      "Chceš se po dopoledním sezení ve filharmonii trochu protáhnout a&nbsp;zasportovat si? Přesně pro tebe je určený tenhle workshop, kde si budeš moci vybrat ze dvou skupinových sportů a&nbsp;prostřednictvím hry se seznamovat novými lidmi. Na výběr bude z&nbsp;venkovního fotbalu (jen za dobrého počasí) a&nbsp;vnitřního volejbalu. Vem si proto s&nbsp;sebou vhodné oblečení podle počasí a&nbsp;do haly čistou sálovou obuv. Šatna bude k&nbsp;dispozici na BiGy.",
-    speaker: {
-      name: "Jan Chadima",
-      jpgPath: "/assets/images/speakers/chadima.jpg",
-    },
-  },
+  // {
+  //   title: "Tvořivé dílny",
+  //   type: "workshop",
+  //   id: "workshop-start",
+  //   // place: "BiGy",
+  //   descritpion:
+  //     "",
+  //   speaker: {
+  //     name: "Zdenička Daňková",
+  //     jpgPath: "/assets/images/speakers/dankova.jpg",
+  //   },
+  // },
+  // {
+  //   title: "Sportovní workshop",
+  //   type: "sport",
+  //   id: "sport-start",
+  //   place: "Orlovna",
+  //   descritpion:
+  //     "Chceš se po dopoledním sezení ve filharmonii trochu protáhnout a&nbsp;zasportovat si? Přesně pro tebe je určený tenhle workshop, kde si budeš moci vybrat ze dvou skupinových sportů a&nbsp;prostřednictvím hry se seznamovat novými lidmi. Na výběr bude z&nbsp;venkovního fotbalu (jen za dobrého počasí) a&nbsp;vnitřního volejbalu. Vem si proto s&nbsp;sebou vhodné oblečení podle počasí a&nbsp;do haly čistou sálovou obuv. Šatna bude k&nbsp;dispozici na BiGy.",
+  //   speaker: {
+  //     name: "Jan Chadima",
+  //     jpgPath: "/assets/images/speakers/chadima.jpg",
+  //   },
+  // },
 ];
