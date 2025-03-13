@@ -17,7 +17,7 @@ export default function Partneri() {
             Celé setkání by se nemohlo uskutečnit bez našich partnerů, kterým
             jsme vděčni za finanční, materiální a&nbsp;duchovní podporu.
           </ContainerParagraph>
-          <div className="grid grid-cols-2 gap-6 w-full md:grid-cols-5 mt-8">
+          <div className="grid grid-cols-2 gap-6 w-full md:grid-cols-3 mt-8 mb-8">
             <Link
               target="_blank"
               rel="external"
@@ -67,6 +67,19 @@ export default function Partneri() {
                 src="/assets/images/sponsors/adalbertinum.svg"
                 className="w-[25vw] max-w-[100px] saturate-0 hover:saturate-100 cursor-pointer duration-300 hover:scale-100 scale-95"
                 alt="Logo Nového Adalbertina"
+              />
+            </Link>
+            <Link
+              target="_blank"
+              rel="external"
+              href={`https://www.khk.cz/`}
+              className="w-full flex items-center justify-center"
+              title="Královehradecký kraj"
+            >
+              <img
+                src="/assets/images/sponsors/krajhk.svg"
+                className="w-[25vw] max-w-[130px] cursor-pointer saturate-0 hover:saturate-100 duration-300 hover:scale-100 scale-95"
+                alt="Logo Královehradeckého kraje"
               />
             </Link>
             <Link
