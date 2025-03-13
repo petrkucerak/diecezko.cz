@@ -220,7 +220,7 @@ const workshops = [
     descritpion:
       "<em>Vyučuji historii na Univerzitě Hradec Králové, zaměřuji se na dějiny středověku, jsem členem Církve bratrské v&nbsp;Kutné Hoře.</em><br/>Velmi si vážím možnosti se v&nbsp;tomto formátu setkat s&nbsp;katolickou mládeží a&nbsp;budu velmi rád za živou diskusi. V&nbsp;přednášce se pokusím otevřít některé otázky, které mi přineslo letité studium dějin a&nbsp;přemýšlení nad Církví a&nbsp;církvemi a&nbsp;výzvami současné církve a&nbsp;světa.",
     speaker: {
-      name: "doc. Zdeněk Beran",
+      name: "doc. PhDr. Zdeněk Beran, Ph.D.",
       jpgPath: "/assets/images/speakers/beran.jpg",
     },
     social: {
