@@ -117,7 +117,7 @@ export const ecko = [
   {
     name: "Jindra Řezníček",
     description:
-      "Jindra se stará o&nbsp;kaplany, zástupce, pomáhá sytit web obsahem a&nbsp;při vstupu do Filharmonie vás se svým týmem označí náramkem.",
+      "Jindra se stará o&nbsp;kaplany pro mládež a&nbsp;jejich zástupce, pomáhá sytit web obsahem a&nbsp;při vstupu do Filharmonie vás se svým týmem označí náramkem.",
     jpgPath: "/assets/images/jadro/reznicek.jpg",
     webpPath: "/assets/images/jadro/reznicek.webp",
     altText: "Profilová fotka Jindry Řezníčka",
@@ -135,7 +135,7 @@ export const ecko = [
   {
     name: "Mons. Prokop Brož",
     description:
-      "Prokop má na starosti pastoraci v&nbsp;naší diecézi a&nbsp;se stará o&nbsp;to, aby všichni táhli za jeden provaz.",
+      "Prokop má na starosti pastorační činnost v&nbsp;naší diecézi. Stará se o&nbsp;to, aby všichni táhli za jeden provaz. Řídí se heslem: Bez Ducha Svatého ani ránu!",
     altText: "Profilová fotka Mons. Prokopa Brože",
     jpgPath: "/assets/images/jadro/broz.jpg",
     webpPath: "/assets/images/jadro/broz.webp",
@@ -161,7 +161,7 @@ export const ecko = [
   {
     name: "Petr Kučera",
     description:
-      "Petr se stará o&nbsp;diecézko.cz a&nbsp;pomáhá s&nbsp;technický zabezpečením.",
+      "Petr se stará o&nbsp;web diecézko.cz a&nbsp;pomáhá s&nbsp;technickým zabezpečením celé akce.",
     jpgPath: "/assets/images/jadro/kucera.jpg",
     webpPath: "/assets/images/jadro/kucera.webp",
     altText: "Profilová fotka Petr Kučery",
