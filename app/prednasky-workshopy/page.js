@@ -223,6 +223,9 @@ const workshops = [
       name: "doc. Zdeněk Beran",
       jpgPath: "/assets/images/speakers/beran.jpg",
     },
+    social: {
+      web: "https://www.uhk.cz/cs/osoba/212/zdenek-beran"
+    }
   },
   {
     title: "Povolání život (církev a&nbsp;homosexualita)",
