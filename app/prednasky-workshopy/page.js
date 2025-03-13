@@ -213,6 +213,30 @@ const workshops = [
       ig: "https://www.instagram.com/lucie.pekarkova",
     },
   },
+  {
+    title: "Křesťané v&nbsp;dějinách z perspektivy křesťana nekatolíka",
+    type: "person",
+    // place: "BiGy",
+    descritpion:
+      "<em>Vyučuji historii na Univerzitě Hradec Králové, zaměřuji se na dějiny středověku, jsem členem Církve bratrské v&nbsp;Kutné Hoře.</em><br/>Velmi si vážím možnosti se v&nbsp;tomto formátu setkat s&nbsp;katolickou mládeží a&nbsp;budu velmi rád za živou diskusi. V&nbsp;přednášce se pokusím otevřít některé otázky, které mi přineslo letité studium dějin a&nbsp;přemýšlení nad Církví a&nbsp;církvemi a&nbsp;výzvami současné církve a&nbsp;světa.",
+    speaker: {
+      name: "doc. Zdeněk Beran",
+      jpgPath: "/assets/images/speakers/beran.jpg",
+    },
+  },
+  {
+    title: "Povolání život (církev a&nbsp;homosexualita)",
+    type: "person",
+    // place: "BiGy",
+    descritpion: `<em>P.&nbsp;Zdeněk Jančařík, salesián, kněz brněnské diecéze, v&nbsp;níž působí také jako kaplan pro LGBT+ komunitu.</em><br/>Zmiňuje se Bible o&nbsp;homosexualitě? Byl člověk stvořen jako muž a&nbsp;žena kvůli manželství? Od kdy se v&nbsp;Evropě začíná skutečně mluvit o&nbsp;"homosexualitě"? Jak se k&nbsp;ní staví římskokatolická církev a&nbsp;proč "s&nbsp;ní má problém"? Na tyto a&nbsp;jiné otázky se pokusíme odpovědět.`,
+    speaker: {
+      name: "P. Zdeněk Jančařík (SDB)",
+      jpgPath: "/assets/images/speakers/jancarik.jpg",
+    },
+    social: {
+      web: "https://www.biskupstvi.cz/cs/pastorace-lgbt",
+    },
+  },
   // {
   //   title: "Tvořivé dílny",
   //   type: "workshop",
