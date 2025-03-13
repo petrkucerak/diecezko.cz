@@ -17,7 +17,7 @@ export default function Partneri() {
             Celé setkání by se nemohlo uskutečnit bez našich partnerů, kterým
             jsme vděčni za finanční, materiální a&nbsp;duchovní podporu.
           </ContainerParagraph>
-          <div className="grid grid-cols-2 gap-6 w-full md:grid-cols-3 mt-8">
+          <div className="grid grid-cols-2 gap-6 w-full md:grid-cols-3 mt-8 mb-8">
             <Link
               target="_blank"
               rel="external"
