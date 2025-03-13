@@ -199,168 +199,18 @@ export default async function PrednaskyWorhsopy() {
 const workshops = [
   {
     title:
-      "Vyprávění s&nbsp;otcem biskupem Josefem o&nbsp;životě a&nbsp;povolání",
+      "Od nápadu k&nbsp;hitu - Jak skládat, nahrávat a&nbsp;zveřejnit vlastní píseň",
     type: "person",
     id: "prednaska-start",
-    place: "BiGy",
+    // place: "BiGy",
     descritpion:
-      "Jaká byla cesta otce biskupa Josefa k&nbsp;biskupství? Jaký dopad měl na jeho působení tehdejší režim? Na jaká období ze svého života nejraději vzpomíná a&nbsp;jaké možnosti a&nbsp;příležitosti mu přinesl zasvěcený život? Na to a&nbsp;mnohem více Vám otec biskup Josef odpoví při svém povídání. Spousta času určitě zbyde i&nbsp;na dotazy z&nbsp;řad účastníků.",
+      "Máš v&nbsp;hlavě melodii nebo text a&nbsp;nevíš, jak z&nbsp;toho udělat hotovou píseň? Přijď na&nbsp;praktickou přednášku, kde se dozvíš, jak skládat hudbu, pracovat s&nbsp;nahrávacími programy, zvukově upravovat své skladby a&nbsp;nakonec je zveřejnit",
     speaker: {
-      name: "Mons. Josef Kajnek",
-      jpgPath: "/assets/images/speakers/medveditlapka.jpg",
+      name: "Lucka Pekárková",
+      jpgPath: "/assets/images/speakers/luckapekarkova.jpg",
     },
     social: {
-      web: "https://cs.wikipedia.org/wiki/Josef_Kajnek",
-    },
-  },
-  {
-    title:
-      "LGBTQ+ a křesťanství? Nauka, problémy a otázky, výhledy do budoucna",
-    type: "person",
-    place: "BiGy",
-    descritpion:
-      "Vztah křesťanství k&nbsp;LGBTQ+ osobám a&nbsp;otázkám spojeným s&nbsp;touto tématikou bývá chápán jako kontroverzní téma. Podíváme se věcně na to, co nám o&nbsp;tomuto tématu říká Bible, křesťanská tradice a&nbsp;nauka, kde se skrývají problémy a&nbsp;jaký by mohl být vývoj církevní nauky v&nbsp;tomto tématu v&nbsp;budoucnosti. Program proběhne formou cca hodinové přednášky a&nbsp;následné diskuse.",
-    speaker: {
-      name: "Tomáš Sixta",
-      jpgPath: "/assets/images/speakers/sixta.jpg",
-    },
-    social: {
-      x: "https://twitter.com/SixtaTomas",
-    },
-  },
-  {
-    title:
-      "Postavili jsme pekárnu a&nbsp;školku ve Rwandě, co bude následovat?",
-    type: "person",
-    place: "BiGy",
-    descritpion:
-      "Nechte se vtáhnout mladým dobrodružným cestovatelem do zázračné Afriky, přímo do domů místních obyvatel. Poznáme jejich kulturu, zvyklosti a&nbsp;běžný život. Také nahlédneme pod pokličku projektům, které díky zapojení mladé rodiny přináší v&nbsp;afrických zemích pomoc těm nejpotřebnějším.",
-    speaker: {
-      name: "Vojtěch Trčka",
-      jpgPath: "/assets/images/speakers/trcka.jpg",
-    },
-    social: {
-      web: "https://www.trckovi.org/",
-      youtube: "https://www.youtube.com/@vojtatr",
-    },
-  },
-
-  {
-    title: "Cesta beze strachu",
-    type: "person",
-    place: "BiGy",
-    descritpion: "",
-    speaker: {
-      name: "Jiří Strach",
-      jpgPath: "/assets/images/speakers/strach.jpg",
-    },
-    social: {
-      web: "https://cs.wikipedia.org/wiki/Ji%C5%99%C3%AD_Strach",
-    },
-  },
-  {
-    title:
-      "Jak řídit svůj život a&nbsp;nenabourat (a&nbsp;co dělat, když to nevyjde)?",
-    type: "person",
-    place: "BiGy",
-    descritpion:
-      "Na nový byt nebo dům si většina lidí bere hypotéku. Je však rozumné brát si spotřební úvěr na lednici, auto nebo dovolenou? A co to má společné s&nbsp;(duchovním) životem? Chceš-li se dozvědět, jak lze žít s&nbsp;Bohem každodenní realitu, jak se s&nbsp;ním dělit o&nbsp;radost i&nbsp;smutek, úspěch i&nbsp;pád, a&nbsp;dělat to navíc zajímavým způsobem, přijď se podívat na workshop o&nbsp;spiritualitě. Naživo si budeš moci vyzkoušet také ignaciánský examen – modlitbu laskavé pozornosti. Už nyní se můžeš podívat na aplikaci na Google Play nebo AppStore.",
-    speaker: {
-      name: "Samuel Prívara",
-      jpgPath: "/assets/images/speakers/privara.jpg",
-    },
-    social: {
-      web: "https://www.farnostsalvator.cz/samuel-privara",
-    },
-  },
-  {
-    title: "Pořád spolu chodíme, i&nbsp;se dvěma dětmi!",
-    type: "person",
-    place: "BiGy",
-    descritpion:
-      "Vyžadovalo odvahu začít spolu chodit, bylo potřeba se rozhodnout, abychom se vzali, chtělo to trpělivost, než přišly děti, ale nikdy bychom neměnili. Rádi se podělíme o&nbsp;náš příběh a&nbsp;zodpovíme zvídavé otázky.",
-    speaker: {
-      name: "Kája a Kristýnka Maříkovi",
-      jpgPath: "/assets/images/speakers/marikovi.jpg",
-    },
-  },
-  {
-    title:
-      "Inkvizice, čarodějnice, kolonialismus: černé kapitoly církevních dějin a&nbsp;co s&nbsp;nimi?",
-    type: "person",
-    place: "BiGy",
-    descritpion:
-      "Každé dlouhodobě působící společenství či instituce musí zpracovat i&nbsp;ty části své minulosti, které se nepovedly, poučit se z&nbsp;nich, vyznat vinu. V&nbsp;případě křesťanství je to ještě důležitější vzhledem k vysokým nárokům, které na nás klade naše víra. V&nbsp;přednášce se zamyslíme nad tím, jak se stavět ke komplikovaným dějinách církve, jak se vyrovnat s&nbsp;tím, co dnes mnoho lidí od církve odrazuje a&nbsp;stěžuje identifikaci s&nbsp;ní.",
-    speaker: {
-      name: "Tomáš Petráček",
-      jpgPath: "/assets/images/speakers/ppetracek.jpg",
-    },
-    social: {
-      web: "https://cs.wikipedia.org/wiki/Tom%C3%A1%C5%A1_Petr%C3%A1%C4%8Dek",
-      x: "https://twitter.com/tompetracek",
-    },
-  },
-  {
-    title: "Přes překážky ke hvězdám – mít sny a&nbsp;odvahu",
-    type: "person",
-    place: "BiGy",
-    descritpion:
-      "Je život skutečně tou nejlepší školou? Jak se v&nbsp;socialismu pracovalo s&nbsp;dětmi době navzdory? A&nbsp;jak vést mladé k hodnotám a&nbsp;hledání sebe sama v&nbsp;digitálním věku? S&nbsp;pedagogem a&nbsp;spisovatelem Františkem Tichým můžete nejen sdílet jeho dobrodružný životní příběh, ale i&nbsp;se nechat povzbudit a&nbsp;inspirovat k&nbsp;vlastní cestě nejen při práci s&nbsp;mladými.",
-    speaker: {
-      name: "František Tichý",
-      jpgPath: "/assets/images/speakers/tichy.jpg",
-    },
-    social: {
-      web: "https://cs.wikipedia.org/wiki/Franti%C5%A1ek_Tich%C3%BD_(pedagog)",
-    },
-  },
-  {
-    title: "Fotograf – co všechno to obnáší?",
-    type: "person",
-    place: "BiGy",
-    descritpion:
-      "Focení, selekce, editace, publikace ... Řekneme si, čeho všeho se při focení vyvarovat nebo jak se nechovat a&nbsp;co nám může při focení pomoci.",
-    speaker: {
-      name: "Dominik Polanský a Pavel Langr",
-      jpgPath: "/assets/images/speakers/cav-langr.jpg",
-      jpgPath2: "/assets/images/speakers/cav-polansky.jpg",
-    },
-    social: {
-      web: "https://www.clovekavira.cz/",
-      fb: "https://www.facebook.com/clovekavira",
-      ig: "https://www.instagram.com/clovek_a_vira/",
-    },
-  },
-  {
-    title: "Jak se žije v&nbsp;semináři?",
-    type: "person",
-    place: "BiGy",
-    descritpion:
-      "Co je kněžský seminář a&nbsp;jak se v&nbsp;něm žije? Jaký jsou povinnosti a&nbsp;denní řád seminaristy? Není formace pro výchovu budoucích kněží zastaralá? Mnoho odpovědi na své otázky o&nbsp;semináři budete moci hledat spolu s&nbsp;bohoslovcem Jindřichem Barabášem.",
-    speaker: {
-      name: "Jindra Barabáš",
-      jpgPath: "/assets/images/speakers/barabas.jpg",
-    },
-    social: {
-      web: "https://seminar-praha.cz/",
-      ig: "https://www.instagram.com/arcspraha/",
-      fb: "https://www.facebook.com/ArcibiskupskySeminar",
-    },
-  },
-  {
-    title: "(K)rok pro Keňu a&nbsp;Namibii, léto pro Bulharsko",
-    type: "person",
-    place: "BiGy",
-    descritpion:
-      "První část povídání bude věnována dobrovolné službě v&nbsp;Keni a&nbsp;Namibii, kde Markéta mohla strávit dohromady rok svého života. Žila v&nbsp;salesiánské komunitě a&nbsp;učila v&nbsp;mateřské a&nbsp;základní škole, odpoledne se věnovala chlapcům z&nbsp;internátu a&nbsp;o&nbsp;prázdninách dětem v&nbsp;oratoři. Byl to malý/velký krok v&nbsp;životě, který proměnil její srdce i&nbsp;srdce jí svěřených dětí. Druhá část vyprávění přiblíží Anežčinu letní dobrovolnickou službu v&nbsp;Bulharsku.",
-    speaker: {
-      name: "Markéta Bartošová a Anežka Havránková",
-      jpgPath: "/assets/images/speakers/sadba1.jpg",
-      jpgPath2: "/assets/images/speakers/sadba2.jpg",
-    },
-    social: {
-      web: "https://www.sadba.org/",
-      ig: "https://www.instagram.com/sadba.salesiani/",
+      ig: "https://www.instagram.com/lucie.pekarkova",
     },
   },
   {
