@@ -274,7 +274,7 @@ export default function Header() {
               Partneři
             </li>
           </Link>
-          <Link
+          {/* <Link
             href="/pozvani-biskupa-jana"
             onClick={unlockScrolling}
             target="_self"
@@ -287,7 +287,7 @@ export default function Header() {
               />
               Pozvání biskupa Jana
             </li>
-          </Link>
+          </Link> */}
         </ul>
       </nav>
     </>
