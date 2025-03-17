@@ -17,9 +17,11 @@ export default async function Vikariaty() {
         <Container>
           <ContainerTitle>Vikariáty</ContainerTitle>
           <ContainerDescription>
-            Vikariát je skupina farností, které spolupracují na různých
-            aktivitách a&nbsp;projektech. Pro mládež je to příležitost poznat
-            nové lidi, zapojit se do dobrovolnictví, rozvíjet své duchovní
+            Vikariát je územní jednotka v&nbsp;diecézi seskupující jednotlivé 
+            farnosti, které spolupracují na různých aktivitách 
+            a&nbsp;projektech. Vytváří prostor pro setkávání a společné 
+            prožívání víry. Pro mládež je to příležitost poznat
+            nové lidi, zapojit se do dobrovolnictví, rozvíjet svůj duchovní
             život, bavit se a&nbsp;prožívat víru ve společenství. Vikariáty
             nabízejí různé akce, jako jsou setkání, duchovní obnovy, poutě,
             sportovní turnaje nebo festivaly.
