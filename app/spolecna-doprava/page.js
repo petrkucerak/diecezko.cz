@@ -24,7 +24,7 @@ export default async function GroupTransport() {
           <ContainerTitle>Společná doprava</ContainerTitle>
           <ContainerDescription>
             Některé vikariáty zajišťují nebo plánují společnou dopravu. Zde
-            naleznete přehled, který vás nasměruje na více informací.
+            naleznete přehled, který vás nasměruje na další informace.
           </ContainerDescription>
           <FaqLayout>
             {/* <FaqBox question={`Humpolec, Havlíčkův Brod, Chotěboř`} icon={``}>
