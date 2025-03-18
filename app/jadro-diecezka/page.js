@@ -53,7 +53,7 @@ export const ecko = [
   {
     name: "Klárka Petrová",
     description:
-      "Klárka je vedoucí DCM a&nbsp;stará se o&nbsp;všechny, kteří připravují Diecézko.",
+      "Klárka je vedoucí DCM. Stará se o&nbsp;všechny, kteří připravují Diecézko.",
     jpgPath: "/assets/images/jadro/petrova.jpg",
     webpPath: "/assets/images/jadro/petrova.webp",
     altText: "Profilová fotka Klárky Petrové",
@@ -62,7 +62,7 @@ export const ecko = [
   {
     name: "Klárka Kopecká",
     description:
-      "Manažerka Klárka komunikuje s&nbsp;hosty, domlouvá s&nbsp;nimi detaily jejich přednášek.",
+      "Manažerka Klárka komunikuje s&nbsp;hosty. Domlouvá s&nbsp;nimi detaily jejich přednášek.",
     jpgPath: "/assets/images/jadro/klarka.jpg",
     webpPath: "/assets/images/jadro/klarka.webp",
     altText: "Profilová fotka Klárky Kopecké",
@@ -71,7 +71,7 @@ export const ecko = [
   {
     name: "Verča Pavlišová",
     description:
-      "Verča pečuje o&nbsp;pohodlí našich žaludků a&nbsp;stará se o&nbsp;to, aby vše dobře vypadalo.",
+      "Verča pečuje o&nbsp;pohodlí našich žaludků. Dále se stará o&nbsp;to, aby vše dobře vypadalo.",
     jpgPath: "/assets/images/jadro/pavlisova.jpg",
     webpPath: "/assets/images/jadro/pavlisova.webp",
     altText: "Profilová fotka Verči Pavlišové",
@@ -80,7 +80,7 @@ export const ecko = [
   {
     name: "Joska Pazderová",
     description:
-      "Vrchní velitelka úklidové čety a&nbsp;kromě každého odpadku vyhozeného do správného koše ocení i ochotnou pomocnou ruku. Také se stará o&nbsp;to, aby diecézko vypadalo dobře na&nbsp;sociálních sítích.",
+      "Joska je vrchní velitelka úklidové čety. Kromě každého odpadku vyhozeného do správného koše ocení i&nbsp;ochotnou pomocnou ruku. Také se stará o&nbsp;to, aby Diecézko vypadalo dobře na&nbsp;sociálních sítích.",
     jpgPath: "/assets/images/jadro/joska.jpg",
     webpPath: "/assets/images/jadro/joska.webp",
     altText: "Profilová fotka Josky Pazderové",
@@ -98,7 +98,7 @@ export const ecko = [
   {
     name: "prof. Ondra Mařík",
     description:
-      "Ondra je spolu s&nbsp;Klárkou generálem BiGy. Stará se o&nbsp;zázemí nejen pro hosty ale i&nbsp;všechny, kteří budou na BiGy.",
+      "Ondra je spolu s&nbsp;Klárkou K. generálem BiGy. Stará se o&nbsp;zázemí nejen pro hosty, ale i&nbsp;pro všechny, kteří budou na BiGy.",
     jpgPath: "/assets/images/jadro/marik.jpg",
     webpPath: "/assets/images/jadro/marik.webp",
     altText: "Profilová fotka Ondry Maříka",
@@ -144,7 +144,7 @@ export const ecko = [
   {
     name: "Vojta Vlach",
     description:
-      "Vojta je ostřílený kapelník Vesmírné kapely, která doprovodí dopolední program ve Filharmonii a&nbsp;pomáhá s&nbsp;webem.",
+      "Vojta je ostřílený kapelník Vesmírné kapely, která doprovodí dopolední program ve Filharmonii. Dále pomáhá s&nbsp;webem diecézko.cz.",
     altText: "Profilová fotka Vojta Vlach",
     jpgPath: "/assets/images/jadro/pan-vlach.jpg",
     webpPath: "/assets/images/jadro/pan-vlach.webp",
