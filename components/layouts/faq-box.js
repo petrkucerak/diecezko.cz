@@ -1,5 +1,6 @@
 import {
   IconBusStop,
+  IconTrain,
   IconCalendarTime,
   IconCaretDown,
   IconCaretUp,
@@ -47,6 +48,8 @@ export default function FaqBox({ className, id, children, question, icon }) {
             <IconChefHat className="inline mr-2" stroke={1.2} />
           ) : icon === "bus" ? (
             <IconBusStop className="inline mr-2" stroke={1.2} />
+          ) : icon === "train" ? (
+            <IconTrain className="inline mr-2" stroke={1.2} />
           ) : icon === "medical" ? (
             <IconMedicalCross className="inline mr-2" stroke={1.2} />
           ) : icon === "old" ? (
