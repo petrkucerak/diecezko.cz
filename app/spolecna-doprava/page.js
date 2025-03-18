@@ -27,14 +27,14 @@ export default async function GroupTransport() {
             naleznete přehled, který vás nasměruje na více informací.
           </ContainerDescription>
           <FaqLayout>
-            <FaqBox question={`Humpolec, Havlíčkův Brod, Chotěboř`} icon={``}>
+            {/* <FaqBox question={`Humpolec, Havlíčkův Brod, Chotěboř`} icon={``}>
               <ContainerImage
                 jpgPath="/assets/images/doprava/doprava-humpolec.jpg"
                 webpPath="/assets/images/doprava/doprava-humpolec.webp"
                 altText="Plakátek s informacemi o společné dopravě."
                 className="w-full my-4"
               />
-            </FaqBox>
+            </FaqBox> */}
             <FaqBox question={`Pardubice`} icon={``}>
               <ContainerImage
                 jpgPath="/assets/images/doprava/doprava-pce.jpg"
@@ -43,22 +43,22 @@ export default async function GroupTransport() {
                 className="w-full my-4"
               />
             </FaqBox>
-            <FaqBox question={`Rychnov nad Kněžnou`} icon={``}>
+            {/* <FaqBox question={`Rychnov nad Kněžnou`} icon={``}>
               <ContainerImage
                 jpgPath="/assets/images/doprava/doprava-rk.jpg"
                 webpPath="/assets/images/doprava/doprava-rk.webp"
                 altText="Plakátek s informacemi o společné dopravě."
                 className="w-full my-4"
               />
-            </FaqBox>
-            <FaqBox question={`Hlinsko, Raná, Skuteč, Luže`} icon={``}>
+            </FaqBox> */}
+            {/* <FaqBox question={`Hlinsko, Raná, Skuteč, Luže`} icon={``}>
               <ContainerImage
                 jpgPath="/assets/images/doprava/doprava-chrudim.jpg"
                 webpPath="/assets/images/doprava/doprava-chrudim.webp"
                 altText="Plakátek s informacemi o společné dopravě."
                 className="w-full my-4"
               />
-            </FaqBox>
+            </FaqBox> */}
           </FaqLayout>
         </Container>
       </PageMain>
