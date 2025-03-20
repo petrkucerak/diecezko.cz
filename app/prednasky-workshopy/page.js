@@ -273,18 +273,24 @@ const workshops = [
       jpgPath: "/assets/images/speakers/rihakova.jpg",
     },
   },
-  // {
-  //   title: "Tvořivé dílny",
-  //   type: "workshop",
-  //   id: "workshop-start",
-  //   // place: "BiGy",
-  //   descritpion:
-  //     "",
-  //   speaker: {
-  //     name: "Zdenička Daňková",
-  //     jpgPath: "/assets/images/speakers/dankova.jpg",
-  //   },
-  // },
+  {
+    title: "Deskovky",
+    type: "workshop",
+    id: "workshop-start",
+    // place: "BiGy",
+    about: `Jsme křesťanský akademický klub Salaš – společenství mladých vysokoškolských studentů, které je otevřené pro všechny studenty. Každou středu v&nbsp;akademickém roce slavíme mši svatou, po které následuje různorodý program.`,
+    descritpion:
+      "Přijďte si k&nbsp;nám v&nbsp;tomto nabitém dni odpočinout a&nbsp;zahrát si nějakou z&nbsp;mnoha deskových her, které nabízíme. Nemusíte se bát, všechny hry vysvětlíme a&nbsp;naučíme. Je to ideální příležitost seznámit se s&nbsp;novými lidmi, nebo strávit čas se svojí partou. Zároveň se můžete dozvědět něco více o&nbsp;nás.",
+    speaker: {
+      name: "Salaš",
+      jpgPath: "/assets/images/speakers/salas.jpg",
+    },
+    social: {
+      fb: "https://www.facebook.com/salas.hradec",
+      ig: "https://www.instagram.com/salas_kak",
+      web: "/kak-salas",
+    },
+  },
   // {
   //   title: "Sportovní workshop",
   //   type: "sport",
