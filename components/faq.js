@@ -2,6 +2,8 @@ import FaqBox from "./layouts/faq-box";
 import FaqLayout from "./layouts/faq-layout";
 import Link from "next/link";
 import ContainerH3 from "./layouts/container-h3";
+import ContainerOl from "./layouts/container-ol";
+import ContainerLi from "./layouts/container-li";
 
 export default function FAQ() {
   return (
@@ -22,6 +24,80 @@ export default function FAQ() {
       <FaqBox question={`Kolik Diecézko stojí?`} icon={`money`}>
         Doporučený příspěvek je <strong>200,-Kč na osobu</strong>. Je možné ho
         zaplatit v hotovosti na recepci ve Filharmonii při dopoledním programu.
+      </FaqBox>
+      <FaqBox question={`Desatero pravidel Diecézka`} icon={`gavel`}>
+        <ContainerOl>
+          <ContainerLi className={`my-4`}>
+            <strong>Dodržuj pokyny organizátorů</strong>
+            <br />
+            Respektuj pravidla a&nbsp;program setkání. Nevstupuj do prostor, do
+            kterých není povolen vstup.
+          </ContainerLi>
+          <ContainerLi className={`my-4`}>
+            <strong>Chovej se ohleduplně</strong>
+            <br />
+            Ber ohled na ostatní účastníky a&nbsp;okolní prostředí. Buď
+            trpělivý/á.
+          </ContainerLi>
+          <ContainerLi className={`my-4`}>
+            <strong>Dbej na své zdraví</strong>
+            <br />
+            Pij dostatek vody, jez pravidelně a&nbsp;obleč se dle počasí.
+            Dodržuj pravidla silničního provozu. Nezapomeň si vzít své léky.
+          </ContainerLi>
+          <ContainerLi className={`my-4`}>
+            <strong>Měj u&nbsp;sebe kontakt na odpovědnou osobu</strong>
+            <br />
+            V&nbsp;případě problému si neváhej říct o&nbsp;pomoc.
+          </ContainerLi>
+          <ContainerLi className={`my-4`}>
+            <strong>
+              V&nbsp;případě problému si neváhej říct o&nbsp;pomoc
+            </strong>
+            <br />
+            Organizátor, zdravotník či odpovědná osoba jsou připraveni pomoci.
+            Neváhej je oslovit. V&nbsp;případě neakutních potíží volej
+            zdravotníka na telefonním čísle uvedeném na webu{" "}
+            <Link
+              href={"https://diecezko.cz"}
+              target="_blank"
+              className="underline"
+            >
+              diecezko.cz
+            </Link>
+          </ContainerLi>
+          <ContainerLi className={`my-4`}>
+            <strong>
+              Měj u&nbsp;sebe doklady a&nbsp;kartičku zdravotní pojišťovny
+            </strong>
+            <br />
+            Dále si případ nouze ulož číslo 155 na Zdravotnickou záchrannou
+            službu. Též měj staženou a&nbsp;aktivovanou aplikaci Záchranka.
+          </ContainerLi>
+          <ContainerLi className={`my-4`}>
+            <strong>Drž se skupiny</strong>
+            <br />
+            Neodcházej sám/sama bez domluvy s&nbsp;vedoucím tvé skupiny.
+          </ContainerLi>
+          <ContainerLi className={`my-4`}>
+            <strong>Omezuj používání mobilu</strong>
+            <br />
+            Buď přítomný/á a&nbsp;vnímej atmosféru setkání. Neváhej aktivně
+            oslovit účastníky okolo sebe.
+          </ContainerLi>
+          <ContainerLi className={`my-4`}>
+            <strong>Žádný alkohol, cigarety ani jiné omamné látky</strong>
+            <br />
+            Takové věci by tě zbytečně rušily od duchovního prožitku
+            a&nbsp;společenství.
+          </ContainerLi>
+          <ContainerLi className={`my-4`}>
+            <strong>Dej prostor Duchu Svatému a&nbsp;užívej setkání!</strong>
+            <br />
+            Buď pozitivní a&nbsp;otevřený/á novým impulzům setkání. Načerpej
+            povzbuzení a&nbsp;posilu do dalších dní.
+          </ContainerLi>
+        </ContainerOl>
       </FaqBox>
       <FaqBox question={`Co si sbalit s sebou?`} icon={`luggage`}>
         Sváču, láhev s&nbsp;pitím, doporučený příspěvek (200,-Kč), peníze na
@@ -90,7 +166,7 @@ export default function FAQ() {
           přihlášky
         </Link>
         .
-         {/* Pokud by vás odpoledne přepadla mlsná, je možné zajít i&nbsp;do naší{" "}
+        {/* Pokud by vás odpoledne přepadla mlsná, je možné zajít i&nbsp;do naší{" "}
         <Link href={`/mapa?x=50.2062919&y=15.8337133`} className="underline">
           kavárny
         </Link>
