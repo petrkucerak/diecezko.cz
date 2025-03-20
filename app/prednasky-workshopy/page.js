@@ -109,6 +109,12 @@ export default async function PrednaskyWorhsopy() {
                         </Link>
                       </span>
                     ) : null}
+                    {w.about !== undefined ? (
+                      <p
+                        className="text-lg w-full mt-2 italic"
+                        dangerouslySetInnerHTML={{ __html: w.about }}
+                      />
+                    ) : null}
                     <p
                       className="text-lg w-full mt-2"
                       dangerouslySetInnerHTML={{ __html: w.descritpion }}
@@ -217,8 +223,9 @@ const workshops = [
     title: "Křesťané v&nbsp;dějinách z perspektivy křesťana nekatolíka",
     type: "person",
     // place: "BiGy",
+    about: `Vyučuji historii na Univerzitě Hradec Králové, zaměřuji se na dějiny středověku, jsem členem Církve bratrské v&nbsp;Kutné Hoře.`,
     descritpion:
-      "<em>Vyučuji historii na Univerzitě Hradec Králové, zaměřuji se na dějiny středověku, jsem členem Církve bratrské v&nbsp;Kutné Hoře.</em><br/>Velmi si vážím možnosti se v&nbsp;tomto formátu setkat s&nbsp;katolickou mládeží a&nbsp;budu velmi rád za živou diskusi. V&nbsp;přednášce se pokusím otevřít některé otázky, které mi přineslo letité studium dějin a&nbsp;přemýšlení nad Církví a&nbsp;církvemi a&nbsp;výzvami současné církve a&nbsp;světa.",
+      "Velmi si vážím možnosti se v&nbsp;tomto formátu setkat s&nbsp;katolickou mládeží a&nbsp;budu velmi rád za živou diskusi. V&nbsp;přednášce se pokusím otevřít některé otázky, které mi přineslo letité studium dějin a&nbsp;přemýšlení nad Církví a&nbsp;církvemi a&nbsp;výzvami současné církve a&nbsp;světa.",
     speaker: {
       name: "doc. PhDr. Zdeněk Beran, Ph.D.",
       jpgPath: "/assets/images/speakers/beran.jpg",
@@ -231,7 +238,8 @@ const workshops = [
     title: "Povolání život (církev a&nbsp;homosexualita)",
     type: "person",
     // place: "BiGy",
-    descritpion: `<em>P.&nbsp;Zdeněk Jančařík, salesián, kněz brněnské diecéze, v&nbsp;níž působí také jako kaplan pro LGBT+ komunitu.</em><br/>Zmiňuje se Bible o&nbsp;homosexualitě? Byl člověk stvořen jako muž a&nbsp;žena kvůli manželství? Od kdy se v&nbsp;Evropě začíná skutečně mluvit o&nbsp;"homosexualitě"? Jak se k&nbsp;ní staví římskokatolická církev a&nbsp;proč "s&nbsp;ní má problém"? Na tyto a&nbsp;jiné otázky se pokusíme odpovědět.`,
+    about: `P.&nbsp;Zdeněk Jančařík, salesián, kněz brněnské diecéze, v&nbsp;níž působí také jako kaplan pro LGBT+ komunitu.`,
+    descritpion: `Zmiňuje se Bible o&nbsp;homosexualitě? Byl člověk stvořen jako muž a&nbsp;žena kvůli manželství? Od kdy se v&nbsp;Evropě začíná skutečně mluvit o&nbsp;"homosexualitě"? Jak se k&nbsp;ní staví římskokatolická církev a&nbsp;proč "s&nbsp;ní má problém"? Na tyto a&nbsp;jiné otázky se pokusíme odpovědět.`,
     speaker: {
       name: "P. Zdeněk Jančařík (SDB)",
       jpgPath: "/assets/images/speakers/jancarik.jpg",
@@ -245,10 +253,22 @@ const workshops = [
       "Jak přemýšlíme, když vás vychováváme (aneb myšlenkové pochody rodičů)",
     type: "person",
     // place: "BiGy",
+    about: `Zdravotní sestra a&nbsp;rodinný terapeut, společně vychováváme dva syny (23, 19 let) a&nbsp;dvě dcery (20, 14 let).`,
     descritpion:
-      "<em>Zdravotní sestra a&nbsprodinný terapeut, společně vychováváme dva syny (23, 19 let) a&nbspdvě dcery (20, 14 let).</em><br/>Jak rodiče přemýšlí, o&nbspčem sní, čeho se bojí? Proč rodiče dělají věci, které vás tolik štvou? A&nbspšlo by to jinak?",
+      "Jak rodiče přemýšlí, o&nbsp;čem sní, čeho se bojí? Proč rodiče dělají věci, které vás tolik štvou? A&nbsp;šlo by to jinak?",
     speaker: {
       name: "Markéta a Milan Jiroutovi",
+      jpgPath: "/assets/images/speakers/jiroutovi.jpg",
+    },
+  },
+  {
+    title: "Začni s PROČ?",
+    type: "person",
+    // place: "BiGy",
+    about: `Ahoj, jmenuji se Klára a&nbsp;letos mám výročí 10ti let práce nejen s&nbsp;mladými lidmi, napříč skupinami či týmy na různých úrovních. Pokud Tě zajímá sdílení zkušeností, tak Tě moc ráda přivítám na společném setkání.`,
+    descritpion: `Chceš založit skupinu, vést tým nebo prostě jen zorganizovat projekt, který bude dávat smysl? Přednáška "Začni s&nbsp;PROČ?" tě provede klíčovými kroky, které ti pomohou s&nbsp;nastavením vize i&nbsp;cílů. Dozvíš se, proč je důležité vědět, proč to všechno vlastně děláš, jak určit hlavní náplň, jak komunikovat s&nbsp;druhými a&nbsp;rozdělovat role a&nbsp;nastavovat pravidla. Zjistíš, co se od tebe jako od leadera očekává a&nbsp;jak vytvořit tým, který bude nejen efektivní, ale taky tě bude bavit! Přijď zjistit, jak můžeš udělat první krok k&nbsp;úspěšnému vedení!`,
+    speaker: {
+      name: "Klára Řiháková",
       jpgPath: "/assets/images/speakers/jiroutovi.jpg",
     },
   },
