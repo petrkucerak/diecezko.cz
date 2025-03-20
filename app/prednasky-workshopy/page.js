@@ -109,6 +109,12 @@ export default async function PrednaskyWorhsopy() {
                         </Link>
                       </span>
                     ) : null}
+                    {w.about !== undefined ? (
+                      <p
+                        className="text-lg w-full mt-2 italic"
+                        dangerouslySetInnerHTML={{ __html: w.about }}
+                      />
+                    ) : null}
                     <p
                       className="text-lg w-full mt-2"
                       dangerouslySetInnerHTML={{ __html: w.descritpion }}
@@ -203,6 +209,7 @@ const workshops = [
     type: "person",
     id: "prednaska-start",
     // place: "BiGy",
+    about: `Studuju konzervatoř Jaroslava Ježka v&nbsp;Praze. Právě obor Skladba.😌 Jinak mam vystudované dva cykly ZUŠ na klavír a&nbsp;jeden na violoncello. Hudba je prostě můj život 😊`,
     descritpion:
       "Máš v&nbsp;hlavě melodii nebo text a&nbsp;nevíš, jak z&nbsp;toho udělat hotovou píseň? Přijď na&nbsp;praktickou přednášku, kde se dozvíš, jak skládat hudbu, pracovat s&nbsp;nahrávacími programy, zvukově upravovat své skladby a&nbsp;nakonec je zveřejnit",
     speaker: {
@@ -217,21 +224,23 @@ const workshops = [
     title: "Křesťané v&nbsp;dějinách z perspektivy křesťana nekatolíka",
     type: "person",
     // place: "BiGy",
+    about: `Vyučuji historii na Univerzitě Hradec Králové, zaměřuji se na dějiny středověku, jsem členem Církve bratrské v&nbsp;Kutné Hoře.`,
     descritpion:
-      "<em>Vyučuji historii na Univerzitě Hradec Králové, zaměřuji se na dějiny středověku, jsem členem Církve bratrské v&nbsp;Kutné Hoře.</em><br/>Velmi si vážím možnosti se v&nbsp;tomto formátu setkat s&nbsp;katolickou mládeží a&nbsp;budu velmi rád za živou diskusi. V&nbsp;přednášce se pokusím otevřít některé otázky, které mi přineslo letité studium dějin a&nbsp;přemýšlení nad Církví a&nbsp;církvemi a&nbsp;výzvami současné církve a&nbsp;světa.",
+      "Velmi si vážím možnosti se v&nbsp;tomto formátu setkat s&nbsp;katolickou mládeží a&nbsp;budu velmi rád za živou diskusi. V&nbsp;přednášce se pokusím otevřít některé otázky, které mi přineslo letité studium dějin a&nbsp;přemýšlení nad Církví a&nbsp;církvemi a&nbsp;výzvami současné církve a&nbsp;světa.",
     speaker: {
       name: "doc. PhDr. Zdeněk Beran, Ph.D.",
       jpgPath: "/assets/images/speakers/beran.jpg",
     },
     social: {
-      web: "https://www.uhk.cz/cs/osoba/212/zdenek-beran"
-    }
+      web: "https://www.uhk.cz/cs/osoba/212/zdenek-beran",
+    },
   },
   {
     title: "Povolání život (církev a&nbsp;homosexualita)",
     type: "person",
     // place: "BiGy",
-    descritpion: `<em>P.&nbsp;Zdeněk Jančařík, salesián, kněz brněnské diecéze, v&nbsp;níž působí také jako kaplan pro LGBT+ komunitu.</em><br/>Zmiňuje se Bible o&nbsp;homosexualitě? Byl člověk stvořen jako muž a&nbsp;žena kvůli manželství? Od kdy se v&nbsp;Evropě začíná skutečně mluvit o&nbsp;"homosexualitě"? Jak se k&nbsp;ní staví římskokatolická církev a&nbsp;proč "s&nbsp;ní má problém"? Na tyto a&nbsp;jiné otázky se pokusíme odpovědět.`,
+    about: `P.&nbsp;Zdeněk Jančařík, salesián, kněz brněnské diecéze, v&nbsp;níž působí také jako kaplan pro LGBT+ komunitu.`,
+    descritpion: `Zmiňuje se Bible o&nbsp;homosexualitě? Byl člověk stvořen jako muž a&nbsp;žena kvůli manželství? Od kdy se v&nbsp;Evropě začíná skutečně mluvit o&nbsp;"homosexualitě"? Jak se k&nbsp;ní staví římskokatolická církev a&nbsp;proč "s&nbsp;ní má problém"? Na tyto a&nbsp;jiné otázky se pokusíme odpovědět.`,
     speaker: {
       name: "P. Zdeněk Jančařík (SDB)",
       jpgPath: "/assets/images/speakers/jancarik.jpg",
@@ -240,18 +249,48 @@ const workshops = [
       web: "https://www.biskupstvi.cz/cs/pastorace-lgbt",
     },
   },
-  // {
-  //   title: "Tvořivé dílny",
-  //   type: "workshop",
-  //   id: "workshop-start",
-  //   // place: "BiGy",
-  //   descritpion:
-  //     "",
-  //   speaker: {
-  //     name: "Zdenička Daňková",
-  //     jpgPath: "/assets/images/speakers/dankova.jpg",
-  //   },
-  // },
+  {
+    title:
+      "Jak přemýšlíme, když vás vychováváme (aneb myšlenkové pochody rodičů)",
+    type: "person",
+    // place: "BiGy",
+    about: `Zdravotní sestra a&nbsp;rodinný terapeut, společně vychováváme dva syny (23, 19 let) a&nbsp;dvě dcery (20, 14 let).`,
+    descritpion:
+      "Jak rodiče přemýšlí, o&nbsp;čem sní, čeho se bojí? Proč rodiče dělají věci, které vás tolik štvou? A&nbsp;šlo by to jinak?",
+    speaker: {
+      name: "Markéta a Milan Jiroutovi",
+      jpgPath: "/assets/images/speakers/jiroutovi.jpg",
+    },
+  },
+  {
+    title: "Začni s PROČ?",
+    type: "person",
+    // place: "BiGy",
+    about: `Ahoj, jmenuji se Klára a&nbsp;letos mám výročí 10ti let práce nejen s&nbsp;mladými lidmi, napříč skupinami či týmy na různých úrovních. Pokud Tě zajímá sdílení zkušeností, tak Tě moc ráda přivítám na společném setkání.`,
+    descritpion: `Chceš založit skupinu, vést tým nebo prostě jen zorganizovat projekt, který bude dávat smysl? Přednáška "Začni s&nbsp;PROČ?" tě provede klíčovými kroky, které ti pomohou s&nbsp;nastavením vize i&nbsp;cílů. Dozvíš se, proč je důležité vědět, proč to všechno vlastně děláš, jak určit hlavní náplň, jak komunikovat s&nbsp;druhými a&nbsp;rozdělovat role a&nbsp;nastavovat pravidla. Zjistíš, co se od tebe jako od leadera očekává a&nbsp;jak vytvořit tým, který bude nejen efektivní, ale taky tě bude bavit! Přijď zjistit, jak můžeš udělat první krok k&nbsp;úspěšnému vedení!`,
+    speaker: {
+      name: "Klára Řiháková",
+      jpgPath: "/assets/images/speakers/rihakova.jpg",
+    },
+  },
+  {
+    title: "Deskovky",
+    type: "workshop",
+    id: "workshop-start",
+    // place: "BiGy",
+    about: `Jsme křesťanský akademický klub Salaš – společenství mladých vysokoškolských studentů, které je otevřené pro všechny studenty. Každou středu v&nbsp;akademickém roce slavíme mši svatou, po které následuje různorodý program.`,
+    descritpion:
+      "Přijďte si k&nbsp;nám v&nbsp;tomto nabitém dni odpočinout a&nbsp;zahrát si nějakou z&nbsp;mnoha deskových her, které nabízíme. Nemusíte se bát, všechny hry vysvětlíme a&nbsp;naučíme. Je to ideální příležitost seznámit se s&nbsp;novými lidmi, nebo strávit čas se svojí partou. Zároveň se můžete dozvědět něco více o&nbsp;nás.",
+    speaker: {
+      name: "Salaš",
+      jpgPath: "/assets/images/speakers/salas.jpg",
+    },
+    social: {
+      fb: "https://www.facebook.com/salas.hradec",
+      ig: "https://www.instagram.com/salas_kak",
+      web: "/kak-salas",
+    },
+  },
   // {
   //   title: "Sportovní workshop",
   //   type: "sport",
