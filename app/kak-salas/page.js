@@ -28,12 +28,12 @@ export default async function DCZM() {
               Křesťanský akademický klub Salaš
             </strong>{" "}
             je společenství nejen věřících vysokoškolských studentů
-            z&nbsp;Hradce Králové. Salaš je členem VKH, tedy Vysokoškolského katolického hnutí, a&nbsp;úzce
-            spolupracujeme s&nbsp;Akademickou duchovní službou při
-            Královehradecké diecézi. Rádi mezi sebou uvítáme všechny, které
-            zaujme náš program nebo si jen chtějí popovídat. Pořádáme pravidelné
-            týdenní aktivity, na které můžete zajít a&nbsp;seznámit se
-            s&nbsp;ostatními studenty.
+            z&nbsp;Hradce Králové. Salaš je členem VKH, tedy Vysokoškolského
+            katolického hnutí, a&nbsp;úzce spolupracujeme s&nbsp;Akademickou
+            duchovní službou při Královehradecké diecézi. Rádi mezi sebou
+            uvítáme všechny, které zaujme náš program nebo si jen chtějí
+            popovídat. Pořádáme pravidelné týdenní aktivity, na které můžete
+            zajít a&nbsp;seznámit se s&nbsp;ostatními studenty.
           </ContainerDescription>
           <ContainerImage
             jpgPath="/assets/images/spolecenstvi/salas-cover.jpg"
@@ -44,11 +44,7 @@ export default async function DCZM() {
           <ContainerH2>Pravidelné aktivity</ContainerH2>
           <ContainerUl>
             <ContainerLi>Po 20.15 Modlitba na Kotli</ContainerLi>
-            <ContainerLi>Út 19.15 Spolčo</ContainerLi>
-            <ContainerLi>
-              St 19.00 Mše svaté a&nbsp;program po nich
-            </ContainerLi>
-            <ContainerLi>Čt 18.00 SportOvce</ContainerLi>
+            <ContainerLi>St 19.00 Mše svaté a&nbsp;program po nich</ContainerLi>
           </ContainerUl>
           <ContainerH2>Program po mši svaté</ContainerH2>
           <ContainerParagraph>
@@ -65,21 +61,29 @@ export default async function DCZM() {
           <ContainerH2>Sheeep Ples</ContainerH2>
           <ContainerParagraph>
             Největší akcí, na kterou se všichni už teď těšíme, je SheepPles. Ten
-            se koná vždy v&nbsp;pátek po Velikonocích na Univerzitě Hradec
-            Králové. Příští ples se uskuteční 5.&nbsp;4.&nbsp;2024, neváhejte si
-            ho přidat do kalendáře.
+            letošní již proběhl a&nbsp;fotky si můžete prohlédnout na našem{" "}
+            <Link
+              href={`https://www.facebook.com/salas.hradec`}
+              target="_blank"
+              rel="external"
+              title="Facebook"
+              className="underline"
+            >
+              facebooku
+            </Link>
+            .
           </ContainerParagraph>
-          <ContainerImage
+          {/* <ContainerImage
             jpgPath="/assets/images/spolecenstvi/salas-ples.jpg"
             webpPath="/assets/images/spolecenstvi/salas-ples.webp"
             altText="Sheep ples"
             className="w-full my-2"
-          />
+          /> */}
           <ContainerH2>Deskovky</ContainerH2>
           <ContainerParagraph>
             Pokud Tě baví deskové hry, určitě přijď na deskové hry na FIMku
-            každé poslední úterý v&nbsp;měsíci. Termíny deskovek jsou: 31.10.,
-            28.11., 16.12. a&nbsp;30.1.
+            každé poslední úterý v&nbsp;měsíci. Termíny deskovek jsou: 25.3.,
+            29.4., 27.5. a&nbsp;24.6.
           </ContainerParagraph>
           <ContainerImage
             jpgPath="/assets/images/spolecenstvi/salas-deskovky.jpg"
