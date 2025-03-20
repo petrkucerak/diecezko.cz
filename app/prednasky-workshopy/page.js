@@ -209,6 +209,7 @@ const workshops = [
     type: "person",
     id: "prednaska-start",
     // place: "BiGy",
+    about: `Studuju konzervatoř Jaroslava Ježka v&nbsp;Praze. Právě obor Skladba.😌 Jinak mam vystudované dva cykly ZUŠ na klavír a&nbsp;jeden na violoncello. Hudba je prostě můj život 😊`,
     descritpion:
       "Máš v&nbsp;hlavě melodii nebo text a&nbsp;nevíš, jak z&nbsp;toho udělat hotovou píseň? Přijď na&nbsp;praktickou přednášku, kde se dozvíš, jak skládat hudbu, pracovat s&nbsp;nahrávacími programy, zvukově upravovat své skladby a&nbsp;nakonec je zveřejnit",
     speaker: {
@@ -269,7 +270,7 @@ const workshops = [
     descritpion: `Chceš založit skupinu, vést tým nebo prostě jen zorganizovat projekt, který bude dávat smysl? Přednáška "Začni s&nbsp;PROČ?" tě provede klíčovými kroky, které ti pomohou s&nbsp;nastavením vize i&nbsp;cílů. Dozvíš se, proč je důležité vědět, proč to všechno vlastně děláš, jak určit hlavní náplň, jak komunikovat s&nbsp;druhými a&nbsp;rozdělovat role a&nbsp;nastavovat pravidla. Zjistíš, co se od tebe jako od leadera očekává a&nbsp;jak vytvořit tým, který bude nejen efektivní, ale taky tě bude bavit! Přijď zjistit, jak můžeš udělat první krok k&nbsp;úspěšnému vedení!`,
     speaker: {
       name: "Klára Řiháková",
-      jpgPath: "/assets/images/speakers/jiroutovi.jpg",
+      jpgPath: "/assets/images/speakers/rihakova.jpg",
     },
   },
   // {
