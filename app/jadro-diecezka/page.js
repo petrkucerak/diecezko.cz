@@ -151,14 +151,6 @@ export const ecko = [
     className: "",
   },
   {
-    name: "Kuba Kučera",
-    description: "Kuba má na starosti technickou stránku režie.",
-    altText: "Profilová fotka Kuby Kučery",
-    jpgPath: "/assets/images/jadro/bro.jpg",
-    webpPath: "/assets/images/jadro/bro.webp",
-    className: "",
-  },
-  {
     name: "Petr Kučera",
     description:
       "Petr se stará o&nbsp;web diecézko.cz a&nbsp;pomáhá s&nbsp;technickým zabezpečením celé akce.",
