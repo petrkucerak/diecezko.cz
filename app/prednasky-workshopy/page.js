@@ -224,8 +224,8 @@ const workshops = [
       jpgPath: "/assets/images/speakers/beran.jpg",
     },
     social: {
-      web: "https://www.uhk.cz/cs/osoba/212/zdenek-beran"
-    }
+      web: "https://www.uhk.cz/cs/osoba/212/zdenek-beran",
+    },
   },
   {
     title: "Povolání život (církev a&nbsp;homosexualita)",
@@ -238,6 +238,18 @@ const workshops = [
     },
     social: {
       web: "https://www.biskupstvi.cz/cs/pastorace-lgbt",
+    },
+  },
+  {
+    title:
+      "Jak přemýšlíme, když vás vychováváme (aneb myšlenkové pochody rodičů)",
+    type: "person",
+    // place: "BiGy",
+    descritpion:
+      "<em>Zdravotní sestra a&nbsprodinný terapeut, společně vychováváme dva syny (23, 19 let) a&nbspdvě dcery (20, 14 let).</em><br/>Jak rodiče přemýšlí, o&nbspčem sní, čeho se bojí? Proč rodiče dělají věci, které vás tolik štvou? A&nbspšlo by to jinak?",
+    speaker: {
+      name: "Markéta a Milan Jiroutovi",
+      jpgPath: "/assets/images/speakers/jiroutovi.jpg",
     },
   },
   // {
