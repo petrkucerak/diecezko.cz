@@ -96,7 +96,7 @@ export default function FAQ() {
         </Link>
         . */}
       </FaqBox>
-      {/* <FaqBox question={`Je organizována společná doprava?`} icon={`bus`}>
+      <FaqBox question={`Je organizována společná doprava?`} icon={`train`}>
         Některé vikariáty společnou dopravu organizují. Pro jasný přehled jsme
         pro Vás připravili{" "}
         <Link
@@ -108,7 +108,7 @@ export default function FAQ() {
         </Link>
         , který poradí, kdy a&nbsp;v&nbsp;kolik je sraz a&nbsp;jestli je nutné
         se někam hlásit.
-      </FaqBox> */}
+      </FaqBox>
       <FaqBox question={`Jak se v Hradci dopravovat?`} icon={`bus`}>
         <ContainerH3>Stručně</ContainerH3>
         Hradec Králové je malej, <strong>choďte pěšky</strong>!
