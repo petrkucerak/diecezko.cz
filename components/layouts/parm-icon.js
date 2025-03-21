@@ -4,6 +4,7 @@ import {
   IconChefHat,
   IconCoffee,
   IconCross,
+  IconGavel,
   IconGlass,
   IconHeartBroken,
   IconMap,
@@ -124,6 +125,14 @@ export default function ParmIcon({ className, iconName, size }) {
   else if (iconName === "cross")
     return (
       <IconCross
+        className={`inline ${className} mr-1`}
+        stroke={1.5}
+        size={size}
+      />
+    );
+  else if (iconName === "gavel")
+    return (
+      <IconGavel
         className={`inline ${className} mr-1`}
         stroke={1.5}
         size={size}
