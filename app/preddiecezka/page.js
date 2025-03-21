@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import Header from "../../components/header";
 import Footer from "../../components/footer";
 import Container from "../../components/layouts/container";
@@ -21,10 +21,9 @@ export default async function GroupTransport() {
       <Header />
       <PageMain>
         <Container>
-          <ContainerTitle>Společná doprava</ContainerTitle>
+          <ContainerTitle>PředDiecézka</ContainerTitle>
           <ContainerDescription>
-            Některé vikariáty zajišťují nebo plánují společnou dopravu. Zde
-            naleznete přehled, který vás nasměruje na další informace.
+            Některé vikariáty pořádají menší setkání (tzv. vikariátko) den před Diecézkem a&nbsp;poté společně vyrážejí do Hradce Králové. Tomuto setkání říkáme PředDiecézko. Zde nalezneš přehled, který tě nasměruje na další informace.
           </ContainerDescription>
           <FaqLayout>
             {/* <FaqBox question={`Humpolec, Havlíčkův Brod, Chotěboř`} icon={``}>
@@ -51,14 +50,14 @@ export default async function GroupTransport() {
                 className="w-full my-4"
               />
             </FaqBox>
-            <FaqBox question={`Ústí nad Orlicí`} icon={``}>
+            {/* <FaqBox question={`Hlinsko, Raná, Skuteč, Luže`} icon={``}>
               <ContainerImage
-                jpgPath="/assets/images/doprava/doprava-usti.jpg"
-                webpPath="/assets/images/doprava/doprava-usti.webp"
+                jpgPath="/assets/images/doprava/doprava-chrudim.jpg"
+                webpPath="/assets/images/doprava/doprava-chrudim.webp"
                 altText="Plakátek s informacemi o společné dopravě."
                 className="w-full my-4"
               />
-            </FaqBox>
+            </FaqBox> */}
           </FaqLayout>
         </Container>
       </PageMain>
