@@ -151,6 +151,15 @@ export const ecko = [
     className: "",
   },
   {
+    name: "Pavel Vocl",
+    description:
+      "Pavel má na starosti technickou stránku režijního programu ve Filharmonii.",
+    altText: "Profilová fotka Pavel Vocl",
+    jpgPath: "/assets/images/jadro/vocl.jpg",
+    webpPath: "/assets/images/jadro/vocl.webp",
+    className: "",
+  },
+  {
     name: "Petr Kučera",
     description:
       "Petr se stará o&nbsp;web diecézko.cz a&nbsp;pomáhá s&nbsp;technickým zabezpečením celé akce.",
