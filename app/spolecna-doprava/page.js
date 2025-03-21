@@ -51,14 +51,14 @@ export default async function GroupTransport() {
                 className="w-full my-4"
               />
             </FaqBox>
-            {/* <FaqBox question={`Hlinsko, Raná, Skuteč, Luže`} icon={``}>
+            <FaqBox question={`Ústí nad Orlicí`} icon={``}>
               <ContainerImage
-                jpgPath="/assets/images/doprava/doprava-chrudim.jpg"
-                webpPath="/assets/images/doprava/doprava-chrudim.webp"
+                jpgPath="/assets/images/doprava/doprava-usti.jpg"
+                webpPath="/assets/images/doprava/doprava-usti.webp"
                 altText="Plakátek s informacemi o společné dopravě."
                 className="w-full my-4"
               />
-            </FaqBox> */}
+            </FaqBox>
           </FaqLayout>
         </Container>
       </PageMain>
