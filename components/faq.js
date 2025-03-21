@@ -172,6 +172,17 @@ export default function FAQ() {
         </Link>
         . */}
       </FaqBox>
+      <FaqBox question={`Co je to PředDiecézko?`} icon={`users`}>
+        Některé vikariáty pořádají menší setkání (tzv. vikariátko) den před Diecézkem a&nbsp;poté společně vyrážejí do Hradce Králové. Tomuto setkání říkáme PředDiecézko. Chceš zjistit, zda něco podobného organizuje i&nbsp;tvůj vikariát? Pro více informací se podívej na{" "}
+        <Link
+          href={`/preddiecezka`}
+          target="_Self"
+          className="underline font-semibold"
+        >
+          přehled
+        </Link>
+        &nbsp;PředDiecézek.
+      </FaqBox>
       <FaqBox question={`Je organizována společná doprava?`} icon={`train`}>
         Některé vikariáty společnou dopravu organizují. Pro jasný přehled jsme
         pro Vás připravili{" "}
