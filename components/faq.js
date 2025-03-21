@@ -25,7 +25,7 @@ export default function FAQ() {
         Doporučený příspěvek je <strong>200,-Kč na osobu</strong>. Je možné ho
         zaplatit v hotovosti na recepci ve Filharmonii při dopoledním programu.
       </FaqBox>
-      <FaqBox question={`Desatero pravidel Diecézka`} icon={`gavel`}>
+      <FaqBox question={`Desatero pravidel Diecézka`} icon={`notes`}>
         <ContainerOl>
           <ContainerLi className={`my-4`}>
             <strong>Dodržuj pokyny organizátorů</strong>

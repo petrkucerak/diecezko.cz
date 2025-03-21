@@ -11,7 +11,7 @@ import {
   IconOld,
   IconPencil,
   IconPigMoney,
-  IconGavel,
+  IconNotes,
 } from "@tabler/icons";
 import { useState } from "react";
 import IconCustomDenikSracu from "../images/deniksracu";
@@ -59,8 +59,8 @@ export default function FaqBox({ className, id, children, question, icon }) {
             <IconCustomDenikSracu className={`inline h-5 mr-2`} />
           ) : icon === "calendar" ? (
             <IconCalendarTime className="inline mr-2" stroke={1.2} />
-          ) : icon === "gavel" ? (
-            <IconGavel className={`inline h-5 mr-2`} stroke={1.2} />
+          ) : icon === "notes" ? (
+            <IconNotes className={`inline h-5 mr-2`} stroke={1.2} />
           ) : null}
           <span
             dangerouslySetInnerHTML={{ __html: `${question}` }}
