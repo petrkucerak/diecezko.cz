@@ -40,7 +40,10 @@ export default function SwappingGallery({ images }) {
             <SwiperSlide key={img.path}>
               <ContainerImage
                 jpgPath={img.path}
-                webpPath={img.path.replace(".jpg", ".webp")}
+                webpPath={img.path
+                  .replace(".jpg", ".webp")
+                  .replace(".jpeg", ".webp")
+                  .replace(".png", ".webp")}
                 altText={img.alt}
               />
             </SwiperSlide>
