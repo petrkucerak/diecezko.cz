@@ -48,7 +48,7 @@ export default function FAQ() {
           <ContainerLi className={`my-4`}>
             <strong>Měj u&nbsp;sebe kontakt na odpovědnou osobu</strong>
             <br />
-            V&nbsp;případě problému si neváhej říct o&nbsp;pomoc.
+            Vždy věz, koho kontaktovat v&nbsp;případě nouze.
           </ContainerLi>
           <ContainerLi className={`my-4`}>
             <strong>
@@ -57,7 +57,7 @@ export default function FAQ() {
             <br />
             Organizátor, zdravotník či odpovědná osoba jsou připraveni pomoci.
             Neváhej je oslovit. V&nbsp;případě neakutních potíží volej
-            zdravotníka na telefonním čísle uvedeném na webu{" "}
+            zdravotníka na telefonním čísle uvedeném na webu{" "}.
             <Link
               href={"https://diecezko.cz"}
               target="_blank"
