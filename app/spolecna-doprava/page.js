@@ -35,6 +35,14 @@ export default async function GroupTransport() {
                 className="w-full my-4"
               />
             </FaqBox>
+            <FaqBox question={`Chrudim`} icon={``}>
+              <ContainerImage
+                jpgPath="/assets/images/doprava/doprava-chrudim.jpg"
+                webpPath="/assets/images/doprava/doprava-hb-hum.webp"
+                altText="Plakátek s informacemi o společné dopravě."
+                className="w-full my-4"
+              />
+            </FaqBox>
             <FaqBox question={`Pardubice`} icon={``}>
               <ContainerImage
                 jpgPath="/assets/images/doprava/doprava-pce.jpg"
