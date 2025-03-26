@@ -36,8 +36,9 @@ export default function FAQ() {
           <ContainerLi className={`my-4`}>
             <strong>Chovej se ohleduplně</strong>
             <br />
-            Ber ohled na ostatní účastníky a&nbsp;okolní prostředí. Buď
-            trpělivý/á.
+            Ber ohled na ostatní účastníky a&nbsp;okolní prostředí. Udržuj 
+            pořádek. Buď trpělivý/á a&nbsp;pozorný/á. Vnímej snahu přednášejících
+            předat ti to nejlepší. 
           </ContainerLi>
           <ContainerLi className={`my-4`}>
             <strong>Dbej na své zdraví</strong>
@@ -57,7 +58,7 @@ export default function FAQ() {
             <br />
             Organizátor, zdravotník či odpovědná osoba jsou připraveni pomoci.
             Neváhej je oslovit. V&nbsp;případě neakutních potíží volej
-            zdravotníka na telefonním čísle uvedeném na webu .
+            zdravotníka na telefonním čísle uvedeném na webu{" "}
             <Link
               href={"https://diecezko.cz"}
               target="_blank"
@@ -65,6 +66,7 @@ export default function FAQ() {
             >
               diecezko.cz
             </Link>
+            .
           </ContainerLi>
           <ContainerLi className={`my-4`}>
             <strong>
