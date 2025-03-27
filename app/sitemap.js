@@ -32,11 +32,6 @@ export default function sitemap() {
       changeFrequency: "yearly",
     },
     {
-      url: "https://diecezko.cz/instalace",
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-    },
-    {
       url: "https://diecezko.cz/partneri",
       lastModified: new Date(),
       changeFrequency: "yearly",
@@ -48,11 +43,6 @@ export default function sitemap() {
     },
     {
       url: "https://diecezko.cz/jadro-diecezka",
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-    },
-    {
-      url: "https://diecezko.cz/majki-v-albanii",
       lastModified: new Date(),
       changeFrequency: "yearly",
     },
@@ -73,6 +63,26 @@ export default function sitemap() {
     },
     {
       url: "https://diecezko.cz/spolecna-doprava",
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+    },
+    {
+      url: "https://diecezko.cz/cervenokostelecka-schola",
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+    },
+    {
+      url: "https://diecezko.cz/galerie",
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+    },
+    {
+      url: "https://diecezko.cz/instalace",
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+    },
+    {
+      url: "https://diecezko.cz/preddiecezka",
       lastModified: new Date(),
       changeFrequency: "yearly",
     },
