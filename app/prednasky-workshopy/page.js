@@ -299,6 +299,16 @@ const workshops = [
     },
   },
   {
+    title: "Jubileum je pro každého: nejen pro ty, kdo budou putovat do Říma",
+    type: "person",
+    about: `Roman Kubín, římskokatolický kněz. Věnuji se mnoho let doprovázení mladých při hledání jejich životní cesty. Snažím se pomáhat lidem vnímat a&nbsp;rozeznávat, co v&nbsp;jejich životě dělá Bůh. Raduji se z&nbsp;toho, když vidím, jak se prohlubuje nebo obnovuje vztah k&nbsp;Bohu, k&nbsp;životu. Sloužím jako ředitel Sekce pro mládež České biskupské konference.`,
+    descritpion: `Papež František píše: „Kéž je Jubilejní rok pro každého okamžikem živého a&nbsp;osobního setkání s&nbsp;Pánem Ježíšem.“ Všichni jsme zváni, abychom se stávali poutníky naděje. Jak můžeme obnovit náš vztah s&nbsp;Bohem a&nbsp;s&nbsp;druhými lidmi? Jak se připravit na pouť? Bude i&nbsp;prostor na praktické informace k&nbsp;cestě do Říma na Jubileum mládeže.`,
+    speaker: {
+      name: "P. Roman Kubín",
+      jpgPath: "/assets/images/speakers/kubin.jpg",
+    },
+  },
+  {
     title: "Ozdob si svoji velikonoční svíčku - Paškál",
     type: "workshop",
     id: "workshop-start",
@@ -312,7 +322,7 @@ const workshops = [
   {
     title: "Deskovky",
     type: "deskGame",
-    // place: "BiGy",
+    place: "BiGy (aula)",
     about: `Jsme křesťanský akademický klub Salaš – společenství mladých vysokoškolských studentů, které je otevřené pro všechny studenty. Každou středu v&nbsp;akademickém roce slavíme mši svatou, po které následuje různorodý program.`,
     descritpion:
       "Přijďte si k&nbsp;nám v&nbsp;tomto nabitém dni odpočinout a&nbsp;zahrát si nějakou z&nbsp;mnoha deskových her, které nabízíme. Nemusíte se bát, všechny hry vysvětlíme a&nbsp;naučíme. Je to ideální příležitost seznámit se s&nbsp;novými lidmi, nebo strávit čas se svojí partou. Zároveň se můžete dozvědět něco více o&nbsp;nás.",
