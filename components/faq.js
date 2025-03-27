@@ -217,8 +217,8 @@ export default function FAQ() {
         informacemi. <br />
         Autobusy Hlavní nádraží – Muzeum
         <br />
-        Zastávka A – 16, 12, 3 <br />
-        Zastávka D – 11, 4, 7
+        Zastávka A – 3, 16 <br />
+        Zastávka D – 7, 11, 13
         <ContainerH3>
           Cesta z&nbsp;autobusového nádraží k Filharmonii
         </ContainerH3>
@@ -233,7 +233,7 @@ export default function FAQ() {
         <br />
         Autobusy Terminál HD – Muzeum
         <br />
-        Zastávka D1 – 4, 7<br />
+        Zastávka D1 – 7<br />
         Zastávka D2 – 11, 13
       </FaqBox>
       <FaqBox question={`Kam si odskočit na záchod?`} icon={`toilet`}>
