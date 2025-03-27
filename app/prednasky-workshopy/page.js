@@ -296,6 +296,8 @@ const workshops = [
     },
     social: {
       web: "https://www.marysmeals.cz",
+      fb: "https://www.facebook.com/marysmeals",
+      ig: "https://www.instagram.com/marysmealscz",
     },
   },
   {
@@ -306,6 +308,11 @@ const workshops = [
     speaker: {
       name: "P. Roman Kubín",
       jpgPath: "/assets/images/speakers/kubin.jpg",
+    },
+    social: {
+      web: "https://svetovednymladeze.cz",
+      ig: "https://www.instagram.com/sekcepromladez",
+      fb: "https://www.facebook.com/sekcepromladez",
     },
   },
   {
