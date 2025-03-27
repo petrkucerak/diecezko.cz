@@ -179,7 +179,7 @@ const places = [
       y: 15.8301403,
     },
     name: "Zpívající stromy",
-    content: "<li>14:00 nabídka křížové cesty</li>",
+    content: "",
   },
   {
     coords: {
@@ -187,8 +187,7 @@ const places = [
       y: 15.8341294,
     },
     name: "Kostel Nanebevzetí Panny Marie",
-    content:
-      "<li>14:00 chvály, adorace, svátost smíření či duchovní rozhovor</li>",
+    content: "<li>13:30 adorace, svátost smíření či duchovní rozhovor</li>",
   },
   {
     coords: {
@@ -196,7 +195,11 @@ const places = [
       y: 15.8337133,
     },
     name: "BiGy (Biskupské gymnázium)",
-    content: "<li>12:30 přednášky, workshopy</li><li>14:00 kavárna</li>",
+    content: `
+    <li>12:30 přednášky, workshopy</li>
+    <li>13:30 nealkoholický bar</li>
+    <li>14:10 modlitba za město</li>
+    `,
   },
   {
     coords: {
@@ -204,8 +207,11 @@ const places = [
       y: 15.8291964,
     },
     name: "Filharmonie Hradec Králové",
-    content:
-      "<li>9:00 registrace</li><li>9:30 dopolední program</li><li>11:30 obědová pauza</li>",
+    content: `
+    <li>9:00 registrace</li>
+    <li>9:30 dopolední program</li>
+    <li>11:30 obědová pauza</li>
+    `,
   },
   {
     coords: {
@@ -213,9 +219,9 @@ const places = [
       y: 15.8310917,
     },
     name: "Katedrála Svatého Ducha",
-    content: "<li>14:15 sraz ministrantů</li><li>15:00 mše svatá</li>",
+    content: `
+    <li>14:15 sraz ministrantů</li>
+    <li>15:00 mše svatá</li>
+    `,
   },
 ];
-
-
-// TODO: aktualizuj mista
