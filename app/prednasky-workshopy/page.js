@@ -351,7 +351,7 @@ const workshops = [
     id: "sport-start",
     place: "Orlovna",
     about: `Jmenuji se Ferry Kolba a&nbsp;jsem týmákem na DCŽM Vesmír. Mám v&nbsp;oblibě pohyb a&nbsp;věřím, že ty taky!`,
-    descritpion: `Nechceš trávit odpoledne sezením a&nbsp;máš chuť se hýbat? Máš možnost přijít na workshop různých sportů. Pokud nejsi profi sportovec, tak nevadí! Přijít může každý, kdo má zájem, jen pamatuj na oblečení, ve kterém se ti bude dobře pohybovat.`,
+    descritpion: `Nechceš trávit odpoledne sezením a&nbsp;máš chuť se hýbat? Máš možnost přijít na workshop různých sportů. Pokud nejsi profi sportovec, tak nevadí! Přijít může každý, kdo má zájem, jen pamatuj na oblečení, ve kterém se ti bude dobře pohybovat a přezuvky do tělocvičny.`,
     speaker: {
       name: "František Kolba",
       jpgPath: "/assets/images/speakers/kolba.jpg",
