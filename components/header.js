@@ -246,6 +246,17 @@ export default function Header() {
                   Vesmírná kapela
                 </li>
               </Link>
+              <Link
+                href="/cervenokostelecka-schola"
+                onClick={unlockScrolling}
+                target="_self"
+                className="w-full mt-4 text-xl"
+              >
+                <li className="flex flex-row items-center">
+                  <IconMusic className="inline h-7 w-7 my-1 mr-2" />
+                  Červenokostelecká schola
+                </li>
+              </Link>
             </ul>
           </li>
 
