@@ -93,7 +93,7 @@
       "time": "13:30",
       "duration": 30,
       "id": 6,
-      "description": "",
+      "description": "Zastav se po přednáškách, workshopech či sportu svlažit své hrdlo v&nbsp;nealkoholickém baru a&nbsp;pozdravit se s&nbsp;lidmi, které jsi dlouho neviděl. Pití si můžeš zakoupit za drobný peníz.",
       "icons": [
          "bar"
       ],
@@ -121,7 +121,8 @@
             "x": "50.2062919",
             "y": "15.8337133"
          }
-      }
+      },
+      "link": "/modlitba-za-mesto"
    },
    {
       "name": "Sraz ministrantů",
