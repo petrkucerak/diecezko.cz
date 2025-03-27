@@ -87,7 +87,7 @@ export const ecko = [
     className: "",
   },
   {
-    name: "Anička Maříková",
+    name: "Anička Marie Maříková",
     description:
       "Anička má na starosti režijní program, který nás bude provázet během dopoledne ve Filharmonii.",
     jpgPath: "/assets/images/jadro/marikova.jpg",
