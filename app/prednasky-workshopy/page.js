@@ -336,16 +336,16 @@ const workshops = [
       web: "/kak-salas",
     },
   },
-  // {
-  //   title: "Sportovní workshop",
-  //   type: "sport",
-  //   id: "sport-start",
-  //   place: "Orlovna",
-  //   descritpion:
-  //     "Chceš se po dopoledním sezení ve filharmonii trochu protáhnout a&nbsp;zasportovat si? Přesně pro tebe je určený tenhle workshop, kde si budeš moci vybrat ze dvou skupinových sportů a&nbsp;prostřednictvím hry se seznamovat novými lidmi. Na výběr bude z&nbsp;venkovního fotbalu (jen za dobrého počasí) a&nbsp;vnitřního volejbalu. Vem si proto s&nbsp;sebou vhodné oblečení podle počasí a&nbsp;do haly čistou sálovou obuv. Šatna bude k&nbsp;dispozici na BiGy.",
-  //   speaker: {
-  //     name: "Jan Chadima",
-  //     jpgPath: "/assets/images/speakers/chadima.jpg",
-  //   },
-  // },
+  {
+    title: "Sportovní workshop",
+    type: "sport",
+    id: "sport-start",
+    place: "Orlovna",
+    about: `Jmenuji se Ferry Kolba a&nbsp;jsem týmákem na DCŽM Vesmír. Mám v&nbsp;oblibě pohyb a&nbsp;věřím, že ty taky!`,
+    descritpion: `Nechceš trávit odpoledne sezením a&nbsp;máš chuť se hýbat? Máš možnost přijít na workshop různých sportů. Pokud nejsi profi sportovec, tak nevadí! Přijít může každý, kdo má zájem, jen pamatuj na oblečení, ve kterém se ti bude dobře pohybovat.`,
+    speaker: {
+      name: "František Kolba",
+      jpgPath: "/assets/images/speakers/kolba.jpg",
+    },
+  },
 ];
