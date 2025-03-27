@@ -1,9 +1,12 @@
+// Icon library https://tabler.io/icons
+
 import {
   IconBallFootball,
   IconBrush,
   IconChefHat,
   IconCoffee,
   IconCross,
+  IconDice3,
   IconGavel,
   IconGlass,
   IconHeartBroken,
@@ -133,6 +136,14 @@ export default function ParmIcon({ className, iconName, size }) {
   else if (iconName === "gavel")
     return (
       <IconGavel
+        className={`inline ${className} mr-1`}
+        stroke={1.5}
+        size={size}
+      />
+    );
+  else if (iconName === "deskGame")
+    return (
+      <IconDice3
         className={`inline ${className} mr-1`}
         stroke={1.5}
         size={size}
