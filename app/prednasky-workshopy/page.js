@@ -274,6 +274,17 @@ const workshops = [
     },
   },
   {
+    title: "Krása českého znakového jazyka",
+    type: "person",
+    // place: "BiGy",
+    about: `Vojtěch je učitel na SŠ a&nbsp;VOŠ v Hradci Králové a&nbsp;lektor českého znakového jazyka.`,
+    descritpion: `Zajímá tě znakový jazyk? Chceš nahlédnout do komunikace a&nbsp;světa Neslyšících? Zveme tě na workshop s&nbsp;rodilým mluvčím, kde budeme společně objevovat krásu českého znakového jazyka. Určitě se dnes naučíš něco nového. Tlumočení bude zajištěno.`,
+    speaker: {
+      name: "Vojtěch Pražák",
+      jpgPath: "/assets/images/speakers/prazak.jpg",
+    },
+  },
+  {
     title: "Deskovky",
     type: "workshop",
     id: "workshop-start",
