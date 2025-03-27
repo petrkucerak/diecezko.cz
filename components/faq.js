@@ -8,19 +8,19 @@ import ContainerLi from "./layouts/container-li";
 export default function FAQ() {
   return (
     <FaqLayout>
-      {/* <FaqBox question={`Kde seženu zdravotní pomoc?`} icon={`medical`}>
+      <FaqBox question={`Kde seženu zdravotní pomoc?`} icon={`medical`}>
         V případě jakéhokoliv zdravotního problému se neváhej obrátit na naši{" "}
         <strong>zdravotnickou službu</strong>, kterou poznáš podle oblečení
         a&nbsp;dostihneš ji na tel.{" "}
-        <Link href={`tel:+420605019695`} className="underline">
-          605 019 695
+        <Link href={`tel:+420605578474`} target="_blank" className="underline">
+          605 578 474
         </Link>{" "}
         . V&nbsp;závažných případech neváhej a&nbsp;volej IZS na tel. číslo{" "}
         <Link href={`tel:155`} className="underline">
           155
         </Link>
         .
-      </FaqBox> */}
+      </FaqBox>
       <FaqBox question={`Kolik Diecézko stojí?`} icon={`money`}>
         Doporučený příspěvek je <strong>200,-Kč na osobu</strong>. Je možné ho
         zaplatit v hotovosti na recepci ve Filharmonii při dopoledním programu.
