@@ -295,13 +295,23 @@ const workshops = [
       jpgPath: "/assets/images/speakers/treskova.jpg",
     },
     social: {
-      web: "https://www.marysmeals.cz"
-    }
+      web: "https://www.marysmeals.cz",
+    },
+  },
+  {
+    title: "Ozdob si svoji velikonoční svíčku - Paškál",
+    type: "workshop",
+    id: "workshop-start",
+    about: `Pracuji v&nbsp;mateřské škole jako asistentka pedagoga v&nbsp;Želivě. Kreativním činnostem se věnuji ve volném čase a&nbsp;mezi ně patří zdobení svíček k&nbsp;různým příležitostem.`,
+    descritpion: `Chceš mít svoji originální svíčku na bílou sobotu? Svíčku můžeš využít k&nbsp;osobní modlitbě, v&nbsp;rodině nebo ve společenství. Udělej si radost a&nbsp;přijď využít svoji kreativitu.`,
+    speaker: {
+      name: "Zdenička Daňková",
+      jpgPath: "/assets/images/speakers/dankova.jpg",
+    },
   },
   {
     title: "Deskovky",
     type: "workshop",
-    id: "workshop-start",
     // place: "BiGy",
     about: `Jsme křesťanský akademický klub Salaš – společenství mladých vysokoškolských studentů, které je otevřené pro všechny studenty. Každou středu v&nbsp;akademickém roce slavíme mši svatou, po které následuje různorodý program.`,
     descritpion:
