@@ -208,7 +208,7 @@ const workshops = [
       "Od nápadu k&nbsp;hitu - Jak skládat, nahrávat a&nbsp;zveřejnit vlastní píseň",
     type: "person",
     id: "prednaska-start",
-    // place: "BiGy",
+    place: "BiGy",
     about: `Studuju konzervatoř Jaroslava Ježka v&nbsp;Praze. Právě obor Skladba.😌 Jinak mam vystudované dva cykly ZUŠ na klavír a&nbsp;jeden na violoncello. Hudba je prostě můj život 😊`,
     descritpion:
       "Máš v&nbsp;hlavě melodii nebo text a&nbsp;nevíš, jak z&nbsp;toho udělat hotovou píseň? Přijď na&nbsp;praktickou přednášku, kde se dozvíš, jak skládat hudbu, pracovat s&nbsp;nahrávacími programy, zvukově upravovat své skladby a&nbsp;nakonec je zveřejnit",
@@ -223,7 +223,7 @@ const workshops = [
   {
     title: "Křesťané v&nbsp;dějinách z perspektivy křesťana nekatolíka",
     type: "person",
-    // place: "BiGy",
+    place: "BiGy",
     about: `Vyučuji historii na Univerzitě Hradec Králové, zaměřuji se na dějiny středověku, jsem členem Církve bratrské v&nbsp;Kutné Hoře.`,
     descritpion:
       "Velmi si vážím možnosti se v&nbsp;tomto formátu setkat s&nbsp;katolickou mládeží a&nbsp;budu velmi rád za živou diskusi. V&nbsp;přednášce se pokusím otevřít některé otázky, které mi přineslo letité studium dějin a&nbsp;přemýšlení nad Církví a&nbsp;církvemi a&nbsp;výzvami současné církve a&nbsp;světa.",
@@ -238,7 +238,7 @@ const workshops = [
   {
     title: "Povolání život (církev a&nbsp;homosexualita)",
     type: "person",
-    // place: "BiGy",
+    place: "BiGy",
     about: `P.&nbsp;Zdeněk Jančařík, salesián, kněz brněnské diecéze, v&nbsp;níž působí také jako kaplan pro LGBT+ komunitu.`,
     descritpion: `Zmiňuje se Bible o&nbsp;homosexualitě? Byl člověk stvořen jako muž a&nbsp;žena kvůli manželství? Od kdy se v&nbsp;Evropě začíná skutečně mluvit o&nbsp;"homosexualitě"? Jak se k&nbsp;ní staví římskokatolická církev a&nbsp;proč "s&nbsp;ní má problém"? Na tyto a&nbsp;jiné otázky se pokusíme odpovědět.`,
     speaker: {
@@ -253,7 +253,7 @@ const workshops = [
     title:
       "Jak přemýšlíme, když vás vychováváme (aneb myšlenkové pochody rodičů)",
     type: "person",
-    // place: "BiGy",
+    place: "BiGy",
     about: `Zdravotní sestra a&nbsp;rodinný terapeut, společně vychováváme dva syny (23, 19 let) a&nbsp;dvě dcery (20, 14 let).`,
     descritpion:
       "Jak rodiče přemýšlí, o&nbsp;čem sní, čeho se bojí? Proč rodiče dělají věci, které vás tolik štvou? A&nbsp;šlo by to jinak?",
@@ -265,7 +265,7 @@ const workshops = [
   {
     title: "Začni s PROČ?",
     type: "person",
-    // place: "BiGy",
+    place: "BiGy",
     about: `Ahoj, jmenuji se Klára a&nbsp;letos mám výročí 10ti let práce nejen s&nbsp;mladými lidmi, napříč skupinami či týmy na různých úrovních. Pokud Tě zajímá sdílení zkušeností, tak Tě moc ráda přivítám na společném setkání.`,
     descritpion: `Chceš založit skupinu, vést tým nebo prostě jen zorganizovat projekt, který bude dávat smysl? Přednáška "Začni s&nbsp;PROČ?" tě provede klíčovými kroky, které ti pomohou s&nbsp;nastavením vize i&nbsp;cílů. Dozvíš se, proč je důležité vědět, proč to všechno vlastně děláš, jak určit hlavní náplň, jak komunikovat s&nbsp;druhými a&nbsp;rozdělovat role a&nbsp;nastavovat pravidla. Zjistíš, co se od tebe jako od leadera očekává a&nbsp;jak vytvořit tým, který bude nejen efektivní, ale taky tě bude bavit! Přijď zjistit, jak můžeš udělat první krok k&nbsp;úspěšnému vedení!`,
     speaker: {
@@ -276,7 +276,7 @@ const workshops = [
   {
     title: "Krása českého znakového jazyka",
     type: "person",
-    // place: "BiGy",
+    place: "BiGy",
     about: `Vojtěch je učitel na SŠ a&nbsp;VOŠ v Hradci Králové a&nbsp;lektor českého znakového jazyka.`,
     descritpion: `Zajímá tě znakový jazyk? Chceš nahlédnout do komunikace a&nbsp;světa Neslyšících? Zveme tě na workshop s&nbsp;rodilým mluvčím, kde budeme společně objevovat krásu českého znakového jazyka. Určitě se dnes naučíš něco nového. Tlumočení bude zajištěno.`,
     speaker: {
@@ -287,7 +287,7 @@ const workshops = [
   {
     title: "Mary's Meals aneb jak chutná vzdělání",
     type: "person",
-    // place: "BiGy",
+    place: "BiGy",
     about: `V&nbsp;Mary's Meals zodpovídám za spolupráci se školami a&nbsp;duchovní oblast.`,
     descritpion: `Žijeme v&nbsp;bohatém světě, který má dostatečný potenciál uživit všechny hladové. Přesto jsou miliony dětí, které každý den řeší otázku: "Bude pro mne zítra?" Co se s&nbsp;tím dá udělat? Přijď na setkání s&nbsp;Mary's Meals a&nbsp;přidej se k&nbsp;changemakerům 🙂.`,
     speaker: {
@@ -303,6 +303,7 @@ const workshops = [
   {
     title: "Jubileum je pro každého: nejen pro ty, kdo budou putovat do Říma",
     type: "person",
+    place: "BiGy",
     about: `Roman Kubín, římskokatolický kněz. Věnuji se mnoho let doprovázení mladých při hledání jejich životní cesty. Snažím se pomáhat lidem vnímat a&nbsp;rozeznávat, co v&nbsp;jejich životě dělá Bůh. Raduji se z&nbsp;toho, když vidím, jak se prohlubuje nebo obnovuje vztah k&nbsp;Bohu, k&nbsp;životu. Sloužím jako ředitel Sekce pro mládež České biskupské konference.`,
     descritpion: `Papež František píše: „Kéž je Jubilejní rok pro každého okamžikem živého a&nbsp;osobního setkání s&nbsp;Pánem Ježíšem.“ Všichni jsme zváni, abychom se stávali poutníky naděje. Jak můžeme obnovit náš vztah s&nbsp;Bohem a&nbsp;s&nbsp;druhými lidmi? Jak se připravit na pouť? Bude i&nbsp;prostor na praktické informace k&nbsp;cestě do Říma na Jubileum mládeže.`,
     speaker: {
@@ -318,6 +319,7 @@ const workshops = [
   {
     title: "Ozdob si svoji velikonoční svíčku - Paškál",
     type: "workshop",
+    place: "BiGy",
     id: "workshop-start",
     about: `Pracuji v&nbsp;mateřské škole jako asistentka pedagoga v&nbsp;Želivě. Kreativním činnostem se věnuji ve volném čase a&nbsp;mezi ně patří zdobení svíček k&nbsp;různým příležitostem.`,
     descritpion: `Chceš mít svoji originální svíčku na bílou sobotu? Svíčku můžeš využít k&nbsp;osobní modlitbě, v&nbsp;rodině nebo ve společenství. Udělej si radost a&nbsp;přijď využít svoji kreativitu.`,
