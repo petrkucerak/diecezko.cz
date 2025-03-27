@@ -22,7 +22,7 @@
     "leaflet-defaulticon-compatibility": "^0.1.2",
     "leaflet.locatecontrol": "^0.79.0",
     "leaflet.offline": "^3.0.1",
-    "next": "13.4.19",
+    "next": "14.2.25",
     "postcss": "8.4.31",
     "pwa-asset-generator": "^6.3.1",
     "react": "^18.2.0",
