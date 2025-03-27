@@ -1,0 +1,79 @@
+g path {
+  transition: 0.3s;
+}
+
+/* Hradeck Kralove */
+#hk:hover g path {
+  fill: #eb3945 !important;
+}
+
+/* Rychnov nad Kneznou */
+#rnk:hover g path {
+  fill: #23547b !important;
+}
+
+/* Havlíčkův Brod */
+#hb:hover g path {
+  fill: #603f8b !important;
+}
+
+/* Ústí nad Orlicí */
+#uno:hover g path {
+  fill: #902124 !important;
+}
+
+/* Kutná Hora - Poděbrady */
+#khp:hover g path {
+  fill: #f8abeb !important;
+}
+
+/* Humpolec */
+#h:hover g path {
+  fill: #ad795b !important;
+}
+
+/* Pardubice */
+#p:hover g path {
+  fill: #d8bf9f !important;
+}
+
+/* Jilemnice */
+#j:hover g path {
+  fill: #a2c4e0 !important;
+}
+
+/* Žamberk */
+#z:hover g path {
+  fill: #b1a1ed !important;
+}
+
+/* Litomyšl */
+#l:hover g path {
+  fill: #e18b22 !important;
+}
+
+/* Trutnov */
+#t:hover g path {
+  fill: #32620e !important;
+}
+
+/* Chrudim */
+#ch:hover g path {
+  fill: #9dcd5a !important;
+}
+
+/* Náchod */
+#n:hover g path {
+  fill: #fffac8 !important;
+}
+#n:hover g g text {
+  fill: #000 !important;
+}
+#n:hover g g circle {
+  stroke: #000 !important;
+}
+
+/* Jičín */
+#rumcaj:hover g path {
+  fill: #c9c9c6 !important;
+}
