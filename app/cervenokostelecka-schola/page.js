@@ -27,7 +27,7 @@ export default async function CKSchola() {
           <ContainerParagraph>
             Schola z Červeného Kostelce minulý rok doprovázela chvály v kostele
             Panny Marie na Velkém náměstí. Letos nás hudebně provede závěrečnou
-            mši svatou v Katedrále sv. Ducha.
+            mší svatou v katedrále Sv. Ducha.
           </ContainerParagraph>
         </Container>
       </PageMain>
