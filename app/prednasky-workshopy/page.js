@@ -311,7 +311,7 @@ const workshops = [
   },
   {
     title: "Deskovky",
-    type: "workshop",
+    type: "deskGame",
     // place: "BiGy",
     about: `Jsme křesťanský akademický klub Salaš – společenství mladých vysokoškolských studentů, které je otevřené pro všechny studenty. Každou středu v&nbsp;akademickém roce slavíme mši svatou, po které následuje různorodý program.`,
     descritpion:
