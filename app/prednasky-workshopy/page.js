@@ -285,6 +285,20 @@ const workshops = [
     },
   },
   {
+    title: "Mary's Meals aneb jak chutná vzdělání",
+    type: "person",
+    // place: "BiGy",
+    about: `V&nbsp;Mary's Meals zodpovídám za spolupráci se školami a&nbsp;duchovní oblast.`,
+    descritpion: `Žijeme v&nbsp;bohatém světě, který má dostatečný potenciál uživit všechny hladové. Přesto jsou miliony dětí, které každý den řeší otázku: "Bude pro mne zítra?" Co se s&nbsp;tím dá udělat? Přijď na setkání s&nbsp;Mary's Meals a&nbsp;přidej se k&nbsp;changemakerům 🙂.`,
+    speaker: {
+      name: "Kristína Třešková",
+      jpgPath: "/assets/images/speakers/treskova.jpg",
+    },
+    social: {
+      web: "https://www.marysmeals.cz"
+    }
+  },
+  {
     title: "Deskovky",
     type: "workshop",
     id: "workshop-start",
