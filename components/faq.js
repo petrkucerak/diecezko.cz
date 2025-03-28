@@ -11,11 +11,11 @@ export default function FAQ() {
       <FaqBox question={`Kde seženu zdravotní pomoc?`} icon={`medical`}>
         V případě jakéhokoliv zdravotního problému se neváhej obrátit na naši{" "}
         <strong>zdravotnickou službu</strong>, kterou poznáš podle oblečení
-        a&nbsp;dostihneš ji na tel.{" "}
+        a&nbsp;dostihneš ji na tel. čísle{" "}
         <Link href={`tel:+420605578474`} target="_blank" className="underline">
           605 578 474
-        </Link>{" "}
-        . V&nbsp;závažných případech neváhej a&nbsp;volej IZS na tel. číslo{" "}
+        </Link>
+        . V&nbsp;závažných případech neváhej a&nbsp;volej IZS tel. číslem{" "}
         <Link href={`tel:155`} className="underline">
           155
         </Link>
