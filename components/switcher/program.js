@@ -63,7 +63,11 @@ export default function Program({ id, className }) {
                   </Link>
                 ) : null}
                 {p.playlist !== undefined ? (
-                  <Link href={`/assets/playlist/${p.playlist}`} target="_blank" download>
+                  <Link
+                    href={`/assets/playlist/${p.playlist}`}
+                    target="_blank"
+                    download={p.playlist}
+                  >
                     <button className="border border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-3 cursor-pointer text-base flex flex-row items-center justify-center mb-2 mr-2">
                       <IconCustomProScholy className="w-8" />
                       Otevřít playlist na mši
