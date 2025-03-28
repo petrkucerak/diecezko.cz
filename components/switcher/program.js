@@ -3,6 +3,7 @@ import Container from "../layouts/container";
 import ParmIcon from "../layouts/parm-icon";
 import { IconArrowRight, IconCalendarPlus, IconMap } from "@tabler/icons";
 import program from "./program.json";
+import IconCustomProScholy from "../images/pro-scholy";
 
 export default function Program({ id, className }) {
   return (
@@ -58,6 +59,14 @@ export default function Program({ id, className }) {
                     <button className="border border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-3 cursor-pointer text-base flex flex-row items-center justify-center mb-2 mr-2">
                       Více informací{" "}
                       <IconArrowRight className="inline ml-1 " stroke={1.5} />
+                    </button>
+                  </Link>
+                ) : null}
+                {p.playlist !== undefined ? (
+                  <Link href={`/assets/playlist/${p.playlist}`} target="_blank">
+                    <button className="border border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-3 cursor-pointer text-base flex flex-row items-center justify-center mb-2 mr-2">
+                      <IconCustomProScholy className="w-8" />
+                      Otevřít playlist na mši
                     </button>
                   </Link>
                 ) : null}
