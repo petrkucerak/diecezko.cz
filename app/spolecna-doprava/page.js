@@ -43,6 +43,19 @@ export default async function GroupTransport() {
                 className="w-full my-4"
               />
             </FaqBox>
+            <FaqBox question={`Jičín`} icon={``}>
+              Společná doprava s vikariátem Jičín je vlakem Os 5503.<br />
+              7:20 Libuň<br />
+              7:35 Jičín<br />
+              8:01 Ostroměř<br />
+              8:12 Hořice v Podkrkonoší
+              <ContainerImage
+                jpgPath="/assets/images/doprava/preddiecezko-jicin.jpg"
+                webpPath="/assets/images/doprava/preddiecezko-jicin.webp"
+                altText="Plakátek s informacemi o PředDiecézku."
+                className="w-full my-4"
+              />
+            </FaqBox>
             <FaqBox question={`Pardubice`} icon={``}>
               <ContainerImage
                 jpgPath="/assets/images/doprava/doprava-pce.jpg"
