@@ -50,8 +50,8 @@ export default async function GroupTransport() {
               8:01 Ostroměř<br />
               8:12 Hořice v&nbsp;Podkrkonoší
               <ContainerImage
-                jpgPath="/assets/images/doprava/preddiecezko-jicin.jpg"
-                webpPath="/assets/images/doprava/preddiecezko-jicin.webp"
+                jpgPath="/assets/images/preddiecezka/preddiecezko-jicin.jpg"
+                webpPath="/assets/images/preddiecezka/preddiecezko-jicin.webp"
                 altText="Plakátek s informacemi o PředDiecézku."
                 className="w-full my-4"
               />
