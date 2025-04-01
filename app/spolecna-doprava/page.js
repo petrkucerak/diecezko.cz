@@ -44,7 +44,7 @@ export default async function GroupTransport() {
               />
             </FaqBox>
             <FaqBox question={`Jičín`} icon={``}>
-              Společná doprava s vikariátem Jičín je vlakem Os 5503.<br />
+              Společná doprava s&nbsp;vikariátem Jičín je vlakem Os&nbsp;5503.<br />
               7:20 Libuň<br />
               7:35 Jičín<br />
               8:01 Ostroměř<br />
