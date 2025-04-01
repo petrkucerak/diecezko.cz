@@ -16,7 +16,7 @@ export default function FAQ() {
           605 578 474
         </Link>
         . V&nbsp;závažných případech neváhej a&nbsp;volej IZS tel. číslem{" "}
-        <Link href={`tel:155`} className="underline">
+        <Link href={`tel:155`} target="_blank" className="underline">
           155
         </Link>
         .
