@@ -56,6 +56,28 @@ export default async function GroupTransport() {
                 className="w-full my-4"
               />
             </FaqBox>
+            <FaqBox question={`Litomyšl`} icon={``}>
+              Společná doprava s&nbsp;vikariátem Litomyšl je objednaným 
+              autobusem. Přihlášení a&nbsp;další informace o&nbsp;společné 
+              dopravě jsou k&nbsp;dispozici na{" "}
+              <Link
+                className="underline"
+                href={`https://forms.gle/sAPYnuNuS1uZUXvU6`}
+                target="_blank"
+                rel="external noopener nofollow"
+              >
+                odkaze zde
+              </Link>
+              .
+              <br />
+              <br />              
+              7:25 Polička, aut. st., výstupní zastávka (před vlak. nádr.)<br />
+              7:35 Sebranice, ob. ú.<br />
+              7:40 Horní Újezd, Černý mlýn<br />
+              7:45 Dolní Újezd, pošta<br />
+              7:55 Litomyšl, aut. nádr.<br />
+              8:05 Cerekvice n. L., rozc.0.1.<br />
+            </FaqBox>
             <FaqBox question={`Pardubice`} icon={``}>
               <ContainerImage
                 jpgPath="/assets/images/doprava/doprava-pce.jpg"
