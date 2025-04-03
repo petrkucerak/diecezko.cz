@@ -20,7 +20,7 @@ export default function MapPoints({ coords }) {
           ? church
           : p.name === "BiGy (Biskupské gymnázium)"
           ? school
-          : p.name === "Nové Adalbertinum"
+          : p.name === "Nové Adalbertinum" || p.name === "Biskupská rezidence"
           ? tunel
           : p.name === "Orlovna"
           ? sport
@@ -222,6 +222,16 @@ const places = [
     content: `
     <li>14:15 sraz ministrantů</li>
     <li>15:00 mše svatá</li>
+    `,
+  },
+  {
+    coords: {
+      x: 50.208725,
+      y: 15.8323194,
+    },
+    name: "Biskupská rezidence",
+    content: `
+    <li>12:30 komentovaná prohlídka - sraz u Filharmonie</li>
     `,
   },
 ];
