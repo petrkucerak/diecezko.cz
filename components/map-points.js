@@ -20,7 +20,7 @@ export default function MapPoints({ coords }) {
           ? church
           : p.name === "BiGy (Biskupské gymnázium)"
           ? school
-          : p.name === "Nové Adalbertinum" || "Biskupská rezidence"
+          : p.name === "Nové Adalbertinum" || p.name === "Biskupská rezidence"
           ? tunel
           : p.name === "Orlovna"
           ? sport
