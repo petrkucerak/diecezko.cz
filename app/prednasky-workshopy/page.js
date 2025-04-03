@@ -85,7 +85,10 @@ export default async function PrednaskyWorhsopy() {
                         className={`inline`}
                         size={18}
                       />
-                      {w.speaker.name}
+
+                      <span
+                        dangerouslySetInnerHTML={{ __html: w.speaker.name }}
+                      />
                     </span>
                     {w.place !== undefined ? (
                       <span className="font-semibold flex flex-row items-center justify-start">
@@ -343,6 +346,21 @@ const workshops = [
       fb: "https://www.facebook.com/salas.hradec",
       ig: "https://www.instagram.com/salas_kak",
       web: "/kak-salas",
+    },
+  },
+  {
+    title: "Pojďte dál … do biskupské rezidence a biskupské knihovny",
+    type: "excursion",
+    place: "BiGy (aula)",
+    about: `Zvu vás do více než 300 let starých <strong>prostor biskupského úřadu</strong>, kam se „běžný člověk“ jen tak nepodívá. S&nbsp;rezidencí v&nbsp;Hradci Králové jsou však spojena i&nbsp;další místa v&nbsp;naší diecézi…
+    <br/>
+    <strong>Biskupská knihovna</strong> je nejstarší trvale fungující knihovnou v&nbsp;Hradci Králové, se kterou jsou spjaty některé významné historické osobnosti, jejichž stopy si ukážeme. Také Vám představíme několik středověkých rukopisů nebo prvotisků.`,
+    descritpion: `Jsem <strong>sestra Zuzana</strong> a&nbsp;patřím do kongregace Milosrdných sester sv.&nbsp;Kříže, působím přímo na biskupství, kde spolu s&nbsp;dalšími sestrami vytváříme zázemí kněžím, k&nbsp;tomu patří domácí práce, administrativní služby, zajištění různých akcí… ale hlavně život v&nbsp;srdci diecéze.
+      <br/>
+      Jmenuji se <strong>Zdeněk Zahradník</strong>, téměř 30 let jsem působil v&nbsp;Muzeu východních Čech v&nbsp;HK, v&nbsp;posledních cca 20 letech jsem též vyučoval na FF UHK a&nbsp;v&nbsp;současnosti jsem vedoucím Biskupské knihovny.`,
+    speaker: {
+      name: `sr. Zuzana Mgr. Petra Macečková (bisk.) <br/> Zdeněk Zahradník (bis. knihovna)`,
+      jpgPath: "/assets/images/speakers/zuzana.jpg",
     },
   },
   {

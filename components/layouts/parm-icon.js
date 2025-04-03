@@ -3,6 +3,7 @@
 import {
   IconBallFootball,
   IconBrush,
+  IconBuildingCastle,
   IconChefHat,
   IconCoffee,
   IconCross,
@@ -144,6 +145,14 @@ export default function ParmIcon({ className, iconName, size }) {
   else if (iconName === "deskGame")
     return (
       <IconDice3
+        className={`inline ${className} mr-1`}
+        stroke={1.5}
+        size={size}
+      />
+    );
+  else if (iconName === "excursion")
+    return (
+      <IconBuildingCastle
         className={`inline ${className} mr-1`}
         stroke={1.5}
         size={size}
