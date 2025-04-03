@@ -103,7 +103,10 @@ export default async function PrednaskyWorhsopy() {
                               ? `/mapa?x=${50.2069553}&y=${15.8349681}` // Orlovna
                               : w.place.includes("Nové Adalbertinum")
                               ? `/mapa?x=${50.2090269}&y=${15.8334453}` // Nove Adalbertinum
+                              : w.place.includes("Biskupská rezidence")
+                              ? `/mapa?x=${50.208725}&y=${15.8323194}` // Biskupská rezidence
                               : `/mapa?x=${50.2062919}&y=${15.8337133}` // BiGy
+                              
                           }
                           target="_self"
                           className="underline"
