@@ -42,16 +42,16 @@ export default function DiecezkoInfo({ id, className }) {
         </div>
         <div className="w-[90vw] max-w-[500px] grid grid-cols-2 grid-flow-row gap-4 items-center auto-cols-max">
           <Link
-            href={`https://prihlaska.diecezko.cz/`}
+            href={`https://feedback.diecezko.cz/`}
             target="_blank"
             className="border border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-5 text-base flex flex-row items-center justify-center"
           >
             <button
               className="flex flex-row items-center justify-center"
-              title="Přihláška"
+              title="Zpětná vazba"
             >
-              <IconWritingSign className="inline" stroke={1.5} />{" "}
-              <span className="ml-2 text-left">Přihláška</span>
+              <IconSpeakerphone className="inline" stroke={1.5} />{" "}
+              <span className="ml-2 text-left">Zpětná vazba</span>
             </button>
           </Link>
           <Link
