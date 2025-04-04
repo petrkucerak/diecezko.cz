@@ -4,6 +4,8 @@ import ContainerH2 from "../layouts/container-h2";
 import ContainerParagraph from "../layouts/container-paragraph";
 import {
   IconApps,
+  IconCircleCheck,
+  IconCircleDashed,
   IconCross,
   IconForms,
   IconMath,
@@ -41,6 +43,20 @@ export default function DiecezkoInfo({ id, className }) {
           </p>
         </div>
         <div className="w-[90vw] max-w-[500px] grid grid-cols-2 grid-flow-row gap-4 items-center auto-cols-max">
+          <Link
+            href="https://yesman.diecezko.cz/"
+            target="_blank"
+            title="Diecézní YesMan"
+            className="border col-span-2 border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-5 cursor-pointer text-base flex flex-row items-center justify-center"
+          >
+            <button className="flex flex-row items-center justify-center w-full">
+              <IconCircleCheck
+                stroke={1.5}
+                className="inline h-6 w-6 my-1 mr-2"
+              />{" "}
+              <span className="ml-2 text-left">Diecézní YesMan</span>
+            </button>
+          </Link>
           <Link
             href={`https://feedback.diecezko.cz/`}
             target="_blank"
