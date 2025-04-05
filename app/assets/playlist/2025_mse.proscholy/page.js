@@ -1,12 +1,12 @@
-import Header from "../../components/header";
-import Footer from "../../components/footer";
-import Container from "../../components/layouts/container";
-import ContainerTitle from "../../components/layouts/container-title";
-import PageMain from "../../components/layouts/page-main";
-import ContainerParagraph from "../../components/layouts/container-paragraph";
+import Header from "../../../../components/header";
+import Footer from "../../../../components/footer";
+import Container from "../../../../components/layouts/container";
+import ContainerTitle from "../../../../components/layouts/container-title";
+import PageMain from "../../../../components/layouts/page-main";
+import ContainerParagraph from "../../../../components/layouts/container-paragraph";
 import Link from "next/link";
-import IconCustomProScholy from "../../components/images/pro-scholy";
-import ContainerH2 from "../../components/layouts/container-h2";
+import IconCustomProScholy from "../../../../components/images/pro-scholy";
+import ContainerH2 from "../../../../components/layouts/container-h2";
 
 export default function Playlist() {
   return (
