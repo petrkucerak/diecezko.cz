@@ -58,16 +58,16 @@ export default function DiecezkoInfo({ id, className }) {
             </button>
           </Link>
           <Link
-            href={`https://prihlaska.diecezko.cz/`}
+            href={`https://feedback.diecezko.cz/`}
             target="_blank"
             className="border border-[#3b3b3b] hover:bg-[#3b3b3b] rounded-full p-2 px-5 text-base flex flex-row items-center justify-center"
           >
             <button
               className="flex flex-row items-center justify-center"
-              title="Přihláška"
+              title="Zpětná vazba"
             >
-              <IconWritingSign className="inline" stroke={1.5} />{" "}
-              <span className="ml-2 text-left">Přihláška</span>
+              <IconSpeakerphone className="inline" stroke={1.5} />{" "}
+              <span className="ml-2 text-left">Zpětná vazba</span>
             </button>
           </Link>
           <Link
